@@ -1,0 +1,32 @@
+{
+  "plugins": [
+    "babel"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "space-before-function-paren": ["error", {
+      "anonymous": "never",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "no-var": "error",
+    "prefer-const": "warn",
+
+    "babel/no-invalid-this": "warn",
+    "babel/semi": ["error", "never"],
+    "react/prop-types": "warn",
+    "react/no-unused-state": "warn",
+    "react/no-access-state-in-setstate": "warn"
+  },
+  "extends": ["standard", "standard-react"],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "jasmine": true
+  },
+  "globals": {
+    "mapboxgl": true
+  }
+}
