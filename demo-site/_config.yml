@@ -1,0 +1,5 @@
+layouts_dir: 'node_modules/uptick-demo-site/dist'
+
+package_name: React Object List
+package_github_url: https://github.com/uptick/react-object-list
+package_npm_url: https://www.npmjs.com/package/react-object-list
