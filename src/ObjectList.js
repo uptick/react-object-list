@@ -7,7 +7,7 @@ import {Pagination} from './pagination'
 import {COLUMN_TYPE, FILTER_BASE_TYPE, META_TYPE, loadingSpinner} from './utils'
 
 // TODO: rename to something awesome
-class NPMList extends Component {
+class ObjectList extends Component {
   static propTypes = {
     /** the renderer used to display the data ie. list/table/custom */
     DataRenderer: PropTypes.func,
@@ -156,4 +156,4 @@ class NPMList extends Component {
   }
 }
 
-export default NPMList
+export default ObjectList
