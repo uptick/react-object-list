@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RemoveFilter Snapshots renders default 1`] = `
+<button
+  className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+  onClick={[MockFunction]}
+/>
+`;

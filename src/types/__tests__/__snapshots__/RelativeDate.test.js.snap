@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RelativeDate type snapshot tests 1`] = `
+<div>
+  <div>
+    a few seconds ago
+  </div>
+  <div
+    className="text-muted"
+  >
+    <DatePart
+      outputFormat="DD/MM/YYYY"
+      value={undefined}
+    />
+  </div>
+</div>
+`;
+
+exports[`RelativeDate type snapshot tests 2`] = `
+<div>
+  <div>
+    in 7 months
+  </div>
+  <div
+    className="text-muted"
+  >
+    <DatePart
+      outputFormat="DD/MM/YYYY"
+      value="2018-02-07"
+    />
+  </div>
+</div>
+`;
+
+exports[`RelativeDate type snapshot tests 3`] = `
+<div>
+  <div>
+    in 7 months
+  </div>
+</div>
+`;
+
+exports[`RelativeDate type snapshot tests 4`] = `
+<div>
+  <div>
+    in 7 months
+  </div>
+  <div
+    className="text-muted"
+  >
+    <DatePart
+      outputFormat="DD/MM/YYYY"
+      value="2018-02-07 14:00:11"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SelectFilters /> Snapshot renders correctly 1`] = `
+<ReactSelect
+  className="apilist-select-filter"
+  labelKey="name"
+  menuContainerStyle={
+    Object {
+      "maxHeight": "500px",
+    }
+  }
+  menuStyle={
+    Object {
+      "maxHeight": "500px",
+    }
+  }
+  onChange={[MockFunction]}
+  openOnFocus={true}
+  options={
+    Array [
+      Object {
+        "Renderer": [Function],
+        "key": "c",
+        "props": Object {},
+      },
+    ]
+  }
+  placeholder="Add Filter"
+  value={null}
+  valueKey="key"
+/>
+`;

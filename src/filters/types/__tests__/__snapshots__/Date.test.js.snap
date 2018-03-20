@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Date Snapshots has custom input format 1`] = `
+<DayPickerInput
+  className="apilist-input"
+  dayPickerProps={
+    Object {
+      "fixedWeeks": true,
+      "selectedDays": "15th Jul 17",
+    }
+  }
+  format="DD/MM/YYYY"
+  onDayChange={[Function]}
+  placeholder="15th Jul 17"
+  value="15th Jul 17"
+/>
+`;
+
+exports[`Date Snapshots has custom relative date options 1`] = `
+<Select
+  className="apilist-current-filter__active-status"
+  clearable={false}
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "Right now",
+        "value": "now",
+      },
+      Object {
+        "label": "A bit later",
+        "value": "later",
+      },
+      Object {
+        "label": "Never ever",
+        "value": "never",
+      },
+    ]
+  }
+  value={"2017-07-15T00:00:00.000Z"}
+/>
+`;
+
+exports[`Date Snapshots renders default 1`] = `
+<DayPickerInput
+  className="apilist-input"
+  dayPickerProps={
+    Object {
+      "fixedWeeks": true,
+      "selectedDays": "15/07/2017",
+    }
+  }
+  format="DD/MM/YYYY"
+  onDayChange={[Function]}
+  placeholder="15/07/2017"
+  value="15/07/2017"
+/>
+`;
+
+exports[`Date Snapshots renders with relative comparison 1`] = `
+<Select
+  className="apilist-current-filter__active-status"
+  clearable={false}
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "label": "Today",
+        "value": "today",
+      },
+      Object {
+        "label": "Beginning of this week",
+        "value": "week_start",
+      },
+      Object {
+        "label": "Beginning of this month",
+        "value": "month_start",
+      },
+      Object {
+        "label": "Beginning of this year",
+        "value": "year_start",
+      },
+    ]
+  }
+  value={"2017-07-15T00:00:00.000Z"}
+/>
+`;

@@ -1,0 +1,22 @@
+import React from 'react'
+import { shallow } from 'enzyme'
+import {
+  snapshotTest,
+  configureEnzymeAdapter,
+} from 'utils/tests'
+import { AllSelector } from '../'
+
+
+describe('Selector type', () => {
+  it('snapshot test', () => {
+    snapshotTest(<AllSelector />)
+    snapshotTest(<AllSelector allSelected />)
+  })
+  it('makes a call to the callback function when clicked on', () => {
+    const callback = jest.fn()
+    const wrapper = shallow(<AllSelector toggleSelectAll={callback} />)
+    expect(callback).not.toBeCalled()
+    wrapper.find('input').simulate('click')
+    expect(callback).toBeCalled()
+  })
+})

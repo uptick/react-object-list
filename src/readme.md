@@ -3,8 +3,8 @@
 ## Snapshot testing
 Insetad of
 ```javascript
-import { configureEnzymeAdapter, snapshotTest } from 'apps/core/frontend/utils/tests'
-configureEnzymeAdapter()
+import { snapshotTest } from 'utils/tests'
+
 
 it('snapshots!', () => {
   snapshotTest(<div>This works!</div>)

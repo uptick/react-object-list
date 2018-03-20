@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Favourites /> Snapshot renders correctly 1`] = `
+<div
+  className="apilist-dropdown"
+>
+  <button
+    className="apilist-button--dropdown apilist-button apilist-button--favourites"
+    type="button"
+  >
+    <i
+      className="fa fa-heart-o"
+    />
+     Favourites
+  </button>
+  <div
+    className="apilist-dropdown__menu"
+  >
+    <FavouritesItem
+      activeSort="-id"
+      filters={Object {}}
+      handleDelete={[MockFunction]}
+      isSelected={false}
+      loadFavourite={undefined}
+      name="Favourite 1"
+      optionalFields={Object {}}
+    />
+    <FavouritesItem
+      activeSort="-id"
+      filters={Object {}}
+      handleDelete={[MockFunction]}
+      isSelected={false}
+      loadFavourite={undefined}
+      name="Favourite 2"
+      optionalFields={
+        Object {
+          "name": true,
+        }
+      }
+    />
+    <div
+      className="apilist-dropdown__divider"
+    />
+    <div
+      className="apilist-dropdown__item apilist-dropdown__item--input"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          className="apilist-input apilist-input__favourite"
+          onChange={[Function]}
+          placeholder="Save as new"
+          type="text"
+          value=""
+        />
+        <button
+          hidden={true}
+          type="submit"
+        >
+          Add
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

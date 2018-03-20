@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`makeFilter Snapshots has a name 1`] = `
+<div
+  className="apilist-row"
+>
+  <FilterLabel
+    label="The Awesome Filter"
+  />
+  <div>
+    44 tests
+  </div>
+  <RemoveFilter
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`makeFilter Snapshots renders default 1`] = `
+<div
+  className="apilist-row"
+>
+  <div>
+    44 tests
+  </div>
+  <RemoveFilter
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`makeFilter Snapshots renders with comparison null 1`] = `
+<div
+  className="apilist-row"
+>
+  <FilterComparison
+    onChange={[Function]}
+    options={
+      Array [
+        Object {
+          "label": "Test",
+          "value": "test",
+        },
+        Object {
+          "label": "Test Again",
+          "value": "again",
+        },
+      ]
+    }
+    value={
+      Object {
+        "label": "Test",
+        "value": "test",
+      }
+    }
+  />
+  <div>
+    44 tests
+  </div>
+  <RemoveFilter
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`makeFilter Snapshots renders with comparison options 1`] = `
+<div
+  className="apilist-row"
+>
+  <FilterComparison
+    onChange={[Function]}
+    options={
+      Array [
+        Object {
+          "label": "Test",
+          "value": "test",
+        },
+        Object {
+          "label": "Test Again",
+          "value": "again",
+        },
+      ]
+    }
+    value={
+      Object {
+        "label": "Test",
+        "value": "test",
+      }
+    }
+  />
+  <div>
+    44 tests
+  </div>
+  <RemoveFilter
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`makeFilter Snapshots renders with permanent true 1`] = `
+<div
+  className="apilist-row"
+>
+  <div>
+    44 tests
+  </div>
+</div>
+`;

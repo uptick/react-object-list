@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Snapshots renders correctly 1`] = `
+<div
+  className="apilist-table--scroll"
+>
+  <table
+    className="apilist-table"
+  >
+    <thead>
+      <tr>
+        <TableHeader
+          headerItems={
+            Object {
+              "dataKey": "name",
+              "header": "Name",
+              "item": [Function],
+              "label": "name",
+              "optional": false,
+              "sortable": true,
+            }
+          }
+          label="name"
+          saveWidth={[MockFunction]}
+          sortKeys={Array []}
+          updateSorting={undefined}
+          width={undefined}
+        />
+        <TableHeader
+          headerItems={
+            Array [
+              Object {
+                "dataKey": "age",
+                "header": "Age",
+                "item": [Function],
+                "label": "age_gender",
+                "optional": false,
+                "sortable": true,
+              },
+              Object {
+                "dataKey": "gender",
+                "header": "Gender",
+                "item": [Function],
+                "label": "age_gender",
+                "optional": false,
+                "sortable": true,
+              },
+            ]
+          }
+          label="age_gender"
+          saveWidth={[MockFunction]}
+          sortKeys={Array []}
+          updateSorting={undefined}
+          width={50}
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="apilist-table__row"
+      >
+        <td
+          className="apilist-table__td"
+        >
+          Sam
+        </td>
+        <td
+          className="apilist-table__td"
+        >
+          [object Object] M
+        </td>
+      </tr>
+      <tr
+        className="apilist-table__row"
+      >
+        <td
+          className="apilist-table__td"
+        >
+          Mary
+        </td>
+        <td
+          className="apilist-table__td"
+        >
+          [object Object] F
+        </td>
+      </tr>
+      <tr
+        className="apilist-table__row"
+      >
+        <td
+          className="apilist-table__td"
+        >
+          Q
+        </td>
+        <td
+          className="apilist-table__td"
+        >
+          [object Object] ?
+        </td>
+      </tr>
+      <tr
+        className="apilist-table__row"
+      >
+        <td
+          className="apilist-table__td"
+        >
+          Peter
+        </td>
+        <td
+          className="apilist-table__td"
+        >
+          [object Object] FM
+        </td>
+      </tr>
+      <tr
+        className="apilist-table__row"
+      >
+        <td
+          className="apilist-table__td"
+        >
+          Amy
+        </td>
+        <td
+          className="apilist-table__td"
+        >
+          [object Object] Confused
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

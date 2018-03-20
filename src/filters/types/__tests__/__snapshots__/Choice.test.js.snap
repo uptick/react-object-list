@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Choice Snapshots renders default 1`] = `
+<Select
+  className="apilist-current-filter__active-status"
+  labelKey="label"
+  loadOptions={undefined}
+  multi={false}
+  onChange={[Function]}
+  optionRenderer={null}
+  options={Array []}
+  placeholder="Any value"
+  value={44}
+  valueKey="value"
+/>
+`;
+
+exports[`Choice Snapshots renders with custom label key 1`] = `
+<Select
+  className="apilist-current-filter__active-status"
+  labelKey="bob"
+  loadOptions={undefined}
+  multi={false}
+  onChange={[Function]}
+  optionRenderer={null}
+  options={Array []}
+  placeholder="Any value"
+  value={44}
+  valueKey="value"
+/>
+`;
+
+exports[`Choice Snapshots renders with custom option renderer 1`] = `
+<Select
+  className="apilist-current-filter__active-status"
+  labelKey="bob"
+  loadOptions={undefined}
+  multi={false}
+  onChange={[Function]}
+  optionRenderer={[Function]}
+  options={Array []}
+  placeholder="Any value"
+  value={44}
+  valueKey="value"
+/>
+`;
+
+exports[`Choice Snapshots renders with custom value key 1`] = `
+<Select
+  className="apilist-current-filter__active-status"
+  labelKey="label"
+  loadOptions={undefined}
+  multi={false}
+  onChange={[Function]}
+  optionRenderer={null}
+  options={Array []}
+  placeholder="Any value"
+  value={44}
+  valueKey="bob"
+/>
+`;
+
+exports[`Choice Snapshots renders with multiple choice 1`] = `
+<Select
+  className="apilist-current-filter__active-status"
+  labelKey="label"
+  loadOptions={undefined}
+  multi={true}
+  onChange={[Function]}
+  optionRenderer={null}
+  options={Array []}
+  placeholder="Any value"
+  value={44}
+  valueKey="value"
+/>
+`;
+
+exports[`Choice Snapshots renders with options 1`] = `
+<Select
+  className="apilist-current-filter__active-status"
+  labelKey="label"
+  loadOptions={undefined}
+  multi={false}
+  onChange={[Function]}
+  optionRenderer={null}
+  options={
+    Array [
+      Object {
+        "label": "One",
+        "value": 1,
+      },
+    ]
+  }
+  placeholder="Any value"
+  value={44}
+  valueKey="value"
+/>
+`;
+
+exports[`Choice Snapshots renders with placeholder 1`] = `
+<Select
+  className="apilist-current-filter__active-status"
+  labelKey="label"
+  loadOptions={undefined}
+  multi={false}
+  onChange={[Function]}
+  optionRenderer={null}
+  options={Array []}
+  placeholder="Testing testing"
+  value={44}
+  valueKey="value"
+/>
+`;
+
+exports[`Choice Snapshots renders with remote options 1`] = `
+<Select.Async
+  className="apilist-current-filter__active-status"
+  labelKey="label"
+  loadOptions={[MockFunction]}
+  multi={false}
+  onChange={[Function]}
+  optionRenderer={null}
+  options={Array []}
+  placeholder="Any value"
+  value={44}
+  valueKey="value"
+/>
+`;

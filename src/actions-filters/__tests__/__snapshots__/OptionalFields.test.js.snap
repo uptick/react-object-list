@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OptionalFields /> Snapshot renders correctly 1`] = `
+<div
+  className="apilist-dropdown"
+>
+  <button
+    className="apilist-button apilist-button--dropdown apilist-button--borderless"
+  >
+    <i
+      className="fa fa-list"
+    />
+     Change columns
+  </button>
+  <div
+    className="apilist-dropdown__menu apilist-dropdown__menu--borderless"
+  >
+    <OptionalField
+      className="apilist-dropdown__item"
+      enabled={true}
+      fieldKey="a"
+      name="Apple"
+      onChange={[MockFunction]}
+    />
+    <OptionalField
+      className="apilist-dropdown__item"
+      enabled={false}
+      fieldKey="c"
+      name="Cat"
+      onChange={[MockFunction]}
+    />
+  </div>
+</div>
+`;
+
+exports[`<OptionalFields /> Snapshot renders correctly 2`] = `
+<div
+  className="apilist-dropdown open"
+>
+  <button
+    className="apilist-button apilist-button--dropdown apilist-button--borderless open"
+  >
+    <i
+      className="fa fa-list"
+    />
+     Change columns
+  </button>
+  <div
+    className="apilist-dropdown__menu apilist-dropdown__menu--borderless"
+  >
+    <OptionalField
+      className="apilist-dropdown__item"
+      enabled={true}
+      fieldKey="a"
+      name="Apple"
+      onChange={[MockFunction]}
+    />
+    <OptionalField
+      className="apilist-dropdown__item"
+      enabled={false}
+      fieldKey="c"
+      name="Cat"
+      onChange={[MockFunction]}
+    />
+  </div>
+</div>
+`;

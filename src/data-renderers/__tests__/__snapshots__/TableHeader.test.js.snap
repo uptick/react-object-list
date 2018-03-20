@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Header Snapshots renders correctly 1`] = `
+<th
+  className="apilist-table__th "
+  width={undefined}
+>
+  <HeaderField
+    activeSort={null}
+    dataKey="header_sort_key"
+    header="Header Text"
+    item={[MockFunction]}
+    optional={false}
+    sortable={true}
+    updateSorting={undefined}
+  />
+</th>
+`;
+
+exports[`Table Header Snapshots renders correctly with multiple header items 1`] = `
+<th
+  className="apilist-table__th "
+  width={undefined}
+>
+  <HeaderField
+    activeSort={null}
+    dataKey="header_sort_key"
+    header="Header Text"
+    item={[MockFunction]}
+    optional={false}
+    sortable={true}
+    updateSorting={undefined}
+  />
+  <HeaderField
+    activeSort={null}
+    dataKey="header_sort_key"
+    header="Header Two Text"
+    item={[MockFunction]}
+    optional={false}
+    sortable={true}
+    updateSorting={undefined}
+  />
+</th>
+`;

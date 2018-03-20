@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Snapshots has label 1`] = `
+<li
+  className="apilist-pagination__page"
+  onClick={[Function]}
+>
+  <a
+    className="apilist-pagination__page--link"
+    href="#"
+  >
+    New page please
+  </a>
+</li>
+`;
+
+exports[`Page Snapshots has page number 1`] = `
+<li
+  className="apilist-pagination__page"
+  onClick={[Function]}
+>
+  <a
+    className="apilist-pagination__page--link"
+    href="#"
+  >
+    4
+  </a>
+</li>
+`;
+
+exports[`Page Snapshots is active 1`] = `
+<li
+  className="apilist-pagination__page active"
+  onClick={[Function]}
+>
+  <a
+    className="apilist-pagination__page--link"
+    href="#"
+  >
+    4
+  </a>
+</li>
+`;
+
+exports[`Page Snapshots is active and disabled 1`] = `
+<li
+  className="apilist-pagination__page disabled"
+  onClick={[Function]}
+>
+  <a
+    className="apilist-pagination__page--link"
+    href="#"
+  >
+    4
+  </a>
+</li>
+`;
+
+exports[`Page Snapshots is disabled 1`] = `
+<li
+  className="apilist-pagination__page disabled"
+  onClick={[Function]}
+>
+  <a
+    className="apilist-pagination__page--link"
+    href="#"
+  >
+    4
+  </a>
+</li>
+`;

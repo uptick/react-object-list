@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberSlider Snapshots custom max 1`] = `
+<div
+  className="apilist-row apilist-current-filter__active-status"
+>
+  <input
+    className="apilist-input apilist-input__number-slider--number"
+    max={2000}
+    min={0}
+    onChange={[Function]}
+    type="number"
+    value={50}
+  />
+  <input
+    className="apilist-input__number-slider--slider"
+    max={2000}
+    min={0}
+    onChange={[Function]}
+    onMouseUp={[Function]}
+    type="range"
+    value={50}
+  />
+</div>
+`;
+
+exports[`NumberSlider Snapshots custom min 1`] = `
+<div
+  className="apilist-row apilist-current-filter__active-status"
+>
+  <input
+    className="apilist-input apilist-input__number-slider--number"
+    max={100}
+    min={30}
+    onChange={[Function]}
+    type="number"
+    value={50}
+  />
+  <input
+    className="apilist-input__number-slider--slider"
+    max={100}
+    min={30}
+    onChange={[Function]}
+    onMouseUp={[Function]}
+    type="range"
+    value={50}
+  />
+</div>
+`;
+
+exports[`NumberSlider Snapshots renders default 1`] = `
+<div
+  className="apilist-row apilist-current-filter__active-status"
+>
+  <input
+    className="apilist-input apilist-input__number-slider--number"
+    max={100}
+    min={0}
+    onChange={[Function]}
+    type="number"
+    value={50}
+  />
+  <input
+    className="apilist-input__number-slider--slider"
+    max={100}
+    min={0}
+    onChange={[Function]}
+    onMouseUp={[Function]}
+    type="range"
+    value={50}
+  />
+</div>
+`;

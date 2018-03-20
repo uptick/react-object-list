@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Predefined cells DateTime 1`] = `
+<div
+  className="text-muted"
+>
+  -
+</div>
+`;
+
+exports[`Predefined cells DateTime 2`] = `
+<div
+  className="text-muted"
+>
+  No content
+</div>
+`;
+
+exports[`Predefined cells DateTime 3`] = `
+<div
+  className="text-muted"
+>
+  -
+</div>
+`;
+
+exports[`Predefined cells DateTime 4`] = `
+<div
+  className="text-muted"
+>
+  -
+</div>
+`;
+
+exports[`Predefined cells DateTime 5`] = `
+<div>
+  07/02/2018
+</div>
+`;
+
+exports[`Predefined cells DateTime 6`] = `
+<div>
+  07/02/2018
+</div>
+`;
+
+exports[`Predefined cells DateTime 7`] = `
+<div>
+  1st Jan 2017 12:00am - 1st Feb 2017 12:00am
+</div>
+`;
+
+exports[`Predefined cells DateTime 8`] = `
+<div>
+  1st Jan 2017 12:00am - 1st Feb 2017 12:00am
+</div>
+`;
+
+exports[`Predefined cells DateTime 9`] = `
+<div>
+  1st Jan 2017 12:00am to 1st Feb 2017 12:00am
+</div>
+`;

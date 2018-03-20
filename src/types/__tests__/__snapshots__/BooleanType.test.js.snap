@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BooleanType snapshot test 1`] = `
+<span
+  className="fa fa-times-circle text-danger"
+/>
+`;
+
+exports[`BooleanType snapshot test 2`] = `
+<span
+  className="fa fa-check-circle text-success"
+/>
+`;
+
+exports[`BooleanType snapshot test 3`] = `
+<span
+  className="fa fa-times-circle text-danger"
+/>
+`;

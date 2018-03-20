@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterLabel Snapshots renders default 1`] = `
+<label
+  className="apilist-current-filter__filter-name"
+>
+  test
+  :
+</label>
+`;

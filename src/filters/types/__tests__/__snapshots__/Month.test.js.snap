@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Month Snapshots has format 1`] = `
+<MonthPicker
+  lang={
+    Object {
+      "months": Array [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+    }
+  }
+  onChange={[Function]}
+  value={
+    Object {
+      "month": 7,
+      "year": 2017,
+    }
+  }
+  years={
+    Object {
+      "max": 2050,
+      "min": 2000,
+    }
+  }
+>
+  <input
+    className="apilist-input apilist-input--wide"
+    onChange={[Function]}
+    onClick={[Function]}
+    placeholder="Select month"
+    type="text"
+    value="07/17"
+  />
+</MonthPicker>
+`;
+
+exports[`Month Snapshots has maxYear 1`] = `
+<MonthPicker
+  lang={
+    Object {
+      "months": Array [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+    }
+  }
+  onChange={[Function]}
+  value={
+    Object {
+      "month": 7,
+      "year": 2017,
+    }
+  }
+  years={
+    Object {
+      "max": 2050,
+      "min": 2000,
+    }
+  }
+>
+  <input
+    className="apilist-input apilist-input--wide"
+    onChange={[Function]}
+    onClick={[Function]}
+    placeholder="Select month"
+    type="text"
+    value="Jul 2017"
+  />
+</MonthPicker>
+`;
+
+exports[`Month Snapshots has minYear 1`] = `
+<MonthPicker
+  lang={
+    Object {
+      "months": Array [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+    }
+  }
+  onChange={[Function]}
+  value={
+    Object {
+      "month": 7,
+      "year": 2017,
+    }
+  }
+  years={
+    Object {
+      "max": 2050,
+      "min": 2010,
+    }
+  }
+>
+  <input
+    className="apilist-input apilist-input--wide"
+    onChange={[Function]}
+    onClick={[Function]}
+    placeholder="Select month"
+    type="text"
+    value="Jul 2017"
+  />
+</MonthPicker>
+`;
+
+exports[`Month Snapshots renders default 1`] = `
+<MonthPicker
+  lang={
+    Object {
+      "months": Array [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+    }
+  }
+  onChange={[Function]}
+  value={
+    Object {
+      "month": 7,
+      "year": 2017,
+    }
+  }
+  years={
+    Object {
+      "max": 2050,
+      "min": 2000,
+    }
+  }
+>
+  <input
+    className="apilist-input apilist-input--wide"
+    onChange={[Function]}
+    onClick={[Function]}
+    placeholder="Select month"
+    type="text"
+    value="Jul 2017"
+  />
+</MonthPicker>
+`;

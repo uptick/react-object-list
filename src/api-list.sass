@@ -1,0 +1,421 @@
+@import '../node_modules/react-select/dist/react-select'
+@import '../node_modules/font-awesome/css/font-awesome.min'
+@import '../node_modules/react-month-picker/css/month-picker'
+@import '../node_modules/react-day-picker/lib/style'
+@import 'input-range'
+@import 'colours'
+
+$spacing: 10px
+$font: sans-serif
+$border-width: 1px
+$border: $border-width solid $border-color
+$radius: 4px
+$huge-flex: 5
+$large-flex: 3
+$small-flex: 1
+$small-flex-basis: $small-flex * 100px
+$large-flex-basis: $large-flex * 100px
+$huge-flex-basis: $huge-flex * 100px
+
+.apilist-button
+  background-color: $global-background-color
+  border: $border
+  border-radius: $radius
+  margin: $spacing
+  padding: $spacing
+  cursor: pointer
+  color: $button-text-color
+  text-decoration: none
+  line-height: 2em
+  font-size: 1em
+  outline: 0
+  &::-moz-focus-inner
+    border: none
+
+.apilist-input
+  font-family: $font
+  height: 36px - $spacing - ($border-width * 2)
+  font-size: 1em
+  border: $border
+  border-radius: $radius
+  padding: $spacing/2
+  &::placeholder
+    color: $placeholder-color
+  &::-moz-placeholder
+    opacity: 1
+  &__favourite
+    height: auto
+
+.apilist-input--big
+  line-height: 2em
+  margin: $spacing
+  padding: $spacing
+
+.apilist-delete
+  cursor: pointer
+  display: block
+  margin-left: 0.5rem
+
+.apilist-filters
+  margin: $spacing
+  // React select specific
+  .Select-control
+    border: $border
+    border-radius: $radius
+    // Magic number that makes react select line up with other elements
+    line-height: 3.5rem
+  .Select-placeholder
+    line-height: inherit
+  .Select-input
+    vertical-align: initial
+    width: 200px
+
+.apilist-button--link
+  background-color: initial
+  border: none
+  text-decoration: underline
+  color: $link-color
+
+.apilist-dropdown
+  font-family: $font
+  position: relative
+  display: inline-block
+  &.open
+    .apilist-dropdown__menu
+      display: block
+
+.apilist-dropdown__divider
+  height: 1px
+  background: $border-color
+  margin: $radius 0
+
+.apilist-dropdown__menu
+  background-color: $global-background-color
+  position: absolute
+  display: none
+  margin-top: 2px
+  border: $border
+  padding: $radius 0
+  border-radius: $radius
+  right: 0
+  z-index: 10
+
+.apilist-dropdown__menu--borderless
+  top: calc(100% - 10px)
+  right: 8px
+
+.apilist-dropdown__item
+  display: flex
+  justify-content: space-between
+  width: 100%
+  box-sizing: border-box
+  padding: 3px 8px
+  font-weight: normal
+  text-align: inherit
+  white-space: nowrap
+  background: none
+  align-items: center
+  border: 0
+  font-size: inherit
+  &::hover
+    background-color: $dropdown-hover-color
+  &--input
+    padding: 0px 4px
+
+.apilist-dropdown__item--selected
+  background-color: $dropdown-selected-color
+
+.apilist-dropdown__icon
+  padding-right: 5px
+
+.apilist-row
+  font-family: $font
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  // React select specific
+  .Select-control
+    height: auto
+  // React daypicker specific
+  .DayPickerInput
+    margin: $spacing
+  // React monthpicker specific
+  .month-picker
+    margin: $spacing
+    flex-grow: $small-flex
+    display: flex
+    input
+      flex-grow: 1
+    .container
+      margin-bottom: initial
+
+.apilist-row--search
+  // permanent search filter
+  .apilist-input
+    height: auto
+    padding: $spacing
+    line-height: 2em
+
+.apilist-row--right
+  justify-content: flex-end
+
+.apilist-row--justify
+  justify-content: space-between
+
+.apilist--grow
+  flex-grow: $small-flex
+
+.apilist--grow-long
+  flex-grow: $huge-flex
+
+.apilist-results-text
+  color: $text-muted-color
+  font-style: italic
+  margin: $spacing
+
+.apilist-button--dropdown
+  margin: 0
+  &:after
+    content: "\f0d7"
+    font-family: "fontawesome"
+    padding-left: $spacing
+  &.open:after
+    content: "\f0d8"
+  &:focus
+    outline: 0
+
+.apilist-button--favourites
+  margin-left: $spacing
+
+.apilist-button--icon
+  padding-right: $spacing
+  color: $icon-color
+
+.apilist-button--primary
+  background-color: $primary-button-color
+  color: $global-background-color
+
+.apilist-button--small
+  padding: 0px 5px
+  font-size: 0.8em
+  margin: 2px
+
+.apilist-button--borderless
+  border: none
+
+.apilist-select-filter
+  font-family: $font
+  min-width: 150px
+  margin-left: $spacing
+  .Select-input
+    height: auto
+    line-height: 1em
+    padding: 0
+    >input
+      padding: 0
+  &.is-open
+    .Select-control
+      border-radius: 4px
+  .Select-control
+    line-height: 2em
+    padding: $spacing
+  .Select-placeholder
+    margin-left: 1.5em
+    padding: $spacing
+  .Select-input:before
+    margin-right: 0.5em
+    content: "\f0b0"
+    font-family: "FontAwesome"
+    color: $button-text-color
+  .Select-arrow-zone
+    padding: 0
+    text-align: right
+  .Select-arrow, .Select-arrow-zone:hover > .Select-arrow
+    border-top-color: $button-text-color
+  &.is-open .Select-arrow-zone > .Select-arrow
+    border-bottom-color: $button-text-color
+  .Select-menu-outer
+    min-width: 150px
+    right: 0
+    left: unset
+    width: auto
+    border-radius: 4px
+    margin-top: 2px
+
+.apilist-current-filter__filter-name
+  margin: $spacing
+  min-width: 150px
+
+.apilist-current-filter__filter-comparison
+  margin: $spacing
+  flex-basis: $small-flex-basis
+  flex-grow: $small-flex
+  min-width: 160px
+
+.apilist-current-filter__active-status
+  margin: $spacing
+  flex-basis: $large-flex-basis
+  flex-grow: $large-flex
+
+.apilist-button--delete::after
+  content: "\f056"
+  font-family: "fontawesome"
+
+.apilist-dayfilter
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.apilist-dayfilter__day-name
+  display: inline
+
+.apilist-currency-filter
+  position: relative
+  display: flex
+
+.apilist-currency-filter__symbol
+  position: absolute
+  background: $table-row-background
+  border-top-left-radius: 4px
+  border-bottom-left-radius: 4px
+  padding: 0px 5px
+  line-height: 36px
+
+.apilist-input--currency
+  padding-left: 1.3rem
+  padding-right: 2rem
+  flex-grow: 1
+
+.apilist-currency-filter__decimal
+  position: absolute
+  right: 0px
+  background: $table-row-background
+  border-top-right-radius: 4px
+  border-bottom-right-radius: 4px
+  padding: 0px 5px
+  line-height: 36px
+
+.apilist-input__number-slider--number
+  width: 4rem
+  margin-right: 0.2rem
+
+.apilist-input__number-slider--slider
+  flex-grow: 1
+
+.apilist-pagination
+  line-height: 1.2em
+  display: flex
+  align-items: center
+  flex-direction: column
+  font-family: $font
+
+.apilist-pagination__pages
+  display: flex
+  padding: inherit
+  flex-wrap: wrap
+  list-style-type: none
+
+.apilist-pagination__page
+  &:first-child .apilist-pagination__page--link
+    border-bottom-left-radius: 0.25rem
+    border-top-left-radius: 0.25rem
+  &:last-child .apilist-pagination__page--link
+    border-bottom-right-radius: 0.25rem
+    border-top-right-radius: 0.25rem
+
+.apilist-pagination__page.disabled
+  .apilist-pagination__page--link
+    color: $nav-color-disabled
+    font-weight: lighter
+    cursor: default
+    background: white
+    text-decoration: none
+
+.apilist-pagination__page.active
+  .apilist-pagination__page--link
+    border-color: $active-colour
+    background-color: $active-colour
+    color: white
+    z-index: 5
+    cursor: default
+
+.apilist-pagination__page--link
+  border: $border
+  padding: 0.5rem 0.75rem
+  text-decoration: none
+  margin-left: -1px // remove double border
+  display: block
+  color: $nav-link-colour
+  &:hover
+    background: $border-color-hover
+    text-decoration: underline
+  &:active
+    color: $nav-active-colour
+
+.apilist-pagination__records
+  color: $nav-color-disabled
+  font-weight: lighter
+
+.apilist-table
+  min-width: 100%
+  border-collapse: collapse
+  font-family: $font
+  [role="button"]
+    cursor: pointer
+
+.apilist-table--scroll
+  padding: 0 $spacing
+  overflow-x: auto
+
+.apilist-table__row:nth-of-type(odd)
+  background-color: $table-row-background
+
+.apilist-table__td, .apilist-table__th
+  border-top: $border
+  padding: 0.7rem
+
+.apilist-table__th--selector
+  width: 1rem
+
+.apilist-table__th
+  text-align: left
+  border-bottom: 2px solid $border-color
+  position: relative
+  .handle
+    position: absolute
+    top: 0
+    right: 0
+    width: 1em
+    height: 100%
+    cursor: ew-resize
+    &.hover
+      border-right: 1px solid #efefef
+
+
+.apilist-list__list
+  padding: 0 $spacing
+  font-family: $font
+
+.apilist-list__item
+  padding: $spacing
+  border: $border
+  list-style-type: none
+  margin: 1em 0
+  position: relative
+
+.apilist-list__link
+  position: absolute
+  top: 0.5em
+  right: 0.5em
+  color: $nav-link-colour
+
+.apilist-list__header
+  margin: 0
+  font-size: 1.3em
+  margin-bottom: 0.2em
+
+.apilist-list__content
+  margin-bottom: 1em
+  &:last-child
+    margin-bottom: 0

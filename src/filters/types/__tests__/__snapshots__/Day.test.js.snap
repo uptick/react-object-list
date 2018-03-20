@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Day Snapshots renders default 1`] = `
+<div
+  className="apilist-dayfilter"
+>
+  <button
+    className="apilist-button"
+    onClick={[Function]}
+  >
+    ← Previous
+  </button>
+  <h3
+    className="apilist-dayfilter__day-name"
+  >
+    Saturday July 15th 2017
+  </h3>
+  <button
+    className="apilist-button"
+    onClick={[Function]}
+  >
+    Next →
+  </button>
+</div>
+`;

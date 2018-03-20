@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Boolean Snapshots has custom labels 1`] = `
+<Choice
+  onChange={[MockFunction]}
+  options={
+    Array [
+      Object {
+        "label": "Very True",
+        "value": "True",
+      },
+      Object {
+        "label": "Super False",
+        "value": "False",
+      },
+    ]
+  }
+  value="True"
+/>
+`;
+
+exports[`Boolean Snapshots renders false 1`] = `
+<Choice
+  onChange={[MockFunction]}
+  options={
+    Array [
+      Object {
+        "label": "Yes",
+        "value": "True",
+      },
+      Object {
+        "label": "No",
+        "value": "False",
+      },
+    ]
+  }
+  value="False"
+/>
+`;
+
+exports[`Boolean Snapshots renders true 1`] = `
+<Choice
+  onChange={[MockFunction]}
+  options={
+    Array [
+      Object {
+        "label": "Yes",
+        "value": "True",
+      },
+      Object {
+        "label": "No",
+        "value": "False",
+      },
+    ]
+  }
+  value="True"
+/>
+`;

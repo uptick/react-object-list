@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ObjectLink type snapshot tests 1`] = `
+<span
+  className="text-muted"
+>
+  -
+</span>
+`;
+
+exports[`ObjectLink type snapshot tests 2`] = `
+<span
+  className="text-muted"
+>
+  -
+</span>
+`;
+
+exports[`ObjectLink type snapshot tests 3`] = `
+<div>
+  <div>
+    <div>
+      TestModel 1
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ObjectLink type snapshot tests 4`] = `
+<div>
+  <div>
+    <div>
+      TestModel 1
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ObjectLink type snapshot tests 5`] = `
+<a
+  href="http://uptickhq.com"
+>
+  <div>
+    <div>
+      <div>
+        TestModel 1
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`ObjectLink type snapshot tests 6`] = `
+<div>
+  <div>
+    <div>
+      TestModel 1
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ObjectLink type snapshot tests 7`] = `
+<div>
+  <div>
+    <div>
+      TestModel 1
+    </div>
+  </div>
+</div>
+`;

@@ -1,5 +1,4 @@
 import { configure } from '@storybook/react';
-import '../src/api-list.sass'
 
 const appStories = require.context('../src/', true, /stories\.js$/)
 

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Snapshots has new value 1`] = `
+<input
+  className="apilist-current-filter__active-status apilist-input"
+  onChange={[Function]}
+  placeholder="Search the table below"
+  type="text"
+  value={21}
+/>
+`;
+
+exports[`Search Snapshots renders default 1`] = `
+<input
+  className="apilist-current-filter__active-status apilist-input"
+  onChange={[Function]}
+  placeholder="Search the table below"
+  type="text"
+  value="Kittens"
+/>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterComparison Snapshots renders default 1`] = `
+<div
+  className="apilist-current-filter__filter-comparison"
+>
+  <Select
+    clearable={false}
+    onChange={[Function]}
+    options={
+      Array [
+        Object {
+          "label": "Test This",
+          "value": "test",
+        },
+      ]
+    }
+    value="test"
+  />
+</div>
+`;

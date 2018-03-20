@@ -1,4 +1,5 @@
 import renderer from 'react-test-renderer'
+
 /**
  * Helper function to run a snapshot test on an element
  * @param  {Object} elem            React Component with props i.e. <AnyComponent a=b />

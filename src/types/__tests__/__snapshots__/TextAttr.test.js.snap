@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextAttr type snapshot tests 1`] = `
+<span
+  className="text-muted"
+>
+  -
+</span>
+`;
+
+exports[`TextAttr type snapshot tests 2`] = `
+<span
+  className="text-muted"
+>
+  -
+</span>
+`;
+
+exports[`TextAttr type snapshot tests 3`] = `
+<div>
+  <div>
+    TestModel 1
+  </div>
+</div>
+`;
+
+exports[`TextAttr type snapshot tests 4`] = `
+<div>
+  <div>
+    default
+  </div>
+</div>
+`;
+
+exports[`TextAttr type snapshot tests 5`] = `
+<div>
+  <div>
+    abc
+  </div>
+</div>
+`;
+
+exports[`TextAttr type snapshot tests 6`] = `
+<div>
+  <div>
+    <small
+      className="text-muted"
+    >
+      123
+       
+    </small>
+    abc
+  </div>
+</div>
+`;
+
+exports[`TextAttr type snapshot tests 7`] = `
+<div>
+  <div>
+    <small
+      className="text-muted"
+    >
+      123
+       
+    </small>
+    abc
+  </div>
+  <small
+    className="text-muted"
+  >
+    some important detail
+  </small>
+</div>
+`;
