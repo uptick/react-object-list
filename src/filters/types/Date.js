@@ -5,6 +5,10 @@ import PropTypes from 'prop-types'
 import Select from 'react-select'
 
 import DayPickerInput from 'react-day-picker/DayPickerInput'
+import MomentLocaleUtils, {
+  formatDate,
+  parseDate,
+} from 'react-day-picker/moment'
 
 /**
  * Filter input used to pass date values either fixed
@@ -77,12 +81,18 @@ class Date extends React.Component {
         <DayPickerInput
           placeholder={value}
           format="DD/MM/YYYY"
-          className="apilist-input"
+          classNames={{
+            container: 'apilist-input__container',
+            overlayWrapper: 'apilist-input__daypicker',
+            overlay: '',
+          }}
           onDayChange={this.handleDateValueChange}
+          clickUnselectsDay
+          formatDate={formatDate}
+          parseDate={parseDate}
           {...value ? {value: value} : {}}
           dayPickerProps={{
             fixedWeeks: true,
-            selectedDays: value,
           }}
         />
       )

@@ -32,9 +32,12 @@ $huge-flex-basis: $huge-flex * 100px
   &::-moz-focus-inner
     border: none
 
+$input-height: 36px - $spacing - ($border-width * 2)
+.apilist-input__container > input,
 .apilist-input
+  position: relative
   font-family: $font
-  height: 36px - $spacing - ($border-width * 2)
+  height: $input-height
   font-size: 1em
   border: $border
   border-radius: $radius
@@ -45,6 +48,14 @@ $huge-flex-basis: $huge-flex * 100px
     opacity: 1
   &__favourite
     height: auto
+
+.apilist-input__daypicker
+  position: absolute
+  top: $input-height * 2.5
+  right: 0
+  border: $border
+  background: $global-background-color
+  border-radius: $radius
 
 .apilist-input--big
   line-height: 2em
