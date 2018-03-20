@@ -2,15 +2,23 @@
 
 exports[`Date Snapshots has custom input format 1`] = `
 <DayPickerInput
-  className="apilist-input"
+  classNames={
+    Object {
+      "container": "apilist-input__container",
+      "overlay": "",
+      "overlayWrapper": "apilist-input__daypicker",
+    }
+  }
+  clickUnselectsDay={true}
   dayPickerProps={
     Object {
       "fixedWeeks": true,
-      "selectedDays": "15th Jul 17",
     }
   }
   format="DD/MM/YYYY"
+  formatDate={[Function]}
   onDayChange={[Function]}
+  parseDate={[Function]}
   placeholder="15th Jul 17"
   value="15th Jul 17"
 />
@@ -43,15 +51,23 @@ exports[`Date Snapshots has custom relative date options 1`] = `
 
 exports[`Date Snapshots renders default 1`] = `
 <DayPickerInput
-  className="apilist-input"
+  classNames={
+    Object {
+      "container": "apilist-input__container",
+      "overlay": "",
+      "overlayWrapper": "apilist-input__daypicker",
+    }
+  }
+  clickUnselectsDay={true}
   dayPickerProps={
     Object {
       "fixedWeeks": true,
-      "selectedDays": "15/07/2017",
     }
   }
   format="DD/MM/YYYY"
+  formatDate={[Function]}
   onDayChange={[Function]}
+  parseDate={[Function]}
   placeholder="15/07/2017"
   value="15/07/2017"
 />

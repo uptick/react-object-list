@@ -2863,7 +2863,7 @@ exports[`Storyshots npm-list/Filters DateFilter 1`] = `
         />
       </div>
       <div
-        className="DayPickerInput"
+        className="apilist-input__container"
       >
         <input
           onBlur={[Function]}
