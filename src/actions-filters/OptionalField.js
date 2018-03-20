@@ -17,7 +17,7 @@ export default class OptionalField extends React.Component {
   }
 
   /**
-   * Toggles an optional field to be displayed by the ApiList
+   * Toggles an optional field to be displayed by the objectlist
    *
    * @event {MouseEvent} event - event that fires when clicking on an OptionalField component
    */
@@ -29,12 +29,12 @@ export default class OptionalField extends React.Component {
   render() {
     let checked
     if (this.props.enabled) {
-      checked = (<i className="fa fa-check-square-o apilist-dropdown__icon" aria-hidden="true" />)
+      checked = (<i className="fa fa-check-square-o objectlist-dropdown__icon" aria-hidden="true" />)
     } else {
-      checked = (<i className="fa fa-square-o apilist-dropdown__icon" aria-hidden="true" />)
+      checked = (<i className="fa fa-square-o objectlist-dropdown__icon" aria-hidden="true" />)
     }
     return (
-      <button className="apilist-dropdown__item" onClick={this.toggle}>
+      <button className="objectlist-dropdown__item" onClick={this.toggle}>
         {checked}{this.props.name}
       </button>
     )

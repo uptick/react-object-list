@@ -18,10 +18,10 @@ exports[`Storyshots npm-list/Favourites default view 1`] = `
       }
     >
       <div
-        className="apilist-dropdown"
+        className="objectlist-dropdown"
       >
         <button
-          className="apilist-button--dropdown apilist-button apilist-button--favourites"
+          className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
           type="button"
         >
           <i
@@ -30,43 +30,43 @@ exports[`Storyshots npm-list/Favourites default view 1`] = `
            Favourites
         </button>
         <div
-          className="apilist-dropdown__menu"
+          className="objectlist-dropdown__menu"
         >
           <div
-            className="apilist-dropdown__item"
+            className="objectlist-dropdown__item"
             onClick={[Function]}
           >
             <span>
               Favourite 1
             </span>
             <i
-              className="fa fa-trash-o apilist-delete"
+              className="fa fa-trash-o objectlist-delete"
               onClick={[Function]}
             />
           </div>
           <div
-            className="apilist-dropdown__item"
+            className="objectlist-dropdown__item"
             onClick={[Function]}
           >
             <span>
               Favourite 2
             </span>
             <i
-              className="fa fa-trash-o apilist-delete"
+              className="fa fa-trash-o objectlist-delete"
               onClick={[Function]}
             />
           </div>
           <div
-            className="apilist-dropdown__divider"
+            className="objectlist-dropdown__divider"
           />
           <div
-            className="apilist-dropdown__item apilist-dropdown__item--input"
+            className="objectlist-dropdown__item objectlist-dropdown__item--input"
           >
             <form
               onSubmit={[Function]}
             >
               <input
-                className="apilist-input apilist-input__favourite"
+                className="objectlist-input objectlist-input__favourite"
                 onChange={[Function]}
                 placeholder="Save as new"
                 type="text"
@@ -875,10 +875,10 @@ exports[`Storyshots npm-list/Favourites interactive 1`] = `
       }
     >
       <div
-        className="apilist-dropdown"
+        className="objectlist-dropdown"
       >
         <button
-          className="apilist-button--dropdown apilist-button apilist-button--favourites"
+          className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
           type="button"
         >
           <i
@@ -887,43 +887,43 @@ exports[`Storyshots npm-list/Favourites interactive 1`] = `
            Favourites
         </button>
         <div
-          className="apilist-dropdown__menu"
+          className="objectlist-dropdown__menu"
         >
           <div
-            className="apilist-dropdown__item"
+            className="objectlist-dropdown__item"
             onClick={[Function]}
           >
             <span>
               Favourite 1
             </span>
             <i
-              className="fa fa-trash-o apilist-delete"
+              className="fa fa-trash-o objectlist-delete"
               onClick={[Function]}
             />
           </div>
           <div
-            className="apilist-dropdown__item"
+            className="objectlist-dropdown__item"
             onClick={[Function]}
           >
             <span>
               Favourite 2
             </span>
             <i
-              className="fa fa-trash-o apilist-delete"
+              className="fa fa-trash-o objectlist-delete"
               onClick={[Function]}
             />
           </div>
           <div
-            className="apilist-dropdown__divider"
+            className="objectlist-dropdown__divider"
           />
           <div
-            className="apilist-dropdown__item apilist-dropdown__item--input"
+            className="objectlist-dropdown__item objectlist-dropdown__item--input"
           >
             <form
               onSubmit={[Function]}
             >
               <input
-                className="apilist-input apilist-input__favourite"
+                className="objectlist-input objectlist-input__favourite"
                 onChange={[Function]}
                 placeholder="Save as new"
                 type="text"

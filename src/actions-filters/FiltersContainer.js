@@ -35,7 +35,7 @@ class FiltersContainer extends Component {
 
   render() {
     return (
-      <div className="apilist--grow">
+      <div className="objectlist--grow">
         {this.props.filters.filter(filter => filter.active).map(this.renderFilter)}
       </div>
     )

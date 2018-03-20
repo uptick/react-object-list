@@ -19,17 +19,17 @@ export default class ListCard extends Component {
   renderItemRows = () => {
     const {columns, data} = this.props
     return columns.map((column, idx) => (
-      <div className="apilist-list__content" key={`list-item-${idx}`}>
-        <h2 className="apilist-list__header">{column.header}:</h2>
-        <div className="apilist-list__body">{data[column.dataKey]}</div>
+      <div className="objectlist-list__content" key={`list-item-${idx}`}>
+        <h2 className="objectlist-list__header">{column.header}:</h2>
+        <div className="objectlist-list__body">{data[column.dataKey]}</div>
       </div>
     ))
   }
 
   render() {
     return (
-      <li className="apilist-list__item">
-        <a href={this.props.data.url || '#'} className="apilist-list__link">View</a>
+      <li className="objectlist-list__item">
+        <a href={this.props.data.url || '#'} className="objectlist-list__link">View</a>
         {this.renderItemRows()}
       </li>
     )

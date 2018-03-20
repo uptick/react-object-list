@@ -56,7 +56,7 @@ class Search extends React.Component {
         type="text"
         value={this.state.currentValue}
         onChange={this.handleValueChange}
-        className="apilist-current-filter__active-status apilist-input"
+        className="objectlist-current-filter__active-status objectlist-input"
         placeholder="Search the table below"
       />
     )

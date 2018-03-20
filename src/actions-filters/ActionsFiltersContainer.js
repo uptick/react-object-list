@@ -103,9 +103,9 @@ class ActionsFilterContainer extends Component {
     }
     return (
       <div>
-        <div className="apilist-row apilist-row--right apilist-row--search">
+        <div className="objectlist-row objectlist-row--right objectlist-row--search">
           {search && <FiltersContainer filters={[search]} updateFilters={this.props.updateFilters} />}
-          <div className="apilist-row">
+          <div className="objectlist-row">
             <SelectFilters
               filters={this.props.filters}
               addFilter={this.props.addFilter}
@@ -126,8 +126,8 @@ class ActionsFilterContainer extends Component {
           removeFilter={this.props.removeFilter}
         />
         {/* TODO: render children below filters */}
-        <div className="apilist-row apilist-row--justify">
-          <span className="apilist-results-text">
+        <div className="objectlist-row objectlist-row--justify">
+          <span className="objectlist-results-text">
             {`${totalCount ? totalCount.toLocaleString() : 'No'} ${objectName} found`}
           </span>
           {customActions.map(action => action({

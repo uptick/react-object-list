@@ -35,7 +35,7 @@ exports[`Month Snapshots has format 1`] = `
   }
 >
   <input
-    className="apilist-input apilist-input--wide"
+    className="objectlist-input objectlist-input--wide"
     onChange={[Function]}
     onClick={[Function]}
     placeholder="Select month"
@@ -80,7 +80,7 @@ exports[`Month Snapshots has maxYear 1`] = `
   }
 >
   <input
-    className="apilist-input apilist-input--wide"
+    className="objectlist-input objectlist-input--wide"
     onChange={[Function]}
     onClick={[Function]}
     placeholder="Select month"
@@ -125,7 +125,7 @@ exports[`Month Snapshots has minYear 1`] = `
   }
 >
   <input
-    className="apilist-input apilist-input--wide"
+    className="objectlist-input objectlist-input--wide"
     onChange={[Function]}
     onClick={[Function]}
     placeholder="Select month"
@@ -170,7 +170,7 @@ exports[`Month Snapshots renders default 1`] = `
   }
 >
   <input
-    className="apilist-input apilist-input--wide"
+    className="objectlist-input objectlist-input--wide"
     onChange={[Function]}
     onClick={[Function]}
     placeholder="Select month"

@@ -102,7 +102,7 @@ class Month extends React.Component {
         <input
           ref="textInput"
           type="text"
-          className="apilist-input apilist-input--wide"
+          className="objectlist-input objectlist-input--wide"
           placeholder="Select month"
           onClick={() => {
             this.refs.monthPicker.show()

@@ -2,10 +2,10 @@
 
 exports[`Pagination Snapshots has more than maxPages 1`] = `
 <div
-  className="apilist-pagination"
+  className="objectlist-pagination"
 >
   <ul
-    className="apilist-pagination__pages"
+    className="objectlist-pagination__pages"
   >
     <Page
       active={false}
@@ -46,10 +46,10 @@ exports[`Pagination Snapshots has one page 1`] = `null`;
 
 exports[`Pagination Snapshots is loading 1`] = `
 <div
-  className="apilist-pagination"
+  className="objectlist-pagination"
 >
   <ul
-    className="apilist-pagination__pages"
+    className="objectlist-pagination__pages"
   >
     <Page
       active={false}
@@ -130,10 +130,10 @@ exports[`Pagination Snapshots is loading 1`] = `
 
 exports[`Pagination Snapshots is on first page 1`] = `
 <div
-  className="apilist-pagination"
+  className="objectlist-pagination"
 >
   <ul
-    className="apilist-pagination__pages"
+    className="objectlist-pagination__pages"
   >
     <Page
       active={false}
@@ -212,10 +212,10 @@ exports[`Pagination Snapshots is on first page 1`] = `
 
 exports[`Pagination Snapshots is on last page 1`] = `
 <div
-  className="apilist-pagination"
+  className="objectlist-pagination"
 >
   <ul
-    className="apilist-pagination__pages"
+    className="objectlist-pagination__pages"
   >
     <Page
       active={false}

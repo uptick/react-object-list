@@ -4,9 +4,9 @@ exports[`Date Snapshots has custom input format 1`] = `
 <DayPickerInput
   classNames={
     Object {
-      "container": "apilist-input__container",
+      "container": "objectlist-input__container",
       "overlay": "",
-      "overlayWrapper": "apilist-input__daypicker",
+      "overlayWrapper": "objectlist-input__daypicker",
     }
   }
   clickUnselectsDay={true}
@@ -26,7 +26,7 @@ exports[`Date Snapshots has custom input format 1`] = `
 
 exports[`Date Snapshots has custom relative date options 1`] = `
 <Select
-  className="apilist-current-filter__active-status"
+  className="objectlist-current-filter__active-status"
   clearable={false}
   onChange={[Function]}
   options={
@@ -53,9 +53,9 @@ exports[`Date Snapshots renders default 1`] = `
 <DayPickerInput
   classNames={
     Object {
-      "container": "apilist-input__container",
+      "container": "objectlist-input__container",
       "overlay": "",
-      "overlayWrapper": "apilist-input__daypicker",
+      "overlayWrapper": "objectlist-input__daypicker",
     }
   }
   clickUnselectsDay={true}
@@ -75,7 +75,7 @@ exports[`Date Snapshots renders default 1`] = `
 
 exports[`Date Snapshots renders with relative comparison 1`] = `
 <Select
-  className="apilist-current-filter__active-status"
+  className="objectlist-current-filter__active-status"
   clearable={false}
   onChange={[Function]}
   options={

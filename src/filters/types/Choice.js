@@ -78,7 +78,7 @@ class Choice extends React.Component {
         valueKey={valueKey}
         labelKey={labelKey}
         optionRenderer={optionRenderer}
-        className="apilist-current-filter__active-status"
+        className="objectlist-current-filter__active-status"
       />
     )
   }

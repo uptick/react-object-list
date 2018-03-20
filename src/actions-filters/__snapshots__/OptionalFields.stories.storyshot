@@ -26,10 +26,10 @@ exports[`Storyshots npm-list/OptionalFields default view 1`] = `
         }
       >
         <div
-          className="apilist-dropdown"
+          className="objectlist-dropdown"
         >
           <button
-            className="apilist-button apilist-button--dropdown apilist-button--borderless"
+            className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
               className="fa fa-list"
@@ -37,85 +37,85 @@ exports[`Storyshots npm-list/OptionalFields default view 1`] = `
              Change columns
           </button>
           <div
-            className="apilist-dropdown__menu apilist-dropdown__menu--borderless"
+            className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
           >
             <button
-              className="apilist-dropdown__item"
+              className="objectlist-dropdown__item"
               onClick={[Function]}
             >
               <i
                 aria-hidden="true"
-                className="fa fa-check-square-o apilist-dropdown__icon"
+                className="fa fa-check-square-o objectlist-dropdown__icon"
               />
               Apple
             </button>
             <button
-              className="apilist-dropdown__item"
+              className="objectlist-dropdown__item"
               onClick={[Function]}
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o apilist-dropdown__icon"
+                className="fa fa-square-o objectlist-dropdown__icon"
               />
               Cat
             </button>
             <button
-              className="apilist-dropdown__item"
+              className="objectlist-dropdown__item"
               onClick={[Function]}
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o apilist-dropdown__icon"
+                className="fa fa-square-o objectlist-dropdown__icon"
               />
               Dragon
             </button>
             <button
-              className="apilist-dropdown__item"
+              className="objectlist-dropdown__item"
               onClick={[Function]}
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o apilist-dropdown__icon"
+                className="fa fa-square-o objectlist-dropdown__icon"
               />
               Elephant
             </button>
             <button
-              className="apilist-dropdown__item"
+              className="objectlist-dropdown__item"
               onClick={[Function]}
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o apilist-dropdown__icon"
+                className="fa fa-square-o objectlist-dropdown__icon"
               />
               Frappuccino
             </button>
             <button
-              className="apilist-dropdown__item"
+              className="objectlist-dropdown__item"
               onClick={[Function]}
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o apilist-dropdown__icon"
+                className="fa fa-square-o objectlist-dropdown__icon"
               />
               Grizzly Bear
             </button>
             <button
-              className="apilist-dropdown__item"
+              className="objectlist-dropdown__item"
               onClick={[Function]}
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o apilist-dropdown__icon"
+                className="fa fa-square-o objectlist-dropdown__icon"
               />
               Heaps Good Ay
             </button>
             <button
-              className="apilist-dropdown__item"
+              className="objectlist-dropdown__item"
               onClick={[Function]}
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o apilist-dropdown__icon"
+                className="fa fa-square-o objectlist-dropdown__icon"
               />
               I'm just waitin' for a mate
             </button>

@@ -2,21 +2,21 @@
 
 exports[`Currency Snapshots renders default 1`] = `
 <div
-  className="apilist-currency-filter apilist-current-filter__active-status"
+  className="objectlist-currency-filter objectlist-current-filter__active-status"
 >
   <span
-    className="apilist-currency-filter__symbol"
+    className="objectlist-currency-filter__symbol"
   >
     $
   </span>
   <input
-    className="apilist-input apilist-input--currency"
+    className="objectlist-input objectlist-input--currency"
     onChange={[Function]}
     type="text"
     value="25.08"
   />
   <span
-    className="apilist-currency-filter__decimal"
+    className="objectlist-currency-filter__decimal"
   >
     .00
   </span>
@@ -25,21 +25,21 @@ exports[`Currency Snapshots renders default 1`] = `
 
 exports[`Currency Snapshots renders with custom currency symbol 1`] = `
 <div
-  className="apilist-currency-filter apilist-current-filter__active-status"
+  className="objectlist-currency-filter objectlist-current-filter__active-status"
 >
   <span
-    className="apilist-currency-filter__symbol"
+    className="objectlist-currency-filter__symbol"
   >
     %
   </span>
   <input
-    className="apilist-input apilist-input--currency"
+    className="objectlist-input objectlist-input--currency"
     onChange={[Function]}
     type="text"
     value="25.08"
   />
   <span
-    className="apilist-currency-filter__decimal"
+    className="objectlist-currency-filter__decimal"
   >
     .00
   </span>

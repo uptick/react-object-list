@@ -72,7 +72,7 @@ const makeFilter = (Renderer) => {
     render() {
       const {name, comparison, comparisonOptions, value, permanent, ...otherProps} = this.props
       return (
-        <div className="apilist-row">
+        <div className="objectlist-row">
           {name && <FilterLabel label={name} />}
           {!!comparisonOptions.length && (
             <FilterComparison

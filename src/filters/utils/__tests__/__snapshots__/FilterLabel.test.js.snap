@@ -2,7 +2,7 @@
 
 exports[`FilterLabel Snapshots renders default 1`] = `
 <label
-  className="apilist-current-filter__filter-name"
+  className="objectlist-current-filter__filter-name"
 >
   test
   :

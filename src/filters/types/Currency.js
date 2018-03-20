@@ -28,16 +28,16 @@ class Currency extends React.Component {
   render() {
     const {value, currencySymbol} = this.props
     return (
-      <div className="apilist-currency-filter apilist-current-filter__active-status">
-        <span className="apilist-currency-filter__symbol">{currencySymbol}</span>
+      <div className="objectlist-currency-filter objectlist-current-filter__active-status">
+        <span className="objectlist-currency-filter__symbol">{currencySymbol}</span>
         <input
           ref="input"
           type="text"
-          className="apilist-input apilist-input--currency"
+          className="objectlist-input objectlist-input--currency"
           value={value}
           onChange={this.handleValueChange}
         />
-        <span className="apilist-currency-filter__decimal">.00</span>
+        <span className="objectlist-currency-filter__decimal">.00</span>
       </div>
     )
   }

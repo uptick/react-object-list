@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
- * Provided links to edit/view the current item (usually inside an ApiList)
+ * Provided links to edit/view the current item (usually inside an objectlist)
  * generate the links required
  */
 class Links extends React.Component {

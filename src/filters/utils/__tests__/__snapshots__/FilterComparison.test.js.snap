@@ -2,7 +2,7 @@
 
 exports[`FilterComparison Snapshots renders default 1`] = `
 <div
-  className="apilist-current-filter__filter-comparison"
+  className="objectlist-current-filter__filter-comparison"
 >
   <Select
     clearable={false}

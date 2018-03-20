@@ -96,8 +96,8 @@ export default class Pagination extends React.Component {
       )
     }
     return (
-      <div className="apilist-pagination">
-        <ul className="apilist-pagination__pages">
+      <div className="objectlist-pagination">
+        <ul className="objectlist-pagination__pages">
           {prevLink}
           {pages}
           {nextLink}

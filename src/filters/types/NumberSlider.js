@@ -51,10 +51,10 @@ class NumberSlider extends React.Component {
 
   render() {
     return (
-      <div className="apilist-row apilist-current-filter__active-status">
+      <div className="objectlist-row objectlist-current-filter__active-status">
         <input
           type="number"
-          className="apilist-input apilist-input__number-slider--number"
+          className="objectlist-input objectlist-input__number-slider--number"
           min={this.props.min}
           max={this.props.max}
           value={this.state.currentValue}
@@ -62,7 +62,7 @@ class NumberSlider extends React.Component {
         />
         <input
           type="range"
-          className="apilist-input__number-slider--slider"
+          className="objectlist-input__number-slider--slider"
           value={this.state.currentValue}
           onChange={this.handleSliderValueChange}
           onMouseUp={this.handleValueChange}

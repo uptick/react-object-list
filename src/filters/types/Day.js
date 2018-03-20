@@ -44,12 +44,12 @@ class Day extends React.Component {
 
   render() {
     return (
-      <div className="apilist-dayfilter">
-        <button className="apilist-button" onClick={this.handlePreviousClick}>
+      <div className="objectlist-dayfilter">
+        <button className="objectlist-button" onClick={this.handlePreviousClick}>
           &larr; Previous
         </button>
-        <h3 className="apilist-dayfilter__day-name">{this.props.value.format('dddd MMMM Do YYYY')}</h3>
-        <button className="apilist-button" onClick={this.handleNextClick}>
+        <h3 className="objectlist-dayfilter__day-name">{this.props.value.format('dddd MMMM Do YYYY')}</h3>
+        <button className="objectlist-button" onClick={this.handleNextClick}>
           Next &rarr;
         </button>
       </div>

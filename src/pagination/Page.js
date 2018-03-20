@@ -35,13 +35,13 @@ export default class Page extends React.Component {
     return (
       <li
         key={`page-${page}`}
-        className={ClassNames('apilist-pagination__page', {
+        className={ClassNames('objectlist-pagination__page', {
           active: active && !disabled,
           disabled: disabled,
         })}
         onClick={this.handlePageClick}
       >
-        <a className="apilist-pagination__page--link" href="#">
+        <a className="objectlist-pagination__page--link" href="#">
           {label || page.toLocaleString()}
         </a>
       </li>
