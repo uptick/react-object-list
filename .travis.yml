@@ -1,5 +1,5 @@
 language: node_js
-node: 8.4
+node_js: 8.4
 
 install:
   - npm install -g eslint eslint-plugin-promise eslint-plugin-standard eslint-config-standard eslint-config-standard-react eslint-config-standard-jsx eslint-plugin-react eslint-plugin-babel babel-eslint eslint-plugin-import eslint-plugin-node
