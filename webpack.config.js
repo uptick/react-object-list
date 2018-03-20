@@ -15,8 +15,8 @@ module.exports = {
     cells: path.resolve('src', 'types', 'index.js'),
   },
   output: {
-    path: path.resolve('dist'),
-    filename: '[name].[chunkhash].js',
+    path: path.resolve(__dirname),
+    filename: '[name].js',
   },
   module: {
     rules: [{

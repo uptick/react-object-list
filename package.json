@@ -1,5 +1,5 @@
 {
-  "name": "npm-list",
+  "name": "react-object-list",
   "version": "0.0.1",
   "description": "React component to display an array of object data in a filterable view",
   "repository": {
@@ -7,8 +7,8 @@
     "type": "git"
   },
   "bugs": "https://github.com/uptick/react-object-list/issues",
-  "files": ["src/index.js", "src/main.sass"],
-  "main": "src/index.js",
+  "files": ["main.js", "src/main.sass", "filters.js", "cells.js", "renderers.js"],
+  "main": "main.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development",

@@ -1,3 +1,7 @@
 node_modules/
 dist/
 demo-site/_site/
+cells.js
+filters.js
+main.js
+renderers.js
