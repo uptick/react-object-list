@@ -11,9 +11,9 @@ install:
 
 script:
   - if [ $TASK == jest ]; then
-      npm test
+      npm test;
     elif [ $TASK == eslint ]; then
-      eslint src/
+      eslint src/;
     fi
 
 branches:
