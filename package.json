@@ -1,7 +1,13 @@
 {
   "name": "npm-list",
   "version": "0.0.1",
-  "description": "",
+  "description": "React component to display an array of object data in a filterable view",
+  "repository": {
+    "url": "https://github.com/uptick/react-object-list",
+    "type": "git"
+  },
+  "bugs": "https://github.com/uptick/react-object-list/issues",
+  "files": ["src/index.js", "src/main.sass"],
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -9,7 +15,7 @@
     "test": "jest",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
-  "author": "Uptick Pty Ltd",
+  "author": "Uptick Pty Ltd (http://uptickhq.com)",
   "license": "MIT",
   "devDependencies": {
     "@storybook/addon-info": "^3.3.15",
