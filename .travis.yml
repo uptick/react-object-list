@@ -12,7 +12,7 @@ install:
 script:
   - if [ $TASK == jest ]; then
       npm test
-    elif [ $TASK == jest ]; then
+    elif [ $TASK == eslint ]; then
       eslint src/
     fi
 
