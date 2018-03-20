@@ -5,7 +5,7 @@ exports[`<SelectAllAction /> Snapshot does not render with no props 1`] = `<div 
 exports[`<SelectAllAction /> Snapshot shows a spinner when select all is pending 1`] = `
 <div>
   <a
-    className="apilist-button apilist-button--link"
+    className="objectlist-button objectlist-button--link"
     href="#"
     onClick={[Function]}
   >
@@ -17,7 +17,7 @@ exports[`<SelectAllAction /> Snapshot shows a spinner when select all is pending
 exports[`<SelectAllAction /> Snapshot shows both select all and deselect 1`] = `
 <div>
   <a
-    className="apilist-button apilist-button--link"
+    className="objectlist-button objectlist-button--link"
     href="#"
     onClick={[Function]}
   >
@@ -29,7 +29,7 @@ exports[`<SelectAllAction /> Snapshot shows both select all and deselect 1`] = `
 exports[`<SelectAllAction /> Snapshot shows deselect all when all the items are selected 1`] = `
 <div>
   <a
-    className="apilist-button apilist-button--link"
+    className="objectlist-button objectlist-button--link"
     href="#"
     onClick={[Function]}
   >
@@ -41,7 +41,7 @@ exports[`<SelectAllAction /> Snapshot shows deselect all when all the items are 
 exports[`<SelectAllAction /> Snapshot shows deselect all when some of the items are selected 1`] = `
 <div>
   <a
-    className="apilist-button apilist-button--link"
+    className="objectlist-button objectlist-button--link"
     href="#"
     onClick={[Function]}
   >

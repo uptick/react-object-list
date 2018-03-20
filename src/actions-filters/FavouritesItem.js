@@ -39,14 +39,14 @@ export default class FavouritesItem extends React.Component {
   render() {
     return (
       <div
-        className={ClassNames('apilist-dropdown__item', {
-          'apilist-dropdown__item--selected': this.props.isSelected,
+        className={ClassNames('objectlist-dropdown__item', {
+          'objectlist-dropdown__item--selected': this.props.isSelected,
         })}
         onClick={this.handleClick}>
         <span>
           {this.props.name}
         </span>
-        <i onClick={this.handleDelete} className="fa fa-trash-o apilist-delete" />
+        <i onClick={this.handleDelete} className="fa fa-trash-o objectlist-delete" />
       </div>
     )
   }

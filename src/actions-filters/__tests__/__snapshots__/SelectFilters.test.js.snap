@@ -2,7 +2,7 @@
 
 exports[`<SelectFilters /> Snapshot renders correctly 1`] = `
 <ReactSelect
-  className="apilist-select-filter"
+  className="objectlist-select-filter"
   labelKey="name"
   menuContainerStyle={
     Object {

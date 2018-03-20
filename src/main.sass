@@ -1,7 +1,7 @@
-@import '../node_modules/react-select/dist/react-select'
-@import '../node_modules/font-awesome/css/font-awesome.min'
-@import '../node_modules/react-month-picker/css/month-picker'
-@import '../node_modules/react-day-picker/lib/style'
+@import '~react-select/dist/react-select'
+@import '~font-awesome/css/font-awesome.min'
+@import '~react-month-picker/css/month-picker'
+@import '~react-day-picker/lib/style'
 @import 'input-range'
 @import 'colours'
 
@@ -17,7 +17,7 @@ $small-flex-basis: $small-flex * 100px
 $large-flex-basis: $large-flex * 100px
 $huge-flex-basis: $huge-flex * 100px
 
-.apilist-button
+.objectlist-button
   background-color: $global-background-color
   border: $border
   border-radius: $radius
@@ -33,8 +33,8 @@ $huge-flex-basis: $huge-flex * 100px
     border: none
 
 $input-height: 36px - $spacing - ($border-width * 2)
-.apilist-input__container > input,
-.apilist-input
+.objectlist-input__container > input,
+.objectlist-input
   position: relative
   font-family: $font
   height: $input-height
@@ -49,7 +49,7 @@ $input-height: 36px - $spacing - ($border-width * 2)
   &__favourite
     height: auto
 
-.apilist-input__daypicker
+.objectlist-input__daypicker
   position: absolute
   top: $input-height * 2.5
   right: 0
@@ -57,17 +57,17 @@ $input-height: 36px - $spacing - ($border-width * 2)
   background: $global-background-color
   border-radius: $radius
 
-.apilist-input--big
+.objectlist-input--big
   line-height: 2em
   margin: $spacing
   padding: $spacing
 
-.apilist-delete
+.objectlist-delete
   cursor: pointer
   display: block
   margin-left: 0.5rem
 
-.apilist-filters
+.objectlist-filters
   margin: $spacing
   // React select specific
   .Select-control
@@ -81,26 +81,26 @@ $input-height: 36px - $spacing - ($border-width * 2)
     vertical-align: initial
     width: 200px
 
-.apilist-button--link
+.objectlist-button--link
   background-color: initial
   border: none
   text-decoration: underline
   color: $link-color
 
-.apilist-dropdown
+.objectlist-dropdown
   font-family: $font
   position: relative
   display: inline-block
   &.open
-    .apilist-dropdown__menu
+    .objectlist-dropdown__menu
       display: block
 
-.apilist-dropdown__divider
+.objectlist-dropdown__divider
   height: 1px
   background: $border-color
   margin: $radius 0
 
-.apilist-dropdown__menu
+.objectlist-dropdown__menu
   background-color: $global-background-color
   position: absolute
   display: none
@@ -111,11 +111,11 @@ $input-height: 36px - $spacing - ($border-width * 2)
   right: 0
   z-index: 10
 
-.apilist-dropdown__menu--borderless
+.objectlist-dropdown__menu--borderless
   top: calc(100% - 10px)
   right: 8px
 
-.apilist-dropdown__item
+.objectlist-dropdown__item
   display: flex
   justify-content: space-between
   width: 100%
@@ -133,13 +133,13 @@ $input-height: 36px - $spacing - ($border-width * 2)
   &--input
     padding: 0px 4px
 
-.apilist-dropdown__item--selected
+.objectlist-dropdown__item--selected
   background-color: $dropdown-selected-color
 
-.apilist-dropdown__icon
+.objectlist-dropdown__icon
   padding-right: 5px
 
-.apilist-row
+.objectlist-row
   font-family: $font
   display: flex
   align-items: center
@@ -158,31 +158,31 @@ $input-height: 36px - $spacing - ($border-width * 2)
     .container
       margin-bottom: initial
 
-.apilist-row--search
+.objectlist-row--search
   // permanent search filter
-  .apilist-input
+  .objectlist-input
     height: auto
     padding: $spacing
     line-height: 2em
 
-.apilist-row--right
+.objectlist-row--right
   justify-content: flex-end
 
-.apilist-row--justify
+.objectlist-row--justify
   justify-content: space-between
 
-.apilist--grow
+.objectlist--grow
   flex-grow: $small-flex
 
-.apilist--grow-long
+.objectlist--grow-long
   flex-grow: $huge-flex
 
-.apilist-results-text
+.objectlist-results-text
   color: $text-muted-color
   font-style: italic
   margin: $spacing
 
-.apilist-button--dropdown
+.objectlist-button--dropdown
   margin: 0
   &:after
     content: "\f0d7"
@@ -193,26 +193,26 @@ $input-height: 36px - $spacing - ($border-width * 2)
   &:focus
     outline: 0
 
-.apilist-button--favourites
+.objectlist-button--favourites
   margin-left: $spacing
 
-.apilist-button--icon
+.objectlist-button--icon
   padding-right: $spacing
   color: $icon-color
 
-.apilist-button--primary
+.objectlist-button--primary
   background-color: $primary-button-color
   color: $global-background-color
 
-.apilist-button--small
+.objectlist-button--small
   padding: 0px 5px
   font-size: 0.8em
   margin: 2px
 
-.apilist-button--borderless
+.objectlist-button--borderless
   border: none
 
-.apilist-select-filter
+.objectlist-select-filter
   font-family: $font
   min-width: 150px
   margin-left: $spacing
@@ -251,39 +251,39 @@ $input-height: 36px - $spacing - ($border-width * 2)
     border-radius: 4px
     margin-top: 2px
 
-.apilist-current-filter__filter-name
+.objectlist-current-filter__filter-name
   margin: $spacing
   min-width: 150px
 
-.apilist-current-filter__filter-comparison
+.objectlist-current-filter__filter-comparison
   margin: $spacing
   flex-basis: $small-flex-basis
   flex-grow: $small-flex
   min-width: 160px
 
-.apilist-current-filter__active-status
+.objectlist-current-filter__active-status
   margin: $spacing
   flex-basis: $large-flex-basis
   flex-grow: $large-flex
 
-.apilist-button--delete::after
+.objectlist-button--delete::after
   content: "\f056"
   font-family: "fontawesome"
 
-.apilist-dayfilter
+.objectlist-dayfilter
   width: 100%
   display: flex
   align-items: center
   justify-content: space-between
 
-.apilist-dayfilter__day-name
+.objectlist-dayfilter__day-name
   display: inline
 
-.apilist-currency-filter
+.objectlist-currency-filter
   position: relative
   display: flex
 
-.apilist-currency-filter__symbol
+.objectlist-currency-filter__symbol
   position: absolute
   background: $table-row-background
   border-top-left-radius: 4px
@@ -291,12 +291,12 @@ $input-height: 36px - $spacing - ($border-width * 2)
   padding: 0px 5px
   line-height: 36px
 
-.apilist-input--currency
+.objectlist-input--currency
   padding-left: 1.3rem
   padding-right: 2rem
   flex-grow: 1
 
-.apilist-currency-filter__decimal
+.objectlist-currency-filter__decimal
   position: absolute
   right: 0px
   background: $table-row-background
@@ -305,51 +305,51 @@ $input-height: 36px - $spacing - ($border-width * 2)
   padding: 0px 5px
   line-height: 36px
 
-.apilist-input__number-slider--number
+.objectlist-input__number-slider--number
   width: 4rem
   margin-right: 0.2rem
 
-.apilist-input__number-slider--slider
+.objectlist-input__number-slider--slider
   flex-grow: 1
 
-.apilist-pagination
+.objectlist-pagination
   line-height: 1.2em
   display: flex
   align-items: center
   flex-direction: column
   font-family: $font
 
-.apilist-pagination__pages
+.objectlist-pagination__pages
   display: flex
   padding: inherit
   flex-wrap: wrap
   list-style-type: none
 
-.apilist-pagination__page
-  &:first-child .apilist-pagination__page--link
+.objectlist-pagination__page
+  &:first-child .objectlist-pagination__page--link
     border-bottom-left-radius: 0.25rem
     border-top-left-radius: 0.25rem
-  &:last-child .apilist-pagination__page--link
+  &:last-child .objectlist-pagination__page--link
     border-bottom-right-radius: 0.25rem
     border-top-right-radius: 0.25rem
 
-.apilist-pagination__page.disabled
-  .apilist-pagination__page--link
+.objectlist-pagination__page.disabled
+  .objectlist-pagination__page--link
     color: $nav-color-disabled
     font-weight: lighter
     cursor: default
     background: white
     text-decoration: none
 
-.apilist-pagination__page.active
-  .apilist-pagination__page--link
+.objectlist-pagination__page.active
+  .objectlist-pagination__page--link
     border-color: $active-colour
     background-color: $active-colour
     color: white
     z-index: 5
     cursor: default
 
-.apilist-pagination__page--link
+.objectlist-pagination__page--link
   border: $border
   padding: 0.5rem 0.75rem
   text-decoration: none
@@ -362,32 +362,32 @@ $input-height: 36px - $spacing - ($border-width * 2)
   &:active
     color: $nav-active-colour
 
-.apilist-pagination__records
+.objectlist-pagination__records
   color: $nav-color-disabled
   font-weight: lighter
 
-.apilist-table
+.objectlist-table
   min-width: 100%
   border-collapse: collapse
   font-family: $font
   [role="button"]
     cursor: pointer
 
-.apilist-table--scroll
+.objectlist-table--scroll
   padding: 0 $spacing
   overflow-x: auto
 
-.apilist-table__row:nth-of-type(odd)
+.objectlist-table__row:nth-of-type(odd)
   background-color: $table-row-background
 
-.apilist-table__td, .apilist-table__th
+.objectlist-table__td, .objectlist-table__th
   border-top: $border
   padding: 0.7rem
 
-.apilist-table__th--selector
+.objectlist-table__th--selector
   width: 1rem
 
-.apilist-table__th
+.objectlist-table__th
   text-align: left
   border-bottom: 2px solid $border-color
   position: relative
@@ -402,29 +402,29 @@ $input-height: 36px - $spacing - ($border-width * 2)
       border-right: 1px solid #efefef
 
 
-.apilist-list__list
+.objectlist-list__list
   padding: 0 $spacing
   font-family: $font
 
-.apilist-list__item
+.objectlist-list__item
   padding: $spacing
   border: $border
   list-style-type: none
   margin: 1em 0
   position: relative
 
-.apilist-list__link
+.objectlist-list__link
   position: absolute
   top: 0.5em
   right: 0.5em
   color: $nav-link-colour
 
-.apilist-list__header
+.objectlist-list__header
   margin: 0
   font-size: 1.3em
   margin-bottom: 0.2em
 
-.apilist-list__content
+.objectlist-list__content
   margin-bottom: 1em
   &:last-child
     margin-bottom: 0

@@ -63,9 +63,9 @@ export default class TableRenderer extends Component {
     return data.map((row, rowIndex) => {
       const selected = row.id in selection
       return (
-        <tr key={`row-${rowIndex}`} className="apilist-table__row">
+        <tr key={`row-${rowIndex}`} className="objectlist-table__row">
           {select && (
-            <td className="apilist-table__td">
+            <td className="objectlist-table__td">
               <Selector
                 toggleSelect={select}
                 selected={selected}
@@ -94,7 +94,7 @@ export default class TableRenderer extends Component {
               i++
             }
             return (
-              <td key={`${rowIndex}-${cellIndex}`} className="apilist-table__td">
+              <td key={`${rowIndex}-${cellIndex}`} className="objectlist-table__td">
                 {RenderedItems}
               </td>
             )
@@ -107,12 +107,12 @@ export default class TableRenderer extends Component {
   render() {
     const {selection, data, select} = this.props
     return (
-      <div className="apilist-table--scroll">
-        <table className="apilist-table">
+      <div className="objectlist-table--scroll">
+        <table className="objectlist-table">
           <thead>
             <tr>
               {select && (
-                <th className="apilist-table__th apilist-table__th--selector">
+                <th className="objectlist-table__th objectlist-table__th--selector">
                   <AllSelector
                     allSelected={Object.keys(selection).length >= data.length}
                     toggleSelectAll={() => select(data.map(row => row.id))}

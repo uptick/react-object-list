@@ -34,7 +34,7 @@ class SelectFilters extends Component {
         labelKey="name"
         onChange={this.props.addFilter}
         placeholder="Add Filter"
-        className="apilist-select-filter"
+        className="objectlist-select-filter"
         menuStyle={{maxHeight: '500px'}}
         menuContainerStyle={{maxHeight: '500px'}}
       />

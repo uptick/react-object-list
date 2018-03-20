@@ -9,7 +9,7 @@ class AllSelector extends React.Component {
   static propTypes = {
     /** wether or not all items in the list are selected and hence this component is checked */
     allSelected: PropTypes.bool,
-    /** callback function passed down from the ApiList to select all items in a list */
+    /** callback function passed down from the objectlist to select all items in a list */
     toggleSelectAll: PropTypes.func,
   }
 

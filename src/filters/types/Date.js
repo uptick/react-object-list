@@ -82,8 +82,8 @@ class Date extends React.Component {
           placeholder={value}
           format="DD/MM/YYYY"
           classNames={{
-            container: 'apilist-input__container',
-            overlayWrapper: 'apilist-input__daypicker',
+            container: 'objectlist-input__container',
+            overlayWrapper: 'objectlist-input__daypicker',
             overlay: '',
           }}
           onDayChange={this.handleDateValueChange}
@@ -103,7 +103,7 @@ class Date extends React.Component {
           onChange={this.handleDateRelativeChange}
           value={this.props.value}
           clearable={false}
-          className="apilist-current-filter__active-status"
+          className="objectlist-current-filter__active-status"
         />
       )
     }

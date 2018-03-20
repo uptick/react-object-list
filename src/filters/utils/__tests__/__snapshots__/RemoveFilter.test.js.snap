@@ -2,7 +2,7 @@
 
 exports[`RemoveFilter Snapshots renders default 1`] = `
 <button
-  className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+  className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
   onClick={[MockFunction]}
 />
 `;

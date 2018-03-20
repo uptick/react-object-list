@@ -2,7 +2,7 @@
 
 exports[`Table Header Snapshots renders correctly 1`] = `
 <th
-  className="apilist-table__th "
+  className="objectlist-table__th "
   width={undefined}
 >
   <HeaderField
@@ -19,7 +19,7 @@ exports[`Table Header Snapshots renders correctly 1`] = `
 
 exports[`Table Header Snapshots renders correctly with multiple header items 1`] = `
 <th
-  className="apilist-table__th "
+  className="objectlist-table__th "
   width={undefined}
 >
   <HeaderField

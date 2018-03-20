@@ -2,10 +2,10 @@
 
 exports[`<OptionalFields /> Snapshot renders correctly 1`] = `
 <div
-  className="apilist-dropdown"
+  className="objectlist-dropdown"
 >
   <button
-    className="apilist-button apilist-button--dropdown apilist-button--borderless"
+    className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
   >
     <i
       className="fa fa-list"
@@ -13,17 +13,17 @@ exports[`<OptionalFields /> Snapshot renders correctly 1`] = `
      Change columns
   </button>
   <div
-    className="apilist-dropdown__menu apilist-dropdown__menu--borderless"
+    className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
   >
     <OptionalField
-      className="apilist-dropdown__item"
+      className="objectlist-dropdown__item"
       enabled={true}
       fieldKey="a"
       name="Apple"
       onChange={[MockFunction]}
     />
     <OptionalField
-      className="apilist-dropdown__item"
+      className="objectlist-dropdown__item"
       enabled={false}
       fieldKey="c"
       name="Cat"
@@ -35,10 +35,10 @@ exports[`<OptionalFields /> Snapshot renders correctly 1`] = `
 
 exports[`<OptionalFields /> Snapshot renders correctly 2`] = `
 <div
-  className="apilist-dropdown open"
+  className="objectlist-dropdown open"
 >
   <button
-    className="apilist-button apilist-button--dropdown apilist-button--borderless open"
+    className="objectlist-button objectlist-button--dropdown objectlist-button--borderless open"
   >
     <i
       className="fa fa-list"
@@ -46,17 +46,17 @@ exports[`<OptionalFields /> Snapshot renders correctly 2`] = `
      Change columns
   </button>
   <div
-    className="apilist-dropdown__menu apilist-dropdown__menu--borderless"
+    className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
   >
     <OptionalField
-      className="apilist-dropdown__item"
+      className="objectlist-dropdown__item"
       enabled={true}
       fieldKey="a"
       name="Apple"
       onChange={[MockFunction]}
     />
     <OptionalField
-      className="apilist-dropdown__item"
+      className="objectlist-dropdown__item"
       enabled={false}
       fieldKey="c"
       name="Cat"

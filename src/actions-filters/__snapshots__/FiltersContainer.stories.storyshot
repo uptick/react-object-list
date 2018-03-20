@@ -11,13 +11,13 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
     }
   >
     <div
-      className="apilist--grow"
+      className="objectlist--grow"
     >
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <Select
-          className="apilist-current-filter__active-status"
+          className="objectlist-current-filter__active-status"
           labelKey="label"
           loadOptions={undefined}
           multi={false}
@@ -40,18 +40,18 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           valueKey="value"
         />
         <button
-          className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+          className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
         />
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <div
           className="month-picker "
         >
           <input
-            className="apilist-input apilist-input--wide"
+            className="objectlist-input objectlist-input--wide"
             onChange={[Function]}
             onClick={[Function]}
             placeholder="Select month"
@@ -201,15 +201,15 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           </div>
         </div>
         <button
-          className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+          className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
         />
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <div
-          className="apilist-current-filter__filter-comparison"
+          className="objectlist-current-filter__filter-comparison"
         >
           <Select
             clearable={false}
@@ -247,35 +247,35 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           />
         </div>
         <div
-          className="apilist-currency-filter apilist-current-filter__active-status"
+          className="objectlist-currency-filter objectlist-current-filter__active-status"
         >
           <span
-            className="apilist-currency-filter__symbol"
+            className="objectlist-currency-filter__symbol"
           >
             $
           </span>
           <input
-            className="apilist-input apilist-input--currency"
+            className="objectlist-input objectlist-input--currency"
             onChange={[Function]}
             type="text"
             value={undefined}
           />
           <span
-            className="apilist-currency-filter__decimal"
+            className="objectlist-currency-filter__decimal"
           >
             .00
           </span>
         </div>
         <button
-          className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+          className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
         />
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <div
-          className="apilist-current-filter__filter-comparison"
+          className="objectlist-current-filter__filter-comparison"
         >
           <Select
             clearable={false}
@@ -296,7 +296,7 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           />
         </div>
         <Select
-          className="apilist-current-filter__active-status"
+          className="objectlist-current-filter__active-status"
           labelKey="label"
           loadOptions={undefined}
           multi={false}
@@ -308,15 +308,15 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           valueKey="value"
         />
         <button
-          className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+          className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
         />
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <div
-          className="apilist-current-filter__filter-comparison"
+          className="objectlist-current-filter__filter-comparison"
         >
           <Select
             clearable={false}
@@ -337,7 +337,7 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           />
         </div>
         <Select
-          className="apilist-current-filter__active-status"
+          className="objectlist-current-filter__active-status"
           clearable={false}
           onChange={[Function]}
           options={
@@ -363,29 +363,29 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           value={undefined}
         />
         <button
-          className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+          className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
         />
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <div
-          className="apilist-dayfilter"
+          className="objectlist-dayfilter"
         >
           <button
-            className="apilist-button"
+            className="objectlist-button"
             onClick={[Function]}
           >
             ← Previous
           </button>
           <h3
-            className="apilist-dayfilter__day-name"
+            className="objectlist-dayfilter__day-name"
           >
             Saturday July 15th 2017
           </h3>
           <button
-            className="apilist-button"
+            className="objectlist-button"
             onClick={[Function]}
           >
             Next →
@@ -393,10 +393,10 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
         </div>
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <div
-          className="apilist-current-filter__filter-comparison"
+          className="objectlist-current-filter__filter-comparison"
         >
           <Select
             clearable={false}
@@ -417,7 +417,7 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           />
         </div>
         <Select
-          className="apilist-current-filter__active-status"
+          className="objectlist-current-filter__active-status"
           labelKey="label"
           loadOptions={undefined}
           multi={true}
@@ -429,15 +429,15 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           valueKey="value"
         />
         <button
-          className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+          className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
         />
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <div
-          className="apilist-current-filter__filter-comparison"
+          className="objectlist-current-filter__filter-comparison"
         >
           <Select
             clearable={false}
@@ -470,10 +470,10 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           />
         </div>
         <div
-          className="apilist-row apilist-current-filter__active-status"
+          className="objectlist-row objectlist-current-filter__active-status"
         >
           <input
-            className="apilist-input apilist-input__number-slider--number"
+            className="objectlist-input objectlist-input__number-slider--number"
             max={100}
             min={0}
             onChange={[Function]}
@@ -481,7 +481,7 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
             value=""
           />
           <input
-            className="apilist-input__number-slider--slider"
+            className="objectlist-input__number-slider--slider"
             max={100}
             min={0}
             onChange={[Function]}
@@ -491,15 +491,15 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           />
         </div>
         <button
-          className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+          className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
         />
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <input
-          className="apilist-current-filter__active-status apilist-input"
+          className="objectlist-current-filter__active-status objectlist-input"
           onChange={[Function]}
           placeholder="Search the table below"
           type="text"
@@ -507,10 +507,10 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
         />
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <div
-          className="apilist-current-filter__filter-comparison"
+          className="objectlist-current-filter__filter-comparison"
         >
           <Select
             clearable={false}
@@ -536,22 +536,22 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           />
         </div>
         <input
-          className="apilist-current-filter__active-status apilist-input"
+          className="objectlist-current-filter__active-status objectlist-input"
           onChange={[Function]}
           placeholder="Search the table below"
           type="text"
           value=""
         />
         <button
-          className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+          className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
         />
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <Select.Async
-          className="apilist-current-filter__active-status"
+          className="objectlist-current-filter__active-status"
           labelKey="label"
           loadOptions={[Function]}
           multi={false}
@@ -563,15 +563,15 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           valueKey="value"
         />
         <button
-          className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+          className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
         />
       </div>
       <div
-        className="apilist-row"
+        className="objectlist-row"
       >
         <Select.Async
-          className="apilist-current-filter__active-status"
+          className="objectlist-current-filter__active-status"
           labelKey="label"
           loadOptions={[Function]}
           multi={true}
@@ -583,7 +583,7 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
           valueKey="value"
         />
         <button
-          className="apilist-button apilist-button--delete apilist-button--icon apilist-button--borderless"
+          className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
         />
       </div>

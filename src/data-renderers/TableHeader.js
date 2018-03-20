@@ -20,7 +20,7 @@ export default class TableHeader extends React.Component {
     width: PropTypes.number,
     saveWidth: PropTypes.func,
     label: PropTypes.string,
-    /** callback function for the ApiList to set the active sorting of the data */
+    /** callback function for the objectlist to set the active sorting of the data */
     updateSorting: PropTypes.func,
     sortKeys: PropTypes.arrayOf(PropTypes.shape({
       sortKey: PropTypes.string,
@@ -97,7 +97,7 @@ export default class TableHeader extends React.Component {
     }
 
     return (
-      <th width={this.state.width} className={`apilist-table__th ${this.props.className}`}>
+      <th width={this.state.width} className={`objectlist-table__th ${this.props.className}`}>
         { headers }
         { widthHandle }
       </th>

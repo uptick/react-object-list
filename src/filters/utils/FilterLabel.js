@@ -11,7 +11,7 @@ class FilterLabel extends React.Component {
   }
   render() {
     return (
-      <label className="apilist-current-filter__filter-name">{this.props.label}:</label>
+      <label className="objectlist-current-filter__filter-name">{this.props.label}:</label>
     )
   }
 }

@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 /**
- * Renders an individual checkbox for a row inside an ApiList
+ * Renders an individual checkbox for a row inside an objectlist
  */
 class Selector extends React.Component {
   static propTypes = {
-    /** callback function passed down from the ApiList to select/unselect an individual item */
+    /** callback function passed down from the objectlist to select/unselect an individual item */
     toggleSelect: PropTypes.func,
     id: PropTypes.oneOfType([
       PropTypes.string,

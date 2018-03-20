@@ -13,13 +13,13 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
     <div>
       <div>
         <div
-          className="apilist-row apilist-row--right apilist-row--search"
+          className="objectlist-row objectlist-row--right objectlist-row--search"
         >
           <div
-            className="apilist-row"
+            className="objectlist-row"
           >
             <Select
-              className="apilist-select-filter"
+              className="objectlist-select-filter"
               labelKey="name"
               menuContainerStyle={
                 Object {
@@ -50,21 +50,21 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
           </div>
         </div>
         <div
-          className="apilist--grow"
+          className="objectlist--grow"
         />
         <div
-          className="apilist-row apilist-row--justify"
+          className="objectlist-row objectlist-row--justify"
         >
           <span
-            className="apilist-results-text"
+            className="objectlist-results-text"
           >
             258 items found
           </span>
           <div
-            className="apilist-dropdown"
+            className="objectlist-dropdown"
           >
             <button
-              className="apilist-button apilist-button--dropdown apilist-button--borderless"
+              className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
             >
               <i
                 className="fa fa-list"
@@ -72,25 +72,25 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
                Change columns
             </button>
             <div
-              className="apilist-dropdown__menu apilist-dropdown__menu--borderless"
+              className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
             >
               <button
-                className="apilist-dropdown__item"
+                className="objectlist-dropdown__item"
                 onClick={[Function]}
               >
                 <i
                   aria-hidden="true"
-                  className="fa fa-check-square-o apilist-dropdown__icon"
+                  className="fa fa-check-square-o objectlist-dropdown__icon"
                 />
                 Last Name
               </button>
               <button
-                className="apilist-dropdown__item"
+                className="objectlist-dropdown__item"
                 onClick={[Function]}
               >
                 <i
                   aria-hidden="true"
-                  className="fa fa-square-o apilist-dropdown__icon"
+                  className="fa fa-square-o objectlist-dropdown__icon"
                 />
                 IPv6
               </button>
@@ -100,15 +100,15 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
         </div>
       </div>
       <div
-        className="apilist-table--scroll"
+        className="objectlist-table--scroll"
       >
         <table
-          className="apilist-table"
+          className="objectlist-table"
         >
           <thead>
             <tr>
               <th
-                className="apilist-table__th "
+                className="objectlist-table__th "
                 width={undefined}
               >
                 <div
@@ -127,7 +127,7 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
                 </div>
               </th>
               <th
-                className="apilist-table__th "
+                className="objectlist-table__th "
                 width={undefined}
               >
                 <div
@@ -139,7 +139,7 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
                 </div>
               </th>
               <th
-                className="apilist-table__th "
+                className="objectlist-table__th "
                 width={undefined}
               >
                 <div
@@ -154,316 +154,316 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
           </thead>
           <tbody>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Cecelia
                 <br />
                 Glendzer
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 cglendzer0@biblegateway.com
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Female
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Jeff
                 <br />
                 Bletsor
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 jbletsor1@google.es
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Male
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Kessiah
                 <br />
                 Skerman
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 kskerman2@npr.org
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Female
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Aubine
                 <br />
                 Canepe
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 acanepe3@prweb.com
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Female
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Rowland
                 <br />
                 Wheatman
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 rwheatman4@about.com
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Male
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Isabeau
                 <br />
                 Franies
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 ifranies5@uol.com.br
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Female
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Alric
                 <br />
                 Dansey
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 adansey6@wikimedia.org
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Male
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Doloritas
                 <br />
                 Clampe
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 dclampe7@edublogs.org
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Female
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Garnette
                 <br />
                 Pyott
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 gpyott8@usatoday.com
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Female
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Nehemiah
                 <br />
                 Bilovus
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 nbilovus9@squidoo.com
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Male
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Ogden
                 <br />
                 Borrington
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 oborringtona@princeton.edu
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Male
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Lynette
                 <br />
                 Handscomb
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 lhandscombb@tuttocitta.it
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Female
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Barret
                 <br />
                 Borit
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 bboritc@virginia.edu
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Male
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Georgetta
                 <br />
                 Fontel
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 gfonteld@blogtalkradio.com
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Female
               </td>
             </tr>
             <tr
-              className="apilist-table__row"
+              className="objectlist-table__row"
             >
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Winnie
                 <br />
                 Deane
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 wdeaneif@bluehost.com
               </td>
               <td
-                className="apilist-table__td"
+                className="objectlist-table__td"
               >
                 Male
               </td>
@@ -472,138 +472,138 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
         </table>
       </div>
       <div
-        className="apilist-pagination"
+        className="objectlist-pagination"
       >
         <ul
-          className="apilist-pagination__pages"
+          className="objectlist-pagination__pages"
         >
           <li
-            className="apilist-pagination__page disabled"
+            className="objectlist-pagination__page disabled"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               ← Previous
             </a>
           </li>
           <li
-            className="apilist-pagination__page active"
+            className="objectlist-pagination__page active"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               1
             </a>
           </li>
           <li
-            className="apilist-pagination__page"
+            className="objectlist-pagination__page"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               2
             </a>
           </li>
           <li
-            className="apilist-pagination__page"
+            className="objectlist-pagination__page"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               3
             </a>
           </li>
           <li
-            className="apilist-pagination__page"
+            className="objectlist-pagination__page"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               4
             </a>
           </li>
           <li
-            className="apilist-pagination__page"
+            className="objectlist-pagination__page"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               5
             </a>
           </li>
           <li
-            className="apilist-pagination__page"
+            className="objectlist-pagination__page"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               6
             </a>
           </li>
           <li
-            className="apilist-pagination__page"
+            className="objectlist-pagination__page"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               7
             </a>
           </li>
           <li
-            className="apilist-pagination__page"
+            className="objectlist-pagination__page"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               8
             </a>
           </li>
           <li
-            className="apilist-pagination__page"
+            className="objectlist-pagination__page"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               9
             </a>
           </li>
           <li
-            className="apilist-pagination__page"
+            className="objectlist-pagination__page"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               10
             </a>
           </li>
           <li
-            className="apilist-pagination__page"
+            className="objectlist-pagination__page"
             onClick={[Function]}
           >
             <a
-              className="apilist-pagination__page--link"
+              className="objectlist-pagination__page--link"
               href="#"
             >
               Next →

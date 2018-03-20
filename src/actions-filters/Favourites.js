@@ -103,11 +103,11 @@ class Favourites extends Component {
     ))
 
     return (
-      <div className={ClassNames('apilist-dropdown', {
+      <div className={ClassNames('objectlist-dropdown', {
         open: this.state.favouritesOpen,
       })} ref="favouritesDropdown">
         <button
-          className={ClassNames('apilist-button--dropdown apilist-button apilist-button--favourites', {
+          className={ClassNames('objectlist-button--dropdown objectlist-button objectlist-button--favourites', {
             open: this.state.favouritesOpen,
           })}
           type="button"
@@ -115,15 +115,15 @@ class Favourites extends Component {
           <i className="fa fa-heart-o" /> Favourites
         </button>
         <div
-          className="apilist-dropdown__menu">
+          className="objectlist-dropdown__menu">
           {favourites}
-          {!!favourites.length && <div className="apilist-dropdown__divider" />}
-          <div className="apilist-dropdown__item apilist-dropdown__item--input">
+          {!!favourites.length && <div className="objectlist-dropdown__divider" />}
+          <div className="objectlist-dropdown__item objectlist-dropdown__item--input">
             <form onSubmit={this.handleAddFavourite}>
               <input
                 type="text"
                 ref="newFavouriteName"
-                className="apilist-input apilist-input__favourite"
+                className="objectlist-input objectlist-input__favourite"
                 placeholder="Save as new"
                 value={this.state.newFavouriteName}
                 onChange={this.handleFavouriteNameChange} />

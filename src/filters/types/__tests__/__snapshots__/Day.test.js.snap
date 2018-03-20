@@ -2,21 +2,21 @@
 
 exports[`Day Snapshots renders default 1`] = `
 <div
-  className="apilist-dayfilter"
+  className="objectlist-dayfilter"
 >
   <button
-    className="apilist-button"
+    className="objectlist-button"
     onClick={[Function]}
   >
     ← Previous
   </button>
   <h3
-    className="apilist-dayfilter__day-name"
+    className="objectlist-dayfilter__day-name"
   >
     Saturday July 15th 2017
   </h3>
   <button
-    className="apilist-button"
+    className="objectlist-button"
     onClick={[Function]}
   >
     Next →

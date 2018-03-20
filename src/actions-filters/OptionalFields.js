@@ -65,24 +65,24 @@ class OptionalFields extends Component {
         onChange={this.props.updateColumns}
         fieldKey={field.dataKey}
         name={field.header}
-        className="apilist-dropdown__item"
+        className="objectlist-dropdown__item"
       />
     ))
 
     if (fields.length) {
       return (
-        <div className={ClassNames('apilist-dropdown', {
+        <div className={ClassNames('objectlist-dropdown', {
           open: this.state.optionalFieldsOpen,
         })} ref="optionalFieldsDropdown">
           <button
             ref="optionalFieldsButton"
-            className={ClassNames('apilist-button apilist-button--dropdown apilist-button--borderless', {
+            className={ClassNames('objectlist-button objectlist-button--dropdown objectlist-button--borderless', {
               open: this.state.optionalFieldsOpen,
             })}
           >
             <i className="fa fa-list" /> Change columns
           </button>
-          <div className="apilist-dropdown__menu apilist-dropdown__menu--borderless">
+          <div className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless">
             {fields}
           </div>
         </div>

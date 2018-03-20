@@ -11,83 +11,83 @@ exports[`Storyshots npm-list/Data Renderers/List Renderer default Renderer 1`] =
     }
   >
     <ul
-      className="apilist-list__list"
+      className="objectlist-list__list"
     >
       <li
-        className="apilist-list__item"
+        className="objectlist-list__item"
       >
         <a
-          className="apilist-list__link"
+          className="objectlist-list__link"
           href="https://uptickhq.com"
         >
           View
         </a>
         <div
-          className="apilist-list__content"
+          className="objectlist-list__content"
         >
           <h2
-            className="apilist-list__header"
+            className="objectlist-list__header"
           >
             Item 1
             :
           </h2>
           <div
-            className="apilist-list__body"
+            className="objectlist-list__body"
           >
             Lorem Ipsum is simply dummy text
           </div>
         </div>
         <div
-          className="apilist-list__content"
+          className="objectlist-list__content"
         >
           <h2
-            className="apilist-list__header"
+            className="objectlist-list__header"
           >
             Item 2
             :
           </h2>
           <div
-            className="apilist-list__body"
+            className="objectlist-list__body"
           >
             Lorem Ipsum is simply dummy text
           </div>
         </div>
       </li>
       <li
-        className="apilist-list__item"
+        className="objectlist-list__item"
       >
         <a
-          className="apilist-list__link"
+          className="objectlist-list__link"
           href="#"
         >
           View
         </a>
         <div
-          className="apilist-list__content"
+          className="objectlist-list__content"
         >
           <h2
-            className="apilist-list__header"
+            className="objectlist-list__header"
           >
             Item 1
             :
           </h2>
           <div
-            className="apilist-list__body"
+            className="objectlist-list__body"
           >
             Lorem Ipsum is simply dummy text (card 2)
           </div>
         </div>
         <div
-          className="apilist-list__content"
+          className="objectlist-list__content"
         >
           <h2
-            className="apilist-list__header"
+            className="objectlist-list__header"
           >
             Item 2
             :
           </h2>
           <div
-            className="apilist-list__body"
+            className="objectlist-list__body"
           >
             Lorem Ipsum is simply dummy text (card 2)
           </div>
@@ -1074,7 +1074,7 @@ exports[`Storyshots npm-list/Data Renderers/List Renderer multiple items 1`] = `
     }
   >
     <ul
-      className="apilist-list__list"
+      className="objectlist-list__list"
     >
       <li
         style={
@@ -1997,7 +1997,7 @@ exports[`Storyshots npm-list/Data Renderers/List Renderer single item 1`] = `
     }
   >
     <ul
-      className="apilist-list__list"
+      className="objectlist-list__list"
     >
       <li
         style={

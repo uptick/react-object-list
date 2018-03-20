@@ -15,7 +15,7 @@ class FilterComparison extends React.Component {
   render() {
     const {options, value} = this.props
     return (
-      <div className="apilist-current-filter__filter-comparison">
+      <div className="objectlist-current-filter__filter-comparison">
         <Select
           options={options}
           value={value}

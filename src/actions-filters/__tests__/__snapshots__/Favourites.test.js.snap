@@ -2,10 +2,10 @@
 
 exports[`<Favourites /> Snapshot renders correctly 1`] = `
 <div
-  className="apilist-dropdown"
+  className="objectlist-dropdown"
 >
   <button
-    className="apilist-button--dropdown apilist-button apilist-button--favourites"
+    className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
     type="button"
   >
     <i
@@ -14,7 +14,7 @@ exports[`<Favourites /> Snapshot renders correctly 1`] = `
      Favourites
   </button>
   <div
-    className="apilist-dropdown__menu"
+    className="objectlist-dropdown__menu"
   >
     <FavouritesItem
       activeSort="-id"
@@ -39,16 +39,16 @@ exports[`<Favourites /> Snapshot renders correctly 1`] = `
       }
     />
     <div
-      className="apilist-dropdown__divider"
+      className="objectlist-dropdown__divider"
     />
     <div
-      className="apilist-dropdown__item apilist-dropdown__item--input"
+      className="objectlist-dropdown__item objectlist-dropdown__item--input"
     >
       <form
         onSubmit={[Function]}
       >
         <input
-          className="apilist-input apilist-input__favourite"
+          className="objectlist-input objectlist-input__favourite"
           onChange={[Function]}
           placeholder="Save as new"
           type="text"

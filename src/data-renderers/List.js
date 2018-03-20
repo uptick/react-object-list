@@ -53,7 +53,7 @@ export default class ListRenderer extends Component {
 
   render() {
     return (
-      <ul className={ClassNames('apilist-list__list', this.props.extraClasses)}>
+      <ul className={ClassNames('objectlist-list__list', this.props.extraClasses)}>
         {this.renderListRows()}
       </ul>
     )

@@ -28,7 +28,7 @@ export default class HeaderField extends React.Component {
   /**
    * Determines whether to sort the particular column (Field) in
    * ascending or descending order, passing the sorting key back
-   * to the ApiList
+   * to the objectlist
    *
    * @param {MouseEvent} event - event triggered from an onClick
    */

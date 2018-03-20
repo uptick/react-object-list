@@ -11,127 +11,127 @@ exports[`Storyshots npm-list/Pagination default view 1`] = `
     }
   >
     <div
-      className="apilist-pagination"
+      className="objectlist-pagination"
     >
       <ul
-        className="apilist-pagination__pages"
+        className="objectlist-pagination__pages"
       >
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             ← Previous
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             1
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             2
           </a>
         </li>
         <li
-          className="apilist-pagination__page active"
+          className="objectlist-pagination__page active"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             3
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             4
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             5
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             6
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             7
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             8
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             9
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             Next →
@@ -840,61 +840,61 @@ exports[`Storyshots npm-list/Pagination interactive 1`] = `
     }
   >
     <div
-      className="apilist-pagination"
+      className="objectlist-pagination"
     >
       <ul
-        className="apilist-pagination__pages"
+        className="objectlist-pagination__pages"
       >
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             ← Previous
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             2
           </a>
         </li>
         <li
-          className="apilist-pagination__page active"
+          className="objectlist-pagination__page active"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             3
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             4
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             Next →
@@ -1148,61 +1148,61 @@ exports[`Storyshots npm-list/Pagination loading 1`] = `
     }
   >
     <div
-      className="apilist-pagination"
+      className="objectlist-pagination"
     >
       <ul
-        className="apilist-pagination__pages"
+        className="objectlist-pagination__pages"
       >
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             ← Previous
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             2
           </a>
         </li>
         <li
-          className="apilist-pagination__page active"
+          className="objectlist-pagination__page active"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             3
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             4
           </a>
         </li>
         <li
-          className="apilist-pagination__page"
+          className="objectlist-pagination__page"
           onClick={[Function]}
         >
           <a
-            className="apilist-pagination__page--link"
+            className="objectlist-pagination__page--link"
             href="#"
           >
             Next →

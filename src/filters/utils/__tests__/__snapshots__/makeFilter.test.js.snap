@@ -2,7 +2,7 @@
 
 exports[`makeFilter Snapshots has a name 1`] = `
 <div
-  className="apilist-row"
+  className="objectlist-row"
 >
   <FilterLabel
     label="The Awesome Filter"
@@ -18,7 +18,7 @@ exports[`makeFilter Snapshots has a name 1`] = `
 
 exports[`makeFilter Snapshots renders default 1`] = `
 <div
-  className="apilist-row"
+  className="objectlist-row"
 >
   <div>
     44 tests
@@ -31,7 +31,7 @@ exports[`makeFilter Snapshots renders default 1`] = `
 
 exports[`makeFilter Snapshots renders with comparison null 1`] = `
 <div
-  className="apilist-row"
+  className="objectlist-row"
 >
   <FilterComparison
     onChange={[Function]}
@@ -65,7 +65,7 @@ exports[`makeFilter Snapshots renders with comparison null 1`] = `
 
 exports[`makeFilter Snapshots renders with comparison options 1`] = `
 <div
-  className="apilist-row"
+  className="objectlist-row"
 >
   <FilterComparison
     onChange={[Function]}
@@ -99,7 +99,7 @@ exports[`makeFilter Snapshots renders with comparison options 1`] = `
 
 exports[`makeFilter Snapshots renders with permanent true 1`] = `
 <div
-  className="apilist-row"
+  className="objectlist-row"
 >
   <div>
     44 tests

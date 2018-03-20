@@ -11,7 +11,7 @@ exports[`Storyshots npm-list/SelectFilters default view 1`] = `
     }
   >
     <Select
-      className="apilist-select-filter"
+      className="objectlist-select-filter"
       labelKey="name"
       menuContainerStyle={
         Object {
