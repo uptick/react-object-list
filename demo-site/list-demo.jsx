@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-// import NPMList from 'react-object-list'
+// import ObjectList from 'react-object-list'
 
 class ListDemo extends React.Component {
   render() {

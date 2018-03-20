@@ -793,7 +793,7 @@ exports[`Storyshots npm-list can select all 1`] = `
                 }
               >
                 &lt;
-                NPMList
+                ObjectList
               </span>
               <span>
                 <span>
@@ -1982,7 +1982,7 @@ exports[`Storyshots npm-list can select all 1`] = `
               }
             >
               "
-              NPMList
+              ObjectList
               " Component
             </h2>
             <table
@@ -3578,7 +3578,7 @@ exports[`Storyshots npm-list can select items 1`] = `
                 }
               >
                 &lt;
-                NPMList
+                ObjectList
               </span>
               <span>
                 <span>
@@ -4662,7 +4662,7 @@ exports[`Storyshots npm-list can select items 1`] = `
               }
             >
               "
-              NPMList
+              ObjectList
               " Component
             </h2>
             <table
@@ -6448,7 +6448,7 @@ exports[`Storyshots npm-list has active filters 1`] = `
                 }
               >
                 &lt;
-                NPMList
+                ObjectList
               </span>
               <span>
                 <span>
@@ -7501,7 +7501,7 @@ exports[`Storyshots npm-list has active filters 1`] = `
               }
             >
               "
-              NPMList
+              ObjectList
               " Component
             </h2>
             <table
@@ -9396,7 +9396,7 @@ exports[`Storyshots npm-list has everything 1`] = `
                 }
               >
                 &lt;
-                NPMList
+                ObjectList
               </span>
               <span>
                 <span>
@@ -10565,7 +10565,7 @@ exports[`Storyshots npm-list has everything 1`] = `
               }
             >
               "
-              NPMList
+              ObjectList
               " Component
             </h2>
             <table
@@ -12044,7 +12044,7 @@ exports[`Storyshots npm-list has multiple pages 1`] = `
                 }
               >
                 &lt;
-                NPMList
+                ObjectList
               </span>
               <span>
                 <span>
@@ -13097,7 +13097,7 @@ exports[`Storyshots npm-list has multiple pages 1`] = `
               }
             >
               "
-              NPMList
+              ObjectList
               " Component
             </h2>
             <table
@@ -14602,7 +14602,7 @@ exports[`Storyshots npm-list has optional fields 1`] = `
                 }
               >
                 &lt;
-                NPMList
+                ObjectList
               </span>
               <span>
                 <span>
@@ -15741,7 +15741,7 @@ exports[`Storyshots npm-list has optional fields 1`] = `
               }
             >
               "
-              NPMList
+              ObjectList
               " Component
             </h2>
             <table
@@ -17235,7 +17235,7 @@ exports[`Storyshots npm-list has search key 1`] = `
                 }
               >
                 &lt;
-                NPMList
+                ObjectList
               </span>
               <span>
                 <span>
@@ -18318,7 +18318,7 @@ exports[`Storyshots npm-list has search key 1`] = `
               }
             >
               "
-              NPMList
+              ObjectList
               " Component
             </h2>
             <table
@@ -19716,7 +19716,7 @@ exports[`Storyshots npm-list loading 1`] = `
                 }
               >
                 &lt;
-                NPMList
+                ObjectList
               </span>
               <span>
                 <span>
@@ -20696,7 +20696,7 @@ exports[`Storyshots npm-list loading 1`] = `
               }
             >
               "
-              NPMList
+              ObjectList
               " Component
             </h2>
             <table
@@ -22083,7 +22083,7 @@ exports[`Storyshots npm-list ready 1`] = `
                 }
               >
                 &lt;
-                NPMList
+                ObjectList
               </span>
               <span>
                 <span>
@@ -23033,7 +23033,7 @@ exports[`Storyshots npm-list ready 1`] = `
               }
             >
               "
-              NPMList
+              ObjectList
               " Component
             </h2>
             <table

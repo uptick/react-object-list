@@ -16,7 +16,7 @@ const props = {
 
 storiesOf('npm-list/Pagination', module)
   .addDecorator((story, context) => withInfo(
-    'Pagination used at the bottom of the NPMList'
+    'Pagination used at the bottom of the ObjectList'
   )(story)(context))
   .addDecorator(withKnobs)
   .add('default view', () => (

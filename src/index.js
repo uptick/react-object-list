@@ -1,3 +1,3 @@
 import './api-list.sass'
-export {COLUMN_TYPE} from './NPMList'
-export NPMList from './NPMList'
+export {COLUMN_TYPE} from './ObjectList'
+export ObjectList from './ObjectList'

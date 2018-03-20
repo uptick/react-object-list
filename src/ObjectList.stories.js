@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions'
 import * as importedFilters from './filters'
 
 import {
-  NPMList,
+  ObjectList,
 } from '.'
 
 const baseProps = {
@@ -50,7 +50,7 @@ storiesOf('npm-list', module)
     'Main list component'
   )(story)(context))
   .add('loading', () => (
-    <NPMList
+    <ObjectList
       {...baseProps}
       columns={[
         {dataKey: 'name', header: 'Name', sortable: true},
@@ -63,7 +63,7 @@ storiesOf('npm-list', module)
     />
   ))
   .add('ready', () => (
-    <NPMList
+    <ObjectList
       {...baseProps}
       columns={[
         {dataKey: 'name', header: 'Name', sortable: true},
@@ -76,7 +76,7 @@ storiesOf('npm-list', module)
     />
   ))
   .add('has multiple pages', () => (
-    <NPMList
+    <ObjectList
       {...baseProps}
       columns={[
         {dataKey: 'name', header: 'Name', sortable: true},
@@ -94,7 +94,7 @@ storiesOf('npm-list', module)
     />
   ))
   .add('has everything', () => (
-    <NPMList
+    <ObjectList
       {...baseProps}
       columns={[
         {dataKey: 'name', header: 'Name', sortable: true},
@@ -118,7 +118,7 @@ storiesOf('npm-list', module)
     />
   ))
   .add('has optional fields', () => (
-    <NPMList
+    <ObjectList
       {...baseProps}
       columns={[
         {dataKey: 'name', header: 'Name', sortable: true},
@@ -138,7 +138,7 @@ storiesOf('npm-list', module)
     />
   ))
   .add('has active filters', () => (
-    <NPMList
+    <ObjectList
       {...baseProps}
       columns={[
         {dataKey: 'name', header: 'Name', sortable: true},
@@ -159,7 +159,7 @@ storiesOf('npm-list', module)
     />
   ))
   .add('can select items', () => (
-    <NPMList
+    <ObjectList
       {...baseProps}
       columns={[
         {dataKey: 'name', header: 'Name', sortable: true},
@@ -183,7 +183,7 @@ storiesOf('npm-list', module)
       mockSelection[row.id] = true
     })
     return (
-      <NPMList
+      <ObjectList
         {...baseProps}
         columns={[
           {dataKey: 'name', header: 'Name', sortable: true},
@@ -204,7 +204,7 @@ storiesOf('npm-list', module)
     )
   })
   .add('has search key', () => (
-    <NPMList
+    <ObjectList
       {...baseProps}
       columns={[
         {dataKey: 'name', header: 'Name', sortable: true},

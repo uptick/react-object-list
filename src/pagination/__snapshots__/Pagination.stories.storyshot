@@ -279,7 +279,7 @@ exports[`Storyshots npm-list/Pagination default view 1`] = `
               }
             }
           >
-            Pagination used at the bottom of the NPMList
+            Pagination used at the bottom of the ObjectList
           </div>
         </div>
         <div>
@@ -1042,7 +1042,7 @@ exports[`Storyshots npm-list/Pagination interactive 1`] = `
               }
             }
           >
-            Pagination used at the bottom of the NPMList
+            Pagination used at the bottom of the ObjectList
           </div>
         </div>
         <div>
@@ -1352,7 +1352,7 @@ exports[`Storyshots npm-list/Pagination loading 1`] = `
               }
             }
           >
-            Pagination used at the bottom of the NPMList
+            Pagination used at the bottom of the ObjectList
           </div>
         </div>
         <div>

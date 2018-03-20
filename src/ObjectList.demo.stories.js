@@ -4,7 +4,7 @@ import { withInfo } from '@storybook/addon-info'
 import {TextContainsFilter} from './filters'
 
 import {
-  NPMList,
+  ObjectList,
 } from '.'
 
 const mockData = require('./demo.data.json')
@@ -125,7 +125,7 @@ class InteractiveObjectList extends React.Component {
 
   render() {
     const { currentPage, perPage, totalCount, sortKeys, extraColumns, data } = this.state
-    return <NPMList
+    return <ObjectList
       columns={columns}
       data={data}
       updateSorting={this.updateSorting}
