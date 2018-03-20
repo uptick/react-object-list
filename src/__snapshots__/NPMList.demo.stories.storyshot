@@ -159,7 +159,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Cecelia Glendzer
+                Cecelia
+                <br />
+                Glendzer
               </td>
               <td
                 className="apilist-table__td"
@@ -178,7 +180,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Jeff Bletsor
+                Jeff
+                <br />
+                Bletsor
               </td>
               <td
                 className="apilist-table__td"
@@ -197,7 +201,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Kessiah Skerman
+                Kessiah
+                <br />
+                Skerman
               </td>
               <td
                 className="apilist-table__td"
@@ -216,7 +222,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Aubine Canepe
+                Aubine
+                <br />
+                Canepe
               </td>
               <td
                 className="apilist-table__td"
@@ -235,7 +243,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Rowland Wheatman
+                Rowland
+                <br />
+                Wheatman
               </td>
               <td
                 className="apilist-table__td"
@@ -254,7 +264,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Isabeau Franies
+                Isabeau
+                <br />
+                Franies
               </td>
               <td
                 className="apilist-table__td"
@@ -273,7 +285,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Alric Dansey
+                Alric
+                <br />
+                Dansey
               </td>
               <td
                 className="apilist-table__td"
@@ -292,7 +306,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Doloritas Clampe
+                Doloritas
+                <br />
+                Clampe
               </td>
               <td
                 className="apilist-table__td"
@@ -311,7 +327,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Garnette Pyott
+                Garnette
+                <br />
+                Pyott
               </td>
               <td
                 className="apilist-table__td"
@@ -330,7 +348,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Nehemiah Bilovus
+                Nehemiah
+                <br />
+                Bilovus
               </td>
               <td
                 className="apilist-table__td"
@@ -349,7 +369,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Ogden Borrington
+                Ogden
+                <br />
+                Borrington
               </td>
               <td
                 className="apilist-table__td"
@@ -368,7 +390,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Lynette Handscomb
+                Lynette
+                <br />
+                Handscomb
               </td>
               <td
                 className="apilist-table__td"
@@ -387,7 +411,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Barret Borit
+                Barret
+                <br />
+                Borit
               </td>
               <td
                 className="apilist-table__td"
@@ -406,7 +432,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Georgetta Fontel
+                Georgetta
+                <br />
+                Fontel
               </td>
               <td
                 className="apilist-table__td"
@@ -425,7 +453,9 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               <td
                 className="apilist-table__td"
               >
-                Winnie Deane
+                Winnie
+                <br />
+                Deane
               </td>
               <td
                 className="apilist-table__td"

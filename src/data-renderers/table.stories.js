@@ -23,12 +23,12 @@ const mockData = [
   {id: 12, name: 'Lucy', age: 2, hobby: 'table tennis'},
 ]
 
-const customRenderer = (props) => {
-  return <strong key={`name-${props.id}`} style={{color: 'purple'}}>{props.value}</strong>
+const customRenderer = ({row: {id}, value}) => {
+  return (<strong key={`name-${id}`} style={{color: 'purple'}}>{value}</strong>)
 }
-const anotherCustomRenderer = (props) => {
+const anotherCustomRenderer = ({row: {id}, value}) => {
   return (
-    <div key={`age-${props.id}`} style={{height: '15px', width: `${props.value}%`, background: 'lightgrey'}} />
+    <div key={`age-${id}`} style={{height: '15px', width: `${value}%`, background: 'lightgrey'}} />
   )
 }
 

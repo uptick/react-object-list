@@ -37,7 +37,7 @@ export default class TableRenderer extends Component {
 
   componentWillReceiveProps(nextProps) {
     // TODO: optimise performance and only do this if the columns prop has changed
-    this.setState(() => ({columns: getVisibleColumns(setColumnLabels(nextProps.columns), nextProps.meta.extraColumns)})) 
+    this.setState(() => ({columns: getVisibleColumns(setColumnLabels(nextProps.columns), nextProps.meta.extraColumns)}))
   }
 
   _renderHeaderRowHelper = () => {
@@ -75,19 +75,27 @@ export default class TableRenderer extends Component {
           )}
           {this.state.columns.map((column, cellIndex) => {
             const toRender = Array.isArray(column) ? column : [column]
+            const RenderedItems = []
+            let i = 0
+            while (i < toRender.length) {
+              if (i > 0) {
+                RenderedItems.push(<br />)
+              }
+              const RenderItem = toRender[i]
+              if (RenderItem.item) {
+                RenderedItems.push(RenderItem.item({
+                  row: row,
+                  column: RenderItem,
+                  value: row[RenderItem.dataKey],
+                }))
+              } else {
+                RenderedItems.push(row[RenderItem.dataKey])
+              }
+              i++
+            }
             return (
               <td key={`${rowIndex}-${cellIndex}`} className="apilist-table__td">
-                {toRender.map(RenderItem => {
-                  if (RenderItem.item) {
-                    return RenderItem.item({
-                      row: row,
-                      column: RenderItem,
-                      value: row[RenderItem.dataKey],
-                    })
-                  }
-                  return row[RenderItem.dataKey]
-                }
-                ).join(' ')}
+                {RenderedItems}
               </td>
             )
           })}

@@ -69,12 +69,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Bob
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "45%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -92,12 +108,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Jim
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "34%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -115,12 +147,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Jack
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "16%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -138,12 +186,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Helen
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "9%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -161,12 +225,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Eva
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "35%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -184,12 +264,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Mary
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "18%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -207,12 +303,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Dan
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "92%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -230,12 +342,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Jo
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "72%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -253,12 +381,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Wayne
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "68%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -276,12 +420,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Dylan
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "27%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -299,12 +459,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Nina
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "51%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -322,12 +498,28 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Lucy
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "2%",
+                  }
+                }
+              />
             </td>
           </tr>
         </tbody>
@@ -1598,40 +1790,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has custom renderers 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Bob
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
-            </td>
-          </tr>
-          <tr
-            className="apilist-table__row"
-          >
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
-            </td>
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
-            </td>
-          </tr>
-          <tr
-            className="apilist-table__row"
-          >
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
-            </td>
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "45%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -1640,40 +1820,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has custom renderers 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Jim
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
-            </td>
-          </tr>
-          <tr
-            className="apilist-table__row"
-          >
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
-            </td>
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
-            </td>
-          </tr>
-          <tr
-            className="apilist-table__row"
-          >
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
-            </td>
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "34%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -1682,40 +1850,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has custom renderers 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Jack
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
-            </td>
-          </tr>
-          <tr
-            className="apilist-table__row"
-          >
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
-            </td>
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
-            </td>
-          </tr>
-          <tr
-            className="apilist-table__row"
-          >
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
-            </td>
-            <td
-              className="apilist-table__td"
-            >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "16%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -1724,12 +1880,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has custom renderers 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Helen
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "9%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -1738,12 +1910,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has custom renderers 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Eva
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "35%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -1752,12 +1940,208 @@ exports[`Storyshots npm-list/Data Renderers/Table has custom renderers 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Mary
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "18%",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            className="apilist-table__row"
+          >
+            <td
+              className="apilist-table__td"
+            >
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Dan
+              </strong>
+            </td>
+            <td
+              className="apilist-table__td"
+            >
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "92%",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            className="apilist-table__row"
+          >
+            <td
+              className="apilist-table__td"
+            >
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Jo
+              </strong>
+            </td>
+            <td
+              className="apilist-table__td"
+            >
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "72%",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            className="apilist-table__row"
+          >
+            <td
+              className="apilist-table__td"
+            >
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Wayne
+              </strong>
+            </td>
+            <td
+              className="apilist-table__td"
+            >
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "68%",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            className="apilist-table__row"
+          >
+            <td
+              className="apilist-table__td"
+            >
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Dylan
+              </strong>
+            </td>
+            <td
+              className="apilist-table__td"
+            >
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "27%",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            className="apilist-table__row"
+          >
+            <td
+              className="apilist-table__td"
+            >
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Nina
+              </strong>
+            </td>
+            <td
+              className="apilist-table__td"
+            >
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "51%",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            className="apilist-table__row"
+          >
+            <td
+              className="apilist-table__td"
+            >
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Lucy
+              </strong>
+            </td>
+            <td
+              className="apilist-table__td"
+            >
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "2%",
+                  }
+                }
+              />
             </td>
           </tr>
         </tbody>
@@ -2901,12 +3285,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Bob
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "45%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -2924,12 +3324,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Jim
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "34%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -2947,12 +3363,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Jack
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "16%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -2970,12 +3402,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Helen
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "9%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -2993,12 +3441,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Eva
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "35%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -3016,12 +3480,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Mary
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "18%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -3039,12 +3519,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Dan
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "92%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -3062,12 +3558,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Jo
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "72%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -3085,12 +3597,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Wayne
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "68%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -3108,12 +3636,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Dylan
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "27%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -3131,12 +3675,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Nina
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "51%",
+                  }
+                }
+              />
             </td>
           </tr>
           <tr
@@ -3154,12 +3714,28 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <strong
+                style={
+                  Object {
+                    "color": "purple",
+                  }
+                }
+              >
+                Lucy
+              </strong>
             </td>
             <td
               className="apilist-table__td"
             >
-              [object Object]
+              <div
+                style={
+                  Object {
+                    "background": "lightgrey",
+                    "height": "15px",
+                    "width": "2%",
+                  }
+                }
+              />
             </td>
           </tr>
         </tbody>
