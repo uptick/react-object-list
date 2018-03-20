@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import Select from 'react-select'
 
 import DayPickerInput from 'react-day-picker/DayPickerInput'
-import MomentLocaleUtils, {
+import {
   formatDate,
   parseDate,
 } from 'react-day-picker/moment'
