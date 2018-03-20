@@ -17,6 +17,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname),
     filename: '[name].js',
+    libraryTarget: 'umd',
+    library: 'react-object-list',
   },
   module: {
     rules: [{
