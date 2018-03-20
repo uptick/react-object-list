@@ -67,7 +67,11 @@ exports[`Table Snapshots renders correctly 1`] = `
         <td
           className="apilist-table__td"
         >
-          [object Object] M
+          <span>
+            25
+          </span>
+          <br />
+          M
         </td>
       </tr>
       <tr
@@ -81,7 +85,11 @@ exports[`Table Snapshots renders correctly 1`] = `
         <td
           className="apilist-table__td"
         >
-          [object Object] F
+          <span>
+            12
+          </span>
+          <br />
+          F
         </td>
       </tr>
       <tr
@@ -95,7 +103,11 @@ exports[`Table Snapshots renders correctly 1`] = `
         <td
           className="apilist-table__td"
         >
-          [object Object] ?
+          <span>
+            3
+          </span>
+          <br />
+          ?
         </td>
       </tr>
       <tr
@@ -109,7 +121,11 @@ exports[`Table Snapshots renders correctly 1`] = `
         <td
           className="apilist-table__td"
         >
-          [object Object] FM
+          <span>
+            111
+          </span>
+          <br />
+          FM
         </td>
       </tr>
       <tr
@@ -123,7 +139,11 @@ exports[`Table Snapshots renders correctly 1`] = `
         <td
           className="apilist-table__td"
         >
-          [object Object] Confused
+          <span>
+            32
+          </span>
+          <br />
+          Confused
         </td>
       </tr>
     </tbody>
