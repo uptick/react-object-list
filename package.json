@@ -9,7 +9,7 @@
   "bugs": "https://github.com/uptick/react-object-list/issues",
   "files": [
     "main.js",
-    "styles/main.sass",
+    "styles",
     "filters.js",
     "cells.js",
     "renderers.js",
