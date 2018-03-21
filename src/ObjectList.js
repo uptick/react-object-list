@@ -4,7 +4,13 @@ import PropTypes from 'prop-types'
 import ActionsFiltersContainer from './actions-filters/ActionsFiltersContainer'
 import Table from './data-renderers/Table'
 import {Pagination} from './pagination'
-import {COLUMN_TYPE, FILTER_BASE_TYPE, META_TYPE, loadingSpinner} from './utils'
+import {
+  COLUMN_TYPE,
+  FILTER_BASE_TYPE,
+  META_TYPE,
+  loadingSpinner,
+  ErrorMessage,
+} from './utils'
 
 // TODO: rename to something awesome
 class ObjectList extends Component {
@@ -20,7 +26,7 @@ class ObjectList extends Component {
     /** loading status used if data is loaded asynchronously  */
     status: PropTypes.oneOf(['loading', 'error', 'done']),
     /** provide the specific error details if there is an error */
-    error: PropTypes.objectOf(Error),
+    error: ErrorMessage.propTypes.error,
     /** array of potential filters that can be displayed inside the object-list */
     filters: PropTypes.arrayOf(PropTypes.shape({
       ...FILTER_BASE_TYPE,
@@ -101,7 +107,7 @@ class ObjectList extends Component {
       itemPluralName, itemSingleName, data, columns, updateColumns,
       favourites, handleDeleteFavourite, handleAddFavourite, favouritesEnabled,
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
-      updatePage, updateSorting, selection, selectItems, customActions,
+      updatePage, updateSorting, selection, selectItems, customActions, error,
     } = this.props
     const { totalCount, perPage, currentPage } = meta
     // TODO: implement different display depending on this.props.status ie. loading etc.
@@ -131,6 +137,9 @@ class ObjectList extends Component {
           selectAll={this.selectAll}
           deselectAll={this.deselectAll}
           customActions={customActions}
+        />
+        <ErrorMessage
+          error={error}
         />
         <DataRenderer
           data={data}

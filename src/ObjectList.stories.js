@@ -115,6 +115,28 @@ storiesOf('object-list', module)
       searchKey="text_contains"
     />
   ))
+  .add('has error', () => (
+    <ObjectList
+      {...baseProps}
+      columns={[
+        {dataKey: 'name', header: 'Name', sortable: true},
+        {dataKey: 'age', header: 'Age (years)', sortable: true},
+        {dataKey: 'favouriteColour', header: 'Favourite Colour', optional: true},
+      ]}
+      meta={{
+        totalCount: 200,
+        perPage: 20,
+        currentPage: 1,
+        extraColumns: ['favouriteColour'],
+      }}
+      data={mockData}
+      setSort={action('Set sort')}
+      status="done"
+      downloadUrl="localhost/download"
+      searchKey="text_contains"
+      error={new Error('The computer wizards have run out of mana. Please try again later.')}
+    />
+  ))
   .add('has optional fields', () => (
     <ObjectList
       {...baseProps}

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error Message default 1`] = `null`;
+
+exports[`Error Message has error 1`] = `
+<div
+  className="apilist-error"
+>
+  <i
+    className="fa fa-exclamation-triangle apilist-error__icon"
+  />
+  <span>
+    Testing
+  </span>
+</div>
+`;
