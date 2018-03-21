@@ -3,8 +3,6 @@ import { shallow } from 'enzyme'
 
 import ObjectList from '../'
 
-jest.mock('../actions-filters/ActionsFiltersContainer', () => 'ActionsFiltersContainer')
-
 describe('<ObjectList />', () => {
   describe('Functions', () => {
     const props = {
