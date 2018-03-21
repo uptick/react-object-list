@@ -9,3 +9,4 @@ utils.js
 styles/
 coverage/
 .vscode/
+.DS_Store
