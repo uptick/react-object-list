@@ -2,8 +2,6 @@ import React from 'react'
 import { snapshotTest } from 'utils/tests'
 import FilterComparison from '../FilterComparison'
 
-
-
 jest.mock('react-select')
 
 describe('FilterComparison', () => {

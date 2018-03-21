@@ -3,8 +3,6 @@ import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import WidthHandle from '../WidthHandle'
 
-
-
 describe('WidthHandle', () => {
   const defaultProps = {
     onChange: jest.fn(),

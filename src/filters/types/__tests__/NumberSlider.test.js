@@ -3,8 +3,6 @@ import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import NumberSlider from '../NumberSlider'
 
-
-
 describe('NumberSlider', () => {
   const baseProps = {
     onChange: jest.fn(),

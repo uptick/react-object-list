@@ -8,8 +8,6 @@ jest.mock('../FilterLabel', () => 'FilterLabel')
 jest.mock('../FilterComparison')
 jest.mock('../RemoveFilter', () => 'RemoveFilter')
 
-
-
 class DummyRenderer extends React.Component {
   static propTypes = {
     a: PropTypes.number,

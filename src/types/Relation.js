@@ -79,13 +79,11 @@ class Relation extends React.Component {
     return null
   }
   render() {
-    let secondaryText
-    let tag
     if (!(this.props.value && 'data' in this.props.value && this.props.value.data)) {
       return (<Empty />)
     }
-    tag = this.getPart(this.props.tag, 'tag tag-default')
-    secondaryText = this.getPart(this.props.detail, 'text-muted')
+    const tag = this.getPart(this.props.tag, 'tag tag-default')
+    const secondaryText = this.getPart(this.props.detail, 'text-muted')
     if (this.props.nested && secondaryText) {
       return secondaryText
     }

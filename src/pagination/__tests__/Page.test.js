@@ -2,11 +2,8 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import {
   snapshotTest,
-  configureEnzymeAdapter,
 } from 'utils/tests'
 import Page from '../Page.js'
-
-
 
 const mockEvent = {
   preventDefault: jest.fn(),

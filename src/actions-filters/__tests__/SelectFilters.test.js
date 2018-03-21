@@ -4,8 +4,6 @@ import SelectFilters from '../SelectFilters'
 
 jest.mock('react-select', () => 'ReactSelect')
 
-
-
 describe('<SelectFilters />', () => {
   describe('Snapshot', () => {
     const defaultProps = {

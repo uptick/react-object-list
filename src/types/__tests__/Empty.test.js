@@ -1,10 +1,8 @@
 import React from 'react'
 import {
   snapshotTest,
-  configureEnzymeAdapter,
 } from 'utils/tests'
 import { Empty } from '../'
-
 
 describe('Empty type', () => {
   it('snapshot test', () => {

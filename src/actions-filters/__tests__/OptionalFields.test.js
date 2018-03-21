@@ -4,8 +4,6 @@ import OptionalFields from '../OptionalFields'
 
 jest.mock('../OptionalField', () => 'OptionalField')
 
-
-
 describe('<OptionalFields />', () => {
   describe('Snapshot', () => {
     const defaultProps = {

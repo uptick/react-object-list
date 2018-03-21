@@ -2,13 +2,11 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import {
   snapshotTest,
-  configureEnzymeAdapter,
 } from 'utils/tests'
 import {
   ObjectLink,
   Relation,
 } from '../'
-
 
 describe('Relation type', () => {
   it('snapshot tests', () => {

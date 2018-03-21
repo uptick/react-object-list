@@ -3,7 +3,6 @@ import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import Choice from '../Choice'
 
-
 jest.mock('react-select')
 
 describe('Choice', () => {

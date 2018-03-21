@@ -2,8 +2,6 @@ import React from 'react'
 import { snapshotTest } from 'utils/tests'
 import FiltersContainer from '../FiltersContainer'
 
-
-
 describe('<FiltersContainer />', () => {
   describe('Snapshot', () => {
     const Renderer = (props) => <span>{props.filterKey}</span>

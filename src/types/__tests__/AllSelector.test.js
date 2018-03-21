@@ -2,10 +2,8 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import {
   snapshotTest,
-  configureEnzymeAdapter,
 } from 'utils/tests'
 import { AllSelector } from '../'
-
 
 describe('Selector type', () => {
   it('snapshot test', () => {

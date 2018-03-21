@@ -2,10 +2,8 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import {
   snapshotTest,
-  configureEnzymeAdapter,
 } from 'utils/tests'
 import { ObjectLink, Links } from '../'
-
 
 describe('ObjectLink type', () => {
   it('snapshot tests', () => {

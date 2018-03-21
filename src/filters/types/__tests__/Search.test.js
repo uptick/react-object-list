@@ -3,7 +3,6 @@ import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import Search from '../Search'
 
-
 jest.useFakeTimers()
 
 describe('Search', () => {

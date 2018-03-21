@@ -1,10 +1,8 @@
 import React from 'react'
 import {
   snapshotTest,
-  configureEnzymeAdapter,
 } from 'utils/tests'
 import { BooleanType } from '../'
-
 
 describe('BooleanType', () => {
   it('snapshot test', () => {

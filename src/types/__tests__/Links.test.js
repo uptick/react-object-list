@@ -1,10 +1,8 @@
 import React from 'react'
 import {
   snapshotTest,
-  configureEnzymeAdapter,
 } from 'utils/tests'
 import { Links } from '../'
-
 
 describe('Links type', () => {
   it('snapshot test', () => {
