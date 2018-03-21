@@ -20,6 +20,14 @@
     "react/no-unused-state": "warn",
     "react/no-access-state-in-setstate": "warn"
   },
+  "overrides": [
+    {
+      "files": [ "*.test.js", "*.stories.js" ],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ],
   "extends": ["standard", "standard-react"],
   "env": {
     "browser": true,
