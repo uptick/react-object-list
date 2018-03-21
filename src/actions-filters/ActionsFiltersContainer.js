@@ -17,9 +17,9 @@ class ActionsFilterContainer extends Component {
     /** If set, creates search filter with this key */
     searchKey: PropTypes.string,
     /** Name used to refer to each item returned from the api */
-    itemSingleName: PropTypes.string,
+    itemSingleName: PropTypes.string.isRequired,
     /** Plural form of itemSingleName */
-    itemPluralName: PropTypes.string,
+    itemPluralName: PropTypes.string.isRequired,
     /** the amount of items in this subset of the dataset query */
     itemCount: PropTypes.number,
     /** the column renderer to use, if 2d array they are grouped together  */
@@ -63,7 +63,6 @@ class ActionsFilterContainer extends Component {
   }
 
   static defaultProps = {
-    itemSingleName: 'item',
     favouritesEnabled: true,
     filters: [],
     favourites: [],
@@ -71,19 +70,14 @@ class ActionsFilterContainer extends Component {
     columns: [],
   }
 
-  state = {
-    itemSingleName: this.props.itemSingleName,
-    itemPluralName: this.props.itemPluralName ? this.props.itemPluralName : `${this.props.itemSingleName}s`,
-  }
-
   render() {
     const {
       searchKey, meta: {totalCount}, itemCount,
       selection, customActions = [],
+      itemSingleName, itemPluralName,
     } = this.props
 
     const numSelected = Object.keys(selection).length
-    const {itemSingleName, itemPluralName} = this.state
 
     let search
     if (searchKey) {
@@ -94,12 +88,6 @@ class ActionsFilterContainer extends Component {
         permanent: true,
         active: true,
       }
-    }
-    let objectName
-    if (totalCount !== 1) {
-      objectName = itemPluralName
-    } else {
-      objectName = itemSingleName
     }
     return (
       <div>
@@ -128,7 +116,7 @@ class ActionsFilterContainer extends Component {
         {/* TODO: render children below filters */}
         <div className="objectlist-row objectlist-row--justify">
           <span className="objectlist-results-text">
-            {`${totalCount ? totalCount.toLocaleString() : 'No'} ${objectName} found`}
+            {`${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount == 1 ? itemSingleName : itemPluralName} found`}
           </span>
           {customActions.map(action => action({
             selection,

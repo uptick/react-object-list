@@ -46,7 +46,7 @@ class ObjectList extends Component {
     updatePage: PropTypes.func,
     /** callback to update sort keys */
     updateSorting: PropTypes.func,
-    /** the singular name of a specific item */
+    /** the name of a specific item, leave itemPluralName blank if it's just itemSingleName + 's' */
     itemSingleName: PropTypes.string,
     itemPluralName: PropTypes.string,
     /** If set, creates search filter with this key */
@@ -90,6 +90,12 @@ class ObjectList extends Component {
     favouritesEnabled: true,
     meta: {},
     selection: {},
+    itemSingleName: 'item',
+  }
+
+  state = {
+    itemSingleName: this.props.itemSingleName,
+    itemPluralName: this.props.itemPluralName ? this.props.itemPluralName : `${this.props.itemSingleName}s`,
   }
 
   // TODO: Allow this to be overriden from props, so that the option to select all can be disabled.
@@ -104,11 +110,12 @@ class ObjectList extends Component {
   render() {
     const {
       DataRenderer, filters, addFilter, updateFilter, meta, status, searchKey,
-      itemPluralName, itemSingleName, data, columns, updateColumns,
+      data, columns, updateColumns,
       favourites, handleDeleteFavourite, handleAddFavourite, favouritesEnabled,
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
       updatePage, updateSorting, selection, selectItems, customActions, error,
     } = this.props
+    const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
     // TODO: implement different display depending on this.props.status ie. loading etc.
     return (
@@ -121,8 +128,8 @@ class ObjectList extends Component {
           meta={meta}
           status={status}
           searchKey={searchKey}
-          itemPluralName={itemPluralName}
           itemSingleName={itemSingleName}
+          itemPluralName={itemPluralName}
           itemCount={data.length}
           columns={columns}
           updateColumns={updateColumns}
@@ -158,6 +165,7 @@ class ObjectList extends Component {
             goToPage={updatePage}
             loading={status === 'loading'}
             LoadingIcon={loadingSpinner}
+            itemPluralName={itemPluralName}
           />
         }
       </div>
