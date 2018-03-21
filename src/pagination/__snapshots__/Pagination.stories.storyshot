@@ -905,7 +905,7 @@ exports[`Storyshots object-list/Pagination interactive 1`] = `
         className="text-muted"
       >
         <em>
-          Showing page 3 of 9 out of 42 total records.
+          Showing page 3 of 9 out of 42 total items.
         </em>
       </p>
     </div>

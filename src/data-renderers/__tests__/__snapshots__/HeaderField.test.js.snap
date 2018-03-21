@@ -1,11 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`header field snapshopt renders correctly 1`] = `
+exports[`HeaderField Functions renders header is a function 1`] = `
+<h5>
+  Hello
+</h5>
+`;
+
+exports[`HeaderField Snapshots renders not sortable 1`] = `
+<span>
+  Header Text
+</span>
+`;
+
+exports[`HeaderField Snapshots renders sortable 1`] = `
 <div
   className={undefined}
   onClick={[Function]}
   role=""
 >
   Header Text
+</div>
+`;
+
+exports[`HeaderField Snapshots renders sorted asc 1`] = `
+<div
+  className={undefined}
+  onClick={[Function]}
+  role=""
+>
+  Header Text
+  <span
+    className="sort-direction text-primary"
+  >
+     
+    <i
+      aria-hidden="true"
+      className="fa fa-caret-up"
+    />
+  </span>
+</div>
+`;
+
+exports[`HeaderField Snapshots renders sorted desc 1`] = `
+<div
+  className={undefined}
+  onClick={[Function]}
+  role=""
+>
+  Header Text
+  <span
+    className="sort-direction text-primary"
+  >
+     
+    <i
+      aria-hidden="true"
+      className="fa fa-caret-down"
+    />
+  </span>
 </div>
 `;

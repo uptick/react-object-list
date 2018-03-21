@@ -1,4 +1,5 @@
 import React from 'react'
+import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import SelectAllAction from '../SelectAllAction'
 
@@ -50,6 +51,27 @@ describe('<SelectAllAction />', () => {
         itemCount: 3,
       }
       snapshotTest(<SelectAllAction {...props} />)
+    })
+  })
+  describe('Functions', () => {
+    let instance
+    const baseProps = {}
+    const mockEvent = {}
+    beforeEach(() => {
+      mockEvent['preventDefault'] = jasmine.createSpy()
+      baseProps['selectAll'] = jasmine.createSpy()
+      baseProps['deselectAll'] = jasmine.createSpy()
+      instance = shallow(<SelectAllAction {...baseProps} />).instance()
+    })
+    it('selects all', () => {
+      instance.handleSelectAllClick(mockEvent)
+      expect(mockEvent.preventDefault).toHaveBeenCalled()
+      expect(baseProps.selectAll).toHaveBeenCalled()
+    })
+    it('deselects all', () => {
+      instance.handleDeselectAllClick(mockEvent)
+      expect(mockEvent.preventDefault).toHaveBeenCalled()
+      expect(baseProps.deselectAll).toHaveBeenCalled()
     })
   })
 })

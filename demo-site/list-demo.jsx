@@ -7,12 +7,12 @@ class ListDemo extends React.Component {
   render() {
     return (
       <div>List Demo</div>
-    );
+    )
   }
 }
 
-var mount = document.querySelectorAll('div.demo-mount-list');
+const mount = document.querySelectorAll('div.demo-mount-list')
 ReactDom.render(
   <ListDemo />,
   mount[0]
-);
+)

@@ -22,7 +22,7 @@ export default class Pagination extends React.Component {
     // Icon to display if results are loading
     LoadingIcon: PropTypes.func,
     // plural name for items displayed in the list
-    itemPluralName: PropTypes.string,
+    itemPluralName: PropTypes.string.isRequired,
   }
 
   static defaultProps = {
@@ -82,7 +82,7 @@ export default class Pagination extends React.Component {
       totals = (
         <p className="text-muted">
           <em>
-            {`Showing page ${page} of ${Math.max(totalPages, 1)} out of ${count} total ${itemPluralName || 'records'}.`}
+            {`Showing page ${page} of ${Math.max(totalPages, 1)} out of ${count} total ${itemPluralName}.`}
           </em>
         </p>
       )
@@ -90,7 +90,7 @@ export default class Pagination extends React.Component {
       totals = (
         <p className="text-muted">
           <em>
-            {LoadingIcon && <LoadingIcon />} Loading {itemPluralName || 'results'} ...
+            {LoadingIcon && <LoadingIcon />} Loading {itemPluralName} ...
           </em>
         </p>
       )
