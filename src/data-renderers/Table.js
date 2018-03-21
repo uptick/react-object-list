@@ -104,6 +104,10 @@ export default class TableRenderer extends Component {
     })
   }
 
+  handleToggleSelectAll = () => {
+    this.props.select(this.props.data.map(row => row.id))
+  }
+
   render() {
     const {selection, data, select} = this.props
     return (
@@ -115,7 +119,7 @@ export default class TableRenderer extends Component {
                 <th className="objectlist-table__th objectlist-table__th--selector">
                   <AllSelector
                     allSelected={Object.keys(selection).length >= data.length}
-                    toggleSelectAll={() => select(data.map(row => row.id))}
+                    toggleSelectAll={this.handleToggleSelectAll}
                   />
                 </th>
               )}
