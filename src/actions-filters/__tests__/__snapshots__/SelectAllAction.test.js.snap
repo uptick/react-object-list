@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SelectAllAction /> Snapshot does not render with no props 1`] = `<div />`;
+exports[`<SelectAllAction /> Snapshot does not render with no props 1`] = `null`;
 
 exports[`<SelectAllAction /> Snapshot shows a spinner when select all is pending 1`] = `
 <div>

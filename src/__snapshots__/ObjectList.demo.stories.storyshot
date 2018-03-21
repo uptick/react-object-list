@@ -2,847 +2,611 @@
 
 exports[`Storyshots object-list/demo interactive 1`] = `
 <div>
-  <div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div>
-      <div>
-        <div
-          className="objectlist-row objectlist-row--right objectlist-row--search"
-        >
-          <div
-            className="objectlist-row"
-          >
-            <Select
-              className="objectlist-select-filter"
-              labelKey="name"
-              menuContainerStyle={
-                Object {
-                  "maxHeight": "500px",
-                }
-              }
-              menuStyle={
-                Object {
-                  "maxHeight": "500px",
-                }
-              }
-              onChange={[Function]}
-              openOnFocus={true}
-              options={
-                Array [
-                  Object {
-                    "Renderer": [Function],
-                    "active": false,
-                    "filterKey": "first_name",
-                    "name": "First Name",
-                  },
-                ]
-              }
-              placeholder="Add Filter"
-              value={null}
-              valueKey="key"
-            />
-          </div>
-        </div>
-        <div
-          className="objectlist--grow"
+  <div>
+    <div
+      className="objectlist-row objectlist-row--right objectlist-row--search"
+    >
+      <div
+        className="objectlist-row"
+      >
+        <Select
+          className="objectlist-select-filter"
+          labelKey="name"
+          menuContainerStyle={
+            Object {
+              "maxHeight": "500px",
+            }
+          }
+          menuStyle={
+            Object {
+              "maxHeight": "500px",
+            }
+          }
+          onChange={[Function]}
+          openOnFocus={true}
+          options={
+            Array [
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "first_name",
+                "name": "First Name",
+              },
+            ]
+          }
+          placeholder="Add Filter"
+          value={null}
+          valueKey="key"
         />
+      </div>
+    </div>
+    <div
+      className="objectlist--grow"
+    />
+    <div
+      className="objectlist-row objectlist-row--justify"
+    >
+      <span
+        className="objectlist-results-text"
+      >
+        258 items found
+      </span>
+      <div
+        className="objectlist-dropdown"
+      >
+        <button
+          className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
+        >
+          <i
+            className="fa fa-list"
+          />
+           Change columns
+        </button>
         <div
-          className="objectlist-row objectlist-row--justify"
+          className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
         >
-          <span
-            className="objectlist-results-text"
+          <button
+            className="objectlist-dropdown__item"
+            onClick={[Function]}
           >
-            258 items found
-          </span>
-          <div
-            className="objectlist-dropdown"
+            <i
+              aria-hidden="true"
+              className="fa fa-check-square-o objectlist-dropdown__icon"
+            />
+            Last Name
+          </button>
+          <button
+            className="objectlist-dropdown__item"
+            onClick={[Function]}
           >
-            <button
-              className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
-            >
-              <i
-                className="fa fa-list"
-              />
-               Change columns
-            </button>
-            <div
-              className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
-            >
-              <button
-                className="objectlist-dropdown__item"
-                onClick={[Function]}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-check-square-o objectlist-dropdown__icon"
-                />
-                Last Name
-              </button>
-              <button
-                className="objectlist-dropdown__item"
-                onClick={[Function]}
-              >
-                <i
-                  aria-hidden="true"
-                  className="fa fa-square-o objectlist-dropdown__icon"
-                />
-                IPv6
-              </button>
-            </div>
-          </div>
-          <div />
+            <i
+              aria-hidden="true"
+              className="fa fa-square-o objectlist-dropdown__icon"
+            />
+            IPv6
+          </button>
         </div>
-      </div>
-      <div
-        className="objectlist-table--scroll"
-      >
-        <table
-          className="objectlist-table"
-        >
-          <thead>
-            <tr>
-              <th
-                className="objectlist-table__th "
-                width={undefined}
-              >
-                <div
-                  className={undefined}
-                  onClick={[Function]}
-                  role="button"
-                >
-                  First Name
-                </div>
-                <div
-                  className={undefined}
-                  onClick={[Function]}
-                  role="button"
-                >
-                  Last Name
-                </div>
-              </th>
-              <th
-                className="objectlist-table__th "
-                width={undefined}
-              >
-                <div
-                  className={undefined}
-                  onClick={[Function]}
-                  role="button"
-                >
-                  Email
-                </div>
-              </th>
-              <th
-                className="objectlist-table__th "
-                width={undefined}
-              >
-                <div
-                  className={undefined}
-                  onClick={[Function]}
-                  role="button"
-                >
-                  Gender
-                </div>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Cecelia
-                <br />
-                Glendzer
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                cglendzer0@biblegateway.com
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Female
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Jeff
-                <br />
-                Bletsor
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                jbletsor1@google.es
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Male
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Kessiah
-                <br />
-                Skerman
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                kskerman2@npr.org
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Female
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Aubine
-                <br />
-                Canepe
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                acanepe3@prweb.com
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Female
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Rowland
-                <br />
-                Wheatman
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                rwheatman4@about.com
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Male
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Isabeau
-                <br />
-                Franies
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                ifranies5@uol.com.br
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Female
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Alric
-                <br />
-                Dansey
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                adansey6@wikimedia.org
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Male
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Doloritas
-                <br />
-                Clampe
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                dclampe7@edublogs.org
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Female
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Garnette
-                <br />
-                Pyott
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                gpyott8@usatoday.com
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Female
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Nehemiah
-                <br />
-                Bilovus
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                nbilovus9@squidoo.com
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Male
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Ogden
-                <br />
-                Borrington
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                oborringtona@princeton.edu
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Male
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Lynette
-                <br />
-                Handscomb
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                lhandscombb@tuttocitta.it
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Female
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Barret
-                <br />
-                Borit
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                bboritc@virginia.edu
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Male
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Georgetta
-                <br />
-                Fontel
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                gfonteld@blogtalkradio.com
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Female
-              </td>
-            </tr>
-            <tr
-              className="objectlist-table__row"
-            >
-              <td
-                className="objectlist-table__td"
-              >
-                Winnie
-                <br />
-                Deane
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                wdeaneif@bluehost.com
-              </td>
-              <td
-                className="objectlist-table__td"
-              >
-                Male
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div
-        className="objectlist-pagination"
-      >
-        <ul
-          className="objectlist-pagination__pages"
-        >
-          <li
-            className="objectlist-pagination__page disabled"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              ← Previous
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page active"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              1
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              2
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              3
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              4
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              5
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              6
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              7
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              8
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              9
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              10
-            </a>
-          </li>
-          <li
-            className="objectlist-pagination__page"
-            onClick={[Function]}
-          >
-            <a
-              className="objectlist-pagination__page--link"
-              href="#"
-            >
-              Next →
-            </a>
-          </li>
-        </ul>
-        <p
-          className="text-muted"
-        >
-          <em>
-            Showing page 1 of 18 out of 258 total items.
-          </em>
-        </p>
       </div>
     </div>
   </div>
-  <button
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#28c",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>
   <div
-    style={
-      Object {
-        "background": "white",
-        "bottom": 0,
-        "display": "none",
-        "left": 0,
-        "overflow": "auto",
-        "padding": "0 40px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-        "zIndex": 99999,
-      }
-    }
+    className="objectlist-table--scroll"
   >
-    <button
-      onClick={[Function]}
-      style={
-        Object {
-          "background": "#28c",
-          "border": "none",
-          "borderRadius": "0 0 0 5px",
-          "color": "#fff",
-          "cursor": "pointer",
-          "display": "block",
-          "fontFamily": "sans-serif",
-          "fontSize": "12px",
-          "padding": "5px 15px",
-          "position": "fixed",
-          "right": 0,
-          "top": 0,
-        }
-      }
-      type="button"
+    <table
+      className="objectlist-table"
     >
-      ×
-    </button>
-    <div
-      style={undefined}
-    >
-      <div
-        style={
-          Object {
-            "WebkitFontSmoothing": "antialiased",
-            "backgroundColor": "#fff",
-            "border": "1px solid #eee",
-            "borderRadius": "2px",
-            "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
-            "color": "#444",
-            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
-            "fontSize": "15px",
-            "fontWeight": 300,
-            "lineHeight": 1.45,
-            "marginBottom": "20px",
-            "marginTop": "20px",
-            "padding": "20px 40px 40px",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "borderBottom": "1px solid #eee",
-              "marginBottom": 10,
-              "paddingTop": 10,
-            }
-          }
-        >
-          <h1
-            style={
-              Object {
-                "fontSize": "35px",
-                "margin": 0,
-                "padding": 0,
-              }
-            }
-          >
-            object-list/demo
-          </h1>
-          <h2
-            style={
-              Object {
-                "fontSize": "22px",
-                "fontWeight": 400,
-                "margin": "0 0 10px 0",
-                "padding": 0,
-              }
-            }
-          >
-            interactive
-          </h2>
-        </div>
-        <div
-          style={
-            Object {
-              "marginBottom": 0,
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "WebkitFontSmoothing": "antialiased",
-                "color": "#444",
-                "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
-                "fontSize": "15px",
-              }
-            }
-          >
-            Interactive demo for react-object-list
-          </div>
-        </div>
-        <div>
-          <h1
-            style={
-              Object {
-                "borderBottom": "1px solid #EEE",
-                "fontSize": "25px",
-                "margin": "20px 0 0 0",
-                "padding": "0 0 5px 0",
-              }
-            }
-          >
-            Story Source
-          </h1>
-          <pre
-            style={
-              Object {
-                "backgroundColor": "#fafafa",
-                "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
-                "fontSize": ".88em",
-                "lineHeight": 1.5,
-                "overflowX": "scroll",
-                "padding": ".5rem",
-              }
-            }
+      <thead>
+        <tr>
+          <th
+            className="objectlist-table__th "
+            width={undefined}
           >
             <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }
+              className={undefined}
+              onClick={[Function]}
+              role="button"
             >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                InteractiveObjectList
-              </span>
-              <span />
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
-              </span>
+              First Name
             </div>
-          </pre>
-        </div>
-        <div>
-          <h1
-            style={
-              Object {
-                "borderBottom": "1px solid #EEE",
-                "fontSize": "25px",
-                "margin": "20px 0 0 0",
-                "padding": "0 0 5px 0",
-              }
-            }
-          >
-            Prop Types
-          </h1>
-          <div>
-            <h2
-              style={
-                Object {
-                  "margin": "20px 0 0 0",
-                }
-              }
+            <div
+              className={undefined}
+              onClick={[Function]}
+              role="button"
             >
-              "
-              InteractiveObjectList
-              " Component
-            </h2>
-            <small>
-              No propTypes defined!
-            </small>
-          </div>
-        </div>
-      </div>
-    </div>
+              Last Name
+            </div>
+          </th>
+          <th
+            className="objectlist-table__th "
+            width={undefined}
+          >
+            <div
+              className={undefined}
+              onClick={[Function]}
+              role="button"
+            >
+              Email
+            </div>
+          </th>
+          <th
+            className="objectlist-table__th "
+            width={undefined}
+          >
+            <div
+              className={undefined}
+              onClick={[Function]}
+              role="button"
+            >
+              Gender
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Cecelia
+            <br />
+            Glendzer
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            cglendzer0@biblegateway.com
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Female
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Jeff
+            <br />
+            Bletsor
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            jbletsor1@google.es
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Male
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Kessiah
+            <br />
+            Skerman
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            kskerman2@npr.org
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Female
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Aubine
+            <br />
+            Canepe
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            acanepe3@prweb.com
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Female
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Rowland
+            <br />
+            Wheatman
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            rwheatman4@about.com
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Male
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Isabeau
+            <br />
+            Franies
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            ifranies5@uol.com.br
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Female
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Alric
+            <br />
+            Dansey
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            adansey6@wikimedia.org
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Male
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Doloritas
+            <br />
+            Clampe
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            dclampe7@edublogs.org
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Female
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Garnette
+            <br />
+            Pyott
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            gpyott8@usatoday.com
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Female
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Nehemiah
+            <br />
+            Bilovus
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            nbilovus9@squidoo.com
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Male
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Ogden
+            <br />
+            Borrington
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            oborringtona@princeton.edu
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Male
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Lynette
+            <br />
+            Handscomb
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            lhandscombb@tuttocitta.it
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Female
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Barret
+            <br />
+            Borit
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            bboritc@virginia.edu
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Male
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Georgetta
+            <br />
+            Fontel
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            gfonteld@blogtalkradio.com
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Female
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            Winnie
+            <br />
+            Deane
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            wdeaneif@bluehost.com
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Male
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="objectlist-pagination"
+  >
+    <ul
+      className="objectlist-pagination__pages"
+    >
+      <li
+        className="objectlist-pagination__page disabled"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          ← Previous
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page active"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          1
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          2
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          3
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          4
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          5
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          6
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          7
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          8
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          9
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          10
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          Next →
+        </a>
+      </li>
+    </ul>
+    <p
+      className="text-muted"
+    >
+      <em>
+        Showing page 1 of 18 out of 258 total items.
+      </em>
+    </p>
   </div>
 </div>
 `;
