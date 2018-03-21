@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 
 import ObjectList from '../'
 
-describe('<ObjectList />', () => {
+describe('ObjectList', () => {
   describe('Functions', () => {
     const props = {
       selectItems: jest.fn(),
