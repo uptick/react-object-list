@@ -8,3 +8,4 @@ renderers.js
 utils.js
 styles/
 coverage/
+.vscode/
