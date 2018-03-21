@@ -1,2 +1,3 @@
+import ObjectList from './ObjectList'
 export {COLUMN_TYPE} from './ObjectList'
-export ObjectList from './ObjectList'
+export default ObjectList
