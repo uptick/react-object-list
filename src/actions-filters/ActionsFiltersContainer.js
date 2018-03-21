@@ -116,7 +116,7 @@ class ActionsFilterContainer extends Component {
         {/* TODO: render children below filters */}
         <div className="objectlist-row objectlist-row--justify">
           <span className="objectlist-results-text">
-            {`${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount == 1 ? itemSingleName : itemPluralName} found`}
+            {`${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount === 1 ? itemSingleName : itemPluralName} found`}
           </span>
           {customActions.map(action => action({
             selection,

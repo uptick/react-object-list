@@ -11,7 +11,7 @@ describe('Pagination', () => {
     perPage: 10,
     maxPages: 10,
     count: 100,
-    itemPluralName: 'snakes'
+    itemPluralName: 'snakes',
   }
   describe('Snapshots', () => {
     it('has one page', () => {
