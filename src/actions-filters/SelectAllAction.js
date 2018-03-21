@@ -52,7 +52,11 @@ class SelectAllAction extends Component {
         <a className="objectlist-button objectlist-button--link" href="#" onClick={this.handleDeselectAllClick}>De-select all</a>
       )
     }
-    return <div>{selectAll}{deselect}</div>
+    if (selectAll || deselect) {
+      return <div>{selectAll}{deselect}</div>
+    } else {
+      return null
+    }
   }
 }
 
