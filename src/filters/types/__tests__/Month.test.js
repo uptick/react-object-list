@@ -46,7 +46,7 @@ describe('Month', () => {
     })
     it('handles value change', () => {
       const mockYear = Math.floor(Math.random() * 50) + 2000
-      const mockMonth = Math.floor(Math.random() * 12) + 1
+      const mockMonth = Math.floor(Math.random() * 12)
       const date = Moment({year: mockYear, month: mockMonth})
       instance.handleValueChange(mockYear, mockMonth + 1)
       expect(instance.state.textValue).toBe(date.format(instance.props.format))
