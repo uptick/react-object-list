@@ -12,6 +12,7 @@ const props = {
   maxPages: 3,
   count: 42,
   loading: false,
+  itemPluralName: 'buildings',
 }
 
 storiesOf('object-list/Pagination', module)
@@ -26,7 +27,6 @@ storiesOf('object-list/Pagination', module)
       maxPages={10}
       loading={boolean('loading', props.loading)}
       goToPage={action(`Setting page to`)}
-      itemPluralName="buildings"
     />
   ))
   .add('loading', () => (

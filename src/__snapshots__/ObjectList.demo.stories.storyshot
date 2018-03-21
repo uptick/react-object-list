@@ -614,7 +614,7 @@ exports[`Storyshots object-list/demo interactive 1`] = `
           className="text-muted"
         >
           <em>
-            Showing page 1 of 18 out of 258 total records.
+            Showing page 1 of 18 out of 258 total items.
           </em>
         </p>
       </div>

@@ -36,7 +36,7 @@ exports[`Pagination Snapshots has more than maxPages 1`] = `
     className="text-muted"
   >
     <em>
-      Showing page 1 of 10 out of 100 total records.
+      Showing page 1 of 10 out of 100 total snakes.
     </em>
   </p>
 </div>
@@ -121,7 +121,7 @@ exports[`Pagination Snapshots is loading 1`] = `
   >
     <em>
        Loading 
-      results
+      snakes
        ...
     </em>
   </p>
@@ -204,7 +204,7 @@ exports[`Pagination Snapshots is on first page 1`] = `
     className="text-muted"
   >
     <em>
-      Showing page 1 of 10 out of 100 total records.
+      Showing page 1 of 10 out of 100 total snakes.
     </em>
   </p>
 </div>
@@ -286,7 +286,7 @@ exports[`Pagination Snapshots is on last page 1`] = `
     className="text-muted"
   >
     <em>
-      Showing page 10 of 10 out of 100 total records.
+      Showing page 10 of 10 out of 100 total snakes.
     </em>
   </p>
 </div>
