@@ -4,8 +4,13 @@ import PropTypes from 'prop-types'
 import ActionsFiltersContainer from './actions-filters/ActionsFiltersContainer'
 import Table from './data-renderers/Table'
 import {Pagination} from './pagination'
-import ErrorMessage from './utils/ErrorMessage'
-import {COLUMN_TYPE, FILTER_BASE_TYPE, META_TYPE, loadingSpinner} from './utils'
+import {
+  COLUMN_TYPE,
+  FILTER_BASE_TYPE,
+  META_TYPE,
+  loadingSpinner,
+  ErrorMessage,
+} from './utils'
 
 // TODO: rename to something awesome
 class ObjectList extends Component {
