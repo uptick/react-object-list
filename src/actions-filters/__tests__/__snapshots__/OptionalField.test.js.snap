@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptionalField Snapshot renders default 1`] = `
+<button
+  className="objectlist-dropdown__item"
+  onClick={[Function]}
+>
+  <i
+    aria-hidden="true"
+    className="fa fa-square-o objectlist-dropdown__icon"
+  />
+  Apple
+</button>
+`;
+
+exports[`OptionalField Snapshot renders enabled 1`] = `
+<button
+  className="objectlist-dropdown__item"
+  onClick={[Function]}
+>
+  <i
+    aria-hidden="true"
+    className="fa fa-check-square-o objectlist-dropdown__icon"
+  />
+  Apple
+</button>
+`;

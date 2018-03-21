@@ -7,13 +7,17 @@ import PropTypes from 'prop-types'
 export default class OptionalField extends React.Component {
   static propTypes = {
     /** callback function to enable the optional field and save it to user preferences */
-    onChange: PropTypes.func,
+    onChange: PropTypes.func.isRequired,
     /** the api key used for this particular field */
     fieldKey: PropTypes.string,
     /** whether or not the field is enabled (displayed) */
     enabled: PropTypes.bool,
     /** the display text for the field */
     name: PropTypes.string,
+  }
+
+  static defaultProps = {
+    enabled: false,
   }
 
   /**
