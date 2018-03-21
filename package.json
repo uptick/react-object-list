@@ -7,13 +7,14 @@
     "type": "git"
   },
   "bugs": "https://github.com/uptick/react-object-list/issues",
-  "files": ["main.js", "src/main.sass", "filters.js", "cells.js", "renderers.js"],
+  "files": ["main.js", "styles/main.sass", "filters.js", "cells.js", "renderers.js"],
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
     "test": "jest",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "prepublish": "mkdir -p styles && cp src/*.sass styles"
   },
   "author": "Uptick Pty Ltd (http://uptickhq.com)",
   "license": "MIT",
