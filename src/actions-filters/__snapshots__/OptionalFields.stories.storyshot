@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list/OptionalFields default view 1`] = `
+exports[`Storyshots object-list/OptionalFields default view 1`] = `
 <div>
   <div
     style={
@@ -224,7 +224,7 @@ exports[`Storyshots npm-list/OptionalFields default view 1`] = `
               }
             }
           >
-            npm-list/OptionalFields
+            object-list/OptionalFields
           </h1>
           <h2
             style={

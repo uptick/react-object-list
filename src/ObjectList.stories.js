@@ -43,7 +43,7 @@ const mockData = [
   {id: 12, name: 'Lucy', age: 2, favouriteColour: 'grey'},
 ]
 
-storiesOf('npm-list', module)
+storiesOf('object-list', module)
   .addDecorator((story, context) => withInfo(
     'Main list component'
   )(story)(context))

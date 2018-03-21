@@ -21,7 +21,7 @@ class ObjectList extends Component {
     status: PropTypes.oneOf(['loading', 'error', 'done']),
     /** provide the specific error details if there is an error */
     error: PropTypes.objectOf(Error),
-    /** array of potential filters that can be displayed inside the npm-list */
+    /** array of potential filters that can be displayed inside the object-list */
     filters: PropTypes.arrayOf(PropTypes.shape({
       ...FILTER_BASE_TYPE,
       active: PropTypes.bool,

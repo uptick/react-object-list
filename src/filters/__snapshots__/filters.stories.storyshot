@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list/Filters BooleanFilter 1`] = `
+exports[`Storyshots object-list/Filters BooleanFilter 1`] = `
 <div>
   <div
     style={
@@ -148,7 +148,7 @@ exports[`Storyshots npm-list/Filters BooleanFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -706,7 +706,7 @@ exports[`Storyshots npm-list/Filters BooleanFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters ChoiceFilter 1`] = `
+exports[`Storyshots object-list/Filters ChoiceFilter 1`] = `
 <div>
   <div
     style={
@@ -883,7 +883,7 @@ exports[`Storyshots npm-list/Filters ChoiceFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -1937,7 +1937,7 @@ exports[`Storyshots npm-list/Filters ChoiceFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters CurrencyFilter 1`] = `
+exports[`Storyshots object-list/Filters CurrencyFilter 1`] = `
 <div>
   <div
     style={
@@ -2120,7 +2120,7 @@ exports[`Storyshots npm-list/Filters CurrencyFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -2822,7 +2822,7 @@ exports[`Storyshots npm-list/Filters CurrencyFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters DateFilter 1`] = `
+exports[`Storyshots object-list/Filters DateFilter 1`] = `
 <div>
   <div
     style={
@@ -2982,7 +2982,7 @@ exports[`Storyshots npm-list/Filters DateFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -3961,7 +3961,7 @@ exports[`Storyshots npm-list/Filters DateFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters DayFilter 1`] = `
+exports[`Storyshots object-list/Filters DayFilter 1`] = `
 <div>
   <div
     style={
@@ -4097,7 +4097,7 @@ exports[`Storyshots npm-list/Filters DayFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -4717,7 +4717,7 @@ exports[`Storyshots npm-list/Filters DayFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters MonthFilter 1`] = `
+exports[`Storyshots object-list/Filters MonthFilter 1`] = `
 <div>
   <div
     style={
@@ -4995,7 +4995,7 @@ exports[`Storyshots npm-list/Filters MonthFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -5683,7 +5683,7 @@ exports[`Storyshots npm-list/Filters MonthFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters MultiChoiceFilter 1`] = `
+exports[`Storyshots object-list/Filters MultiChoiceFilter 1`] = `
 <div>
   <div
     style={
@@ -5860,7 +5860,7 @@ exports[`Storyshots npm-list/Filters MultiChoiceFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -6327,7 +6327,7 @@ exports[`Storyshots npm-list/Filters MultiChoiceFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters NumberSliderFilter 1`] = `
+exports[`Storyshots object-list/Filters NumberSliderFilter 1`] = `
 <div>
   <div
     style={
@@ -6506,7 +6506,7 @@ exports[`Storyshots npm-list/Filters NumberSliderFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -7275,7 +7275,7 @@ exports[`Storyshots npm-list/Filters NumberSliderFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters RemoteChoiceFilter 1`] = `
+exports[`Storyshots object-list/Filters RemoteChoiceFilter 1`] = `
 <div>
   <div
     style={
@@ -7412,7 +7412,7 @@ exports[`Storyshots npm-list/Filters RemoteChoiceFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -8163,7 +8163,7 @@ exports[`Storyshots npm-list/Filters RemoteChoiceFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters RemoteMultiChoiceFilter 1`] = `
+exports[`Storyshots object-list/Filters RemoteMultiChoiceFilter 1`] = `
 <div>
   <div
     style={
@@ -8300,7 +8300,7 @@ exports[`Storyshots npm-list/Filters RemoteMultiChoiceFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -8582,7 +8582,7 @@ exports[`Storyshots npm-list/Filters RemoteMultiChoiceFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters SearchFilter 1`] = `
+exports[`Storyshots object-list/Filters SearchFilter 1`] = `
 <div>
   <div
     style={
@@ -8704,7 +8704,7 @@ exports[`Storyshots npm-list/Filters SearchFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={
@@ -9210,7 +9210,7 @@ exports[`Storyshots npm-list/Filters SearchFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Filters TextContainsFilter 1`] = `
+exports[`Storyshots object-list/Filters TextContainsFilter 1`] = `
 <div>
   <div
     style={
@@ -9368,7 +9368,7 @@ exports[`Storyshots npm-list/Filters TextContainsFilter 1`] = `
               }
             }
           >
-            npm-list/Filters
+            object-list/Filters
           </h1>
           <h2
             style={

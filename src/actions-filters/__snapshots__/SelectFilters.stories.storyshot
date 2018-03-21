@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list/SelectFilters default view 1`] = `
+exports[`Storyshots object-list/SelectFilters default view 1`] = `
 <div>
   <div
     style={
@@ -208,7 +208,7 @@ exports[`Storyshots npm-list/SelectFilters default view 1`] = `
               }
             }
           >
-            npm-list/SelectFilters
+            object-list/SelectFilters
           </h1>
           <h2
             style={

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list/demo interactive 1`] = `
+exports[`Storyshots object-list/demo interactive 1`] = `
 <div>
   <div
     style={
@@ -720,7 +720,7 @@ exports[`Storyshots npm-list/demo interactive 1`] = `
               }
             }
           >
-            npm-list/demo
+            object-list/demo
           </h1>
           <h2
             style={

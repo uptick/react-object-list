@@ -28,7 +28,7 @@ const defaultProps = {
   handleAddFavourite: action('addFavourite'),
 }
 
-storiesOf('npm-list/Favourites', module)
+storiesOf('object-list/Favourites', module)
   .addDecorator((story, context) => withInfo(
     'Favourites dropdown selector'
   )(story)(context))

@@ -6,7 +6,7 @@ import {
   loadingSpinner,
 } from '.'
 
-storiesOf('npm-list/Utils/Loading Icon', module)
+storiesOf('object-list/Utils/Loading Icon', module)
   .addDecorator((story, context) => withInfo(
     'Loading spinner icon'
   )(story)(context))

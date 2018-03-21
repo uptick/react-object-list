@@ -42,7 +42,7 @@ const customRenderer = (props) => {
   )
 }
 
-storiesOf('npm-list/Data Renderers/List Renderer', module)
+storiesOf('object-list/Data Renderers/List Renderer', module)
   .addDecorator((story, context) => withInfo(
     'Component used for displaying list items'
   )(story)(context))

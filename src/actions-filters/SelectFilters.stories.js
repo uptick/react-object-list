@@ -23,7 +23,7 @@ const filters = Object.entries(importedFilters).map(([name, filter]) => {
   }
 })
 
-storiesOf('npm-list/SelectFilters', module)
+storiesOf('object-list/SelectFilters', module)
   .addDecorator((story, context) => withInfo(
     'Filters dropdown selector'
   )(story)(context))

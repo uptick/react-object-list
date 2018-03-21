@@ -24,7 +24,7 @@ const filters = Object.entries(importedFilters).map(([name, filter]) => {
   }
 })
 
-storiesOf('npm-list/ActionsFiltersContainer', module)
+storiesOf('object-list/ActionsFiltersContainer', module)
   .addDecorator((story, context) => withInfo(
     'Container to render filters and actions section'
   )(story)(context))

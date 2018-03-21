@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
+exports[`Storyshots object-list/FiltersContainer default view 1`] = `
 <div>
   <div
     style={
@@ -689,7 +689,7 @@ exports[`Storyshots npm-list/FiltersContainer default view 1`] = `
               }
             }
           >
-            npm-list/FiltersContainer
+            object-list/FiltersContainer
           </h1>
           <h2
             style={

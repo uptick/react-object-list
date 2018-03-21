@@ -14,7 +14,7 @@ const props = {
   loading: false,
 }
 
-storiesOf('npm-list/Pagination', module)
+storiesOf('object-list/Pagination', module)
   .addDecorator((story, context) => withInfo(
     'Pagination used at the bottom of the ObjectList'
   )(story)(context))

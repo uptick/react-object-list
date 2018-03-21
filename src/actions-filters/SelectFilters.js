@@ -6,7 +6,7 @@ import { sortByName } from '../utils'
 
 class SelectFilters extends Component {
   static propTypes = {
-    /** array of potential filters that can be displayed inside the npm-list */
+    /** array of potential filters that can be displayed inside the object-list */
     filters: PropTypes.arrayOf(PropTypes.shape({
       ...FILTER_BASE_TYPE,
       active: PropTypes.bool,

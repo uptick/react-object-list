@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list/Pagination default view 1`] = `
+exports[`Storyshots object-list/Pagination default view 1`] = `
 <div>
   <div
     style={
@@ -247,7 +247,7 @@ exports[`Storyshots npm-list/Pagination default view 1`] = `
               }
             }
           >
-            npm-list/Pagination
+            object-list/Pagination
           </h1>
           <h2
             style={
@@ -829,7 +829,7 @@ exports[`Storyshots npm-list/Pagination default view 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Pagination interactive 1`] = `
+exports[`Storyshots object-list/Pagination interactive 1`] = `
 <div>
   <div
     style={
@@ -1010,7 +1010,7 @@ exports[`Storyshots npm-list/Pagination interactive 1`] = `
               }
             }
           >
-            npm-list/Pagination
+            object-list/Pagination
           </h1>
           <h2
             style={
@@ -1137,7 +1137,7 @@ exports[`Storyshots npm-list/Pagination interactive 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Pagination loading 1`] = `
+exports[`Storyshots object-list/Pagination loading 1`] = `
 <div>
   <div
     style={
@@ -1320,7 +1320,7 @@ exports[`Storyshots npm-list/Pagination loading 1`] = `
               }
             }
           >
-            npm-list/Pagination
+            object-list/Pagination
           </h1>
           <h2
             style={

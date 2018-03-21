@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list/Data Renderers/List Renderer default Renderer 1`] = `
+exports[`Storyshots object-list/Data Renderers/List Renderer default Renderer 1`] = `
 <div>
   <div
     style={
@@ -195,7 +195,7 @@ exports[`Storyshots npm-list/Data Renderers/List Renderer default Renderer 1`] =
               }
             }
           >
-            npm-list/Data Renderers/List Renderer
+            object-list/Data Renderers/List Renderer
           </h1>
           <h2
             style={
@@ -1063,7 +1063,7 @@ exports[`Storyshots npm-list/Data Renderers/List Renderer default Renderer 1`] =
 </div>
 `;
 
-exports[`Storyshots npm-list/Data Renderers/List Renderer multiple items 1`] = `
+exports[`Storyshots object-list/Data Renderers/List Renderer multiple items 1`] = `
 <div>
   <div
     style={
@@ -1289,7 +1289,7 @@ exports[`Storyshots npm-list/Data Renderers/List Renderer multiple items 1`] = `
               }
             }
           >
-            npm-list/Data Renderers/List Renderer
+            object-list/Data Renderers/List Renderer
           </h1>
           <h2
             style={
@@ -1986,7 +1986,7 @@ exports[`Storyshots npm-list/Data Renderers/List Renderer multiple items 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Data Renderers/List Renderer single item 1`] = `
+exports[`Storyshots object-list/Data Renderers/List Renderer single item 1`] = `
 <div>
   <div
     style={
@@ -2138,7 +2138,7 @@ exports[`Storyshots npm-list/Data Renderers/List Renderer single item 1`] = `
               }
             }
           >
-            npm-list/Data Renderers/List Renderer
+            object-list/Data Renderers/List Renderer
           </h1>
           <h2
             style={

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list/ActionsFiltersContainer default view 1`] = `
+exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
 <div>
   <div
     style={
@@ -793,7 +793,7 @@ exports[`Storyshots npm-list/ActionsFiltersContainer default view 1`] = `
               }
             }
           >
-            npm-list/ActionsFiltersContainer
+            object-list/ActionsFiltersContainer
           </h1>
           <h2
             style={
@@ -2147,7 +2147,7 @@ exports[`Storyshots npm-list/ActionsFiltersContainer default view 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/ActionsFiltersContainer has custom actions 1`] = `
+exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] = `
 <div>
   <div
     style={
@@ -2335,7 +2335,7 @@ exports[`Storyshots npm-list/ActionsFiltersContainer has custom actions 1`] = `
               }
             }
           >
-            npm-list/ActionsFiltersContainer
+            object-list/ActionsFiltersContainer
           </h1>
           <h2
             style={

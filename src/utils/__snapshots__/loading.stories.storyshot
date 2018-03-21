@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list/Utils/Loading Icon loading 1`] = `
+exports[`Storyshots object-list/Utils/Loading Icon loading 1`] = `
 <div>
   <div
     style={
@@ -209,7 +209,7 @@ exports[`Storyshots npm-list/Utils/Loading Icon loading 1`] = `
               }
             }
           >
-            npm-list/Utils/Loading Icon
+            object-list/Utils/Loading Icon
           </h1>
           <h2
             style={

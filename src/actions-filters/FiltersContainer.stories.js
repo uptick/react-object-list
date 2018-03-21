@@ -27,7 +27,7 @@ const filters = Object.entries(importedFilters).map(([name, filter]) => {
   }
 })
 
-storiesOf('npm-list/FiltersContainer', module)
+storiesOf('object-list/FiltersContainer', module)
   .addDecorator((story, context) => withInfo(
     'Container to render all the filters underneath eachother'
   )(story)(context))

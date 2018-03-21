@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list can select all 1`] = `
+exports[`Storyshots object-list can select all 1`] = `
 <div>
   <div
     style={
@@ -717,7 +717,7 @@ exports[`Storyshots npm-list can select all 1`] = `
               }
             }
           >
-            npm-list
+            object-list
           </h1>
           <h2
             style={
@@ -2802,7 +2802,7 @@ exports[`Storyshots npm-list can select all 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list can select items 1`] = `
+exports[`Storyshots object-list can select items 1`] = `
 <div>
   <div
     style={
@@ -3502,7 +3502,7 @@ exports[`Storyshots npm-list can select items 1`] = `
               }
             }
           >
-            npm-list
+            object-list
           </h1>
           <h2
             style={
@@ -5482,7 +5482,7 @@ exports[`Storyshots npm-list can select items 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list has active filters 1`] = `
+exports[`Storyshots object-list has active filters 1`] = `
 <div>
   <div
     style={
@@ -6372,7 +6372,7 @@ exports[`Storyshots npm-list has active filters 1`] = `
               }
             }
           >
-            npm-list
+            object-list
           </h1>
           <h2
             style={
@@ -8321,7 +8321,7 @@ exports[`Storyshots npm-list has active filters 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list has everything 1`] = `
+exports[`Storyshots object-list has everything 1`] = `
 <div>
   <div
     style={
@@ -9320,7 +9320,7 @@ exports[`Storyshots npm-list has everything 1`] = `
               }
             }
           >
-            npm-list
+            object-list
           </h1>
           <h2
             style={
@@ -11385,7 +11385,7 @@ exports[`Storyshots npm-list has everything 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list has multiple pages 1`] = `
+exports[`Storyshots object-list has multiple pages 1`] = `
 <div>
   <div
     style={
@@ -11968,7 +11968,7 @@ exports[`Storyshots npm-list has multiple pages 1`] = `
               }
             }
           >
-            npm-list
+            object-list
           </h1>
           <h2
             style={
@@ -13917,7 +13917,7 @@ exports[`Storyshots npm-list has multiple pages 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list has optional fields 1`] = `
+exports[`Storyshots object-list has optional fields 1`] = `
 <div>
   <div
     style={
@@ -14526,7 +14526,7 @@ exports[`Storyshots npm-list has optional fields 1`] = `
               }
             }
           >
-            npm-list
+            object-list
           </h1>
           <h2
             style={
@@ -16561,7 +16561,7 @@ exports[`Storyshots npm-list has optional fields 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list has search key 1`] = `
+exports[`Storyshots object-list has search key 1`] = `
 <div>
   <div
     style={
@@ -17159,7 +17159,7 @@ exports[`Storyshots npm-list has search key 1`] = `
               }
             }
           >
-            npm-list
+            object-list
           </h1>
           <h2
             style={
@@ -19138,7 +19138,7 @@ exports[`Storyshots npm-list has search key 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list loading 1`] = `
+exports[`Storyshots object-list loading 1`] = `
 <div>
   <div
     style={
@@ -19640,7 +19640,7 @@ exports[`Storyshots npm-list loading 1`] = `
               }
             }
           >
-            npm-list
+            object-list
           </h1>
           <h2
             style={
@@ -21516,7 +21516,7 @@ exports[`Storyshots npm-list loading 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list ready 1`] = `
+exports[`Storyshots object-list ready 1`] = `
 <div>
   <div
     style={
@@ -22007,7 +22007,7 @@ exports[`Storyshots npm-list ready 1`] = `
               }
             }
           >
-            npm-list
+            object-list
           </h1>
           <h2
             style={

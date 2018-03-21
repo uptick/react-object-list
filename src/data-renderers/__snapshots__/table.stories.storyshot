@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
+exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
 <div>
   <div
     style={
@@ -626,7 +626,7 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
               }
             }
           >
-            npm-list/Data Renderers/Table
+            object-list/Data Renderers/Table
           </h1>
           <h2
             style={
@@ -1739,7 +1739,7 @@ exports[`Storyshots npm-list/Data Renderers/Table all selected 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Data Renderers/Table has custom renderers 1`] = `
+exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = `
 <div>
   <div
     style={
@@ -2248,7 +2248,7 @@ exports[`Storyshots npm-list/Data Renderers/Table has custom renderers 1`] = `
               }
             }
           >
-            npm-list/Data Renderers/Table
+            object-list/Data Renderers/Table
           </h1>
           <h2
             style={
@@ -3216,7 +3216,7 @@ exports[`Storyshots npm-list/Data Renderers/Table has custom renderers 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
+exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
 <div>
   <div
     style={
@@ -3842,7 +3842,7 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
               }
             }
           >
-            npm-list/Data Renderers/Table
+            object-list/Data Renderers/Table
           </h1>
           <h2
             style={
@@ -4929,7 +4929,7 @@ exports[`Storyshots npm-list/Data Renderers/Table has selected items 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Data Renderers/Table has sortable headers 1`] = `
+exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = `
 <div>
   <div
     style={
@@ -5324,7 +5324,7 @@ exports[`Storyshots npm-list/Data Renderers/Table has sortable headers 1`] = `
               }
             }
           >
-            npm-list/Data Renderers/Table
+            object-list/Data Renderers/Table
           </h1>
           <h2
             style={
@@ -6414,7 +6414,7 @@ exports[`Storyshots npm-list/Data Renderers/Table has sortable headers 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Data Renderers/Table simple 1`] = `
+exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
 <div>
   <div
     style={
@@ -6791,7 +6791,7 @@ exports[`Storyshots npm-list/Data Renderers/Table simple 1`] = `
               }
             }
           >
-            npm-list/Data Renderers/Table
+            object-list/Data Renderers/Table
           </h1>
           <h2
             style={
@@ -7811,7 +7811,7 @@ exports[`Storyshots npm-list/Data Renderers/Table simple 1`] = `
 </div>
 `;
 
-exports[`Storyshots npm-list/Data Renderers/Table sorted header 1`] = `
+exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
 <div>
   <div
     style={
@@ -7943,7 +7943,7 @@ exports[`Storyshots npm-list/Data Renderers/Table sorted header 1`] = `
               }
             }
           >
-            npm-list/Data Renderers/Table
+            object-list/Data Renderers/Table
           </h1>
           <h2
             style={

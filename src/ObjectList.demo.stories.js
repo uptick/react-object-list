@@ -146,7 +146,7 @@ class InteractiveObjectList extends React.Component {
   }
 }
 
-storiesOf('npm-list/demo', module)
+storiesOf('object-list/demo', module)
   .addDecorator((story, context) => withInfo(
     'Interactive demo for react-object-list'
   )(story)(context))

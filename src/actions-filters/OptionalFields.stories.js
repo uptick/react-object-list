@@ -20,7 +20,7 @@ const defaultProps = {
   updateColumns: action('updateColumns'),
 }
 
-storiesOf('npm-list/OptionalFields', module)
+storiesOf('object-list/OptionalFields', module)
   .addDecorator((story, context) => withInfo(
     'Optional fields dropdown selector'
   )(story)(context))

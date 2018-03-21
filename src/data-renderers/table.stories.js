@@ -32,7 +32,7 @@ const anotherCustomRenderer = ({row: {id}, value}) => {
   )
 }
 
-storiesOf('npm-list/Data Renderers/Table', module)
+storiesOf('object-list/Data Renderers/Table', module)
   .addDecorator((story, context) => withInfo(
     'Component used to render data in a tabular format'
   )(story)(context))

@@ -24,7 +24,7 @@ const baseProps = {
   removeFilter: action('Remove filter'),
 }
 
-storiesOf('npm-list/Filters', module)
+storiesOf('object-list/Filters', module)
   .addDecorator((story, context) => withInfo(
     'Components used to configure filtering on the api list'
   )(story)(context))

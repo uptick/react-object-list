@@ -1,4 +1,4 @@
-# Instructions for porting over npm-list from workforce
+# Instructions for porting over object-list from workforce
 
 ## Snapshot testing
 Insetad of
