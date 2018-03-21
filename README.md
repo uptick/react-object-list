@@ -4,7 +4,7 @@
 ![Downloads](http://img.shields.io/npm/dm/react-object-list.svg?style=flat)
 [![Build Status](https://travis-ci.org/uptick/react-object-list.svg?branch=master)](https://travis-ci.org/uptick/react-object-list)
 
-Folder based file browser given a flat keyed list of objects, powered by React.
+Component used to display an array of object based data in a sortable, filterable, paginated, list based view, powered by React.
 
 ## Live Demo
 
