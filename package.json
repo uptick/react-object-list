@@ -12,7 +12,8 @@
     "styles/main.sass",
     "filters.js",
     "cells.js",
-    "renderers.js"
+    "renderers.js",
+    "utils.js"
   ],
   "main": "main.js",
   "scripts": {

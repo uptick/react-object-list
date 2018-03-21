@@ -5,4 +5,5 @@ cells.js
 filters.js
 main.js
 renderers.js
+utils.js
 styles/

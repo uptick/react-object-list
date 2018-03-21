@@ -13,6 +13,7 @@ module.exports = {
     filters: path.resolve('src', 'filters', 'index.js'),
     renderers: path.resolve('src', 'data-renderers', 'index.js'),
     cells: path.resolve('src', 'types', 'index.js'),
+    utils: path.resolve('src', 'utils', 'index.js'),
   },
   output: {
     path: path.resolve(__dirname),
