@@ -7,4 +7,8 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|less|sass)$': '<rootDir>/__mocks__/styleMock.js',
   },
+  collectCoverageFrom: [
+    'src/**/*.js',
+    '!src/**/*.stories.js',
+  ],
 }
