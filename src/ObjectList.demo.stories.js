@@ -3,9 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import {TextContainsFilter} from './filters'
 
-import {
-  ObjectList,
-} from '.'
+import ObjectList from '.'
 
 const mockData = require('./demo.data.json')
 const columns = [

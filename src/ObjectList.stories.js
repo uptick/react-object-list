@@ -4,9 +4,7 @@ import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions'
 import * as importedFilters from './filters'
 
-import {
-  ObjectList,
-} from '.'
+import ObjectList from '.'
 
 const baseProps = {
   updatePage: action('Update page'),
