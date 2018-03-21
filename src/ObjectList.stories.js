@@ -134,7 +134,7 @@ storiesOf('object-list', module)
       status="done"
       downloadUrl="localhost/download"
       searchKey="text_contains"
-      error="The computer wizards have run out of mana. Please try again later."
+      error={new Error('The computer wizards have run out of mana. Please try again later.')}
     />
   ))
   .add('has optional fields', () => (
