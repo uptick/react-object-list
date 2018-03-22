@@ -11,5 +11,15 @@ describe('utils', () => {
       const result = currency(-12.555)
       expect(result).toBe('-$12.56')
     })
+
+    it('handles null', () => {
+      const result = currency(null)
+      expect(result).toBe('$0.00')
+    })
+
+    it('handles nan', () => {
+      const result = currency(NaN)
+      expect(result).toBe('$0.00')
+    })
   })
 })
