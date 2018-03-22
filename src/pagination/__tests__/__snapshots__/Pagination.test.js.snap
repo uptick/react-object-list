@@ -1,5 +1,92 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Pagination Snapshots has loading icon 1`] = `
+<div
+  className="objectlist-pagination"
+>
+  <ul
+    className="objectlist-pagination__pages"
+  >
+    <Page
+      active={false}
+      disabled={true}
+      goToPage={[MockFunction]}
+      label="← Previous"
+      page={1}
+    />
+    <Page
+      active={true}
+      goToPage={[MockFunction]}
+      page={1}
+    />
+    <Page
+      active={false}
+      goToPage={[MockFunction]}
+      page={2}
+    />
+    <Page
+      active={false}
+      goToPage={[MockFunction]}
+      page={3}
+    />
+    <Page
+      active={false}
+      goToPage={[MockFunction]}
+      page={4}
+    />
+    <Page
+      active={false}
+      goToPage={[MockFunction]}
+      page={5}
+    />
+    <Page
+      active={false}
+      goToPage={[MockFunction]}
+      page={6}
+    />
+    <Page
+      active={false}
+      goToPage={[MockFunction]}
+      page={7}
+    />
+    <Page
+      active={false}
+      goToPage={[MockFunction]}
+      page={8}
+    />
+    <Page
+      active={false}
+      goToPage={[MockFunction]}
+      page={9}
+    />
+    <Page
+      active={false}
+      goToPage={[MockFunction]}
+      page={10}
+    />
+    <Page
+      active={false}
+      disabled={false}
+      goToPage={[MockFunction]}
+      label="Next →"
+      page={2}
+    />
+  </ul>
+  <p
+    className="text-muted"
+  >
+    <em>
+      <h4>
+        Loading
+      </h4>
+       Loading 
+      snakes
+       ...
+    </em>
+  </p>
+</div>
+`;
+
 exports[`Pagination Snapshots has more than maxPages 1`] = `
 <div
   className="objectlist-pagination"

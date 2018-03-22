@@ -5,6 +5,7 @@ import Pagination from '../Pagination.js'
 jest.mock('../Page', () => 'Page')
 
 describe('Pagination', () => {
+  const dummyLoader = (props) => <h4>Loading</h4>
   const defaultProps = {
     goToPage: jest.fn(),
     page: 1,
@@ -25,6 +26,9 @@ describe('Pagination', () => {
     })
     it('is loading', () => {
       snapshotTest(<Pagination {...defaultProps} loading />)
+    })
+    it('has loading icon', () => {
+      snapshotTest(<Pagination {...defaultProps} loading LoadingIcon={dummyLoader} />)
     })
     it('has more than maxPages', () => {
       snapshotTest(<Pagination {...defaultProps} maxPages={2} />)
