@@ -12,6 +12,8 @@ class FilterComparison extends React.Component {
     onChange: PropTypes.func.isRequired,
   }
 
+  handleChange = newValue => this.props.onChange(newValue.value)
+
   render() {
     const {options, value} = this.props
     return (
@@ -19,7 +21,7 @@ class FilterComparison extends React.Component {
         <Select
           options={options}
           value={value}
-          onChange={newValue => this.props.onChange(newValue.value)}
+          onChange={this.handleChange}
           clearable={false}
         />
       </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import FilterComparison from '../FilterComparison'
 
@@ -13,6 +14,14 @@ describe('FilterComparison', () => {
   describe('Snapshots', () => {
     it('renders default', () => {
       snapshotTest(<FilterComparison {...baseProps} />)
+    })
+  })
+  describe('Functions', () => {
+    it('handles change', () => {
+      spyOn(baseProps, 'onChange')
+      const instance = shallow(<FilterComparison {...baseProps} />).instance()
+      instance.handleChange({value: 42})
+      expect(baseProps.onChange).toHaveBeenCalledWith(42)
     })
   })
 })
