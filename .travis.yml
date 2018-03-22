@@ -12,7 +12,7 @@ install:
 
 script:
   - if [ $TASK == jest ]; then
-      yarn test;
+      yarn codecov;
     elif [ $TASK == eslint ]; then
       eslint src/;
     fi
