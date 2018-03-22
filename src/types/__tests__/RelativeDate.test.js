@@ -13,6 +13,7 @@ describe('RelativeDate type', () => {
       {value: '2018-02-07'},
       {value: '2018-02-07 14:00:11', showDate: false},
       {value: '2018-02-07 14:00:11', showDate: true},
+      {value: 'abcdef'},
     ]
     testValues.forEach(testValue => {
       snapshotTest(<RelativeDate {...testValue} />)
