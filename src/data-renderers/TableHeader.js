@@ -43,9 +43,9 @@ export default class TableHeader extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (this.props.headerItems !== nextProps.headerItems) {
-      this.setState(() => ({
+      this.setState({
         headerItems: Array.isArray(nextProps.headerItems) ? nextProps.headerItems : [nextProps.headerItems],
-      }))
+      })
     }
   }
 

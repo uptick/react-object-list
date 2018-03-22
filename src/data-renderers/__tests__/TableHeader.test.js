@@ -6,6 +6,7 @@ import TableHeader from '../TableHeader'
 jest.mock('../HeaderField', () => 'HeaderField')
 
 describe('Table Header', () => {
+
   describe('Snapshots', () => {
     const headerItem = {
       dataKey: 'header_sort_key',
@@ -30,7 +31,41 @@ describe('Table Header', () => {
       snapshotTest(<TableHeader {...props} />)
     })
   })
+
   describe('Functions', () => {
+    it('will recieve props as array', () => {
+      const props = {
+        headerItems: 'something',
+      }
+      const nextProps = {
+        headerItems: ['somethingelse'],
+      }
+      const instance = shallow(<TableHeader {...props} />).instance()
+      instance.componentWillReceiveProps(nextProps)
+      expect(instance.state.headerItems).toEqual(['somethingelse'])
+    })
+    it('will recieve props as non-array', () => {
+      const props = {
+        headerItems: 'something',
+      }
+      const nextProps = {
+        headerItems: 'somethingelse',
+      }
+      const instance = shallow(<TableHeader {...props} />).instance()
+      instance.componentWillReceiveProps(nextProps)
+      expect(instance.state.headerItems).toEqual(['somethingelse'])
+    })
+    it('will recieve same props', () => {
+      const props = {
+        headerItems: 'something',
+      }
+      const nextProps = {
+        headerItems: 'something',
+      }
+      const instance = shallow(<TableHeader {...props} />).instance()
+      instance.componentWillReceiveProps(nextProps)
+      expect(instance.state.headerItems).toEqual(['something'])
+    })
     it('saves width', () => {
       const props = {
         saveWidth: jasmine.createSpy(),
@@ -42,6 +77,7 @@ describe('Table Header', () => {
       expect(props.saveWidth).toHaveBeenCalledWith(props.label, 10)
     })
   })
+
   describe('sets width', () => {
     let instance
     beforeEach(() => {
