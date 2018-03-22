@@ -14,6 +14,7 @@ describe('TextAttr type', () => {
         name: 'abc',
         ref: '123',
         detail: 'some important detail',
+        empty: '',
       },
     }}
     const testValues = [
@@ -21,9 +22,13 @@ describe('TextAttr type', () => {
       {value: input},
       {value: noAttrs},
       {value: allAttrs},
+      {value: allAttrs, display: null},
       {value: allAttrs, display: 'name'},
       {value: allAttrs, display: 'name', identifier: 'ref'},
       {value: allAttrs, display: 'name', identifier: 'ref', subtext: 'detail'},
+      {value: allAttrs, display: 'name', identifier: 'wrongref', subtext: 'wrongdetail'},
+      {value: allAttrs, display: 'type', identifier: 'type', subtext: 'type'},
+      {value: allAttrs, display: 'empty'},
     ]
     testValues.forEach(testValue => {
       snapshotTest(<TextAttr {...testValue} />)

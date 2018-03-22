@@ -35,7 +35,7 @@ exports[`TextAttr type snapshot tests 4`] = `
 exports[`TextAttr type snapshot tests 5`] = `
 <div>
   <div>
-    abc
+    TestModel 1
   </div>
 </div>
 `;
@@ -43,12 +43,6 @@ exports[`TextAttr type snapshot tests 5`] = `
 exports[`TextAttr type snapshot tests 6`] = `
 <div>
   <div>
-    <small
-      className="text-muted"
-    >
-      123
-       
-    </small>
     abc
   </div>
 </div>
@@ -65,10 +59,63 @@ exports[`TextAttr type snapshot tests 7`] = `
     </small>
     abc
   </div>
+</div>
+`;
+
+exports[`TextAttr type snapshot tests 8`] = `
+<div>
+  <div>
+    <small
+      className="text-muted"
+    >
+      123
+       
+    </small>
+    abc
+  </div>
   <small
     className="text-muted"
   >
     some important detail
   </small>
+</div>
+`;
+
+exports[`TextAttr type snapshot tests 9`] = `
+<div>
+  <div>
+    abc
+  </div>
+</div>
+`;
+
+exports[`TextAttr type snapshot tests 10`] = `
+<div>
+  <div>
+    <small
+      className="text-muted"
+    >
+      TestModel
+       
+    </small>
+    TestModel
+  </div>
+  <small
+    className="text-muted"
+  >
+    TestModel
+  </small>
+</div>
+`;
+
+exports[`TextAttr type snapshot tests 11`] = `
+<div>
+  <div>
+    <span
+      className="text-muted"
+    >
+      -
+    </span>
+  </div>
 </div>
 `;
