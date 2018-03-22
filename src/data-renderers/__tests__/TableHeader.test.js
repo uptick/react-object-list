@@ -42,7 +42,7 @@ describe('Table Header', () => {
       expect(props.saveWidth).toHaveBeenCalledWith(props.label, 10)
     })
   })
-  describe('Sets Width', () => {
+  describe('sets width', () => {
     let instance
     beforeEach(() => {
       instance = shallow(<TableHeader />).instance()
