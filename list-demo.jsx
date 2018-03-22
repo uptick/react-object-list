@@ -4,7 +4,7 @@ import ReactDom from 'react-dom'
 import ObjectList from 'react-object-list'
 import { List } from 'react-object-list/renderers'
 
-const mockData = require('./demo.data.json').slice(0, 5)
+const mockData = require('./demo.data.json').slice(0, 3)
 const columns = [
   [
     {dataKey: 'first_name', header: 'First Name'},
