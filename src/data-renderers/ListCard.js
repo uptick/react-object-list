@@ -18,12 +18,15 @@ export default class ListCard extends Component {
 
   renderItemRows = () => {
     const {columns, data} = this.props
-    return columns.map((column, idx) => (
-      <div className="objectlist-list__content" key={`list-item-${idx}`}>
-        <h2 className="objectlist-list__header">{column.header}:</h2>
-        <div className="objectlist-list__body">{data[column.dataKey]}</div>
-      </div>
-    ))
+    return columns.map((column, idx) => {
+      const col = Array.isArray(column) ? column : [column]
+      return (
+        <div className="objectlist-list__content" key={`list-item-${idx}`}>
+          <h2 className="objectlist-list__header">{col.map(c => c.header).join(' ')}:</h2>
+          <div className="objectlist-list__body">{col.map(c => data[c.dataKey]).join(' ')}</div>
+        </div>
+      )
+    })
   }
 
   render() {
