@@ -4,6 +4,8 @@ import { withInfo } from '@storybook/addon-info'
 import {TextContainsFilter} from './filters'
 
 import ObjectList from '.'
+import Table from './data-renderers/Table'
+import List from './data-renderers/List'
 
 const mockData = require('./demo.data.json')
 const columns = [
@@ -135,6 +137,7 @@ class InteractiveObjectList extends React.Component {
         sortKeys,
         extraColumns,
       }}
+      DataRenderer={this.props.DataRenderer}
       updatePage={this.updatePage}
       maxPages={10}
       updateColumns={this.updateColumns}
@@ -150,6 +153,9 @@ storiesOf('object-list/demo', module)
   .addDecorator((story, context) => withInfo(
     'Interactive demo for react-object-list'
   )(story)(context))
-  .add('interactive', () => (
-    <InteractiveObjectList />
+  .add('interactive table', () => (
+    <InteractiveObjectList DataRenderer={Table} />
+  ))
+  .add('interactive list', () => (
+    <InteractiveObjectList DataRenderer={List} />
   ))
