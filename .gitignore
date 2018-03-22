@@ -1,11 +1,11 @@
 node_modules/
 dist/
 demo-site/_site/
-cells.js
-filters.js
-main.js
-renderers.js
-utils.js
+/cells.js
+/filters.js
+/main.js
+/renderers.js
+/utils.js
 styles/
 coverage/
 .vscode/
