@@ -81,12 +81,15 @@ class ActionsFilterContainer extends Component {
 
     let search
     if (searchKey) {
-      search = {
-        Renderer: SearchFilter,
-        filterKey: searchKey,
-        initialString: searchKey in this.props.filters ? this.props.filters[searchKey] : '',
-        permanent: true,
-        active: true,
+      search = this.props.filters.find(f => f.filterKey === searchKey)
+      if (search) {
+        search = {
+          ...search,
+          Renderer: SearchFilter,
+          value: search.value || '',
+          permanent: true,
+          active: true,
+        }
       }
     }
     return (
@@ -109,7 +112,7 @@ class ActionsFilterContainer extends Component {
           </div>
         </div>
         <FiltersContainer
-          filters={this.props.filters}
+          filters={this.props.filters.filter(f => !search || f.filterKey !== searchKey)}
           updateFilter={this.props.updateFilter}
           removeFilter={this.props.removeFilter}
         />

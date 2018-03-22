@@ -1988,21 +1988,6 @@ exports[`Storyshots object-list has error 1`] = `
       className="objectlist-row objectlist-row--right objectlist-row--search"
     >
       <div
-        className="objectlist--grow"
-      >
-        <div
-          className="objectlist-row"
-        >
-          <input
-            className="objectlist-current-filter__active-status objectlist-input"
-            onChange={[Function]}
-            placeholder="Search the table below"
-            type="text"
-            value=""
-          />
-        </div>
-      </div>
-      <div
         className="objectlist-row"
       >
         <div
@@ -2469,21 +2454,6 @@ exports[`Storyshots object-list has everything 1`] = `
     <div
       className="objectlist-row objectlist-row--right objectlist-row--search"
     >
-      <div
-        className="objectlist--grow"
-      >
-        <div
-          className="objectlist-row"
-        >
-          <input
-            className="objectlist-current-filter__active-status objectlist-input"
-            onChange={[Function]}
-            placeholder="Search the table below"
-            type="text"
-            value=""
-          />
-        </div>
-      </div>
       <div
         className="objectlist-row"
       >
@@ -4333,21 +4303,6 @@ exports[`Storyshots object-list has search key 1`] = `
     <div
       className="objectlist-row objectlist-row--right objectlist-row--search"
     >
-      <div
-        className="objectlist--grow"
-      >
-        <div
-          className="objectlist-row"
-        >
-          <input
-            className="objectlist-current-filter__active-status objectlist-input"
-            onChange={[Function]}
-            placeholder="Search the table below"
-            type="text"
-            value=""
-          />
-        </div>
-      </div>
       <div
         className="objectlist-row"
       >

@@ -762,3 +762,2011 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
   </div>
 </div>
 `;
+
+exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
+<div>
+  <div
+    className="objectlist-row objectlist-row--right objectlist-row--search"
+  >
+    <div
+      className="objectlist-row"
+    >
+      <Select
+        className="objectlist-select-filter"
+        labelKey="name"
+        menuContainerStyle={
+          Object {
+            "maxHeight": "500px",
+          }
+        }
+        menuStyle={
+          Object {
+            "maxHeight": "500px",
+          }
+        }
+        onChange={undefined}
+        openOnFocus={true}
+        options={Array []}
+        placeholder="Add Filter"
+        value={null}
+        valueKey="key"
+      />
+      <div
+        className="objectlist-dropdown"
+      >
+        <button
+          className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
+          type="button"
+        >
+          <i
+            className="fa fa-heart-o"
+          />
+           Favourites
+        </button>
+        <div
+          className="objectlist-dropdown__menu"
+        >
+          <div
+            className="objectlist-dropdown__item objectlist-dropdown__item--input"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <input
+                className="objectlist-input objectlist-input__favourite"
+                onChange={[Function]}
+                placeholder="Save as new"
+                type="text"
+                value=""
+              />
+              <button
+                hidden={true}
+                type="submit"
+              >
+                Add
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="objectlist--grow"
+  >
+    <div
+      className="objectlist-row"
+    >
+      <Select
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={undefined}
+        multi={false}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={
+          Array [
+            Object {
+              "label": "Yes",
+              "value": "True",
+            },
+            Object {
+              "label": "No",
+              "value": "False",
+            },
+          ]
+        }
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="month-picker "
+      >
+        <input
+          className="objectlist-input objectlist-input--wide"
+          onChange={[Function]}
+          onClick={[Function]}
+          placeholder="Select month"
+          type="text"
+          value="Jul 2017"
+        />
+        <div
+          className="rmp-container rmp-table  "
+        >
+          <div
+            className="rmp-overlay"
+            disabled={undefined}
+            onClick={[Function]}
+            onTouchCancel={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            style={
+              Object {
+                "KhtmlUserSelect": "none",
+                "MozUserSelect": "none",
+                "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+                "WebkitTouchCallout": "none",
+                "WebkitUserSelect": "none",
+                "msUserSelect": "none",
+                "userSelect": "none",
+              }
+            }
+          />
+          <div
+            className="rmp-cell"
+          >
+            <div
+              className="rmp-popup  light "
+            >
+              <div
+                className="rmp-pad"
+              >
+                <div>
+                  <label>
+                    2017
+                  </label>
+                  <i
+                    className="rmp-tab rmp-btn prev "
+                    data-id={0}
+                    onClick={[Function]}
+                  >
+                    &lt;
+                  </i>
+                  <i
+                    className="rmp-tab rmp-btn next "
+                    data-id={0}
+                    onClick={[Function]}
+                  >
+                    &gt;
+                  </i>
+                </div>
+                <ul>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:1"
+                    onClick={[Function]}
+                  >
+                    Jan
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:2"
+                    onClick={[Function]}
+                  >
+                    Feb
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:3"
+                    onClick={[Function]}
+                  >
+                    Mar
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:4"
+                    onClick={[Function]}
+                  >
+                    Apr
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:5"
+                    onClick={[Function]}
+                  >
+                    May
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:6"
+                    onClick={[Function]}
+                  >
+                    Jun
+                  </li>
+                  <li
+                    className="rmp-btn active"
+                    data-id="0:7"
+                    onClick={[Function]}
+                  >
+                    Jul
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:8"
+                    onClick={[Function]}
+                  >
+                    Aug
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:9"
+                    onClick={[Function]}
+                  >
+                    Sep
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:10"
+                    onClick={[Function]}
+                  >
+                    Oct
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:11"
+                    onClick={[Function]}
+                  >
+                    Nov
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:12"
+                    onClick={[Function]}
+                  >
+                    Dec
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Exact",
+                "value": "exact",
+              },
+              Object {
+                "label": "Greater than",
+                "value": "gt",
+              },
+              Object {
+                "label": "Less than",
+                "value": "lt",
+              },
+              Object {
+                "label": "Greater than or equal",
+                "value": "gte",
+              },
+              Object {
+                "label": "Less than or equal",
+                "value": "lte",
+              },
+            ]
+          }
+          value={
+            Object {
+              "label": "Exact",
+              "value": "exact",
+            }
+          }
+        />
+      </div>
+      <div
+        className="objectlist-currency-filter objectlist-current-filter__active-status"
+      >
+        <span
+          className="objectlist-currency-filter__symbol"
+        >
+          $
+        </span>
+        <input
+          className="objectlist-input objectlist-input--currency"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+        <span
+          className="objectlist-currency-filter__decimal"
+        >
+          .00
+        </span>
+      </div>
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Is",
+                "value": "is",
+              },
+              Object {
+                "label": "Is Not",
+                "value": "is_not",
+              },
+            ]
+          }
+          value="is"
+        />
+      </div>
+      <Select
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={undefined}
+        multi={false}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Fixed Date",
+                "value": "fixed",
+              },
+              Object {
+                "label": "Relative to Now",
+                "value": "relative",
+              },
+            ]
+          }
+          value="relative"
+        />
+      </div>
+      <Select
+        className="objectlist-current-filter__active-status"
+        clearable={false}
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "label": "Today",
+              "value": "today",
+            },
+            Object {
+              "label": "Beginning of this week",
+              "value": "week_start",
+            },
+            Object {
+              "label": "Beginning of this month",
+              "value": "month_start",
+            },
+            Object {
+              "label": "Beginning of this year",
+              "value": "year_start",
+            },
+          ]
+        }
+        value={undefined}
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-dayfilter"
+      >
+        <button
+          className="objectlist-button"
+          onClick={[Function]}
+        >
+          ← Previous
+        </button>
+        <h3
+          className="objectlist-dayfilter__day-name"
+        >
+          Saturday July 15th 2017
+        </h3>
+        <button
+          className="objectlist-button"
+          onClick={[Function]}
+        >
+          Next →
+        </button>
+      </div>
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Is",
+                "value": "is",
+              },
+              Object {
+                "label": "Is Not",
+                "value": "is_not",
+              },
+            ]
+          }
+          value="is"
+        />
+      </div>
+      <Select
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={undefined}
+        multi={true}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Exact",
+                "value": "exact",
+              },
+              Object {
+                "label": "Greater than",
+                "value": "gt",
+              },
+              Object {
+                "label": "Less than",
+                "value": "lt",
+              },
+              Object {
+                "label": "Greater than or equal",
+                "value": "gte",
+              },
+              Object {
+                "label": "Less than or equal",
+                "value": "lte",
+              },
+            ]
+          }
+          value="exact"
+        />
+      </div>
+      <div
+        className="objectlist-row objectlist-current-filter__active-status"
+      >
+        <input
+          className="objectlist-input objectlist-input__number-slider--number"
+          max={100}
+          min={0}
+          onChange={[Function]}
+          type="number"
+          value=""
+        />
+        <input
+          className="objectlist-input__number-slider--slider"
+          max={100}
+          min={0}
+          onChange={[Function]}
+          onMouseUp={[Function]}
+          type="range"
+          value=""
+        />
+      </div>
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <input
+        className="objectlist-current-filter__active-status objectlist-input"
+        onChange={[Function]}
+        placeholder="Search the table below"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Contains",
+                "value": "contains",
+              },
+              Object {
+                "label": "Does Not Contain",
+                "value": "not_contains",
+              },
+            ]
+          }
+          value={
+            Object {
+              "label": "Contains",
+              "value": "contains",
+            }
+          }
+        />
+      </div>
+      <input
+        className="objectlist-current-filter__active-status objectlist-input"
+        onChange={[Function]}
+        placeholder="Search the table below"
+        type="text"
+        value=""
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <Select.Async
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={[Function]}
+        multi={false}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <Select.Async
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={[Function]}
+        multi={true}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="objectlist-row objectlist-row--justify"
+  >
+    <span
+      className="objectlist-results-text"
+    >
+      1 thing found
+    </span>
+    <div
+      className="objectlist-dropdown"
+    >
+      <button
+        className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
+      >
+        <i
+          className="fa fa-list"
+        />
+         Change columns
+      </button>
+      <div
+        className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+      >
+        <button
+          className="objectlist-dropdown__item"
+          onClick={[Function]}
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-square-o objectlist-dropdown__icon"
+          />
+          Favourite Colour
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
+<div>
+  <div
+    className="objectlist-row objectlist-row--right objectlist-row--search"
+  >
+    <div
+      className="objectlist--grow"
+    >
+      <div
+        className="objectlist-row"
+      >
+        <input
+          className="objectlist-current-filter__active-status objectlist-input"
+          onChange={[Function]}
+          placeholder="Search the table below"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <Select
+        className="objectlist-select-filter"
+        labelKey="name"
+        menuContainerStyle={
+          Object {
+            "maxHeight": "500px",
+          }
+        }
+        menuStyle={
+          Object {
+            "maxHeight": "500px",
+          }
+        }
+        onChange={undefined}
+        openOnFocus={true}
+        options={Array []}
+        placeholder="Add Filter"
+        value={null}
+        valueKey="key"
+      />
+      <div
+        className="objectlist-dropdown"
+      >
+        <button
+          className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
+          type="button"
+        >
+          <i
+            className="fa fa-heart-o"
+          />
+           Favourites
+        </button>
+        <div
+          className="objectlist-dropdown__menu"
+        >
+          <div
+            className="objectlist-dropdown__item objectlist-dropdown__item--input"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <input
+                className="objectlist-input objectlist-input__favourite"
+                onChange={[Function]}
+                placeholder="Save as new"
+                type="text"
+                value=""
+              />
+              <button
+                hidden={true}
+                type="submit"
+              >
+                Add
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="objectlist--grow"
+  >
+    <div
+      className="objectlist-row"
+    >
+      <Select
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={undefined}
+        multi={false}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={
+          Array [
+            Object {
+              "label": "Yes",
+              "value": "True",
+            },
+            Object {
+              "label": "No",
+              "value": "False",
+            },
+          ]
+        }
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="month-picker "
+      >
+        <input
+          className="objectlist-input objectlist-input--wide"
+          onChange={[Function]}
+          onClick={[Function]}
+          placeholder="Select month"
+          type="text"
+          value="Jul 2017"
+        />
+        <div
+          className="rmp-container rmp-table  "
+        >
+          <div
+            className="rmp-overlay"
+            disabled={undefined}
+            onClick={[Function]}
+            onTouchCancel={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            style={
+              Object {
+                "KhtmlUserSelect": "none",
+                "MozUserSelect": "none",
+                "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+                "WebkitTouchCallout": "none",
+                "WebkitUserSelect": "none",
+                "msUserSelect": "none",
+                "userSelect": "none",
+              }
+            }
+          />
+          <div
+            className="rmp-cell"
+          >
+            <div
+              className="rmp-popup  light "
+            >
+              <div
+                className="rmp-pad"
+              >
+                <div>
+                  <label>
+                    2017
+                  </label>
+                  <i
+                    className="rmp-tab rmp-btn prev "
+                    data-id={0}
+                    onClick={[Function]}
+                  >
+                    &lt;
+                  </i>
+                  <i
+                    className="rmp-tab rmp-btn next "
+                    data-id={0}
+                    onClick={[Function]}
+                  >
+                    &gt;
+                  </i>
+                </div>
+                <ul>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:1"
+                    onClick={[Function]}
+                  >
+                    Jan
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:2"
+                    onClick={[Function]}
+                  >
+                    Feb
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:3"
+                    onClick={[Function]}
+                  >
+                    Mar
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:4"
+                    onClick={[Function]}
+                  >
+                    Apr
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:5"
+                    onClick={[Function]}
+                  >
+                    May
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:6"
+                    onClick={[Function]}
+                  >
+                    Jun
+                  </li>
+                  <li
+                    className="rmp-btn active"
+                    data-id="0:7"
+                    onClick={[Function]}
+                  >
+                    Jul
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:8"
+                    onClick={[Function]}
+                  >
+                    Aug
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:9"
+                    onClick={[Function]}
+                  >
+                    Sep
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:10"
+                    onClick={[Function]}
+                  >
+                    Oct
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:11"
+                    onClick={[Function]}
+                  >
+                    Nov
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:12"
+                    onClick={[Function]}
+                  >
+                    Dec
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Exact",
+                "value": "exact",
+              },
+              Object {
+                "label": "Greater than",
+                "value": "gt",
+              },
+              Object {
+                "label": "Less than",
+                "value": "lt",
+              },
+              Object {
+                "label": "Greater than or equal",
+                "value": "gte",
+              },
+              Object {
+                "label": "Less than or equal",
+                "value": "lte",
+              },
+            ]
+          }
+          value={
+            Object {
+              "label": "Exact",
+              "value": "exact",
+            }
+          }
+        />
+      </div>
+      <div
+        className="objectlist-currency-filter objectlist-current-filter__active-status"
+      >
+        <span
+          className="objectlist-currency-filter__symbol"
+        >
+          $
+        </span>
+        <input
+          className="objectlist-input objectlist-input--currency"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+        <span
+          className="objectlist-currency-filter__decimal"
+        >
+          .00
+        </span>
+      </div>
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Is",
+                "value": "is",
+              },
+              Object {
+                "label": "Is Not",
+                "value": "is_not",
+              },
+            ]
+          }
+          value="is"
+        />
+      </div>
+      <Select
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={undefined}
+        multi={false}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Fixed Date",
+                "value": "fixed",
+              },
+              Object {
+                "label": "Relative to Now",
+                "value": "relative",
+              },
+            ]
+          }
+          value="relative"
+        />
+      </div>
+      <Select
+        className="objectlist-current-filter__active-status"
+        clearable={false}
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "label": "Today",
+              "value": "today",
+            },
+            Object {
+              "label": "Beginning of this week",
+              "value": "week_start",
+            },
+            Object {
+              "label": "Beginning of this month",
+              "value": "month_start",
+            },
+            Object {
+              "label": "Beginning of this year",
+              "value": "year_start",
+            },
+          ]
+        }
+        value={undefined}
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-dayfilter"
+      >
+        <button
+          className="objectlist-button"
+          onClick={[Function]}
+        >
+          ← Previous
+        </button>
+        <h3
+          className="objectlist-dayfilter__day-name"
+        >
+          Saturday July 15th 2017
+        </h3>
+        <button
+          className="objectlist-button"
+          onClick={[Function]}
+        >
+          Next →
+        </button>
+      </div>
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Is",
+                "value": "is",
+              },
+              Object {
+                "label": "Is Not",
+                "value": "is_not",
+              },
+            ]
+          }
+          value="is"
+        />
+      </div>
+      <Select
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={undefined}
+        multi={true}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Exact",
+                "value": "exact",
+              },
+              Object {
+                "label": "Greater than",
+                "value": "gt",
+              },
+              Object {
+                "label": "Less than",
+                "value": "lt",
+              },
+              Object {
+                "label": "Greater than or equal",
+                "value": "gte",
+              },
+              Object {
+                "label": "Less than or equal",
+                "value": "lte",
+              },
+            ]
+          }
+          value="exact"
+        />
+      </div>
+      <div
+        className="objectlist-row objectlist-current-filter__active-status"
+      >
+        <input
+          className="objectlist-input objectlist-input__number-slider--number"
+          max={100}
+          min={0}
+          onChange={[Function]}
+          type="number"
+          value=""
+        />
+        <input
+          className="objectlist-input__number-slider--slider"
+          max={100}
+          min={0}
+          onChange={[Function]}
+          onMouseUp={[Function]}
+          type="range"
+          value=""
+        />
+      </div>
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Contains",
+                "value": "contains",
+              },
+              Object {
+                "label": "Does Not Contain",
+                "value": "not_contains",
+              },
+            ]
+          }
+          value={
+            Object {
+              "label": "Contains",
+              "value": "contains",
+            }
+          }
+        />
+      </div>
+      <input
+        className="objectlist-current-filter__active-status objectlist-input"
+        onChange={[Function]}
+        placeholder="Search the table below"
+        type="text"
+        value=""
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <Select.Async
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={[Function]}
+        multi={false}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <Select.Async
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={[Function]}
+        multi={true}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="objectlist-row objectlist-row--justify"
+  >
+    <span
+      className="objectlist-results-text"
+    >
+      573,489 cats found
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`] = `
+<div>
+  <div
+    className="objectlist-row objectlist-row--right objectlist-row--search"
+  >
+    <div
+      className="objectlist--grow"
+    >
+      <div
+        className="objectlist-row"
+      >
+        <input
+          className="objectlist-current-filter__active-status objectlist-input"
+          onChange={[Function]}
+          placeholder="Search the table below"
+          type="text"
+          value="I am looking for this"
+        />
+      </div>
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <Select
+        className="objectlist-select-filter"
+        labelKey="name"
+        menuContainerStyle={
+          Object {
+            "maxHeight": "500px",
+          }
+        }
+        menuStyle={
+          Object {
+            "maxHeight": "500px",
+          }
+        }
+        onChange={undefined}
+        openOnFocus={true}
+        options={Array []}
+        placeholder="Add Filter"
+        value={null}
+        valueKey="key"
+      />
+      <div
+        className="objectlist-dropdown"
+      >
+        <button
+          className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
+          type="button"
+        >
+          <i
+            className="fa fa-heart-o"
+          />
+           Favourites
+        </button>
+        <div
+          className="objectlist-dropdown__menu"
+        >
+          <div
+            className="objectlist-dropdown__item objectlist-dropdown__item--input"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <input
+                className="objectlist-input objectlist-input__favourite"
+                onChange={[Function]}
+                placeholder="Save as new"
+                type="text"
+                value=""
+              />
+              <button
+                hidden={true}
+                type="submit"
+              >
+                Add
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="objectlist--grow"
+  >
+    <div
+      className="objectlist-row"
+    >
+      <Select
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={undefined}
+        multi={false}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={
+          Array [
+            Object {
+              "label": "Yes",
+              "value": "True",
+            },
+            Object {
+              "label": "No",
+              "value": "False",
+            },
+          ]
+        }
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="month-picker "
+      >
+        <input
+          className="objectlist-input objectlist-input--wide"
+          onChange={[Function]}
+          onClick={[Function]}
+          placeholder="Select month"
+          type="text"
+          value="Jul 2017"
+        />
+        <div
+          className="rmp-container rmp-table  "
+        >
+          <div
+            className="rmp-overlay"
+            disabled={undefined}
+            onClick={[Function]}
+            onTouchCancel={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            style={
+              Object {
+                "KhtmlUserSelect": "none",
+                "MozUserSelect": "none",
+                "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+                "WebkitTouchCallout": "none",
+                "WebkitUserSelect": "none",
+                "msUserSelect": "none",
+                "userSelect": "none",
+              }
+            }
+          />
+          <div
+            className="rmp-cell"
+          >
+            <div
+              className="rmp-popup  light "
+            >
+              <div
+                className="rmp-pad"
+              >
+                <div>
+                  <label>
+                    2017
+                  </label>
+                  <i
+                    className="rmp-tab rmp-btn prev "
+                    data-id={0}
+                    onClick={[Function]}
+                  >
+                    &lt;
+                  </i>
+                  <i
+                    className="rmp-tab rmp-btn next "
+                    data-id={0}
+                    onClick={[Function]}
+                  >
+                    &gt;
+                  </i>
+                </div>
+                <ul>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:1"
+                    onClick={[Function]}
+                  >
+                    Jan
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:2"
+                    onClick={[Function]}
+                  >
+                    Feb
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:3"
+                    onClick={[Function]}
+                  >
+                    Mar
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:4"
+                    onClick={[Function]}
+                  >
+                    Apr
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:5"
+                    onClick={[Function]}
+                  >
+                    May
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:6"
+                    onClick={[Function]}
+                  >
+                    Jun
+                  </li>
+                  <li
+                    className="rmp-btn active"
+                    data-id="0:7"
+                    onClick={[Function]}
+                  >
+                    Jul
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:8"
+                    onClick={[Function]}
+                  >
+                    Aug
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:9"
+                    onClick={[Function]}
+                  >
+                    Sep
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:10"
+                    onClick={[Function]}
+                  >
+                    Oct
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:11"
+                    onClick={[Function]}
+                  >
+                    Nov
+                  </li>
+                  <li
+                    className="rmp-btn "
+                    data-id="0:12"
+                    onClick={[Function]}
+                  >
+                    Dec
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Exact",
+                "value": "exact",
+              },
+              Object {
+                "label": "Greater than",
+                "value": "gt",
+              },
+              Object {
+                "label": "Less than",
+                "value": "lt",
+              },
+              Object {
+                "label": "Greater than or equal",
+                "value": "gte",
+              },
+              Object {
+                "label": "Less than or equal",
+                "value": "lte",
+              },
+            ]
+          }
+          value={
+            Object {
+              "label": "Exact",
+              "value": "exact",
+            }
+          }
+        />
+      </div>
+      <div
+        className="objectlist-currency-filter objectlist-current-filter__active-status"
+      >
+        <span
+          className="objectlist-currency-filter__symbol"
+        >
+          $
+        </span>
+        <input
+          className="objectlist-input objectlist-input--currency"
+          onChange={[Function]}
+          type="text"
+          value={undefined}
+        />
+        <span
+          className="objectlist-currency-filter__decimal"
+        >
+          .00
+        </span>
+      </div>
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Is",
+                "value": "is",
+              },
+              Object {
+                "label": "Is Not",
+                "value": "is_not",
+              },
+            ]
+          }
+          value="is"
+        />
+      </div>
+      <Select
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={undefined}
+        multi={false}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Fixed Date",
+                "value": "fixed",
+              },
+              Object {
+                "label": "Relative to Now",
+                "value": "relative",
+              },
+            ]
+          }
+          value="relative"
+        />
+      </div>
+      <Select
+        className="objectlist-current-filter__active-status"
+        clearable={false}
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "label": "Today",
+              "value": "today",
+            },
+            Object {
+              "label": "Beginning of this week",
+              "value": "week_start",
+            },
+            Object {
+              "label": "Beginning of this month",
+              "value": "month_start",
+            },
+            Object {
+              "label": "Beginning of this year",
+              "value": "year_start",
+            },
+          ]
+        }
+        value={undefined}
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-dayfilter"
+      >
+        <button
+          className="objectlist-button"
+          onClick={[Function]}
+        >
+          ← Previous
+        </button>
+        <h3
+          className="objectlist-dayfilter__day-name"
+        >
+          Saturday July 15th 2017
+        </h3>
+        <button
+          className="objectlist-button"
+          onClick={[Function]}
+        >
+          Next →
+        </button>
+      </div>
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Is",
+                "value": "is",
+              },
+              Object {
+                "label": "Is Not",
+                "value": "is_not",
+              },
+            ]
+          }
+          value="is"
+        />
+      </div>
+      <Select
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={undefined}
+        multi={true}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Exact",
+                "value": "exact",
+              },
+              Object {
+                "label": "Greater than",
+                "value": "gt",
+              },
+              Object {
+                "label": "Less than",
+                "value": "lt",
+              },
+              Object {
+                "label": "Greater than or equal",
+                "value": "gte",
+              },
+              Object {
+                "label": "Less than or equal",
+                "value": "lte",
+              },
+            ]
+          }
+          value="exact"
+        />
+      </div>
+      <div
+        className="objectlist-row objectlist-current-filter__active-status"
+      >
+        <input
+          className="objectlist-input objectlist-input__number-slider--number"
+          max={100}
+          min={0}
+          onChange={[Function]}
+          type="number"
+          value=""
+        />
+        <input
+          className="objectlist-input__number-slider--slider"
+          max={100}
+          min={0}
+          onChange={[Function]}
+          onMouseUp={[Function]}
+          type="range"
+          value=""
+        />
+      </div>
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Contains",
+                "value": "contains",
+              },
+              Object {
+                "label": "Does Not Contain",
+                "value": "not_contains",
+              },
+            ]
+          }
+          value={
+            Object {
+              "label": "Contains",
+              "value": "contains",
+            }
+          }
+        />
+      </div>
+      <input
+        className="objectlist-current-filter__active-status objectlist-input"
+        onChange={[Function]}
+        placeholder="Search the table below"
+        type="text"
+        value=""
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <Select.Async
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={[Function]}
+        multi={false}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="objectlist-row"
+    >
+      <Select.Async
+        className="objectlist-current-filter__active-status"
+        labelKey="label"
+        loadOptions={[Function]}
+        multi={true}
+        onChange={[Function]}
+        optionRenderer={null}
+        options={Array []}
+        placeholder="Any value"
+        value={null}
+        valueKey="value"
+      />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="objectlist-row objectlist-row--justify"
+  >
+    <span
+      className="objectlist-results-text"
+    >
+      573,489 cats found
+    </span>
+  </div>
+</div>
+`;
