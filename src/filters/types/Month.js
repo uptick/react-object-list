@@ -67,6 +67,10 @@ class Month extends React.Component {
     this.props.onChange(parsedMonth)
   }
 
+  handleClick = () => {
+    this.refs.monthPicker.show()
+  }
+
   render() {
     const monthDict = {}
     if (this.props.value !== null) {
@@ -104,9 +108,7 @@ class Month extends React.Component {
           type="text"
           className="objectlist-input objectlist-input--wide"
           placeholder="Select month"
-          onClick={() => {
-            this.refs.monthPicker.show()
-          }}
+          onClick={this.handleClick}
           onChange={this.handleTextChange}
           value={this.state.textValue}
         />

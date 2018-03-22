@@ -62,6 +62,17 @@ describe('Month', () => {
         expect(baseProps.onChange).toHaveBeenCalledWith(null)
       })
     })
+    it('handles click', () => {
+      instance = shallow(<Month {...baseProps} />).instance()
+      instance.refs = {
+        monthPicker: {
+          show: jest.fn(),
+        },
+      }
+      spyOn(instance.refs.monthPicker, 'show')
+      instance.handleClick()
+      expect(instance.refs.monthPicker.show).toHaveBeenCalled()
+    })
     it('handles value change', () => {
       const mockYear = Math.floor(Math.random() * 50) + 2000
       const mockMonth = Math.floor(Math.random() * 12)
