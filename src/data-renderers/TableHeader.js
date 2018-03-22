@@ -65,7 +65,7 @@ export default class TableHeader extends React.Component {
    * Save the preferred column width to user preferences
    */
   saveWidth = () => {
-    this.props.saveWidth(this.label, this.state.width)
+    this.props.saveWidth(this.props.label, this.state.width)
   }
 
   /**
