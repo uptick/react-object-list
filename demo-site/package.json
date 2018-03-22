@@ -24,7 +24,7 @@
     "react-day-picker": "^7.1.4",
     "react-dom": "^16.2.0",
     "react-month-picker": "^1.3.5",
-    "react-object-list": "^0.0.4",
+    "react-object-list": "latest",
     "react-select": "^1.2.1",
     "uptick-demo-site": "latest"
   },
