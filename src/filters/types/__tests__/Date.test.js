@@ -31,6 +31,9 @@ describe('Date', () => {
         {value: 'never', label: 'Never ever'},
       ]} />)
     })
+    it('has null value', () => {
+      snapshotTest(<Date {...baseProps} value={null} />)
+    })
   })
   describe('Functions', () => {
     describe('handles fixed date changing', () => {

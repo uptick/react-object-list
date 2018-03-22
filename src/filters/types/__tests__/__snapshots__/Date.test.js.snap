@@ -49,6 +49,29 @@ exports[`Date Snapshots has custom relative date options 1`] = `
 />
 `;
 
+exports[`Date Snapshots has null value 1`] = `
+<DayPickerInput
+  classNames={
+    Object {
+      "container": "objectlist-input__container",
+      "overlay": "",
+      "overlayWrapper": "objectlist-input__daypicker",
+    }
+  }
+  clickUnselectsDay={true}
+  dayPickerProps={
+    Object {
+      "fixedWeeks": true,
+    }
+  }
+  format="DD/MM/YYYY"
+  formatDate={[Function]}
+  onDayChange={[Function]}
+  parseDate={[Function]}
+  placeholder=""
+/>
+`;
+
 exports[`Date Snapshots renders default 1`] = `
 <DayPickerInput
   classNames={
