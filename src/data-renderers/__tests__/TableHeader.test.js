@@ -6,7 +6,6 @@ import TableHeader from '../TableHeader'
 jest.mock('../HeaderField', () => 'HeaderField')
 
 describe('Table Header', () => {
-
   describe('Snapshots', () => {
     const headerItem = {
       dataKey: 'header_sort_key',
