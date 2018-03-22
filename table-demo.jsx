@@ -145,8 +145,8 @@ class TableDemo extends React.Component {
   }
 }
 
-const mount = document.querySelectorAll('div.demo-mount-table')
+const mount = document.querySelector('div.demo-mount-table')
 ReactDom.render(
   <TableDemo />,
-  mount[0]
+  mount
 )
