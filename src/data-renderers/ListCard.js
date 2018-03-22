@@ -32,7 +32,9 @@ export default class ListCard extends Component {
   render() {
     return (
       <li className="objectlist-list__item">
-        <a href={this.props.data.url || '#'} className="objectlist-list__link">View</a>
+        {this.props.data.url &&
+          <a href={this.props.data.url} className="objectlist-list__link">View</a>
+        }
         {this.renderItemRows()}
       </li>
     )
