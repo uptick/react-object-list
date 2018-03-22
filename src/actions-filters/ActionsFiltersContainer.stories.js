@@ -36,7 +36,18 @@ storiesOf('object-list/ActionsFiltersContainer', module)
       }}
       columns={[{dataKey: 'favouriteColour', header: 'Favourite Colour', optional: true}]}
       numSelected={3}
-      showBulkActionsButton
+      updateColumns={action('updateColumns')}
+      updateFilter={action('Update filters')}
+    />
+  )).add('has one item', () => (
+    <ActionsFiltersContainer
+      filters={filters}
+      meta={{
+        totalCount: 1,
+      }}
+      itemSingleName="thing"
+      columns={[{dataKey: 'favouriteColour', header: 'Favourite Colour', optional: true}]}
+      numSelected={0}
       updateColumns={action('updateColumns')}
       updateFilter={action('Update filters')}
     />
@@ -49,11 +60,43 @@ storiesOf('object-list/ActionsFiltersContainer', module)
           totalCount: 573489,
         }}
         numSelected={3}
-        showBulkActionsButton
         itemPluralName="cats"
         updateColumns={action('updateColumns')}
         updateFilters={action('Update filters')}
         customActions={[downloadSomething, aButton]}
+      />
+    )
+  }).add('has search', () => {
+    return (
+      <ActionsFiltersContainer
+        filters={filters}
+        searchKey="SearchFilter"
+        meta={{
+          totalCount: 573489,
+        }}
+        numSelected={3}
+        showBulkActionsButton
+        itemPluralName="cats"
+        updateColumns={action('updateColumns')}
+        updateFilters={action('Update filters')}
+      />
+    )
+  }).add('has search with value', () => {
+    return (
+      <ActionsFiltersContainer
+        filters={filters.map(x => {
+          if (x.filterKey === 'SearchFilter') return {...x, value: 'I am looking for this'}
+          return x
+        })}
+        searchKey="SearchFilter"
+        meta={{
+          totalCount: 573489,
+        }}
+        numSelected={3}
+        showBulkActionsButton
+        itemPluralName="cats"
+        updateColumns={action('updateColumns')}
+        updateFilters={action('Update filters')}
       />
     )
   })
