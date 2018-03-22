@@ -23,15 +23,18 @@ class Favourites extends Component {
     /** callback function to set the selected favourite to the current favourite */
     loadFavourite: PropTypes.func,
   }
+
   static defaultProps = {
     favourites: [],
     selectedFavouriteName: null,
   }
+
   state = {
     favouritesOpen: false,
     newFavouriteName: '',
     selectedFavouriteName: this.props.selectedFavouriteName,
   }
+
   componentWillMount() {
     document.body.addEventListener('click', this.handleDropdown)
   }
@@ -39,8 +42,9 @@ class Favourites extends Component {
   componentWillUnmount() {
     document.body.removeEventListener('click', this.handleDropdown)
   }
+
   componentWillReceiveProps(nextProps) {
-    const {selectedFavouriteName} = nextProps
+    const { selectedFavouriteName } = nextProps
     if (selectedFavouriteName !== this.state.selectedFavouriteName) {
       this.setState({selectedFavouriteName})
     }
@@ -73,15 +77,17 @@ class Favourites extends Component {
       return newState
     })
   }
+
   handleAddFavourite = event => {
     event.preventDefault()
     const selectedFavouriteName = this.state.newFavouriteName
-    this.props.handleAddFavourite(this.state.newFavouriteName)
+    this.props.handleAddFavourite(selectedFavouriteName)
     this.setState(() => ({
       newFavouriteName: '',
       selectedFavouriteName,
     }))
   }
+
   /**
    * Renames the favourite in state
    */
@@ -91,6 +97,7 @@ class Favourites extends Component {
       newFavouriteName: newValue.replace('_', ''),
     }))
   }
+
   render() {
     const favourites = this.props.favourites.map(favourite => (
       <FavouritesItem

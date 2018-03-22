@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Favourites /> Snapshot renders correctly 1`] = `
+exports[`Favourites Snapshot renders correctly 1`] = `
 <div
   className="objectlist-dropdown"
 >

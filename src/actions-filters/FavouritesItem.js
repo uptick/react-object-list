@@ -25,14 +25,14 @@ export default class FavouritesItem extends React.Component {
    *
    * @param {MouseEvent} event - the click event
    */
-  handleClick = (event) => {
+  handleClick = event => {
     event.preventDefault()
     const {loadFavourite, name, filters: {activeFilters, optionalFields, activeSort}} = this.props
     loadFavourite(name, activeFilters, optionalFields, activeSort)
   }
 
-  handleDelete = e => {
-    e.preventDefault()
+  handleDelete = event => {
+    event.preventDefault()
     this.props.handleDelete(this.props.name)
   }
 
