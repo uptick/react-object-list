@@ -16,7 +16,7 @@ class Search extends React.Component {
   }
 
   static defaultProps = {
-    updateDelay: 1000,
+    updateDelay: 400,
     value: '',
   }
 
