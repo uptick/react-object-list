@@ -45,6 +45,8 @@ describe('Search', () => {
       expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), baseProps.updateDelay)
       expect(typeof instance.state.updateScheduled).toBe('number')
       expect(instance.state.updateScheduled % 1).toBe(0)
+      instance.scheduleUpdate()
+      expect(clearTimeout).toHaveBeenCalledTimes(1)
       instance.setState({currentValue: 'Not Bob'})
       jest.runOnlyPendingTimers()
       expect(baseProps.onChange).toHaveBeenCalledWith('Not Bob')
