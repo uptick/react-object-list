@@ -47,12 +47,6 @@ exports[`Storyshots object-list/Data Renderers/List Renderer default Renderer 1`
   <li
     className="objectlist-list__item"
   >
-    <a
-      className="objectlist-list__link"
-      href="#"
-    >
-      View
-    </a>
     <div
       className="objectlist-list__content"
     >
