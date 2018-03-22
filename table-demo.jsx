@@ -28,6 +28,9 @@ class TableDemo extends React.Component {
       filterKey: 'first_name',
       active: false,
       name: 'First Name',
+      props: {
+        updateDelay: 0,
+      },
     }],
   }
 
@@ -145,8 +148,7 @@ class TableDemo extends React.Component {
   }
 }
 
-const mount = document.querySelector('div.demo-mount-table')
 ReactDom.render(
   <TableDemo />,
-  mount
+  document.querySelector('div.demo-mount-table')
 )
