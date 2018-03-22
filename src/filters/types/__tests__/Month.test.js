@@ -24,7 +24,13 @@ describe('Month', () => {
       snapshotTest(<Month {...baseProps} minYear={2010} />)
     })
     it('has maxYear', () => {
-      snapshotTest(<Month {...baseProps} mexYear={2020} />)
+      snapshotTest(<Month {...baseProps} maxYear={2020} />)
+    })
+    it('has null value', () => {
+      snapshotTest(<Month {...baseProps} value={null} />)
+    })
+    it('has undefined value', () => {
+      snapshotTest(<Month {...baseProps} value={undefined} />)
     })
   })
   describe('Functions', () => {
@@ -33,16 +39,28 @@ describe('Month', () => {
       spyOn(baseProps, 'onChange')
       instance = shallow(<Month {...baseProps} />).instance()
     })
-    it('handles text change', () => {
-      instance.refs = {
-        textInput: {
-          value: 'Jan 2016',
-        },
-      }
-      const monthValue = Moment(instance.refs.textInput.value, baseProps.format).format('x')
-      instance.handleTextChange()
-      expect(instance.state.textValue).toBe(instance.refs.textInput.value)
-      expect(baseProps.onChange).toHaveBeenCalledWith(monthValue)
+    describe('handleTextChange', () => {
+      it('handles valid month', () => {
+        instance.refs = {
+          textInput: {
+            value: 'Jan 2016',
+          },
+        }
+        const monthValue = Moment(instance.refs.textInput.value, instance.props.format).format('x')
+        instance.handleTextChange()
+        expect(instance.state.textValue).toBe(instance.refs.textInput.value)
+        expect(baseProps.onChange).toHaveBeenCalledWith(monthValue)
+      })
+      it('handles invalid month', () => {
+        instance.refs = {
+          textInput: {
+            value: 'Jemima puddle duck',
+          },
+        }
+        instance.handleTextChange()
+        expect(instance.state.textValue).toBe(instance.refs.textInput.value)
+        expect(baseProps.onChange).toHaveBeenCalledWith(null)
+      })
     })
     it('handles value change', () => {
       const mockYear = Math.floor(Math.random() * 50) + 2000

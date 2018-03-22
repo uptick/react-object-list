@@ -74,7 +74,7 @@ exports[`Month Snapshots has maxYear 1`] = `
   }
   years={
     Object {
-      "max": 2050,
+      "max": 2020,
       "min": 2000,
     }
   }
@@ -121,6 +121,91 @@ exports[`Month Snapshots has minYear 1`] = `
     Object {
       "max": 2050,
       "min": 2010,
+    }
+  }
+>
+  <input
+    className="objectlist-input objectlist-input--wide"
+    onChange={[Function]}
+    onClick={[Function]}
+    placeholder="Select month"
+    type="text"
+    value="Jul 2017"
+  />
+</MonthPicker>
+`;
+
+exports[`Month Snapshots has null value 1`] = `
+<MonthPicker
+  lang={
+    Object {
+      "months": Array [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+    }
+  }
+  onChange={[Function]}
+  value={Object {}}
+  years={
+    Object {
+      "max": 2050,
+      "min": 2000,
+    }
+  }
+>
+  <input
+    className="objectlist-input objectlist-input--wide"
+    onChange={[Function]}
+    onClick={[Function]}
+    placeholder="Select month"
+    type="text"
+    value=""
+  />
+</MonthPicker>
+`;
+
+exports[`Month Snapshots has undefined value 1`] = `
+<MonthPicker
+  lang={
+    Object {
+      "months": Array [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
+    }
+  }
+  onChange={[Function]}
+  value={
+    Object {
+      "month": 7,
+      "year": 2017,
+    }
+  }
+  years={
+    Object {
+      "max": 2050,
+      "min": 2000,
     }
   }
 >

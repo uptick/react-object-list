@@ -29,7 +29,7 @@ class Month extends React.Component {
   }
 
   state = {
-    textValue: this.props.value.format(this.props.format),
+    textValue: this.props.value ? this.props.value.format(this.props.format) : '',
   }
 
   /**
