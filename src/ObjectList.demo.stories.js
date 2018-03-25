@@ -82,7 +82,6 @@ class InteractiveObjectList extends React.Component {
     return {filters}
   })
   removeFilter = filterKey => this.setState(prevState => {
-    console.log(filterKey)
     const filters = prevState.filters.map(filter => {
       if (filter.filterKey === filterKey) {
         return {...filter, active: false, value: ''}
