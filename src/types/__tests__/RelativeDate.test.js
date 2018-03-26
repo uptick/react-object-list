@@ -7,7 +7,8 @@ jest.mock('../DatePart', () => 'DatePart')
 jest.mock('../Empty', () => 'Empty')
 
 describe('RelativeDate type', () => {
-  test('snapshot tests', () => {
+  it('snapshot tests', () => {
+    spyOn(console, 'warn')
     const testValues = [
       {},
       {value: '2018-02-07'},
@@ -18,5 +19,6 @@ describe('RelativeDate type', () => {
     testValues.forEach(testValue => {
       snapshotTest(<RelativeDate {...testValue} />)
     })
+    expect(console.warn.calls.count()).toEqual(1)
   })
 })
