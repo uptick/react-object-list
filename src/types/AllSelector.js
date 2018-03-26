@@ -30,7 +30,7 @@ class AllSelector extends React.Component {
       <input
         type="checkbox"
         checked={this.props.allSelected}
-        onClick={this.handleChange}
+        onChange={this.handleChange}
       />
     )
   }

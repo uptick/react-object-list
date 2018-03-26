@@ -18,7 +18,6 @@ const filters = Object.entries(importedFilters).map(([name, filter]) => {
     Renderer: filter,
     filterKey: name,
     active: true,
-    onChange: action('Change filter'),
     name,
     props,
   }
@@ -37,7 +36,10 @@ storiesOf('object-list/ActionsFiltersContainer', module)
       columns={[{dataKey: 'favouriteColour', header: 'Favourite Colour', optional: true}]}
       numSelected={3}
       updateColumns={action('updateColumns')}
-      updateFilter={action('Update filters')}
+      updateFilter={action('Update filter')}
+      removeFilter={action('Remove filter')}
+      itemSingleName="octopus"
+      itemPluralName="octopi"
     />
   )).add('has one item', () => (
     <ActionsFiltersContainer
@@ -46,14 +48,16 @@ storiesOf('object-list/ActionsFiltersContainer', module)
         totalCount: 1,
       }}
       itemSingleName="thing"
+      itemPluralName="things"
       columns={[{dataKey: 'favouriteColour', header: 'Favourite Colour', optional: true}]}
       numSelected={0}
       updateColumns={action('updateColumns')}
-      updateFilter={action('Update filters')}
+      updateFilter={action('Update filter')}
+      removeFilter={action('Remove filter')}
     />
   )).add('has custom actions', () => {
-    const downloadSomething = (props) => <a href="http://thecatapi.com/api/images/get?format=src&type=gif">Download {props.numSelected} {props.itemPluralName}</a>
-    const aButton = (props) => <button onClick={action('Button clicked')}>Pat {props.numSelected} {props.itemPluralName}</button>
+    const downloadSomething = ({numSelected, itemPluralName, key}) => <a key={key} href="http://thecatapi.com/api/images/get?format=src&type=gif">Download {numSelected} {itemPluralName}</a>
+    const aButton = ({numSelected, itemPluralName, key}) => <button key={key} onClick={action('Button clicked')}>Pat {numSelected} {itemPluralName}</button>
     return (
       <ActionsFiltersContainer
         meta={{
@@ -61,8 +65,10 @@ storiesOf('object-list/ActionsFiltersContainer', module)
         }}
         numSelected={3}
         itemPluralName="cats"
+        itemSingleName="cat"
         updateColumns={action('updateColumns')}
-        updateFilters={action('Update filters')}
+        updateFilter={action('Update filter')}
+        removeFilter={action('Remove filter')}
         customActions={[downloadSomething, aButton]}
       />
     )
@@ -76,9 +82,11 @@ storiesOf('object-list/ActionsFiltersContainer', module)
         }}
         numSelected={3}
         showBulkActionsButton
-        itemPluralName="cats"
+        itemPluralName="dogs"
+        itemSingleName="dog"
         updateColumns={action('updateColumns')}
-        updateFilters={action('Update filters')}
+        updateFilter={action('Update filter')}
+        removeFilter={action('Remove filter')}
       />
     )
   }).add('has search with value', () => {
@@ -94,9 +102,10 @@ storiesOf('object-list/ActionsFiltersContainer', module)
         }}
         numSelected={3}
         showBulkActionsButton
-        itemPluralName="cats"
+        itemPluralName="mouses"
+        itemSingleName="mouse"
         updateColumns={action('updateColumns')}
-        updateFilters={action('Update filters')}
+        updateFilter={action('Update filter')}
       />
     )
   })
