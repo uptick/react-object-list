@@ -21,7 +21,7 @@ describe('Table', () => {
       [{
         dataKey: 'age',
         header: 'Age',
-        item: ({row: {attributes: {age}}}) => (<span>{age}</span>),
+        item: ({row: {attributes: {age}}, key}) => (<span key={key}>{age}</span>),
         optional: false,
         sortable: true,
       },
@@ -65,7 +65,7 @@ describe('Table', () => {
           [{
             dataKey: 'years',
             header: 'Age in Years',
-            item: ({row: {attributes: {age}}}) => (<span>{age}</span>),
+            item: ({row: {attributes: {age}}, key}) => (<span key={key}>{age}</span>),
             optional: false,
             sortable: true,
           }],
