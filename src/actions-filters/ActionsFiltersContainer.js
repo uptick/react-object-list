@@ -70,6 +70,7 @@ class ActionsFilterContainer extends Component {
     favourites: [],
     selection: {},
     columns: [],
+    status: 'done',
   }
 
   render() {
@@ -142,7 +143,7 @@ class ActionsFilterContainer extends Component {
             extraColumns={this.props.meta.extraColumns}
             updateColumns={this.props.updateColumns}
           />
-          {this.props.status !== 'loading' && (
+          {this.props.status === 'done' && (
             <SelectAllAction
               count={this.props.meta.totalCount}
               itemCount={itemCount}
