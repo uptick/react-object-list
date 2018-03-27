@@ -54,6 +54,11 @@ storiesOf('object-list', module)
         {dataKey: 'name', header: 'Name', sortable: true},
         {dataKey: 'age', header: 'Age (years)', sortable: true},
       ]}
+      meta={{
+        totalCount: 200,
+        perPage: 20,
+        currentPage: 1,
+      }}
       data={mockData}
       setSort={action('Set sort')}
       status="loading"

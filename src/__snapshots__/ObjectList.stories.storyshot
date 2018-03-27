@@ -4964,7 +4964,7 @@ exports[`Storyshots object-list loading 1`] = `
       <span
         className="objectlist-results-text"
       >
-        No items found
+        200 items found
       </span>
     </div>
   </div>
@@ -5176,6 +5176,108 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
       </tbody>
     </table>
+  </div>
+  <div
+    className="objectlist-pagination"
+  >
+    <ul
+      className="objectlist-pagination__pages"
+    >
+      <li
+        className="objectlist-pagination__page disabled"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          ← Previous
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page active"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          1
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          2
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          3
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          4
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          5
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          Next →
+        </a>
+      </li>
+    </ul>
+    <p
+      className="text-muted"
+    >
+      <em>
+        <i
+          className="icon loading fa fa-circle-o-notch fa-spin"
+          style={
+            Object {
+              "color": Object {},
+            }
+          }
+        />
+         Loading 
+        items
+         ...
+      </em>
+    </p>
   </div>
 </div>
 `;
