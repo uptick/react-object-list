@@ -17,7 +17,7 @@ $small-flex-basis: $small-flex * 100px
 $large-flex-basis: $large-flex * 100px
 $huge-flex-basis: $huge-flex * 100px
 
-.apilist-error
+.objectlist-error
   display: flex
   align-items: center
   justify-content: center
@@ -30,7 +30,7 @@ $huge-flex-basis: $huge-flex * 100px
   border: $border
   border-color: $error_message_color
 
-.apilist-error__icon
+.objectlist-error__icon
     font-size: 2em
     margin-right: $spacing
 
@@ -393,6 +393,17 @@ $input-height: 36px - $spacing - ($border-width * 2)
 .objectlist-table--scroll
   padding: 0 $spacing
   overflow-x: auto
+
+.objectlist__overlay
+  width: 100%
+  height: 100%
+  position: absolute
+  background: $global-background-color
+  opacity: 0.6
+  display: none
+
+.objectlist__overlay--loading
+  display: block
 
 .objectlist-table__row:nth-of-type(odd)
   background-color: $table-row-background

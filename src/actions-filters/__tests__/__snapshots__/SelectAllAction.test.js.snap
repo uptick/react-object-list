@@ -2,8 +2,15 @@
 
 exports[`<SelectAllAction /> Snapshot does not render with no props 1`] = `null`;
 
-exports[`<SelectAllAction /> Snapshot shows a spinner when select all is pending 1`] = `
+exports[`<SelectAllAction /> Snapshot shows a spinner when loading 1`] = `
 <div>
+  <a
+    className="objectlist-button objectlist-button--link"
+    href="#"
+  >
+    loadingSpinner
+     Selecting all items ...
+  </a>
   <a
     className="objectlist-button objectlist-button--link"
     href="#"

@@ -34,9 +34,19 @@ const META_TYPE = PropTypes.shape({
   selection: PropTypes.array,
 })
 
+const STATUS_CHOICES = {
+  loading: 'loading',
+  error: 'error',
+  done: 'done',
+}
+
+const STATUS_TYPE = PropTypes.oneOf(Object.values(STATUS_CHOICES))
+
 export {
   COLUMN_TYPE,
   COLUMN_BASE_TYPE,
   FILTER_BASE_TYPE,
   META_TYPE,
+  STATUS_TYPE,
+  STATUS_CHOICES,
 }

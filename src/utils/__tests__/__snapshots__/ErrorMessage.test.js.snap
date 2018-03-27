@@ -4,10 +4,10 @@ exports[`Error Message default 1`] = `null`;
 
 exports[`Error Message has error 1`] = `
 <div
-  className="apilist-error"
+  className="objectlist-error"
 >
   <i
-    className="fa fa-exclamation-triangle apilist-error__icon"
+    className="fa fa-exclamation-triangle objectlist-error__icon"
   />
   <span>
     Testing

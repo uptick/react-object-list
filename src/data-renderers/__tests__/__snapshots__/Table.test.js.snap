@@ -4,6 +4,9 @@ exports[`Table Snapshots can select items 1`] = `
 <div
   className="objectlist-table--scroll"
 >
+  <Overlay
+    status="done"
+  />
   <table
     className="objectlist-table"
   >
@@ -208,6 +211,9 @@ exports[`Table Snapshots renders default 1`] = `
 <div
   className="objectlist-table--scroll"
 >
+  <Overlay
+    status="done"
+  />
   <table
     className="objectlist-table"
   >

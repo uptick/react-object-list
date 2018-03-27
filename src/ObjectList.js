@@ -8,6 +8,8 @@ import {
   COLUMN_TYPE,
   FILTER_BASE_TYPE,
   META_TYPE,
+  STATUS_TYPE,
+  STATUS_CHOICES,
   loadingSpinner,
   ErrorMessage,
 } from './utils'
@@ -23,7 +25,7 @@ class ObjectList extends Component {
     /** the maximum number of pages visible in the pagination navigation selection */
     maxPages: PropTypes.number,
     /** loading status used if data is loaded asynchronously  */
-    status: PropTypes.oneOf(['loading', 'error', 'done']),
+    status: STATUS_TYPE,
     /** provide the specific error details if there is an error */
     error: ErrorMessage.propTypes.error,
     /** array of potential filters that can be displayed inside the object-list */
@@ -79,7 +81,7 @@ class ObjectList extends Component {
   }
 
   static defaultProps = {
-    status: 'done',
+    status: STATUS_CHOICES.done,
     DataRenderer: Table,
     data: [],
     columns: [],
@@ -117,7 +119,6 @@ class ObjectList extends Component {
     const numSelected = Object.keys(selection).length
     const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
-    // TODO: implement different display depending on this.props.status ie. loading etc.
     return (
       <div>
         <ActionsFiltersContainer
@@ -156,6 +157,7 @@ class ObjectList extends Component {
           updateSorting={updateSorting}
           selection={selection}
           select={selectItems}
+          status={status}
           numSelected={numSelected}
         />
         { (totalCount / perPage) > 0 &&
@@ -165,7 +167,7 @@ class ObjectList extends Component {
             maxPages={maxPages}
             count={totalCount}
             goToPage={updatePage}
-            loading={status === 'loading'}
+            loading={status === STATUS_CHOICES.loading}
             LoadingIcon={loadingSpinner}
             itemPluralName={itemPluralName}
           />

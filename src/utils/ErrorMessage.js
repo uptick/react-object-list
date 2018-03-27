@@ -7,8 +7,8 @@ class ErrorMessage extends React.Component {
     const {error} = this.props
     if (error && error.message) {
       return (
-        <div className="apilist-error">
-          <i className="fa fa-exclamation-triangle apilist-error__icon" />
+        <div className="objectlist-error">
+          <i className="fa fa-exclamation-triangle objectlist-error__icon" />
           <span>{error.message}</span>
         </div>
       )

@@ -88,6 +88,9 @@ storiesOf('object-list/Data Renderers/List Renderer', module)
     const singleItem = data.slice(0, 1)
     return <List data={singleItem} Renderer={customRenderer} />
   })
+  .add('loading', () => {
+    return <List data={data} Renderer={customRenderer} status="loading" />
+  })
   .add('multiple items', () => {
     return <List data={data} Renderer={customRenderer} />
   })

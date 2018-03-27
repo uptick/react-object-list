@@ -194,6 +194,9 @@ exports[`Storyshots object-list can select all 1`] = `
   <div
     className="objectlist-table--scroll"
   >
+    <div
+      className="objectlist__overlay"
+    />
     <table
       className="objectlist-table"
     >
@@ -785,6 +788,9 @@ exports[`Storyshots object-list can select items 1`] = `
   <div
     className="objectlist-table--scroll"
   >
+    <div
+      className="objectlist__overlay"
+    />
     <table
       className="objectlist-table"
     >
@@ -1683,6 +1689,9 @@ exports[`Storyshots object-list has active filters 1`] = `
   <div
     className="objectlist-table--scroll"
   >
+    <div
+      className="objectlist__overlay"
+    />
     <table
       className="objectlist-table"
     >
@@ -2070,10 +2079,10 @@ exports[`Storyshots object-list has error 1`] = `
     </div>
   </div>
   <div
-    className="apilist-error"
+    className="objectlist-error"
   >
     <i
-      className="fa fa-exclamation-triangle apilist-error__icon"
+      className="fa fa-exclamation-triangle objectlist-error__icon"
     />
     <span>
       The computer wizards have run out of mana. Please try again later.
@@ -2082,6 +2091,9 @@ exports[`Storyshots object-list has error 1`] = `
   <div
     className="objectlist-table--scroll"
   >
+    <div
+      className="objectlist__overlay"
+    />
     <table
       className="objectlist-table"
     >
@@ -2957,6 +2969,9 @@ exports[`Storyshots object-list has everything 1`] = `
   <div
     className="objectlist-table--scroll"
   >
+    <div
+      className="objectlist__overlay"
+    />
     <table
       className="objectlist-table"
     >
@@ -3499,6 +3514,9 @@ exports[`Storyshots object-list has multiple pages 1`] = `
   <div
     className="objectlist-table--scroll"
   >
+    <div
+      className="objectlist__overlay"
+    />
     <table
       className="objectlist-table"
     >
@@ -3999,6 +4017,9 @@ exports[`Storyshots object-list has optional fields 1`] = `
   <div
     className="objectlist-table--scroll"
   >
+    <div
+      className="objectlist__overlay"
+    />
     <table
       className="objectlist-table"
     >
@@ -4473,6 +4494,9 @@ exports[`Storyshots object-list has search key 1`] = `
   <div
     className="objectlist-table--scroll"
   >
+    <div
+      className="objectlist__overlay"
+    />
     <table
       className="objectlist-table"
     >
@@ -4940,25 +4964,16 @@ exports[`Storyshots object-list loading 1`] = `
       <span
         className="objectlist-results-text"
       >
-        No items found
+        200 items found
       </span>
-      <div>
-        <a
-          className="objectlist-button objectlist-button--link"
-          href="#"
-        >
-          <i
-            className="icon loading fa fa-circle-o-notch fa-spin text-primary"
-            style={Object {}}
-          />
-           Selecting all items ...
-        </a>
-      </div>
     </div>
   </div>
   <div
     className="objectlist-table--scroll"
   >
+    <div
+      className="objectlist__overlay objectlist__overlay--loading"
+    />
     <table
       className="objectlist-table"
     >
@@ -5162,6 +5177,108 @@ exports[`Storyshots object-list loading 1`] = `
       </tbody>
     </table>
   </div>
+  <div
+    className="objectlist-pagination"
+  >
+    <ul
+      className="objectlist-pagination__pages"
+    >
+      <li
+        className="objectlist-pagination__page disabled"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          ← Previous
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page active"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          1
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          2
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          3
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          4
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          5
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          Next →
+        </a>
+      </li>
+    </ul>
+    <p
+      className="text-muted"
+    >
+      <em>
+        <i
+          className="icon loading fa fa-circle-o-notch fa-spin"
+          style={
+            Object {
+              "color": Object {},
+            }
+          }
+        />
+         Loading 
+        items
+         ...
+      </em>
+    </p>
+  </div>
 </div>
 `;
 
@@ -5341,6 +5458,9 @@ exports[`Storyshots object-list ready 1`] = `
   <div
     className="objectlist-table--scroll"
   >
+    <div
+      className="objectlist__overlay"
+    />
     <table
       className="objectlist-table"
     >
