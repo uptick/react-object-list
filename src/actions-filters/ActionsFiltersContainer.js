@@ -135,15 +135,15 @@ class ActionsFilterContainer extends Component {
             extraColumns={this.props.meta.extraColumns}
             updateColumns={this.props.updateColumns}
           />
-          <SelectAllAction
-            loading={this.props.status === 'loading'}
-            count={this.props.meta.totalCount}
-            itemCount={itemCount}
-
-            numSelected={numSelected}
-            selectAll={this.props.selectAll}
-            deselectAll={this.props.deselectAll}
-          />
+          {this.props.status !== 'loading' && (
+            <SelectAllAction
+              count={this.props.meta.totalCount}
+              itemCount={itemCount}
+              numSelected={numSelected}
+              selectAll={this.props.selectAll}
+              deselectAll={this.props.deselectAll}
+            />
+          )}
         </div>
       </div>
     )
