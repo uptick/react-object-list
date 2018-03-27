@@ -4966,18 +4966,6 @@ exports[`Storyshots object-list loading 1`] = `
       >
         No items found
       </span>
-      <div>
-        <a
-          className="objectlist-button objectlist-button--link"
-          href="#"
-        >
-          <i
-            className="icon loading fa fa-circle-o-notch fa-spin text-primary"
-            style={Object {}}
-          />
-           Selecting all items ...
-        </a>
-      </div>
     </div>
   </div>
   <div
