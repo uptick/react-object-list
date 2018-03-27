@@ -1994,25 +1994,537 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
 `;
 
 exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
-<th
-  className="objectlist-table__th "
-  width={undefined}
+<div
+  className="objectlist-table--scroll"
 >
-  <div
-    className={undefined}
-    onClick={[Function]}
-    role="button"
+  <table
+    className="objectlist-table"
   >
-    Name
-    <span
-      className="sort-direction text-primary"
-    >
-       
-      <i
-        aria-hidden="true"
-        className="fa fa-caret-down"
-      />
-    </span>
-  </div>
-</th>
+    <thead>
+      <tr>
+        <th
+          className="objectlist-table__th objectlist-table__th--selector"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </th>
+        <th
+          className="objectlist-table__th "
+          width={undefined}
+        >
+          <div
+            className={undefined}
+            onClick={[Function]}
+            role="button"
+          >
+            Name
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-caret-down"
+              />
+            </span>
+          </div>
+        </th>
+        <th
+          className="objectlist-table__th "
+          width={undefined}
+        >
+          <div
+            className={undefined}
+            onClick={[Function]}
+            role="button"
+          >
+            Age (years)
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-caret-up"
+              />
+            </span>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Bob
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "45%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Jim
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "34%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Jack
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "16%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={true}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Helen
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "9%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Eva
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "35%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Mary
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "18%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Dan
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "92%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Jo
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "72%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Wayne
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "68%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={true}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Dylan
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "27%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Nina
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "51%",
+              }
+            }
+          />
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <input
+            checked={false}
+            onClick={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <strong
+            style={
+              Object {
+                "color": "purple",
+              }
+            }
+          >
+            Lucy
+          </strong>
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <div
+            style={
+              Object {
+                "background": "lightgrey",
+                "height": "15px",
+                "width": "2%",
+              }
+            }
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 `;

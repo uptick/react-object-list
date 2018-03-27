@@ -77,11 +77,16 @@ storiesOf('object-list/Data Renderers/Table', module)
       selection={{4: true, 10: true}}
     />
   )).add('sorted header', () => (
-    <TableHeader
-      headerItems={{dataKey: 'name', header: 'Name', sortable: true}}
-      label="name"
-      sortKeys={[{sortKey: 'name', value: false}]}
+    <Table
+      meta={{sortKeys: [{sortKey: 'name', value: false}, {sortKey: 'age', value: true}]}}
+      columns={[
+        {dataKey: 'name', header: 'Name', sortable: true, item: customRenderer},
+        {dataKey: 'age', header: 'Age (years)', sortable: true, item: anotherCustomRenderer},
+      ]}
+      data={mockData}
       setSort={action('Set sort')}
+      select={action('Select item')}
+      selection={{4: true, 10: true}}
     />
   ))
   .add('all selected', () => {
