@@ -3,10 +3,6 @@ import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import SelectAllAction from '../SelectAllAction'
 
-jest.mock('../../utils', () => ({
-  loadingSpinner: () => 'loadingSpinner',
-}))
-
 describe('<SelectAllAction />', () => {
   describe('Snapshot', () => {
     it('does not render with no props', () => {
@@ -15,7 +11,6 @@ describe('<SelectAllAction />', () => {
     it('shows both select all and deselect', () => {
       const props = {
         selectAll: jest.fn(),
-        loading: false,
         count: 5,
         numSelected: 3,
         itemCount: 3,
@@ -24,7 +19,6 @@ describe('<SelectAllAction />', () => {
     })
     it('shows deselect all when some of the items are selected', () => {
       const props = {
-        loading: false,
         count: 5,
         numSelected: 2,
         itemCount: 3,
@@ -33,19 +27,8 @@ describe('<SelectAllAction />', () => {
     })
     it('shows deselect all when all the items are selected', () => {
       const props = {
-        loading: false,
         count: 5,
         numSelected: 5,
-        itemCount: 3,
-      }
-      snapshotTest(<SelectAllAction {...props} />)
-    })
-    it('shows a spinner when loading', () => {
-      const props = {
-        selectAll: jest.fn(),
-        loading: true,
-        count: 5,
-        numSelected: 3,
         itemCount: 3,
       }
       snapshotTest(<SelectAllAction {...props} />)
@@ -53,7 +36,6 @@ describe('<SelectAllAction />', () => {
     it('shows global select all when selected all on page', () => {
       const props = {
         selectAll: jest.fn(),
-        loading: false,
         count: 5,
         numSelected: 3,
         itemCount: 3,

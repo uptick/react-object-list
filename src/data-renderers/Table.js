@@ -6,7 +6,7 @@ import Overlay from './Overlay'
 import {AllSelector, Selector} from '../types'
 import { getVisibleColumns, setColumnLabels } from '../utils/functions'
 import { DATA_TYPE } from '../utils/constants'
-import { STATUS_TYPE, STATUS_CHOICES } from '../utils/proptypes'
+import { STATUS_TYPE, STATUS_CHOICES, SELECTION_TYPE, ALL_SELECTED } from '../utils/proptypes'
 
 export default class TableRenderer extends Component {
   static propTypes = {
@@ -19,7 +19,7 @@ export default class TableRenderer extends Component {
     /** set the sort to the given sortkeys */
     updateSorting: PropTypes.func,
     /** IDs of currently selected items set to true if selected */
-    selection: PropTypes.object,
+    selection: SELECTION_TYPE,
     /** Function to select one */
     select: PropTypes.func,
     /** loading status used if data is loaded asynchronously  */
@@ -68,7 +68,7 @@ export default class TableRenderer extends Component {
   _renderItemRowsHelper = () => {
     const {data, selection, select} = this.props
     return data.map((row, rowIndex) => {
-      const selected = row.id in selection
+      const selected = selection === ALL_SELECTED || row.id in selection
       return (
         <tr key={`row-${rowIndex}`} className="objectlist-table__row">
           {select && (
