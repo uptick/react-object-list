@@ -10,6 +10,10 @@ import {
   META_TYPE,
   STATUS_TYPE,
   STATUS_CHOICES,
+  SELECTION_TYPE,
+  ALL_SELECTED,
+} from './utils/proptypes'
+import {
   loadingSpinner,
   ErrorMessage,
 } from './utils'
@@ -18,7 +22,7 @@ class ObjectList extends Component {
   static propTypes = {
     /** the renderer used to display the data ie. list/table/custom */
     DataRenderer: PropTypes.func,
-    /** the data to be displayed by the nmp-list */
+    /** the data to be displayed by the object-list */
     data: PropTypes.arrayOf(PropTypes.object),
     /** describe the data displayed. Used if it is a subset of a larger dataset */
     meta: META_TYPE,
@@ -71,7 +75,7 @@ class ObjectList extends Component {
     loadFavourite: PropTypes.func,
 
     /** IDs of currently selected items */
-    selection: PropTypes.object,
+    selection: SELECTION_TYPE,
     /** callback for when items are selected. Contains list of IDs, 'all', or null.
       Parent should use this to update `selection` prop
       */
@@ -116,9 +120,9 @@ class ObjectList extends Component {
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
       updatePage, updateSorting, selection, selectItems, customActions, error,
     } = this.props
-    const numSelected = Object.keys(selection).length
     const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
+    const numSelected = selection === ALL_SELECTED ? totalCount : Object.keys(selection).length
     return (
       <div>
         <ActionsFiltersContainer

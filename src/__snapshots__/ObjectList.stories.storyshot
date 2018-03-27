@@ -1,5 +1,608 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots object-list all selected 1`] = `
+<div>
+  <div>
+    <div
+      className="objectlist-row objectlist-row--right objectlist-row--search"
+    >
+      <div
+        className="objectlist-row"
+      >
+        <Select
+          className="objectlist-select-filter"
+          labelKey="name"
+          menuContainerStyle={
+            Object {
+              "maxHeight": "500px",
+            }
+          }
+          menuStyle={
+            Object {
+              "maxHeight": "500px",
+            }
+          }
+          onChange={undefined}
+          openOnFocus={true}
+          options={
+            Array [
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "BooleanFilter",
+                "name": "BooleanFilter",
+                "props": Object {},
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "ChoiceFilter",
+                "name": "ChoiceFilter",
+                "props": Object {},
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "CurrencyFilter",
+                "name": "CurrencyFilter",
+                "props": Object {},
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "DateFilter",
+                "name": "DateFilter",
+                "props": Object {},
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "DayFilter",
+                "name": "DayFilter",
+                "props": Object {},
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "MonthFilter",
+                "name": "MonthFilter",
+                "props": Object {},
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "MultiChoiceFilter",
+                "name": "MultiChoiceFilter",
+                "props": Object {},
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "NumberSliderFilter",
+                "name": "NumberSliderFilter",
+                "props": Object {},
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "RemoteChoiceFilter",
+                "name": "RemoteChoiceFilter",
+                "props": Object {
+                  "loadOptions": [Function],
+                },
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "RemoteMultiChoiceFilter",
+                "name": "RemoteMultiChoiceFilter",
+                "props": Object {
+                  "loadOptions": [Function],
+                },
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "SearchFilter",
+                "name": "SearchFilter",
+                "props": Object {},
+              },
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "TextContainsFilter",
+                "name": "TextContainsFilter",
+                "props": Object {},
+              },
+            ]
+          }
+          placeholder="Add Filter"
+          value={null}
+          valueKey="key"
+        />
+        <div
+          className="objectlist-dropdown"
+        >
+          <button
+            className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
+            type="button"
+          >
+            <i
+              className="fa fa-heart-o"
+            />
+             Favourites
+          </button>
+          <div
+            className="objectlist-dropdown__menu"
+          >
+            <div
+              className="objectlist-dropdown__item objectlist-dropdown__item--input"
+            >
+              <form
+                onSubmit={[Function]}
+              >
+                <input
+                  className="objectlist-input objectlist-input__favourite"
+                  onChange={[Function]}
+                  placeholder="Save as new"
+                  type="text"
+                  value=""
+                />
+                <button
+                  hidden={true}
+                  type="submit"
+                >
+                  Add
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="objectlist--grow"
+    />
+    <div
+      className="objectlist-row objectlist-row--justify"
+    >
+      <span
+        className="objectlist-results-text"
+      >
+        200 items found
+      </span>
+      <div>
+        <a
+          className="objectlist-button objectlist-button--link"
+          href="#"
+          onClick={[Function]}
+        >
+          De-select all
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="objectlist-table--scroll"
+  >
+    <div
+      className="objectlist__overlay"
+    />
+    <table
+      className="objectlist-table"
+    >
+      <thead>
+        <tr>
+          <th
+            className="objectlist-table__th objectlist-table__th--selector"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </th>
+          <th
+            className="objectlist-table__th "
+            width={undefined}
+          >
+            <div
+              className={undefined}
+              onClick={[Function]}
+              role="button"
+            >
+              Name
+            </div>
+          </th>
+          <th
+            className="objectlist-table__th "
+            width={undefined}
+          >
+            <div
+              className={undefined}
+              onClick={[Function]}
+              role="button"
+            >
+              Age (years)
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Bob
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            45
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Jim
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            34
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Jack
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            16
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Helen
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            9
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Eva
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            35
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Mary
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            18
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Dan
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            92
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Jo
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            72
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Wayne
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            68
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Dylan
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            27
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Nina
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            51
+          </td>
+        </tr>
+        <tr
+          className="objectlist-table__row"
+        >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            Lucy
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            2
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="objectlist-pagination"
+  >
+    <ul
+      className="objectlist-pagination__pages"
+    >
+      <li
+        className="objectlist-pagination__page disabled"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          ← Previous
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page active"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          1
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          2
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          3
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          4
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          5
+        </a>
+      </li>
+      <li
+        className="objectlist-pagination__page"
+        onClick={[Function]}
+      >
+        <a
+          className="objectlist-pagination__page--link"
+          href="#"
+        >
+          Next →
+        </a>
+      </li>
+    </ul>
+    <p
+      className="text-muted"
+    >
+      <em>
+        Showing page 1 of 10 out of 200 total items.
+      </em>
+    </p>
+  </div>
+</div>
+`;
+
 exports[`Storyshots object-list can select all 1`] = `
 <div>
   <div>

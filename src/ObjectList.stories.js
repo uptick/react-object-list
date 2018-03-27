@@ -230,6 +230,28 @@ storiesOf('object-list', module)
       />
     )
   })
+  .add('all selected', () => {
+    return (
+      <ObjectList
+        {...baseProps}
+        columns={[
+          {dataKey: 'name', header: 'Name', sortable: true},
+          {dataKey: 'age', header: 'Age (years)', sortable: true},
+        ]}
+        meta={{
+          totalCount: 200,
+          perPage: 20,
+          currentPage: 1,
+        }}
+        data={mockData}
+        setSort={action('Set sort')}
+        status="done"
+        filters={filters}
+        selection={'all'}
+        selectItems={action('Select items')}
+      />
+    )
+  })
   .add('has search key', () => (
     <ObjectList
       {...baseProps}

@@ -1,4 +1,15 @@
 import PropTypes from 'prop-types'
+import { or } from 'airbnb-prop-types'
+
+const STATUS_CHOICES = {
+  loading: 'loading',
+  error: 'error',
+  done: 'done',
+}
+const STATUS_TYPE = PropTypes.oneOf(Object.values(STATUS_CHOICES))
+
+const ALL_SELECTED = 'all'
+const SELECTION_TYPE = or([PropTypes.oneOf([ALL_SELECTED]), PropTypes.oneOfType([PropTypes.object])])
 
 const COLUMN_BASE_TYPE = {
   dataKey: PropTypes.string,
@@ -34,14 +45,6 @@ const META_TYPE = PropTypes.shape({
   selection: PropTypes.array,
 })
 
-const STATUS_CHOICES = {
-  loading: 'loading',
-  error: 'error',
-  done: 'done',
-}
-
-const STATUS_TYPE = PropTypes.oneOf(Object.values(STATUS_CHOICES))
-
 export {
   COLUMN_TYPE,
   COLUMN_BASE_TYPE,
@@ -49,4 +52,6 @@ export {
   META_TYPE,
   STATUS_TYPE,
   STATUS_CHOICES,
+  SELECTION_TYPE,
+  ALL_SELECTED,
 }
