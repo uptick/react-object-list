@@ -34,7 +34,12 @@ describe('HeaderField', () => {
         spyOn(baseProps, 'updateSorting')
       })
       it('has no data key', () => {
-        const instance = shallow(<HeaderField {...baseProps} dataKey={null} />).instance()
+        const props = {
+          ...baseProps,
+          sortable: true,
+          dataKey: null,
+        }
+        const instance = shallow(<HeaderField {...props} />).instance()
         instance.handleClick()
         expect(baseProps.updateSorting).not.toHaveBeenCalled()
       })
