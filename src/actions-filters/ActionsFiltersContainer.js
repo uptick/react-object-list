@@ -52,6 +52,8 @@ class ActionsFilterContainer extends Component {
     /** loading status used if data is loaded asynchronously  */
     status: PropTypes.oneOf(['loading', 'error', 'done']),
 
+    /** Count off selected items */
+    numSelected: PropTypes.number,
     /** Object of id: true of selected items */
     selection: PropTypes.object,
     /** callback when selecting all the items. Set to null to not offer this option in the ui. */

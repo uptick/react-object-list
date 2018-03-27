@@ -2007,7 +2007,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </th>
@@ -2064,7 +2064,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2103,7 +2103,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2142,7 +2142,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2181,7 +2181,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={true}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2220,7 +2220,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2259,7 +2259,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2298,7 +2298,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2337,7 +2337,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2376,7 +2376,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2415,7 +2415,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={true}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2454,7 +2454,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>
@@ -2493,7 +2493,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
-            onClick={[Function]}
+            onChange={[Function]}
             type="checkbox"
           />
         </td>

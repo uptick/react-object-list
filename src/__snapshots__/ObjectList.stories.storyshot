@@ -171,6 +171,24 @@ exports[`Storyshots object-list can select all 1`] = `
       >
         200 items found
       </span>
+      <div>
+        <a
+          className="objectlist-button objectlist-button--link"
+          href="#"
+          onClick={[Function]}
+        >
+          Select all 
+          200
+           items
+        </a>
+        <a
+          className="objectlist-button objectlist-button--link"
+          href="#"
+          onClick={[Function]}
+        >
+          De-select all
+        </a>
+      </div>
     </div>
   </div>
   <div

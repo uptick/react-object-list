@@ -114,6 +114,7 @@ class ObjectList extends Component {
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
       updatePage, updateSorting, selection, selectItems, customActions, error,
     } = this.props
+    const numSelected = Object.keys(selection).length
     const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
     // TODO: implement different display depending on this.props.status ie. loading etc.
@@ -142,6 +143,7 @@ class ObjectList extends Component {
           selection={selection}
           selectAll={this.selectAll}
           deselectAll={this.deselectAll}
+          numSelected={numSelected}
           customActions={customActions}
         />
         <ErrorMessage
@@ -154,6 +156,7 @@ class ObjectList extends Component {
           updateSorting={updateSorting}
           selection={selection}
           select={selectItems}
+          numSelected={numSelected}
         />
         { (totalCount / perPage) > 0 &&
           <Pagination

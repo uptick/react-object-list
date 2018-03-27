@@ -20,6 +20,8 @@ export default class TableRenderer extends Component {
     selection: PropTypes.object,
     /** Function to select one */
     select: PropTypes.func,
+    /** Count off selected items */
+    numSelected: PropTypes.number,
   }
 
   static defaultProps = {
@@ -110,7 +112,7 @@ export default class TableRenderer extends Component {
   }
 
   render() {
-    const {selection, data, select} = this.props
+    const {data, select, numSelected} = this.props
     return (
       <div className="objectlist-table--scroll">
         <table className="objectlist-table">
@@ -119,7 +121,7 @@ export default class TableRenderer extends Component {
               {select && (
                 <th className="objectlist-table__th objectlist-table__th--selector">
                   <AllSelector
-                    allSelected={Object.keys(selection).length >= data.length}
+                    allSelected={!!(numSelected && numSelected >= data.length)}
                     toggleSelectAll={this.handleToggleSelectAll}
                   />
                 </th>
