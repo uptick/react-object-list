@@ -31,7 +31,7 @@ class Selector extends React.Component {
       <input
         type="checkbox"
         checked={this.props.selected}
-        onClick={this.handleChange}
+        onChange={this.handleChange}
       />
     )
   }

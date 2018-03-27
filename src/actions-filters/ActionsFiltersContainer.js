@@ -74,10 +74,8 @@ class ActionsFilterContainer extends Component {
     const {
       searchKey, meta: {totalCount}, itemCount,
       selection, customActions = [],
-      itemSingleName, itemPluralName,
+      itemSingleName, itemPluralName, numSelected,
     } = this.props
-
-    const numSelected = Object.keys(selection).length
 
     let search
     if (searchKey) {
@@ -95,7 +93,13 @@ class ActionsFilterContainer extends Component {
     return (
       <div>
         <div className="objectlist-row objectlist-row--right objectlist-row--search">
-          {search && <FiltersContainer filters={[search]} updateFilters={this.props.updateFilters} />}
+          {search && (
+            <FiltersContainer
+              filters={[search]}
+              updateFilter={this.props.updateFilter}
+              removeFilter={this.props.removeFilter}
+            />
+          )}
           <div className="objectlist-row">
             <SelectFilters
               filters={this.props.filters}
@@ -121,7 +125,7 @@ class ActionsFilterContainer extends Component {
           <span className="objectlist-results-text">
             {`${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount === 1 ? itemSingleName : itemPluralName} found`}
           </span>
-          {customActions.map(action => action({
+          {customActions.map((action, i) => action({
             selection,
             itemCount,
             numSelected,
@@ -129,6 +133,7 @@ class ActionsFilterContainer extends Component {
             itemSingleName,
             itemPluralName,
             loading: this.props.status === 'loading',
+            key: `action-${i}`,
           }))}
           <OptionalFields
             optionalFields={getVisibleColumns(this.props.columns, [], true).reduce((acc, curr) => acc.concat(curr), [])}

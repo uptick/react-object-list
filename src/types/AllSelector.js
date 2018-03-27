@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
  */
 class AllSelector extends React.Component {
   static propTypes = {
-    /** wether or not all items in the list are selected and hence this component is checked */
+    /** whether or not all items in the list are selected and hence this component is checked */
     allSelected: PropTypes.bool,
     /** callback function passed down from the objectlist to select all items in a list */
     toggleSelectAll: PropTypes.func,
@@ -30,7 +30,7 @@ class AllSelector extends React.Component {
       <input
         type="checkbox"
         checked={this.props.allSelected}
-        onClick={this.handleChange}
+        onChange={this.handleChange}
       />
     )
   }

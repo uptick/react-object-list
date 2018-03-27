@@ -6,15 +6,14 @@ import TableHeader from '../TableHeader'
 jest.mock('../HeaderField', () => 'HeaderField')
 
 describe('Table Header', () => {
+  const headerItem = {
+    dataKey: 'header_sort_key',
+    header: 'Header Text',
+    item: jest.fn(),
+    sortable: true,
+    optional: false,
+  }
   describe('Snapshots', () => {
-    const headerItem = {
-      dataKey: 'header_sort_key',
-      header: 'Header Text',
-      item: jest.fn(),
-      sortable: true,
-      optional: false,
-    }
-
     it('renders correctly', () => {
       const props = {
         headerItems: {...headerItem},
@@ -34,36 +33,36 @@ describe('Table Header', () => {
   describe('Functions', () => {
     it('will recieve props as array', () => {
       const props = {
-        headerItems: 'something',
+        headerItems: headerItem,
       }
       const nextProps = {
-        headerItems: ['somethingelse'],
+        headerItems: [{...headerItem, dataKey: 'somethingelse'}],
       }
       const instance = shallow(<TableHeader {...props} />).instance()
       instance.componentWillReceiveProps(nextProps)
-      expect(instance.state.headerItems).toEqual(['somethingelse'])
+      expect(instance.state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
     })
     it('will recieve props as non-array', () => {
       const props = {
-        headerItems: 'something',
+        headerItems: headerItem,
       }
       const nextProps = {
-        headerItems: 'somethingelse',
+        headerItems: {...headerItem, dataKey: 'somethingelse'},
       }
       const instance = shallow(<TableHeader {...props} />).instance()
       instance.componentWillReceiveProps(nextProps)
-      expect(instance.state.headerItems).toEqual(['somethingelse'])
+      expect(instance.state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
     })
     it('will recieve same props', () => {
       const props = {
-        headerItems: 'something',
+        headerItems: headerItem,
       }
       const nextProps = {
-        headerItems: 'something',
+        headerItems: headerItem,
       }
       const instance = shallow(<TableHeader {...props} />).instance()
       instance.componentWillReceiveProps(nextProps)
-      expect(instance.state.headerItems).toEqual(['something'])
+      expect(instance.state.headerItems).toEqual([headerItem])
     })
     it('saves width', () => {
       const props = {

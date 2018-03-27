@@ -14,7 +14,7 @@ describe('<SelectAllAction />', () => {
     })
     it('shows both select all and deselect', () => {
       const props = {
-        selectAllLink: true,
+        selectAll: jest.fn(),
         loading: false,
         count: 5,
         numSelected: 3,
@@ -24,7 +24,6 @@ describe('<SelectAllAction />', () => {
     })
     it('shows deselect all when some of the items are selected', () => {
       const props = {
-        selectAllLink: true,
         loading: false,
         count: 5,
         numSelected: 2,
@@ -34,7 +33,6 @@ describe('<SelectAllAction />', () => {
     })
     it('shows deselect all when all the items are selected', () => {
       const props = {
-        selectAllLink: true,
         loading: false,
         count: 5,
         numSelected: 5,
@@ -44,8 +42,17 @@ describe('<SelectAllAction />', () => {
     })
     it('shows a spinner when select all is pending', () => {
       const props = {
-        selectAllLink: true,
         loading: true,
+        count: 5,
+        numSelected: 3,
+        itemCount: 3,
+      }
+      snapshotTest(<SelectAllAction {...props} />)
+    })
+    it('shows global select all when selected all on page', () => {
+      const props = {
+        selectAll: jest.fn(),
+        loading: false,
         count: 5,
         numSelected: 3,
         itemCount: 3,

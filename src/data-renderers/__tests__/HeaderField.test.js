@@ -6,7 +6,7 @@ import HeaderField from '../HeaderField'
 describe('HeaderField', () => {
   describe('Snapshots', () => {
     const props = {
-      key: 'header_sort_key',
+      dataKey: 'header_sort_key',
       header: 'Header Text',
     }
     it('renders sortable', () => {
@@ -34,7 +34,12 @@ describe('HeaderField', () => {
         spyOn(baseProps, 'updateSorting')
       })
       it('has no data key', () => {
-        const instance = shallow(<HeaderField {...baseProps} dataKey={null} />).instance()
+        const props = {
+          ...baseProps,
+          sortable: true,
+          dataKey: null,
+        }
+        const instance = shallow(<HeaderField {...props} />).instance()
         instance.handleClick()
         expect(baseProps.updateSorting).not.toHaveBeenCalled()
       })
@@ -68,9 +73,12 @@ describe('HeaderField', () => {
         expect(instance._renderHeader()).toBe(headerText)
       })
       it('is something else', () => {
+        spyOn(console, 'error')
         const headerThing = 99
         const instance = shallow(<HeaderField {...baseProps} header={headerThing} />).instance()
         expect(instance._renderHeader()).toBe('')
+        expect(console.error).toHaveBeenCalled()
+        expect(console.error.calls.mostRecent().args[0]).toContain('Failed prop type: Invalid prop `header` supplied to `HeaderField`.')
       })
     })
   })

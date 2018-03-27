@@ -12,7 +12,6 @@ import {
   ErrorMessage,
 } from './utils'
 
-// TODO: rename to something awesome
 class ObjectList extends Component {
   static propTypes = {
     /** the renderer used to display the data ie. list/table/custom */

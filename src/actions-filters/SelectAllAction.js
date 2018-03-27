@@ -19,7 +19,6 @@ class SelectAllAction extends Component {
   }
   static defaultProps = {
     loading: false,
-    selectAllLink: true,
   }
   handleSelectAllClick = (event) => {
     event.preventDefault()

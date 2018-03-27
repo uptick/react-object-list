@@ -10,12 +10,12 @@ describe('Selector type', () => {
     snapshotTest(<Selector />)
     snapshotTest(<Selector selected />)
   })
-  it('makes a call to the callback function when clicked on', () => {
+  it('makes a call to the callback function when changed', () => {
     const callback = jest.fn()
     const id = 534
     const wrapper = shallow(<Selector toggleSelect={callback} id={id} />)
     expect(callback).not.toBeCalled()
-    wrapper.find('input').simulate('click')
+    wrapper.find('input').simulate('change')
     expect(callback).lastCalledWith(id)
   })
 })
