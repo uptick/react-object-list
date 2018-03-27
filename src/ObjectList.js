@@ -117,7 +117,6 @@ class ObjectList extends Component {
     } = this.props
     const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
-    // TODO: implement different display depending on this.props.status ie. loading etc.
     return (
       <div>
         <ActionsFiltersContainer
@@ -155,6 +154,7 @@ class ObjectList extends Component {
           updateSorting={updateSorting}
           selection={selection}
           select={selectItems}
+          status={status}
         />
         { (totalCount / perPage) > 0 &&
           <Pagination

@@ -1,244 +1,382 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots object-list/Data Renderers/List Renderer default Renderer 1`] = `
-<ul
-  className="objectlist-list__list"
->
-  <li
-    className="objectlist-list__item"
+<div>
+  <div
+    className="objectlist__overlay"
+  />
+  <ul
+    className="objectlist-list__list"
   >
-    <a
-      className="objectlist-list__link"
-      href="https://uptickhq.com"
+    <li
+      className="objectlist-list__item"
     >
-      View
-    </a>
-    <div
-      className="objectlist-list__content"
-    >
-      <h2
-        className="objectlist-list__header"
+      <a
+        className="objectlist-list__link"
+        href="https://uptickhq.com"
       >
-        Item 1
-        :
-      </h2>
+        View
+      </a>
       <div
-        className="objectlist-list__body"
+        className="objectlist-list__content"
       >
-        Lorem Ipsum is simply dummy text
+        <h2
+          className="objectlist-list__header"
+        >
+          Item 1
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+          Lorem Ipsum is simply dummy text
+        </div>
       </div>
-    </div>
-    <div
-      className="objectlist-list__content"
-    >
-      <h2
-        className="objectlist-list__header"
-      >
-        Item 2
-        :
-      </h2>
       <div
-        className="objectlist-list__body"
+        className="objectlist-list__content"
       >
-        Lorem Ipsum is simply dummy text
+        <h2
+          className="objectlist-list__header"
+        >
+          Item 2
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+          Lorem Ipsum is simply dummy text
+        </div>
       </div>
-    </div>
-  </li>
-  <li
-    className="objectlist-list__item"
+    </li>
+    <li
+      className="objectlist-list__item"
+    >
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Item 1
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+          Lorem Ipsum is simply dummy text (card 2)
+        </div>
+      </div>
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Item 2
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+          Lorem Ipsum is simply dummy text (card 2)
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots object-list/Data Renderers/List Renderer loading 1`] = `
+<div>
+  <div
+    className="objectlist__overlay objectlist__overlay--loading"
+  />
+  <ul
+    className="objectlist-list__list"
   >
-    <div
-      className="objectlist-list__content"
+    <li
+      style={
+        Object {
+          "border": "1px solid #B8BDBF",
+          "listStyle": "none",
+          "marginBottom": "1rem",
+          "padding": "2rem",
+        }
+      }
     >
-      <h2
-        className="objectlist-list__header"
+      <a
+        className="pull-right"
+        onClick={[Function]}
       >
-        Item 1
-        :
-      </h2>
-      <div
-        className="objectlist-list__body"
+        View
+      </a>
+      <h5>
+        User information
+      </h5>
+      <p>
+        <i
+          className="fa fa-user"
+        />
+         
+        Jane Doe
+      </p>
+      <p
+        style={
+          Object {
+            "color": "#B8BDBF",
+            "marginBottom": "1rem",
+          }
+        }
       >
-        Lorem Ipsum is simply dummy text (card 2)
-      </div>
-    </div>
-    <div
-      className="objectlist-list__content"
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </p>
+    </li>
+    <li
+      style={
+        Object {
+          "border": "1px solid #B8BDBF",
+          "listStyle": "none",
+          "marginBottom": "1rem",
+          "padding": "2rem",
+        }
+      }
     >
-      <h2
-        className="objectlist-list__header"
+      <a
+        className="pull-right"
+        onClick={[Function]}
       >
-        Item 2
-        :
-      </h2>
-      <div
-        className="objectlist-list__body"
+        View
+      </a>
+      <h5>
+        User information
+      </h5>
+      <p>
+        <i
+          className="fa fa-user"
+        />
+         
+        Random Account
+      </p>
+      <p
+        style={
+          Object {
+            "color": "#B8BDBF",
+            "marginBottom": "1rem",
+          }
+        }
       >
-        Lorem Ipsum is simply dummy text (card 2)
-      </div>
-    </div>
-  </li>
-</ul>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </p>
+    </li>
+    <li
+      style={
+        Object {
+          "border": "1px solid #B8BDBF",
+          "listStyle": "none",
+          "marginBottom": "1rem",
+          "padding": "2rem",
+        }
+      }
+    >
+      <a
+        className="pull-right"
+        onClick={[Function]}
+      >
+        View
+      </a>
+      <h5>
+        User information
+      </h5>
+      <p>
+        <i
+          className="fa fa-user"
+        />
+         
+        James Smith
+      </p>
+      <p
+        style={
+          Object {
+            "color": "#B8BDBF",
+            "marginBottom": "1rem",
+          }
+        }
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </p>
+    </li>
+  </ul>
+</div>
 `;
 
 exports[`Storyshots object-list/Data Renderers/List Renderer multiple items 1`] = `
-<ul
-  className="objectlist-list__list"
->
-  <li
-    style={
-      Object {
-        "border": "1px solid #B8BDBF",
-        "listStyle": "none",
-        "marginBottom": "1rem",
-        "padding": "2rem",
-      }
-    }
+<div>
+  <div
+    className="objectlist__overlay"
+  />
+  <ul
+    className="objectlist-list__list"
   >
-    <a
-      className="pull-right"
-      onClick={[Function]}
-    >
-      View
-    </a>
-    <h5>
-      User information
-    </h5>
-    <p>
-      <i
-        className="fa fa-user"
-      />
-       
-      Jane Doe
-    </p>
-    <p
+    <li
       style={
         Object {
-          "color": "#B8BDBF",
+          "border": "1px solid #B8BDBF",
+          "listStyle": "none",
           "marginBottom": "1rem",
+          "padding": "2rem",
         }
       }
     >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    </p>
-  </li>
-  <li
-    style={
-      Object {
-        "border": "1px solid #B8BDBF",
-        "listStyle": "none",
-        "marginBottom": "1rem",
-        "padding": "2rem",
-      }
-    }
-  >
-    <a
-      className="pull-right"
-      onClick={[Function]}
-    >
-      View
-    </a>
-    <h5>
-      User information
-    </h5>
-    <p>
-      <i
-        className="fa fa-user"
-      />
-       
-      Random Account
-    </p>
-    <p
+      <a
+        className="pull-right"
+        onClick={[Function]}
+      >
+        View
+      </a>
+      <h5>
+        User information
+      </h5>
+      <p>
+        <i
+          className="fa fa-user"
+        />
+         
+        Jane Doe
+      </p>
+      <p
+        style={
+          Object {
+            "color": "#B8BDBF",
+            "marginBottom": "1rem",
+          }
+        }
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </p>
+    </li>
+    <li
       style={
         Object {
-          "color": "#B8BDBF",
+          "border": "1px solid #B8BDBF",
+          "listStyle": "none",
           "marginBottom": "1rem",
+          "padding": "2rem",
         }
       }
     >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    </p>
-  </li>
-  <li
-    style={
-      Object {
-        "border": "1px solid #B8BDBF",
-        "listStyle": "none",
-        "marginBottom": "1rem",
-        "padding": "2rem",
-      }
-    }
-  >
-    <a
-      className="pull-right"
-      onClick={[Function]}
-    >
-      View
-    </a>
-    <h5>
-      User information
-    </h5>
-    <p>
-      <i
-        className="fa fa-user"
-      />
-       
-      James Smith
-    </p>
-    <p
+      <a
+        className="pull-right"
+        onClick={[Function]}
+      >
+        View
+      </a>
+      <h5>
+        User information
+      </h5>
+      <p>
+        <i
+          className="fa fa-user"
+        />
+         
+        Random Account
+      </p>
+      <p
+        style={
+          Object {
+            "color": "#B8BDBF",
+            "marginBottom": "1rem",
+          }
+        }
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </p>
+    </li>
+    <li
       style={
         Object {
-          "color": "#B8BDBF",
+          "border": "1px solid #B8BDBF",
+          "listStyle": "none",
           "marginBottom": "1rem",
+          "padding": "2rem",
         }
       }
     >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    </p>
-  </li>
-</ul>
+      <a
+        className="pull-right"
+        onClick={[Function]}
+      >
+        View
+      </a>
+      <h5>
+        User information
+      </h5>
+      <p>
+        <i
+          className="fa fa-user"
+        />
+         
+        James Smith
+      </p>
+      <p
+        style={
+          Object {
+            "color": "#B8BDBF",
+            "marginBottom": "1rem",
+          }
+        }
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </p>
+    </li>
+  </ul>
+</div>
 `;
 
 exports[`Storyshots object-list/Data Renderers/List Renderer single item 1`] = `
-<ul
-  className="objectlist-list__list"
->
-  <li
-    style={
-      Object {
-        "border": "1px solid #B8BDBF",
-        "listStyle": "none",
-        "marginBottom": "1rem",
-        "padding": "2rem",
-      }
-    }
+<div>
+  <div
+    className="objectlist__overlay"
+  />
+  <ul
+    className="objectlist-list__list"
   >
-    <a
-      className="pull-right"
-      onClick={[Function]}
-    >
-      View
-    </a>
-    <h5>
-      User information
-    </h5>
-    <p>
-      <i
-        className="fa fa-user"
-      />
-       
-      Jane Doe
-    </p>
-    <p
+    <li
       style={
         Object {
-          "color": "#B8BDBF",
+          "border": "1px solid #B8BDBF",
+          "listStyle": "none",
           "marginBottom": "1rem",
+          "padding": "2rem",
         }
       }
     >
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    </p>
-  </li>
-</ul>
+      <a
+        className="pull-right"
+        onClick={[Function]}
+      >
+        View
+      </a>
+      <h5>
+        User information
+      </h5>
+      <p>
+        <i
+          className="fa fa-user"
+        />
+         
+        Jane Doe
+      </p>
+      <p
+        style={
+          Object {
+            "color": "#B8BDBF",
+            "marginBottom": "1rem",
+          }
+        }
+      >
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </p>
+    </li>
+  </ul>
+</div>
 `;

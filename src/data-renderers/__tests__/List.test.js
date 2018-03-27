@@ -6,6 +6,7 @@ jest.mock('../../utils/functions', () => ({
   getVisibleColumns: (a, b) => [...a, ...b],
   setColumnLabels: input => input,
 }))
+jest.mock('../Overlay', () => 'Overlay')
 
 describe('List', () => {
   describe('Lifecycle', () => {

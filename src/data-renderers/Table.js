@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import TableHeader from './TableHeader'
+import Overlay from './Overlay'
 import {AllSelector, Selector} from '../types'
 import { getVisibleColumns, setColumnLabels } from '../utils/functions'
 import { DATA_TYPE } from '../utils/constants'
@@ -20,6 +21,8 @@ export default class TableRenderer extends Component {
     selection: PropTypes.object,
     /** Function to select one */
     select: PropTypes.func,
+    /** loading status used if data is loaded asynchronously  */
+    status: PropTypes.oneOf(['loading', 'error', 'done']),
   }
 
   static defaultProps = {
@@ -27,6 +30,7 @@ export default class TableRenderer extends Component {
       extraColumns: [],
       sortKeys: [],
     },
+    status: 'done',
     columnWidths: {},
     selection: {},
   }
@@ -109,9 +113,10 @@ export default class TableRenderer extends Component {
   }
 
   render() {
-    const {selection, data, select} = this.props
+    const {selection, data, select, status} = this.props
     return (
       <div className="objectlist-table--scroll">
+        <Overlay status={status} />
         <table className="objectlist-table">
           <thead>
             <tr>

@@ -44,6 +44,16 @@ storiesOf('object-list/Data Renderers/Table', module)
       ]}
       data={mockData}
     />
+  )).add('loading', () => (
+    <Table
+      columns={[
+        {dataKey: 'name', header: 'Name', sortable: false},
+        {dataKey: 'age', header: 'Age (years)', sortable: false},
+        {dataKey: 'hobby', header: 'Hobby', sortable: false},
+      ]}
+      data={mockData}
+      status="loading"
+    />
   )).add('has sortable headers', () => (
     <Table
       columns={[

@@ -4,6 +4,9 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
 <div
   className="objectlist-table--scroll"
 >
+  <div
+    className="objectlist__overlay"
+  />
   <table
     className="objectlist-table"
   >
@@ -522,6 +525,9 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
 <div
   className="objectlist-table--scroll"
 >
+  <div
+    className="objectlist__overlay"
+  />
   <table
     className="objectlist-table"
   >
@@ -923,6 +929,9 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
 <div
   className="objectlist-table--scroll"
 >
+  <div
+    className="objectlist__overlay"
+  />
   <table
     className="objectlist-table"
   >
@@ -1441,6 +1450,9 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
 <div
   className="objectlist-table--scroll"
 >
+  <div
+    className="objectlist__overlay"
+  />
   <table
     className="objectlist-table"
   >
@@ -1724,10 +1736,285 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
 </div>
 `;
 
+exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
+<div
+  className="objectlist-table--scroll"
+>
+  <div
+    className="objectlist__overlay objectlist__overlay--loading"
+  />
+  <table
+    className="objectlist-table"
+  >
+    <thead>
+      <tr>
+        <th
+          className="objectlist-table__th "
+          width={undefined}
+        >
+          <span>
+            Name
+          </span>
+        </th>
+        <th
+          className="objectlist-table__th "
+          width={undefined}
+        >
+          <span>
+            Age (years)
+          </span>
+        </th>
+        <th
+          className="objectlist-table__th "
+          width={undefined}
+        >
+          <span>
+            Hobby
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Bob
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          45
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          horse riding
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Jim
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          34
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          horse riding
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Jack
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          16
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          horse riding
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Helen
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          9
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          horse riding
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Eva
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          35
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          horse riding
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Mary
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          18
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          horse riding
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Dan
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          92
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          horse riding
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Jo
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          72
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          volleyball
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Wayne
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          68
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          horse riding
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Dylan
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          27
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          horse riding
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Nina
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          51
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          horse riding
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Lucy
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          2
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          table tennis
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
 <div
   className="objectlist-table--scroll"
 >
+  <div
+    className="objectlist__overlay"
+  />
   <table
     className="objectlist-table"
   >
@@ -1997,6 +2284,9 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
 <div
   className="objectlist-table--scroll"
 >
+  <div
+    className="objectlist__overlay"
+  />
   <table
     className="objectlist-table"
   >

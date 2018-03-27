@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import ClassNames from 'classnames'
 
 import ListCard from './ListCard'
+import Overlay from './Overlay'
 import { getVisibleColumns, setColumnLabels } from '../utils/functions'
 import { DATA_TYPE } from '../utils/constants'
 
@@ -15,6 +16,8 @@ export default class ListRenderer extends Component {
     Renderer: PropTypes.func,
     // Extra classes for the Renderer component to be rendered with
     extraClasses: PropTypes.string,
+    /** loading status used if data is loaded asynchronously  */
+    status: PropTypes.oneOf(['loading', 'error', 'done']),
   }
 
   static defaultProps = {
@@ -25,6 +28,7 @@ export default class ListRenderer extends Component {
     columns: [],
     data: [],
     Renderer: ListCard,
+    status: 'done',
   }
 
   constructor(props) {
@@ -53,9 +57,12 @@ export default class ListRenderer extends Component {
 
   render() {
     return (
-      <ul className={ClassNames('objectlist-list__list', this.props.extraClasses)}>
-        {this.renderListRows()}
-      </ul>
+      <div>
+        <Overlay status={this.props.status} />
+        <ul className={ClassNames('objectlist-list__list', this.props.extraClasses)}>
+          {this.renderListRows()}
+        </ul>
+      </div>
     )
   }
 }

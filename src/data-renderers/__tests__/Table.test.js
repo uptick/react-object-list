@@ -5,6 +5,7 @@ import Table from '../Table'
 import { getVisibleColumns, setColumnLabels } from '../../utils/functions'
 
 jest.mock('../TableHeader', () => 'TableHeader')
+jest.mock('../Overlay', () => 'Overlay')
 jest.mock('../../types', () => ({AllSelector: 'AllSelector', Selector: 'Selector'}))
 
 describe('Table', () => {
