@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overlay Snapshots loading 1`] = `
+<div
+  className="objectlist__overlay objectlist__overlay--loading"
+/>
+`;
+
+exports[`Overlay Snapshots not loading 1`] = `
+<div
+  className="objectlist__overlay"
+/>
+`;

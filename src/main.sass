@@ -394,6 +394,17 @@ $input-height: 36px - $spacing - ($border-width * 2)
   padding: 0 $spacing
   overflow-x: auto
 
+.objectlist__overlay
+  width: 100%
+  height: 100%
+  position: absolute
+  background: $global-background-color
+  opacity: 0.6
+  display: none
+
+.objectlist__overlay--loading
+  display: block
+
 .objectlist-table__row:nth-of-type(odd)
   background-color: $table-row-background
 
