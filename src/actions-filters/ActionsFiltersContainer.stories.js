@@ -106,6 +106,7 @@ storiesOf('object-list/ActionsFiltersContainer', module)
         itemSingleName="mouse"
         updateColumns={action('updateColumns')}
         updateFilter={action('Update filter')}
+        removeFilter={action('Remove filter')}
       />
     )
   })

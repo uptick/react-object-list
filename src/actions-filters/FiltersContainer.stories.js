@@ -32,5 +32,9 @@ storiesOf('object-list/FiltersContainer', module)
     'Container to render all the filters underneath eachother'
   )(story)(context))
   .add('default view', () => (
-    <FiltersContainer filters={filters} updateFilter={action('updateFilter')} />
+    <FiltersContainer
+      filters={filters}
+      updateFilter={action('updateFilter')}
+      removeFilter={action('removeFilter')}
+    />
   ))
