@@ -120,6 +120,7 @@ storiesOf('object-list/Data Renderers/Table', module)
           {dataKey: 'age', header: 'Age (years)', sortable: true, item: anotherCustomRenderer},
         ]}
         data={mockData}
+        numSelected={mockData.length}
         setSort={action('Set sort')}
         select={action('Select item')}
         selection={allSelection}

@@ -23,6 +23,8 @@ export default class TableRenderer extends Component {
     select: PropTypes.func,
     /** loading status used if data is loaded asynchronously  */
     status: PropTypes.oneOf(['loading', 'error', 'done']),
+    /** Count off selected items */
+    numSelected: PropTypes.number,
   }
 
   static defaultProps = {
@@ -69,7 +71,7 @@ export default class TableRenderer extends Component {
       return (
         <tr key={`row-${rowIndex}`} className="objectlist-table__row">
           {select && (
-            <td className="objectlist-table__td">
+            <td className="objectlist-table__td" key={`select-cell-${rowIndex}`} >
               <Selector
                 toggleSelect={select}
                 selected={selected}
@@ -83,7 +85,7 @@ export default class TableRenderer extends Component {
             let i = 0
             while (i < toRender.length) {
               if (i > 0) {
-                RenderedItems.push(<br />)
+                RenderedItems.push(<br key={`spacer-${i}`} />)
               }
               const RenderItem = toRender[i]
               if (RenderItem.item) {
@@ -91,6 +93,7 @@ export default class TableRenderer extends Component {
                   row: row,
                   column: RenderItem,
                   value: row[RenderItem.dataKey],
+                  key: `item-${i}`,
                 }))
               } else {
                 RenderedItems.push(row[RenderItem.dataKey])
@@ -98,7 +101,7 @@ export default class TableRenderer extends Component {
               i++
             }
             return (
-              <td key={`${rowIndex}-${cellIndex}`} className="objectlist-table__td">
+              <td key={`cell-${rowIndex}-${cellIndex}`} className="objectlist-table__td">
                 {RenderedItems}
               </td>
             )
@@ -113,7 +116,7 @@ export default class TableRenderer extends Component {
   }
 
   render() {
-    const {selection, data, select, status} = this.props
+    const {data, select, numSelected, status} = this.props
     return (
       <div className="objectlist-table--scroll">
         <Overlay status={status} />
@@ -123,7 +126,7 @@ export default class TableRenderer extends Component {
               {select && (
                 <th className="objectlist-table__th objectlist-table__th--selector">
                   <AllSelector
-                    allSelected={Object.keys(selection).length >= data.length}
+                    allSelected={!!(numSelected && numSelected >= data.length)}
                     toggleSelectAll={this.handleToggleSelectAll}
                   />
                 </th>

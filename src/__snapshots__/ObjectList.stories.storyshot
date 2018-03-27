@@ -207,7 +207,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </th>
@@ -246,7 +246,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -269,7 +269,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -292,7 +292,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -315,7 +315,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -338,7 +338,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -361,7 +361,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -384,7 +384,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -407,7 +407,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -430,7 +430,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -453,7 +453,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -476,7 +476,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -499,7 +499,7 @@ exports[`Storyshots object-list can select all 1`] = `
           >
             <input
               checked={true}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -801,7 +801,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </th>
@@ -840,7 +840,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -863,7 +863,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -886,7 +886,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -909,7 +909,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -932,7 +932,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -955,7 +955,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -978,7 +978,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -1001,7 +1001,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -1024,7 +1024,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -1047,7 +1047,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -1070,7 +1070,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>
@@ -1093,7 +1093,7 @@ exports[`Storyshots object-list can select items 1`] = `
           >
             <input
               checked={false}
-              onClick={[Function]}
+              onChange={[Function]}
               type="checkbox"
             />
           </td>

@@ -3,7 +3,7 @@
 exports[`Selector type snapshot test 1`] = `
 <input
   checked={false}
-  onClick={[Function]}
+  onChange={[Function]}
   type="checkbox"
 />
 `;
@@ -11,7 +11,7 @@ exports[`Selector type snapshot test 1`] = `
 exports[`Selector type snapshot test 2`] = `
 <input
   checked={true}
-  onClick={[Function]}
+  onChange={[Function]}
   type="checkbox"
 />
 `;

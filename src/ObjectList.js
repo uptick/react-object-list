@@ -12,7 +12,6 @@ import {
   ErrorMessage,
 } from './utils'
 
-// TODO: rename to something awesome
 class ObjectList extends Component {
   static propTypes = {
     /** the renderer used to display the data ie. list/table/custom */
@@ -115,6 +114,7 @@ class ObjectList extends Component {
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
       updatePage, updateSorting, selection, selectItems, customActions, error,
     } = this.props
+    const numSelected = Object.keys(selection).length
     const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
     return (
@@ -142,6 +142,7 @@ class ObjectList extends Component {
           selection={selection}
           selectAll={this.selectAll}
           deselectAll={this.deselectAll}
+          numSelected={numSelected}
           customActions={customActions}
         />
         <ErrorMessage
@@ -155,6 +156,7 @@ class ObjectList extends Component {
           selection={selection}
           select={selectItems}
           status={status}
+          numSelected={numSelected}
         />
         { (totalCount / perPage) > 0 &&
           <Pagination

@@ -118,6 +118,7 @@ storiesOf('object-list', module)
         active: !!(i % 2),
       }))}
       searchKey="text_contains"
+      removeFilter={action('removeFilter')}
     />
   ))
   .add('has error', () => (
@@ -181,6 +182,7 @@ storiesOf('object-list', module)
         ...f,
         active: !!(i % 2),
       }))}
+      removeFilter={action('removeFilter')}
     />
   ))
   .add('can select items', () => (

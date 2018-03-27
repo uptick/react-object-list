@@ -652,7 +652,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <span
       className="objectlist-results-text"
     >
-      573,489 undefined found
+      573,489 octopi found
     </span>
     <div
       className="objectlist-dropdown"
@@ -679,6 +679,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           Favourite Colour
         </button>
       </div>
+    </div>
+    <div>
+      <a
+        className="objectlist-button objectlist-button--link"
+        href="#"
+        onClick={[Function]}
+      >
+        De-select all
+      </a>
     </div>
   </div>
 </div>
@@ -747,7 +756,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
       href="http://thecatapi.com/api/images/get?format=src&type=gif"
     >
       Download 
-      0
+      3
        
       cats
     </a>
@@ -755,10 +764,19 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
       onClick={[Function]}
     >
       Pat 
-      0
+      3
        
       cats
     </button>
+    <div>
+      <a
+        className="objectlist-button objectlist-button--link"
+        href="#"
+        onClick={[Function]}
+      >
+        De-select all
+      </a>
+    </div>
   </div>
 </div>
 `;
@@ -2103,8 +2121,17 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <span
       className="objectlist-results-text"
     >
-      573,489 cats found
+      573,489 dogs found
     </span>
+    <div>
+      <a
+        className="objectlist-button objectlist-button--link"
+        href="#"
+        onClick={[Function]}
+      >
+        De-select all
+      </a>
+    </div>
   </div>
 </div>
 `;
@@ -2765,8 +2792,17 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <span
       className="objectlist-results-text"
     >
-      573,489 cats found
+      573,489 mouses found
     </span>
+    <div>
+      <a
+        className="objectlist-button objectlist-button--link"
+        href="#"
+        onClick={[Function]}
+      >
+        De-select all
+      </a>
+    </div>
   </div>
 </div>
 `;

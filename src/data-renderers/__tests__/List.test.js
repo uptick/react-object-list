@@ -12,9 +12,9 @@ describe('List', () => {
   describe('Lifecycle', () => {
     it('componentWillReceiveProps', () => {
       const newProps = {
-        columns: [1, 2],
+        columns: [{dataKey: 'a'}, {dataKey: 'b'}],
         meta: {
-          extraColumns: [3, 4],
+          extraColumns: [{dataKey: 'c'}, {dataKey: 'd'}],
         },
       }
       const instance = shallow(<List />)

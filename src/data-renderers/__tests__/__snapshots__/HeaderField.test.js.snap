@@ -16,7 +16,7 @@ exports[`HeaderField Snapshots renders sortable 1`] = `
 <div
   className={undefined}
   onClick={[Function]}
-  role=""
+  role="button"
 >
   Header Text
 </div>
@@ -26,7 +26,7 @@ exports[`HeaderField Snapshots renders sorted asc 1`] = `
 <div
   className={undefined}
   onClick={[Function]}
-  role=""
+  role="button"
 >
   Header Text
   <span
@@ -45,7 +45,7 @@ exports[`HeaderField Snapshots renders sorted desc 1`] = `
 <div
   className={undefined}
   onClick={[Function]}
-  role=""
+  role="button"
 >
   Header Text
   <span

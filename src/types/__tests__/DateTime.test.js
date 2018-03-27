@@ -37,10 +37,12 @@ describe('DateTime', () => {
         expect(result).toBe('07/02/18')
       })
       it('returns empty if date invalid', () => {
+        spyOn(console, 'warn')
         const dateString = 'abcdef'
         const instance = shallow(<DateTime outputFormat="DD/MM/YY" empty="No date" />).instance()
         const result = instance.formatDateTime(dateString)
         expect(result).toBe('No date')
+        expect(console.warn.calls.count()).toEqual(1)
       })
     })
     describe('Format range', () => {
