@@ -13,6 +13,7 @@ import {
   META_TYPE,
   STATUS_TYPE,
   STATUS_CHOICES,
+  SELECTION_TYPE,
 } from '../utils/proptypes'
 import {getVisibleColumns} from '../utils/functions'
 
@@ -61,7 +62,7 @@ class ActionsFilterContainer extends Component {
     /** Count of selected items */
     numSelected: PropTypes.number,
     /** Object of id: true of selected items */
-    selection: PropTypes.object,
+    selection: SELECTION_TYPE,
     /** callback when selecting all the items. Set to null to not offer this option in the ui. */
     selectAll: PropTypes.func,
     /** callback when deselecting all the items */
