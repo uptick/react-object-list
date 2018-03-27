@@ -8,6 +8,7 @@ jest.mock('../Empty', () => 'Empty')
 
 describe('RelativeDate type', () => {
   it('snapshot tests', () => {
+    // Expecting a warning since one of our test values is not a valid date
     spyOn(console, 'warn')
     const testValues = [
       {},
@@ -19,6 +20,6 @@ describe('RelativeDate type', () => {
     testValues.forEach(testValue => {
       snapshotTest(<RelativeDate {...testValue} />)
     })
-    expect(console.warn.calls.count()).toEqual(1)
+    expect(console.warn.calls.mostRecent().args[0]).toContain('value provided is not in a recognized RFC2822 or ISO format')
   })
 })
