@@ -7,7 +7,13 @@ import Favourites from './Favourites'
 import OptionalFields from './OptionalFields'
 import SelectAllAction from './SelectAllAction'
 import {SearchFilter} from '../filters'
-import {COLUMN_TYPE, FILTER_BASE_TYPE, META_TYPE} from '../utils/proptypes'
+import {
+  COLUMN_TYPE,
+  FILTER_BASE_TYPE,
+  META_TYPE,
+  STATUS_TYPE,
+  STATUS_CHOICES,
+} from '../utils/proptypes'
 import {getVisibleColumns} from '../utils/functions'
 
 class ActionsFilterContainer extends Component {
@@ -50,7 +56,7 @@ class ActionsFilterContainer extends Component {
     /** callback to remove a filter from the active list of filters */
     removeFilter: PropTypes.func,
     /** loading status used if data is loaded asynchronously  */
-    status: PropTypes.oneOf(['loading', 'error', 'done']),
+    status: STATUS_TYPE,
 
     /** Count off selected items */
     numSelected: PropTypes.number,
@@ -70,7 +76,7 @@ class ActionsFilterContainer extends Component {
     favourites: [],
     selection: {},
     columns: [],
-    status: 'done',
+    status: STATUS_CHOICES.done,
   }
 
   render() {
@@ -135,7 +141,7 @@ class ActionsFilterContainer extends Component {
             totalCount,
             itemSingleName,
             itemPluralName,
-            loading: this.props.status === 'loading',
+            loading: this.props.status === STATUS_CHOICES.loading,
             key: `action-${i}`,
           }))}
           <OptionalFields
@@ -143,7 +149,7 @@ class ActionsFilterContainer extends Component {
             extraColumns={this.props.meta.extraColumns}
             updateColumns={this.props.updateColumns}
           />
-          {this.props.status === 'done' && (
+          {this.props.status === STATUS_CHOICES.done && (
             <SelectAllAction
               count={this.props.meta.totalCount}
               itemCount={itemCount}

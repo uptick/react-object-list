@@ -6,6 +6,7 @@ import Overlay from './Overlay'
 import {AllSelector, Selector} from '../types'
 import { getVisibleColumns, setColumnLabels } from '../utils/functions'
 import { DATA_TYPE } from '../utils/constants'
+import { STATUS_TYPE, STATUS_CHOICES } from '../utils/proptypes'
 
 export default class TableRenderer extends Component {
   static propTypes = {
@@ -22,7 +23,7 @@ export default class TableRenderer extends Component {
     /** Function to select one */
     select: PropTypes.func,
     /** loading status used if data is loaded asynchronously  */
-    status: PropTypes.oneOf(['loading', 'error', 'done']),
+    status: STATUS_TYPE,
     /** Count off selected items */
     numSelected: PropTypes.number,
   }
@@ -32,7 +33,7 @@ export default class TableRenderer extends Component {
       extraColumns: [],
       sortKeys: [],
     },
-    status: 'done',
+    status: STATUS_CHOICES.done,
     columnWidths: {},
     selection: {},
   }

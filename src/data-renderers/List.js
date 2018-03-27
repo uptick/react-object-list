@@ -6,6 +6,7 @@ import ListCard from './ListCard'
 import Overlay from './Overlay'
 import { getVisibleColumns, setColumnLabels } from '../utils/functions'
 import { DATA_TYPE } from '../utils/constants'
+import { STATUS_TYPE, STATUS_CHOICES } from '../utils/proptypes'
 
 export default class ListRenderer extends Component {
   static propTypes = {
@@ -17,7 +18,7 @@ export default class ListRenderer extends Component {
     // Extra classes for the Renderer component to be rendered with
     extraClasses: PropTypes.string,
     /** loading status used if data is loaded asynchronously  */
-    status: PropTypes.oneOf(['loading', 'error', 'done']),
+    status: STATUS_TYPE,
   }
 
   static defaultProps = {
@@ -28,7 +29,7 @@ export default class ListRenderer extends Component {
     columns: [],
     data: [],
     Renderer: ListCard,
-    status: 'done',
+    status: STATUS_CHOICES.done,
   }
 
   constructor(props) {

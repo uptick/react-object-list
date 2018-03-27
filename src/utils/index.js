@@ -15,6 +15,8 @@ export {
   COLUMN_BASE_TYPE,
   FILTER_BASE_TYPE,
   META_TYPE,
+  STATUS_TYPE,
+  STATUS_CHOICES,
 } from './proptypes'
 export {
   getVisibleColumns,
