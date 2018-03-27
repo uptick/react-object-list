@@ -20,7 +20,7 @@ class FiltersContainer extends Component {
   }
 
   renderFilter = (filter, i) => {
-    const { Renderer, filterKey, props, value } = filter
+    const { Renderer, filterKey, value, ...props } = filter
     return (
       <Renderer
         key={`filter-${filterKey}-${i}`}
