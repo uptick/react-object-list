@@ -74,7 +74,7 @@ class ActionsFilterContainer extends Component {
     const {
       searchKey, meta: {totalCount}, itemCount,
       selection, customActions = [],
-      itemSingleName, itemPluralName, numSelected
+      itemSingleName, itemPluralName, numSelected,
     } = this.props
 
     let search
