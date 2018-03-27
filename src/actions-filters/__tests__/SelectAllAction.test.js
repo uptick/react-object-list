@@ -40,8 +40,9 @@ describe('<SelectAllAction />', () => {
       }
       snapshotTest(<SelectAllAction {...props} />)
     })
-    it('shows a spinner when select all is pending', () => {
+    it('shows a spinner when loading', () => {
       const props = {
+        selectAll: jest.fn(),
         loading: true,
         count: 5,
         numSelected: 3,

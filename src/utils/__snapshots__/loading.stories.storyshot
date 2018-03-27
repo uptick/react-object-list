@@ -98,5 +98,16 @@ exports[`Storyshots object-list/Utils/Loading Icon loading 1`] = `
     />
      
   </div>
+  <div>
+    <h5>
+      :
+    </h5>
+     
+    <i
+      className="icon loading fa fa-circle-o-notch fa-spin text-primary"
+      style={Object {}}
+    />
+     
+  </div>
 </div>
 `;

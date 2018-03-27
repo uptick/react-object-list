@@ -12,7 +12,7 @@ storiesOf('object-list/Utils/Loading Icon', module)
   )(story)(context))
   .add('loading', () => (
     <div>
-      {['red', 'blue', 'yellow', 'green', 'purple', 'grey'].map(colour => {
+      {['red', 'blue', 'yellow', 'green', 'purple', 'grey', null].map(colour => {
         const Spinner = loadingSpinner(colour)
         return <div key={colour}><h5>{colour}:</h5> {Spinner} </div>
       })}
