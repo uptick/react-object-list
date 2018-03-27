@@ -6,7 +6,6 @@ import { action } from '@storybook/addon-actions'
 import {
   Table,
 } from '.'
-import TableHeader from './TableHeader'
 
 const mockData = [
   {id: 1, name: 'Bob', age: 45, hobby: 'horse riding'},
