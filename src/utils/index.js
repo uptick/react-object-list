@@ -17,6 +17,8 @@ export {
   META_TYPE,
   STATUS_TYPE,
   STATUS_CHOICES,
+  ALL_SELECTED,
+  SELECTION_TYPE,
 } from './proptypes'
 export {
   getVisibleColumns,
