@@ -24,7 +24,7 @@ export default class TableRenderer extends Component {
     select: PropTypes.func,
     /** loading status used if data is loaded asynchronously  */
     status: STATUS_TYPE,
-    /** Count off selected items */
+    /** Count of selected items */
     numSelected: PropTypes.number,
   }
 
