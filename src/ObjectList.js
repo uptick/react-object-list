@@ -60,11 +60,7 @@ class ObjectList extends Component {
     /** disable favourites when not required */
     favouritesEnabled: PropTypes.bool,
     /** the current list of favourites used for preferences */
-    favourites: PropTypes.shape({
-      list: PropTypes.array,
-      onAdd: PropTypes.func,
-      onDelete: PropTypes.func,
-    }),
+    favourites: ActionsFiltersContainer.propTypes.favourites,
     /** the name of the currently selected favourite name */
     selectedFavouriteName: PropTypes.string,
     /** callback function when adding a new favourite */
