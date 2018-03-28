@@ -25,7 +25,7 @@ const filters = Object.entries(importedFilters).map(([name, filter]) => {
     filterKey: name,
     active: false,
     name,
-    props,
+    ...props,
   }
 })
 const mockData = [

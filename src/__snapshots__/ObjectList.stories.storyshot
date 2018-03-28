@@ -31,88 +31,74 @@ exports[`Storyshots object-list all selected 1`] = `
                 "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "ChoiceFilter",
                 "name": "ChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "CurrencyFilter",
                 "name": "CurrencyFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DayFilter",
                 "name": "DayFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MonthFilter",
                 "name": "MonthFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MultiChoiceFilter",
                 "name": "MultiChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "NumberSliderFilter",
                 "name": "NumberSliderFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteMultiChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "SearchFilter",
                 "name": "SearchFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "TextContainsFilter",
                 "name": "TextContainsFilter",
-                "props": Object {},
               },
             ]
           }
@@ -634,88 +620,74 @@ exports[`Storyshots object-list can select all 1`] = `
                 "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "ChoiceFilter",
                 "name": "ChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "CurrencyFilter",
                 "name": "CurrencyFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DayFilter",
                 "name": "DayFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MonthFilter",
                 "name": "MonthFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MultiChoiceFilter",
                 "name": "MultiChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "NumberSliderFilter",
                 "name": "NumberSliderFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteMultiChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "SearchFilter",
                 "name": "SearchFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "TextContainsFilter",
                 "name": "TextContainsFilter",
-                "props": Object {},
               },
             ]
           }
@@ -1246,88 +1218,74 @@ exports[`Storyshots object-list can select items 1`] = `
                 "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "ChoiceFilter",
                 "name": "ChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "CurrencyFilter",
                 "name": "CurrencyFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DayFilter",
                 "name": "DayFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MonthFilter",
                 "name": "MonthFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MultiChoiceFilter",
                 "name": "MultiChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "NumberSliderFilter",
                 "name": "NumberSliderFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteMultiChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "SearchFilter",
                 "name": "SearchFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "TextContainsFilter",
                 "name": "TextContainsFilter",
-                "props": Object {},
               },
             ]
           }
@@ -1840,44 +1798,37 @@ exports[`Storyshots object-list has active filters 1`] = `
                 "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "CurrencyFilter",
                 "name": "CurrencyFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MultiChoiceFilter",
                 "name": "MultiChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "SearchFilter",
                 "name": "SearchFilter",
-                "props": Object {},
               },
             ]
           }
@@ -1931,6 +1882,12 @@ exports[`Storyshots object-list has active filters 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          MonthFilter
+          :
+        </label>
         <div
           className="month-picker "
         >
@@ -2092,6 +2049,12 @@ exports[`Storyshots object-list has active filters 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          ChoiceFilter
+          :
+        </label>
         <div
           className="objectlist-current-filter__filter-comparison"
         >
@@ -2133,6 +2096,12 @@ exports[`Storyshots object-list has active filters 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          DayFilter
+          :
+        </label>
         <div
           className="objectlist-dayfilter"
         >
@@ -2158,6 +2127,12 @@ exports[`Storyshots object-list has active filters 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          NumberSliderFilter
+          :
+        </label>
         <div
           className="objectlist-current-filter__filter-comparison"
         >
@@ -2220,6 +2195,12 @@ exports[`Storyshots object-list has active filters 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          TextContainsFilter
+          :
+        </label>
         <div
           className="objectlist-current-filter__filter-comparison"
         >
@@ -2261,6 +2242,12 @@ exports[`Storyshots object-list has active filters 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          RemoteMultiChoiceFilter
+          :
+        </label>
         <Select.Async
           className="objectlist-current-filter__active-status"
           labelKey="label"
@@ -3094,44 +3081,37 @@ exports[`Storyshots object-list has everything 1`] = `
                 "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "CurrencyFilter",
                 "name": "CurrencyFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MultiChoiceFilter",
                 "name": "MultiChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "SearchFilter",
                 "name": "SearchFilter",
-                "props": Object {},
               },
             ]
           }
@@ -3185,6 +3165,12 @@ exports[`Storyshots object-list has everything 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          MonthFilter
+          :
+        </label>
         <div
           className="month-picker "
         >
@@ -3346,6 +3332,12 @@ exports[`Storyshots object-list has everything 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          ChoiceFilter
+          :
+        </label>
         <div
           className="objectlist-current-filter__filter-comparison"
         >
@@ -3387,6 +3379,12 @@ exports[`Storyshots object-list has everything 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          DayFilter
+          :
+        </label>
         <div
           className="objectlist-dayfilter"
         >
@@ -3412,6 +3410,12 @@ exports[`Storyshots object-list has everything 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          NumberSliderFilter
+          :
+        </label>
         <div
           className="objectlist-current-filter__filter-comparison"
         >
@@ -3474,6 +3478,12 @@ exports[`Storyshots object-list has everything 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          TextContainsFilter
+          :
+        </label>
         <div
           className="objectlist-current-filter__filter-comparison"
         >
@@ -3515,6 +3525,12 @@ exports[`Storyshots object-list has everything 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          RemoteMultiChoiceFilter
+          :
+        </label>
         <Select.Async
           className="objectlist-current-filter__active-status"
           labelKey="label"
@@ -3972,88 +3988,74 @@ exports[`Storyshots object-list has multiple pages 1`] = `
                 "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "ChoiceFilter",
                 "name": "ChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "CurrencyFilter",
                 "name": "CurrencyFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DayFilter",
                 "name": "DayFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MonthFilter",
                 "name": "MonthFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MultiChoiceFilter",
                 "name": "MultiChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "NumberSliderFilter",
                 "name": "NumberSliderFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteMultiChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "SearchFilter",
                 "name": "SearchFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "TextContainsFilter",
                 "name": "TextContainsFilter",
-                "props": Object {},
               },
             ]
           }
@@ -4449,88 +4451,74 @@ exports[`Storyshots object-list has optional fields 1`] = `
                 "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "ChoiceFilter",
                 "name": "ChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "CurrencyFilter",
                 "name": "CurrencyFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DayFilter",
                 "name": "DayFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MonthFilter",
                 "name": "MonthFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MultiChoiceFilter",
                 "name": "MultiChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "NumberSliderFilter",
                 "name": "NumberSliderFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteMultiChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "SearchFilter",
                 "name": "SearchFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "TextContainsFilter",
                 "name": "TextContainsFilter",
-                "props": Object {},
               },
             ]
           }
@@ -4952,88 +4940,74 @@ exports[`Storyshots object-list has search key 1`] = `
                 "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "ChoiceFilter",
                 "name": "ChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "CurrencyFilter",
                 "name": "CurrencyFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DayFilter",
                 "name": "DayFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MonthFilter",
                 "name": "MonthFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MultiChoiceFilter",
                 "name": "MultiChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "NumberSliderFilter",
                 "name": "NumberSliderFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteMultiChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "SearchFilter",
                 "name": "SearchFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "TextContainsFilter",
                 "name": "TextContainsFilter",
-                "props": Object {},
               },
             ]
           }
@@ -5429,88 +5403,74 @@ exports[`Storyshots object-list loading 1`] = `
                 "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "ChoiceFilter",
                 "name": "ChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "CurrencyFilter",
                 "name": "CurrencyFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DayFilter",
                 "name": "DayFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MonthFilter",
                 "name": "MonthFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MultiChoiceFilter",
                 "name": "MultiChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "NumberSliderFilter",
                 "name": "NumberSliderFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteMultiChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "SearchFilter",
                 "name": "SearchFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "TextContainsFilter",
                 "name": "TextContainsFilter",
-                "props": Object {},
               },
             ]
           }
@@ -5916,88 +5876,74 @@ exports[`Storyshots object-list ready 1`] = `
                 "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "ChoiceFilter",
                 "name": "ChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "CurrencyFilter",
                 "name": "CurrencyFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "DayFilter",
                 "name": "DayFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MonthFilter",
                 "name": "MonthFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "MultiChoiceFilter",
                 "name": "MultiChoiceFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "NumberSliderFilter",
                 "name": "NumberSliderFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "RemoteMultiChoiceFilter",
+                "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-                "props": Object {
-                  "loadOptions": [Function],
-                },
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "SearchFilter",
                 "name": "SearchFilter",
-                "props": Object {},
               },
               Object {
                 "Renderer": [Function],
                 "active": false,
                 "filterKey": "TextContainsFilter",
                 "name": "TextContainsFilter",
-                "props": Object {},
               },
             ]
           }

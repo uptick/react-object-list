@@ -74,6 +74,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        BooleanFilter
+        :
+      </label>
       <Select
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -105,6 +111,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        MonthFilter
+        :
+      </label>
       <div
         className="month-picker "
       >
@@ -266,6 +278,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        CurrencyFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -332,6 +350,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        ChoiceFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -373,6 +397,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        DateFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -428,6 +458,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        DayFilter
+        :
+      </label>
       <div
         className="objectlist-dayfilter"
       >
@@ -453,6 +489,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        MultiChoiceFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -494,6 +536,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        NumberSliderFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -556,6 +604,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        SearchFilter
+        :
+      </label>
       <input
         className="objectlist-current-filter__active-status objectlist-input"
         onChange={[Function]}
@@ -567,6 +621,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        TextContainsFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -608,6 +668,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        RemoteChoiceFilter
+        :
+      </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -628,6 +694,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        RemoteMultiChoiceFilter
+        :
+      </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -855,6 +927,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        BooleanFilter
+        :
+      </label>
       <Select
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -886,6 +964,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        MonthFilter
+        :
+      </label>
       <div
         className="month-picker "
       >
@@ -1047,6 +1131,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        CurrencyFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -1113,6 +1203,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        ChoiceFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -1154,6 +1250,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        DateFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -1209,6 +1311,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        DayFilter
+        :
+      </label>
       <div
         className="objectlist-dayfilter"
       >
@@ -1234,6 +1342,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        MultiChoiceFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -1275,6 +1389,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        NumberSliderFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -1337,6 +1457,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        SearchFilter
+        :
+      </label>
       <input
         className="objectlist-current-filter__active-status objectlist-input"
         onChange={[Function]}
@@ -1348,6 +1474,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        TextContainsFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -1389,6 +1521,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        RemoteChoiceFilter
+        :
+      </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -1409,6 +1547,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        RemoteMultiChoiceFilter
+        :
+      </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -1476,6 +1620,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          SearchFilter
+          :
+        </label>
         <input
           className="objectlist-current-filter__active-status objectlist-input"
           onChange={[Function]}
@@ -1554,6 +1704,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        BooleanFilter
+        :
+      </label>
       <Select
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -1585,6 +1741,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        MonthFilter
+        :
+      </label>
       <div
         className="month-picker "
       >
@@ -1746,6 +1908,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        CurrencyFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -1812,6 +1980,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        ChoiceFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -1853,6 +2027,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        DateFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -1908,6 +2088,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        DayFilter
+        :
+      </label>
       <div
         className="objectlist-dayfilter"
       >
@@ -1933,6 +2119,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        MultiChoiceFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -1974,6 +2166,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        NumberSliderFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -2036,6 +2234,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        TextContainsFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -2077,6 +2281,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        RemoteChoiceFilter
+        :
+      </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -2097,6 +2307,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        RemoteMultiChoiceFilter
+        :
+      </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -2147,6 +2363,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
       <div
         className="objectlist-row"
       >
+        <label
+          className="objectlist-current-filter__filter-name"
+        >
+          SearchFilter
+          :
+        </label>
         <input
           className="objectlist-current-filter__active-status objectlist-input"
           onChange={[Function]}
@@ -2225,6 +2447,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        BooleanFilter
+        :
+      </label>
       <Select
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -2256,6 +2484,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        MonthFilter
+        :
+      </label>
       <div
         className="month-picker "
       >
@@ -2417,6 +2651,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        CurrencyFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -2483,6 +2723,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        ChoiceFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -2524,6 +2770,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        DateFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -2579,6 +2831,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        DayFilter
+        :
+      </label>
       <div
         className="objectlist-dayfilter"
       >
@@ -2604,6 +2862,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        MultiChoiceFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -2645,6 +2909,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        NumberSliderFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -2707,6 +2977,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        TextContainsFilter
+        :
+      </label>
       <div
         className="objectlist-current-filter__filter-comparison"
       >
@@ -2748,6 +3024,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        RemoteChoiceFilter
+        :
+      </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -2768,6 +3050,12 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     <div
       className="objectlist-row"
     >
+      <label
+        className="objectlist-current-filter__filter-name"
+      >
+        RemoteMultiChoiceFilter
+        :
+      </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
