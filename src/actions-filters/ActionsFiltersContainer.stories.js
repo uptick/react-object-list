@@ -19,7 +19,7 @@ const filters = Object.entries(importedFilters).map(([name, filter]) => {
     filterKey: name,
     active: true,
     name,
-    props,
+    ...props,
   }
 })
 
