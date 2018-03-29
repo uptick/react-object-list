@@ -14,7 +14,7 @@ describe('OptionalField', () => {
       snapshotTest(<OptionalField {...defaultProps} />)
     })
     it('renders enabled', () => {
-      snapshotTest(<OptionalField {...defaultProps} enabled />)
+      snapshotTest(<div><OptionalField {...defaultProps} enabled /></div>)
     })
   })
   describe('Functions', () => {
