@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { getValueFromAccessor } from './utils'
 
 /**
  * The component that is to be displayed within ListRenderer
@@ -23,7 +24,7 @@ export default class ListCard extends Component {
       return (
         <div className="objectlist-list__content" key={`list-item-${idx}`}>
           <h2 className="objectlist-list__header">{col.map(c => c.header).join(' ')}:</h2>
-          <div className="objectlist-list__body">{col.map(c => data[c.dataKey]).join(' ')}</div>
+          <div className="objectlist-list__body">{col.map(c => getValueFromAccessor(data, c.dataKey)).join(' ')}</div>
         </div>
       )
     })
