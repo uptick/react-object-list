@@ -5,6 +5,7 @@ import TableHeader from './TableHeader'
 import Overlay from './Overlay'
 import {AllSelector, Selector} from '../types'
 import { getVisibleColumns, setColumnLabels } from '../utils/functions'
+import { getValueFromAccessor } from './utils'
 import { DATA_TYPE } from '../utils/constants'
 import { STATUS_TYPE, STATUS_CHOICES, SELECTION_TYPE, ALL_SELECTED } from '../utils/proptypes'
 
@@ -93,7 +94,7 @@ export default class TableRenderer extends Component {
                 RenderedItems.push(RenderItem.item({
                   row: row,
                   column: RenderItem,
-                  value: row[RenderItem.dataKey],
+                  value: getValueFromAccessor(row, RenderItem.dataKey),
                   key: `item-${i}`,
                 }))
               } else {
