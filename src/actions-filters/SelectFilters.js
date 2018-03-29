@@ -30,7 +30,7 @@ class SelectFilters extends Component {
         openOnFocus
         value={null}
         options={quickFilters}
-        valueKey="key"
+        valueKey="filterKey"
         labelKey="name"
         onChange={this.props.addFilter}
         placeholder="Add Filter"

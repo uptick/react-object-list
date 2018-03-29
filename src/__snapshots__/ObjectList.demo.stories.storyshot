@@ -36,7 +36,7 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
       </div>
     </div>
@@ -1019,7 +1019,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
       </div>
     </div>

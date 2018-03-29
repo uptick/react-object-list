@@ -27,6 +27,6 @@ exports[`<SelectFilters /> Snapshot renders correctly 1`] = `
   }
   placeholder="Add Filter"
   value={null}
-  valueKey="key"
+  valueKey="filterKey"
 />
 `;

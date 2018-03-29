@@ -26,7 +26,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         options={Array []}
         placeholder="Add Filter"
         value={null}
-        valueKey="key"
+        valueKey="filterKey"
       />
       <div
         className="objectlist-dropdown"
@@ -879,7 +879,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         options={Array []}
         placeholder="Add Filter"
         value={null}
-        valueKey="key"
+        valueKey="filterKey"
       />
       <div
         className="objectlist-dropdown"
@@ -1656,7 +1656,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         options={Array []}
         placeholder="Add Filter"
         value={null}
-        valueKey="key"
+        valueKey="filterKey"
       />
       <div
         className="objectlist-dropdown"
@@ -2399,7 +2399,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         options={Array []}
         placeholder="Add Filter"
         value={null}
-        valueKey="key"
+        valueKey="filterKey"
       />
       <div
         className="objectlist-dropdown"
