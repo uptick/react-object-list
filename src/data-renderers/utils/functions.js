@@ -12,6 +12,8 @@ const getValueFromAccessor = (row, keys) => {
     const thisKey = cloneKeys.shift()
     if (thisKey in value) {
       value = value[thisKey]
+    } else {
+      return value
     }
   }
   return value
