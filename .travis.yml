@@ -1,25 +1,42 @@
 language: node_js
+
 node_js: 8.4
-
-env:
-  matrix:
-    - TASK=jest
-    - TASK=eslint
-    
-install:
-  - if [ $TASK == jest ]; then npm i -g yarn@1.3.2; yarn install; fi
-  - if [ $TASK == eslint ]; then npm install -g eslint eslint-plugin-promise eslint-plugin-standard eslint-config-standard eslint-config-standard-react eslint-config-standard-jsx eslint-plugin-react eslint-plugin-babel babel-eslint eslint-plugin-import eslint-plugin-node; fi
-
-script:
-  - if [ $TASK == jest ]; then
-      yarn codecov;
-    elif [ $TASK == eslint ]; then
-      eslint src/;
-    fi
 
 branches:
   only:
     - master
+
+env:
+  matrix:
+    - TASK=nojsx
+    - TASK=jest
+    - TASK=eslint
+
+install:
+  - if [ $TASK == jest ];
+      then npm i -g yarn@1.3.2;
+      yarn install;
+
+    elif [ $TASK = eslint ]; then
+      npm install -g
+        eslint
+        eslint-plugin-promise
+        eslint-plugin-standard
+        eslint-config-standard
+        eslint-config-standard-react
+        eslint-config-standard-jsx
+        eslint-plugin-react
+        eslint-plugin-babel
+        babel-eslint
+        eslint-plugin-import
+        eslint-plugin-node;
+    fi
+
+script: ./.travis.script.sh
+
+after_script:
+  - if [ $TASK == jest ]; then yarn codecov; fi
+
 
 notifications:
   email: false
