@@ -21,7 +21,6 @@
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
     "test": "jest",
-    "codecov": "jest --coverage; codecov",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "prepublish": "mkdir -p styles && cp src/*.sass styles"
   },
