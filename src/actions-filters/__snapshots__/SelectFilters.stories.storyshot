@@ -96,6 +96,6 @@ exports[`Storyshots object-list/SelectFilters default view 1`] = `
   }
   placeholder="Add Filter"
   value={null}
-  valueKey="key"
+  valueKey="filterKey"
 />
 `;

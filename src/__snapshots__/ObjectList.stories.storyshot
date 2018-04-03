@@ -104,7 +104,7 @@ exports[`Storyshots object-list all selected 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -693,7 +693,7 @@ exports[`Storyshots object-list can select all 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -1291,7 +1291,7 @@ exports[`Storyshots object-list can select items 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -1834,7 +1834,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -3117,7 +3117,7 @@ exports[`Storyshots object-list has everything 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -4061,7 +4061,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -4524,7 +4524,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -5013,7 +5013,7 @@ exports[`Storyshots object-list has search key 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -5476,7 +5476,7 @@ exports[`Storyshots object-list loading 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -5949,7 +5949,7 @@ exports[`Storyshots object-list ready 1`] = `
           }
           placeholder="Add Filter"
           value={null}
-          valueKey="key"
+          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
