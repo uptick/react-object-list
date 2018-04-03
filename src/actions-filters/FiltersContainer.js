@@ -28,7 +28,7 @@ class FiltersContainer extends Component {
         value={value}
         onChange={this.props.updateFilter}
         removeFilter={this.props.removeFilter}
-        loadOptions={loadOptions ? loadOptions.bind(filter) : null}
+        loadOptions={loadOptions ? loadOptions.bind(filter) : undefined}
         {...props}
       />
     )
