@@ -20,7 +20,7 @@ class FiltersContainer extends Component {
   }
 
   renderFilter = (filter, i) => {
-    const { Renderer, filterKey, value, ...props } = filter
+    const { Renderer, filterKey, loadOptions, value, ...props } = filter
     return (
       <Renderer
         key={`filter-${filterKey}-${i}`}
@@ -28,6 +28,7 @@ class FiltersContainer extends Component {
         value={value}
         onChange={this.props.updateFilter}
         removeFilter={this.props.removeFilter}
+        loadOptions={loadOptions ? loadOptions.bind(filter) : null}
         {...props}
       />
     )
