@@ -44,36 +44,42 @@ describe('Choice', () => {
       })
       describe('handles single choice', () => {
         it('receives single value', () => {
+          const newValue = {value: 5}
           const instance = shallow(<Choice {...baseProps} />).instance()
-          instance.handleChange({value: 5})
-          expect(baseProps.onChange).toHaveBeenCalledWith(5)
+          instance.handleChange(newValue)
+          expect(baseProps.onChange).toHaveBeenCalledWith(newValue)
         })
         it('receives array value', () => {
+          const newValue = [{value: 9}, {value: 5}]
           const instance = shallow(<Choice {...baseProps} />).instance()
-          instance.handleChange([{value: 9}, {value: 5}])
-          expect(baseProps.onChange).toHaveBeenCalledWith(9)
+          instance.handleChange(newValue)
+          expect(baseProps.onChange).toHaveBeenCalledWith(newValue[0])
         })
         it('has custom value key', () => {
+          const newValue = {bob: 67}
           const instance = shallow(<Choice {...baseProps} valueKey="bob" />).instance()
-          instance.handleChange({bob: 67})
-          expect(baseProps.onChange).toHaveBeenCalledWith(67)
+          instance.handleChange(newValue)
+          expect(baseProps.onChange).toHaveBeenCalledWith(newValue)
         })
       })
       describe('handles multiple choice', () => {
         it('receives array value', () => {
+          const newValue = [{value: 9}, {value: 5}]
           const instance = shallow(<Choice {...baseProps} multi />).instance()
-          instance.handleChange([{value: 9}, {value: 5}])
-          expect(baseProps.onChange).toHaveBeenCalledWith([9, 5])
+          instance.handleChange(newValue)
+          expect(baseProps.onChange).toHaveBeenCalledWith(newValue)
         })
         it('receives single value', () => {
+          const newValue = {value: 5}
           const instance = shallow(<Choice {...baseProps} multi />).instance()
-          instance.handleChange({value: 5})
-          expect(baseProps.onChange).toHaveBeenCalledWith([5])
+          instance.handleChange(newValue)
+          expect(baseProps.onChange).toHaveBeenCalledWith([newValue])
         })
         it('has custom value key', () => {
+          const newValue = [{bob: 67}]
           const instance = shallow(<Choice {...baseProps} multi valueKey="bob" />).instance()
-          instance.handleChange([{bob: 67}])
-          expect(baseProps.onChange).toHaveBeenCalledWith([67])
+          instance.handleChange(newValue)
+          expect(baseProps.onChange).toHaveBeenCalledWith(newValue)
         })
       })
     })
