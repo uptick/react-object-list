@@ -46,17 +46,17 @@ class Choice extends React.Component {
    * @param  {object||object[]} newValue Just selected options
    */
   handleChange = newValue => {
-    const {onChange, valueKey, multi} = this.props
+    const {onChange, multi} = this.props
     if (!multi) {
       if (Array.isArray(newValue)) {
         newValue = newValue[0]
       }
-      onChange(newValue[valueKey])
+      onChange(newValue)
     } else {
       if (!Array.isArray(newValue)) {
         newValue = [newValue]
       }
-      onChange(newValue.map(x => x[valueKey]))
+      onChange(newValue)
     }
   }
 
