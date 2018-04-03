@@ -109,7 +109,8 @@ class TableDemo extends React.Component {
       data = data.filter(row => {
         for (let i = 0; i < activeFilters.length; i++) {
           const regex = RegExp(activeFilters[i].value, 'i')
-          return regex.test(row[activeFilters[i].filterKey])
+          const result = regex.test(row[activeFilters[i].filterKey])
+          return result === (activeFilters[i].comparison === 'contains')
         }
         return false
       })
