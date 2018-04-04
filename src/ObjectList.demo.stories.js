@@ -107,9 +107,11 @@ class InteractiveObjectList extends React.Component {
     if (activeFilters.length > 0) { // filter data
       data = data.filter(row => {
         for (let i = 0; i < activeFilters.length; i++) {
+          if (!activeFilters[i].value) { return true }
           const regex = RegExp(activeFilters[i].value, 'i')
           const result = regex.test(row[activeFilters[i].filterKey])
-          return result === (activeFilters[i].comparison === 'contains')
+          const comparison = activeFilters[i].comparison || 'contains'
+          return comparison === 'contains' ? result : !result
         }
         return false
       })
