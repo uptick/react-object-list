@@ -1,0 +1,30 @@
+$roundedEdgeRadius: 0.25rem
+$darkBackgroundColour: #4A4A4A
+$componentBackgroundColour: #F2F2F2
+    
+.objectlist-table
+  box-shadow: 0 0.05rem 0.2rem 0.05rem rgba(0,0,0,0.3)
+  border-radius: $roundedEdgeRadius
+  margin-bottom: 4px
+
+.objectlist-table__th
+    background-color: $darkBackgroundColour
+    color: white
+    border-bottom: none
+    font-weight: normal
+
+.objectlist-table__th:first-child
+    border-top-left-radius: $roundedEdgeRadius
+
+.objectlist-table__th:last-child
+    border-top-right-radius: $roundedEdgeRadius
+
+.objectlist-table__row:nth-of-type(even)
+    background-color: white
+
+.objectlist-table__row:nth-of-type(even)
+    background-color: $componentBackgroundColour
+
+.objectlist-table__td, .objectlist-table__th
+    border-top: none
+    text-align: center
