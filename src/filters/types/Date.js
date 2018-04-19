@@ -76,10 +76,9 @@ class Date extends React.Component {
   render() {
     let dateChoice
     if (this.props.comparison === this.props.fixedComparison.value) {
-      const value = this.props.value === null ? '' : this.props.value.format(this.props.inputFormat)
       dateChoice = (
         <DayPickerInput
-          placeholder={value}
+          placeholder={this.props.value === null ? '' : moment(this.props.value).format(this.props.inputFormat)}
           format="DD/MM/YYYY"
           classNames={{
             container: 'objectlist-input__container',
@@ -90,7 +89,7 @@ class Date extends React.Component {
           clickUnselectsDay
           formatDate={formatDate}
           parseDate={parseDate}
-          {...value ? {value: value} : {}}
+          {...this.props.value ? {value: this.props.value} : {}}
           dayPickerProps={{
             fixedWeeks: true,
           }}
