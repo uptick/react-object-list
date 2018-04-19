@@ -50,9 +50,10 @@ $huge-flex-basis: $huge-flex * 100px
     border: none
 
 $input-height: 36px - $spacing - ($border-width * 2)
+.objectlist-input__container
+  position: relative
 .objectlist-input__container > input,
 .objectlist-input
-  position: relative
   font-family: $font
   height: $input-height
   font-size: 1em
@@ -69,7 +70,7 @@ $input-height: 36px - $spacing - ($border-width * 2)
 
 .objectlist-input__daypicker
   position: absolute
-  top: $input-height * 2.5
+  top: $input-height + $spacing * 2 + $border-width
   right: 0
   border: $border
   background: $global-background-color
