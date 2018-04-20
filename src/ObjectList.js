@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import ActionsFiltersContainer from './actions-filters/ActionsFiltersContainer'
 import Table from './data-renderers/Table'
-import {Pagination} from './pagination'
+import {Pagination as DefaultPagination} from './pagination'
 import {
   COLUMN_TYPE,
   FILTER_BASE_TYPE,
@@ -15,13 +15,17 @@ import {
 } from './utils/proptypes'
 import {
   loadingSpinner,
-  ErrorMessage,
+  ErrorMessage as DefaultErrorMessage,
 } from './utils'
 
 class ObjectList extends Component {
   static propTypes = {
     /** the renderer used to display the data ie. list/table/custom */
     DataRenderer: PropTypes.func,
+    /** the renderer used to display the page controls */
+    Pagination: PropTypes.func,
+    /** the renderer used to display errors */
+    ErrorMessage: PropTypes.func,
     /** the data to be displayed by the object-list */
     data: PropTypes.arrayOf(PropTypes.object),
     /** describe the data displayed. Used if it is a subset of a larger dataset */
@@ -31,7 +35,7 @@ class ObjectList extends Component {
     /** loading status used if data is loaded asynchronously  */
     status: STATUS_TYPE,
     /** provide the specific error details if there is an error */
-    error: ErrorMessage.propTypes.error,
+    error: DefaultErrorMessage.propTypes.error,
     /** array of potential filters that can be displayed inside the object-list */
     filters: PropTypes.arrayOf(PropTypes.shape({
       ...FILTER_BASE_TYPE,
@@ -83,6 +87,8 @@ class ObjectList extends Component {
   static defaultProps = {
     status: STATUS_CHOICES.done,
     DataRenderer: Table,
+    Pagination: DefaultPagination,
+    ErrorMessage: DefaultErrorMessage,
     data: [],
     columns: [],
     customActions: [],
@@ -110,7 +116,8 @@ class ObjectList extends Component {
 
   render() {
     const {
-      DataRenderer, filters, addFilter, updateFilter, meta, status, searchKey,
+      DataRenderer, Pagination, ErrorMessage,
+      filters, addFilter, updateFilter, meta, status, searchKey,
       data, columns, updateColumns,
       favourites, handleDeleteFavourite, handleAddFavourite, favouritesEnabled,
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
