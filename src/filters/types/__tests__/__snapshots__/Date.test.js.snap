@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Date Snapshots has custom input format 1`] = `
+exports[`DateComponent Snapshots has custom input format 1`] = `
 <DayPickerInput
   classNames={
     Object {
@@ -19,12 +19,12 @@ exports[`Date Snapshots has custom input format 1`] = `
   formatDate={[Function]}
   onDayChange={[Function]}
   parseDate={[Function]}
-  placeholder="15th Jul 17"
-  value={"2017-07-15T00:00:00.000Z"}
+  placeholder="23rd Apr 18"
+  value="Mon Apr 23 2018 09:34:07 GMT+1000 (AEST)"
 />
 `;
 
-exports[`Date Snapshots has custom relative date options 1`] = `
+exports[`DateComponent Snapshots has custom relative date options 1`] = `
 <Select
   className="objectlist-current-filter__active-status"
   clearable={false}
@@ -45,11 +45,11 @@ exports[`Date Snapshots has custom relative date options 1`] = `
       },
     ]
   }
-  value={"2017-07-15T00:00:00.000Z"}
+  value="Mon Apr 23 2018 09:34:07 GMT+1000 (AEST)"
 />
 `;
 
-exports[`Date Snapshots has null value 1`] = `
+exports[`DateComponent Snapshots has null value 1`] = `
 <DayPickerInput
   classNames={
     Object {
@@ -72,7 +72,7 @@ exports[`Date Snapshots has null value 1`] = `
 />
 `;
 
-exports[`Date Snapshots renders default 1`] = `
+exports[`DateComponent Snapshots renders default 1`] = `
 <DayPickerInput
   classNames={
     Object {
@@ -91,12 +91,12 @@ exports[`Date Snapshots renders default 1`] = `
   formatDate={[Function]}
   onDayChange={[Function]}
   parseDate={[Function]}
-  placeholder="15/07/2017"
-  value={"2017-07-15T00:00:00.000Z"}
+  placeholder="23/04/2018"
+  value="Mon Apr 23 2018 09:34:07 GMT+1000 (AEST)"
 />
 `;
 
-exports[`Date Snapshots renders with relative comparison 1`] = `
+exports[`DateComponent Snapshots renders with relative comparison 1`] = `
 <Select
   className="objectlist-current-filter__active-status"
   clearable={false}
@@ -121,6 +121,6 @@ exports[`Date Snapshots renders with relative comparison 1`] = `
       },
     ]
   }
-  value={"2017-07-15T00:00:00.000Z"}
+  value="Mon Apr 23 2018 09:34:07 GMT+1000 (AEST)"
 />
 `;

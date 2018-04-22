@@ -14,12 +14,16 @@ import {
  * Filter input used to pass date values either fixed
  * or relative to the current date
  */
-class Date extends React.Component {
+class DateComponent extends React.Component {
   static propTypes = {
     /** Function to be called when value changes */
     onChange: PropTypes.func,
     /** Current filter value */
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(moment)]),
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.instanceOf(Date),
+      PropTypes.shape({value: PropTypes.string, label: PropTypes.string}),
+    ]),
     /** Selected comparison */
     comparison: PropTypes.string.isRequired,
     /** Format in which dates are inputted by/displayed to user */
@@ -110,4 +114,4 @@ class Date extends React.Component {
     return dateChoice
   }
 }
-export default Date
+export default DateComponent

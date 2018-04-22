@@ -225,8 +225,8 @@ exports[`Storyshots object-list/Filters DateFilter 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
-      placeholder="28/02/2018"
-      value="28/02/2018"
+      placeholder="23/04/2018"
+      value="Mon Apr 23 2018 09:34:18 GMT+1000 (AEST)"
     />
   </div>
   <button
