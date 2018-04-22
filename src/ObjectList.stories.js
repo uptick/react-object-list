@@ -51,8 +51,8 @@ storiesOf('object-list', module)
     <ObjectList
       {...baseProps}
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true},
-        {dataKey: 'age', header: 'Age (years)', sortable: true},
+        {dataKey: 'name', header: 'Name', sortKey: 'name'},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
       ]}
       meta={{
         totalCount: 200,
@@ -69,8 +69,8 @@ storiesOf('object-list', module)
     <ObjectList
       {...baseProps}
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true},
-        {dataKey: 'age', header: 'Age (years)', sortable: true},
+        {dataKey: 'name', header: 'Name', sortKey: 'name'},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
       ]}
       data={mockData}
       setSort={action('Set sort')}
@@ -82,8 +82,8 @@ storiesOf('object-list', module)
     <ObjectList
       {...baseProps}
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true},
-        {dataKey: 'age', header: 'Age (years)', sortable: true},
+        {dataKey: 'name', header: 'Name', sortKey: 'name'},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
       ]}
       meta={{
         totalCount: 200,
@@ -100,8 +100,8 @@ storiesOf('object-list', module)
     <ObjectList
       {...baseProps}
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true},
-        {dataKey: 'age', header: 'Age (years)', sortable: true},
+        {dataKey: 'name', header: 'Name', sortKey: 'name'},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
         {dataKey: 'favouriteColour', header: 'Favourite Colour', optional: true},
       ]}
       meta={{
@@ -125,8 +125,8 @@ storiesOf('object-list', module)
     <ObjectList
       {...baseProps}
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true},
-        {dataKey: 'age', header: 'Age (years)', sortable: true},
+        {dataKey: 'name', header: 'Name', sortKey: 'name'},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
         {dataKey: 'favouriteColour', header: 'Favourite Colour', optional: true},
       ]}
       meta={{
@@ -147,8 +147,8 @@ storiesOf('object-list', module)
     <ObjectList
       {...baseProps}
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true},
-        {dataKey: 'age', header: 'Age (years)', sortable: true},
+        {dataKey: 'name', header: 'Name', sortKey: 'name'},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
         {dataKey: 'favouriteColour', header: 'Favourite Colour', optional: true},
       ]}
       meta={{
@@ -167,8 +167,8 @@ storiesOf('object-list', module)
     <ObjectList
       {...baseProps}
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true},
-        {dataKey: 'age', header: 'Age (years)', sortable: true},
+        {dataKey: 'name', header: 'Name', sortKey: 'name'},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
       ]}
       meta={{
         totalCount: 200,
@@ -189,8 +189,8 @@ storiesOf('object-list', module)
     <ObjectList
       {...baseProps}
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true},
-        {dataKey: 'age', header: 'Age (years)', sortable: true},
+        {dataKey: 'name', header: 'Name', sortKey: 'name'},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
       ]}
       meta={{
         totalCount: 200,
@@ -213,8 +213,8 @@ storiesOf('object-list', module)
       <ObjectList
         {...baseProps}
         columns={[
-          {dataKey: 'name', header: 'Name', sortable: true},
-          {dataKey: 'age', header: 'Age (years)', sortable: true},
+          {dataKey: 'name', header: 'Name', sortKey: 'name'},
+          {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
         ]}
         meta={{
           totalCount: 200,
@@ -235,8 +235,8 @@ storiesOf('object-list', module)
       <ObjectList
         {...baseProps}
         columns={[
-          {dataKey: 'name', header: 'Name', sortable: true},
-          {dataKey: 'age', header: 'Age (years)', sortable: true},
+          {dataKey: 'name', header: 'Name', sortKey: 'name'},
+          {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
         ]}
         meta={{
           totalCount: 200,
@@ -256,8 +256,8 @@ storiesOf('object-list', module)
     <ObjectList
       {...baseProps}
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true},
-        {dataKey: 'age', header: 'Age (years)', sortable: true},
+        {dataKey: 'name', header: 'Name', sortKey: 'name'},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
       ]}
       meta={{
         totalCount: 200,

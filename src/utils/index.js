@@ -8,7 +8,6 @@ export {
   SHORTDATETIME_FORMAT,
   API_DATE_FORMAT,
   allowedLookupExpressions,
-  DATA_TYPE,
 } from './constants'
 export {
   COLUMN_TYPE,

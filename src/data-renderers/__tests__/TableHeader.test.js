@@ -10,7 +10,7 @@ describe('Table Header', () => {
     dataKey: 'header_sort_key',
     header: 'Header Text',
     item: jest.fn(),
-    sortable: true,
+    sortKey: '🍬',
     optional: false,
   }
   describe('Snapshots', () => {
@@ -23,7 +23,7 @@ describe('Table Header', () => {
     })
     it('renders correctly with multiple header items', () => {
       const props = {
-        headerItems: [{...headerItem}, {...headerItem, header: 'Header Two Text', key: 'header_two_key'}],
+        headerItems: [{...headerItem}, {...headerItem, header: 'Header Two Text', dataKey: 'header_two_key'}],
         setSort: jest.fn(),
       }
       snapshotTest(<TableHeader {...props} />)

@@ -11,8 +11,8 @@ export default class HeaderField extends React.Component {
     dataKey: PropTypes.string,
     /** the sorting currently used for the data in the */
     activeSort: PropTypes.oneOf([true, false, null]),
-    /** whether this header field can be sorted or not */
-    sortable: PropTypes.bool,
+    /** when a sortkey is passed, the field can be sorted by this key */
+    sortKey: PropTypes.string,
     /** callback function passed down to determine the sorting of data loaded */
     updateSorting: PropTypes.func,
     /** class names that can be used for additional styling of the component */
@@ -23,6 +23,7 @@ export default class HeaderField extends React.Component {
 
   static defaultProps = {
     activeSort: null,
+    sortKey: null,
   }
 
   /**
@@ -33,11 +34,11 @@ export default class HeaderField extends React.Component {
    * @param {MouseEvent} event - event triggered from an onClick
    */
   handleClick = (event) => {
-    if (this.props.dataKey) {
+    if (this.props.sortKey) {
       if (this.props.activeSort) {
-        this.props.updateSorting(this.props.dataKey, false)
+        this.props.updateSorting(this.props.sortKey, false)
       } else {
-        this.props.updateSorting(this.props.dataKey, true)
+        this.props.updateSorting(this.props.sortKey, true)
       }
     }
   }
@@ -73,7 +74,7 @@ export default class HeaderField extends React.Component {
   }
 
   render() {
-    if (this.props.sortable) {
+    if (this.props.sortKey !== null) {
       return (
         <div
           role={this.props.dataKey ? 'button' : '' /* role[button] adds cursor: pointer */}

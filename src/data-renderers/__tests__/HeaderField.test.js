@@ -10,16 +10,16 @@ describe('HeaderField', () => {
       header: 'Header Text',
     }
     it('renders sortable', () => {
-      snapshotTest(<HeaderField {...props} sortable />)
+      snapshotTest(<HeaderField {...props} sortKey="🍰" />)
     })
     it('renders not sortable', () => {
       snapshotTest(<HeaderField {...props} />)
     })
     it('renders sorted asc', () => {
-      snapshotTest(<HeaderField {...props} sortable activeSort />)
+      snapshotTest(<HeaderField {...props} sortKey="🍰" activeSort />)
     })
     it('renders sorted desc', () => {
-      snapshotTest(<HeaderField {...props} sortable activeSort={false} />)
+      snapshotTest(<HeaderField {...props} sortKey="🍰" activeSort={false} />)
     })
   })
   describe('Functions', () => {
@@ -29,15 +29,15 @@ describe('HeaderField', () => {
         activeSort: true,
         updateSorting: jest.fn(),
         header: 'Thing',
+        sortKey: '🎂',
       }
       beforeEach(() => {
         spyOn(baseProps, 'updateSorting')
       })
-      it('has no data key', () => {
+      it('has no sort key', () => {
         const props = {
           ...baseProps,
-          sortable: true,
-          dataKey: null,
+          sortKey: null,
         }
         const instance = shallow(<HeaderField {...props} />).instance()
         instance.handleClick()
@@ -46,12 +46,12 @@ describe('HeaderField', () => {
       it('is not sorted', () => {
         const instance = shallow(<HeaderField {...baseProps} activeSort={false} />).instance()
         instance.handleClick()
-        expect(baseProps.updateSorting).toHaveBeenCalledWith(baseProps.dataKey, true)
+        expect(baseProps.updateSorting).toHaveBeenCalledWith(baseProps.sortKey, true)
       })
       it('is sorted', () => {
         const instance = shallow(<HeaderField {...baseProps} activeSort />).instance()
         instance.handleClick()
-        expect(baseProps.updateSorting).toHaveBeenCalledWith(baseProps.dataKey, false)
+        expect(baseProps.updateSorting).toHaveBeenCalledWith(baseProps.sortKey, false)
       })
     })
     describe('renders header', () => {
