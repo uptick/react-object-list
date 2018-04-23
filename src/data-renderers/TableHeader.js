@@ -81,7 +81,7 @@ export default class TableHeader extends React.Component {
     const headers = this.state.headerItems.map((header, i) => (
       <HeaderField
         key={`headerfield-${i}`}
-        activeSort={this.getSortDirection(header.dataKey)}
+        activeSort={this.getSortDirection(header.sortKey)}
         updateSorting={this.props.updateSorting}
         {...header}
       />
