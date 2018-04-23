@@ -15,7 +15,7 @@ const COLUMN_BASE_TYPE = {
   dataKey: PropTypes.string,
   header: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
   item: PropTypes.func,
-  sortable: PropTypes.bool,
+  sortKey: PropTypes.string,
   optional: PropTypes.bool,
 }
 

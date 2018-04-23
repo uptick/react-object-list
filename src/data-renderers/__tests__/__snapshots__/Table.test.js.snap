@@ -28,7 +28,7 @@ exports[`Table Snapshots can select items 1`] = `
               "item": [Function],
               "label": "name",
               "optional": false,
-              "sortable": true,
+              "sortKey": "🎂",
             }
           }
           label="name"
@@ -46,7 +46,7 @@ exports[`Table Snapshots can select items 1`] = `
                 "item": [Function],
                 "label": "age_gender",
                 "optional": false,
-                "sortable": true,
+                "sortKey": "🥧",
               },
               Object {
                 "dataKey": "gender",
@@ -54,7 +54,7 @@ exports[`Table Snapshots can select items 1`] = `
                 "item": [Function],
                 "label": "age_gender",
                 "optional": false,
-                "sortable": true,
+                "sortKey": "🍩",
               },
             ]
           }
@@ -227,7 +227,7 @@ exports[`Table Snapshots renders default 1`] = `
               "item": [Function],
               "label": "name",
               "optional": false,
-              "sortable": true,
+              "sortKey": "🎂",
             }
           }
           label="name"
@@ -245,7 +245,7 @@ exports[`Table Snapshots renders default 1`] = `
                 "item": [Function],
                 "label": "age_gender",
                 "optional": false,
-                "sortable": true,
+                "sortKey": "🥧",
               },
               Object {
                 "dataKey": "gender",
@@ -253,7 +253,7 @@ exports[`Table Snapshots renders default 1`] = `
                 "item": [Function],
                 "label": "age_gender",
                 "optional": false,
-                "sortable": true,
+                "sortKey": "🍩",
               },
             ]
           }
