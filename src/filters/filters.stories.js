@@ -40,7 +40,6 @@ storiesOf('object-list/Filters', module)
       {...baseProps}
       name="Created"
       filterKey="created"
-      value={Date(1519809160079)}
       comparison="fixed"
     />
   ))

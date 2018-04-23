@@ -1,5 +1,4 @@
 import React from 'react'
-import Moment from 'moment'
 import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import DateComponent from '../Date'
@@ -7,10 +6,9 @@ import DateComponent from '../Date'
 jest.mock('react-day-picker/DayPickerInput', () => 'DayPickerInput')
 jest.mock('react-select')
 
-describe('DateComponent', () => {
+describe('Date', () => {
   const baseProps = {
     onChange: jest.fn(),
-    value: Date(),
     fixedComparison: {value: 'fixed', label: 'Exact'},
     comparison: 'fixed',
   }
@@ -43,7 +41,7 @@ describe('DateComponent', () => {
         instance = shallow(<DateComponent {...baseProps} />).instance()
       })
       it('handles valid date', () => {
-        const newValue = Moment()
+        const newValue = Date()
         instance.handleDateValueChange(newValue)
         expect(baseProps.onChange).toHaveBeenCalledWith(newValue)
       })

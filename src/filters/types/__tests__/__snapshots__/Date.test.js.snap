@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DateComponent Snapshots has custom input format 1`] = `
+exports[`Date Snapshots has custom input format 1`] = `
 <DayPickerInput
   classNames={
     Object {
@@ -19,12 +19,11 @@ exports[`DateComponent Snapshots has custom input format 1`] = `
   formatDate={[Function]}
   onDayChange={[Function]}
   parseDate={[Function]}
-  placeholder="23rd Apr 18"
-  value="Mon Apr 23 2018 09:34:07 GMT+1000 (AEST)"
+  placeholder="15th Jul 17"
 />
 `;
 
-exports[`DateComponent Snapshots has custom relative date options 1`] = `
+exports[`Date Snapshots has custom relative date options 1`] = `
 <Select
   className="objectlist-current-filter__active-status"
   clearable={false}
@@ -45,11 +44,11 @@ exports[`DateComponent Snapshots has custom relative date options 1`] = `
       },
     ]
   }
-  value="Mon Apr 23 2018 09:34:07 GMT+1000 (AEST)"
+  value={undefined}
 />
 `;
 
-exports[`DateComponent Snapshots has null value 1`] = `
+exports[`Date Snapshots has null value 1`] = `
 <DayPickerInput
   classNames={
     Object {
@@ -72,7 +71,7 @@ exports[`DateComponent Snapshots has null value 1`] = `
 />
 `;
 
-exports[`DateComponent Snapshots renders default 1`] = `
+exports[`Date Snapshots renders default 1`] = `
 <DayPickerInput
   classNames={
     Object {
@@ -91,12 +90,11 @@ exports[`DateComponent Snapshots renders default 1`] = `
   formatDate={[Function]}
   onDayChange={[Function]}
   parseDate={[Function]}
-  placeholder="23/04/2018"
-  value="Mon Apr 23 2018 09:34:07 GMT+1000 (AEST)"
+  placeholder="15/07/2017"
 />
 `;
 
-exports[`DateComponent Snapshots renders with relative comparison 1`] = `
+exports[`Date Snapshots renders with relative comparison 1`] = `
 <Select
   className="objectlist-current-filter__active-status"
   clearable={false}
@@ -121,6 +119,6 @@ exports[`DateComponent Snapshots renders with relative comparison 1`] = `
       },
     ]
   }
-  value="Mon Apr 23 2018 09:34:07 GMT+1000 (AEST)"
+  value={undefined}
 />
 `;
