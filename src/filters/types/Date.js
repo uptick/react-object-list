@@ -94,7 +94,7 @@ class DateComponent extends React.Component {
           clickUnselectsDay
           formatDate={formatDate}
           parseDate={parseDate}
-          {...value ? {value: value} : {}}
+          {...(value ? {value: value} : {})}
           dayPickerProps={{
             fixedWeeks: true,
           }}
@@ -105,7 +105,7 @@ class DateComponent extends React.Component {
         <Select
           options={relativeDateOptions}
           onChange={this.handleDateRelativeChange}
-          value={value}
+          {...(value ? {value: value} : {})}
           clearable={false}
           className="objectlist-current-filter__active-status"
         />
