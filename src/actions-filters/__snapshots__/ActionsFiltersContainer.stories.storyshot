@@ -448,7 +448,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
             },
           ]
         }
-        value={undefined}
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -1301,7 +1300,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
             },
           ]
         }
-        value={undefined}
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -2078,7 +2076,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
             },
           ]
         }
-        value={undefined}
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -2821,7 +2818,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
             },
           ]
         }
-        value={undefined}
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"

@@ -44,7 +44,6 @@ exports[`Date Snapshots has custom relative date options 1`] = `
       },
     ]
   }
-  value={undefined}
 />
 `;
 
@@ -119,6 +118,5 @@ exports[`Date Snapshots renders with relative comparison 1`] = `
       },
     ]
   }
-  value={undefined}
 />
 `;
