@@ -39,7 +39,7 @@ $huge-flex-basis: $huge-flex * 100px
   border: $border
   border-radius: $radius
   margin: $spacing
-  padding: $spacing
+  padding: $spacing / 2 $spacing
   cursor: pointer
   color: $button-text-color
   text-decoration: none
@@ -50,15 +50,17 @@ $huge-flex-basis: $huge-flex * 100px
     border: none
 
 $input-height: 36px - $spacing - ($border-width * 2)
+.objectlist-input__container
+  position: relative
 .objectlist-input__container > input,
 .objectlist-input
-  position: relative
   font-family: $font
   height: $input-height
   font-size: 1em
   border: $border
   border-radius: $radius
   padding: $spacing/2
+  box-sizing: content-box
   &::placeholder
     color: $placeholder-color
   &::-moz-placeholder
@@ -68,7 +70,8 @@ $input-height: 36px - $spacing - ($border-width * 2)
 
 .objectlist-input__daypicker
   position: absolute
-  top: $input-height * 2.5
+  z-index: 10
+  top: $input-height + $spacing * 2 + $border-width
   right: 0
   border: $border
   background: $global-background-color
@@ -244,10 +247,10 @@ $input-height: 36px - $spacing - ($border-width * 2)
       border-radius: 4px
   .Select-control
     line-height: 2em
-    padding: $spacing
+    padding: $spacing / 2 $spacing
   .Select-placeholder
     margin-left: 1.5em
-    padding: $spacing
+    padding: $spacing / 2
   .Select-input:before
     margin-right: 0.5em
     content: "\f0b0"

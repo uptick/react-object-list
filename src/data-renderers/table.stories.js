@@ -38,18 +38,18 @@ storiesOf('object-list/Data Renderers/Table', module)
   .add('simple', () => (
     <Table
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: false},
-        {dataKey: 'age', header: 'Age (years)', sortable: false},
-        {dataKey: 'hobby', header: 'Hobby', sortable: false},
+        {dataKey: 'name', header: 'Name'},
+        {dataKey: 'age', header: 'Age (years)'},
+        {dataKey: 'hobby', header: 'Hobby'},
       ]}
       data={mockData}
     />
   )).add('loading', () => (
     <Table
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: false},
-        {dataKey: 'age', header: 'Age (years)', sortable: false},
-        {dataKey: 'hobby', header: 'Hobby', sortable: false},
+        {dataKey: 'name', header: 'Name'},
+        {dataKey: 'age', header: 'Age (years)'},
+        {dataKey: 'hobby', header: 'Hobby'},
       ]}
       data={mockData}
       status="loading"
@@ -57,9 +57,9 @@ storiesOf('object-list/Data Renderers/Table', module)
   )).add('has sortable headers', () => (
     <Table
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true, width: 50},
-        {dataKey: 'age', header: 'Age (years)', sortable: true},
-        {dataKey: 'hobby', header: 'Hobby', sortable: true},
+        {dataKey: 'name', header: 'Name', sortKey: 'name', width: 50},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
+        {dataKey: 'hobby', header: 'Hobby', sortKey: 'hobby'},
       ]}
       saveColumnWidth={action('Save Column Width')}
       data={mockData}
@@ -68,8 +68,8 @@ storiesOf('object-list/Data Renderers/Table', module)
   )).add('has custom renderers', () => (
     <Table
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true, item: customRenderer},
-        {dataKey: 'age', header: 'Age (years)', sortable: true, item: anotherCustomRenderer},
+        {dataKey: 'name', header: 'Name', sortKey: 'name', item: customRenderer},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age', item: anotherCustomRenderer},
       ]}
       data={mockData}
       setSort={action('Set sort')}
@@ -77,8 +77,8 @@ storiesOf('object-list/Data Renderers/Table', module)
   )).add('has selected items', () => (
     <Table
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true, item: customRenderer},
-        {dataKey: 'age', header: 'Age (years)', sortable: true, item: anotherCustomRenderer},
+        {dataKey: 'name', header: 'Name', sortKey: 'name', item: customRenderer},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age', item: anotherCustomRenderer},
       ]}
       data={mockData}
       setSort={action('Set sort')}
@@ -89,8 +89,8 @@ storiesOf('object-list/Data Renderers/Table', module)
     <Table
       meta={{sortKeys: [{sortKey: 'name', value: false}, {sortKey: 'age', value: true}]}}
       columns={[
-        {dataKey: 'name', header: 'Name', sortable: true, item: customRenderer},
-        {dataKey: 'age', header: 'Age (years)', sortable: true, item: anotherCustomRenderer},
+        {dataKey: 'name', header: 'Name', sortKey: 'name', item: customRenderer},
+        {dataKey: 'age', header: 'Age (years)', sortKey: 'age', item: anotherCustomRenderer},
       ]}
       data={mockData}
       setSort={action('Set sort')}
@@ -116,8 +116,8 @@ storiesOf('object-list/Data Renderers/Table', module)
     return (
       <Table
         columns={[
-          {dataKey: 'name', header: 'Name', sortable: true, item: customRenderer},
-          {dataKey: 'age', header: 'Age (years)', sortable: true, item: anotherCustomRenderer},
+          {dataKey: 'name', header: 'Name', sortKey: 'name', item: customRenderer},
+          {dataKey: 'age', header: 'Age (years)', sortKey: 'age', item: anotherCustomRenderer},
         ]}
         data={mockData}
         numSelected={mockData.length}

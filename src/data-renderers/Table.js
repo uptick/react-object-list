@@ -6,12 +6,11 @@ import Overlay from './Overlay'
 import {AllSelector, Selector} from '../types'
 import { getVisibleColumns, setColumnLabels } from '../utils/functions'
 import { getValueFromAccessor } from './utils'
-import { DATA_TYPE } from '../utils/constants'
-import { STATUS_TYPE, STATUS_CHOICES, SELECTION_TYPE, ALL_SELECTED } from '../utils/proptypes'
+import { STATUS_TYPE, STATUS_CHOICES, SELECTION_TYPE, ALL_SELECTED, COLUMN_TYPE } from '../utils/proptypes'
 
 export default class TableRenderer extends Component {
   static propTypes = {
-    columns: PropTypes.arrayOf(PropTypes.oneOfType([DATA_TYPE, PropTypes.arrayOf(DATA_TYPE)])),
+    columns: PropTypes.arrayOf(PropTypes.oneOfType([COLUMN_TYPE, PropTypes.arrayOf(COLUMN_TYPE)])),
     meta: PropTypes.object,
     saveColumnWidth: PropTypes.func,
     data: PropTypes.array,

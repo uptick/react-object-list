@@ -5,12 +5,11 @@ import ClassNames from 'classnames'
 import ListCard from './ListCard'
 import Overlay from './Overlay'
 import { getVisibleColumns, setColumnLabels } from '../utils/functions'
-import { DATA_TYPE } from '../utils/constants'
-import { STATUS_TYPE, STATUS_CHOICES } from '../utils/proptypes'
+import { STATUS_TYPE, STATUS_CHOICES, COLUMN_TYPE } from '../utils/proptypes'
 
 export default class ListRenderer extends Component {
   static propTypes = {
-    columns: PropTypes.arrayOf(PropTypes.oneOfType([DATA_TYPE, PropTypes.arrayOf(DATA_TYPE)])),
+    columns: PropTypes.arrayOf(PropTypes.oneOfType([COLUMN_TYPE, PropTypes.arrayOf(COLUMN_TYPE)])),
     data: PropTypes.array,
     meta: PropTypes.object,
     // Custom component to be passed to render the list items

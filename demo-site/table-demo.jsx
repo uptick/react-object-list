@@ -7,12 +7,12 @@ import {TextContainsFilter} from 'react-object-list/filters'
 const mockData = require('./demo.data.json')
 const columns = [
   [
-    {dataKey: 'first_name', header: 'First Name', sortable: true},
-    {dataKey: 'last_name', header: 'Last Name', sortable: true, optional: true},
+    {dataKey: 'first_name', header: 'First Name', sortKey: 'first_name'},
+    {dataKey: 'last_name', header: 'Last Name', sortKey: 'last_name', optional: true},
   ],
-  {dataKey: 'email', header: 'Email', sortable: true},
-  {dataKey: 'gender', header: 'Gender', sortable: true},
-  {dataKey: 'ip_address', header: 'IPv6', sortable: true, optional: true},
+  {dataKey: 'email', header: 'Email', sortKey: 'email'},
+  {dataKey: 'gender', header: 'Gender', sortKey: 'gender'},
+  {dataKey: 'ip_address', header: 'IPv6', sortKey: 'ip_address', optional: true},
 ]
 
 class TableDemo extends React.Component {
@@ -43,23 +43,24 @@ class TableDemo extends React.Component {
   updatePage = currentPage => this.updateData(currentPage)
   updateSorting = sortKey => this.setState(prevState => {
     let sortKeys = [...prevState.sortKeys]
-    const currentSort = sortKeys.find(key => key.key === sortKey)
+    const currentSort = sortKeys.find(sort => sort.sortKey === sortKey)
     let value = true
     if (currentSort !== undefined && currentSort.value === true) {
       value = false
     }
-    sortKeys = [{key: sortKey, value}].concat(sortKeys.filter((k) => k.key !== sortKey))
+    sortKeys = [{sortKey: sortKey, value}].concat(sortKeys.filter((k) => k.sortKey !== sortKey))
 
+    const offset = (prevState.currentPage - 1) * prevState.perPage
     return {
       sortKeys,
-      data: prevState.data.sort((a, b) => {
+      data: mockData.sort((a, b) => {
         for (let i = 0; i < sortKeys.length; i++) {
           const order = sortKeys[i].value ? 1 : -1
-          if (a[sortKeys[i].key] > b[sortKeys[i].key]) return -1 * order
-          if (a[sortKeys[i].key] < b[sortKeys[i].key]) return 1 * order
+          if (a[sortKeys[i].sortKey] > b[sortKeys[i].sortKey]) return -1 * order
+          if (a[sortKeys[i].sortKey] < b[sortKeys[i].sortKey]) return 1 * order
         }
         return 0
-      }),
+      }).slice(offset, offset + prevState.perPage),
     }
   })
   updateColumns = columnKey => this.setState(prevState => {
@@ -82,7 +83,6 @@ class TableDemo extends React.Component {
     return {filters}
   })
   removeFilter = filterKey => this.setState(prevState => {
-    console.log(filterKey)
     const filters = prevState.filters.map(filter => {
       if (filter.filterKey === filterKey) {
         return {...filter, active: false, value: ''}
