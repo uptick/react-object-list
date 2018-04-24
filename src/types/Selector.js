@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
  */
 class Selector extends React.Component {
   static propTypes = {
-    /** callback function passed down from the objectlist to select/unselect an individual item */
+    /** callback function passed down from the objectlist to select/unselect an array of items */
     toggleSelect: PropTypes.func,
     id: PropTypes.oneOfType([
       PropTypes.string,
@@ -20,10 +20,10 @@ class Selector extends React.Component {
   }
 
   /**
-   * Calls the callback function with the id for the item
+   * Calls the callback function with a single element array containing the ID of the item
    */
   handleChange = () => {
-    this.props.toggleSelect(this.props.id)
+    this.props.toggleSelect([this.props.id])
   }
 
   render() {

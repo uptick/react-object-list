@@ -16,6 +16,6 @@ describe('Selector type', () => {
     const wrapper = shallow(<Selector toggleSelect={callback} id={id} />)
     expect(callback).not.toBeCalled()
     wrapper.find('input').simulate('change')
-    expect(callback).lastCalledWith(id)
+    expect(callback).lastCalledWith([id])
   })
 })
