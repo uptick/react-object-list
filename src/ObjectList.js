@@ -76,8 +76,8 @@ class ObjectList extends Component {
 
     /** IDs of currently selected items */
     selection: SELECTION_TYPE,
-    /** callback for when items are selected. Contains list of IDs, 'all', or null.
-      Parent should use this to update `selection` prop
+    /** callback for when items are selected. Takes as argument a list of IDs, a single ID,
+     'all', or null.  Parent should use this to update `selection` prop
       */
     selectItems: PropTypes.func,
     /** Array of custom actions to be rendered */

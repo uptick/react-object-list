@@ -20,7 +20,7 @@ export default class TableRenderer extends Component {
     updateSorting: PropTypes.func,
     /** IDs of currently selected items set to true if selected */
     selection: SELECTION_TYPE,
-    /** Function to select one */
+    /** Function to select one ID or an array of IDs */
     select: PropTypes.func,
     /** loading status used if data is loaded asynchronously  */
     status: STATUS_TYPE,
