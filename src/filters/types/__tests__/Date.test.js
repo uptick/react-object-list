@@ -1,8 +1,7 @@
 import React from 'react'
-import Moment from 'moment'
 import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
-import Date from '../Date'
+import DateComponent from '../Date'
 
 jest.mock('react-day-picker/DayPickerInput', () => 'DayPickerInput')
 jest.mock('react-select')
@@ -10,29 +9,28 @@ jest.mock('react-select')
 describe('Date', () => {
   const baseProps = {
     onChange: jest.fn(),
-    value: Moment(),
     fixedComparison: {value: 'fixed', label: 'Exact'},
     comparison: 'fixed',
   }
   describe('Snapshots', () => {
     it('renders default', () => {
-      snapshotTest(<Date {...baseProps} />)
+      snapshotTest(<DateComponent {...baseProps} />)
     })
     it('renders with relative comparison', () => {
-      snapshotTest(<Date {...baseProps} comparison="relative" />)
+      snapshotTest(<DateComponent {...baseProps} comparison="relative" />)
     })
     it('has custom input format', () => {
-      snapshotTest(<Date {...baseProps} inputFormat="Do MMM YY" />)
+      snapshotTest(<DateComponent {...baseProps} inputFormat="Do MMM YY" />)
     })
     it('has custom relative date options', () => {
-      snapshotTest(<Date {...baseProps} comparison="relative" relativeDateOptions={[
+      snapshotTest(<DateComponent {...baseProps} comparison="relative" relativeDateOptions={[
         {value: 'now', label: 'Right now'},
         {value: 'later', label: 'A bit later'},
         {value: 'never', label: 'Never ever'},
       ]} />)
     })
     it('has null value', () => {
-      snapshotTest(<Date {...baseProps} value={null} />)
+      snapshotTest(<DateComponent {...baseProps} value={null} />)
     })
   })
   describe('Functions', () => {
@@ -40,10 +38,10 @@ describe('Date', () => {
       let instance
       beforeEach(() => {
         spyOn(baseProps, 'onChange')
-        instance = shallow(<Date {...baseProps} />).instance()
+        instance = shallow(<DateComponent {...baseProps} />).instance()
       })
       it('handles valid date', () => {
-        const newValue = Moment()
+        const newValue = Date()
         instance.handleDateValueChange(newValue)
         expect(baseProps.onChange).toHaveBeenCalledWith(newValue)
       })
@@ -57,7 +55,7 @@ describe('Date', () => {
       let instance
       beforeEach(() => {
         spyOn(baseProps, 'onChange')
-        instance = shallow(<Date {...baseProps} />).instance()
+        instance = shallow(<DateComponent {...baseProps} />).instance()
       })
       it('handles array passed', () => {
         const newValue = ['now']

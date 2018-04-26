@@ -381,7 +381,6 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
           },
         ]
       }
-      value={undefined}
     />
     <button
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"

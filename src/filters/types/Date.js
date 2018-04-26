@@ -14,12 +14,16 @@ import {
  * Filter input used to pass date values either fixed
  * or relative to the current date
  */
-class Date extends React.Component {
+class DateComponent extends React.Component {
   static propTypes = {
     /** Function to be called when value changes */
     onChange: PropTypes.func,
     /** Current filter value */
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(moment)]),
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.instanceOf(Date),
+      PropTypes.shape({value: PropTypes.string, label: PropTypes.string}),
+    ]),
     /** Selected comparison */
     comparison: PropTypes.string.isRequired,
     /** Format in which dates are inputted by/displayed to user */
@@ -74,12 +78,12 @@ class Date extends React.Component {
   }
 
   render() {
+    const { value, inputFormat, relativeDateOptions, comparison, fixedComparison } = this.props
     let dateChoice
-    if (this.props.comparison === this.props.fixedComparison.value) {
-      const value = this.props.value === null ? '' : this.props.value.format(this.props.inputFormat)
+    if (comparison === fixedComparison.value) {
       dateChoice = (
         <DayPickerInput
-          placeholder={value}
+          placeholder={value === null ? '' : moment(value).format(inputFormat)}
           format="DD/MM/YYYY"
           classNames={{
             container: 'objectlist-input__container',
@@ -90,7 +94,7 @@ class Date extends React.Component {
           clickUnselectsDay
           formatDate={formatDate}
           parseDate={parseDate}
-          {...value ? {value: value} : {}}
+          {...(value ? {value: value} : {})}
           dayPickerProps={{
             fixedWeeks: true,
           }}
@@ -99,9 +103,9 @@ class Date extends React.Component {
     } else {
       dateChoice = (
         <Select
-          options={this.props.relativeDateOptions}
+          options={relativeDateOptions}
           onChange={this.handleDateRelativeChange}
-          value={this.props.value}
+          {...(value ? {value: value} : {})}
           clearable={false}
           className="objectlist-current-filter__active-status"
         />
@@ -110,4 +114,4 @@ class Date extends React.Component {
     return dateChoice
   }
 }
-export default Date
+export default DateComponent
