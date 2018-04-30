@@ -571,12 +571,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
             },
           ]
         }
-        value={
-          Object {
-            "label": "Contains",
-            "value": "contains",
-          }
-        }
+        value="contains"
       />
     </div>
     <input

@@ -7,6 +7,21 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
       className="objectlist-row objectlist-row--right objectlist-row--search"
     >
       <div
+        className="objectlist--grow"
+      >
+        <div
+          className="objectlist-row"
+        >
+          <input
+            className="objectlist-current-filter__active-status objectlist-input"
+            onChange={[Function]}
+            placeholder="Search the table below"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
         className="objectlist-row"
       >
         <Select
@@ -29,8 +44,8 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
               Object {
                 "Renderer": [Function],
                 "active": false,
-                "filterKey": "first_name",
-                "name": "First Name",
+                "filterKey": "email",
+                "name": "Email",
               },
             ]
           }
@@ -598,6 +613,21 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
       className="objectlist-row objectlist-row--right objectlist-row--search"
     >
       <div
+        className="objectlist--grow"
+      >
+        <div
+          className="objectlist-row"
+        >
+          <input
+            className="objectlist-current-filter__active-status objectlist-input"
+            onChange={[Function]}
+            placeholder="Search the table below"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
         className="objectlist-row"
       >
         <Select
@@ -620,8 +650,8 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
               Object {
                 "Renderer": [Function],
                 "active": false,
-                "filterKey": "first_name",
-                "name": "First Name",
+                "filterKey": "email",
+                "name": "Email",
               },
             ]
           }

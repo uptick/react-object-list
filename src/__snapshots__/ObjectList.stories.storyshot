@@ -2219,12 +2219,7 @@ exports[`Storyshots object-list has active filters 1`] = `
                 },
               ]
             }
-            value={
-              Object {
-                "label": "Contains",
-                "value": "contains",
-              }
-            }
+            value="contains"
           />
         </div>
         <input
@@ -3502,12 +3497,7 @@ exports[`Storyshots object-list has everything 1`] = `
                 },
               ]
             }
-            value={
-              Object {
-                "label": "Contains",
-                "value": "contains",
-              }
-            }
+            value="contains"
           />
         </div>
         <input
