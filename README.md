@@ -20,3 +20,7 @@ Install the package:
 ```
 yarn add react-object-list
 ```
+Ensure you have all peer dependencies installed
+```
+yarn add classnames font-awesome moment prop-types react-day-picker react-month-picker react-select
+```
