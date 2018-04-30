@@ -80,16 +80,24 @@ class ActionsFilterContainer extends Component {
     status: STATUS_CHOICES.done,
   }
 
+  componentDidMount() {
+    const search = this.props.filters.find(f => f.filterKey === this.props.searchKey)
+    if (search && !search.active) {
+      this.props.addFilter(search)
+    }
+  }
+
   render() {
     const {
       searchKey, meta: {totalCount}, itemCount,
       selection, customActions = [],
       itemSingleName, itemPluralName, numSelected,
+      filters, updateFilter, removeFilter,
     } = this.props
 
     let search
     if (searchKey) {
-      search = this.props.filters.find(f => f.filterKey === searchKey)
+      search = filters.find(f => f.filterKey === searchKey)
       if (search) {
         search = {
           ...search,
@@ -106,13 +114,13 @@ class ActionsFilterContainer extends Component {
           {search && (
             <FiltersContainer
               filters={[search]}
-              updateFilter={this.props.updateFilter}
-              removeFilter={this.props.removeFilter}
+              updateFilter={updateFilter}
+              removeFilter={removeFilter}
             />
           )}
           <div className="objectlist-row">
             <SelectFilters
-              filters={this.props.filters}
+              filters={filters.filter(f => !search || f.filterKey !== searchKey)}
               addFilter={this.props.addFilter}
             />
             {this.props.favouritesEnabled &&
@@ -126,9 +134,9 @@ class ActionsFilterContainer extends Component {
           </div>
         </div>
         <FiltersContainer
-          filters={this.props.filters.filter(f => !search || f.filterKey !== searchKey)}
-          updateFilter={this.props.updateFilter}
-          removeFilter={this.props.removeFilter}
+          filters={filters.filter(f => !search || f.filterKey !== searchKey)}
+          updateFilter={updateFilter}
+          removeFilter={removeFilter}
         />
         {/* TODO: render children below filters */}
         <div className="objectlist-row objectlist-row--justify">

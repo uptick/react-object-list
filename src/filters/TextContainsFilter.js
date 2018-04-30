@@ -10,6 +10,7 @@ TextContainsFilter.defaultProps = {
     {value: 'contains', label: 'Contains'},
     {value: 'not_contains', label: 'Does Not Contain'},
   ],
+  comparison: 'contains',
 }
 
 export default TextContainsFilter

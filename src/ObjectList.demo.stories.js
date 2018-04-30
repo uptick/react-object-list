@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import {TextContainsFilter} from './filters'
+import {TextContainsFilter, SearchFilter} from './filters'
 
 import ObjectList from '.'
 import Table from './data-renderers/Table'
@@ -28,9 +28,12 @@ class InteractiveObjectList extends React.Component {
     extraColumns: ['last_name'],
     filters: [{
       Renderer: TextContainsFilter,
-      filterKey: 'first_name',
+      filterKey: 'email',
       active: false,
-      name: 'First Name',
+      name: 'Email',
+    }, {
+      Renderer: SearchFilter,
+      filterKey: 'first_name',
     }],
   }
 
@@ -108,9 +111,13 @@ class InteractiveObjectList extends React.Component {
     if (activeFilters.length > 0) { // filter data
       data = data.filter(row => {
         for (let i = 0; i < activeFilters.length; i++) {
+          if (!activeFilters[i].value) { return true }
           const regex = RegExp(activeFilters[i].value, 'i')
-          const result = regex.test(row[activeFilters[i].filterKey])
-          return result === (activeFilters[i].comparison === 'contains')
+          let result = regex.test(row[activeFilters[i].filterKey])
+          if (activeFilters[i].comparison === 'not_contains') {
+            result = !result
+          }
+          return result
         }
         return false
       })
@@ -146,6 +153,7 @@ class InteractiveObjectList extends React.Component {
       addFilter={this.addFilter}
       removeFilter={this.removeFilter}
       updateFilter={this.updateFilter}
+      searchKey="first_name"
     />
   }
 }

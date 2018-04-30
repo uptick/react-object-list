@@ -674,12 +674,7 @@ exports[`Storyshots object-list/Filters TextContainsFilter 1`] = `
           },
         ]
       }
-      value={
-        Object {
-          "label": "Contains",
-          "value": "contains",
-        }
-      }
+      value="contains"
     />
   </div>
   <input
