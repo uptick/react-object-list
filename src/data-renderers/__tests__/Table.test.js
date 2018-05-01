@@ -37,11 +37,11 @@ describe('Table', () => {
     columnWidths: {'age_gender': {width: 50}},
     saveColumnWidth: jest.fn(),
     data: [
-      {type: 'Person', attributes: {name: 'Sam', age: '25', gender: 'M'}},
-      {type: 'Person', attributes: {name: 'Mary', age: '12', gender: 'F'}},
-      {type: 'Person', attributes: {name: 'Q', age: '3', gender: '?'}},
-      {type: 'Person', attributes: {name: 'Peter', age: '111', gender: 'FM'}},
-      {type: 'Person', attributes: {name: 'Amy', age: '32', gender: 'Confused'}},
+      {id: 1, type: 'Person', attributes: {name: 'Sam', age: '25', gender: 'M'}},
+      {id: 2, type: 'Person', attributes: {name: 'Mary', age: '12', gender: 'F'}},
+      {id: 3, type: 'Person', attributes: {name: 'Q', age: '3', gender: '?'}},
+      {id: 4, type: 'Person', attributes: {name: 'Peter', age: '111', gender: 'FM'}},
+      {id: 5, type: 'Person', attributes: {name: 'Amy', age: '32', gender: 'Confused'}},
     ],
   }
   describe('Snapshots', () => {
@@ -87,8 +87,36 @@ describe('Table', () => {
     it('handles select all', () => {
       spyOn(props, 'select')
       const instance = shallow(<Table {...props} />).instance()
+      expect(instance.allSelected()).toBe(false)
       instance.handleToggleSelectAll()
       expect(props.select).toHaveBeenCalledWith(props.data.map(row => row.id))
+    })
+    it('handles deselect all', () => {
+      spyOn(props, 'select')
+      const instance = shallow(
+        <Table
+          {...props}
+          numSelected={props.data.length}
+          selection={props.data.map(row => ({[row.id]: true}))}
+        />
+      ).instance()
+      expect(instance.allSelected()).toBe(true)
+      instance.handleToggleSelectAll()
+      expect(props.select).toHaveBeenCalledWith(null)
+    })
+    it('handles select remaining', () => {
+      spyOn(props, 'select')
+      const mockSelection = {1: true, 3: true}
+      const instance = shallow(
+        <Table
+          {...props}
+          numSelected={2}
+          selection={mockSelection}
+        />
+      ).instance()
+      expect(instance.allSelected()).toBe(false)
+      instance.handleToggleSelectAll()
+      expect(props.select).toHaveBeenCalledWith([2, 4, 5])
     })
   })
 })
