@@ -5517,7 +5517,7 @@ exports[`Storyshots object-list loading 1`] = `
       <span
         className="objectlist-results-text"
       >
-        200 items found
+        Loading items...
       </span>
     </div>
   </div>
