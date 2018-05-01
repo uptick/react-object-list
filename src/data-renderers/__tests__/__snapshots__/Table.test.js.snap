@@ -74,7 +74,7 @@ exports[`Table Snapshots can select items 1`] = `
           className="objectlist-table__td"
         >
           <Selector
-            id={undefined}
+            id={1}
             selected={false}
             toggleSelect={[MockFunction]}
           />
@@ -101,7 +101,7 @@ exports[`Table Snapshots can select items 1`] = `
           className="objectlist-table__td"
         >
           <Selector
-            id={undefined}
+            id={2}
             selected={false}
             toggleSelect={[MockFunction]}
           />
@@ -128,7 +128,7 @@ exports[`Table Snapshots can select items 1`] = `
           className="objectlist-table__td"
         >
           <Selector
-            id={undefined}
+            id={3}
             selected={false}
             toggleSelect={[MockFunction]}
           />
@@ -155,7 +155,7 @@ exports[`Table Snapshots can select items 1`] = `
           className="objectlist-table__td"
         >
           <Selector
-            id={undefined}
+            id={4}
             selected={false}
             toggleSelect={[MockFunction]}
           />
@@ -182,7 +182,7 @@ exports[`Table Snapshots can select items 1`] = `
           className="objectlist-table__td"
         >
           <Selector
-            id={undefined}
+            id={5}
             selected={false}
             toggleSelect={[MockFunction]}
           />
