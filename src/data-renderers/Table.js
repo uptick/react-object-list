@@ -119,8 +119,7 @@ export default class TableRenderer extends Component {
 
   handleToggleSelectAll = () => {
     const {data, select, selection} = this.props
-    const allSelected = this.allSelected()
-    if (allSelected) {
+    if (this.allSelected()) {
       select(null)
     } else {
       select(data.map(row => row.id).filter(id => !(id in selection)))
