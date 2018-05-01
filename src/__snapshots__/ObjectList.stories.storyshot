@@ -3557,6 +3557,40 @@ exports[`Storyshots object-list has everything 1`] = `
       >
         200 items found
       </span>
+      <div>
+        <a
+          className="objectlist-button objectlist-button--link"
+          href="#"
+          onClick={[Function]}
+        >
+          Select all 
+          200
+           items
+        </a>
+        <a
+          className="objectlist-button objectlist-button--link"
+          href="#"
+          onClick={[Function]}
+        >
+          De-select all
+        </a>
+      </div>
+      <a
+        href="http://thecatapi.com/api/images/get?format=src&type=gif"
+      >
+        Download 
+        12
+         
+        items
+      </a>
+      <button
+        onClick={[Function]}
+      >
+        Pat 
+        12
+         
+        items
+      </button>
       <div
         className="objectlist-dropdown"
       >

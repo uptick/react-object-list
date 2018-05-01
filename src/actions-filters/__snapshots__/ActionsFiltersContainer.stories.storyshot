@@ -720,6 +720,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     >
       573,489 octopi found
     </span>
+    <div>
+      <a
+        className="objectlist-button objectlist-button--link"
+        href="#"
+        onClick={[Function]}
+      >
+        De-select all
+      </a>
+    </div>
     <div
       className="objectlist-dropdown"
     >
@@ -745,15 +754,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           Favourite Colour
         </button>
       </div>
-    </div>
-    <div>
-      <a
-        className="objectlist-button objectlist-button--link"
-        href="#"
-        onClick={[Function]}
-      >
-        De-select all
-      </a>
     </div>
   </div>
 </div>
@@ -818,6 +818,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
     >
       573,489 cats found
     </span>
+    <div>
+      <a
+        className="objectlist-button objectlist-button--link"
+        href="#"
+        onClick={[Function]}
+      >
+        De-select all
+      </a>
+    </div>
     <a
       href="http://thecatapi.com/api/images/get?format=src&type=gif"
     >
@@ -834,15 +843,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
        
       cats
     </button>
-    <div>
-      <a
-        className="objectlist-button objectlist-button--link"
-        href="#"
-        onClick={[Function]}
-      >
-        De-select all
-      </a>
-    </div>
   </div>
 </div>
 `;
