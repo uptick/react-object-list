@@ -92,9 +92,9 @@ class ActionsFilterContainer extends Component {
       searchKey, meta: {totalCount}, itemCount,
       selection, customActions = [],
       itemSingleName, itemPluralName, numSelected,
-      filters, updateFilter, removeFilter,
+      filters, updateFilter, removeFilter, status,
     } = this.props
-
+    const loading = status === STATUS_CHOICES.loading
     let search
     if (searchKey) {
       search = filters.find(f => f.filterKey === searchKey)
@@ -141,7 +141,9 @@ class ActionsFilterContainer extends Component {
         {/* TODO: render children below filters */}
         <div className="objectlist-row objectlist-row--justify">
           <span className="objectlist-results-text">
-            {`${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount === 1 ? itemSingleName : itemPluralName} found`}
+            {loading ? `Loading ${itemPluralName}...` : (
+              `${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount === 1 ? itemSingleName : itemPluralName} found`
+            )}
           </span>
           {customActions.map((action, i) => action({
             selection,
@@ -150,7 +152,7 @@ class ActionsFilterContainer extends Component {
             totalCount,
             itemSingleName,
             itemPluralName,
-            loading: this.props.status === STATUS_CHOICES.loading,
+            loading,
             key: `action-${i}`,
           }))}
           <OptionalFields
