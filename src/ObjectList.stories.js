@@ -10,6 +10,7 @@ const baseProps = {
   updatePage: action('Update page'),
   updateColumns: action('Update columns'),
   updateFilter: action('Update filters'),
+  addFilter: action('Add filter'),
 }
 
 const filters = Object.entries(importedFilters).map(([name, filter]) => {
@@ -18,6 +19,10 @@ const filters = Object.entries(importedFilters).map(([name, filter]) => {
     case 'RemoteChoiceFilter':
     case 'RemoteMultiChoiceFilter':
       props.loadOptions = action('loadOptions')
+      break
+    case 'SearchFilter':
+      props.filterKey = 'search'
+      props.name = ''
   }
 
   return {
@@ -117,7 +122,7 @@ storiesOf('object-list', module)
         ...f,
         active: !!(i % 2),
       }))}
-      searchKey="text_contains"
+      searchKey="search"
       removeFilter={action('removeFilter')}
     />
   ))

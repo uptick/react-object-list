@@ -22,10 +22,16 @@ exports[`Storyshots object-list all selected 1`] = `
               "maxHeight": "500px",
             }
           }
-          onChange={undefined}
+          onChange={[Function]}
           openOnFocus={true}
           options={
             Array [
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "search",
+                "name": "",
+              },
               Object {
                 "Renderer": [Function],
                 "active": false,
@@ -87,12 +93,6 @@ exports[`Storyshots object-list all selected 1`] = `
                 "filterKey": "RemoteMultiChoiceFilter",
                 "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "SearchFilter",
-                "name": "SearchFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -611,10 +611,16 @@ exports[`Storyshots object-list can select all 1`] = `
               "maxHeight": "500px",
             }
           }
-          onChange={undefined}
+          onChange={[Function]}
           openOnFocus={true}
           options={
             Array [
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "search",
+                "name": "",
+              },
               Object {
                 "Renderer": [Function],
                 "active": false,
@@ -676,12 +682,6 @@ exports[`Storyshots object-list can select all 1`] = `
                 "filterKey": "RemoteMultiChoiceFilter",
                 "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "SearchFilter",
-                "name": "SearchFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -1209,10 +1209,16 @@ exports[`Storyshots object-list can select items 1`] = `
               "maxHeight": "500px",
             }
           }
-          onChange={undefined}
+          onChange={[Function]}
           openOnFocus={true}
           options={
             Array [
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "search",
+                "name": "",
+              },
               Object {
                 "Renderer": [Function],
                 "active": false,
@@ -1274,12 +1280,6 @@ exports[`Storyshots object-list can select items 1`] = `
                 "filterKey": "RemoteMultiChoiceFilter",
                 "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "SearchFilter",
-                "name": "SearchFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -1789,10 +1789,16 @@ exports[`Storyshots object-list has active filters 1`] = `
               "maxHeight": "500px",
             }
           }
-          onChange={undefined}
+          onChange={[Function]}
           openOnFocus={true}
           options={
             Array [
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "search",
+                "name": "",
+              },
               Object {
                 "Renderer": [Function],
                 "active": false,
@@ -1823,12 +1829,6 @@ exports[`Storyshots object-list has active filters 1`] = `
                 "filterKey": "RemoteChoiceFilter",
                 "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "SearchFilter",
-                "name": "SearchFilter",
               },
             ]
           }
@@ -3052,6 +3052,22 @@ exports[`Storyshots object-list has everything 1`] = `
       className="objectlist-row objectlist-row--right objectlist-row--search"
     >
       <div
+        className="objectlist--grow"
+      >
+        <div
+          className="objectlist-row"
+        >
+          
+          <input
+            className="objectlist-current-filter__active-status objectlist-input"
+            onChange={[Function]}
+            placeholder="Search the table below"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
         className="objectlist-row"
       >
         <Select
@@ -3067,7 +3083,7 @@ exports[`Storyshots object-list has everything 1`] = `
               "maxHeight": "500px",
             }
           }
-          onChange={undefined}
+          onChange={[Function]}
           openOnFocus={true}
           options={
             Array [
@@ -3101,12 +3117,6 @@ exports[`Storyshots object-list has everything 1`] = `
                 "filterKey": "RemoteChoiceFilter",
                 "loadOptions": [Function],
                 "name": "RemoteChoiceFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "SearchFilter",
-                "name": "SearchFilter",
               },
             ]
           }
@@ -3969,10 +3979,16 @@ exports[`Storyshots object-list has multiple pages 1`] = `
               "maxHeight": "500px",
             }
           }
-          onChange={undefined}
+          onChange={[Function]}
           openOnFocus={true}
           options={
             Array [
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "search",
+                "name": "",
+              },
               Object {
                 "Renderer": [Function],
                 "active": false,
@@ -4034,12 +4050,6 @@ exports[`Storyshots object-list has multiple pages 1`] = `
                 "filterKey": "RemoteMultiChoiceFilter",
                 "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "SearchFilter",
-                "name": "SearchFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -4432,10 +4442,16 @@ exports[`Storyshots object-list has optional fields 1`] = `
               "maxHeight": "500px",
             }
           }
-          onChange={undefined}
+          onChange={[Function]}
           openOnFocus={true}
           options={
             Array [
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "search",
+                "name": "",
+              },
               Object {
                 "Renderer": [Function],
                 "active": false,
@@ -4497,12 +4513,6 @@ exports[`Storyshots object-list has optional fields 1`] = `
                 "filterKey": "RemoteMultiChoiceFilter",
                 "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "SearchFilter",
-                "name": "SearchFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -4906,6 +4916,22 @@ exports[`Storyshots object-list has search key 1`] = `
       className="objectlist-row objectlist-row--right objectlist-row--search"
     >
       <div
+        className="objectlist--grow"
+      >
+        <div
+          className="objectlist-row"
+        >
+          
+          <input
+            className="objectlist-current-filter__active-status objectlist-input"
+            onChange={[Function]}
+            placeholder="Search the table below"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
         className="objectlist-row"
       >
         <Select
@@ -4921,7 +4947,7 @@ exports[`Storyshots object-list has search key 1`] = `
               "maxHeight": "500px",
             }
           }
-          onChange={undefined}
+          onChange={[Function]}
           openOnFocus={true}
           options={
             Array [
@@ -4986,12 +5012,6 @@ exports[`Storyshots object-list has search key 1`] = `
                 "filterKey": "RemoteMultiChoiceFilter",
                 "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "SearchFilter",
-                "name": "SearchFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -5384,10 +5404,16 @@ exports[`Storyshots object-list loading 1`] = `
               "maxHeight": "500px",
             }
           }
-          onChange={undefined}
+          onChange={[Function]}
           openOnFocus={true}
           options={
             Array [
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "search",
+                "name": "",
+              },
               Object {
                 "Renderer": [Function],
                 "active": false,
@@ -5449,12 +5475,6 @@ exports[`Storyshots object-list loading 1`] = `
                 "filterKey": "RemoteMultiChoiceFilter",
                 "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "SearchFilter",
-                "name": "SearchFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -5857,10 +5877,16 @@ exports[`Storyshots object-list ready 1`] = `
               "maxHeight": "500px",
             }
           }
-          onChange={undefined}
+          onChange={[Function]}
           openOnFocus={true}
           options={
             Array [
+              Object {
+                "Renderer": [Function],
+                "active": false,
+                "filterKey": "search",
+                "name": "",
+              },
               Object {
                 "Renderer": [Function],
                 "active": false,
@@ -5922,12 +5948,6 @@ exports[`Storyshots object-list ready 1`] = `
                 "filterKey": "RemoteMultiChoiceFilter",
                 "loadOptions": [Function],
                 "name": "RemoteMultiChoiceFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "SearchFilter",
-                "name": "SearchFilter",
               },
               Object {
                 "Renderer": [Function],
