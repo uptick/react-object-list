@@ -29,7 +29,6 @@ describe('<OptionalFields />', () => {
       let instance
       const mockEvent = {
         target: null,
-        path: [],
       }
       beforeEach(() => {
         instance = shallow(<OptionalFields {...defaultProps} />).instance()
@@ -42,7 +41,7 @@ describe('<OptionalFields />', () => {
         expect(instance.state.optionalFieldsOpen).toBeFalsy()
       })
       it('target contains element', () => {
-        instance.handleDropdown({...mockEvent, path: [{}, {className: 'objectlist-dropdown'}]})
+        instance.handleDropdown({target: {parentElement: {classList: ['objectlist-dropdown']}}})
         expect(instance.state.optionalFieldsOpen).toBeTruthy()
       })
       it('target is element', () => {

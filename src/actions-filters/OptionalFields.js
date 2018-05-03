@@ -41,11 +41,17 @@ class OptionalFields extends Component {
       const newState = {
         optionalFieldsOpen: false,
       }
-      console.log(event.target, this.optionalFieldsButton)
       if (event.target === this.optionalFieldsButton) {
         newState.optionalFieldsOpen = !prevState.optionalFieldsOpen
-      } else if (event.path.some(el => el.className && el.className.includes('objectlist-dropdown'))) {
-        newState.optionalFieldsOpen = true
+      } else if (event.target) {
+        let el = event.target.parentElement
+        while (el) {
+          if (el.classList && el.classList.includes('objectlist-dropdown')) {
+            newState.optionalFieldsOpen = true
+            break
+          }
+          el = el.parentElement
+        }
       }
       return newState
     })
@@ -69,7 +75,7 @@ class OptionalFields extends Component {
           open: this.state.optionalFieldsOpen,
         })} ref={el => { this.optionalFieldsDropdown = el }}>
           <button
-            ref={ el => { this.optionalFieldsButton = el }}
+            ref={el => { this.optionalFieldsButton = el }}
             className={ClassNames('objectlist-button objectlist-button--dropdown objectlist-button--borderless', {
               open: this.state.optionalFieldsOpen,
             })}

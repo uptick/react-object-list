@@ -71,12 +71,20 @@ describe('Favourites', () => {
       })
 
       it('opens dropdown on a child element of dorpdown pressed', () => {
-        instance.handleDropdown({path: [{}, {className: 'objectlist-dropdown'}, {}, {className: 'test'}]})
+        instance.handleDropdown({
+          target: {
+            parentElement: {
+              parentElement: {
+                classList: ['objectlist-dropdown'],
+              },
+            },
+          },
+        })
         expect(instance.state.favouritesOpen).toBe(true)
       })
       it('closes dropdown otherwise', () => {
         // Unrecognised target
-        instance.handleDropdown({path: []})
+        instance.handleDropdown({target: {}})
         expect(instance.state.favouritesOpen).toBe(false)
       })
     })
