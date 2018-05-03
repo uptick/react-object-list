@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import Favourites from '../Favourites'
 
@@ -56,14 +56,7 @@ describe('Favourites', () => {
     describe('handleDropdown', () => {
       let instance
       beforeEach(() => {
-        instance = shallow(<Favourites />).instance()
-        instance.refs = {
-          favouritesButton: 'favBut',
-          newFavouriteName: 'favNym',
-          favouritesDropdown: {
-            contains: jest.fn(foo => foo === 'bar'),
-          },
-        }
+        instance = mount(<Favourites />).instance()
       })
 
       it('starts closed', () => {
@@ -71,29 +64,27 @@ describe('Favourites', () => {
       })
 
       it('toggles dropdown on favouritesButton press', () => {
-        instance.handleDropdown({target: 'favBut'})
+        instance.handleDropdown({target: instance.favouritesButton})
         expect(instance.state.favouritesOpen).toBe(true)
-        instance.handleDropdown({target: 'favBut'})
+        instance.handleDropdown({target: instance.favouritesButton})
         expect(instance.state.favouritesOpen).toBe(false)
       })
 
-      it('opens dropdown on newFavouriteName press', () => {
-        instance.handleDropdown({target: 'favNym'})
+      it('opens dropdown on a child element of dorpdown pressed', () => {
+        instance.handleDropdown({
+          target: {
+            parentElement: {
+              parentElement: {
+                classList: ['objectlist-dropdown'],
+              },
+            },
+          },
+        })
         expect(instance.state.favouritesOpen).toBe(true)
       })
-
-      it('opens dropdown on child of favouritesDropdown press', () => {
-        instance.handleDropdown({target: 'bar'})
-        expect(instance.state.favouritesOpen).toBe(true)
-      })
-
       it('closes dropdown otherwise', () => {
         // Unrecognised target
-        instance.handleDropdown({target: 'bard'})
-        expect(instance.state.favouritesOpen).toBe(false)
-        // No favourites dropdown
-        instance.refs.favouritesDropdown = null
-        instance.handleDropdown({target: 'bar'})
+        instance.handleDropdown({target: {}})
         expect(instance.state.favouritesOpen).toBe(false)
       })
     })
@@ -119,7 +110,7 @@ describe('Favourites', () => {
     describe('handleFavouriteNameChange ', () => {
       it('adds new favourite to list and clears its draft from state', () => {
         const instance = shallow(<Favourites />).instance()
-        instance.refs = {newFavouriteName: {value: 'Pit_Droid-2'}}
+        instance.newFavouriteName = {value: 'Pit_Droid-2'}
         instance.handleFavouriteNameChange()
         expect(instance.state.newFavouriteName).toBe('PitDroid-2')
       })

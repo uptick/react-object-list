@@ -15,6 +15,7 @@ class OptionalFields extends Component {
     /** callback function when toggling an extra column on or off */
     updateColumns: PropTypes.func,
   }
+
   static defaultProps = {
     optionalFields: [],
     extraColumns: [],
@@ -40,18 +41,17 @@ class OptionalFields extends Component {
       const newState = {
         optionalFieldsOpen: false,
       }
-      switch (event.target) {
-        case this.refs.optionalFieldsButton:
-          newState.optionalFieldsOpen = !prevState.optionalFieldsOpen
-          break
-        default:
-          if (
-            this.refs.optionalFieldsDropdown &&
-            this.refs.optionalFieldsDropdown.contains(event.target)
-          ) {
+      if (event.target === this.optionalFieldsButton) {
+        newState.optionalFieldsOpen = !prevState.optionalFieldsOpen
+      } else if (event.target) {
+        let el = event.target.parentElement
+        while (el) {
+          if (el.classList && el.classList.includes('objectlist-dropdown')) {
             newState.optionalFieldsOpen = true
+            break
           }
-          break
+          el = el.parentElement
+        }
       }
       return newState
     })
@@ -73,9 +73,9 @@ class OptionalFields extends Component {
       return (
         <div className={ClassNames('objectlist-dropdown', {
           open: this.state.optionalFieldsOpen,
-        })} ref="optionalFieldsDropdown">
+        })} ref={el => { this.optionalFieldsDropdown = el }}>
           <button
-            ref="optionalFieldsButton"
+            ref={el => { this.optionalFieldsButton = el }}
             className={ClassNames('objectlist-button objectlist-button--dropdown objectlist-button--borderless', {
               open: this.state.optionalFieldsOpen,
             })}
