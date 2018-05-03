@@ -93,11 +93,13 @@ describe('Table', () => {
     })
     it('handles deselect all', () => {
       spyOn(props, 'select')
+      const allSelection = {}
+      props.data.forEach(row => { allSelection[row.id] = true })
       const instance = shallow(
         <Table
           {...props}
           numSelected={props.data.length}
-          selection={props.data.map(row => ({[row.id]: true}))}
+          selection={allSelection}
         />
       ).instance()
       expect(instance.allSelected()).toBe(true)

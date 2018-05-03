@@ -38,7 +38,7 @@ describe('Date', () => {
       let instance
       beforeEach(() => {
         spyOn(baseProps, 'onChange')
-        instance = shallow(<DateComponent {...baseProps} />).instance()
+        instance = shallow(<DateComponent {...baseProps} value={'2018-01-01'} />).instance()
       })
       it('handles valid date', () => {
         const newValue = Date()

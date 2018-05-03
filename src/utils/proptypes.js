@@ -10,7 +10,15 @@ const STATUS_TYPE = PropTypes.oneOf(Object.values(STATUS_CHOICES))
 const ALL_SELECTED = 'all'
 const SELECTION_TYPE = function(props, propName, componentName) {
   const value = props[propName]
-  if (value !== 'all' && typeof value !== 'object') {
+  let validObject = true
+  if (typeof value === 'object') {
+    validObject = Object.entries(value).every(
+      ([key, value]) => key % 1 === 0 && typeof value === 'boolean')
+  } else {
+    validObject = false
+  }
+
+  if (value !== ALL_SELECTED && !validObject) {
     return new Error(`Invalid prop \`${propName}\` of \`${value}\`
       supplied to \`${componentName}\` expected one of ['${ALL_SELECTED}', obj]`)
   }
