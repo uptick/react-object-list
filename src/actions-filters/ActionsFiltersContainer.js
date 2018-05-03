@@ -145,6 +145,15 @@ class ActionsFilterContainer extends Component {
               `${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount === 1 ? itemSingleName : itemPluralName} found`
             )}
           </span>
+          {this.props.status === STATUS_CHOICES.done && (
+            <SelectAllAction
+              count={this.props.meta.totalCount}
+              itemCount={itemCount}
+              numSelected={numSelected}
+              selectAll={this.props.selectAll}
+              deselectAll={this.props.deselectAll}
+            />
+          )}
           {customActions.map((action, i) => action({
             selection,
             itemCount,
@@ -160,15 +169,6 @@ class ActionsFilterContainer extends Component {
             extraColumns={this.props.meta.extraColumns}
             updateColumns={this.props.updateColumns}
           />
-          {this.props.status === STATUS_CHOICES.done && (
-            <SelectAllAction
-              count={this.props.meta.totalCount}
-              itemCount={itemCount}
-              numSelected={numSelected}
-              selectAll={this.props.selectAll}
-              deselectAll={this.props.deselectAll}
-            />
-          )}
         </div>
       </div>
     )

@@ -101,31 +101,40 @@ storiesOf('object-list', module)
       filters={filters}
     />
   ))
-  .add('has everything', () => (
-    <ObjectList
-      {...baseProps}
-      columns={[
-        {dataKey: 'name', header: 'Name', sortKey: 'name'},
-        {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
-        {dataKey: 'favouriteColour', header: 'Favourite Colour', optional: true},
-      ]}
-      meta={{
-        totalCount: 200,
-        perPage: 20,
-        currentPage: 1,
-        extraColumns: ['favouriteColour'],
-      }}
-      data={mockData}
-      setSort={action('Set sort')}
-      status="done"
-      filters={filters.map((f, i) => ({
-        ...f,
-        active: !!(i % 2),
-      }))}
-      searchKey="search"
-      removeFilter={action('removeFilter')}
-    />
-  ))
+  .add('has everything', () => {
+    const downloadSomething = ({numSelected, itemPluralName, key}) => <a key={key} href="http://thecatapi.com/api/images/get?format=src&type=gif">Download {numSelected} {itemPluralName}</a>
+    const aButton = ({numSelected, itemPluralName, key}) => <button key={key} onClick={action('Button clicked')}>Pat {numSelected} {itemPluralName}</button>
+    const mockSelection = {}
+    mockData.forEach(row => {
+      mockSelection[row.id] = true
+    })
+    return (
+      <ObjectList
+        {...baseProps}
+        columns={[
+          {dataKey: 'name', header: 'Name', sortKey: 'name'},
+          {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
+          {dataKey: 'favouriteColour', header: 'Favourite Colour', optional: true},
+        ]}
+        meta={{
+          totalCount: 200,
+          perPage: 20,
+          currentPage: 1,
+          extraColumns: ['favouriteColour'],
+        }}
+        data={mockData}
+        setSort={action('Set sort')}
+        status="done"
+        filters={filters.map((f, i) => ({
+          ...f,
+          active: !!(i % 2),
+        }))}
+        selection={mockSelection}
+        searchKey="search"
+        removeFilter={action('removeFilter')}
+        customActions={[downloadSomething, aButton]}
+      />)
+  })
   .add('has error', () => (
     <ObjectList
       {...baseProps}
