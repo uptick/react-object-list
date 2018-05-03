@@ -1,7 +1,7 @@
 import {SELECTION_TYPE} from '../proptypes'
 
 describe('custom proptypes', () => {
-  it('correctly detects seletion proptype', () => {
+  it('correctly detects selection proptype', () => {
     const selection = {
       1: true,
       2: true,

@@ -13,7 +13,7 @@ const SELECTION_TYPE = function(props, propName, componentName) {
   let validObject = true
   if (typeof value === 'object') {
     validObject = Object.entries(value).every(
-      ([key, value]) => key % 1 === 0 && typeof value === 'boolean')
+      ([key, value]) => (typeof key === 'number' || 'string') && typeof value === 'boolean')
   } else {
     validObject = false
   }
