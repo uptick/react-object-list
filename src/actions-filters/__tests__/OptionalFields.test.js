@@ -27,37 +27,27 @@ describe('<OptionalFields />', () => {
   describe('Functions', () => {
     describe('handles dropdown', () => {
       let instance
-      let containSpy
       const mockEvent = {
         target: null,
+        path: [],
       }
       beforeEach(() => {
         instance = shallow(<OptionalFields {...defaultProps} />).instance()
         instance.setState({optionalFieldsOpen: true})
-        instance.refs = {
-          optionalFieldsDropdown: {
-            contains: jest.fn(),
-          },
-          optionalFieldsButton: 'buttonOF',
-        }
-        containSpy = spyOn(instance.refs.optionalFieldsDropdown, 'contains')
+        instance.optionalFieldsDropdown = 'optionalFieldsDropdown'
+        instance.optionalFieldsButton = 'buttonOF'
       })
       it('target is elsewhere', () => {
-        containSpy.and.returnValue(false)
         instance.handleDropdown(mockEvent)
-        expect(containSpy).toHaveBeenCalledWith(mockEvent.target)
         expect(instance.state.optionalFieldsOpen).toBeFalsy()
       })
       it('target contains element', () => {
-        containSpy.and.returnValue(true)
-        instance.handleDropdown(mockEvent)
-        expect(containSpy).toHaveBeenCalledWith(mockEvent.target)
+        instance.handleDropdown({...mockEvent, path: [{}, {className: 'objectlist-dropdown'}]})
         expect(instance.state.optionalFieldsOpen).toBeTruthy()
       })
       it('target is element', () => {
-        mockEvent.target = instance.refs.optionalFieldsButton
+        mockEvent.target = instance.optionalFieldsButton
         instance.handleDropdown(mockEvent)
-        expect(containSpy).not.toHaveBeenCalled()
         expect(instance.state.optionalFieldsOpen).toBe(false)
         instance.handleDropdown(mockEvent)
         expect(instance.state.optionalFieldsOpen).toBe(true)

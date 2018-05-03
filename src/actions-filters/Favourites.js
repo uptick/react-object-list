@@ -58,21 +58,10 @@ class Favourites extends Component {
       const newState = {
         favouritesOpen: false,
       }
-      switch (event.target) {
-        case this.refs.favouritesButton:
-          newState.favouritesOpen = !prevState.favouritesOpen
-          break
-        case this.refs.newFavouriteName:
-          newState.favouritesOpen = true
-          break
-        default:
-          if (
-            this.refs.favouritesDropdown &&
-            this.refs.favouritesDropdown.contains(event.target)
-          ) {
-            newState.favouritesOpen = true
-          }
-          break
+      if (event.target === this.favouritesButton) {
+        newState.favouritesOpen = !prevState.favouritesOpen
+      } else if (event.path.some(el => el.className && el.className.includes('objectlist-dropdown'))) {
+        newState.favouritesOpen = true
       }
       return newState
     })
@@ -92,7 +81,7 @@ class Favourites extends Component {
    * Renames the favourite in state
    */
   handleFavouriteNameChange = () => {
-    const newValue = this.refs.newFavouriteName.value
+    const newValue = this.newFavouriteName.value
     this.setState(() => ({
       newFavouriteName: newValue.replace('_', ''),
     }))
@@ -112,13 +101,13 @@ class Favourites extends Component {
     return (
       <div className={ClassNames('objectlist-dropdown', {
         open: this.state.favouritesOpen,
-      })} ref="favouritesDropdown">
+      })} ref={el => { this.favouritedDropdown = el }}>
         <button
           className={ClassNames('objectlist-button--dropdown objectlist-button objectlist-button--favourites', {
             open: this.state.favouritesOpen,
           })}
           type="button"
-          ref="favouritesButton">
+          ref={el => { this.favouritesButton = el }}>
           <i className="fa fa-heart-o" /> Favourites
         </button>
         <div
@@ -129,7 +118,7 @@ class Favourites extends Component {
             <form onSubmit={this.handleAddFavourite}>
               <input
                 type="text"
-                ref="newFavouriteName"
+                ref={el => { this.newFavouriteName = el }}
                 className="objectlist-input objectlist-input__favourite"
                 placeholder="Save as new"
                 value={this.state.newFavouriteName}
