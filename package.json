@@ -33,7 +33,6 @@
     "@storybook/addon-storyshots": "^4.0.0-alpha.3",
     "@storybook/addons": "^4.0.0-alpha.3",
     "@storybook/react": "^4.0.0-alpha.3",
-    "airbnb-prop-types": "^2.8.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.4",

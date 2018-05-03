@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import { or } from 'airbnb-prop-types'
 
 const STATUS_CHOICES = {
   loading: 'loading',
@@ -9,7 +8,13 @@ const STATUS_CHOICES = {
 const STATUS_TYPE = PropTypes.oneOf(Object.values(STATUS_CHOICES))
 
 const ALL_SELECTED = 'all'
-const SELECTION_TYPE = or([PropTypes.oneOf([ALL_SELECTED]), PropTypes.oneOfType([PropTypes.object])])
+const SELECTION_TYPE = function(props, propName, componentName) {
+  const value = props[propName]
+  if (value !== 'all' && typeof value !== 'object') {
+    return new Error(`Invalid prop \`${propName}\` of \`${value}\`
+      supplied to \`${componentName}\` expected one of ['${ALL_SELECTED}', obj]`)
+  }
+}
 
 const COLUMN_BASE_TYPE = {
   dataKey: PropTypes.string,
