@@ -16,8 +16,10 @@ exports[`Table Snapshots can select items 1`] = `
           className="objectlist-table__th objectlist-table__th--selector"
         >
           <AllSelector
-            allSelected={false}
-            toggleSelectAll={[Function]}
+            deselectAll={[Function]}
+            numSelected={undefined}
+            selectAll={[Function]}
+            total={5}
           />
         </th>
         <TableHeader

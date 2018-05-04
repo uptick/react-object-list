@@ -112,22 +112,17 @@ export default class TableRenderer extends Component {
     })
   }
 
-  allSelected = () => {
-    const {data, numSelected} = this.props
-    return !!(numSelected && numSelected >= data.length)
+  handleSelectAll = () => {
+    const {data, select, selection} = this.props
+    select(data.map(row => row.id).filter(id => !(id in selection)))
   }
 
-  handleToggleSelectAll = () => {
-    const {data, select, selection} = this.props
-    if (this.allSelected()) {
-      select(null)
-    } else {
-      select(data.map(row => row.id).filter(id => !(id in selection)))
-    }
+  handleDeselectAll = () => {
+    this.props.select(null)
   }
 
   render() {
-    const {select, status} = this.props
+    const {select, status, numSelected, data} = this.props
     return (
       <div className="objectlist-table--scroll">
         <Overlay status={status} />
@@ -137,8 +132,10 @@ export default class TableRenderer extends Component {
               {select && (
                 <th className="objectlist-table__th objectlist-table__th--selector">
                   <AllSelector
-                    allSelected={this.allSelected()}
-                    toggleSelectAll={this.handleToggleSelectAll}
+                    numSelected={numSelected}
+                    total={data.length}
+                    selectAll={this.handleSelectAll}
+                    deselectAll={this.handleDeselectAll}
                   />
                 </th>
               )}
