@@ -3,67 +3,76 @@
 exports[`<SelectAllAction /> Snapshot does not render with no props 1`] = `null`;
 
 exports[`<SelectAllAction /> Snapshot shows both select all and deselect 1`] = `
-<div>
+<div
+  className="objectlist-row"
+>
   <a
-    className="objectlist-button objectlist-button--link"
+    className="objectlist-link"
     href="#"
     onClick={[Function]}
   >
     Select all 
     5
-     items
+     
   </a>
   <a
-    className="objectlist-button objectlist-button--link"
+    className="objectlist-link"
     href="#"
     onClick={[Function]}
   >
-    De-select all
+    Clear selection
   </a>
 </div>
 `;
 
 exports[`<SelectAllAction /> Snapshot shows deselect all when all the items are selected 1`] = `
-<div>
+<div
+  className="objectlist-row"
+>
   <a
-    className="objectlist-button objectlist-button--link"
+    className="objectlist-link"
     href="#"
     onClick={[Function]}
   >
-    De-select all
+    Clear selection
   </a>
 </div>
 `;
 
 exports[`<SelectAllAction /> Snapshot shows deselect all when some of the items are selected 1`] = `
-<div>
+<div
+  className="objectlist-row"
+>
   <a
-    className="objectlist-button objectlist-button--link"
+    className="objectlist-link"
     href="#"
     onClick={[Function]}
   >
-    De-select all
+    Clear selection
   </a>
 </div>
 `;
 
 exports[`<SelectAllAction /> Snapshot shows global select all when selected all on page 1`] = `
-<div>
+<div
+  className="objectlist-row"
+>
   <a
-    className="objectlist-button objectlist-button--link"
+    className="objectlist-link"
     href="#"
     onClick={[Function]}
   >
     Select all 
     5
-     items
+     
+    kitties
   </a>
   <a
-    className="objectlist-button objectlist-button--link"
+    className="objectlist-link"
     href="#"
     onClick={[Function]}
   >
-    De-select all
+    Clear selection
   </a>
 </div>
 `;
