@@ -63,7 +63,8 @@ class Favourites extends Component {
       } else if (event.target) {
         let el = event.target.parentElement
         while (el) {
-          if (el.classList && el.classList.includes('objectlist-dropdown')) {
+          console.log(el.classList)
+          if (el.classList && el.className.includes('objectlist-dropdown')) {
             newState.favouritesOpen = true
             break
           }

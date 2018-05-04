@@ -75,7 +75,7 @@ describe('Favourites', () => {
           target: {
             parentElement: {
               parentElement: {
-                classList: ['objectlist-dropdown'],
+                className: 'objectlist-dropdown',
               },
             },
           },
