@@ -39,6 +39,7 @@ describe('<SelectAllAction />', () => {
         count: 5,
         numSelected: 3,
         itemCount: 3,
+        itemPluralName: 'kitties',
       }
       snapshotTest(<SelectAllAction {...props} />)
     })

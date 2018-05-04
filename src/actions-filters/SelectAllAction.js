@@ -7,6 +7,8 @@ class SelectAllAction extends Component {
     count: PropTypes.number,
     /** the amount of items displayed on the current page */
     itemCount: PropTypes.number,
+    /** the name used to describe multiples of the items displayed */
+    itemPluralName: PropTypes.string,
     /** the number of items currently selected */
     numSelected: PropTypes.number,
     /** callback function to handle selecting all items in the dataset. Set to null to not show it. */
@@ -26,32 +28,37 @@ class SelectAllAction extends Component {
   }
 
   render() {
-    let selectAll
-    if (this.props.selectAll && this.props.count > 0 && this.props.numSelected < this.props.count && this.props.numSelected >= this.props.itemCount) {
-      selectAll = (
+    const {selectAll, count, numSelected, itemPluralName, itemCount} = this.props
+    let selectAllLink
+    if (selectAll && count > 0 && numSelected < count && numSelected >= itemCount) {
+      selectAllLink = (
         <a
-          className="objectlist-button objectlist-button--link"
+          className="objectlist-link"
           href="#"
           onClick={this.handleSelectAllClick}
         >
-          Select all {this.props.count.toLocaleString()} items
+          Select all {count.toLocaleString()} {itemPluralName && itemPluralName.toLowerCase()}
         </a>
       )
     }
-    let deselect
-    if (this.props.numSelected > 0) {
-      deselect = (
+    let deselectLink
+    if (numSelected > 0) {
+      deselectLink = (
         <a
-          className="objectlist-button objectlist-button--link"
+          className="objectlist-link"
           href="#"
           onClick={this.handleDeselectAllClick}
         >
-          De-select all
+          Clear selection
         </a>
       )
     }
-    if (selectAll || deselect) {
-      return <div>{selectAll}{deselect}</div>
+    if (selectAllLink || deselectLink) {
+      return (
+        <div className="objectlist-row">
+          {selectAllLink}{deselectLink}
+        </div>
+      )
     } else {
       return null
     }
