@@ -731,7 +731,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           href="#"
           onClick={[Function]}
         >
-          De-select all
+          Clear selection
         </a>
       </div>
     </div>
@@ -835,7 +835,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
           href="#"
           onClick={[Function]}
         >
-          De-select all
+          Clear selection
         </a>
       </div>
     </div>
@@ -2348,7 +2348,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
           href="#"
           onClick={[Function]}
         >
-          De-select all
+          Clear selection
         </a>
       </div>
     </div>
@@ -3091,7 +3091,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
           href="#"
           onClick={[Function]}
         >
-          De-select all
+          Clear selection
         </a>
       </div>
     </div>

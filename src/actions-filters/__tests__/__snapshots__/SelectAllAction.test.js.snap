@@ -20,7 +20,7 @@ exports[`<SelectAllAction /> Snapshot shows both select all and deselect 1`] = `
     href="#"
     onClick={[Function]}
   >
-    De-select all
+    Clear selection
   </a>
 </div>
 `;
@@ -34,7 +34,7 @@ exports[`<SelectAllAction /> Snapshot shows deselect all when all the items are 
     href="#"
     onClick={[Function]}
   >
-    De-select all
+    Clear selection
   </a>
 </div>
 `;
@@ -48,7 +48,7 @@ exports[`<SelectAllAction /> Snapshot shows deselect all when some of the items 
     href="#"
     onClick={[Function]}
   >
-    De-select all
+    Clear selection
   </a>
 </div>
 `;
@@ -72,7 +72,7 @@ exports[`<SelectAllAction /> Snapshot shows global select all when selected all 
     href="#"
     onClick={[Function]}
   >
-    De-select all
+    Clear selection
   </a>
 </div>
 `;

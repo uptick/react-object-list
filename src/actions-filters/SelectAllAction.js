@@ -49,7 +49,7 @@ class SelectAllAction extends Component {
           href="#"
           onClick={this.handleDeselectAllClick}
         >
-          De-select all
+          Clear selection
         </a>
       )
     }

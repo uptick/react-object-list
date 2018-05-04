@@ -168,7 +168,7 @@ exports[`Storyshots object-list all selected 1`] = `
             href="#"
             onClick={[Function]}
           >
-            De-select all
+            Clear selection
           </a>
         </div>
       </div>
@@ -773,7 +773,7 @@ exports[`Storyshots object-list can select all 1`] = `
             href="#"
             onClick={[Function]}
           >
-            De-select all
+            Clear selection
           </a>
         </div>
       </div>
@@ -3603,7 +3603,7 @@ exports[`Storyshots object-list has everything 1`] = `
             href="#"
             onClick={[Function]}
           >
-            De-select all
+            Clear selection
           </a>
         </div>
       </div>
