@@ -15,10 +15,9 @@ exports[`Table Snapshots can select items 1`] = `
         <th
           className="objectlist-table__th objectlist-table__th--selector"
         >
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="checkbox"
+          <AllSelector
+            allSelected={false}
+            toggleSelectAll={[Function]}
           />
         </th>
         <TableHeader
@@ -74,10 +73,10 @@ exports[`Table Snapshots can select items 1`] = `
         <td
           className="objectlist-table__td"
         >
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="checkbox"
+          <Selector
+            id={1}
+            selected={false}
+            toggleSelect={[MockFunction]}
           />
         </td>
         <td
@@ -101,10 +100,10 @@ exports[`Table Snapshots can select items 1`] = `
         <td
           className="objectlist-table__td"
         >
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="checkbox"
+          <Selector
+            id={2}
+            selected={false}
+            toggleSelect={[MockFunction]}
           />
         </td>
         <td
@@ -128,10 +127,10 @@ exports[`Table Snapshots can select items 1`] = `
         <td
           className="objectlist-table__td"
         >
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="checkbox"
+          <Selector
+            id={3}
+            selected={false}
+            toggleSelect={[MockFunction]}
           />
         </td>
         <td
@@ -155,10 +154,10 @@ exports[`Table Snapshots can select items 1`] = `
         <td
           className="objectlist-table__td"
         >
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="checkbox"
+          <Selector
+            id={4}
+            selected={false}
+            toggleSelect={[MockFunction]}
           />
         </td>
         <td
@@ -182,10 +181,10 @@ exports[`Table Snapshots can select items 1`] = `
         <td
           className="objectlist-table__td"
         >
-          <input
-            checked={false}
-            onChange={[Function]}
-            type="checkbox"
+          <Selector
+            id={5}
+            selected={false}
+            toggleSelect={[MockFunction]}
           />
         </td>
         <td
