@@ -715,19 +715,25 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
   <div
     className="objectlist-row objectlist-row--justify"
   >
-    <span
-      className="objectlist-results-text"
+    <div
+      className="objectlist-column"
     >
-      573,489 octopi found
-    </span>
-    <div>
-      <a
-        className="objectlist-button objectlist-button--link"
-        href="#"
-        onClick={[Function]}
+      <span
+        className="objectlist-results-text"
       >
-        De-select all
-      </a>
+        573,489 octopi found
+      </span>
+      <div
+        className="objectlist-row"
+      >
+        <a
+          className="objectlist-link"
+          href="#"
+          onClick={[Function]}
+        >
+          De-select all
+        </a>
+      </div>
     </div>
     <div
       className="objectlist-dropdown"
@@ -813,19 +819,25 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
   <div
     className="objectlist-row objectlist-row--justify"
   >
-    <span
-      className="objectlist-results-text"
+    <div
+      className="objectlist-column"
     >
-      573,489 cats found
-    </span>
-    <div>
-      <a
-        className="objectlist-button objectlist-button--link"
-        href="#"
-        onClick={[Function]}
+      <span
+        className="objectlist-results-text"
       >
-        De-select all
-      </a>
+        573,489 cats found
+      </span>
+      <div
+        className="objectlist-row"
+      >
+        <a
+          className="objectlist-link"
+          href="#"
+          onClick={[Function]}
+        >
+          De-select all
+        </a>
+      </div>
     </div>
     <a
       href="http://thecatapi.com/api/images/get?format=src&type=gif"
@@ -1562,11 +1574,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
   <div
     className="objectlist-row objectlist-row--justify"
   >
-    <span
-      className="objectlist-results-text"
+    <div
+      className="objectlist-column"
     >
-      1 thing found
-    </span>
+      <span
+        className="objectlist-results-text"
+      >
+        1 thing found
+      </span>
+    </div>
     <div
       className="objectlist-dropdown"
     >
@@ -2316,19 +2332,25 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
   <div
     className="objectlist-row objectlist-row--justify"
   >
-    <span
-      className="objectlist-results-text"
+    <div
+      className="objectlist-column"
     >
-      573,489 dogs found
-    </span>
-    <div>
-      <a
-        className="objectlist-button objectlist-button--link"
-        href="#"
-        onClick={[Function]}
+      <span
+        className="objectlist-results-text"
       >
-        De-select all
-      </a>
+        573,489 dogs found
+      </span>
+      <div
+        className="objectlist-row"
+      >
+        <a
+          className="objectlist-link"
+          href="#"
+          onClick={[Function]}
+        >
+          De-select all
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -3053,19 +3075,25 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
   <div
     className="objectlist-row objectlist-row--justify"
   >
-    <span
-      className="objectlist-results-text"
+    <div
+      className="objectlist-column"
     >
-      573,489 mouses found
-    </span>
-    <div>
-      <a
-        className="objectlist-button objectlist-button--link"
-        href="#"
-        onClick={[Function]}
+      <span
+        className="objectlist-results-text"
       >
-        De-select all
-      </a>
+        573,489 mouses found
+      </span>
+      <div
+        className="objectlist-row"
+      >
+        <a
+          className="objectlist-link"
+          href="#"
+          onClick={[Function]}
+        >
+          De-select all
+        </a>
+      </div>
     </div>
   </div>
 </div>

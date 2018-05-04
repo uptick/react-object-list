@@ -152,19 +152,25 @@ exports[`Storyshots object-list all selected 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        200 items found
-      </span>
-      <div>
-        <a
-          className="objectlist-button objectlist-button--link"
-          href="#"
-          onClick={[Function]}
+        <span
+          className="objectlist-results-text"
         >
-          De-select all
-        </a>
+          200 items found
+        </span>
+        <div
+          className="objectlist-row"
+        >
+          <a
+            className="objectlist-link"
+            href="#"
+            onClick={[Function]}
+          >
+            De-select all
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -741,28 +747,35 @@ exports[`Storyshots object-list can select all 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        200 items found
-      </span>
-      <div>
-        <a
-          className="objectlist-button objectlist-button--link"
-          href="#"
-          onClick={[Function]}
+        <span
+          className="objectlist-results-text"
         >
-          Select all 
-          200
-           items
-        </a>
-        <a
-          className="objectlist-button objectlist-button--link"
-          href="#"
-          onClick={[Function]}
+          200 items found
+        </span>
+        <div
+          className="objectlist-row"
         >
-          De-select all
-        </a>
+          <a
+            className="objectlist-link"
+            href="#"
+            onClick={[Function]}
+          >
+            Select all 
+            200
+             
+            items
+          </a>
+          <a
+            className="objectlist-link"
+            href="#"
+            onClick={[Function]}
+          >
+            De-select all
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -1339,11 +1352,15 @@ exports[`Storyshots object-list can select items 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        200 items found
-      </span>
+        <span
+          className="objectlist-results-text"
+        >
+          200 items found
+        </span>
+      </div>
     </div>
   </div>
   <div
@@ -2264,11 +2281,15 @@ exports[`Storyshots object-list has active filters 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        200 items found
-      </span>
+        <span
+          className="objectlist-results-text"
+        >
+          200 items found
+        </span>
+      </div>
     </div>
   </div>
   <div
@@ -2630,11 +2651,15 @@ exports[`Storyshots object-list has error 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        200 items found
-      </span>
+        <span
+          className="objectlist-results-text"
+        >
+          200 items found
+        </span>
+      </div>
       <div
         className="objectlist-dropdown"
       >
@@ -3552,28 +3577,35 @@ exports[`Storyshots object-list has everything 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        200 items found
-      </span>
-      <div>
-        <a
-          className="objectlist-button objectlist-button--link"
-          href="#"
-          onClick={[Function]}
+        <span
+          className="objectlist-results-text"
         >
-          Select all 
-          200
-           items
-        </a>
-        <a
-          className="objectlist-button objectlist-button--link"
-          href="#"
-          onClick={[Function]}
+          200 items found
+        </span>
+        <div
+          className="objectlist-row"
         >
-          De-select all
-        </a>
+          <a
+            className="objectlist-link"
+            href="#"
+            onClick={[Function]}
+          >
+            Select all 
+            200
+             
+            items
+          </a>
+          <a
+            className="objectlist-link"
+            href="#"
+            onClick={[Function]}
+          >
+            De-select all
+          </a>
+        </div>
       </div>
       <a
         href="http://thecatapi.com/api/images/get?format=src&type=gif"
@@ -4143,11 +4175,15 @@ exports[`Storyshots object-list has multiple pages 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        200 items found
-      </span>
+        <span
+          className="objectlist-results-text"
+        >
+          200 items found
+        </span>
+      </div>
     </div>
   </div>
   <div
@@ -4606,11 +4642,15 @@ exports[`Storyshots object-list has optional fields 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        200 items found
-      </span>
+        <span
+          className="objectlist-results-text"
+        >
+          200 items found
+        </span>
+      </div>
       <div
         className="objectlist-dropdown"
       >
@@ -5105,11 +5145,15 @@ exports[`Storyshots object-list has search key 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        200 items found
-      </span>
+        <span
+          className="objectlist-results-text"
+        >
+          200 items found
+        </span>
+      </div>
     </div>
   </div>
   <div
@@ -5568,11 +5612,15 @@ exports[`Storyshots object-list loading 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        Loading items...
-      </span>
+        <span
+          className="objectlist-results-text"
+        >
+          Loading items...
+        </span>
+      </div>
     </div>
   </div>
   <div
@@ -6041,11 +6089,15 @@ exports[`Storyshots object-list ready 1`] = `
     <div
       className="objectlist-row objectlist-row--justify"
     >
-      <span
-        className="objectlist-results-text"
+      <div
+        className="objectlist-column"
       >
-        No items found
-      </span>
+        <span
+          className="objectlist-results-text"
+        >
+          No items found
+        </span>
+      </div>
     </div>
   </div>
   <div
