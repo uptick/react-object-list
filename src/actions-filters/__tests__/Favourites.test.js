@@ -70,12 +70,12 @@ describe('Favourites', () => {
         expect(instance.state.favouritesOpen).toBe(false)
       })
 
-      it('opens dropdown on a child element of dorpdown pressed', () => {
+      it('opens dropdown on a child element of dropdown pressed', () => {
         instance.handleDropdown({
           target: {
             parentElement: {
               parentElement: {
-                classList: ['objectlist-dropdown'],
+                className: 'objectlist-dropdown',
               },
             },
           },
