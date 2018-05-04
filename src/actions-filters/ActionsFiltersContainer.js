@@ -6,7 +6,6 @@ import SelectFilters from './SelectFilters'
 import Favourites from './Favourites'
 import OptionalFields from './OptionalFields'
 import SelectAllAction from './SelectAllAction'
-import {SearchFilter} from '../filters'
 import {
   COLUMN_TYPE,
   FILTER_BASE_TYPE,
@@ -101,7 +100,6 @@ class ActionsFilterContainer extends Component {
       if (search) {
         search = {
           ...search,
-          Renderer: SearchFilter,
           value: search.value || '',
           permanent: true,
           active: true,
