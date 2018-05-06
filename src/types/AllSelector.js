@@ -37,7 +37,7 @@ class AllSelector extends React.Component {
   }
 
   __setIndeterminate = (numSelected, total) => {
-    ReactDOM.findDOMNode(this).indeterminate = (numSelected > 0 && numSelected < total)
+    this.checkbox.indeterminate = (numSelected > 0 && numSelected < total)
   }
 
   componentDidMount() {
@@ -57,6 +57,7 @@ class AllSelector extends React.Component {
         type="checkbox"
         checked={total > 0 && numSelected >= total}
         onChange={this.handleChange}
+        ref={elem => { this.checkbox = elem }}
       />
     )
   }

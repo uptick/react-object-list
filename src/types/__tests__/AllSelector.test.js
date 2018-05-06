@@ -6,6 +6,9 @@ import {
 import { AllSelector } from '../'
 
 describe('Selector type', () => {
+  beforeAll(() => {
+    spyOn(AllSelector.prototype, 'componentDidMount')
+  })
   describe('Snapshots', () => {
     it('renders default', () => {
       snapshotTest(<AllSelector />)
@@ -16,7 +19,6 @@ describe('Selector type', () => {
   })
   describe('Lifecycle', () => {
     it('updates interdeterminateness when props changed', () => {
-      spyOn(AllSelector.prototype, 'componentDidMount')
       const wrapper = shallow(<AllSelector />)
       const instance = wrapper.instance()
       spyOn(instance, '__setIndeterminate')
