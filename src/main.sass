@@ -107,6 +107,9 @@ $input-height: 36px - $spacing - ($border-width * 2)
   text-decoration: underline
   color: $link-color
 
+.objectlist-link
+  margin: $spacing
+
 .objectlist-dropdown
   font-family: $font
   position: relative
@@ -158,6 +161,12 @@ $input-height: 36px - $spacing - ($border-width * 2)
 
 .objectlist-dropdown__icon
   padding-right: 5px
+
+.objectlist-column
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  flex-direction: column
 
 .objectlist-row
   font-family: $font
@@ -239,6 +248,7 @@ $input-height: 36px - $spacing - ($border-width * 2)
     height: auto
     line-height: 1em
     padding: 0
+    padding-bottom: 2px
     >input
       padding: 0
   &.is-open
@@ -250,6 +260,7 @@ $input-height: 36px - $spacing - ($border-width * 2)
   .Select-placeholder
     margin-left: 1.5em
     padding: $spacing / 2
+    line-height: 2em
   .Select-input:before
     margin-right: 0.5em
     content: "\f0b0"

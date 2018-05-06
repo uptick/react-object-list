@@ -6,7 +6,6 @@ import SelectFilters from './SelectFilters'
 import Favourites from './Favourites'
 import OptionalFields from './OptionalFields'
 import SelectAllAction from './SelectAllAction'
-import {SearchFilter} from '../filters'
 import {
   COLUMN_TYPE,
   FILTER_BASE_TYPE,
@@ -101,7 +100,6 @@ class ActionsFilterContainer extends Component {
       if (search) {
         search = {
           ...search,
-          Renderer: SearchFilter,
           value: search.value || '',
           permanent: true,
           active: true,
@@ -140,20 +138,23 @@ class ActionsFilterContainer extends Component {
         />
         {/* TODO: render children below filters */}
         <div className="objectlist-row objectlist-row--justify">
-          <span className="objectlist-results-text">
-            {loading ? `Loading ${itemPluralName}...` : (
-              `${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount === 1 ? itemSingleName : itemPluralName} found`
+          <div className="objectlist-column">
+            <span className="objectlist-results-text">
+              {loading ? `Loading ${itemPluralName}...` : (
+                `${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount === 1 ? itemSingleName : itemPluralName} found`
+              )}
+            </span>
+            {this.props.status === STATUS_CHOICES.done && (
+              <SelectAllAction
+                count={this.props.meta.totalCount}
+                itemCount={itemCount}
+                itemPluralName={itemPluralName}
+                numSelected={numSelected}
+                selectAll={this.props.selectAll}
+                deselectAll={this.props.deselectAll}
+              />
             )}
-          </span>
-          {this.props.status === STATUS_CHOICES.done && (
-            <SelectAllAction
-              count={this.props.meta.totalCount}
-              itemCount={itemCount}
-              numSelected={numSelected}
-              selectAll={this.props.selectAll}
-              deselectAll={this.props.deselectAll}
-            />
-          )}
+          </div>
           {customActions.map((action, i) => action({
             selection,
             itemCount,
