@@ -7,7 +7,7 @@ jest.mock('@storybook/addon-info', () => ({
 initStoryshots({
   test: multiSnapshotWithOptions({
     createNodeMock: elem => {
-      if (elem.type === 'input') {
+      if (elem.type === 'input' && elem.props.type === 'checkbox') {
         const ref = document.createElement('input')
         ref.setAttribute('type', 'checkbox')
         elem.checkbox = ref
