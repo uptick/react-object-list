@@ -88,8 +88,7 @@ describe('Table', () => {
     it('handles select all', () => {
       spyOn(props, 'select')
       const instance = shallow(<Table {...props} />).instance()
-      expect(instance.allSelected()).toBe(false)
-      instance.handleToggleSelectAll()
+      instance.handleSelectAll()
       expect(props.select).toHaveBeenCalledWith(props.data.map(row => row.id))
     })
     it('handles deselect all', () => {
@@ -103,8 +102,7 @@ describe('Table', () => {
           selection={allSelection}
         />
       ).instance()
-      expect(instance.allSelected()).toBe(true)
-      instance.handleToggleSelectAll()
+      instance.handleDeselectAll()
       expect(props.select).toHaveBeenCalledWith(null)
     })
     it('handles select remaining', () => {
@@ -117,8 +115,7 @@ describe('Table', () => {
           selection={mockSelection}
         />
       ).instance()
-      expect(instance.allSelected()).toBe(false)
-      instance.handleToggleSelectAll()
+      instance.handleSelectAll()
       expect(props.select).toHaveBeenCalledWith([2, 4, 5])
     })
   })
