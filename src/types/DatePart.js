@@ -16,7 +16,6 @@ class DatePart extends React.Component {
     return (
       <DateTime
         {...this.props}
-        dateOnly
       />
     )
   }
