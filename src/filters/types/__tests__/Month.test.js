@@ -79,7 +79,8 @@ describe('Month', () => {
       const date = Moment({year: mockYear, month: mockMonth})
       instance.handleValueChange(mockYear, mockMonth + 1)
       expect(instance.state.textValue).toBe(date.format(instance.props.format))
-      expect(baseProps.onChange).toHaveBeenCalledWith(date)
+      const arg = baseProps.onChange.calls.mostRecent().args
+      expect(arg.toString()).toEqual(date.toString())
     })
   })
 })
