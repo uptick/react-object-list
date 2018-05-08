@@ -226,7 +226,7 @@ exports[`Storyshots object-list/Filters DateFilter 1`] = `
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       placeholder="15/07/2017"
-      value=""
+      value="15/07/2017"
     />
   </div>
   <button
