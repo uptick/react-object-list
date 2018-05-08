@@ -46,18 +46,18 @@ exports[`DateTime Snapshots parses dates 6`] = `
 
 exports[`DateTime Snapshots parses dates 7`] = `
 <div>
-  1st Jan 2017 12:00am - 1st Feb 2017 12:00am
+  1st Jan 2017 10:00am - 1st Feb 2017 10:00am
 </div>
 `;
 
 exports[`DateTime Snapshots parses dates 8`] = `
 <div>
-  1st Jan 2017 12:00am - 1st Feb 2017 12:00am
+  1st Jan 2017 10:00am - 1st Feb 2017 10:00am
 </div>
 `;
 
 exports[`DateTime Snapshots parses dates 9`] = `
 <div>
-  1st Jan 2017 12:00am to 1st Feb 2017 12:00am
+  1st Jan 2017 10:00am to 1st Feb 2017 10:00am
 </div>
 `;

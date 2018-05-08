@@ -8,15 +8,15 @@ import { DateTime } from '../'
 describe('DateTime', () => {
   describe('Snapshots', () => {
     it('parses dates', () => {
-      const date = Moment('2017-01-01')
-      const laterDate = Moment('2017-02-01')
+      const date = Moment.utc('2017-01-01')
+      const laterDate = Moment.utc('2017-02-01')
       const testValues = [
         {},
         {empty: 'No content'},
         {value: date},
         {value: date, outputFormat: SHORTDATE_FORMAT},
-        {value: '2018-02-07', outputFormat: SHORTDATE_FORMAT, dateOnly: true},
-        {value: '2018-02-07 14:00:11', outputFormat: SHORTDATE_FORMAT, dateOnly: true},
+        {value: '2018-02-07', outputFormat: SHORTDATE_FORMAT},
+        {value: '2018-02-07 14:00:11', outputFormat: SHORTDATE_FORMAT},
         {value: [date, laterDate]},
         {value: {start: date, end: laterDate}},
         {value: {start: date, end: laterDate}, seperator: 'to'},
