@@ -28,14 +28,6 @@ describe('DateTime', () => {
   })
   describe('Functions', () => {
     describe('Format date time', () => {
-      it('handles errors in utc', () => {
-        const dateString = '2018-02-07'
-        const instance = shallow(<DateTime dateOnly outputFormat="DD/MM/YY" />).instance()
-        spyOn(Moment, 'utc').and.callFake(() => { throw new Error('BAD') })
-        const result = instance.formatDateTime(dateString)
-        expect(Moment.utc).toHaveBeenCalledWith(dateString, API_DATE_FORMAT)
-        expect(result).toBe('07/02/18')
-      })
       it('returns empty if date invalid', () => {
         spyOn(console, 'warn')
         const dateString = 'abcdef'

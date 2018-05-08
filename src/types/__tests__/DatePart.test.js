@@ -7,6 +7,6 @@ import DateTime from '../DateTime'
 describe('DatePart type', () => {
   test('contained check', () => {
     const datepart = shallow(<DatePart />)
-    expect(datepart.equals(<DateTime outputFormat={DATE_FORMAT} dateOnly />)).toBe(true)
+    expect(datepart.equals(<DateTime outputFormat={DATE_FORMAT} />)).toBe(true)
   })
 })

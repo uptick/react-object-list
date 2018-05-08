@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 
 import {
   DATETIME_FORMAT,
-  API_DATE_FORMAT,
 } from '../utils'
 
 /**
@@ -22,8 +21,6 @@ class DateTime extends React.Component {
     empty: PropTypes.string,
     /** the separator used when multiple dates are provided */
     seperator: PropTypes.string,
-    /** if only parsing date */
-    dateOnly: PropTypes.bool,
   }
   static defaultProps = {
     outputFormat: DATETIME_FORMAT,
@@ -38,16 +35,11 @@ class DateTime extends React.Component {
    * @return {string}      Formatted date string or empty
    */
   formatDateTime(date) {
-    if (this.props.dateOnly) {
-      try {
-        date = Moment.utc(date, API_DATE_FORMAT)
-      } catch (e) {
-        date = Moment(date)
-      }
-    } else {
-      date = Moment(date)
+    date = Moment.utc(date)
+    if (date.isValid()) {
+      return date.local().format(this.props.outputFormat)
     }
-    return `${date.isValid() ? date.format(this.props.outputFormat) : this.props.empty}`
+    return this.props.empty
   }
   /**
    * Return date range with dates formatted as specified
