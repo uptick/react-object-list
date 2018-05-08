@@ -20,6 +20,7 @@ exports[`Date Snapshots has custom input format 1`] = `
   onDayChange={[Function]}
   parseDate={[Function]}
   placeholder="15th Jul 17"
+  value="15th Jul 17"
 />
 `;
 
@@ -67,6 +68,7 @@ exports[`Date Snapshots has null value 1`] = `
   onDayChange={[Function]}
   parseDate={[Function]}
   placeholder=""
+  value=""
 />
 `;
 
@@ -90,6 +92,7 @@ exports[`Date Snapshots renders default 1`] = `
   onDayChange={[Function]}
   parseDate={[Function]}
   placeholder="15/07/2017"
+  value="15/07/2017"
 />
 `;
 
