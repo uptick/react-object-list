@@ -39,7 +39,7 @@ export default class FavouritesItem extends React.Component {
   render() {
     return (
       <div
-        className={ClassNames('objectlist-dropdown__item', {
+        className={ClassNames('objectlist-dropdown__item objectlist-dropdown__item--favourite', {
           'objectlist-dropdown__item--selected': this.props.isSelected,
         })}
         onClick={this.handleClick}>
