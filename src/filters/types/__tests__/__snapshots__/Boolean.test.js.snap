@@ -2,7 +2,7 @@
 
 exports[`Boolean Snapshots has custom labels 1`] = `
 <Choice
-  onChange={[MockFunction]}
+  onChange={[Function]}
   options={
     Array [
       Object {
@@ -21,7 +21,7 @@ exports[`Boolean Snapshots has custom labels 1`] = `
 
 exports[`Boolean Snapshots renders false 1`] = `
 <Choice
-  onChange={[MockFunction]}
+  onChange={[Function]}
   options={
     Array [
       Object {
@@ -40,7 +40,7 @@ exports[`Boolean Snapshots renders false 1`] = `
 
 exports[`Boolean Snapshots renders true 1`] = `
 <Choice
-  onChange={[MockFunction]}
+  onChange={[Function]}
   options={
     Array [
       Object {
