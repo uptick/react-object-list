@@ -47,7 +47,7 @@ class OptionalFields extends Component {
       } else if (event.target) {
         let el = event.target.parentElement
         while (el) {
-          if (el.className && el.className.includes('objectlist-dropdown')) {
+          if (el === this.optionalFieldsDropdown) {
             newState.optionalFieldsOpen = true
             break
           }
