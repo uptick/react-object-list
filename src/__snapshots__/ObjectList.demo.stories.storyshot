@@ -740,6 +740,13 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             >
               First Name
             </div>
+            <div
+              className={undefined}
+              onClick={[Function]}
+              role="button"
+            >
+              Last Name
+            </div>
           </th>
           <th
             className="objectlist-table__th "

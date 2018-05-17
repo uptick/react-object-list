@@ -31,5 +31,14 @@ exports[`Table Header Snapshots renders correctly with multiple header items 1`]
     sortKey="🍬"
     updateSorting={undefined}
   />
+  <HeaderField
+    activeSort={null}
+    dataKey="header_two_key"
+    header="Header Two Text"
+    item={[MockFunction]}
+    optional={false}
+    sortKey="🍬"
+    updateSorting={undefined}
+  />
 </th>
 `;
