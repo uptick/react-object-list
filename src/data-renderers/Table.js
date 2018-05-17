@@ -86,9 +86,6 @@ export default class TableRenderer extends Component {
             const RenderedItems = []
             let i = 0
             while (i < toRender.length) {
-              if (i > 0) {
-                RenderedItems.push(<br key={`spacer-${i}`} />)
-              }
               const RenderItem = toRender[i]
               if (RenderItem.item) {
                 RenderedItems.push(RenderItem.item({
@@ -98,7 +95,7 @@ export default class TableRenderer extends Component {
                   key: `item-${i}`,
                 }))
               } else {
-                RenderedItems.push(row[RenderItem.dataKey])
+                RenderedItems.push(getValueFromAccessor(row, RenderItem.dataKey))
               }
               i++
             }
