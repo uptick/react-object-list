@@ -509,78 +509,6 @@ exports[`Storyshots object-list/Filters MultiChoiceFilter 1`] = `
 </div>
 `;
 
-exports[`Storyshots object-list/Filters NumberSliderFilter 1`] = `
-<div
-  className="objectlist-row"
->
-  <label
-    className="objectlist-current-filter__filter-name"
-  >
-    Filter by
-    :
-  </label>
-  <div
-    className="objectlist-current-filter__filter-comparison"
-  >
-    <Select
-      clearable={false}
-      onChange={[Function]}
-      options={
-        Array [
-          Object {
-            "label": "Exact",
-            "value": "exact",
-          },
-          Object {
-            "label": "Greater than",
-            "value": "gt",
-          },
-          Object {
-            "label": "Less than",
-            "value": "lt",
-          },
-          Object {
-            "label": "Greater than or equal",
-            "value": "gte",
-          },
-          Object {
-            "label": "Less than or equal",
-            "value": "lte",
-          },
-        ]
-      }
-      value="exact"
-    />
-  </div>
-  <div
-    className="objectlist-row objectlist-current-filter__active-status"
-  >
-    <input
-      className="objectlist-input objectlist-input__number-slider--number"
-      max={100}
-      min={0}
-      onChange={[Function]}
-      type="number"
-      value={45}
-    />
-    <input
-      className="objectlist-input__number-slider--slider"
-      max={100}
-      min={0}
-      onChange={[Function]}
-      onMouseUp={[Function]}
-      type="range"
-      value={45}
-    />
-  </div>
-  <button
-    className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
-    onClick={[Function]}
-    title="Remove Filter"
-  />
-</div>
-`;
-
 exports[`Storyshots object-list/Filters RemoteChoiceFilter 1`] = `
 <div
   className="objectlist-row"
@@ -719,6 +647,302 @@ exports[`Storyshots object-list/Filters TextContainsFilter 1`] = `
     type="text"
     value=""
   />
+  <button
+    className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+    onClick={[Function]}
+    title="Remove Filter"
+  />
+</div>
+`;
+
+exports[`Storyshots object-list/Filters/NumberSliderFilter Decimal logarithmic with fixed range 1`] = `
+<div
+  className="objectlist-row"
+>
+  <label
+    className="objectlist-current-filter__filter-name"
+  >
+    Filter by
+    :
+  </label>
+  <div
+    className="objectlist-current-filter__filter-comparison"
+  >
+    <Select
+      clearable={false}
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "Exact",
+            "value": "exact",
+          },
+          Object {
+            "label": "Greater than",
+            "value": "gt",
+          },
+          Object {
+            "label": "Less than",
+            "value": "lt",
+          },
+          Object {
+            "label": "Greater than or equal",
+            "value": "gte",
+          },
+          Object {
+            "label": "Less than or equal",
+            "value": "lte",
+          },
+        ]
+      }
+      value="exact"
+    />
+  </div>
+  <div
+    className="objectlist-row objectlist-current-filter__active-status"
+  >
+    <input
+      className="objectlist-input objectlist-input__number-slider--number"
+      max={25}
+      min={20}
+      onChange={[Function]}
+      step={0.1}
+      type="number"
+      value="21.5"
+    />
+    <input
+      className="objectlist-input__number-slider--slider"
+      max={25}
+      min={20}
+      onChange={[Function]}
+      onMouseUp={[Function]}
+      step="any"
+      type="range"
+      value={22.841008620334975}
+    />
+  </div>
+  <button
+    className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+    onClick={[Function]}
+    title="Remove Filter"
+  />
+</div>
+`;
+
+exports[`Storyshots object-list/Filters/NumberSliderFilter Decimal with fixed range 1`] = `
+<div
+  className="objectlist-row"
+>
+  <label
+    className="objectlist-current-filter__filter-name"
+  >
+    Filter by
+    :
+  </label>
+  <div
+    className="objectlist-current-filter__filter-comparison"
+  >
+    <Select
+      clearable={false}
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "Exact",
+            "value": "exact",
+          },
+          Object {
+            "label": "Greater than",
+            "value": "gt",
+          },
+          Object {
+            "label": "Less than",
+            "value": "lt",
+          },
+          Object {
+            "label": "Greater than or equal",
+            "value": "gte",
+          },
+          Object {
+            "label": "Less than or equal",
+            "value": "lte",
+          },
+        ]
+      }
+      value="exact"
+    />
+  </div>
+  <div
+    className="objectlist-row objectlist-current-filter__active-status"
+  >
+    <input
+      className="objectlist-input objectlist-input__number-slider--number"
+      max={25}
+      min={20}
+      onChange={[Function]}
+      step={0.1}
+      type="number"
+      value="21.5"
+    />
+    <input
+      className="objectlist-input__number-slider--slider"
+      max={25}
+      min={20}
+      onChange={[Function]}
+      onMouseUp={[Function]}
+      step="any"
+      type="range"
+      value={21.5}
+    />
+  </div>
+  <button
+    className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+    onClick={[Function]}
+    title="Remove Filter"
+  />
+</div>
+`;
+
+exports[`Storyshots object-list/Filters/NumberSliderFilter Logarithmic 1`] = `
+<div
+  className="objectlist-row"
+>
+  <label
+    className="objectlist-current-filter__filter-name"
+  >
+    Filter by
+    :
+  </label>
+  <div
+    className="objectlist-current-filter__filter-comparison"
+  >
+    <Select
+      clearable={false}
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "Exact",
+            "value": "exact",
+          },
+          Object {
+            "label": "Greater than",
+            "value": "gt",
+          },
+          Object {
+            "label": "Less than",
+            "value": "lt",
+          },
+          Object {
+            "label": "Greater than or equal",
+            "value": "gte",
+          },
+          Object {
+            "label": "Less than or equal",
+            "value": "lte",
+          },
+        ]
+      }
+      value="exact"
+    />
+  </div>
+  <div
+    className="objectlist-row objectlist-current-filter__active-status"
+  >
+    <input
+      className="objectlist-input objectlist-input__number-slider--number"
+      max={100}
+      min={0}
+      onChange={[Function]}
+      step={1}
+      type="number"
+      value="45"
+    />
+    <input
+      className="objectlist-input__number-slider--slider"
+      max={100}
+      min={0}
+      onChange={[Function]}
+      onMouseUp={[Function]}
+      step="any"
+      type="range"
+      value={70.32913781186613}
+    />
+  </div>
+  <button
+    className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+    onClick={[Function]}
+    title="Remove Filter"
+  />
+</div>
+`;
+
+exports[`Storyshots object-list/Filters/NumberSliderFilter Standard 1`] = `
+<div
+  className="objectlist-row"
+>
+  <label
+    className="objectlist-current-filter__filter-name"
+  >
+    Filter by
+    :
+  </label>
+  <div
+    className="objectlist-current-filter__filter-comparison"
+  >
+    <Select
+      clearable={false}
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "Exact",
+            "value": "exact",
+          },
+          Object {
+            "label": "Greater than",
+            "value": "gt",
+          },
+          Object {
+            "label": "Less than",
+            "value": "lt",
+          },
+          Object {
+            "label": "Greater than or equal",
+            "value": "gte",
+          },
+          Object {
+            "label": "Less than or equal",
+            "value": "lte",
+          },
+        ]
+      }
+      value="exact"
+    />
+  </div>
+  <div
+    className="objectlist-row objectlist-current-filter__active-status"
+  >
+    <input
+      className="objectlist-input objectlist-input__number-slider--number"
+      max={100}
+      min={0}
+      onChange={[Function]}
+      step={1}
+      type="number"
+      value="45"
+    />
+    <input
+      className="objectlist-input__number-slider--slider"
+      max={100}
+      min={0}
+      onChange={[Function]}
+      onMouseUp={[Function]}
+      step="any"
+      type="range"
+      value={45}
+    />
+  </div>
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}

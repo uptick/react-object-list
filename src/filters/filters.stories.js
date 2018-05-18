@@ -66,14 +66,6 @@ storiesOf('object-list/Filters', module)
       value={Moment(1519809160079)}
     />
   ))
-  .add('NumberSliderFilter', () => (
-    <NumberSliderFilter
-      {...baseProps}
-      name="Filter by"
-      filterKey="filterkey"
-      value={45}
-    />
-  ))
   .add('RemoteChoiceFilter', () => (
     <RemoteChoiceFilter
       {...baseProps}
@@ -128,5 +120,50 @@ storiesOf('object-list/Filters', module)
       {...baseProps}
       name="Filter by"
       filterKey="filterkey"
+    />
+  ))
+
+storiesOf('object-list/Filters/NumberSliderFilter', module)
+  .addDecorator((story, context) => withInfo(
+    'Number Slider filter user to select any number in a range'
+  )(story)(context))
+  .add('Standard', () => (
+    <NumberSliderFilter
+      {...baseProps}
+      name="Filter by"
+      filterKey="filterkey"
+      value={45}
+    />
+  ))
+  .add('Decimal with fixed range', () => (
+    <NumberSliderFilter
+      {...baseProps}
+      name="Filter by"
+      filterKey="filterkey"
+      value={21.5}
+      precision={1}
+      min={20}
+      max={25}
+    />
+  ))
+  .add('Logarithmic', () => (
+    <NumberSliderFilter
+      {...baseProps}
+      name="Filter by"
+      filterKey="filterkey"
+      value={45}
+      logarithmic
+    />
+  ))
+  .add('Decimal logarithmic with fixed range', () => (
+    <NumberSliderFilter
+      {...baseProps}
+      name="Filter by"
+      filterKey="filterkey"
+      logarithmic
+      value={21.5}
+      precision={1}
+      min={20}
+      max={25}
     />
   ))

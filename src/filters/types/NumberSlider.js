@@ -15,16 +15,27 @@ class NumberSlider extends React.Component {
     value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     /** Function to call when value changed */
     onChange: PropTypes.func,
+    /** True if logarithmic value increase enabled */
+    logarithmic: PropTypes.bool,
+    /** Decimal places allowed */
+    precision: PropTypes.number,
   }
 
   static defaultProps = {
     value: '',
     min: 0,
     max: 100,
+    logarithmic: false,
+    precision: 0,
   }
 
-  state = {
-    currentValue: this.props.value,
+  constructor(props) {
+    super(props)
+    this.state = {
+      ...this.state,
+      currentValue: props.value || props.min,
+      sliderValue: props.value ? this.getValueForSlider(props.value) : props.min,
+    }
   }
 
   componentWillReceiveProps(nextProps) {
@@ -36,14 +47,73 @@ class NumberSlider extends React.Component {
   /**
    * Handles number input change.
    * Calls onChange with the current value.
-   * @param  {Object} input Input object
-   * @param {number}  input.value Integer
+   * @param  {event} event onChange event object
    */
   handleValueChange = (event) => {
-    const newValue = event.target.value
+    const {precision} = this.props
+    const value = parseFloat(event.target.value)
     this.setState(
-      () => ({currentValue: newValue}), this.props.onChange(newValue)
+      () => ({
+        currentValue: value,
+        sliderValue: this.getValueForSlider(value),
+      }), () => {
+        const roundedValue = value.toFixed(precision)
+        this.props.onChange(roundedValue)
+      }
     )
+  }
+
+  /**
+   * Handles slider onMouseUp.
+   * Calls onChange with the current translated value.
+   * @param  {event} event onMouseUp event object
+   */
+  handleSliderValueFinalise = (event) => {
+    const {precision} = this.props
+    const value = parseFloat(event.target.value)
+    const finalValue = this.getValueFromSlider(value)
+    this.setState(
+      () => ({
+        currentValue: finalValue,
+        sliderValue: value,
+      }), () => {
+        const roundedValue = finalValue.toFixed(precision)
+        this.props.onChange(roundedValue)
+      }
+    )
+  }
+
+  /**
+   * Translates slider event value into valid output value
+   * If not using logarithmic, this will be the same
+   * @param  {number} input Number returned by slider
+   * @return {number}       Number stored in state
+   */
+  getValueFromSlider = input => {
+    const {min, max, logarithmic} = this.props
+    let value = parseFloat(input)
+    if (logarithmic) {
+      const range = max - min
+      const fractionAlongSlider = (value - min) / range
+      value = (range * ((10 ** fractionAlongSlider) - 1) / (10 - 1)) + min
+    }
+    return value
+  }
+
+  /**
+   * Translates current value into a slider value
+   * If not using logarithmic this will be the same
+   * @param  {number} input Actual value
+   * @return {number}       Value translated for slider
+   */
+  getValueForSlider = input => {
+    const {min, max, logarithmic} = this.props
+    let value = parseFloat(input)
+    if (logarithmic) {
+      const range = max - min
+      value = min + (range * Math.log10(((value - min) * (10 - 1) / range) + 1))
+    }
+    return value
   }
 
   /**
@@ -51,29 +121,38 @@ class NumberSlider extends React.Component {
    * Sets state to final value
    */
   handleSliderValueChange = (event) => {
-    const newValue = event.target.value
-    this.setState(() => ({currentValue: newValue}))
+    const value = event.target.value
+    this.setState(() => ({
+      currentValue: this.getValueFromSlider(value),
+      sliderValue: value,
+    }))
   }
 
   render() {
+    const {min, max, precision} = this.props
+    const {currentValue, sliderValue} = this.state
+    const step = 1 / (10 ** (precision))
+    const display = currentValue.toFixed(precision)
     return (
       <div className="objectlist-row objectlist-current-filter__active-status">
         <input
           type="number"
           className="objectlist-input objectlist-input__number-slider--number"
-          min={this.props.min}
-          max={this.props.max}
-          value={this.state.currentValue}
+          min={min}
+          max={max}
+          value={display}
           onChange={this.handleValueChange}
+          step={step}
         />
         <input
           type="range"
           className="objectlist-input__number-slider--slider"
-          value={this.state.currentValue}
+          value={sliderValue}
           onChange={this.handleSliderValueChange}
-          onMouseUp={this.handleValueChange}
-          min={this.props.min}
-          max={this.props.max}
+          onMouseUp={this.handleSliderValueFinalise}
+          step="any"
+          min={min}
+          max={max}
         />
       </div>
     )

@@ -588,8 +588,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           max={100}
           min={0}
           onChange={[Function]}
+          step={1}
           type="number"
-          value=""
+          value="0"
         />
         <input
           className="objectlist-input__number-slider--slider"
@@ -597,8 +598,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           min={0}
           onChange={[Function]}
           onMouseUp={[Function]}
+          step="any"
           type="range"
-          value=""
+          value={0}
         />
       </div>
       <button
@@ -1491,8 +1493,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
           max={100}
           min={0}
           onChange={[Function]}
+          step={1}
           type="number"
-          value=""
+          value="0"
         />
         <input
           className="objectlist-input__number-slider--slider"
@@ -1500,8 +1503,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
           min={0}
           onChange={[Function]}
           onMouseUp={[Function]}
+          step="any"
           type="range"
-          value=""
+          value={0}
         />
       </div>
       <button
@@ -2306,8 +2310,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
           max={100}
           min={0}
           onChange={[Function]}
+          step={1}
           type="number"
-          value=""
+          value="0"
         />
         <input
           className="objectlist-input__number-slider--slider"
@@ -2315,8 +2320,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
           min={0}
           onChange={[Function]}
           onMouseUp={[Function]}
+          step="any"
           type="range"
-          value=""
+          value={0}
         />
       </div>
       <button
@@ -3088,8 +3094,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
           max={100}
           min={0}
           onChange={[Function]}
+          step={1}
           type="number"
-          value=""
+          value="0"
         />
         <input
           className="objectlist-input__number-slider--slider"
@@ -3097,8 +3104,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
           min={0}
           onChange={[Function]}
           onMouseUp={[Function]}
+          step="any"
           type="range"
-          value=""
+          value={0}
         />
       </div>
       <button
