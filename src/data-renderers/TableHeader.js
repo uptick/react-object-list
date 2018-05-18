@@ -34,10 +34,28 @@ export default class TableHeader extends React.Component {
     sortKeys: [],
   }
 
-  state = {
-    label: this.props.label ? this.props.label : (Array.isArray(this.props.headerItems) ? this.props.headerItems[0].dataKey : this.props.headerItems.dataKey).split('.').pop(),
-    headerItems: Array.isArray(this.props.headerItems) ? this.props.headerItems : [this.props.headerItems],
-    width: (Array.isArray(this.props.headerItems) ? this.props.headerItems[0] : this.props.headerItems).width,
+  constructor(props) {
+    super(props)
+
+    let label = props.label
+    if (!label) {
+      let headerItem = props.headerItems
+      if (Array.isArray(props.headerItems)) {
+        headerItem = props.headerItems[0]
+      }
+      if (headerItem) {
+        label = headerItem.dataKey.split('.').pop()
+      }
+    }
+
+    const headerItems = Array.isArray(props.headerItems) ? props.headerItems : [props.headerItems]
+    const width = (headerItems[0] || {}).width
+
+    this.state = {
+      label,
+      headerItems,
+      width,
+    }
   }
 
   componentWillReceiveProps(nextProps) {

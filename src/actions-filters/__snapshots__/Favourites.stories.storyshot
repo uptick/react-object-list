@@ -24,7 +24,7 @@ exports[`Storyshots object-list/Favourites default view 1`] = `
       className="objectlist-dropdown__menu"
     >
       <div
-        className="objectlist-dropdown__item"
+        className="objectlist-dropdown__item objectlist-dropdown__item--favourite"
         onClick={[Function]}
       >
         <span>
@@ -36,7 +36,7 @@ exports[`Storyshots object-list/Favourites default view 1`] = `
         />
       </div>
       <div
-        className="objectlist-dropdown__item"
+        className="objectlist-dropdown__item objectlist-dropdown__item--favourite"
         onClick={[Function]}
       >
         <span>
@@ -100,7 +100,7 @@ exports[`Storyshots object-list/Favourites interactive 1`] = `
       className="objectlist-dropdown__menu"
     >
       <div
-        className="objectlist-dropdown__item"
+        className="objectlist-dropdown__item objectlist-dropdown__item--favourite"
         onClick={[Function]}
       >
         <span>
@@ -112,7 +112,7 @@ exports[`Storyshots object-list/Favourites interactive 1`] = `
         />
       </div>
       <div
-        className="objectlist-dropdown__item"
+        className="objectlist-dropdown__item objectlist-dropdown__item--favourite"
         onClick={[Function]}
       >
         <span>

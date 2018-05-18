@@ -41,7 +41,7 @@ describe('<OptionalFields />', () => {
         expect(instance.state.optionalFieldsOpen).toBeFalsy()
       })
       it('target contains element', () => {
-        instance.handleDropdown({target: {parentElement: {parentElement: {className: 'objectlist-dropdown heyhey'}}}})
+        instance.handleDropdown({target: {parentElement: {parentElement: instance.optionalFieldsDropdown}}})
         expect(instance.state.optionalFieldsOpen).toBeTruthy()
       })
       it('target is element', () => {

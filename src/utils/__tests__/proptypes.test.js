@@ -14,4 +14,7 @@ describe('custom proptypes', () => {
     const selection = [1, 2, 3]
     expect(SELECTION_TYPE({selection}, 'selection', 'ComponentName')).toEqual(expect.any(Error))
   })
+  it('hanldes a missing prop when required', () => {
+    expect(SELECTION_TYPE.isRequired({}, 'selection', 'ComponentName')).toEqual(expect.any(Error))
+  })
 })

@@ -74,9 +74,7 @@ describe('Favourites', () => {
         instance.handleDropdown({
           target: {
             parentElement: {
-              parentElement: {
-                className: 'objectlist-dropdown',
-              },
+              parentElement: instance.favouritedDropdown,
             },
           },
         })
