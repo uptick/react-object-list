@@ -2253,7 +2253,7 @@ exports[`Storyshots object-list has active filters 1`] = `
             onMouseUp={[Function]}
             step="any"
             type="range"
-            value={0}
+            value="0.0000000000"
           />
         </div>
         <button
@@ -3589,7 +3589,7 @@ exports[`Storyshots object-list has everything 1`] = `
             onMouseUp={[Function]}
             step="any"
             type="range"
-            value={0}
+            value="0.0000000000"
           />
         </div>
         <button

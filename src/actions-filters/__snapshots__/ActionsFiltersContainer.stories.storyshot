@@ -600,7 +600,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           onMouseUp={[Function]}
           step="any"
           type="range"
-          value={0}
+          value="0.0000000000"
         />
       </div>
       <button
@@ -1505,7 +1505,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
           onMouseUp={[Function]}
           step="any"
           type="range"
-          value={0}
+          value="0.0000000000"
         />
       </div>
       <button
@@ -2322,7 +2322,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
           onMouseUp={[Function]}
           step="any"
           type="range"
-          value={0}
+          value="0.0000000000"
         />
       </div>
       <button
@@ -3106,7 +3106,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
           onMouseUp={[Function]}
           step="any"
           type="range"
-          value={0}
+          value="0.0000000000"
         />
       </div>
       <button

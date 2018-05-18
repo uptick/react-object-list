@@ -527,7 +527,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
         onMouseUp={[Function]}
         step="any"
         type="range"
-        value={0}
+        value="0.0000000000"
       />
     </div>
     <button

@@ -73,7 +73,7 @@ describe('NumberSlider', () => {
       const mockValue = Math.floor(Math.random() * 100) + 1
       instance = shallow(<NumberSlider {...baseProps} logarithmic />).instance()
       const actualValue = instance.getValueFromSlider(mockValue)
-      expect(instance.getValueForSlider(actualValue)).toBe(mockValue)
+      expect(instance.getValueForSlider(actualValue)).toBeCloseTo(mockValue, 10)
     })
   })
 })

@@ -17,6 +17,8 @@ class NumberSlider extends React.Component {
     onChange: PropTypes.func,
     /** True if logarithmic value increase enabled */
     logarithmic: PropTypes.bool,
+    /** Base to use for logarithmic increase */
+    logbase: PropTypes.number,
     /** Decimal places allowed */
     precision: PropTypes.number,
   }
@@ -26,6 +28,7 @@ class NumberSlider extends React.Component {
     min: 0,
     max: 100,
     logarithmic: false,
+    logbase: 10,
     precision: 0,
   }
 
@@ -90,12 +93,12 @@ class NumberSlider extends React.Component {
    * @return {number}       Number stored in state
    */
   getValueFromSlider = input => {
-    const {min, max, logarithmic} = this.props
+    const {min, max, logarithmic, logbase} = this.props
     let value = parseFloat(input)
     if (logarithmic) {
       const range = max - min
       const fractionAlongSlider = (value - min) / range
-      value = (range * ((10 ** fractionAlongSlider) - 1) / (10 - 1)) + min
+      value = (range * ((logbase ** fractionAlongSlider) - 1) / (logbase - 1)) + min
     }
     return value
   }
@@ -107,11 +110,12 @@ class NumberSlider extends React.Component {
    * @return {number}       Value translated for slider
    */
   getValueForSlider = input => {
-    const {min, max, logarithmic} = this.props
+    const {min, max, logarithmic, logbase} = this.props
     let value = parseFloat(input)
     if (logarithmic) {
+      const logConst = 1 / Math.log(this.props.logbase)
       const range = max - min
-      value = min + (range * Math.log10(((value - min) * (10 - 1) / range) + 1))
+      value = min + (range * logConst * Math.log(((value - min) * (logbase - 1) / range) + 1))
     }
     return value
   }
@@ -133,6 +137,7 @@ class NumberSlider extends React.Component {
     const {currentValue, sliderValue} = this.state
     const step = 1 / (10 ** (precision))
     const display = currentValue.toFixed(precision)
+    const sliderRoundedValue = parseFloat(sliderValue).toFixed(10)
     return (
       <div className="objectlist-row objectlist-current-filter__active-status">
         <input
@@ -147,7 +152,7 @@ class NumberSlider extends React.Component {
         <input
           type="range"
           className="objectlist-input__number-slider--slider"
-          value={sliderValue}
+          value={sliderRoundedValue}
           onChange={this.handleSliderValueChange}
           onMouseUp={this.handleSliderValueFinalise}
           step="any"

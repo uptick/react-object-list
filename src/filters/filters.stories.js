@@ -167,3 +167,25 @@ storiesOf('object-list/Filters/NumberSliderFilter', module)
       max={25}
     />
   ))
+  .add('Negative decimal logarithmic with fixed range', () => (
+    <NumberSliderFilter
+      {...baseProps}
+      name="Filter by"
+      filterKey="filterkey"
+      logarithmic
+      value={-0.15}
+      precision={2}
+      min={-0.2}
+      max={0}
+    />
+  ))
+  .add('Logarithmic with different base', () => (
+    <NumberSliderFilter
+      {...baseProps}
+      name="Filter by"
+      filterKey="filterkey"
+      logarithmic
+      value={25}
+      logbase={Math.E}
+    />
+  ))

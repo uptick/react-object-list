@@ -21,7 +21,7 @@ exports[`NumberSlider Snapshots custom max 1`] = `
     onMouseUp={[Function]}
     step="any"
     type="range"
-    value={50}
+    value="50.0000000000"
   />
 </div>
 `;
@@ -47,7 +47,7 @@ exports[`NumberSlider Snapshots custom min 1`] = `
     onMouseUp={[Function]}
     step="any"
     type="range"
-    value={50}
+    value="50.0000000000"
   />
 </div>
 `;
@@ -73,7 +73,7 @@ exports[`NumberSlider Snapshots renders default 1`] = `
     onMouseUp={[Function]}
     step="any"
     type="range"
-    value={50}
+    value="50.0000000000"
   />
 </div>
 `;
