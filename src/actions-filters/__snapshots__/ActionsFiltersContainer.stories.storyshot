@@ -694,6 +694,32 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         RemoteMultiChoiceFilter
         :
       </label>
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Is",
+                "value": "is",
+              },
+              Object {
+                "label": "Is Not",
+                "value": "is_not",
+              },
+            ]
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
+        />
+      </div>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -1553,6 +1579,32 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         RemoteMultiChoiceFilter
         :
       </label>
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Is",
+                "value": "is",
+              },
+              Object {
+                "label": "Is Not",
+                "value": "is_not",
+              },
+            ]
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
+        />
+      </div>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -2311,6 +2363,32 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         RemoteMultiChoiceFilter
         :
       </label>
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Is",
+                "value": "is",
+              },
+              Object {
+                "label": "Is Not",
+                "value": "is_not",
+              },
+            ]
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
+        />
+      </div>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"
@@ -3054,6 +3132,32 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         RemoteMultiChoiceFilter
         :
       </label>
+      <div
+        className="objectlist-current-filter__filter-comparison"
+      >
+        <Select
+          clearable={false}
+          onChange={[Function]}
+          options={
+            Array [
+              Object {
+                "label": "Is",
+                "value": "is",
+              },
+              Object {
+                "label": "Is Not",
+                "value": "is_not",
+              },
+            ]
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
+        />
+      </div>
       <Select.Async
         className="objectlist-current-filter__active-status"
         labelKey="label"

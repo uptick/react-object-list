@@ -8,21 +8,29 @@ const STATUS_CHOICES = {
 const STATUS_TYPE = PropTypes.oneOf(Object.values(STATUS_CHOICES))
 
 const ALL_SELECTED = 'all'
-const SELECTION_TYPE = function(props, propName, componentName) {
-  const value = props[propName]
-  let validObject = true
-  if (typeof value === 'object') {
-    validObject = Object.entries(value).every(
-      ([key, value]) => (typeof key === 'number' || 'string') && typeof value === 'boolean')
-  } else {
-    validObject = false
-  }
-
-  if (value !== ALL_SELECTED && !validObject) {
-    return new Error(`Invalid prop \`${propName}\` of \`${value}\`
+function selectionTypeValidator(isRequired) {
+  return function(props, propName, componentName) {
+    const value = props[propName]
+    if (isRequired && (value === null || value === undefined)) {
+      return new Error(`Missing prop \`${propName}\`
       supplied to \`${componentName}\` expected one of ['${ALL_SELECTED}', obj]`)
+    }
+    let validObject = true
+    if (typeof value === 'object') {
+      validObject = Object.entries(value).every(
+        ([key, value]) => (typeof key === 'number' || 'string') && typeof value === 'boolean')
+    } else {
+      validObject = false
+    }
+
+    if (value !== ALL_SELECTED && !validObject) {
+      return new Error(`Invalid prop \`${propName}\` of \`${value}\`
+        supplied to \`${componentName}\` expected one of ['${ALL_SELECTED}', obj]`)
+    }
   }
 }
+const SELECTION_TYPE = selectionTypeValidator(false)
+SELECTION_TYPE.isRequired = selectionTypeValidator(true)
 
 const COLUMN_BASE_TYPE = {
   dataKey: PropTypes.string,

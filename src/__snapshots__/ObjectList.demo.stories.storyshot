@@ -782,7 +782,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Cecelia
-            <br />
             Glendzer
           </td>
           <td
@@ -803,7 +802,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Jeff
-            <br />
             Bletsor
           </td>
           <td
@@ -824,7 +822,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Kessiah
-            <br />
             Skerman
           </td>
           <td
@@ -845,7 +842,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Aubine
-            <br />
             Canepe
           </td>
           <td
@@ -866,7 +862,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Rowland
-            <br />
             Wheatman
           </td>
           <td
@@ -887,7 +882,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Isabeau
-            <br />
             Franies
           </td>
           <td
@@ -908,7 +902,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Alric
-            <br />
             Dansey
           </td>
           <td

@@ -92,7 +92,6 @@ exports[`Table Snapshots can select items 1`] = `
           <span>
             25
           </span>
-          <br />
           M
         </td>
       </tr>
@@ -119,7 +118,6 @@ exports[`Table Snapshots can select items 1`] = `
           <span>
             12
           </span>
-          <br />
           F
         </td>
       </tr>
@@ -146,7 +144,6 @@ exports[`Table Snapshots can select items 1`] = `
           <span>
             3
           </span>
-          <br />
           ?
         </td>
       </tr>
@@ -173,7 +170,6 @@ exports[`Table Snapshots can select items 1`] = `
           <span>
             111
           </span>
-          <br />
           FM
         </td>
       </tr>
@@ -200,7 +196,6 @@ exports[`Table Snapshots can select items 1`] = `
           <span>
             32
           </span>
-          <br />
           Confused
         </td>
       </tr>
@@ -282,7 +277,6 @@ exports[`Table Snapshots renders default 1`] = `
           <span>
             25
           </span>
-          <br />
           M
         </td>
       </tr>
@@ -300,7 +294,6 @@ exports[`Table Snapshots renders default 1`] = `
           <span>
             12
           </span>
-          <br />
           F
         </td>
       </tr>
@@ -318,7 +311,6 @@ exports[`Table Snapshots renders default 1`] = `
           <span>
             3
           </span>
-          <br />
           ?
         </td>
       </tr>
@@ -336,7 +328,6 @@ exports[`Table Snapshots renders default 1`] = `
           <span>
             111
           </span>
-          <br />
           FM
         </td>
       </tr>
@@ -354,7 +345,6 @@ exports[`Table Snapshots renders default 1`] = `
           <span>
             32
           </span>
-          <br />
           Confused
         </td>
       </tr>

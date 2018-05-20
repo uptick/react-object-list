@@ -9,6 +9,7 @@ class OptionalFields extends Component {
     optionalFields: PropTypes.arrayOf(PropTypes.shape({
       dataKey: PropTypes.string,
       header: PropTypes.string,
+      displayName: PropTypes.string,
     })),
     /** array of keys for currently displayed optional fields */
     extraColumns: PropTypes.arrayOf(PropTypes.string),
@@ -46,7 +47,7 @@ class OptionalFields extends Component {
       } else if (event.target) {
         let el = event.target.parentElement
         while (el) {
-          if (el.className && el.className.includes('objectlist-dropdown')) {
+          if (el === this.optionalFieldsDropdown) {
             newState.optionalFieldsOpen = true
             break
           }
@@ -64,7 +65,7 @@ class OptionalFields extends Component {
         enabled={this.props.extraColumns.includes(field.dataKey)}
         onChange={this.props.updateColumns}
         fieldKey={field.dataKey}
-        name={field.header}
+        name={field.displayName || field.header}
         className="objectlist-dropdown__item"
       />
     ))

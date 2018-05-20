@@ -22,6 +22,10 @@ export default class Boolean extends React.Component {
     falseLabel: 'No',
   }
 
+  onValueChange = newValue => {
+    this.props.onChange(newValue.value)
+  }
+
   render() {
     const {trueLabel, falseLabel, value} = this.props
     const trueOption = {value: 'True', label: trueLabel}
@@ -29,7 +33,7 @@ export default class Boolean extends React.Component {
     return (
       <Choice
         options={[trueOption, falseOption]}
-        onChange={this.props.onChange}
+        onChange={this.onValueChange}
         value={value}
       />
     )

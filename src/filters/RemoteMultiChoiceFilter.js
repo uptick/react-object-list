@@ -7,6 +7,14 @@ import RemoteChoiceFilter from './RemoteChoiceFilter'
  */
 export default class RemoteMultiChoiceFilter extends React.Component {
   render() {
-    return (<RemoteChoiceFilter multi {...this.props} />)
+    return (
+      <RemoteChoiceFilter
+        multi
+        comparisonOptions={[
+          {value: 'is', label: 'Is'},
+          {value: 'is_not', label: 'Is Not'},
+        ]}
+        {...this.props}
+      />)
   }
 }

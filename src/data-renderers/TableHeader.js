@@ -15,9 +15,7 @@ export default class TableHeader extends React.Component {
      * array of objects eg. [{name: 'Property', sortKey: 'name', className: ''}]
      * when empty the other props will be used to generate a single HeaderField
      */
-    headerItems: PropTypes.oneOfType([PropTypes.arrayOf(COLUMN_TYPE), COLUMN_TYPE]),
-    /** the current width for this column in the table */
-    width: PropTypes.number,
+    headerItems: PropTypes.oneOfType([PropTypes.arrayOf(COLUMN_TYPE), COLUMN_TYPE]).isRequired,
     saveWidth: PropTypes.func,
     label: PropTypes.string,
     /** callback function for the objectlist to set the active sorting of the data */
@@ -36,9 +34,28 @@ export default class TableHeader extends React.Component {
     sortKeys: [],
   }
 
-  state = {
-    headerItems: Array.isArray(this.props.headerItems) ? this.props.headerItems : [this.props.headerItems],
-    width: this.props.width,
+  constructor(props) {
+    super(props)
+
+    let label = props.label
+    if (!label) {
+      let headerItem = props.headerItems
+      if (Array.isArray(props.headerItems)) {
+        headerItem = props.headerItems[0]
+      }
+      if (headerItem) {
+        label = headerItem.dataKey.split('.').pop()
+      }
+    }
+
+    const headerItems = Array.isArray(props.headerItems) ? props.headerItems : [props.headerItems]
+    const width = (headerItems[0] || {}).width
+
+    this.state = {
+      label,
+      headerItems,
+      width,
+    }
   }
 
   componentWillReceiveProps(nextProps) {
@@ -65,7 +82,7 @@ export default class TableHeader extends React.Component {
    * Save the preferred column width to user preferences
    */
   saveWidth = () => {
-    this.props.saveWidth(this.props.label, this.state.width)
+    this.props.saveWidth(this.state.label, this.state.width)
   }
 
   /**

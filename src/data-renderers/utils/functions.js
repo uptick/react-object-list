@@ -13,7 +13,7 @@ const getValueFromAccessor = (row, keys) => {
     if (thisKey in value) {
       value = value[thisKey]
     } else {
-      return value
+      return null
     }
   }
   return value
