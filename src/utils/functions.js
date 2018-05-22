@@ -11,7 +11,10 @@ const getVisibleColumns = (columns, extraColumns = [], optional = false) => {
       return true
     } else if (!!column.optional === optional) {
       return true
-    } else if (extraColumns.includes(column.dataKey)) {
+    } else if (extraColumns.includes(
+      column.fieldKey ||
+      column.dataKey.substring(column.dataKey.lastIndexOf('.') + 1)
+    )) {
       return true
     }
     return false
@@ -31,10 +34,10 @@ const getVisibleColumns = (columns, extraColumns = [], optional = false) => {
 const setColumnLabels = (columns) => {
   return columns.map(column => {
     if (Array.isArray(column)) {
-      const label = column.map(({dataKey}) => dataKey).join('_').replace(' ', '').toLowerCase()
+      const label = column.map(({dataKey, fieldKey}) => fieldKey || dataKey.substring(dataKey.lastIndexOf('.') + 1)).join('_').replace(' ', '').toLowerCase()
       return column.map(column => ({...column, label}))
     } else {
-      return {...column, label: column.dataKey.replace(' ', '').toLowerCase()}
+      return {...column, label: (column.fieldKey || column.dataKey.substring(column.dataKey.lastIndexOf('.') + 1)).replace(' ', '').toLowerCase()}
     }
   })
 }

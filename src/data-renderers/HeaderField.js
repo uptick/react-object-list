@@ -7,8 +7,6 @@ import PropTypes from 'prop-types'
  */
 export default class HeaderField extends React.Component {
   static propTypes = {
-    /** the sort key used for this particular header item */
-    dataKey: PropTypes.string,
     /** the sorting currently used for the data in the */
     activeSort: PropTypes.oneOf([true, false, null]),
     /** when a sortkey is passed, the field can be sorted by this key */
@@ -77,7 +75,7 @@ export default class HeaderField extends React.Component {
     if (this.props.sortKey !== null) {
       return (
         <div
-          role={this.props.dataKey ? 'button' : '' /* role[button] adds cursor: pointer */}
+          role={'button' /* role[button] adds cursor: pointer */}
           onClick={this.handleClick} className={this.props.className} >
           {this._renderHeader()}{this._renderSortIcon()}
         </div>
