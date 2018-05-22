@@ -137,13 +137,23 @@ class ActionsFilterContainer extends Component {
           removeFilter={removeFilter}
         />
         {/* TODO: render children below filters */}
-        <div className="objectlist-row objectlist-row--justify">
+        <div className="objectlist-row objectlist-row__actions">
           <div className="objectlist-column">
             <span className="objectlist-results-text">
               {loading ? `Loading ${itemPluralName}...` : (
                 `${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount === 1 ? itemSingleName : itemPluralName} found`
               )}
             </span>
+            {customActions[0] && customActions[0]({
+              selection,
+              itemCount,
+              numSelected,
+              totalCount,
+              itemSingleName,
+              itemPluralName,
+              loading,
+              key: `action-left`,
+            })}
             {this.props.status === STATUS_CHOICES.done && (
               <SelectAllAction
                 count={this.props.meta.totalCount}
@@ -155,21 +165,23 @@ class ActionsFilterContainer extends Component {
               />
             )}
           </div>
-          {customActions.map((action, i) => action({
-            selection,
-            itemCount,
-            numSelected,
-            totalCount,
-            itemSingleName,
-            itemPluralName,
-            loading,
-            key: `action-${i}`,
-          }))}
-          <OptionalFields
-            optionalFields={getVisibleColumns(this.props.columns, [], true).reduce((acc, curr) => acc.concat(curr), [])}
-            extraColumns={this.props.meta.extraColumns}
-            updateColumns={this.props.updateColumns}
-          />
+          <div className="objectlist-column">
+            {customActions.slice(1).map((action, i) => action({
+              selection,
+              itemCount,
+              numSelected,
+              totalCount,
+              itemSingleName,
+              itemPluralName,
+              loading,
+              key: `action-${i}`,
+            }))}
+            <OptionalFields
+              optionalFields={getVisibleColumns(this.props.columns, [], true).reduce((acc, curr) => acc.concat(curr), [])}
+              extraColumns={this.props.meta.extraColumns}
+              updateColumns={this.props.updateColumns}
+            />
+          </div>
         </div>
       </div>
     )

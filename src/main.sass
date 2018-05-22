@@ -108,7 +108,7 @@ $input-height: 36px - $spacing - ($border-width * 2)
   color: $link-color
 
 .objectlist-link
-  margin: $spacing
+  margin: 0 $spacing/2
 
 .objectlist-dropdown
   font-family: $font
@@ -167,7 +167,7 @@ $input-height: 36px - $spacing - ($border-width * 2)
   display: flex
   align-items: center
   flex-wrap: wrap
-  flex-direction: column
+  flex-direction: row
 
 .objectlist-row
   font-family: $font
@@ -197,7 +197,9 @@ $input-height: 36px - $spacing - ($border-width * 2)
 .objectlist-row--right
   justify-content: flex-end
 
-.objectlist-row--justify
+.objectlist-row__actions
+  padding-left: 10px
+  margin-bottom: 5px
   justify-content: space-between
 
 .objectlist--grow
@@ -207,9 +209,9 @@ $input-height: 36px - $spacing - ($border-width * 2)
   flex-grow: $huge-flex
 
 .objectlist-results-text
+  width: 100%
   color: $text-muted-color
   font-style: italic
-  margin: $spacing
 
 .objectlist-button--dropdown
   margin: 0
@@ -232,6 +234,10 @@ $input-height: 36px - $spacing - ($border-width * 2)
 .objectlist-button--primary
   background-color: $primary-button-color
   color: $global-background-color
+
+.objectlist-button--nomargin
+  padding: 0 5px
+  margin: 0
 
 .objectlist-button--small
   padding: 0px 5px
