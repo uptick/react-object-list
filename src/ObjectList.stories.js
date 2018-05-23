@@ -282,6 +282,7 @@ storiesOf('object-list', module)
       setSort={action('Set sort')}
       status="done"
       filters={filters}
+      removeFilter={action('Remove filter')}
       searchKey="search"
     />
   ))

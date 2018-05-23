@@ -150,7 +150,7 @@ exports[`Storyshots object-list all selected 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -172,6 +172,9 @@ exports[`Storyshots object-list all selected 1`] = `
           </a>
         </div>
       </div>
+      <div
+        className="objectlist-column"
+      />
     </div>
   </div>
   <div
@@ -745,7 +748,7 @@ exports[`Storyshots object-list can select all 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -777,6 +780,9 @@ exports[`Storyshots object-list can select all 1`] = `
           </a>
         </div>
       </div>
+      <div
+        className="objectlist-column"
+      />
     </div>
   </div>
   <div
@@ -1350,7 +1356,7 @@ exports[`Storyshots object-list can select items 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -1361,6 +1367,9 @@ exports[`Storyshots object-list can select items 1`] = `
           200 items found
         </span>
       </div>
+      <div
+        className="objectlist-column"
+      />
     </div>
   </div>
   <div
@@ -2305,7 +2314,7 @@ exports[`Storyshots object-list has active filters 1`] = `
       </div>
     </div>
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -2316,6 +2325,9 @@ exports[`Storyshots object-list has active filters 1`] = `
           200 items found
         </span>
       </div>
+      <div
+        className="objectlist-column"
+      />
     </div>
   </div>
   <div
@@ -2675,7 +2687,7 @@ exports[`Storyshots object-list has error 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -2687,29 +2699,33 @@ exports[`Storyshots object-list has error 1`] = `
         </span>
       </div>
       <div
-        className="objectlist-dropdown"
+        className="objectlist-column"
       >
-        <button
-          className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
-        >
-          <i
-            className="fa fa-list"
-          />
-           Change columns
-        </button>
         <div
-          className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+          className="objectlist-dropdown"
         >
           <button
-            className="objectlist-dropdown__item"
-            onClick={[Function]}
+            className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
-              aria-hidden="true"
-              className="fa fa-check-square-o objectlist-dropdown__icon"
+              className="fa fa-list"
             />
-            Favourite Colour
+             Change columns
           </button>
+          <div
+            className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+          >
+            <button
+              className="objectlist-dropdown__item"
+              onClick={[Function]}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-check-square-o objectlist-dropdown__icon"
+              />
+              Favourite Colour
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -3627,7 +3643,7 @@ exports[`Storyshots object-list has everything 1`] = `
       </div>
     </div>
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -3637,6 +3653,14 @@ exports[`Storyshots object-list has everything 1`] = `
         >
           200 items found
         </span>
+        <a
+          href="http://thecatapi.com/api/images/get?format=src&type=gif"
+        >
+          Download 
+          12
+           
+          items
+        </a>
         <div
           className="objectlist-row"
         >
@@ -3659,46 +3683,42 @@ exports[`Storyshots object-list has everything 1`] = `
           </a>
         </div>
       </div>
-      <a
-        href="http://thecatapi.com/api/images/get?format=src&type=gif"
-      >
-        Download 
-        12
-         
-        items
-      </a>
-      <button
-        onClick={[Function]}
-      >
-        Pat 
-        12
-         
-        items
-      </button>
       <div
-        className="objectlist-dropdown"
+        className="objectlist-column"
       >
         <button
-          className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
+          onClick={[Function]}
         >
-          <i
-            className="fa fa-list"
-          />
-           Change columns
+          Pat 
+          12
+           
+          items
         </button>
         <div
-          className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+          className="objectlist-dropdown"
         >
           <button
-            className="objectlist-dropdown__item"
-            onClick={[Function]}
+            className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
-              aria-hidden="true"
-              className="fa fa-check-square-o objectlist-dropdown__icon"
+              className="fa fa-list"
             />
-            Favourite Colour
+             Change columns
           </button>
+          <div
+            className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+          >
+            <button
+              className="objectlist-dropdown__item"
+              onClick={[Function]}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-check-square-o objectlist-dropdown__icon"
+              />
+              Favourite Colour
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -4225,7 +4245,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -4236,6 +4256,9 @@ exports[`Storyshots object-list has multiple pages 1`] = `
           200 items found
         </span>
       </div>
+      <div
+        className="objectlist-column"
+      />
     </div>
   </div>
   <div
@@ -4692,7 +4715,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -4704,29 +4727,33 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </span>
       </div>
       <div
-        className="objectlist-dropdown"
+        className="objectlist-column"
       >
-        <button
-          className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
-        >
-          <i
-            className="fa fa-list"
-          />
-           Change columns
-        </button>
         <div
-          className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+          className="objectlist-dropdown"
         >
           <button
-            className="objectlist-dropdown__item"
-            onClick={[Function]}
+            className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
-              aria-hidden="true"
-              className="fa fa-square-o objectlist-dropdown__icon"
+              className="fa fa-list"
             />
-            Favourite Colour
+             Change columns
           </button>
+          <div
+            className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+          >
+            <button
+              className="objectlist-dropdown__item"
+              onClick={[Function]}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o objectlist-dropdown__icon"
+              />
+              Favourite Colour
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -5195,7 +5222,7 @@ exports[`Storyshots object-list has search key 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -5206,6 +5233,9 @@ exports[`Storyshots object-list has search key 1`] = `
           200 items found
         </span>
       </div>
+      <div
+        className="objectlist-column"
+      />
     </div>
   </div>
   <div
@@ -5662,7 +5692,7 @@ exports[`Storyshots object-list loading 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -5673,6 +5703,9 @@ exports[`Storyshots object-list loading 1`] = `
           Loading items...
         </span>
       </div>
+      <div
+        className="objectlist-column"
+      />
     </div>
   </div>
   <div
@@ -6139,7 +6172,7 @@ exports[`Storyshots object-list ready 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -6150,6 +6183,9 @@ exports[`Storyshots object-list ready 1`] = `
           No items found
         </span>
       </div>
+      <div
+        className="objectlist-column"
+      />
     </div>
   </div>
   <div

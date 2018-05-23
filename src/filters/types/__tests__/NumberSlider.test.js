@@ -19,6 +19,16 @@ describe('NumberSlider', () => {
       snapshotTest(<NumberSlider {...baseProps} max={2000} />)
     })
   })
+  describe('Lifecycle', () => {
+    it('componentWillReceiveProps', () => {
+      const newProps = {
+        value: 3128907234589789,
+      }
+      const wrapper = shallow(<NumberSlider {...baseProps} />)
+      wrapper.setProps(newProps)
+      expect(wrapper.instance().state.currentValue).toEqual(newProps.value)
+    })
+  })
   describe('Functions', () => {
     let instance
     beforeEach(() => {

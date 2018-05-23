@@ -32,7 +32,7 @@ class Month extends React.Component {
     textValue: this.props.value ? this.props.value.format(this.props.format) : '',
   }
 
-  componentWillUpdate(nextProps, nextState) {
+  componentWillReceiveProps(nextProps) {
     if (nextProps.value !== this.props.value) {
       this.setState({textValue: nextProps.value ? nextProps.value.format(nextProps.format) : ''})
     }

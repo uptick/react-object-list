@@ -25,9 +25,9 @@ class Search extends React.Component {
     updateScheduled: null,
   }
 
-  componentWillUpdate(nextProps, nextState) {
+  componentWillReceiveProps(nextProps, nextState) {
     if (nextProps.value !== this.props.value) {
-      this.setState({currentValue: nextProps.value})
+      this.setState(() => ({currentValue: nextProps.value}))
     }
   }
 
