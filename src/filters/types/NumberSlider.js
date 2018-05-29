@@ -27,6 +27,12 @@ class NumberSlider extends React.Component {
     currentValue: this.props.value,
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.value !== this.props.value) {
+      this.setState({currentValue: nextProps.value})
+    }
+  }
+
   /**
    * Handles number input change.
    * Calls onChange with the current value.

@@ -33,7 +33,8 @@ const SELECTION_TYPE = selectionTypeValidator(false)
 SELECTION_TYPE.isRequired = selectionTypeValidator(true)
 
 const COLUMN_BASE_TYPE = {
-  dataKey: PropTypes.string,
+  fieldKey: PropTypes.string, // used to uniquely identify this column
+  dataKey: PropTypes.string, // used to access the data inside the data object
   header: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
   item: PropTypes.func,
   sortKey: PropTypes.string,

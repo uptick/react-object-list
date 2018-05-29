@@ -25,6 +25,12 @@ class Search extends React.Component {
     updateScheduled: null,
   }
 
+  componentWillReceiveProps(nextProps, nextState) {
+    if (nextProps.value !== this.props.value) {
+      this.setState(() => ({currentValue: nextProps.value}))
+    }
+  }
+
   /**
    * Debounce call to get result until user has stopped typing
    */

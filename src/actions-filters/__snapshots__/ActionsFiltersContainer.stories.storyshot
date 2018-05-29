@@ -739,7 +739,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     </div>
   </div>
   <div
-    className="objectlist-row objectlist-row--justify"
+    className="objectlist-row objectlist-row__actions"
   >
     <div
       className="objectlist-column"
@@ -762,29 +762,33 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
       </div>
     </div>
     <div
-      className="objectlist-dropdown"
+      className="objectlist-column"
     >
-      <button
-        className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
-      >
-        <i
-          className="fa fa-list"
-        />
-         Change columns
-      </button>
       <div
-        className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+        className="objectlist-dropdown"
       >
         <button
-          className="objectlist-dropdown__item"
-          onClick={[Function]}
+          className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
         >
           <i
-            aria-hidden="true"
-            className="fa fa-square-o objectlist-dropdown__icon"
+            className="fa fa-list"
           />
-          Favourite Colour
+           Change columns
         </button>
+        <div
+          className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+        >
+          <button
+            className="objectlist-dropdown__item"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="fa fa-square-o objectlist-dropdown__icon"
+            />
+            Favourite Colour
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -843,7 +847,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
     className="objectlist--grow"
   />
   <div
-    className="objectlist-row objectlist-row--justify"
+    className="objectlist-row objectlist-row__actions"
   >
     <div
       className="objectlist-column"
@@ -853,6 +857,14 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
       >
         573,489 cats found
       </span>
+      <a
+        href="http://thecatapi.com/api/images/get?format=src&type=gif"
+      >
+        Download 
+        3
+         
+        cats
+      </a>
       <div
         className="objectlist-row"
       >
@@ -865,22 +877,18 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
         </a>
       </div>
     </div>
-    <a
-      href="http://thecatapi.com/api/images/get?format=src&type=gif"
+    <div
+      className="objectlist-column"
     >
-      Download 
-      3
-       
-      cats
-    </a>
-    <button
-      onClick={[Function]}
-    >
-      Pat 
-      3
-       
-      cats
-    </button>
+      <button
+        onClick={[Function]}
+      >
+        Pat 
+        3
+         
+        cats
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -1624,7 +1632,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     </div>
   </div>
   <div
-    className="objectlist-row objectlist-row--justify"
+    className="objectlist-row objectlist-row__actions"
   >
     <div
       className="objectlist-column"
@@ -1636,29 +1644,33 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
       </span>
     </div>
     <div
-      className="objectlist-dropdown"
+      className="objectlist-column"
     >
-      <button
-        className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
-      >
-        <i
-          className="fa fa-list"
-        />
-         Change columns
-      </button>
       <div
-        className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+        className="objectlist-dropdown"
       >
         <button
-          className="objectlist-dropdown__item"
-          onClick={[Function]}
+          className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
         >
           <i
-            aria-hidden="true"
-            className="fa fa-square-o objectlist-dropdown__icon"
+            className="fa fa-list"
           />
-          Favourite Colour
+           Change columns
         </button>
+        <div
+          className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+        >
+          <button
+            className="objectlist-dropdown__item"
+            onClick={[Function]}
+          >
+            <i
+              aria-hidden="true"
+              className="fa fa-square-o objectlist-dropdown__icon"
+            />
+            Favourite Colour
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -2408,7 +2420,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     </div>
   </div>
   <div
-    className="objectlist-row objectlist-row--justify"
+    className="objectlist-row objectlist-row__actions"
   >
     <div
       className="objectlist-column"
@@ -2430,6 +2442,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         </a>
       </div>
     </div>
+    <div
+      className="objectlist-column"
+    />
   </div>
 </div>
 `;
@@ -3177,7 +3192,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     </div>
   </div>
   <div
-    className="objectlist-row objectlist-row--justify"
+    className="objectlist-row objectlist-row__actions"
   >
     <div
       className="objectlist-column"
@@ -3199,6 +3214,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         </a>
       </div>
     </div>
+    <div
+      className="objectlist-column"
+    />
   </div>
 </div>
 `;

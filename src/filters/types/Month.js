@@ -32,6 +32,12 @@ class Month extends React.Component {
     textValue: this.props.value ? this.props.value.format(this.props.format) : '',
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.value !== this.props.value) {
+      this.setState({textValue: nextProps.value ? nextProps.value.format(nextProps.format) : ''})
+    }
+  }
+
   /**
    * Handles text input value changes
    * Parses the current value sets it to textValue.

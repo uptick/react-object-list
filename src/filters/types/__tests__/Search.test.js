@@ -19,6 +19,16 @@ describe('Search', () => {
       snapshotTest(<Search {...baseProps} />, {currentValue: 21})
     })
   })
+  describe('Lifecycle', () => {
+    it('componentWillReceiveProps', () => {
+      const newProps = {
+        value: 'Hello my fluffies 🐈🐈',
+      }
+      const wrapper = shallow(<Search {...baseProps} />)
+      wrapper.setProps(newProps)
+      expect(wrapper.instance().state.currentValue).toEqual(newProps.value)
+    })
+  })
   describe('Functions', () => {
     let instance
     beforeEach(() => {

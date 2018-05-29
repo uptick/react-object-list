@@ -33,6 +33,16 @@ describe('Month', () => {
       snapshotTest(<Month {...baseProps} value={undefined} />)
     })
   })
+  describe('Lifecycle', () => {
+    it('componentWillReceiveProps', () => {
+      const newProps = {
+        value: Moment('2018-02-01'),
+      }
+      const wrapper = shallow(<Month {...baseProps} />)
+      wrapper.setProps(newProps)
+      expect(wrapper.instance().state.textValue).toEqual(newProps.value.format(Month.defaultProps.format))
+    })
+  })
   describe('Functions', () => {
     let instance
     beforeEach(() => {

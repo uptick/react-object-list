@@ -59,7 +59,7 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -71,39 +71,43 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
         </span>
       </div>
       <div
-        className="objectlist-dropdown"
+        className="objectlist-column"
       >
-        <button
-          className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
-        >
-          <i
-            className="fa fa-list"
-          />
-           Change columns
-        </button>
         <div
-          className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+          className="objectlist-dropdown"
         >
           <button
-            className="objectlist-dropdown__item"
-            onClick={[Function]}
+            className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
-              aria-hidden="true"
-              className="fa fa-check-square-o objectlist-dropdown__icon"
+              className="fa fa-list"
             />
-            Last Name
+             Change columns
           </button>
-          <button
-            className="objectlist-dropdown__item"
-            onClick={[Function]}
+          <div
+            className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
           >
-            <i
-              aria-hidden="true"
-              className="fa fa-square-o objectlist-dropdown__icon"
-            />
-            IPv6
-          </button>
+            <button
+              className="objectlist-dropdown__item"
+              onClick={[Function]}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-check-square-o objectlist-dropdown__icon"
+              />
+              Last Name
+            </button>
+            <button
+              className="objectlist-dropdown__item"
+              onClick={[Function]}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o objectlist-dropdown__icon"
+              />
+              IPv6
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -669,7 +673,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
       className="objectlist--grow"
     />
     <div
-      className="objectlist-row objectlist-row--justify"
+      className="objectlist-row objectlist-row__actions"
     >
       <div
         className="objectlist-column"
@@ -681,39 +685,43 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
         </span>
       </div>
       <div
-        className="objectlist-dropdown"
+        className="objectlist-column"
       >
-        <button
-          className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
-        >
-          <i
-            className="fa fa-list"
-          />
-           Change columns
-        </button>
         <div
-          className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
+          className="objectlist-dropdown"
         >
           <button
-            className="objectlist-dropdown__item"
-            onClick={[Function]}
+            className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
-              aria-hidden="true"
-              className="fa fa-check-square-o objectlist-dropdown__icon"
+              className="fa fa-list"
             />
-            Last Name
+             Change columns
           </button>
-          <button
-            className="objectlist-dropdown__item"
-            onClick={[Function]}
+          <div
+            className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
           >
-            <i
-              aria-hidden="true"
-              className="fa fa-square-o objectlist-dropdown__icon"
-            />
-            IPv6
-          </button>
+            <button
+              className="objectlist-dropdown__item"
+              onClick={[Function]}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-check-square-o objectlist-dropdown__icon"
+              />
+              Last Name
+            </button>
+            <button
+              className="objectlist-dropdown__item"
+              onClick={[Function]}
+            >
+              <i
+                aria-hidden="true"
+                className="fa fa-square-o objectlist-dropdown__icon"
+              />
+              IPv6
+            </button>
+          </div>
         </div>
       </div>
     </div>

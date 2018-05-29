@@ -7,6 +7,7 @@ class OptionalFields extends Component {
   static propTypes = {
     /** array of {key, name} for all optional columns */
     optionalFields: PropTypes.arrayOf(PropTypes.shape({
+      fieldKey: PropTypes.string,
       dataKey: PropTypes.string,
       header: PropTypes.string,
       displayName: PropTypes.string,
@@ -59,16 +60,17 @@ class OptionalFields extends Component {
   }
 
   render() {
-    const fields = this.props.optionalFields.map(field => (
-      <OptionalField
+    const fields = this.props.optionalFields.map(field => {
+      const fieldKey = field.fieldKey || field.dataKey.substring(field.dataKey.lastIndexOf('.') + 1)
+      return <OptionalField
         key={`field-${field.dataKey}`}
-        enabled={this.props.extraColumns.includes(field.dataKey)}
+        enabled={this.props.extraColumns.includes(fieldKey)}
         onChange={this.props.updateColumns}
-        fieldKey={field.dataKey}
+        fieldKey={fieldKey}
         name={field.displayName || field.header}
         className="objectlist-dropdown__item"
       />
-    ))
+    })
 
     if (fields.length) {
       return (
