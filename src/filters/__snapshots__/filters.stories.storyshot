@@ -872,6 +872,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Logarithmic 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
@@ -945,6 +946,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Logarithmic with diff
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
