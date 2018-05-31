@@ -8,6 +8,7 @@
 $spacing: 10px
 $font: sans-serif
 $border-width: 1px
+$table-border: $border-width solid $table-border-color
 $border: $border-width solid $border-color
 $radius: 4px
 $huge-flex: 5
@@ -86,6 +87,11 @@ $input-height: 36px - $spacing - ($border-width * 2)
   cursor: pointer
   display: block
   margin-left: 0.5rem
+
+.react-api-list .Select--multi .Select-value-icon
+  /* fix for center-aligning the 'x' on multiselect filters*/
+  padding-top: 2px
+  padding-bottom: 2px
 
 .objectlist-filters
   margin: $spacing
@@ -166,6 +172,7 @@ $input-height: 36px - $spacing - ($border-width * 2)
 .objectlist-column
   display: flex
   align-items: center
+  align-self: flex-end
   flex-wrap: wrap
   flex-direction: row
 
@@ -198,7 +205,6 @@ $input-height: 36px - $spacing - ($border-width * 2)
   justify-content: flex-end
 
 .objectlist-row__actions
-  padding-left: 10px
   margin-bottom: 5px
   justify-content: space-between
 
@@ -230,13 +236,14 @@ $input-height: 36px - $spacing - ($border-width * 2)
 .objectlist-button--icon
   padding-right: $spacing
   color: $icon-color
+  margin: $spacing/2
 
 .objectlist-button--primary
   background-color: $primary-button-color
   color: $global-background-color
 
 .objectlist-button--nomargin
-  padding: 0 5px
+  padding: 2px $spacing
   margin: 0
 
 .objectlist-button--small
@@ -249,7 +256,7 @@ $input-height: 36px - $spacing - ($border-width * 2)
 
 .objectlist-select-filter
   font-family: $font
-  min-width: 150px
+  width: 200px
   margin-left: $spacing
   .Select-input
     height: auto
@@ -289,17 +296,17 @@ $input-height: 36px - $spacing - ($border-width * 2)
     margin-top: 2px
 
 .objectlist-current-filter__filter-name
-  margin: $spacing
+  margin: $spacing/2 0
   min-width: 150px
 
 .objectlist-current-filter__filter-comparison
-  margin: $spacing
+  margin: $spacing/2 $spacing
   flex-basis: $small-flex-basis
   flex-grow: $small-flex
   min-width: 160px
 
 .objectlist-current-filter__active-status
-  margin: $spacing
+  margin: $spacing/2 0
   flex-basis: $large-flex-basis
   flex-grow: $large-flex
 
@@ -350,6 +357,7 @@ $input-height: 36px - $spacing - ($border-width * 2)
   flex-grow: 1
 
 .objectlist-pagination
+  margin-top: $spacing
   line-height: 1.2em
   display: flex
   align-items: center
@@ -411,7 +419,6 @@ $input-height: 36px - $spacing - ($border-width * 2)
     cursor: pointer
 
 .objectlist-table--scroll
-  padding: 0 $spacing
   overflow-x: auto
   position: relative
 
@@ -433,15 +440,18 @@ $input-height: 36px - $spacing - ($border-width * 2)
   background-color: $table-row-background
 
 .objectlist-table__td, .objectlist-table__th
-  border-top: $border
+  border-top: $table-border
   padding: 0.7rem
+
+.objectlist-table__checkbox
+  vertical-align: middle
 
 .objectlist-table__th--selector
   width: 1rem
 
 .objectlist-table__th
   text-align: left
-  border-bottom: 2px solid $border-color
+  border-bottom: 2px solid $table-border-color
   position: relative
   .handle
     position: absolute
@@ -452,6 +462,9 @@ $input-height: 36px - $spacing - ($border-width * 2)
     cursor: ew-resize
     &.hover
       border-right: 1px solid #efefef
+
+.objectlist-table .sort-direction
+  white-space: pre
 
 
 .objectlist-list__list

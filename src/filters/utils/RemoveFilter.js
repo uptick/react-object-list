@@ -12,7 +12,7 @@ class RemoveFilter extends React.Component {
 
   render() {
     return (
-      <button className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless" onClick={this.props.onClick} />
+      <button className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless" onClick={this.props.onClick} title="Remove Filter" />
     )
   }
 }
