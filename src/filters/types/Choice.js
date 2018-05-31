@@ -55,7 +55,7 @@ class Choice extends React.Component {
   }
 
   async updateValue(nextValue) {
-    if (typeof nextValue !== 'object') {
+    if (typeof nextValue !== 'object' || nextValue === null) {
       this.setState({value: nextValue})
     } else {
       const value = Array.isArray(nextValue) ? nextValue : [nextValue]
