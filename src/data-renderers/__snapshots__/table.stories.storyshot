@@ -17,6 +17,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -56,6 +57,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -95,6 +97,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -134,6 +137,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -173,6 +177,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -212,6 +217,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -251,6 +257,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -290,6 +297,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -329,6 +337,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -368,6 +377,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -407,6 +417,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -446,6 +457,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -485,6 +497,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -942,6 +955,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -981,6 +995,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1020,6 +1035,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1059,6 +1075,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1098,6 +1115,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1137,6 +1155,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1176,6 +1195,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1215,6 +1235,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1254,6 +1275,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1293,6 +1315,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1332,6 +1355,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1371,6 +1395,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -1410,6 +1435,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2297,6 +2323,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2354,6 +2381,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2393,6 +2421,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2432,6 +2461,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2471,6 +2501,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2510,6 +2541,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2549,6 +2581,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2588,6 +2621,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2627,6 +2661,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2666,6 +2701,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2705,6 +2741,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={true}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2744,6 +2781,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />
@@ -2783,6 +2821,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         >
           <input
             checked={false}
+            className="objectlist-table__checkbox"
             onChange={[Function]}
             type="checkbox"
           />

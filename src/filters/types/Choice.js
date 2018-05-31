@@ -55,13 +55,18 @@ class Choice extends React.Component {
   }
 
   async updateValue(nextValue) {
-    const isArray = Array.isArray(nextValue)
-    const value = isArray ? [...nextValue] : [nextValue]
-    for (const i in value) {
-      const label = await value[i][this.props.labelKey]
-      value[i][this.props.labelKey] = label
+    if (typeof nextValue !== 'object') {
+      this.setState({value: nextValue})
+    } else {
+      const value = Array.isArray(nextValue) ? nextValue : [nextValue]
+      for (const i in value) {
+        if (typeof value[i] === 'object') {
+          const label = await value[i][this.props.labelKey]
+          value[i][this.props.labelKey] = label
+        }
+      }
+      this.setState({value: this.props.multi ? value : value[0]})
     }
-    this.setState({value: isArray ? value : value[0]})
   }
 
   /**

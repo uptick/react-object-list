@@ -3,6 +3,7 @@
 exports[`Selector type snapshot test 1`] = `
 <input
   checked={false}
+  className="objectlist-table__checkbox"
   onChange={[Function]}
   type="checkbox"
 />
@@ -11,6 +12,7 @@ exports[`Selector type snapshot test 1`] = `
 exports[`Selector type snapshot test 2`] = `
 <input
   checked={true}
+  className="objectlist-table__checkbox"
   onChange={[Function]}
   type="checkbox"
 />
