@@ -7,6 +7,7 @@ describe('NumberSlider', () => {
   const baseProps = {
     onChange: jest.fn(),
     value: 50,
+    precision: 1,
   }
   describe('Snapshots', () => {
     it('renders default', () => {
@@ -55,7 +56,24 @@ describe('NumberSlider', () => {
       }
       instance.handleValueChange(mockEvent)
       expect(instance.state.currentValue).toBe(mockValue)
-      expect(baseProps.onChange).toHaveBeenCalledWith(mockValue)
+      expect(baseProps.onChange).toHaveBeenCalledWith(mockValue.toFixed(1))
+    })
+    it('handles slider value finalise', () => {
+      const mockValue = Math.floor(Math.random() * 100) + 1
+      const mockEvent = {
+        target: {
+          value: mockValue,
+        },
+      }
+      instance.handleSliderValueFinalise(mockEvent)
+      expect(instance.state.currentValue).toBe(mockValue)
+      expect(baseProps.onChange).toHaveBeenCalledWith(mockValue.toFixed(1))
+    })
+    it('handles logarithmic translation', () => {
+      const mockValue = Math.floor(Math.random() * 100) + 1
+      instance = shallow(<NumberSlider {...baseProps} logarithmic />).instance()
+      const actualValue = instance.getValueFromSlider(mockValue)
+      expect(instance.getValueForSlider(actualValue)).toBeCloseTo(mockValue, 10)
     })
   })
 })
