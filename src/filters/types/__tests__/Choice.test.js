@@ -37,6 +37,21 @@ describe('Choice', () => {
       snapshotTest(<Choice {...baseProps} placeholder="Testing testing" />)
     })
   })
+  describe('Lifecycle', () => {
+    it('componentWillReceiveProps', () => {
+      const newProps = {
+        value: [{value: 1, label: Promise.resolve('One')}, {value: 2, label: Promise.resolve('Two')}],
+      }
+      const expectedValue = [{value: 1, label: 'One'}, {value: 2, label: 'Two'}]
+      const wrapper = shallow(<Choice {...baseProps} />)
+      wrapper.instance().setState({value: null})
+      const setState = wrapper.instance().setState.bind(wrapper.instance())
+      wrapper.instance().updateValue = jest.fn((newValue) => { setState({value: expectedValue}) })
+      wrapper.setProps(newProps)
+      expect(wrapper.instance().updateValue).toHaveBeenCalledWith(newProps.value)
+      expect(wrapper.instance().state.value).toEqual(expectedValue)
+    })
+  })
   describe('Functions', () => {
     describe('handles value changing', () => {
       beforeEach(() => {
@@ -48,6 +63,11 @@ describe('Choice', () => {
           const instance = shallow(<Choice {...baseProps} />).instance()
           instance.handleChange(newValue)
           expect(baseProps.onChange).toHaveBeenCalledWith(newValue)
+        })
+        it('correctly resolves promised labels', async () => {
+          const instance = shallow(<Choice {...baseProps} multi />).instance()
+          await instance.updateValue([{value: 1, label: Promise.resolve('One')}, {value: 2, label: Promise.resolve('Two')}])
+          expect(instance.state.value).toEqual([{value: 1, label: 'One'}, {value: 2, label: 'Two'}])
         })
         it('receives array value', () => {
           const newValue = [{value: 9}, {value: 5}]

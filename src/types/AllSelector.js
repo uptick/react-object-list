@@ -53,6 +53,7 @@ class AllSelector extends React.Component {
     const {numSelected, total} = this.props
     return (
       <input
+        className="objectlist-table__checkbox"
         type="checkbox"
         checked={total > 0 && numSelected >= total}
         onChange={this.handleChange}

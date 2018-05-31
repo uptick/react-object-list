@@ -36,6 +36,7 @@ exports[`Storyshots object-list/Filters BooleanFilter 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
@@ -105,6 +106,7 @@ exports[`Storyshots object-list/Filters ChoiceFilter 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
@@ -180,6 +182,7 @@ exports[`Storyshots object-list/Filters CurrencyFilter 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
@@ -232,6 +235,7 @@ exports[`Storyshots object-list/Filters DateFilter 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
@@ -430,6 +434,7 @@ exports[`Storyshots object-list/Filters MonthFilter 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
@@ -499,6 +504,7 @@ exports[`Storyshots object-list/Filters MultiChoiceFilter 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
@@ -570,6 +576,7 @@ exports[`Storyshots object-list/Filters NumberSliderFilter 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
@@ -599,6 +606,7 @@ exports[`Storyshots object-list/Filters RemoteChoiceFilter 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
@@ -654,6 +662,7 @@ exports[`Storyshots object-list/Filters RemoteMultiChoiceFilter 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;
@@ -713,6 +722,7 @@ exports[`Storyshots object-list/Filters TextContainsFilter 1`] = `
   <button
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
+    title="Remove Filter"
   />
 </div>
 `;

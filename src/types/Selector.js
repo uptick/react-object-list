@@ -29,6 +29,7 @@ class Selector extends React.Component {
   render() {
     return (
       <input
+        className="objectlist-table__checkbox"
         type="checkbox"
         checked={this.props.selected}
         onChange={this.handleChange}

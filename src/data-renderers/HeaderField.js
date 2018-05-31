@@ -76,7 +76,9 @@ export default class HeaderField extends React.Component {
       return (
         <div
           role={'button' /* role[button] adds cursor: pointer */}
-          onClick={this.handleClick} className={this.props.className} >
+          onClick={this.handleClick}
+          className={this.props.className}
+        >
           {this._renderHeader()}{this._renderSortIcon()}
         </div>
       )

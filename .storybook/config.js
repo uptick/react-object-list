@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import { configure } from '@storybook/react';
 import '../src/main.sass'
 

@@ -40,6 +40,35 @@ class Choice extends React.Component {
     optionRenderer: null,
   }
 
+  state = {
+    value: null,
+  }
+
+  componentDidMount() {
+    this.updateValue(this.props.value)
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.value !== this.props.value) {
+      this.updateValue(nextProps.value)
+    }
+  }
+
+  async updateValue(nextValue) {
+    if (typeof nextValue !== 'object') {
+      this.setState({value: nextValue})
+    } else {
+      const value = Array.isArray(nextValue) ? nextValue : [nextValue]
+      for (const i in value) {
+        if (typeof value[i] === 'object') {
+          const label = await value[i][this.props.labelKey]
+          value[i][this.props.labelKey] = label
+        }
+      }
+      this.setState({value: this.props.multi ? value : value[0]})
+    }
+  }
+
   /**
    * Handles value change and checks selected option(s)
    * type is correct before calling on change with the values
@@ -62,10 +91,11 @@ class Choice extends React.Component {
 
   render() {
     const {
-      options, value, multi, placeholder,
+      options, multi, placeholder,
       valueKey, labelKey, optionRenderer,
       remote, loadOptions,
     } = this.props
+    const { value } = this.state
     const SelectComponent = remote ? Select.Async : Select
     return (
       <SelectComponent
