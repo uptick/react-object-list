@@ -48,8 +48,44 @@ const sortByName = (a, b) => {
   return ((textA < textB) ? -1 : (textA > textB) ? 1 : 0)
 }
 
+const objEqual = (prev = {}, current = {}) => {
+  if (Object.keys(prev).length !== Object.keys(current).length) {
+    return false
+  }
+  return Object.entries(prev).every(
+    ([key, value]) => valueEqual(current[key], value)
+  )
+}
+
+const arrayEqual = (prev = [], current = []) => {
+  if (prev.length !== current.length) {
+    return false
+  }
+  return prev.every((entry, i) => valueEqual(current[i], entry))
+}
+
+const valueEqual = (a, b) => {
+  if (typeof a !== typeof b) {
+    return false
+  }
+  if (typeof a === 'object') {
+    if (a === null || b === null) {
+      return a === b
+    }
+    if (Array.isArray(a)) {
+      if (Array.isArray(b)) {
+        return arrayEqual(a, b)
+      }
+      return false
+    }
+    return objEqual(a, b)
+  }
+  return a === b
+}
+
 export {
   getVisibleColumns,
   setColumnLabels,
   sortByName,
+  valueEqual,
 }
