@@ -5,7 +5,7 @@ import ClassNames from 'classnames'
 /**
  * Component used to display one page number
  */
-export default class Page extends React.Component {
+export default class Page extends React.PureComponent {
   static propTypes = {
     // This page's number
     page: PropTypes.number.isRequired,

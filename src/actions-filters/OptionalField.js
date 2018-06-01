@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 /**
  * Represents a single item in the "Visible Fields" drop-down
  */
-export default class OptionalField extends React.Component {
+export default class OptionalField extends React.PureComponent {
   static propTypes = {
     /** callback function to enable the optional field and save it to user preferences */
     onChange: PropTypes.func.isRequired,

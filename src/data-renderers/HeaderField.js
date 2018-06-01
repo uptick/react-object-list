@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
  * Represents the text and sorting direction arrow of a TableHeader
  * one or more of these may exist within a single TableHeader
  */
-export default class HeaderField extends React.Component {
+export default class HeaderField extends React.PureComponent {
   static propTypes = {
     /** the sorting currently used for the data in the */
     activeSort: PropTypes.oneOf([true, false, null]),

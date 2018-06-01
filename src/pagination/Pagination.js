@@ -5,7 +5,7 @@ import Page from './Page'
 /**
  * Component used to display/control pagination
  */
-export default class Pagination extends React.Component {
+export default class Pagination extends React.PureComponent {
   static propTypes = {
     // Initial page of results
     page: PropTypes.number,

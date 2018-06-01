@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
-class SelectAllAction extends Component {
+class SelectAllAction extends PureComponent {
   static propTypes = {
     /** the total number of items in the dataset */
     count: PropTypes.number,

@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import ClassNames from 'classnames'
 import { STATUS_TYPE, STATUS_CHOICES } from '../utils/proptypes'
 
-export default class Overlay extends Component {
+export default class Overlay extends PureComponent {
   static propTypes = {
     /** loading status used if data is loaded asynchronously  */
     status: STATUS_TYPE,

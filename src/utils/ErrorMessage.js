@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-class ErrorMessage extends React.Component {
+class ErrorMessage extends React.PureComponent {
   static propTypes = {error: PropTypes.objectOf(Error)}
   render() {
     const {error} = this.props
