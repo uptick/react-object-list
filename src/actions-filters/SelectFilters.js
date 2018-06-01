@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Select from 'react-select'
 import {FILTER_BASE_TYPE} from '../utils/proptypes'
 import { sortByName } from '../utils'
+import { valueEqual } from '../utils/functions'
 
 class SelectFilters extends Component {
   static propTypes = {
@@ -14,16 +15,30 @@ class SelectFilters extends Component {
     /** callback to add a filter to the list of active filters */
     addFilter: PropTypes.func,
   }
+
   static defaultProps = {
     filters: [],
   }
-  render() {
-    if (this.props.filters.length === 0) { return null }
 
+  state = {
+    quickFilters: [],
+  }
+
+  static getDerivedStateFromProps = (props, state) => {
     let quickFilters = this.props.filters.filter((filter) => {
       return (!(filter.active) && !filter.alwaysVisible)
     })
     quickFilters = quickFilters.sort(sortByName)
+    return ({quickFilters})
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return !valueEqual(this.state.quickFilters, nextState.quickFilters)
+  }
+
+  render() {
+    const {quickFilters} = this.state
+    if (quickFilters.length === 0) { return null }
 
     return (
       <Select
