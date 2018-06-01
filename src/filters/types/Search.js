@@ -21,7 +21,7 @@ class Search extends React.Component {
   }
 
   state = {
-    currentValue: this.props.value,
+    currentValue: this.props.value || '',
     updateScheduled: null,
   }
 
