@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import HeaderField from './HeaderField'
 import WidthHandle from './WidthHandle'
 import {COLUMN_TYPE} from '../utils/proptypes'
+import {valueEqual} from '../utils/functions'
 
 /**
  * An individual header for a column containing a HeaderField for display
@@ -34,36 +35,24 @@ export default class TableHeader extends React.Component {
     sortKeys: [],
   }
 
-  constructor(props) {
-    super(props)
-
-    let label = props.label
-    if (!label) {
-      let headerItem = props.headerItems
-      if (Array.isArray(props.headerItems)) {
-        headerItem = props.headerItems[0]
-      }
-      if (headerItem) {
-        label = headerItem.dataKey.split('.').pop()
-      }
-    }
-
-    const headerItems = Array.isArray(props.headerItems) ? props.headerItems : [props.headerItems]
-    const width = (headerItems[0] || {}).width
-
-    this.state = {
-      label,
-      headerItems,
-      width,
-    }
+  state = {
+    headerItems: [],
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.headerItems !== nextProps.headerItems) {
-      this.setState({
-        headerItems: Array.isArray(nextProps.headerItems) ? nextProps.headerItems : [nextProps.headerItems],
-      })
-    }
+  static getDerivedStateFromProps = (props, state) => {
+    const headerItems = Array.isArray(props.headerItems) ? props.headerItems : [props.headerItems]
+    const label = props.label || headerItems[0].dataKey.split('.').pop()
+    const width = (headerItems[0] || {}).width
+    return ({headerItems, width, label})
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      nextProps.label !== this.props.label ||
+      nextProps.className !== this.props.className ||
+      !valueEqual(this.props.sortKeys, nextProps.sortKeys) ||
+      !valueEqual(this.state.headerItems, nextState.headerItems)
+    )
   }
 
   /**
