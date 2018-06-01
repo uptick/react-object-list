@@ -1,6 +1,8 @@
 import 'babel-polyfill'
 import { configure } from '@storybook/react';
 import '../src/main.sass'
+import React from 'react'
+import whyDidYouUpdate from 'why-did-you-update'
 
 const appStories = require.context('../src/', true, /stories\.js$/)
 
@@ -11,4 +13,5 @@ function loadStories() {
 }
 
 
+whyDidYouUpdate(React)
 configure(loadStories, module)
