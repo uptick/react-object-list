@@ -23,6 +23,36 @@ class OptionalFields extends Component {
     extraColumns: [],
   }
 
+  optionalFieldsUpdated = (oldFields = [], newFields = []) => {
+    if (oldFields.length !== newFields.length) {
+      return true
+    }
+    return !oldFields.every((oldField, i) => {
+      return Object.keys(oldField).every(key => {
+        if (key in newFields[i]) {
+          return newFields[i][key] === oldField[key]
+        }
+        return false
+      })
+    })
+  }
+
+  extraColumnsUpdated = (oldCols = [], newCols = []) => {
+    if (oldCols.length !== newCols.length) {
+      return true
+    }
+    return !oldCols.every((oldCol, i) => {
+      return newCols[i] === oldCol
+    })
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return (
+      this.optionalFieldsUpdated(this.props.optionalFields, nextProps.optionalFields) ||
+      this.extraColumnsUpdated(this.props.extraColumns, nextProps.extraColumns)
+    )
+  }
+
   componentWillMount() {
     document.body.addEventListener('click', this.handleDropdown)
   }

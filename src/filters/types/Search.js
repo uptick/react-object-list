@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
  * Filter input used to pass text values,
  * customised for a single search field
  */
-class Search extends React.Component {
+class Search extends React.PureComponent {
   static propTypes = {
     /** Current value of filter */
     value: PropTypes.string,
