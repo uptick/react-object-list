@@ -27,7 +27,7 @@ exports[`Date Snapshots has custom input format 1`] = `
 exports[`Date Snapshots has custom relative date options 1`] = `
 <Select
   className="objectlist-current-filter__active-status"
-  clearable={false}
+  isClearable={false}
   onChange={[Function]}
   options={
     Array [
@@ -99,7 +99,7 @@ exports[`Date Snapshots renders default 1`] = `
 exports[`Date Snapshots renders with relative comparison 1`] = `
 <Select
   className="objectlist-current-filter__active-status"
-  clearable={false}
+  isClearable={false}
   onChange={[Function]}
   options={
     Array [

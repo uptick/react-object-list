@@ -11,19 +11,10 @@ exports[`Storyshots object-list all selected 1`] = `
       >
         <Select
           className="objectlist-select-filter"
-          labelKey="name"
-          menuContainerStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
-          menuStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
           onChange={[Function]}
-          openOnFocus={true}
+          openMenuOnClick={true}
           options={
             Array [
               Object {
@@ -103,8 +94,13 @@ exports[`Storyshots object-list all selected 1`] = `
             ]
           }
           placeholder="Add Filter"
+          styles={
+            Object {
+              "menu": [Function],
+              "menuList": [Function],
+            }
+          }
           value={null}
-          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -622,19 +618,10 @@ exports[`Storyshots object-list can select all 1`] = `
       >
         <Select
           className="objectlist-select-filter"
-          labelKey="name"
-          menuContainerStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
-          menuStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
           onChange={[Function]}
-          openOnFocus={true}
+          openMenuOnClick={true}
           options={
             Array [
               Object {
@@ -714,8 +701,13 @@ exports[`Storyshots object-list can select all 1`] = `
             ]
           }
           placeholder="Add Filter"
+          styles={
+            Object {
+              "menu": [Function],
+              "menuList": [Function],
+            }
+          }
           value={null}
-          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -1243,19 +1235,10 @@ exports[`Storyshots object-list can select items 1`] = `
       >
         <Select
           className="objectlist-select-filter"
-          labelKey="name"
-          menuContainerStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
-          menuStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
           onChange={[Function]}
-          openOnFocus={true}
+          openMenuOnClick={true}
           options={
             Array [
               Object {
@@ -1335,8 +1318,13 @@ exports[`Storyshots object-list can select items 1`] = `
             ]
           }
           placeholder="Add Filter"
+          styles={
+            Object {
+              "menu": [Function],
+              "menuList": [Function],
+            }
+          }
           value={null}
-          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -1843,19 +1831,10 @@ exports[`Storyshots object-list has active filters 1`] = `
       >
         <Select
           className="objectlist-select-filter"
-          labelKey="name"
-          menuContainerStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
-          menuStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
           onChange={[Function]}
-          openOnFocus={true}
+          openMenuOnClick={true}
           options={
             Array [
               Object {
@@ -1898,8 +1877,13 @@ exports[`Storyshots object-list has active filters 1`] = `
             ]
           }
           placeholder="Add Filter"
+          styles={
+            Object {
+              "menu": [Function],
+              "menuList": [Function],
+            }
+          }
           value={null}
-          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -2125,7 +2109,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-current-filter__filter-comparison"
         >
           <Select
-            clearable={false}
+            isClearable={false}
             onChange={[Function]}
             options={
               Array [
@@ -2144,15 +2128,14 @@ exports[`Storyshots object-list has active filters 1`] = `
         </div>
         <Select
           className="objectlist-current-filter__active-status"
-          labelKey="label"
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
+          isMulti={false}
           loadOptions={undefined}
-          multi={false}
           onChange={[Function]}
-          optionRenderer={null}
           options={Array []}
           placeholder="Any value"
           value={null}
-          valueKey="value"
         />
         <button
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -2204,7 +2187,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-current-filter__filter-comparison"
         >
           <Select
-            clearable={false}
+            isClearable={false}
             onChange={[Function]}
             options={
               Array [
@@ -2275,7 +2258,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-current-filter__filter-comparison"
         >
           <Select
-            clearable={false}
+            isClearable={false}
             onChange={[Function]}
             options={
               Array [
@@ -2318,7 +2301,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-current-filter__filter-comparison"
         >
           <Select
-            clearable={false}
+            isClearable={false}
             onChange={[Function]}
             options={
               Array [
@@ -2340,18 +2323,128 @@ exports[`Storyshots object-list has active filters 1`] = `
             }
           />
         </div>
-        <Select.Async
-          className="objectlist-current-filter__active-status"
-          labelKey="label"
-          loadOptions={[Function]}
-          multi={true}
-          onChange={[Function]}
-          optionRenderer={null}
-          options={Array []}
-          placeholder="Any value"
-          value={null}
-          valueKey="value"
-        />
+        <div
+          className="css-10nd86i objectlist-current-filter__active-status"
+          id={undefined}
+          onKeyDown={[Function]}
+        >
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            className="css-1uvvha"
+            role="status"
+          >
+            0 results available.
+          </span>
+          <div
+            className="css-1aya2g8 objectlist-current-filter__active-status__control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <div
+              className="css-1rtrksz objectlist-current-filter__active-status__value-container objectlist-current-filter__active-status__value-container--is-multi"
+            >
+              <div
+                className="css-1492t68 objectlist-current-filter__active-status__placeholder"
+              >
+                Any value
+              </div>
+              <div
+                className="css-rsyb7x"
+              >
+                <div
+                  className="objectlist-current-filter__active-status__input"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                    }
+                  }
+                >
+                  <input
+                    aria-activedescendant={undefined}
+                    aria-autocomplete="list"
+                    aria-busy={false}
+                    aria-describedby={undefined}
+                    aria-expanded={false}
+                    aria-haspopup={false}
+                    aria-label={undefined}
+                    aria-labelledby={undefined}
+                    aria-owns={undefined}
+                    autoCapitalize="none"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    className={undefined}
+                    disabled={false}
+                    id="react-select-3-input"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    role="combobox"
+                    spellCheck="false"
+                    style={
+                      Object {
+                        "background": 0,
+                        "border": 0,
+                        "boxSizing": "content-box",
+                        "color": "inherit",
+                        "fontSize": "inherit",
+                        "opacity": 1,
+                        "outline": 0,
+                        "padding": 0,
+                        "width": "1px",
+                      }
+                    }
+                    tabIndex="0"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    style={
+                      Object {
+                        "height": 0,
+                        "left": 0,
+                        "overflow": "scroll",
+                        "position": "absolute",
+                        "top": 0,
+                        "visibility": "hidden",
+                        "whiteSpace": "pre",
+                      }
+                    }
+                  >
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="css-1wy0on6 objectlist-current-filter__active-status__indicators"
+            >
+              <span
+                className="css-d8oujb objectlist-current-filter__active-status__indicator-separator"
+                role="presentation"
+              />
+              <div
+                className="css-1ep9fjw objectlist-current-filter__active-status__indicator objectlist-current-filter__active-status__dropdown-indicator"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+                role="button"
+              >
+                <svg
+                  className="css-19bqh2r"
+                  focusable="false"
+                  height={20}
+                  role="presentation"
+                  viewBox="0 0 20 20"
+                  width={20}
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
         <button
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
@@ -3185,19 +3278,10 @@ exports[`Storyshots object-list has everything 1`] = `
       >
         <Select
           className="objectlist-select-filter"
-          labelKey="name"
-          menuContainerStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
-          menuStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
           onChange={[Function]}
-          openOnFocus={true}
+          openMenuOnClick={true}
           options={
             Array [
               Object {
@@ -3234,8 +3318,13 @@ exports[`Storyshots object-list has everything 1`] = `
             ]
           }
           placeholder="Add Filter"
+          styles={
+            Object {
+              "menu": [Function],
+              "menuList": [Function],
+            }
+          }
           value={null}
-          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -3461,7 +3550,7 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-current-filter__filter-comparison"
         >
           <Select
-            clearable={false}
+            isClearable={false}
             onChange={[Function]}
             options={
               Array [
@@ -3480,15 +3569,14 @@ exports[`Storyshots object-list has everything 1`] = `
         </div>
         <Select
           className="objectlist-current-filter__active-status"
-          labelKey="label"
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
+          isMulti={false}
           loadOptions={undefined}
-          multi={false}
           onChange={[Function]}
-          optionRenderer={null}
           options={Array []}
           placeholder="Any value"
           value={null}
-          valueKey="value"
         />
         <button
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -3540,7 +3628,7 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-current-filter__filter-comparison"
         >
           <Select
-            clearable={false}
+            isClearable={false}
             onChange={[Function]}
             options={
               Array [
@@ -3611,7 +3699,7 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-current-filter__filter-comparison"
         >
           <Select
-            clearable={false}
+            isClearable={false}
             onChange={[Function]}
             options={
               Array [
@@ -3654,7 +3742,7 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-current-filter__filter-comparison"
         >
           <Select
-            clearable={false}
+            isClearable={false}
             onChange={[Function]}
             options={
               Array [
@@ -3676,18 +3764,128 @@ exports[`Storyshots object-list has everything 1`] = `
             }
           />
         </div>
-        <Select.Async
-          className="objectlist-current-filter__active-status"
-          labelKey="label"
-          loadOptions={[Function]}
-          multi={true}
-          onChange={[Function]}
-          optionRenderer={null}
-          options={Array []}
-          placeholder="Any value"
-          value={null}
-          valueKey="value"
-        />
+        <div
+          className="css-10nd86i objectlist-current-filter__active-status"
+          id={undefined}
+          onKeyDown={[Function]}
+        >
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            className="css-1uvvha"
+            role="status"
+          >
+            0 results available.
+          </span>
+          <div
+            className="css-1aya2g8 objectlist-current-filter__active-status__control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <div
+              className="css-1rtrksz objectlist-current-filter__active-status__value-container objectlist-current-filter__active-status__value-container--is-multi"
+            >
+              <div
+                className="css-1492t68 objectlist-current-filter__active-status__placeholder"
+              >
+                Any value
+              </div>
+              <div
+                className="css-rsyb7x"
+              >
+                <div
+                  className="objectlist-current-filter__active-status__input"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                    }
+                  }
+                >
+                  <input
+                    aria-activedescendant={undefined}
+                    aria-autocomplete="list"
+                    aria-busy={false}
+                    aria-describedby={undefined}
+                    aria-expanded={false}
+                    aria-haspopup={false}
+                    aria-label={undefined}
+                    aria-labelledby={undefined}
+                    aria-owns={undefined}
+                    autoCapitalize="none"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    className={undefined}
+                    disabled={false}
+                    id="react-select-2-input"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    role="combobox"
+                    spellCheck="false"
+                    style={
+                      Object {
+                        "background": 0,
+                        "border": 0,
+                        "boxSizing": "content-box",
+                        "color": "inherit",
+                        "fontSize": "inherit",
+                        "opacity": 1,
+                        "outline": 0,
+                        "padding": 0,
+                        "width": "1px",
+                      }
+                    }
+                    tabIndex="0"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    style={
+                      Object {
+                        "height": 0,
+                        "left": 0,
+                        "overflow": "scroll",
+                        "position": "absolute",
+                        "top": 0,
+                        "visibility": "hidden",
+                        "whiteSpace": "pre",
+                      }
+                    }
+                  >
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="css-1wy0on6 objectlist-current-filter__active-status__indicators"
+            >
+              <span
+                className="css-d8oujb objectlist-current-filter__active-status__indicator-separator"
+                role="presentation"
+              />
+              <div
+                className="css-1ep9fjw objectlist-current-filter__active-status__indicator objectlist-current-filter__active-status__dropdown-indicator"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+                role="button"
+              >
+                <svg
+                  className="css-19bqh2r"
+                  focusable="false"
+                  height={20}
+                  role="presentation"
+                  viewBox="0 0 20 20"
+                  width={20}
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
         <button
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
@@ -4159,19 +4357,10 @@ exports[`Storyshots object-list has multiple pages 1`] = `
       >
         <Select
           className="objectlist-select-filter"
-          labelKey="name"
-          menuContainerStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
-          menuStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
           onChange={[Function]}
-          openOnFocus={true}
+          openMenuOnClick={true}
           options={
             Array [
               Object {
@@ -4251,8 +4440,13 @@ exports[`Storyshots object-list has multiple pages 1`] = `
             ]
           }
           placeholder="Add Filter"
+          styles={
+            Object {
+              "menu": [Function],
+              "menuList": [Function],
+            }
+          }
           value={null}
-          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -4629,19 +4823,10 @@ exports[`Storyshots object-list has optional fields 1`] = `
       >
         <Select
           className="objectlist-select-filter"
-          labelKey="name"
-          menuContainerStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
-          menuStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
           onChange={[Function]}
-          openOnFocus={true}
+          openMenuOnClick={true}
           options={
             Array [
               Object {
@@ -4721,8 +4906,13 @@ exports[`Storyshots object-list has optional fields 1`] = `
             ]
           }
           placeholder="Add Filter"
+          styles={
+            Object {
+              "menu": [Function],
+              "menuList": [Function],
+            }
+          }
           value={null}
-          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -5142,19 +5332,10 @@ exports[`Storyshots object-list has search key 1`] = `
       >
         <Select
           className="objectlist-select-filter"
-          labelKey="name"
-          menuContainerStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
-          menuStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
           onChange={[Function]}
-          openOnFocus={true}
+          openMenuOnClick={true}
           options={
             Array [
               Object {
@@ -5228,8 +5409,13 @@ exports[`Storyshots object-list has search key 1`] = `
             ]
           }
           placeholder="Add Filter"
+          styles={
+            Object {
+              "menu": [Function],
+              "menuList": [Function],
+            }
+          }
           value={null}
-          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -5606,19 +5792,10 @@ exports[`Storyshots object-list loading 1`] = `
       >
         <Select
           className="objectlist-select-filter"
-          labelKey="name"
-          menuContainerStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
-          menuStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
           onChange={[Function]}
-          openOnFocus={true}
+          openMenuOnClick={true}
           options={
             Array [
               Object {
@@ -5698,8 +5875,13 @@ exports[`Storyshots object-list loading 1`] = `
             ]
           }
           placeholder="Add Filter"
+          styles={
+            Object {
+              "menu": [Function],
+              "menuList": [Function],
+            }
+          }
           value={null}
-          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"
@@ -6086,19 +6268,10 @@ exports[`Storyshots object-list ready 1`] = `
       >
         <Select
           className="objectlist-select-filter"
-          labelKey="name"
-          menuContainerStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
-          menuStyle={
-            Object {
-              "maxHeight": "500px",
-            }
-          }
+          getOptionLabel={[Function]}
+          getOptionValue={[Function]}
           onChange={[Function]}
-          openOnFocus={true}
+          openMenuOnClick={true}
           options={
             Array [
               Object {
@@ -6178,8 +6351,13 @@ exports[`Storyshots object-list ready 1`] = `
             ]
           }
           placeholder="Add Filter"
+          styles={
+            Object {
+              "menu": [Function],
+              "menuList": [Function],
+            }
+          }
           value={null}
-          valueKey="filterKey"
         />
         <div
           className="objectlist-dropdown"

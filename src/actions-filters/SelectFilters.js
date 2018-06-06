@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Select from 'react-select'
+import Select from '../utils/Select'
 import {FILTER_BASE_TYPE} from '../utils/proptypes'
 import { sortByName } from '../utils'
 

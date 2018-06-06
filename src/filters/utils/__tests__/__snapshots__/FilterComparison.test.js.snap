@@ -5,7 +5,7 @@ exports[`FilterComparison Snapshots renders default 1`] = `
   className="objectlist-current-filter__filter-comparison"
 >
   <Select
-    clearable={false}
+    isClearable={false}
     onChange={[Function]}
     options={
       Array [

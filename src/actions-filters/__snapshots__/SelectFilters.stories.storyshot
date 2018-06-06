@@ -3,19 +3,10 @@
 exports[`Storyshots object-list/SelectFilters default view 1`] = `
 <Select
   className="objectlist-select-filter"
-  labelKey="name"
-  menuContainerStyle={
-    Object {
-      "maxHeight": "500px",
-    }
-  }
-  menuStyle={
-    Object {
-      "maxHeight": "500px",
-    }
-  }
+  getOptionLabel={[Function]}
+  getOptionValue={[Function]}
   onChange={[Function]}
-  openOnFocus={true}
+  openMenuOnClick={true}
   options={
     Array [
       Object {
@@ -95,7 +86,12 @@ exports[`Storyshots object-list/SelectFilters default view 1`] = `
     ]
   }
   placeholder="Add Filter"
+  styles={
+    Object {
+      "menu": [Function],
+      "menuList": [Function],
+    }
+  }
   value={null}
-  valueKey="filterKey"
 />
 `;
