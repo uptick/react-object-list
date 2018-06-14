@@ -8,6 +8,7 @@ import { valueEqual } from '../utils/functions'
 class SelectFilters extends Component {
   static propTypes = {
     /** array of potential filters that can be displayed inside the object-list */
+    /* eslint-disable-next-line react/no-unused-prop-types */
     filters: PropTypes.arrayOf(PropTypes.shape({
       ...FILTER_BASE_TYPE,
       active: PropTypes.bool,
@@ -25,7 +26,7 @@ class SelectFilters extends Component {
   }
 
   static getDerivedStateFromProps = (props, state) => {
-    let quickFilters = this.props.filters.filter((filter) => {
+    let quickFilters = props.filters.filter((filter) => {
       return (!(filter.active) && !filter.alwaysVisible)
     })
     quickFilters = quickFilters.sort(sortByName)
