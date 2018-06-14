@@ -26,6 +26,7 @@ class OptionalFields extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     return (
+      nextState.optionalFieldsOpen !== this.state.optionalFieldsOpen ||
       !valueEqual(this.props.optionalFields, nextProps.optionalFields) ||
       !valueEqual(this.props.extraColumns, nextProps.extraColumns)
     )
