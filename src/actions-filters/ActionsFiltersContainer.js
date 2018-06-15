@@ -82,26 +82,32 @@ class ActionsFilterContainer extends Component {
   state = {
     searchFilter: null,
     otherFilters: [],
+    oldFilters: [],
   }
 
   static getDerivedStateFromProps(props, state) {
     const {filters, searchKey} = props
-    let search
-    if (searchKey) {
-      search = filters.find(f => f.filterKey === searchKey)
-      if (search) {
-        search = {
-          ...search,
-          value: search.value || '',
-          permanent: true,
-          active: true,
+    const {oldFilters} = state
+    if (filters !== oldFilters) {
+      let search
+      if (searchKey) {
+        search = filters.find(f => f.filterKey === searchKey)
+        if (search) {
+          search = {
+            ...search,
+            value: search.value || '',
+            permanent: true,
+            active: true,
+          }
         }
       }
+      return ({
+        searchFilter: search,
+        otherFilters: filters.filter(f => !search || f.filterKey !== searchKey),
+        oldFilters: filters,
+      })
     }
-    return ({
-      searchFilter: search,
-      otherFilters: filters.filter(f => !search || f.filterKey !== searchKey),
-    })
+    return null
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -147,7 +153,7 @@ class ActionsFilterContainer extends Component {
         <div className="objectlist-row objectlist-row--right objectlist-row--search">
           {searchFilter && (
             <FiltersContainer
-              filters={[searchFilter]}
+              filters={searchFilter}
               updateFilter={updateFilter}
               removeFilter={removeFilter}
             />
