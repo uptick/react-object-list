@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import ClassNames from 'classnames'
 import FavouritesItem from './FavouritesItem'
 
-class Favourites extends Component {
+class Favourites extends PureComponent {
   static propTypes = {
     /** list of favourites available to select from */
     favourites: PropTypes.arrayOf(PropTypes.shape({
