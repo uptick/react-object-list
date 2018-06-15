@@ -39,7 +39,6 @@ export default class TableHeader extends React.Component {
   }
 
   static getDerivedStateFromProps = (props, state) => {
-    console.log('in here', props.headerItems)
     const headerItems = Array.isArray(props.headerItems) ? [...props.headerItems] : [props.headerItems]
     const firstHeader = headerItems.length ? headerItems[0] : null
     const label = props.label || (firstHeader ? firstHeader.dataKey.split('.').pop() : null)
