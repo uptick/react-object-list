@@ -89,23 +89,22 @@ class ActionsFilterContainer extends Component {
     const {filters, searchKey} = props
     const {oldFilters} = state
     if (filters !== oldFilters) {
-      let search
+      const changes = {
+        otherFilters: filters.filter(f => f.filterKey !== searchKey),
+        oldFilters: filters,
+      }
       if (searchKey) {
-        search = filters.find(f => f.filterKey === searchKey)
-        if (search) {
-          search = {
+        const search = filters.find(f => f.filterKey === searchKey)
+        if (search !== oldFilters.find(f => f.filterKey === searchKey)) {
+          changes.searchFilter = search ? {
             ...search,
             value: search.value || '',
             permanent: true,
             active: true,
-          }
+          } : search
         }
       }
-      return ({
-        searchFilter: search,
-        otherFilters: filters.filter(f => !search || f.filterKey !== searchKey),
-        oldFilters: filters,
-      })
+      return changes
     }
     return null
   }
