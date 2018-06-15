@@ -79,21 +79,13 @@ class ActionsFilterContainer extends Component {
     status: STATUS_CHOICES.done,
   }
 
-  componentDidMount() {
-    const search = this.props.filters.find(f => f.filterKey === this.props.searchKey)
-    if (search && !search.active) {
-      this.props.addFilter(search)
-    }
+  state = {
+    searchFilter: null,
+    otherFilters: [],
   }
 
-  render() {
-    const {
-      searchKey, meta: {totalCount}, itemCount,
-      selection, customActions = [],
-      itemSingleName, itemPluralName, numSelected,
-      filters, updateFilter, removeFilter, status,
-    } = this.props
-    const loading = status === STATUS_CHOICES.loading
+  static getDerivedStateFromProps(props, state) {
+    const {filters, searchKey} = props
     let search
     if (searchKey) {
       search = filters.find(f => f.filterKey === searchKey)
@@ -106,19 +98,63 @@ class ActionsFilterContainer extends Component {
         }
       }
     }
+    return ({
+      searchFilter: search,
+      otherFilters: filters.filter(f => !search || f.filterKey !== searchKey),
+    })
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    const {
+      meta: {totalCount}, itemCount,
+      selection, customActions = [],
+      itemSingleName, itemPluralName, numSelected, status,
+    } = this.props
+    const {searchFilter, otherFilters} = this.state
+    return (
+      totalCount !== nextProps.meta.totalCount ||
+      itemCount !== nextProps.itemCount ||
+      selection !== nextProps.selection ||
+      customActions !== nextProps.customActions ||
+      itemSingleName !== nextProps.itemSingleName ||
+      itemPluralName !== nextProps.itemPluralName ||
+      numSelected !== nextProps.numSelected ||
+      status !== nextProps.status ||
+      searchFilter !== nextState.searchFilter ||
+      otherFilters !== nextState.otherFilters
+    )
+  }
+
+  componentDidMount() {
+    const search = this.props.filters.find(f => f.filterKey === this.props.searchKey)
+    if (search && !search.active) {
+      this.props.addFilter(search)
+    }
+  }
+
+  render() {
+    const {
+      meta: {totalCount}, itemCount,
+      selection, customActions = [],
+      itemSingleName, itemPluralName, numSelected,
+      updateFilter, removeFilter, status,
+    } = this.props
+    const {searchFilter, otherFilters} = this.state
+    const loading = status === STATUS_CHOICES.loading
+
     return (
       <div>
         <div className="objectlist-row objectlist-row--right objectlist-row--search">
-          {search && (
+          {searchFilter && (
             <FiltersContainer
-              filters={[search]}
+              filters={[searchFilter]}
               updateFilter={updateFilter}
               removeFilter={removeFilter}
             />
           )}
           <div className="objectlist-row">
             <SelectFilters
-              filters={filters.filter(f => !search || f.filterKey !== searchKey)}
+              filters={otherFilters}
               addFilter={this.props.addFilter}
             />
             {this.props.favouritesEnabled &&
@@ -132,7 +168,7 @@ class ActionsFilterContainer extends Component {
           </div>
         </div>
         <FiltersContainer
-          filters={filters.filter(f => !search || f.filterKey !== searchKey)}
+          filters={otherFilters}
           updateFilter={updateFilter}
           removeFilter={removeFilter}
         />
