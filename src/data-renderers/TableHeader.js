@@ -38,12 +38,21 @@ export default class TableHeader extends React.Component {
     headerItems: [],
   }
 
-  static getDerivedStateFromProps = (props, state) => {
-    const headerItems = Array.isArray(props.headerItems) ? [...props.headerItems] : [props.headerItems]
-    const firstHeader = headerItems.length ? headerItems[0] : null
-    const label = props.label || (firstHeader ? firstHeader.dataKey.split('.').pop() : null)
-    const width = firstHeader ? firstHeader.width : null || state.width
-    return ({headerItems, width, label})
+  static getDerivedStateFromProps(props, state) {
+    const {headerItems, label, width} = props
+    const stateChanges = {}
+    if (headerItems !== state.headerItems) {
+      stateChanges.headerItems = headerItems
+    }
+    const firstHeader = Array.isArray(headerItems) ? headerItems[0] : headerItems
+    if (label !== state.label) {
+      stateChanges.label = props.label || (firstHeader ? firstHeader.dataKey.split('.').pop() : null)
+    }
+    if (width !== state.width) {
+      stateChanges.width = firstHeader ? firstHeader.width : null || state.width
+    }
+    if (Object.keys(stateChanges).length) return stateChanges
+    return null
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -84,7 +93,9 @@ export default class TableHeader extends React.Component {
   }
 
   render() {
-    const headers = this.state.headerItems.map((header, i) => (
+    const {headerItems, width} = this.state
+    const arrayOfHeaderItems = Array.isArray(headerItems) ? headerItems : [headerItems]
+    const headers = arrayOfHeaderItems.map((header, i) => (
       <HeaderField
         key={`headerfield-${i}`}
         activeSort={this.getSortDirection(header.sortKey)}
@@ -93,7 +104,7 @@ export default class TableHeader extends React.Component {
       />
     ))
     let widthHandle
-    if (this.state.width && this.props.saveWidth) {
+    if (width && this.props.saveWidth) {
       widthHandle = (
         <WidthHandle
           onChange={this.setWidth}
@@ -103,7 +114,7 @@ export default class TableHeader extends React.Component {
     }
 
     return (
-      <th width={this.state.width} className={`objectlist-table__th ${this.props.className}`}>
+      <th width={width} className={`objectlist-table__th ${this.props.className}`}>
         { headers }
         { widthHandle }
       </th>

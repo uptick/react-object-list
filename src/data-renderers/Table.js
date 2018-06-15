@@ -40,12 +40,31 @@ export default class TableRenderer extends Component {
   }
 
   state = {
-    columns: getVisibleColumns(setColumnLabels(this.props.columns), this.props.meta.extraColumns),
+    columns: [],
+    allColumns: [],
+    extraColumns: [],
   }
 
-  componentWillReceiveProps(nextProps) {
-    // TODO: optimise performance and only do this if the columns prop has changed
-    this.setState(() => ({columns: getVisibleColumns(setColumnLabels(nextProps.columns), nextProps.meta.extraColumns)}))
+  static getDerivedStateFromProps(props, state) {
+    if (props.columns !== state.allColumns || props.meta.extraColumns !== state.extraColumns) {
+      return ({
+        columns: getVisibleColumns(setColumnLabels(props.columns), props.meta.extraColumns),
+        allColumns: props.columns,
+        extraColumns: props.meta.extraColumns,
+      })
+    }
+    return null
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    const {data, selection, status, numSelected} = this.props
+    return (
+      this.state.columns !== nextState.columns ||
+      selection !== nextProps.selection ||
+      data !== nextProps.data ||
+      status !== nextProps.status ||
+      numSelected !== nextProps.numSelected
+    )
   }
 
   _renderHeaderRowHelper = () => {

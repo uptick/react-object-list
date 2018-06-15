@@ -67,11 +67,11 @@ class InteractiveObjectList extends React.Component {
     }
   })
   updateColumns = columnKey => this.setState(prevState => {
-    let extraColumns = [...prevState.extraColumns]
+    let extraColumns = prevState.extraColumns
     if (extraColumns.includes(columnKey)) {
       extraColumns = extraColumns.filter(key => key !== columnKey)
     } else {
-      extraColumns.push(columnKey)
+      extraColumns = [...extraColumns, columnKey]
     }
     return {extraColumns}
   })
