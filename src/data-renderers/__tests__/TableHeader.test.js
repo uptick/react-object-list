@@ -38,9 +38,9 @@ describe('Table Header', () => {
       const nextProps = {
         headerItems: [{...headerItem, dataKey: 'somethingelse'}],
       }
-      const instance = shallow(<TableHeader {...props} />).instance()
-      instance.componentWillReceiveProps(nextProps)
-      expect(instance.state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
+      const component = shallow(<TableHeader {...props} />)
+      component.setProps(nextProps)
+      expect(component.instance().state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
     })
     it('will recieve props as non-array', () => {
       const props = {
@@ -49,9 +49,9 @@ describe('Table Header', () => {
       const nextProps = {
         headerItems: {...headerItem, dataKey: 'somethingelse'},
       }
-      const instance = shallow(<TableHeader {...props} />).instance()
-      instance.componentWillReceiveProps(nextProps)
-      expect(instance.state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
+      const component = shallow(<TableHeader {...props} />)
+      component.setProps(nextProps)
+      expect(component.instance().state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
     })
     it('will recieve same props', () => {
       const props = {
@@ -60,9 +60,9 @@ describe('Table Header', () => {
       const nextProps = {
         headerItems: headerItem,
       }
-      const instance = shallow(<TableHeader {...props} />).instance()
-      instance.componentWillReceiveProps(nextProps)
-      expect(instance.state.headerItems).toEqual([headerItem])
+      const component = shallow(<TableHeader {...props} />)
+      component.setProps(nextProps)
+      expect(component.instance().state.headerItems).toEqual([headerItem])
     })
     it('saves width', () => {
       const props = {
@@ -74,21 +74,20 @@ describe('Table Header', () => {
       instance.saveWidth()
       expect(props.saveWidth).toHaveBeenCalledWith(props.label, 10)
     })
-  })
-
-  describe('sets width', () => {
-    let instance
-    beforeEach(() => {
-      instance = shallow(<TableHeader />).instance()
-      instance.setState({width: 50})
-    })
-    it('width > 20', () => {
-      instance.setWidth(50)
-      expect(instance.state.width).toBe(100)
-    })
-    it('width < 20', () => {
-      instance.setWidth('-40')
-      expect(instance.state.width).toBe(50)
+    describe('sets width', () => {
+      let instance
+      beforeEach(() => {
+        instance = shallow(<TableHeader />).instance()
+        instance.setState({width: 50})
+      })
+      it('width > 20', () => {
+        instance.setWidth(50)
+        expect(instance.state.width).toBe(100)
+      })
+      it('width < 20', () => {
+        instance.setWidth('-40')
+        expect(instance.state.width).toBe(50)
+      })
     })
   })
 })
