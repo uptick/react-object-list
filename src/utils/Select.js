@@ -60,12 +60,11 @@ function convertProps(props, transforms) {
  */
 class Select extends React.Component {
   static propTypes = {
-    ...ReactAsyncSelect.propTypes,
-    ...ReactSelect.propTypes,
     isAsync: PropTypes.bool,
     optionRenderer: PropTypes.func,
     menuStyle: PropTypes.object,
     menuContainerStyle: PropTypes.object,
+    value: PropTypes.any,
   }
 
   render() {
