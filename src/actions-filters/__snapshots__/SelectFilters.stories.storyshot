@@ -88,8 +88,10 @@ exports[`Storyshots object-list/SelectFilters default view 1`] = `
   placeholder="Add Filter"
   styles={
     Object {
-      "menu": [Function],
-      "menuList": [Function],
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
     }
   }
   value={null}

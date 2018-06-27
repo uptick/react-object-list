@@ -43,8 +43,10 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
@@ -653,8 +655,10 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}

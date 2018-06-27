@@ -45,6 +45,14 @@ exports[`Date Snapshots has custom relative date options 1`] = `
       },
     ]
   }
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
 />
 `;
 
@@ -120,6 +128,14 @@ exports[`Date Snapshots renders with relative comparison 1`] = `
         "value": "year_start",
       },
     ]
+  }
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
   }
 />
 `;

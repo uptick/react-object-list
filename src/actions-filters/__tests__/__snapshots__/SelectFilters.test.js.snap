@@ -19,8 +19,10 @@ exports[`<SelectFilters /> Snapshot renders correctly 1`] = `
   placeholder="Add Filter"
   styles={
     Object {
-      "menu": [Function],
-      "menuList": [Function],
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
     }
   }
   value={null}

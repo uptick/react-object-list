@@ -10,6 +10,14 @@ exports[`Choice Snapshots renders default 1`] = `
   onChange={[Function]}
   options={Array []}
   placeholder="Any value"
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
   value={44}
 />
 `;
@@ -24,6 +32,14 @@ exports[`Choice Snapshots renders with custom label key 1`] = `
   onChange={[Function]}
   options={Array []}
   placeholder="Any value"
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
   value={44}
 />
 `;
@@ -43,6 +59,14 @@ exports[`Choice Snapshots renders with custom option renderer 1`] = `
   onChange={[Function]}
   options={Array []}
   placeholder="Any value"
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
   value={44}
 />
 `;
@@ -57,6 +81,14 @@ exports[`Choice Snapshots renders with custom value key 1`] = `
   onChange={[Function]}
   options={Array []}
   placeholder="Any value"
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
   value={44}
 />
 `;
@@ -71,6 +103,14 @@ exports[`Choice Snapshots renders with multiple choice 1`] = `
   onChange={[Function]}
   options={Array []}
   placeholder="Any value"
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
   value={44}
 />
 `;
@@ -92,6 +132,14 @@ exports[`Choice Snapshots renders with options 1`] = `
     ]
   }
   placeholder="Any value"
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
   value={44}
 />
 `;
@@ -106,6 +154,14 @@ exports[`Choice Snapshots renders with placeholder 1`] = `
   onChange={[Function]}
   options={Array []}
   placeholder="Testing testing"
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
   value={44}
 />
 `;
@@ -120,6 +176,14 @@ exports[`Choice Snapshots renders with remote options 1`] = `
   onChange={[Function]}
   options={Array []}
   placeholder="Any value"
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
   value={44}
 />
 `;

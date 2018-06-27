@@ -33,6 +33,14 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
         ]
       }
       placeholder="Any value"
+      styles={
+        Object {
+          "control": [Function],
+          "dropdownIndicator": [Function],
+          "multiValue": [Function],
+          "multiValueLabel": [Function],
+        }
+      }
       value={null}
     />
     <button
@@ -248,12 +256,15 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
             },
           ]
         }
-        value={
+        styles={
           Object {
-            "label": "Exact",
-            "value": "exact",
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
           }
         }
+        value={undefined}
       />
     </div>
     <div
@@ -309,7 +320,20 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
             },
           ]
         }
-        value="is"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
+        value={
+          Object {
+            "label": "Is",
+            "value": "is",
+          }
+        }
       />
     </div>
     <Select
@@ -321,6 +345,14 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       onChange={[Function]}
       options={Array []}
       placeholder="Any value"
+      styles={
+        Object {
+          "control": [Function],
+          "dropdownIndicator": [Function],
+          "multiValue": [Function],
+          "multiValueLabel": [Function],
+        }
+      }
       value={null}
     />
     <button
@@ -356,7 +388,20 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
             },
           ]
         }
-        value="relative"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
+        value={
+          Object {
+            "label": "Relative to Now",
+            "value": "relative",
+          }
+        }
       />
     </div>
     <Select
@@ -382,6 +427,14 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
             "value": "year_start",
           },
         ]
+      }
+      styles={
+        Object {
+          "control": [Function],
+          "dropdownIndicator": [Function],
+          "multiValue": [Function],
+          "multiValueLabel": [Function],
+        }
       }
     />
     <button
@@ -442,7 +495,20 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
             },
           ]
         }
-        value="is"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
+        value={
+          Object {
+            "label": "Is",
+            "value": "is",
+          }
+        }
       />
     </div>
     <Select
@@ -454,6 +520,14 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       onChange={[Function]}
       options={Array []}
       placeholder="Any value"
+      styles={
+        Object {
+          "control": [Function],
+          "dropdownIndicator": [Function],
+          "multiValue": [Function],
+          "multiValueLabel": [Function],
+        }
+      }
       value={null}
     />
     <button
@@ -501,7 +575,20 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
             },
           ]
         }
-        value="exact"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
+        value={
+          Object {
+            "label": "Exact",
+            "value": "exact",
+          }
+        }
       />
     </div>
     <div
@@ -577,7 +664,20 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
             },
           ]
         }
-        value="contains"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
+        value={
+          Object {
+            "label": "Contains",
+            "value": "contains",
+          }
+        }
       />
     </div>
     <input
@@ -611,6 +711,14 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       onChange={[Function]}
       options={Array []}
       placeholder="Any value"
+      styles={
+        Object {
+          "control": [Function],
+          "dropdownIndicator": [Function],
+          "multiValue": [Function],
+          "multiValueLabel": [Function],
+        }
+      }
       value={null}
     />
     <button
@@ -646,12 +754,15 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
             },
           ]
         }
-        value={
+        styles={
           Object {
-            "label": "Is",
-            "value": "is",
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
           }
         }
+        value={undefined}
       />
     </div>
     <Select.Async
@@ -663,6 +774,14 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       onChange={[Function]}
       options={Array []}
       placeholder="Any value"
+      styles={
+        Object {
+          "control": [Function],
+          "dropdownIndicator": [Function],
+          "multiValue": [Function],
+          "multiValueLabel": [Function],
+        }
+      }
       value={null}
     />
     <button

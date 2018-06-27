@@ -15,7 +15,20 @@ exports[`FilterComparison Snapshots renders default 1`] = `
         },
       ]
     }
-    value="test"
+    styles={
+      Object {
+        "control": [Function],
+        "dropdownIndicator": [Function],
+        "multiValue": [Function],
+        "multiValueLabel": [Function],
+      }
+    }
+    value={
+      Object {
+        "label": "Test This",
+        "value": "test",
+      }
+    }
   />
 </div>
 `;

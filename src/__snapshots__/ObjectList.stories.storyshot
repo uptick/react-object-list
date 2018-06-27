@@ -96,8 +96,10 @@ exports[`Storyshots object-list all selected 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
@@ -703,8 +705,10 @@ exports[`Storyshots object-list can select all 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
@@ -1320,8 +1324,10 @@ exports[`Storyshots object-list can select items 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
@@ -1879,8 +1885,10 @@ exports[`Storyshots object-list has active filters 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
@@ -2123,7 +2131,20 @@ exports[`Storyshots object-list has active filters 1`] = `
                 },
               ]
             }
-            value="is"
+            styles={
+              Object {
+                "control": [Function],
+                "dropdownIndicator": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+              }
+            }
+            value={
+              Object {
+                "label": "Is",
+                "value": "is",
+              }
+            }
           />
         </div>
         <Select
@@ -2135,6 +2156,14 @@ exports[`Storyshots object-list has active filters 1`] = `
           onChange={[Function]}
           options={Array []}
           placeholder="Any value"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
           value={null}
         />
         <button
@@ -2213,7 +2242,20 @@ exports[`Storyshots object-list has active filters 1`] = `
                 },
               ]
             }
-            value="exact"
+            styles={
+              Object {
+                "control": [Function],
+                "dropdownIndicator": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+              }
+            }
+            value={
+              Object {
+                "label": "Exact",
+                "value": "exact",
+              }
+            }
           />
         </div>
         <div
@@ -2272,7 +2314,20 @@ exports[`Storyshots object-list has active filters 1`] = `
                 },
               ]
             }
-            value="contains"
+            styles={
+              Object {
+                "control": [Function],
+                "dropdownIndicator": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+              }
+            }
+            value={
+              Object {
+                "label": "Contains",
+                "value": "contains",
+              }
+            }
           />
         </div>
         <input
@@ -2315,12 +2370,15 @@ exports[`Storyshots object-list has active filters 1`] = `
                 },
               ]
             }
-            value={
+            styles={
               Object {
-                "label": "Is",
-                "value": "is",
+                "control": [Function],
+                "dropdownIndicator": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
               }
             }
+            value={undefined}
           />
         </div>
         <Select.Async
@@ -2332,6 +2390,14 @@ exports[`Storyshots object-list has active filters 1`] = `
           onChange={[Function]}
           options={Array []}
           placeholder="Any value"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
           value={null}
         />
         <button
@@ -3209,8 +3275,10 @@ exports[`Storyshots object-list has everything 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
@@ -3453,7 +3521,20 @@ exports[`Storyshots object-list has everything 1`] = `
                 },
               ]
             }
-            value="is"
+            styles={
+              Object {
+                "control": [Function],
+                "dropdownIndicator": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+              }
+            }
+            value={
+              Object {
+                "label": "Is",
+                "value": "is",
+              }
+            }
           />
         </div>
         <Select
@@ -3465,6 +3546,14 @@ exports[`Storyshots object-list has everything 1`] = `
           onChange={[Function]}
           options={Array []}
           placeholder="Any value"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
           value={null}
         />
         <button
@@ -3543,7 +3632,20 @@ exports[`Storyshots object-list has everything 1`] = `
                 },
               ]
             }
-            value="exact"
+            styles={
+              Object {
+                "control": [Function],
+                "dropdownIndicator": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+              }
+            }
+            value={
+              Object {
+                "label": "Exact",
+                "value": "exact",
+              }
+            }
           />
         </div>
         <div
@@ -3602,7 +3704,20 @@ exports[`Storyshots object-list has everything 1`] = `
                 },
               ]
             }
-            value="contains"
+            styles={
+              Object {
+                "control": [Function],
+                "dropdownIndicator": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+              }
+            }
+            value={
+              Object {
+                "label": "Contains",
+                "value": "contains",
+              }
+            }
           />
         </div>
         <input
@@ -3645,12 +3760,15 @@ exports[`Storyshots object-list has everything 1`] = `
                 },
               ]
             }
-            value={
+            styles={
               Object {
-                "label": "Is",
-                "value": "is",
+                "control": [Function],
+                "dropdownIndicator": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
               }
             }
+            value={undefined}
           />
         </div>
         <Select.Async
@@ -3662,6 +3780,14 @@ exports[`Storyshots object-list has everything 1`] = `
           onChange={[Function]}
           options={Array []}
           placeholder="Any value"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
           value={null}
         />
         <button
@@ -4220,8 +4346,10 @@ exports[`Storyshots object-list has multiple pages 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
@@ -4686,8 +4814,10 @@ exports[`Storyshots object-list has optional fields 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
@@ -5189,8 +5319,10 @@ exports[`Storyshots object-list has search key 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
@@ -5655,8 +5787,10 @@ exports[`Storyshots object-list loading 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
@@ -6131,8 +6265,10 @@ exports[`Storyshots object-list ready 1`] = `
           placeholder="Add Filter"
           styles={
             Object {
-              "menu": [Function],
-              "menuList": [Function],
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
           value={null}
