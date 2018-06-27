@@ -85,6 +85,7 @@ class Select extends React.Component {
       multi: ['isMulti'],
       clearable: ['isClearable'],
       openOnFocus: ['openMenuOnClick'],
+      cache: ['cacheOptions'],
     })
 
     // Component overrides are a bit more difficult, and can't be
@@ -99,7 +100,29 @@ class Select extends React.Component {
     }
 
     // Style overrides are a bit trickier too.
-    const styles = {}
+    const styles = {
+      control: (base, state) => ({
+        ...base,
+        backgroundColor: '#fff',
+        minHeight: 0,
+      }),
+      dropdownIndicator: (base, state) => ({
+        ...base,
+        paddingTop: 0,
+        paddingBottom: 0,
+      }),
+      multiValue: (base, state) => ({
+        ...base,
+        backgroundColor: 'rgba(0,126,255,0.08)',
+        border: '1px solid rgba(0,126,255,0.24)',
+        color: '#007eff',
+      }),
+      multiValueLabel: (base, state) => ({
+        ...base,
+        color: '#007eff',
+        borderRight: '1px solid rgba(0,126,255,0.24)',
+      }),
+    }
     if (menuStyle) {
       styles.menu = ({base}) => ({...base, ...menuStyle})
     }

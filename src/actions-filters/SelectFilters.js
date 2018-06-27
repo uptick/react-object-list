@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import Select from '../utils/Select'
 import {FILTER_BASE_TYPE} from '../utils/proptypes'
-import { sortByName } from '../utils'
+import {sortByName} from '../utils'
 
 class SelectFilters extends Component {
   static propTypes = {
@@ -20,10 +20,16 @@ class SelectFilters extends Component {
   render() {
     if (this.props.filters.length === 0) { return null }
 
-    let quickFilters = this.props.filters.filter((filter) => {
-      return (!(filter.active) && !filter.alwaysVisible)
-    })
+    let quickFilters = this.props.filters.filter(filter =>
+      !filter.active && !filter.alwaysVisible
+    )
     quickFilters = quickFilters.sort(sortByName)
+
+    // There's something pretty odd happening with react-select v2 that
+    // causes any option that itself contains an `options` field to use
+    // that subfield instead of itself. WTF.
+    // TODO: Check if this issue has been resolved in a later version.
+    quickFilters = quickFilters.map(({options, ...rest}) => rest)
 
     return (
       <Select
@@ -35,8 +41,6 @@ class SelectFilters extends Component {
         onChange={this.props.addFilter}
         placeholder="Add Filter"
         className="objectlist-select-filter"
-        menuStyle={{maxHeight: '500px'}}
-        menuContainerStyle={{maxHeight: '500px'}}
       />
     )
   }

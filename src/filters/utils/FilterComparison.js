@@ -20,7 +20,7 @@ class FilterComparison extends React.Component {
       <div className="objectlist-current-filter__filter-comparison">
         <Select
           options={options}
-          value={value}
+          value={options.find(x => x.value === value)}
           onChange={this.handleChange}
           clearable={false}
         />
