@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Select from 'react-select'
+import Select from '../../utils/Select'
 
 class FilterComparison extends React.Component {
   static propTypes = {
@@ -20,7 +20,7 @@ class FilterComparison extends React.Component {
       <div className="objectlist-current-filter__filter-comparison">
         <Select
           options={options}
-          value={value}
+          value={options.find(x => x.value === value)}
           onChange={this.handleChange}
           clearable={false}
         />

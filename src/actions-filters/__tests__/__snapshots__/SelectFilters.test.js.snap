@@ -3,19 +3,10 @@
 exports[`<SelectFilters /> Snapshot renders correctly 1`] = `
 <ReactSelect
   className="objectlist-select-filter"
-  labelKey="name"
-  menuContainerStyle={
-    Object {
-      "maxHeight": "500px",
-    }
-  }
-  menuStyle={
-    Object {
-      "maxHeight": "500px",
-    }
-  }
+  getOptionLabel={[Function]}
+  getOptionValue={[Function]}
   onChange={[MockFunction]}
-  openOnFocus={true}
+  openMenuOnClick={true}
   options={
     Array [
       Object {
@@ -26,7 +17,14 @@ exports[`<SelectFilters /> Snapshot renders correctly 1`] = `
     ]
   }
   placeholder="Add Filter"
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
   value={null}
-  valueKey="filterKey"
 />
 `;

@@ -5,7 +5,7 @@ exports[`FilterComparison Snapshots renders default 1`] = `
   className="objectlist-current-filter__filter-comparison"
 >
   <Select
-    clearable={false}
+    isClearable={false}
     onChange={[Function]}
     options={
       Array [
@@ -15,7 +15,20 @@ exports[`FilterComparison Snapshots renders default 1`] = `
         },
       ]
     }
-    value="test"
+    styles={
+      Object {
+        "control": [Function],
+        "dropdownIndicator": [Function],
+        "multiValue": [Function],
+        "multiValueLabel": [Function],
+      }
+    }
+    value={
+      Object {
+        "label": "Test This",
+        "value": "test",
+      }
+    }
   />
 </div>
 `;

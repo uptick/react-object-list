@@ -10,23 +10,21 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
     >
       <Select
         className="objectlist-select-filter"
-        labelKey="name"
-        menuContainerStyle={
-          Object {
-            "maxHeight": "500px",
-          }
-        }
-        menuStyle={
-          Object {
-            "maxHeight": "500px",
-          }
-        }
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
         onChange={undefined}
-        openOnFocus={true}
+        openMenuOnClick={true}
         options={Array []}
         placeholder="Add Filter"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="filterKey"
       />
       <div
         className="objectlist-dropdown"
@@ -82,11 +80,11 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
       </label>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={undefined}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={
           Array [
             Object {
@@ -100,8 +98,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           ]
         }
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -290,7 +295,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -316,12 +321,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               },
             ]
           }
-          value={
+          styles={
             Object {
-              "label": "Exact",
-              "value": "exact",
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
+          value={undefined}
         />
       </div>
       <div
@@ -363,7 +371,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -377,20 +385,40 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               },
             ]
           }
-          value="is"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={undefined}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -411,7 +439,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -425,12 +453,25 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               },
             ]
           }
-          value="relative"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Relative to Now",
+              "value": "relative",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        clearable={false}
+        isClearable={false}
         onChange={[Function]}
         options={
           Array [
@@ -451,6 +492,14 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               "value": "year_start",
             },
           ]
+        }
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
         }
       />
       <button
@@ -503,7 +552,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -517,20 +566,40 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               },
             ]
           }
-          value="is"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={true}
         loadOptions={undefined}
-        multi={true}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -551,7 +620,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -577,7 +646,20 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               },
             ]
           }
-          value="exact"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Exact",
+              "value": "exact",
+            }
+          }
         />
       </div>
       <div
@@ -639,7 +721,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -653,7 +735,20 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               },
             ]
           }
-          value="contains"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Contains",
+              "value": "contains",
+            }
+          }
         />
       </div>
       <input
@@ -680,15 +775,22 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
       </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={[Function]}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -709,7 +811,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -723,25 +825,35 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               },
             ]
           }
-          value={
+          styles={
             Object {
-              "label": "Is",
-              "value": "is",
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
+          value={undefined}
         />
       </div>
       <Select.Async
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={true}
         loadOptions={[Function]}
-        multi={true}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -915,23 +1027,21 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
     >
       <Select
         className="objectlist-select-filter"
-        labelKey="name"
-        menuContainerStyle={
-          Object {
-            "maxHeight": "500px",
-          }
-        }
-        menuStyle={
-          Object {
-            "maxHeight": "500px",
-          }
-        }
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
         onChange={undefined}
-        openOnFocus={true}
+        openMenuOnClick={true}
         options={Array []}
         placeholder="Add Filter"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="filterKey"
       />
       <div
         className="objectlist-dropdown"
@@ -987,11 +1097,11 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
       </label>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={undefined}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={
           Array [
             Object {
@@ -1005,8 +1115,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
           ]
         }
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -1195,7 +1312,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -1221,12 +1338,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               },
             ]
           }
-          value={
+          styles={
             Object {
-              "label": "Exact",
-              "value": "exact",
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
+          value={undefined}
         />
       </div>
       <div
@@ -1268,7 +1388,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -1282,20 +1402,40 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               },
             ]
           }
-          value="is"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={undefined}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -1316,7 +1456,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -1330,12 +1470,25 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               },
             ]
           }
-          value="relative"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Relative to Now",
+              "value": "relative",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        clearable={false}
+        isClearable={false}
         onChange={[Function]}
         options={
           Array [
@@ -1356,6 +1509,14 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               "value": "year_start",
             },
           ]
+        }
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
         }
       />
       <button
@@ -1408,7 +1569,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -1422,20 +1583,40 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               },
             ]
           }
-          value="is"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={true}
         loadOptions={undefined}
-        multi={true}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -1456,7 +1637,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -1482,7 +1663,20 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               },
             ]
           }
-          value="exact"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Exact",
+              "value": "exact",
+            }
+          }
         />
       </div>
       <div
@@ -1544,7 +1738,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -1558,7 +1752,20 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               },
             ]
           }
-          value="contains"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Contains",
+              "value": "contains",
+            }
+          }
         />
       </div>
       <input
@@ -1585,15 +1792,22 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
       </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={[Function]}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -1614,7 +1828,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -1628,25 +1842,35 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               },
             ]
           }
-          value={
+          styles={
             Object {
-              "label": "Is",
-              "value": "is",
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
+          value={undefined}
         />
       </div>
       <Select.Async
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={true}
         loadOptions={[Function]}
-        multi={true}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -1732,23 +1956,21 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
     >
       <Select
         className="objectlist-select-filter"
-        labelKey="name"
-        menuContainerStyle={
-          Object {
-            "maxHeight": "500px",
-          }
-        }
-        menuStyle={
-          Object {
-            "maxHeight": "500px",
-          }
-        }
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
         onChange={undefined}
-        openOnFocus={true}
+        openMenuOnClick={true}
         options={Array []}
         placeholder="Add Filter"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="filterKey"
       />
       <div
         className="objectlist-dropdown"
@@ -1804,11 +2026,11 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
       </label>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={undefined}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={
           Array [
             Object {
@@ -1822,8 +2044,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
           ]
         }
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -2012,7 +2241,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -2038,12 +2267,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               },
             ]
           }
-          value={
+          styles={
             Object {
-              "label": "Exact",
-              "value": "exact",
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
+          value={undefined}
         />
       </div>
       <div
@@ -2085,7 +2317,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -2099,20 +2331,40 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               },
             ]
           }
-          value="is"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={undefined}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -2133,7 +2385,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -2147,12 +2399,25 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               },
             ]
           }
-          value="relative"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Relative to Now",
+              "value": "relative",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        clearable={false}
+        isClearable={false}
         onChange={[Function]}
         options={
           Array [
@@ -2173,6 +2438,14 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               "value": "year_start",
             },
           ]
+        }
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
         }
       />
       <button
@@ -2225,7 +2498,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -2239,20 +2512,40 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               },
             ]
           }
-          value="is"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={true}
         loadOptions={undefined}
-        multi={true}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -2273,7 +2566,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -2299,7 +2592,20 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               },
             ]
           }
-          value="exact"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Exact",
+              "value": "exact",
+            }
+          }
         />
       </div>
       <div
@@ -2344,7 +2650,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -2358,7 +2664,20 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               },
             ]
           }
-          value="contains"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Contains",
+              "value": "contains",
+            }
+          }
         />
       </div>
       <input
@@ -2385,15 +2704,22 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
       </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={[Function]}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -2414,7 +2740,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -2428,25 +2754,35 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               },
             ]
           }
-          value={
+          styles={
             Object {
-              "label": "Is",
-              "value": "is",
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
+          value={undefined}
         />
       </div>
       <Select.Async
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={true}
         loadOptions={[Function]}
-        multi={true}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -2516,23 +2852,21 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
     >
       <Select
         className="objectlist-select-filter"
-        labelKey="name"
-        menuContainerStyle={
-          Object {
-            "maxHeight": "500px",
-          }
-        }
-        menuStyle={
-          Object {
-            "maxHeight": "500px",
-          }
-        }
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
         onChange={undefined}
-        openOnFocus={true}
+        openMenuOnClick={true}
         options={Array []}
         placeholder="Add Filter"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="filterKey"
       />
       <div
         className="objectlist-dropdown"
@@ -2588,11 +2922,11 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
       </label>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={undefined}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={
           Array [
             Object {
@@ -2606,8 +2940,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
           ]
         }
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -2796,7 +3137,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -2822,12 +3163,15 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               },
             ]
           }
-          value={
+          styles={
             Object {
-              "label": "Exact",
-              "value": "exact",
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
+          value={undefined}
         />
       </div>
       <div
@@ -2869,7 +3213,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -2883,20 +3227,40 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               },
             ]
           }
-          value="is"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={undefined}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -2917,7 +3281,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -2931,12 +3295,25 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               },
             ]
           }
-          value="relative"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Relative to Now",
+              "value": "relative",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        clearable={false}
+        isClearable={false}
         onChange={[Function]}
         options={
           Array [
@@ -2957,6 +3334,14 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               "value": "year_start",
             },
           ]
+        }
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
         }
       />
       <button
@@ -3009,7 +3394,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -3023,20 +3408,40 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               },
             ]
           }
-          value="is"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Is",
+              "value": "is",
+            }
+          }
         />
       </div>
       <Select
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={true}
         loadOptions={undefined}
-        multi={true}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -3057,7 +3462,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -3083,7 +3488,20 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               },
             ]
           }
-          value="exact"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Exact",
+              "value": "exact",
+            }
+          }
         />
       </div>
       <div
@@ -3128,7 +3546,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -3142,7 +3560,20 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               },
             ]
           }
-          value="contains"
+          styles={
+            Object {
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
+            }
+          }
+          value={
+            Object {
+              "label": "Contains",
+              "value": "contains",
+            }
+          }
         />
       </div>
       <input
@@ -3169,15 +3600,22 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
       </label>
       <Select.Async
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={false}
         loadOptions={[Function]}
-        multi={false}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
@@ -3198,7 +3636,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-current-filter__filter-comparison"
       >
         <Select
-          clearable={false}
+          isClearable={false}
           onChange={[Function]}
           options={
             Array [
@@ -3212,25 +3650,35 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               },
             ]
           }
-          value={
+          styles={
             Object {
-              "label": "Is",
-              "value": "is",
+              "control": [Function],
+              "dropdownIndicator": [Function],
+              "multiValue": [Function],
+              "multiValueLabel": [Function],
             }
           }
+          value={undefined}
         />
       </div>
       <Select.Async
         className="objectlist-current-filter__active-status"
-        labelKey="label"
+        getOptionLabel={[Function]}
+        getOptionValue={[Function]}
+        isMulti={true}
         loadOptions={[Function]}
-        multi={true}
         onChange={[Function]}
-        optionRenderer={null}
         options={Array []}
         placeholder="Any value"
+        styles={
+          Object {
+            "control": [Function],
+            "dropdownIndicator": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+          }
+        }
         value={null}
-        valueKey="value"
       />
       <button
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"

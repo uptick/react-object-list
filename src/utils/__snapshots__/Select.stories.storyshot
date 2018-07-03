@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots object-list/Utils/Select has custom menu container style 1`] = `
+<Select
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "menuList": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
+/>
+`;
+
+exports[`Storyshots object-list/Utils/Select has custom menu style 1`] = `
+<Select
+  styles={
+    Object {
+      "control": [Function],
+      "dropdownIndicator": [Function],
+      "menu": [Function],
+      "multiValue": [Function],
+      "multiValueLabel": [Function],
+    }
+  }
+/>
+`;

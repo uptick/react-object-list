@@ -2,7 +2,7 @@ import React from 'react'
 import moment from 'moment'
 import PropTypes from 'prop-types'
 
-import Select from 'react-select'
+import Select from '../../utils/Select'
 
 import DayPickerInput from 'react-day-picker/DayPickerInput'
 import {
