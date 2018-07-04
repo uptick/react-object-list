@@ -4,6 +4,7 @@ import { snapshotTest } from 'utils/tests'
 import Choice from '../Choice'
 
 jest.mock('react-select')
+jest.useFakeTimers()
 
 describe('Choice', () => {
   const baseProps = {
@@ -100,6 +101,21 @@ describe('Choice', () => {
           const instance = shallow(<Choice {...baseProps} multi valueKey="bob" />).instance()
           instance.handleChange(newValue)
           expect(baseProps.onChange).toHaveBeenCalledWith(newValue)
+        })
+      })
+      describe('debounces loading options', () => {
+        it('replaces existing fetchScheduled', () => {
+          const loadSpy = jasmine.createSpy()
+          const instance = shallow(<Choice {...baseProps} remote loadOptions={loadSpy} />).instance()
+          instance.scheduleLoadOptions(1, 2)
+          expect(setTimeout).toHaveBeenCalledTimes(1)
+          expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 450)
+          expect(typeof instance.state.fetchScheduled).toBe('number')
+          expect(instance.state.fetchScheduled % 1).toBe(0)
+          instance.scheduleLoadOptions(3, 4)
+          expect(clearTimeout).toHaveBeenCalledTimes(1)
+          jest.runOnlyPendingTimers()
+          expect(loadSpy).toHaveBeenCalledWith(3, 4)
         })
       })
     })
