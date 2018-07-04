@@ -6,7 +6,7 @@ import ReactAsyncSelect from 'react-select/lib/Async'
 // A searchable set of props to ignore when checking for
 // unknown props.
 const KNOWN_PROPS = new Set([
-  'options', 'loadOptions', 'value', 'onChange',
+  'options', 'value', 'onChange',
   'placeholder', 'className',
 ])
 
@@ -85,6 +85,17 @@ class Select extends React.Component {
       clearable: ['isClearable'],
       openOnFocus: ['openMenuOnClick'],
       cache: ['cacheOptions'],
+      autoload: ['defaultOptions'],
+      loadOptions: ['loadOptions', fn => (inputValue, callback) => {
+        if (callback === undefined) {
+          return fn(inputValue) // TODO: check value of this is ok
+        } else {
+          // eslint-disable-next-line handle-callback-err
+          fn(inputValue, (err, data) => {
+            callback(data.options)
+          })
+        }
+      }],
     })
 
     // Component overrides are a bit more difficult, and can't be

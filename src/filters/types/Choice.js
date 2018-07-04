@@ -43,6 +43,7 @@ class Choice extends React.Component {
 
   state = {
     value: null,
+    fetchScheduled: null,
   }
 
   componentDidMount() {
@@ -90,11 +91,23 @@ class Choice extends React.Component {
     }
   }
 
+  scheduleLoadOptions = (searchTerm, callback) => {
+    if (this.state.fetchScheduled) {
+      clearTimeout(this.state.fetchScheduled)
+    }
+    this.setState(() => ({
+      fetchScheduled: setTimeout(
+        // eslint-disable-next-line
+        () => this.props.loadOptions(searchTerm, callback), 450
+      ),
+    }))
+  }
+
   render() {
     const {
       options, multi, placeholder,
       valueKey, labelKey, optionRenderer,
-      remote, loadOptions,
+      remote,
     } = this.props
     const { value } = this.state
     const SelectComponent = remote ? Select.Async : Select
@@ -102,7 +115,7 @@ class Choice extends React.Component {
       <SelectComponent
         multi={multi}
         options={options}
-        loadOptions={loadOptions}
+        loadOptions={this.scheduleLoadOptions}
         value={value}
         onChange={this.handleChange}
         placeholder={placeholder}

@@ -15,7 +15,7 @@ exports[`Storyshots object-list/Filters BooleanFilter 1`] = `
     getOptionLabel={[Function]}
     getOptionValue={[Function]}
     isMulti={false}
-    loadOptions={undefined}
+    loadOptions={[Function]}
     onChange={[Function]}
     options={
       Array [
@@ -97,7 +97,7 @@ exports[`Storyshots object-list/Filters ChoiceFilter 1`] = `
     getOptionLabel={[Function]}
     getOptionValue={[Function]}
     isMulti={false}
-    loadOptions={undefined}
+    loadOptions={[Function]}
     onChange={[Function]}
     options={
       Array [
@@ -531,7 +531,7 @@ exports[`Storyshots object-list/Filters MultiChoiceFilter 1`] = `
     getOptionLabel={[Function]}
     getOptionValue={[Function]}
     isMulti={true}
-    loadOptions={undefined}
+    loadOptions={[Function]}
     onChange={[Function]}
     options={
       Array [
