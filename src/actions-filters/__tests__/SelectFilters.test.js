@@ -2,8 +2,6 @@ import React from 'react'
 import { snapshotTest } from 'utils/tests'
 import SelectFilters from '../SelectFilters'
 
-jest.mock('react-select', () => 'ReactSelect')
-
 describe('<SelectFilters />', () => {
   describe('Snapshot', () => {
     const defaultProps = {

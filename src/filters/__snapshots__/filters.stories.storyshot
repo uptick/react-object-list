@@ -584,12 +584,13 @@ exports[`Storyshots object-list/Filters RemoteChoiceFilter 1`] = `
   </label>
   <Select.Async
     className="objectlist-current-filter__active-status"
+    defaultOptions={true}
     getOptionLabel={[Function]}
     getOptionValue={[Function]}
     isMulti={false}
     loadOptions={[Function]}
     onChange={[Function]}
-    options={Array []}
+    options={undefined}
     placeholder="Any value"
     styles={
       Object {
@@ -650,12 +651,13 @@ exports[`Storyshots object-list/Filters RemoteMultiChoiceFilter 1`] = `
   </div>
   <Select.Async
     className="objectlist-current-filter__active-status"
+    defaultOptions={true}
     getOptionLabel={[Function]}
     getOptionValue={[Function]}
     isMulti={true}
     loadOptions={[Function]}
     onChange={[Function]}
-    options={Array []}
+    options={undefined}
     placeholder="Any value"
     styles={
       Object {

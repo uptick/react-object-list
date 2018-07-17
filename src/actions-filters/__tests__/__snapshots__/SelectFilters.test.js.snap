@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SelectFilters /> Snapshot renders correctly 1`] = `
-<ReactSelect
+<Select
   className="objectlist-select-filter"
   getOptionLabel={[Function]}
   getOptionValue={[Function]}
