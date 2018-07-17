@@ -28,6 +28,8 @@ class Choice extends React.Component {
     remote: PropTypes.bool,
     /** If remote true, this is called to load options */
     loadOptions: PropTypes.func,
+    /** If remote true, this is set to automatically load options */
+    autoload: PropTypes.bool,
   }
 
   static defaultProps = {
@@ -35,7 +37,6 @@ class Choice extends React.Component {
     remote: false,
     value: null,
     placeholder: 'Any value',
-    options: [],
     valueKey: 'value',
     labelKey: 'label',
     optionRenderer: null,
@@ -107,13 +108,14 @@ class Choice extends React.Component {
     const {
       options, multi, placeholder,
       valueKey, labelKey, optionRenderer,
-      remote,
+      remote, autoload,
     } = this.props
     const { value } = this.state
     const SelectComponent = remote ? Select.Async : Select
     return (
       <SelectComponent
         multi={multi}
+        autoload={autoload}
         options={options}
         loadOptions={this.scheduleLoadOptions}
         value={value}

@@ -7,6 +7,8 @@ const RemoteChoiceFilter = makeFilter(Choice)
 RemoteChoiceFilter.defaultProps = {
   ...RemoteChoiceFilter.defaultProps,
   remote: true,
+  autoload: true,
+  options: undefined,
 }
 RemoteChoiceFilter.propTypes = {
   ...RemoteChoiceFilter.propTypes,
