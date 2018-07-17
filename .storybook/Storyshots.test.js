@@ -4,6 +4,8 @@ jest.mock('@storybook/addon-info', () => ({
   withInfo: () => jest.fn(story => story),
 }))
 
+jest.mock('react-select', () => require('__mocks__/react-select'))
+
 initStoryshots({
   test: multiSnapshotWithOptions({
     createNodeMock: elem => {

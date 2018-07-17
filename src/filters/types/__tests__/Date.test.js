@@ -4,7 +4,6 @@ import { snapshotTest } from 'utils/tests'
 import DateComponent from '../Date'
 
 jest.mock('react-day-picker/DayPickerInput', () => 'DayPickerInput')
-jest.mock('react-select')
 
 describe('Date', () => {
   const baseProps = {

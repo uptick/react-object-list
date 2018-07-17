@@ -8,7 +8,7 @@ exports[`Choice Snapshots renders default 1`] = `
   isMulti={false}
   loadOptions={[Function]}
   onChange={[Function]}
-  options={Array []}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {
@@ -30,7 +30,7 @@ exports[`Choice Snapshots renders with custom label key 1`] = `
   isMulti={false}
   loadOptions={[Function]}
   onChange={[Function]}
-  options={Array []}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {
@@ -57,7 +57,7 @@ exports[`Choice Snapshots renders with custom option renderer 1`] = `
   isMulti={false}
   loadOptions={[Function]}
   onChange={[Function]}
-  options={Array []}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {
@@ -79,7 +79,7 @@ exports[`Choice Snapshots renders with custom value key 1`] = `
   isMulti={false}
   loadOptions={[Function]}
   onChange={[Function]}
-  options={Array []}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {
@@ -101,7 +101,7 @@ exports[`Choice Snapshots renders with multiple choice 1`] = `
   isMulti={true}
   loadOptions={[Function]}
   onChange={[Function]}
-  options={Array []}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {
@@ -152,7 +152,7 @@ exports[`Choice Snapshots renders with placeholder 1`] = `
   isMulti={false}
   loadOptions={[Function]}
   onChange={[Function]}
-  options={Array []}
+  options={undefined}
   placeholder="Testing testing"
   styles={
     Object {
@@ -174,7 +174,7 @@ exports[`Choice Snapshots renders with remote options 1`] = `
   isMulti={false}
   loadOptions={[Function]}
   onChange={[Function]}
-  options={Array []}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {

@@ -6,14 +6,17 @@ import RemoteChoiceFilter from './RemoteChoiceFilter'
  * Allows lookup through the API of choices
  */
 export default class RemoteMultiChoiceFilter extends React.Component {
+  static defaultProps = {
+    ...RemoteMultiChoiceFilter.defaultProps,
+    multi: true,
+    comparisonOptions: [
+      {value: 'is', label: 'Is'},
+      {value: 'is_not', label: 'Is Not'},
+    ],
+  }
   render() {
     return (
       <RemoteChoiceFilter
-        multi
-        comparisonOptions={[
-          {value: 'is', label: 'Is'},
-          {value: 'is_not', label: 'Is Not'},
-        ]}
         {...this.props}
       />)
   }

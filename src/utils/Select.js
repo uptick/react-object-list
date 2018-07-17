@@ -1,13 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ReactSelect from 'react-select'
+import ReactSelect, { components } from 'react-select'
 import ReactAsyncSelect from 'react-select/lib/Async'
+const {Option} = components
 
 // A searchable set of props to ignore when checking for
 // unknown props.
 const KNOWN_PROPS = new Set([
   'options', 'value', 'onChange',
-  'placeholder', 'className',
+  'placeholder', 'className', 'name',
+  'filterOption',
 ])
 
 /**
@@ -30,6 +32,10 @@ function convertProps(props, transforms) {
       nextProps[dst] = op ? op(value) : value
     }
   }
+
+  // remove props that are not required
+  delete props.resetValue
+  delete props.required
 
   // Complain loudly if there are any props that we've not
   // been able to understand.
@@ -62,17 +68,21 @@ class Select extends React.Component {
   static propTypes = {
     isAsync: PropTypes.bool,
     optionRenderer: PropTypes.func,
+    controlStyle: PropTypes.object,
     menuStyle: PropTypes.object,
     menuContainerStyle: PropTypes.object,
     value: PropTypes.any,
+    inputProps: PropTypes.object,
   }
 
   render() {
     const {
       isAsync = false,
+      controlStyle,
       menuStyle,
       menuContainerStyle,
       optionRenderer,
+      inputProps,
       ...otherProps
     } = this.props
 
@@ -86,14 +96,32 @@ class Select extends React.Component {
       openOnFocus: ['openMenuOnClick'],
       cache: ['cacheOptions'],
       autoload: ['defaultOptions'],
+      noResultsText: ['noOptionsMessage', text => () => text],
+      onInputKeyDown: ['onKeyDown'],
       loadOptions: ['loadOptions', fn => (inputValue, callback) => {
         if (callback === undefined) {
           return fn(inputValue) // TODO: check value of this is ok
         } else {
-          // eslint-disable-next-line handle-callback-err
-          fn(inputValue, (err, data) => {
-            callback(data.options)
-          })
+          // This is an ugly hack to ensure we support Promise loading as well as callbacks
+          // https://deploy-preview-2289--react-select.netlify.com/async
+          // We assume that if the loadOptions function takes 2 arguments, the second is a callback
+          if (fn.length === 2) {
+            // eslint-disable-next-line handle-callback-err
+            fn(inputValue, (err, data) => {
+              callback(data.options)
+            })
+          } else {
+            // Assume function takes just one argument, inputValue
+            const data = fn(inputValue)
+            // Check if the function returned a promise
+            if (typeof data.then === 'function') {
+              // Wait for result, and call callback
+              data.then(({options}) => callback(options))
+            } else {
+              // Otherwise just call callback straight away
+              callback(data.options)
+            }
+          }
         }
       }],
     })
@@ -103,7 +131,10 @@ class Select extends React.Component {
     // V2.
     const components = {}
     if (optionRenderer) {
-      components.Option = props => optionRenderer(props)
+      components.Option = props => <Option {...props}>{optionRenderer(props.data)}</Option>
+    }
+    if (inputProps) {
+      components.innerProps = inputProps
     }
     if (Object.keys(components).length > 0) {
       nextProps.components = components
@@ -115,6 +146,7 @@ class Select extends React.Component {
         ...base,
         backgroundColor: '#fff',
         minHeight: 0,
+        ...(controlStyle || {}),
       }),
       dropdownIndicator: (base, state) => ({
         ...base,
@@ -131,13 +163,14 @@ class Select extends React.Component {
         ...base,
         color: '#007eff',
         borderRight: '1px solid rgba(0,126,255,0.24)',
+        fontSize: '90%',
       }),
     }
     if (menuStyle) {
-      styles.menu = ({base}) => ({...base, ...menuStyle})
+      styles.menu = (base, state) => ({...base, ...menuStyle})
     }
     if (menuContainerStyle) {
-      styles.menuList = ({base}) => ({...base, ...menuContainerStyle})
+      styles.menuList = (base, state) => ({...base, ...menuContainerStyle})
     }
     if (Object.keys(styles).length > 0) {
       nextProps.styles = styles
@@ -150,8 +183,13 @@ class Select extends React.Component {
   }
 }
 
-const AsyncSelect = props =>
-  <Select {...props} isAsync />
+class AsyncSelect extends React.Component {
+  render() {
+    return (
+      <Select {...this.props} isAsync />
+    )
+  }
+}
 
 Select.Async = AsyncSelect
 

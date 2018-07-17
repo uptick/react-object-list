@@ -2154,7 +2154,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           isMulti={false}
           loadOptions={[Function]}
           onChange={[Function]}
-          options={Array []}
+          options={undefined}
           placeholder="Any value"
           styles={
             Object {
@@ -2383,12 +2383,13 @@ exports[`Storyshots object-list has active filters 1`] = `
         </div>
         <Select.Async
           className="objectlist-current-filter__active-status"
+          defaultOptions={true}
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           isMulti={true}
           loadOptions={[Function]}
           onChange={[Function]}
-          options={Array []}
+          options={undefined}
           placeholder="Any value"
           styles={
             Object {
@@ -3544,7 +3545,7 @@ exports[`Storyshots object-list has everything 1`] = `
           isMulti={false}
           loadOptions={[Function]}
           onChange={[Function]}
-          options={Array []}
+          options={undefined}
           placeholder="Any value"
           styles={
             Object {
@@ -3773,12 +3774,13 @@ exports[`Storyshots object-list has everything 1`] = `
         </div>
         <Select.Async
           className="objectlist-current-filter__active-status"
+          defaultOptions={true}
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           isMulti={true}
           loadOptions={[Function]}
           onChange={[Function]}
-          options={Array []}
+          options={undefined}
           placeholder="Any value"
           styles={
             Object {
