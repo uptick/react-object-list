@@ -58,7 +58,6 @@ class Choice extends React.Component {
   }
 
   async updateValue(nextValue) {
-    console.log('value', nextValue)
     if (typeof nextValue !== 'object' || nextValue === null) {
       this.setState({value: nextValue})
     } else {
