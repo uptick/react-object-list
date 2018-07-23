@@ -52,7 +52,7 @@ class Choice extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.value !== this.props.value) {
+    if (nextProps.value !== this.state.value) {
       this.updateValue(nextProps.value)
     }
   }
