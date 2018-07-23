@@ -52,12 +52,13 @@ class Choice extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.value !== this.props.value) {
+    if (nextProps.value !== this.state.value) {
       this.updateValue(nextProps.value)
     }
   }
 
   async updateValue(nextValue) {
+    console.log('value', nextValue)
     if (typeof nextValue !== 'object' || nextValue === null) {
       this.setState({value: nextValue})
     } else {
