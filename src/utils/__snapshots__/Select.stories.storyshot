@@ -2,6 +2,7 @@
 
 exports[`Storyshots object-list/Utils/Select has custom menu container style 1`] = `
 <Select
+  onInputChange={[Function]}
   styles={
     Object {
       "control": [Function],
@@ -16,6 +17,7 @@ exports[`Storyshots object-list/Utils/Select has custom menu container style 1`]
 
 exports[`Storyshots object-list/Utils/Select has custom menu style 1`] = `
 <Select
+  onInputChange={[Function]}
   styles={
     Object {
       "control": [Function],

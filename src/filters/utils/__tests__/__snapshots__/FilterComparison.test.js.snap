@@ -7,6 +7,7 @@ exports[`FilterComparison Snapshots renders default 1`] = `
   <Select
     isClearable={false}
     onChange={[Function]}
+    onInputChange={[Function]}
     options={
       Array [
         Object {

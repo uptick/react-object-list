@@ -17,6 +17,7 @@ exports[`Storyshots object-list/Filters BooleanFilter 1`] = `
     isMulti={false}
     loadOptions={[Function]}
     onChange={[Function]}
+    onInputChange={[Function]}
     options={
       Array [
         Object {
@@ -64,6 +65,7 @@ exports[`Storyshots object-list/Filters ChoiceFilter 1`] = `
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -99,6 +101,7 @@ exports[`Storyshots object-list/Filters ChoiceFilter 1`] = `
     isMulti={false}
     loadOptions={[Function]}
     onChange={[Function]}
+    onInputChange={[Function]}
     options={
       Array [
         Object {
@@ -154,6 +157,7 @@ exports[`Storyshots object-list/Filters CurrencyFilter 1`] = `
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -233,6 +237,7 @@ exports[`Storyshots object-list/Filters DateFilter 1`] = `
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -498,6 +503,7 @@ exports[`Storyshots object-list/Filters MultiChoiceFilter 1`] = `
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -533,6 +539,7 @@ exports[`Storyshots object-list/Filters MultiChoiceFilter 1`] = `
     isMulti={true}
     loadOptions={[Function]}
     onChange={[Function]}
+    onInputChange={[Function]}
     options={
       Array [
         Object {
@@ -583,13 +590,16 @@ exports[`Storyshots object-list/Filters RemoteChoiceFilter 1`] = `
     :
   </label>
   <Select.Async
+    cacheOptions={true}
     className="objectlist-current-filter__active-status"
     defaultOptions={true}
     getOptionLabel={[Function]}
     getOptionValue={[Function]}
     isMulti={false}
     loadOptions={[Function]}
+    noOptionsMessage={[Function]}
     onChange={[Function]}
+    onInputChange={[Function]}
     options={undefined}
     placeholder="Any value"
     styles={
@@ -626,6 +636,7 @@ exports[`Storyshots object-list/Filters RemoteMultiChoiceFilter 1`] = `
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -650,13 +661,16 @@ exports[`Storyshots object-list/Filters RemoteMultiChoiceFilter 1`] = `
     />
   </div>
   <Select.Async
+    cacheOptions={true}
     className="objectlist-current-filter__active-status"
     defaultOptions={true}
     getOptionLabel={[Function]}
     getOptionValue={[Function]}
     isMulti={true}
     loadOptions={[Function]}
+    noOptionsMessage={[Function]}
     onChange={[Function]}
+    onInputChange={[Function]}
     options={undefined}
     placeholder="Any value"
     styles={
@@ -707,6 +721,7 @@ exports[`Storyshots object-list/Filters TextContainsFilter 1`] = `
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -766,6 +781,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Decimal logarithmic w
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -853,6 +869,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Decimal with fixed ra
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -940,6 +957,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Logarithmic 1`] = `
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -1027,6 +1045,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Logarithmic with diff
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -1114,6 +1133,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Negative decimal loga
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {
@@ -1201,6 +1221,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Standard 1`] = `
     <Select
       isClearable={false}
       onChange={[Function]}
+      onInputChange={[Function]}
       options={
         Array [
           Object {

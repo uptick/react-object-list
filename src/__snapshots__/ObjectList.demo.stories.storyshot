@@ -29,6 +29,7 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [
@@ -641,6 +642,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [

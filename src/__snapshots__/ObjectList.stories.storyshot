@@ -14,6 +14,7 @@ exports[`Storyshots object-list all selected 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [
@@ -623,6 +624,7 @@ exports[`Storyshots object-list can select all 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [
@@ -1242,6 +1244,7 @@ exports[`Storyshots object-list can select items 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [
@@ -1840,6 +1843,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [
@@ -2119,6 +2123,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           <Select
             isClearable={false}
             onChange={[Function]}
+            onInputChange={[Function]}
             options={
               Array [
                 Object {
@@ -2154,6 +2159,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           isMulti={false}
           loadOptions={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={undefined}
           placeholder="Any value"
           styles={
@@ -2218,6 +2224,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           <Select
             isClearable={false}
             onChange={[Function]}
+            onInputChange={[Function]}
             options={
               Array [
                 Object {
@@ -2302,6 +2309,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           <Select
             isClearable={false}
             onChange={[Function]}
+            onInputChange={[Function]}
             options={
               Array [
                 Object {
@@ -2358,6 +2366,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           <Select
             isClearable={false}
             onChange={[Function]}
+            onInputChange={[Function]}
             options={
               Array [
                 Object {
@@ -2382,13 +2391,16 @@ exports[`Storyshots object-list has active filters 1`] = `
           />
         </div>
         <Select.Async
+          cacheOptions={true}
           className="objectlist-current-filter__active-status"
           defaultOptions={true}
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           isMulti={true}
           loadOptions={[Function]}
+          noOptionsMessage={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={undefined}
           placeholder="Any value"
           styles={
@@ -3237,6 +3249,7 @@ exports[`Storyshots object-list has everything 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [
@@ -3510,6 +3523,7 @@ exports[`Storyshots object-list has everything 1`] = `
           <Select
             isClearable={false}
             onChange={[Function]}
+            onInputChange={[Function]}
             options={
               Array [
                 Object {
@@ -3545,6 +3559,7 @@ exports[`Storyshots object-list has everything 1`] = `
           isMulti={false}
           loadOptions={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={undefined}
           placeholder="Any value"
           styles={
@@ -3609,6 +3624,7 @@ exports[`Storyshots object-list has everything 1`] = `
           <Select
             isClearable={false}
             onChange={[Function]}
+            onInputChange={[Function]}
             options={
               Array [
                 Object {
@@ -3693,6 +3709,7 @@ exports[`Storyshots object-list has everything 1`] = `
           <Select
             isClearable={false}
             onChange={[Function]}
+            onInputChange={[Function]}
             options={
               Array [
                 Object {
@@ -3749,6 +3766,7 @@ exports[`Storyshots object-list has everything 1`] = `
           <Select
             isClearable={false}
             onChange={[Function]}
+            onInputChange={[Function]}
             options={
               Array [
                 Object {
@@ -3773,13 +3791,16 @@ exports[`Storyshots object-list has everything 1`] = `
           />
         </div>
         <Select.Async
+          cacheOptions={true}
           className="objectlist-current-filter__active-status"
           defaultOptions={true}
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           isMulti={true}
           loadOptions={[Function]}
+          noOptionsMessage={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={undefined}
           placeholder="Any value"
           styles={
@@ -4266,6 +4287,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [
@@ -4734,6 +4756,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [
@@ -5245,6 +5268,7 @@ exports[`Storyshots object-list has search key 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [
@@ -5707,6 +5731,7 @@ exports[`Storyshots object-list loading 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [
@@ -6185,6 +6210,7 @@ exports[`Storyshots object-list ready 1`] = `
           getOptionLabel={[Function]}
           getOptionValue={[Function]}
           onChange={[Function]}
+          onInputChange={[Function]}
           openMenuOnClick={true}
           options={
             Array [

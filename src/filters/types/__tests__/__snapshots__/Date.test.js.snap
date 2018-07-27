@@ -29,6 +29,7 @@ exports[`Date Snapshots has custom relative date options 1`] = `
   className="objectlist-current-filter__active-status"
   isClearable={false}
   onChange={[Function]}
+  onInputChange={[Function]}
   options={
     Array [
       Object {
@@ -109,6 +110,7 @@ exports[`Date Snapshots renders with relative comparison 1`] = `
   className="objectlist-current-filter__active-status"
   isClearable={false}
   onChange={[Function]}
+  onInputChange={[Function]}
   options={
     Array [
       Object {
