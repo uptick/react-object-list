@@ -9,13 +9,23 @@ import List from './data-renderers/List'
 
 const mockData = require('./demo.data.json')
 const columns = [
+  {
+    header: 'Personal Details',
+    fieldKey: 'names',
+    sortKey: 'first_name',
+    columns: [
+      {fieldKey: 'first_name', dataKey: 'first_name', header: 'First Name', sortKey: 'first_name'},
+      {fieldKey: 'last_name', dataKey: 'last_name', header: 'Last Name', sortKey: 'last_name', optional: true},
+      {fieldKey: 'gender', dataKey: 'gender', header: 'Gender', sortKey: 'gender', optional: true},
+    ],
+    optional: true,
+  },
   [
-    {dataKey: 'first_name', header: 'First Name', sortKey: 'first_name'},
-    {dataKey: 'last_name', header: 'Last Name', sortKey: 'last_name', optional: true},
+    {fieldKey: 'email', dataKey: 'email', header: 'Email', sortKey: 'email', optional: true},
+    {fieldKey: 'first_name1', dataKey: 'first_name', header: 'First Name', sortKey: 'first_name'},
   ],
-  {dataKey: 'email', header: 'Email', sortKey: 'email'},
-  {dataKey: 'gender', header: 'Gender', sortKey: 'gender'},
-  {dataKey: 'ip_address', header: 'IPv6', sortKey: 'ip_address', optional: true},
+  {fieldKey: 'email1', dataKey: 'email', header: 'Email', sortKey: 'email'},
+  {fieldKey: 'ip_address', dataKey: 'ip_address', header: 'IPv6', sortKey: 'ip_address', optional: true},
 ]
 
 class InteractiveObjectList extends React.Component {

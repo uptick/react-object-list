@@ -65,6 +65,23 @@ storiesOf('object-list/Data Renderers/Table', module)
       data={mockData}
       setSort={action('Set sort')}
     />
+  )).add('has grouped headers', () => (
+    <Table
+      columns={[
+        {dataKey: 'name', header: 'Name', sortKey: 'name', width: 50},
+        {
+          header: 'Personal Details',
+          sortKey: 'hobby',
+          columns: [
+            {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
+            {dataKey: 'hobby', header: 'Hobby', sortKey: 'hobby'},
+          ],
+        },
+      ]}
+      saveColumnWidth={action('Save Column Width')}
+      data={mockData}
+      setSort={action('Set sort')}
+    />
   )).add('has custom renderers', () => (
     <Table
       columns={[

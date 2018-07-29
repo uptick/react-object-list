@@ -43,6 +43,14 @@ const COLUMN_BASE_TYPE = {
 
 const COLUMN_TYPE = PropTypes.shape(COLUMN_BASE_TYPE)
 
+const COLUMN_GROUP_TYPE = PropTypes.shape({
+  fieldKey: COLUMN_BASE_TYPE.fieldKey,
+  header: COLUMN_BASE_TYPE.header,
+  sortKey: COLUMN_BASE_TYPE.sortKey,
+  optional: COLUMN_BASE_TYPE.optional,
+  columns: PropTypes.arrayOf(COLUMN_TYPE),
+})
+
 const FILTER_BASE_TYPE = {
   /** Name of filter, used to render filter */
   name: PropTypes.string,
@@ -70,6 +78,7 @@ const META_TYPE = PropTypes.shape({
 export {
   COLUMN_TYPE,
   COLUMN_BASE_TYPE,
+  COLUMN_GROUP_TYPE,
   FILTER_BASE_TYPE,
   META_TYPE,
   STATUS_TYPE,

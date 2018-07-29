@@ -3,62 +3,27 @@ import PropTypes from 'prop-types'
 import ClassNames from 'classnames'
 import OptionalField from './OptionalField'
 
-class OptionalFields extends Component {
+class OptionalFieldGroup extends Component {
   static propTypes = {
+    fieldKey: PropTypes.string,
+    dataKey: PropTypes.string,
+    header: PropTypes.string,
+    displayName: PropTypes.string,
+    on: PropTypes.bool,
     /** array of {key, name} for all optional columns */
-    optionalFields: PropTypes.arrayOf(PropTypes.shape({
+    subFields: PropTypes.arrayOf(PropTypes.shape({
       fieldKey: PropTypes.string,
       dataKey: PropTypes.string,
       header: PropTypes.string,
       displayName: PropTypes.string,
+      on: PropTypes.bool,
     })),
-    /** array of keys for currently displayed optional fields */
-    extraColumns: PropTypes.arrayOf(PropTypes.string),
     /** callback function when toggling an extra column on or off */
-    updateColumns: PropTypes.func,
+    toggleOn: PropTypes.func,
+    toggleOff: PropTypes.func,
   }
 
-  static defaultProps = {
-    optionalFields: [],
-    extraColumns: [],
-    columns: [],
-  }
-
-  componentWillMount() {
-    document.body.addEventListener('click', this.handleDropdown)
-  }
-
-  componentWillUnmount() {
-    document.body.removeEventListener('click', this.handleDropdown)
-  }
-
-  state = {
-    optionalFieldsOpen: false,
-  }
-
-  /**
-   * Toggles open status of optional field dropdown
-   */
-  handleDropdown = (event) => {
-    this.setState(prevState => {
-      const newState = {
-        optionalFieldsOpen: false,
-      }
-      if (event.target === this.optionalFieldsButton) {
-        newState.optionalFieldsOpen = !prevState.optionalFieldsOpen
-      } else if (event.target) {
-        let el = event.target.parentElement
-        while (el) {
-          if (el === this.optionalFieldsDropdown) {
-            newState.optionalFieldsOpen = true
-            break
-          }
-          el = el.parentElement
-        }
-      }
-      return newState
-    })
-  }
+  static defaultProps = {}
 
   render() {
     const {columns, optionalFields, extraColumns, updateColumns} = this.props

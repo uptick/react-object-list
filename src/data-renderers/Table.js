@@ -7,11 +7,22 @@ import AllSelector from '../types/AllSelector'
 import Selector from '../types/Selector'
 import { getVisibleColumns, setColumnLabels } from '../utils/functions'
 import { getValueFromAccessor } from './utils'
-import { STATUS_TYPE, STATUS_CHOICES, SELECTION_TYPE, ALL_SELECTED, COLUMN_TYPE } from '../utils/proptypes'
+import {
+  STATUS_TYPE,
+  STATUS_CHOICES,
+  SELECTION_TYPE,
+  ALL_SELECTED,
+  COLUMN_TYPE,
+  COLUMN_GROUP_TYPE,
+} from '../utils/proptypes'
 
 export default class TableRenderer extends Component {
   static propTypes = {
-    columns: PropTypes.arrayOf(PropTypes.oneOfType([COLUMN_TYPE, PropTypes.arrayOf(COLUMN_TYPE)])),
+    columns: PropTypes.arrayOf(
+      PropTypes.oneOfType(
+        [COLUMN_TYPE, PropTypes.arrayOf(COLUMN_TYPE), COLUMN_GROUP_TYPE]
+      )
+    ),
     meta: PropTypes.object,
     saveColumnWidth: PropTypes.func,
     data: PropTypes.array,
@@ -45,28 +56,62 @@ export default class TableRenderer extends Component {
 
   componentWillReceiveProps(nextProps) {
     // TODO: optimise performance and only do this if the columns prop has changed
-    this.setState(() => ({columns: getVisibleColumns(setColumnLabels(nextProps.columns), nextProps.meta.extraColumns)}))
+    this.setState(() => ({columns: getVisibleColumns(nextProps.columns, nextProps.meta.extraColumns)}))
   }
 
-  _renderHeaderRowHelper = () => {
-    return this.state.columns.map(column => {
+  _renderHeaderRowHelper = (hasGroupedColumns) => {
+    const {columns: visibleColumns} = this.state
+    const {columnWidths, meta, saveColumnWidth, updateSorting, columns} = this.props
+    const labelledColumns = setColumnLabels(columns)
+    const getWidth = label => columnWidths[label] ? columnWidths[label].width : null
+    return labelledColumns.filter(({fieldKey}) => visibleColumns.includes(fieldKey)).map(column => {
       const label = Array.isArray(column) ? column[0].label : column.label
-      const width = this.props.columnWidths[label] ? this.props.columnWidths[label].width : null
+      const width = getWidth(label) || column.width
       return (
         <TableHeader
           key={`header-${label}`}
           headerItems={column}
           label={label}
-          width={width || column.width}
-          sortKeys={this.props.meta.sortKeys}
-          saveWidth={this.props.saveColumnWidth}
-          updateSorting={this.props.updateSorting}
+          width={width}
+          sortKeys={meta.sortKeys}
+          saveWidth={saveColumnWidth}
+          updateSorting={updateSorting}
+          rowSpan={(hasGroupedColumns && !('columns' in column)) ? 2 : 1}
+          colSpan={('columns' in column) ? column.columns.length : 1}
         />
       )
     })
   }
 
+  _renderSubHeaderRowHelper = () => {
+    const {columns: visibleColumns} = this.state
+    const {columnWidths, meta, saveColumnWidth, updateSorting, columns} = this.props
+    const getWidth = label => columnWidths[label] ? columnWidths[label].width : null
+    return columns.filter(({fieldKey}) => visibleColumns.includes(fieldKey)).map(column => {
+      if ('columns' in column) {
+        return column.columns.map(subColumn => {
+          const label = Array.isArray(subColumn) ? subColumn[0].label : subColumn.label
+          const width = getWidth(label) || subColumn.width
+          return (
+            <TableHeader
+              key={`subheader-${label}`}
+              headerItems={subColumn}
+              label={label}
+              width={width}
+              sortKeys={meta.sortKeys}
+              saveWidth={saveColumnWidth}
+              updateSorting={updateSorting}
+              rowSpan={1}
+              colSpan={1}
+            />
+          )
+        })
+      }
+    })
+  }
+
   _renderItemRowsHelper = () => {
+    const {columns: visibleColumns} = this.state
     const {data, selection, select} = this.props
     return data.map((row, rowIndex) => {
       const selected = selection === ALL_SELECTED || row.id in selection
@@ -81,29 +126,35 @@ export default class TableRenderer extends Component {
               />
             </td>
           )}
-          {this.state.columns.map((column, cellIndex) => {
-            const toRender = Array.isArray(column) ? column : [column]
-            const RenderedItems = []
-            let i = 0
-            while (i < toRender.length) {
-              const RenderItem = toRender[i]
-              if (RenderItem.item) {
-                RenderedItems.push(RenderItem.item({
-                  row: row,
-                  column: RenderItem,
-                  value: getValueFromAccessor(row, RenderItem.dataKey),
-                  key: `item-${i}`,
-                }))
-              } else {
-                RenderedItems.push(getValueFromAccessor(row, RenderItem.dataKey))
+          {this.props.columns.filter(({fieldKey}) => visibleColumns.includes(fieldKey)).map((column, cellIndex) => {
+            const renderContent = col => {
+              const toRender = Array.isArray(col) ? col : [col]
+              const RenderedItems = []
+              let i = 0
+              while (i < toRender.length) {
+                const RenderItem = toRender[i]
+                if (RenderItem.item) {
+                  RenderedItems.push(RenderItem.item({
+                    row: row,
+                    column: RenderItem,
+                    value: 'dataKey' in RenderItem ? getValueFromAccessor(row, RenderItem.dataKey) : null,
+                    key: `item-${i}`,
+                  }))
+                } else {
+                  RenderedItems.push('dataKey' in RenderItem ? getValueFromAccessor(row, RenderItem.dataKey) : null)
+                }
+                i++
               }
-              i++
+              return (
+                <td key={`cell-${rowIndex}-${cellIndex}`} className="objectlist-table__td">
+                  {RenderedItems}
+                </td>
+              )
             }
-            return (
-              <td key={`cell-${rowIndex}-${cellIndex}`} className="objectlist-table__td">
-                {RenderedItems}
-              </td>
-            )
+            if ('columns' in column) {
+              return column.columns.map(col => renderContent(col))
+            }
+            return renderContent(column)
           })}
         </tr>
       )
@@ -120,7 +171,13 @@ export default class TableRenderer extends Component {
   }
 
   render() {
-    const {select, status, numSelected, data} = this.props
+    const {select, status, numSelected, data, columns} = this.props
+    const {columns: visibleColumns} = this.state
+    const hasGroupedColumns = columns.filter(
+      ({fieldKey}) => visibleColumns.includes(fieldKey)
+    ).some(
+      column => 'columns' in column
+    )
     return (
       <div className="objectlist-table--scroll">
         <Overlay status={status} />
@@ -137,8 +194,13 @@ export default class TableRenderer extends Component {
                   />
                 </th>
               )}
-              {this._renderHeaderRowHelper()}
+              {this._renderHeaderRowHelper(hasGroupedColumns)}
             </tr>
+            {hasGroupedColumns && (
+              <tr>
+                {this._renderSubHeaderRowHelper()}
+              </tr>
+            )}
           </thead>
           <tbody>
             {this._renderItemRowsHelper()}

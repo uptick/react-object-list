@@ -126,6 +126,17 @@ class ObjectList extends Component {
     const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
     const numSelected = selection === ALL_SELECTED ? totalCount : Object.keys(selection).length
+    let flattenedColumns = []
+    columns.map(column => {
+      if (Array.isArray(column)) {
+        flattenedColumns = [...flattenedColumns, ...column]
+      } else {
+        flattenedColumns.push(column)
+        if ('columns' in column) {
+          flattenedColumns = [...flattenedColumns, ...column.columns]
+        }
+      }
+    })
     return (
       <div>
         <ActionsFiltersContainer
@@ -139,7 +150,7 @@ class ObjectList extends Component {
           itemSingleName={itemSingleName}
           itemPluralName={itemPluralName}
           itemCount={data.length}
-          columns={columns}
+          columns={flattenedColumns}
           updateColumns={updateColumns}
           favouritesEnabled={favouritesEnabled}
           favourites={favourites}

@@ -5,6 +5,9 @@
  * @return {(Object|string|number)}      Value from row, or row itself if no keys
  */
 const getValueFromAccessor = (row, keys) => {
+  if (!keys) {
+    keys = []
+  }
   if (!Array.isArray(keys)) keys = keys.split('.')
   let value = row
   const cloneKeys = [...keys]

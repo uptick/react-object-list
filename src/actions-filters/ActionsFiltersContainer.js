@@ -29,7 +29,7 @@ class ActionsFilterContainer extends Component {
     /** the amount of items in this subset of the dataset query */
     itemCount: PropTypes.number,
     /** the column renderer to use, if 2d array they are grouped together  */
-    columns: PropTypes.arrayOf(PropTypes.oneOfType([COLUMN_TYPE, PropTypes.arrayOf(COLUMN_TYPE)])),
+    columns: PropTypes.arrayOf(COLUMN_TYPE),
     /** callback function when toggling an extra column on or off */
     updateColumns: PropTypes.func,
     /** whether or not favourites is enabled */
@@ -92,7 +92,13 @@ class ActionsFilterContainer extends Component {
       selection, customActions = [],
       itemSingleName, itemPluralName, numSelected,
       filters, updateFilter, removeFilter, status,
+      favourites, handleDeleteFavourite, selectedFavouriteName,
+      loadFavourite, handleAddFavourite, meta = {}, deselectAll,
+      updateColumns, selectAll, columns,
     } = this.props
+    const optionalFields = getVisibleColumns(
+      columns, [], true
+    )
     const loading = status === STATUS_CHOICES.loading
     let search
     if (searchKey) {
@@ -123,11 +129,11 @@ class ActionsFilterContainer extends Component {
             />
             {this.props.favouritesEnabled &&
               <Favourites
-                favourites={this.props.favourites}
-                handleDeleteFavourite={this.props.handleDeleteFavourite}
-                selectedFavouriteName={this.props.selectedFavouriteName}
-                handleAddFavourite={this.props.handleAddFavourite}
-                loadFavourite={this.props.loadFavourite}
+                favourites={favourites}
+                handleDeleteFavourite={handleDeleteFavourite}
+                selectedFavouriteName={selectedFavouriteName}
+                handleAddFavourite={handleAddFavourite}
+                loadFavourite={loadFavourite}
               />}
           </div>
         </div>
@@ -154,14 +160,14 @@ class ActionsFilterContainer extends Component {
               loading,
               key: `action-left`,
             })}
-            {this.props.status === STATUS_CHOICES.done && (
+            {status === STATUS_CHOICES.done && (
               <SelectAllAction
-                count={this.props.meta.totalCount}
+                count={meta.totalCount}
                 itemCount={itemCount}
                 itemPluralName={itemPluralName}
                 numSelected={numSelected}
-                selectAll={this.props.selectAll}
-                deselectAll={this.props.deselectAll}
+                selectAll={selectAll}
+                deselectAll={deselectAll}
               />
             )}
           </div>
@@ -177,9 +183,10 @@ class ActionsFilterContainer extends Component {
               key: `action-${i}`,
             }))}
             <OptionalFields
-              optionalFields={getVisibleColumns(this.props.columns, [], true).reduce((acc, curr) => acc.concat(curr), [])}
-              extraColumns={this.props.meta.extraColumns}
-              updateColumns={this.props.updateColumns}
+              columns={columns}
+              optionalFields={optionalFields}
+              extraColumns={meta.extraColumns}
+              updateColumns={updateColumns}
             />
           </div>
         </div>

@@ -1,3 +1,15 @@
+const isColumnVisible = (column, extraColumns = [], optional = false) => {
+  const lookup = column.fieldKey || (('dataKey' in column && column.dataKey) ? column.dataKey.substring(column.dataKey.lastIndexOf('.') + 1) : null)
+  if (Array.isArray(column)) {
+    column.map(column)
+  } else if (!!column.optional === optional) {
+    return true
+  } else if (lookup && extraColumns.includes(lookup)) {
+    return true
+  }
+  return false
+}
+
 /**
  * Filters columns by those in extraColumns to get the visible or optional fields
  * @param  {object[]} columns      Array of columns or arrays of columns
@@ -6,29 +18,24 @@
  * @return {object[]}              Returns only those columns which are visible
  */
 const getVisibleColumns = (columns, extraColumns = [], optional = false) => {
-  return columns.filter(column => { // filter the first layer
+  let visibleColumns = []
+  columns.map(column => { // filter the first layer
     if (Array.isArray(column)) {
-      return true
-    } else if (!!column.optional === optional) {
-      return true
-    } else if (extraColumns.includes(
-      column.fieldKey ||
-      column.dataKey.substring(column.dataKey.lastIndexOf('.') + 1)
-    )) {
-      return true
+      const arrayColumns = getVisibleColumns(column, extraColumns, optional)
+      visibleColumns = [...visibleColumns, ...arrayColumns]
+    } else {
+      if (isColumnVisible(column, extraColumns, optional)) {
+        if ('columns' in column) {
+          const arrayColumns = getVisibleColumns(column.columns, extraColumns, optional)
+          visibleColumns = [...visibleColumns, ...arrayColumns]
+        }
+        visibleColumns.push(column)
+      }
     }
-    return false
-  }).map(column => { // go into multiheader columns and filter those
-    if (Array.isArray(column)) {
-      return getVisibleColumns(column, extraColumns, optional)
-    }
-    return column
-  }).filter(column => { // remove any empty multiheader columns
-    if (Array.isArray(column) && column.length === 0) {
-      return false
-    }
-    return true
   })
+  return visibleColumns.filter(col => !!col).map(
+    ({fieldKey}) => fieldKey
+  )
 }
 
 const setColumnLabels = (columns) => {
@@ -37,7 +44,7 @@ const setColumnLabels = (columns) => {
       const label = column.map(({dataKey, fieldKey}) => fieldKey || dataKey.substring(dataKey.lastIndexOf('.') + 1)).join('_').replace(' ', '').toLowerCase()
       return column.map(column => ({...column, label}))
     } else {
-      return {...column, label: (column.fieldKey || column.dataKey.substring(column.dataKey.lastIndexOf('.') + 1)).replace(' ', '').toLowerCase()}
+      return {...column, label: (column.fieldKey || (('dataKey' in column && column.dataKey) ? column.dataKey.substring(column.dataKey.lastIndexOf('.') + 1) : '')).replace(' ', '').toLowerCase()}
     }
   })
 }

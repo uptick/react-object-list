@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import HeaderField from './HeaderField'
 import WidthHandle from './WidthHandle'
-import {COLUMN_TYPE} from '../utils/proptypes'
+import {COLUMN_TYPE, COLUMN_GROUP_TYPE} from '../utils/proptypes'
 
 /**
  * An individual header for a column containing a HeaderField for display
@@ -15,7 +15,9 @@ export default class TableHeader extends React.Component {
      * array of objects eg. [{name: 'Property', sortKey: 'name', className: ''}]
      * when empty the other props will be used to generate a single HeaderField
      */
-    headerItems: PropTypes.oneOfType([PropTypes.arrayOf(COLUMN_TYPE), COLUMN_TYPE]).isRequired,
+    headerItems: PropTypes.oneOfType([
+      PropTypes.arrayOf(COLUMN_TYPE), COLUMN_TYPE, COLUMN_GROUP_TYPE,
+    ]).isRequired,
     saveWidth: PropTypes.func,
     label: PropTypes.string,
     /** callback function for the objectlist to set the active sorting of the data */
@@ -26,6 +28,8 @@ export default class TableHeader extends React.Component {
     })),
     /** class to apply to the th element of the header */
     className: PropTypes.string,
+    colSpan: PropTypes.number,
+    rowSpan: PropTypes.number,
   }
 
   static defaultProps = {
@@ -44,7 +48,7 @@ export default class TableHeader extends React.Component {
         headerItem = props.headerItems[0]
       }
       if (headerItem) {
-        label = headerItem.dataKey.split('.').pop()
+        label = 'dataKey' in headerItem ? headerItem.dataKey.split('.').pop() : ''
       }
     }
 
@@ -90,21 +94,23 @@ export default class TableHeader extends React.Component {
    * @returns {bool} - true for ascending, false for descending, null for no sort
    */
   getSortDirection = key => {
-    const direction = this.props.sortKeys.find(sortKey => sortKey.sortKey === key)
+    const {sortKeys} = this.props
+    const direction = sortKeys.find(sortKey => sortKey.sortKey === key)
     return (direction === undefined) ? null : direction.value
   }
 
   render() {
+    const {colSpan, rowSpan, updateSorting, saveWidth, className} = this.props
     const headers = this.state.headerItems.map((header, i) => (
       <HeaderField
         key={`headerfield-${i}`}
         activeSort={this.getSortDirection(header.sortKey)}
-        updateSorting={this.props.updateSorting}
+        updateSorting={updateSorting}
         {...header}
       />
     ))
     let widthHandle
-    if (this.state.width && this.props.saveWidth) {
+    if (this.state.width && saveWidth) {
       widthHandle = (
         <WidthHandle
           onChange={this.setWidth}
@@ -114,7 +120,12 @@ export default class TableHeader extends React.Component {
     }
 
     return (
-      <th width={this.state.width} className={`objectlist-table__th ${this.props.className}`}>
+      <th
+        width={this.state.width}
+        className={`objectlist-table__th ${className}`}
+        colSpan={colSpan}
+        rowSpan={rowSpan}
+      >
         { headers }
         { widthHandle }
       </th>
