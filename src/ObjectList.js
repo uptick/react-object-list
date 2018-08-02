@@ -41,6 +41,8 @@ class ObjectList extends Component {
       ...FILTER_BASE_TYPE,
       active: PropTypes.bool,
     })),
+    /** function called when a datapoint's representation is clicked on **/
+    itemOnClick: PropTypes.func,
     /** the column renderer to use, if 2d array they are grouped together  */
     columns: PropTypes.arrayOf(PropTypes.oneOfType([COLUMN_TYPE, PropTypes.arrayOf(COLUMN_TYPE)])),
     /** callback function when toggling an extra column on or off */
@@ -118,7 +120,7 @@ class ObjectList extends Component {
     const {
       DataRenderer, Pagination, ErrorMessage,
       filters, addFilter, updateFilter, meta, status, searchKey,
-      data, columns, updateColumns,
+      data, columns, updateColumns, itemOnClick,
       favourites, handleDeleteFavourite, handleAddFavourite, favouritesEnabled,
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
       updatePage, updateSorting, selection, selectItems, customActions, error,
@@ -166,6 +168,7 @@ class ObjectList extends Component {
           select={selectItems}
           status={status}
           numSelected={numSelected}
+          itemOnClick={itemOnClick}
         />
         { (totalCount / perPage) > 0 &&
           <Pagination

@@ -27,6 +27,8 @@ export default class TableRenderer extends Component {
     status: STATUS_TYPE,
     /** Count of selected items */
     numSelected: PropTypes.number,
+    /** Function called when table row is clicked */
+    itemOnClick: PropTypes.func,
   }
 
   static defaultProps = {
@@ -67,11 +69,17 @@ export default class TableRenderer extends Component {
   }
 
   _renderItemRowsHelper = () => {
-    const {data, selection, select} = this.props
+    const {data, selection, select, itemOnClick} = this.props
+    const rowClasses = ['objectlist-table__row']
+    if (itemOnClick) rowClasses.push('objectlist-table__row--clickable')
     return data.map((row, rowIndex) => {
       const selected = selection === ALL_SELECTED || row.id in selection
       return (
-        <tr key={`row-${rowIndex}`} className="objectlist-table__row">
+        <tr
+          key={`row-${rowIndex}`}
+          className={rowClasses.join(' ')}
+          onClick={itemOnClick ? () => itemOnClick(row) : null}
+        >
           {select && (
             <td className="objectlist-table__td" key={`select-cell-${rowIndex}`} >
               <Selector

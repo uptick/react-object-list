@@ -71,6 +71,7 @@ exports[`Table Snapshots can select items 1`] = `
     <tbody>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -97,6 +98,7 @@ exports[`Table Snapshots can select items 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -123,6 +125,7 @@ exports[`Table Snapshots can select items 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -149,6 +152,7 @@ exports[`Table Snapshots can select items 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -175,6 +179,7 @@ exports[`Table Snapshots can select items 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -265,6 +270,7 @@ exports[`Table Snapshots renders default 1`] = `
     <tbody>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -282,6 +288,7 @@ exports[`Table Snapshots renders default 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -299,6 +306,7 @@ exports[`Table Snapshots renders default 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -316,6 +324,7 @@ exports[`Table Snapshots renders default 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -333,6 +342,7 @@ exports[`Table Snapshots renders default 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"

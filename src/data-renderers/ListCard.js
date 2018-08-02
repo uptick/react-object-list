@@ -10,6 +10,7 @@ export default class ListCard extends Component {
   static propTypes = {
     columns: PropTypes.array,
     data: PropTypes.object,
+    onClick: PropTypes.func,
   }
 
   static defaultProps = {
@@ -31,8 +32,11 @@ export default class ListCard extends Component {
   }
 
   render() {
+    const { onClick } = this.props
+    const cardClasses = ['objectlist-list__item']
+    if (onClick) cardClasses.push('objectlist-list__item--clickable')
     return (
-      <li className="objectlist-list__item">
+      <li className={cardClasses.join(' ')} onClick={onClick}>
         {this.props.data.url &&
           <a href={this.props.data.url} className="objectlist-list__link">View</a>
         }
