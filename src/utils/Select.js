@@ -9,7 +9,7 @@ const {Option} = components
 const KNOWN_PROPS = new Set([
   'options', 'value', 'onChange',
   'placeholder', 'className', 'name',
-  'filterOption',
+  'filterOption', 'cacheOptions',
 ])
 
 /**
@@ -75,6 +75,14 @@ class Select extends React.Component {
     inputProps: PropTypes.object,
   }
 
+  state = {
+    startedTyping: false,
+  }
+
+  handleInputChange = inputValue => {
+    this.setState({startedTyping: !!inputValue.length})
+  }
+
   render() {
     const {
       isAsync = false,
@@ -95,8 +103,14 @@ class Select extends React.Component {
       clearable: ['isClearable'],
       openOnFocus: ['openMenuOnClick'],
       cache: ['cacheOptions'],
+      editable: ['isDisabled', editable => !editable],
       autoload: ['defaultOptions'],
-      noResultsText: ['noOptionsMessage', text => () => text],
+      noResultsText: ['noOptionsMessage', text => () => {
+        if (this.state.startedTyping) {
+          return text
+        }
+        return 'Start typing to search...'
+      }],
       onInputKeyDown: ['onKeyDown'],
       loadOptions: ['loadOptions', fn => (inputValue, callback) => {
         if (callback === undefined) {
@@ -178,7 +192,7 @@ class Select extends React.Component {
 
     const Component = isAsync ? ReactAsyncSelect : ReactSelect
     return (
-      <Component {...nextProps} />
+      <Component {...nextProps} onInputChange={this.handleInputChange} />
     )
   }
 }
@@ -186,7 +200,12 @@ class Select extends React.Component {
 class AsyncSelect extends React.Component {
   render() {
     return (
-      <Select {...this.props} isAsync />
+      <Select
+        {...this.props}
+        noResultsText={this.props.noResultsText || 'No Options'}
+        cacheOptions
+        isAsync
+      />
     )
   }
 }

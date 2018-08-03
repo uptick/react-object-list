@@ -13,6 +13,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         onChange={undefined}
+        onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
         placeholder="Add Filter"
@@ -85,6 +86,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         isMulti={false}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={
           Array [
             Object {
@@ -297,6 +299,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -373,6 +376,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -408,6 +412,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         isMulti={false}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -441,6 +446,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -473,6 +479,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-current-filter__active-status"
         isClearable={false}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={
           Array [
             Object {
@@ -554,6 +561,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -589,6 +597,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         isMulti={true}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={Array []}
         placeholder="Any value"
         styles={
@@ -622,6 +631,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -723,6 +733,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -774,13 +785,16 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         :
       </label>
       <Select.Async
+        cacheOptions={true}
         className="objectlist-current-filter__active-status"
         defaultOptions={true}
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         isMulti={false}
         loadOptions={[Function]}
+        noOptionsMessage={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -814,6 +828,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -838,13 +853,16 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         />
       </div>
       <Select.Async
+        cacheOptions={true}
         className="objectlist-current-filter__active-status"
         defaultOptions={true}
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         isMulti={true}
         loadOptions={[Function]}
+        noOptionsMessage={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -1032,6 +1050,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         onChange={undefined}
+        onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
         placeholder="Add Filter"
@@ -1104,6 +1123,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         isMulti={false}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={
           Array [
             Object {
@@ -1316,6 +1336,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -1392,6 +1413,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -1427,6 +1449,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         isMulti={false}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -1460,6 +1483,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -1492,6 +1516,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-current-filter__active-status"
         isClearable={false}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={
           Array [
             Object {
@@ -1573,6 +1598,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -1608,6 +1634,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         isMulti={true}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={Array []}
         placeholder="Any value"
         styles={
@@ -1641,6 +1668,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -1742,6 +1770,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -1793,13 +1822,16 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         :
       </label>
       <Select.Async
+        cacheOptions={true}
         className="objectlist-current-filter__active-status"
         defaultOptions={true}
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         isMulti={false}
         loadOptions={[Function]}
+        noOptionsMessage={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -1833,6 +1865,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -1857,13 +1890,16 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         />
       </div>
       <Select.Async
+        cacheOptions={true}
         className="objectlist-current-filter__active-status"
         defaultOptions={true}
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         isMulti={true}
         loadOptions={[Function]}
+        noOptionsMessage={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -1963,6 +1999,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         onChange={undefined}
+        onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
         placeholder="Add Filter"
@@ -2035,6 +2072,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         isMulti={false}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={
           Array [
             Object {
@@ -2247,6 +2285,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -2323,6 +2362,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -2358,6 +2398,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         isMulti={false}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -2391,6 +2432,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -2423,6 +2465,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-current-filter__active-status"
         isClearable={false}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={
           Array [
             Object {
@@ -2504,6 +2547,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -2539,6 +2583,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         isMulti={true}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={Array []}
         placeholder="Any value"
         styles={
@@ -2572,6 +2617,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -2656,6 +2702,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -2707,13 +2754,16 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         :
       </label>
       <Select.Async
+        cacheOptions={true}
         className="objectlist-current-filter__active-status"
         defaultOptions={true}
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         isMulti={false}
         loadOptions={[Function]}
+        noOptionsMessage={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -2747,6 +2797,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -2771,13 +2822,16 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         />
       </div>
       <Select.Async
+        cacheOptions={true}
         className="objectlist-current-filter__active-status"
         defaultOptions={true}
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         isMulti={true}
         loadOptions={[Function]}
+        noOptionsMessage={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -2861,6 +2915,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         onChange={undefined}
+        onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
         placeholder="Add Filter"
@@ -2933,6 +2988,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         isMulti={false}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={
           Array [
             Object {
@@ -3145,6 +3201,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -3221,6 +3278,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -3256,6 +3314,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         isMulti={false}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -3289,6 +3348,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -3321,6 +3381,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-current-filter__active-status"
         isClearable={false}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={
           Array [
             Object {
@@ -3402,6 +3463,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -3437,6 +3499,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         isMulti={true}
         loadOptions={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={Array []}
         placeholder="Any value"
         styles={
@@ -3470,6 +3533,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -3554,6 +3618,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -3605,13 +3670,16 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         :
       </label>
       <Select.Async
+        cacheOptions={true}
         className="objectlist-current-filter__active-status"
         defaultOptions={true}
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         isMulti={false}
         loadOptions={[Function]}
+        noOptionsMessage={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={
@@ -3645,6 +3713,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         <Select
           isClearable={false}
           onChange={[Function]}
+          onInputChange={[Function]}
           options={
             Array [
               Object {
@@ -3669,13 +3738,16 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         />
       </div>
       <Select.Async
+        cacheOptions={true}
         className="objectlist-current-filter__active-status"
         defaultOptions={true}
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
         isMulti={true}
         loadOptions={[Function]}
+        noOptionsMessage={[Function]}
         onChange={[Function]}
+        onInputChange={[Function]}
         options={undefined}
         placeholder="Any value"
         styles={

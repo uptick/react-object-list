@@ -6,6 +6,7 @@ exports[`<SelectFilters /> Snapshot renders correctly 1`] = `
   getOptionLabel={[Function]}
   getOptionValue={[Function]}
   onChange={[MockFunction]}
+  onInputChange={[Function]}
   openMenuOnClick={true}
   options={
     Array [

@@ -6,6 +6,7 @@ exports[`Storyshots object-list/SelectFilters default view 1`] = `
   getOptionLabel={[Function]}
   getOptionValue={[Function]}
   onChange={[Function]}
+  onInputChange={[Function]}
   openMenuOnClick={true}
   options={
     Array [
