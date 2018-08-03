@@ -136,7 +136,8 @@ class NumberSlider extends React.Component {
     const {min, max, precision} = this.props
     const {currentValue, sliderValue} = this.state
     const step = 1 / (10 ** (precision))
-    const display = currentValue.toFixed(precision)
+    const parsedValue = parseFloat(currentValue)
+    const display = isNaN(parsedValue) ? '' : parsedValue.toFixed(precision)
     const sliderRoundedValue = parseFloat(sliderValue).toFixed(10)
     return (
       <div className="objectlist-row objectlist-current-filter__active-status">
