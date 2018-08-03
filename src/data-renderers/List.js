@@ -18,6 +18,8 @@ export default class ListRenderer extends Component {
     extraClasses: PropTypes.string,
     /** loading status used if data is loaded asynchronously  */
     status: STATUS_TYPE,
+    /** Function called when table row is clicked */
+    itemOnClick: PropTypes.func,
   }
 
   static defaultProps = {
@@ -43,13 +45,14 @@ export default class ListRenderer extends Component {
   }
 
   renderListRows = () => {
-    const {Renderer, data} = this.props
+    const {Renderer, data, itemOnClick} = this.props
     return data.map((row, idx) => {
       return (
         <Renderer
           key={`list-row-${idx}`}
           columns={this.state.columns}
           data={row}
+          onClick={itemOnClick ? () => itemOnClick(row) : null}
         />
       )
     })

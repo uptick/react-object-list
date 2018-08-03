@@ -118,7 +118,8 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
       className="objectlist-list__list"
     >
       <li
-        className="objectlist-list__item"
+        className="objectlist-list__item objectlist-list__item--clickable"
+        onClick={[Function]}
       >
         <div
           className="objectlist-list__content"
@@ -167,7 +168,8 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
         </div>
       </li>
       <li
-        className="objectlist-list__item"
+        className="objectlist-list__item objectlist-list__item--clickable"
+        onClick={[Function]}
       >
         <div
           className="objectlist-list__content"
@@ -216,7 +218,8 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
         </div>
       </li>
       <li
-        className="objectlist-list__item"
+        className="objectlist-list__item objectlist-list__item--clickable"
+        onClick={[Function]}
       >
         <div
           className="objectlist-list__content"
@@ -265,7 +268,8 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
         </div>
       </li>
       <li
-        className="objectlist-list__item"
+        className="objectlist-list__item objectlist-list__item--clickable"
+        onClick={[Function]}
       >
         <div
           className="objectlist-list__content"
@@ -314,7 +318,8 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
         </div>
       </li>
       <li
-        className="objectlist-list__item"
+        className="objectlist-list__item objectlist-list__item--clickable"
+        onClick={[Function]}
       >
         <div
           className="objectlist-list__content"
@@ -363,7 +368,8 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
         </div>
       </li>
       <li
-        className="objectlist-list__item"
+        className="objectlist-list__item objectlist-list__item--clickable"
+        onClick={[Function]}
       >
         <div
           className="objectlist-list__content"
@@ -412,7 +418,8 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
         </div>
       </li>
       <li
-        className="objectlist-list__item"
+        className="objectlist-list__item objectlist-list__item--clickable"
+        onClick={[Function]}
       >
         <div
           className="objectlist-list__content"
@@ -780,7 +787,8 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
       </thead>
       <tbody>
         <tr
-          className="objectlist-table__row"
+          className="objectlist-table__row objectlist-table__row--clickable"
+          onClick={[Function]}
         >
           <td
             className="objectlist-table__td"
@@ -800,7 +808,8 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           </td>
         </tr>
         <tr
-          className="objectlist-table__row"
+          className="objectlist-table__row objectlist-table__row--clickable"
+          onClick={[Function]}
         >
           <td
             className="objectlist-table__td"
@@ -820,7 +829,8 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           </td>
         </tr>
         <tr
-          className="objectlist-table__row"
+          className="objectlist-table__row objectlist-table__row--clickable"
+          onClick={[Function]}
         >
           <td
             className="objectlist-table__td"
@@ -840,7 +850,8 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           </td>
         </tr>
         <tr
-          className="objectlist-table__row"
+          className="objectlist-table__row objectlist-table__row--clickable"
+          onClick={[Function]}
         >
           <td
             className="objectlist-table__td"
@@ -860,7 +871,8 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           </td>
         </tr>
         <tr
-          className="objectlist-table__row"
+          className="objectlist-table__row objectlist-table__row--clickable"
+          onClick={[Function]}
         >
           <td
             className="objectlist-table__td"
@@ -880,7 +892,8 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           </td>
         </tr>
         <tr
-          className="objectlist-table__row"
+          className="objectlist-table__row objectlist-table__row--clickable"
+          onClick={[Function]}
         >
           <td
             className="objectlist-table__td"
@@ -900,7 +913,8 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           </td>
         </tr>
         <tr
-          className="objectlist-table__row"
+          className="objectlist-table__row objectlist-table__row--clickable"
+          onClick={[Function]}
         >
           <td
             className="objectlist-table__td"
