@@ -432,8 +432,13 @@ $input-height: 36px - $spacing - ($border-width * 2)
 .objectlist__overlay--loading
   display: block
 
+
 .objectlist-table__row:nth-of-type(odd)
   background-color: $table-row-background
+
+.objectlist-table__row--clickable:hover
+  cursor: pointer
+  background-color: $table-row-active-color
 
 .objectlist-table__td, .objectlist-table__th
   border-top: $table-border
@@ -473,6 +478,10 @@ $input-height: 36px - $spacing - ($border-width * 2)
   list-style-type: none
   margin: 1em 0
   position: relative
+
+.objectlist-list__item--clickable:hover
+  cursor: pointer
+  background: $table-row-active-color
 
 .objectlist-list__link
   position: absolute

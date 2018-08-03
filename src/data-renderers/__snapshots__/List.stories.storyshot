@@ -10,6 +10,7 @@ exports[`Storyshots object-list/Data Renderers/List Renderer default Renderer 1`
   >
     <li
       className="objectlist-list__item"
+      onClick={null}
     >
       <a
         className="objectlist-list__link"
@@ -50,6 +51,7 @@ exports[`Storyshots object-list/Data Renderers/List Renderer default Renderer 1`
     </li>
     <li
       className="objectlist-list__item"
+      onClick={null}
     >
       <div
         className="objectlist-list__content"

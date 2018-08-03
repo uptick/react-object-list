@@ -1,5 +1,214 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Table Snapshots can click on items 1`] = `
+<div
+  className="objectlist-table--scroll"
+>
+  <Overlay
+    status="done"
+  />
+  <table
+    className="objectlist-table"
+  >
+    <thead>
+      <tr>
+        <th
+          className="objectlist-table__th objectlist-table__th--selector"
+        >
+          <AllSelector
+            deselectAll={[Function]}
+            numSelected={undefined}
+            selectAll={[Function]}
+            total={5}
+          />
+        </th>
+        <TableHeader
+          headerItems={
+            Object {
+              "dataKey": "name",
+              "header": "Name",
+              "item": [Function],
+              "label": "name",
+              "optional": false,
+              "sortKey": "🎂",
+            }
+          }
+          label="name"
+          saveWidth={[MockFunction]}
+          sortKeys={Array []}
+          updateSorting={undefined}
+          width={undefined}
+        />
+        <TableHeader
+          headerItems={
+            Array [
+              Object {
+                "dataKey": "age",
+                "header": "Age",
+                "item": [Function],
+                "label": "age_gender",
+                "optional": false,
+                "sortKey": "🥧",
+              },
+              Object {
+                "dataKey": "gender",
+                "header": "Gender",
+                "item": [Function],
+                "label": "age_gender",
+                "optional": false,
+                "sortKey": "🍩",
+              },
+            ]
+          }
+          label="age_gender"
+          saveWidth={[MockFunction]}
+          sortKeys={Array []}
+          updateSorting={undefined}
+          width={50}
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <Selector
+            id={1}
+            selected={false}
+            toggleSelect={[MockFunction]}
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          Sam
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <span>
+            25
+          </span>
+          M
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <Selector
+            id={2}
+            selected={false}
+            toggleSelect={[MockFunction]}
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          Mary
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <span>
+            12
+          </span>
+          F
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <Selector
+            id={3}
+            selected={false}
+            toggleSelect={[MockFunction]}
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          Q
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <span>
+            3
+          </span>
+          ?
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <Selector
+            id={4}
+            selected={false}
+            toggleSelect={[MockFunction]}
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          Peter
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <span>
+            111
+          </span>
+          FM
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          <Selector
+            id={5}
+            selected={false}
+            toggleSelect={[MockFunction]}
+          />
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          Amy
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          <span>
+            32
+          </span>
+          Confused
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Table Snapshots can select items 1`] = `
 <div
   className="objectlist-table--scroll"
@@ -71,6 +280,7 @@ exports[`Table Snapshots can select items 1`] = `
     <tbody>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -97,6 +307,7 @@ exports[`Table Snapshots can select items 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -123,6 +334,7 @@ exports[`Table Snapshots can select items 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -149,6 +361,7 @@ exports[`Table Snapshots can select items 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -175,6 +388,7 @@ exports[`Table Snapshots can select items 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -265,6 +479,7 @@ exports[`Table Snapshots renders default 1`] = `
     <tbody>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -282,6 +497,7 @@ exports[`Table Snapshots renders default 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -299,6 +515,7 @@ exports[`Table Snapshots renders default 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -316,6 +533,7 @@ exports[`Table Snapshots renders default 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"
@@ -333,6 +551,7 @@ exports[`Table Snapshots renders default 1`] = `
       </tr>
       <tr
         className="objectlist-table__row"
+        onClick={null}
       >
         <td
           className="objectlist-table__td"

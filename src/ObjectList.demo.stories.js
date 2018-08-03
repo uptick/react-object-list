@@ -1,5 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
 import {TextContainsFilter, SearchFilter} from './filters'
 
@@ -154,6 +155,7 @@ class InteractiveObjectList extends React.Component {
       removeFilter={this.removeFilter}
       updateFilter={this.updateFilter}
       searchKey="first_name"
+      itemOnClick={action('clicked on')}
     />
   }
 }

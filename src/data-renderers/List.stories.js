@@ -92,5 +92,5 @@ storiesOf('object-list/Data Renderers/List Renderer', module)
     return <List data={data} Renderer={customRenderer} status="loading" />
   })
   .add('multiple items', () => {
-    return <List data={data} Renderer={customRenderer} />
+    return <List data={data} Renderer={customRenderer} itemOnClick={action('clicked')} />
   })

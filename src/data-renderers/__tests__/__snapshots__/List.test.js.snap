@@ -1,0 +1,188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Snapshots can click on items 1`] = `
+<div>
+  <Overlay
+    status="done"
+  />
+  <ul
+    className="objectlist-list__list"
+  >
+    <li
+      className="objectlist-list__item objectlist-list__item--clickable"
+      onClick={[Function]}
+    >
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Name
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+          
+        </div>
+      </div>
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Age Gender
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+           
+        </div>
+      </div>
+    </li>
+    <li
+      className="objectlist-list__item objectlist-list__item--clickable"
+      onClick={[Function]}
+    >
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Name
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+          
+        </div>
+      </div>
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Age Gender
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+           
+        </div>
+      </div>
+    </li>
+    <li
+      className="objectlist-list__item objectlist-list__item--clickable"
+      onClick={[Function]}
+    >
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Name
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+          
+        </div>
+      </div>
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Age Gender
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+           
+        </div>
+      </div>
+    </li>
+    <li
+      className="objectlist-list__item objectlist-list__item--clickable"
+      onClick={[Function]}
+    >
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Name
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+          
+        </div>
+      </div>
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Age Gender
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+           
+        </div>
+      </div>
+    </li>
+    <li
+      className="objectlist-list__item objectlist-list__item--clickable"
+      onClick={[Function]}
+    >
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Name
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+          
+        </div>
+      </div>
+      <div
+        className="objectlist-list__content"
+      >
+        <h2
+          className="objectlist-list__header"
+        >
+          Age Gender
+          :
+        </h2>
+        <div
+          className="objectlist-list__body"
+        >
+           
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

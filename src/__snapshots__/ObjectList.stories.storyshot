@@ -226,6 +226,7 @@ exports[`Storyshots object-list all selected 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -250,6 +251,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -274,6 +276,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -298,6 +301,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -322,6 +326,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -346,6 +351,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -370,6 +376,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -394,6 +401,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -418,6 +426,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -442,6 +451,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -466,6 +476,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -490,6 +501,7 @@ exports[`Storyshots object-list all selected 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -846,6 +858,7 @@ exports[`Storyshots object-list can select all 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -870,6 +883,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -894,6 +908,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -918,6 +933,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -942,6 +958,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -966,6 +983,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -990,6 +1008,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1014,6 +1033,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1038,6 +1058,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1062,6 +1083,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1086,6 +1108,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1110,6 +1133,7 @@ exports[`Storyshots object-list can select all 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1445,6 +1469,7 @@ exports[`Storyshots object-list can select items 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1469,6 +1494,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1493,6 +1519,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1517,6 +1544,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1541,6 +1569,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1565,6 +1594,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1589,6 +1619,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1613,6 +1644,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1637,6 +1669,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1661,6 +1694,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1685,6 +1719,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -1709,6 +1744,7 @@ exports[`Storyshots object-list can select items 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2477,6 +2513,7 @@ exports[`Storyshots object-list has active filters 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2491,6 +2528,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2505,6 +2543,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2519,6 +2558,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2533,6 +2573,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2547,6 +2588,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2561,6 +2603,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2575,6 +2618,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2589,6 +2633,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2603,6 +2648,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2617,6 +2663,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2631,6 +2678,7 @@ exports[`Storyshots object-list has active filters 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2895,6 +2943,7 @@ exports[`Storyshots object-list has error 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2914,6 +2963,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2933,6 +2983,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2952,6 +3003,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2971,6 +3023,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -2990,6 +3043,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -3009,6 +3063,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -3028,6 +3083,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -3047,6 +3103,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -3066,6 +3123,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -3085,6 +3143,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -3104,6 +3163,7 @@ exports[`Storyshots object-list has error 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -3949,6 +4009,7 @@ exports[`Storyshots object-list has everything 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -3968,6 +4029,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -3987,6 +4049,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4006,6 +4069,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4025,6 +4089,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4044,6 +4109,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4063,6 +4129,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4082,6 +4149,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4101,6 +4169,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4120,6 +4189,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4139,6 +4209,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4158,6 +4229,7 @@ exports[`Storyshots object-list has everything 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4478,6 +4550,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4492,6 +4565,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4506,6 +4580,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4520,6 +4595,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4534,6 +4610,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4548,6 +4625,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4562,6 +4640,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4576,6 +4655,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4590,6 +4670,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4604,6 +4685,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4618,6 +4700,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4632,6 +4715,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4974,6 +5058,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -4988,6 +5073,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5002,6 +5088,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5016,6 +5103,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5030,6 +5118,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5044,6 +5133,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5058,6 +5148,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5072,6 +5163,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5086,6 +5178,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5100,6 +5193,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5114,6 +5208,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5128,6 +5223,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5453,6 +5549,7 @@ exports[`Storyshots object-list has search key 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5467,6 +5564,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5481,6 +5579,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5495,6 +5594,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5509,6 +5609,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5523,6 +5624,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5537,6 +5639,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5551,6 +5654,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5565,6 +5669,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5579,6 +5684,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5593,6 +5699,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5607,6 +5714,7 @@ exports[`Storyshots object-list has search key 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5922,6 +6030,7 @@ exports[`Storyshots object-list loading 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5936,6 +6045,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5950,6 +6060,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5964,6 +6075,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5978,6 +6090,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -5992,6 +6105,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6006,6 +6120,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6020,6 +6135,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6034,6 +6150,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6048,6 +6165,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6062,6 +6180,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6076,6 +6195,7 @@ exports[`Storyshots object-list loading 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6401,6 +6521,7 @@ exports[`Storyshots object-list ready 1`] = `
       <tbody>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6415,6 +6536,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6429,6 +6551,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6443,6 +6566,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6457,6 +6581,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6471,6 +6596,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6485,6 +6611,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6499,6 +6626,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6513,6 +6641,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6527,6 +6656,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6541,6 +6671,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"
@@ -6555,6 +6686,7 @@ exports[`Storyshots object-list ready 1`] = `
         </tr>
         <tr
           className="objectlist-table__row"
+          onClick={null}
         >
           <td
             className="objectlist-table__td"

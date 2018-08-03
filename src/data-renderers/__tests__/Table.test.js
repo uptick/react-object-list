@@ -52,6 +52,9 @@ describe('Table', () => {
     it('can select items', () => {
       snapshotTest(<Table {...props} />)
     })
+    it('can click on items', () => {
+      snapshotTest(<Table {...props} itemOnClick={jest.fn()} />)
+    })
   })
   describe('Lifecycle', () => {
     it('componentWillReceiveProps', () => {
