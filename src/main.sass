@@ -46,7 +46,7 @@ $huge-flex-basis: $huge-flex * 100px
   line-height: 2em
   font-size: 1em
   outline: 0
-  &::-moz-focus-inner
+  &:-moz-focus-inner
     border: none
 
 $input-height: 36px - $spacing - ($border-width * 2)
@@ -61,9 +61,9 @@ $input-height: 36px - $spacing - ($border-width * 2)
   border-radius: $radius
   padding: $spacing/2
   box-sizing: content-box
-  &::placeholder
+  &:placeholder
     color: $placeholder-color
-  &::-moz-placeholder
+  &:-moz-placeholder
     opacity: 1
   &__favourite
     height: auto
@@ -155,8 +155,9 @@ $input-height: 36px - $spacing - ($border-width * 2)
   align-items: center
   border: 0
   font-size: inherit
-  &::hover
+  &:hover
     background-color: $dropdown-hover-color
+    cursor: pointer
   &--input
     padding: 0px 4px
   &--favourite
@@ -306,7 +307,7 @@ $input-height: 36px - $spacing - ($border-width * 2)
   flex-basis: $large-flex-basis
   flex-grow: $large-flex
 
-.objectlist-button--delete::after
+.objectlist-button--delete:after
   content: "\f056"
   font-family: "fontawesome"
 
@@ -440,9 +441,17 @@ $input-height: 36px - $spacing - ($border-width * 2)
   cursor: pointer
   background-color: $table-row-active-color
 
+.objectlist-table__row--summary
+  line-height: 2em
+  background-color: #eceeef
+  font-weight: bold
+
 .objectlist-table__td, .objectlist-table__th
   border-top: $table-border
   padding: 0.7rem
+
+.objectlist-table__thead--grouped-headers .objectlist-table__th
+  border: $table-border
 
 .objectlist-table__checkbox
   vertical-align: middle
@@ -452,8 +461,8 @@ $input-height: 36px - $spacing - ($border-width * 2)
 
 .objectlist-table__th
   text-align: left
-  border-bottom: 2px solid $table-border-color
   position: relative
+  vertical-align: bottom
   .handle
     position: absolute
     top: 0
@@ -463,6 +472,9 @@ $input-height: 36px - $spacing - ($border-width * 2)
     cursor: ew-resize
     &.hover
       border-right: 1px solid #efefef
+
+.objectlist-table__thead--grouped-headers .objectlist-table__th--border-bottom, .objectlist-table__th--border-bottom
+  border-bottom: 2px solid $table-border-color
 
 .objectlist-table .sort-direction
   white-space: pre

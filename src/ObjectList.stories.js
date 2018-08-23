@@ -34,18 +34,18 @@ const filters = Object.entries(importedFilters).map(([name, filter]) => {
   }
 })
 const mockData = [
-  {id: 1, name: 'Bob', age: 45, favouriteColour: 'blue'},
-  {id: 2, name: 'Jim', age: 34, favouriteColour: 'red'},
-  {id: 3, name: 'Jack', age: 16, favouriteColour: 'green'},
-  {id: 4, name: 'Helen', age: 9, favouriteColour: 'orange'},
-  {id: 5, name: 'Eva', age: 35, 'favouriteColour': 'yellow'},
-  {id: 6, name: 'Mary', age: 18, 'favouriteColour': 'pink'},
-  {id: 7, name: 'Dan', age: 92, favouriteColour: 'black'},
-  {id: 8, name: 'Jo', age: 72, favouriteColour: 'white'},
-  {id: 9, name: 'Wayne', age: 68, favouriteColour: 'aqua'},
-  {id: 10, name: 'Dylan', age: 27, favouriteColour: 'purple'},
-  {id: 11, name: 'Nina', age: 51, favouriteColour: 'maroon'},
-  {id: 12, name: 'Lucy', age: 2, favouriteColour: 'grey'},
+  {id: 1, name: 'Bob', age: 45, favouriteColour: 'blue', film: 'Star Wars'},
+  {id: 2, name: 'Jim', age: 34, favouriteColour: 'red', film: 'Harry Potter'},
+  {id: 3, name: 'Jack', age: 16, favouriteColour: 'green', film: 'Brave'},
+  {id: 4, name: 'Helen', age: 9, favouriteColour: 'orange', film: 'Lion King'},
+  {id: 5, name: 'Eva', age: 35, favouriteColour: 'yellow', film: 'Star Wars'},
+  {id: 6, name: 'Mary', age: 18, favouriteColour: 'pink', film: 'James Bond'},
+  {id: 7, name: 'Dan', age: 92, favouriteColour: 'black', film: 'Aristocats'},
+  {id: 8, name: 'Jo', age: 72, favouriteColour: 'white', film: 'Interstellar'},
+  {id: 9, name: 'Wayne', age: 68, favouriteColour: 'aqua', film: 'A Silent Voice'},
+  {id: 10, name: 'Dylan', age: 27, favouriteColour: 'purple', film: 'Big Hero 5'},
+  {id: 11, name: 'Nina', age: 51, favouriteColour: 'maroon', film: 'Brother Bear'},
+  {id: 12, name: 'Lucy', age: 2, favouriteColour: 'grey', film: 'Lion King 2'},
 ]
 
 storiesOf('object-list', module)
@@ -77,6 +77,36 @@ storiesOf('object-list', module)
         {dataKey: 'name', header: 'Name', sortKey: 'name'},
         {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
       ]}
+      data={mockData}
+      setSort={action('Set sort')}
+      status="done"
+      filters={filters}
+    />
+  ))
+  .add('grouped columns', () => (
+    <ObjectList
+      {...baseProps}
+      columns={[{
+        header: 'awesomesauce',
+        columns: [{
+          header: 'bananas',
+          columns: [
+            [{dataKey: 'name', header: 'Name', sortKey: 'name'}, {dataKey: 'film', header: 'Film', sortKey: 'film'}],
+            {dataKey: 'age', header: 'Age (years)', sortKey: 'age'},
+          ],
+        }, {
+          header: 'oranges',
+          columns: [
+            {dataKey: 'name', header: 'Name', sortKey: 'name', optional: true},
+            {dataKey: 'age', header: 'Age (years)', sortKey: 'age', optional: true},
+          ],
+        }],
+      }, {
+        header: 'tomatos',
+        columns: [
+          {dataKey: 'favouriteColour', header: 'Favourite Colour', sortKey: 'favouriteColour'},
+        ],
+      }]}
       data={mockData}
       setSort={action('Set sort')}
       status="done"

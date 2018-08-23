@@ -23,4 +23,5 @@ export {
   getVisibleColumns,
   setColumnLabels,
   sortByName,
+  getLeafColumns,
 } from './functions'

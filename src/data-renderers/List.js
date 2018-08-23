@@ -4,7 +4,7 @@ import ClassNames from 'classnames'
 
 import ListCard from './ListCard'
 import Overlay from './Overlay'
-import { getVisibleColumns, setColumnLabels } from '../utils/functions'
+import { getVisibleColumns } from '../utils/functions'
 import { STATUS_TYPE, STATUS_CHOICES, COLUMN_TYPE } from '../utils/proptypes'
 
 export default class ListRenderer extends Component {
@@ -36,12 +36,12 @@ export default class ListRenderer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      columns: getVisibleColumns(setColumnLabels(this.props.columns), this.props.meta.extraColumns),
+      columns: getVisibleColumns(this.props.columns, this.props.meta.extraColumns),
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState(() => ({columns: getVisibleColumns(setColumnLabels(nextProps.columns), nextProps.meta.extraColumns)}))
+    this.setState(() => ({columns: getVisibleColumns(nextProps.columns, nextProps.meta.extraColumns)}))
   }
 
   renderListRows = () => {

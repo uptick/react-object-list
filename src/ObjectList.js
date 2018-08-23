@@ -5,7 +5,6 @@ import ActionsFiltersContainer from './actions-filters/ActionsFiltersContainer'
 import Table from './data-renderers/Table'
 import {Pagination as DefaultPagination} from './pagination'
 import {
-  COLUMN_TYPE,
   FILTER_BASE_TYPE,
   META_TYPE,
   STATUS_TYPE,
@@ -28,6 +27,8 @@ class ObjectList extends Component {
     ErrorMessage: PropTypes.func,
     /** the data to be displayed by the object-list */
     data: PropTypes.arrayOf(PropTypes.object),
+    /** a key-value pair of summary data items to render */
+    summaryData: PropTypes.object,
     /** describe the data displayed. Used if it is a subset of a larger dataset */
     meta: META_TYPE,
     /** the maximum number of pages visible in the pagination navigation selection */
@@ -43,8 +44,8 @@ class ObjectList extends Component {
     })),
     /** function called when a datapoint's representation is clicked on **/
     itemOnClick: PropTypes.func,
-    /** the column renderer to use, if 2d array they are grouped together  */
-    columns: PropTypes.arrayOf(PropTypes.oneOfType([COLUMN_TYPE, PropTypes.arrayOf(COLUMN_TYPE)])),
+    /** the columns to render, use an array with objects. Objects containing 'columns' will be treated as a header group */
+    columns: PropTypes.array,
     /** callback function when toggling an extra column on or off */
     updateColumns: PropTypes.func,
     /** callback to add a filter to the list of active filters */
@@ -124,6 +125,7 @@ class ObjectList extends Component {
       favourites, handleDeleteFavourite, handleAddFavourite, favouritesEnabled,
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
       updatePage, updateSorting, selection, selectItems, customActions, error,
+      summaryData,
     } = this.props
     const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
@@ -161,6 +163,7 @@ class ObjectList extends Component {
         />
         <DataRenderer
           data={data}
+          summaryData={summaryData}
           meta={meta}
           columns={columns}
           updateSorting={updateSorting}
