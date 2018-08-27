@@ -15,7 +15,12 @@ exports[`Boolean Snapshots has custom labels 1`] = `
       },
     ]
   }
-  value="True"
+  value={
+    Object {
+      "label": "Very True",
+      "value": "True",
+    }
+  }
 />
 `;
 
@@ -34,7 +39,12 @@ exports[`Boolean Snapshots renders false 1`] = `
       },
     ]
   }
-  value="False"
+  value={
+    Object {
+      "label": "No",
+      "value": "False",
+    }
+  }
 />
 `;
 
@@ -53,6 +63,11 @@ exports[`Boolean Snapshots renders true 1`] = `
       },
     ]
   }
-  value="True"
+  value={
+    Object {
+      "label": "Yes",
+      "value": "True",
+    }
+  }
 />
 `;
