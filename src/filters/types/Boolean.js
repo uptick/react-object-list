@@ -30,11 +30,15 @@ export default class Boolean extends React.Component {
     const {trueLabel, falseLabel, value} = this.props
     const trueOption = {value: 'True', label: trueLabel}
     const falseOption = {value: 'False', label: falseLabel}
+    // TODO: The next line is here to be sure no matter what we pass in we use
+    //  the correct value. However the real issue is probably elsewhere i.e. we
+    //  should pass in the object, not True or False.
+    const mappedValue = (value === 'True') ? trueOption : ((value === 'False') ? falseOption : null)
     return (
       <Choice
         options={[trueOption, falseOption]}
         onChange={this.onValueChange}
-        value={value}
+        value={mappedValue}
       />
     )
   }
