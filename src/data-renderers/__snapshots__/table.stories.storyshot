@@ -10,10 +10,13 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th objectlist-table__th--selector"
+          className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+          rowSpan={1}
         >
           <input
             checked={true}
@@ -23,7 +26,9 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
           />
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <div
@@ -35,7 +40,9 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
           </div>
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <div
@@ -556,10 +563,14 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <div
@@ -571,7 +582,9 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
           </div>
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <div
@@ -972,10 +985,13 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th objectlist-table__th--selector"
+          className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+          rowSpan={1}
         >
           <input
             checked={false}
@@ -985,7 +1001,9 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
           />
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <div
@@ -997,7 +1015,9 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
           </div>
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <div
@@ -1518,10 +1538,14 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={50}
         >
           <div
@@ -1539,7 +1563,9 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
           />
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <div
@@ -1551,7 +1577,9 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
           </div>
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <div
@@ -1820,10 +1848,14 @@ exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <span>
@@ -1831,7 +1863,9 @@ exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
           </span>
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <span>
@@ -1839,7 +1873,9 @@ exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
           </span>
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <span>
@@ -2104,10 +2140,14 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <span>
@@ -2115,7 +2155,9 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
           </span>
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <span>
@@ -2123,7 +2165,9 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
           </span>
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <span>
@@ -2388,10 +2432,13 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th objectlist-table__th--selector"
+          className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+          rowSpan={1}
         >
           <input
             checked={false}
@@ -2401,7 +2448,9 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
           />
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <div
@@ -2422,7 +2471,9 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
           </div>
         </th>
         <th
-          className="objectlist-table__th "
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
           width={undefined}
         >
           <div

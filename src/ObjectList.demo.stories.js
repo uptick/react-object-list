@@ -10,38 +10,38 @@ import List from './data-renderers/List'
 
 const mockData = require('./demo.data.json')
 // ------ no column grouping
-// const columns = [
-//   [
-//     {dataKey: 'first_name', header: 'First Name', sortKey: 'first_name'},
-//     {dataKey: 'last_name', header: 'Last Name', sortKey: 'last_name', optional: true},
-//   ],
-//   {dataKey: 'email', header: 'Email', sortKey: 'email'},
-//   {dataKey: 'gender', header: 'Gender', sortKey: 'gender'},
-//   {dataKey: 'ip_address', header: 'IPv6', sortKey: 'ip_address', optional: true},
-// ]
-
-// ---- column grouping
-const columns = [{
-  header: 'name',
-  columns: [[
+const columns = [
+  [
     {dataKey: 'first_name', header: 'First Name', sortKey: 'first_name'},
     {dataKey: 'last_name', header: 'Last Name', sortKey: 'last_name', optional: true},
-  ]],
-}, {
-  header: 'info',
-  columns: [{
-    header: 'detail',
-    columns: [
-      {dataKey: 'email', header: 'Email', sortKey: 'email'},
-      {dataKey: 'gender', header: 'Gender', sortKey: 'gender'},
-    ],
-  }, {
-    header: 'computer',
-    columns: [
-      {dataKey: 'ip_address', header: 'IPv6', sortKey: 'ip_address', optional: true},
-    ],
-  }],
-}]
+  ],
+  {dataKey: 'email', header: 'Email', sortKey: 'email'},
+  {dataKey: 'gender', header: 'Gender', sortKey: 'gender'},
+  {dataKey: 'ip_address', header: 'IPv6', sortKey: 'ip_address', optional: true},
+]
+
+// ---- column grouping
+// const columns = [{
+//   header: 'name',
+//   columns: [[
+//     {dataKey: 'first_name', header: 'First Name', sortKey: 'first_name'},
+//     {dataKey: 'last_name', header: 'Last Name', sortKey: 'last_name', optional: true},
+//   ]],
+// }, {
+//   header: 'info',
+//   columns: [{
+//     header: 'detail',
+//     columns: [
+//       {dataKey: 'email', header: 'Email', sortKey: 'email'},
+//       {dataKey: 'gender', header: 'Gender', sortKey: 'gender'},
+//     ],
+//   }, {
+//     header: 'computer',
+//     columns: [
+//       {dataKey: 'ip_address', header: 'IPv6', sortKey: 'ip_address', optional: true},
+//     ],
+//   }],
+// }]
 
 class InteractiveObjectList extends React.Component {
   state = {

@@ -2,7 +2,9 @@
 
 exports[`Table Header Snapshots renders correctly 1`] = `
 <th
-  className="objectlist-table__th "
+  className="objectlist-table__th objectlist-table__th--border-bottom "
+  colSpan={undefined}
+  rowSpan={undefined}
   width={undefined}
 >
   <HeaderField
@@ -19,7 +21,9 @@ exports[`Table Header Snapshots renders correctly 1`] = `
 
 exports[`Table Header Snapshots renders correctly with multiple header items 1`] = `
 <th
-  className="objectlist-table__th "
+  className="objectlist-table__th objectlist-table__th--border-bottom "
+  colSpan={undefined}
+  rowSpan={undefined}
   width={undefined}
 >
   <HeaderField

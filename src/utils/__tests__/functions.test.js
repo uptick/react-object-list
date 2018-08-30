@@ -1,8 +1,9 @@
 import {getVisibleColumns, sortByName} from '../functions'
 
 describe('Filters visible columns', () => {
-  const notOptional = {dataKey: 'a', optional: false}
-  const isOptional = {dataKey: 'b', optional: true}
+  const notOptional = {dataKey: 'a', optional: false, label: 'a', fieldKey: 'a'}
+  const isOptional = {dataKey: 'b', optional: true, label: 'b', fieldKey: 'b'}
+
   it('handles simple array', () => {
     const columns = [notOptional, isOptional]
     expect(getVisibleColumns(columns, [])).toEqual([notOptional])
@@ -10,7 +11,7 @@ describe('Filters visible columns', () => {
   })
   it('handles nested array', () => {
     const columns = [[notOptional, isOptional]]
-    expect(getVisibleColumns(columns, [])).toEqual([[notOptional]])
+    expect(getVisibleColumns(columns, [])).toEqual([[{...notOptional, label: 'a', fieldKey: 'a'}]])
     expect(getVisibleColumns(columns, ['a', 'b'])).toEqual(columns)
   })
   it('handles empty nested array', () => {
@@ -19,8 +20,8 @@ describe('Filters visible columns', () => {
     expect(getVisibleColumns(columns, ['a', 'b'])).toEqual([columns[0]])
   })
   it('handles mixed array', () => {
-    const nestedOptional = {...isOptional, dataKey: 'c'}
-    const nestedNotOptional = {...notOptional, dataKey: 'd'}
+    const nestedOptional = {...isOptional, dataKey: 'c', fieldKey: 'c', label: 'c'}
+    const nestedNotOptional = {...notOptional, dataKey: 'd', fieldKey: 'd', label: 'd'}
     const columns = [notOptional, isOptional, [nestedOptional, nestedNotOptional]]
     expect(getVisibleColumns(columns, [])).toEqual([notOptional, [nestedNotOptional]])
     expect(getVisibleColumns(columns, ['a', 'c'])).toEqual([notOptional, [nestedOptional, nestedNotOptional]])

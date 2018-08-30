@@ -198,6 +198,10 @@ class Select extends React.Component {
 }
 
 class AsyncSelect extends React.Component {
+  static propTypes = {
+    noResultsText: PropTypes.string,
+  }
+
   render() {
     return (
       <Select

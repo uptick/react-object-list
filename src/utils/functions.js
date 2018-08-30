@@ -45,7 +45,7 @@ const getLeafColumns = (columns) => {
 
 const annotateSpans = columns => {
   const depth = _getTreeDepth(columns)
-  _annotateColumnSpan(columns, depth + 1)
+  _annotateColumnSpan(columns, depth)
 }
 
 /** depth first search annotating each column with a _colSpan or _rowSpan as appropriate */
@@ -67,10 +67,10 @@ const _annotateColumnSpan = (columns, depth) => {
 const _getTreeDepth = (columns) => {
   if (!columns.length) return 0
 
-  const newColumns = []
+  let newColumns = []
   columns.forEach(column => {
     if (column.hasOwnProperty('columns')) {
-      newColumns.push(column.columns)
+      newColumns = newColumns.concat(column.columns)
     }
   })
   return _getTreeDepth(newColumns) + 1
@@ -85,9 +85,16 @@ const setColumnLabels = (columns) => {
         fieldKey: column.fieldKey || column.header.replace(' ', '').toLowerCase(),
       }
     } else if (Array.isArray(column)) {
-      const label = column.map(({dataKey, fieldKey}) => fieldKey || dataKey.substring(dataKey.lastIndexOf('.') + 1)).join('_').replace(' ', '').toLowerCase()
-      const fieldKey = column.map(({dataKey, fieldKey}) => fieldKey || dataKey.substring(dataKey.lastIndexOf('.') + 1)).join('_').replace(' ', '').toLowerCase()
-      return column.map(column => ({...column, label, fieldKey}))
+      const labels = column.map(({dataKey, fieldKey}) => fieldKey || dataKey.substring(dataKey.lastIndexOf('.') + 1))
+      const fieldKeys = column.map(({dataKey, fieldKey}) => fieldKey || dataKey.substring(dataKey.lastIndexOf('.') + 1))
+      return column.map(column => {
+        const label = column.label || labels.join('_').replace(' ', '').toLowerCase()
+        const fieldKey = column.fieldKey || fieldKeys.join('_').replace(' ', '').toLowerCase()
+        const labelledColumn = {...column, label, fieldKey}
+        labels.push(labels.shift())
+        fieldKeys.push(fieldKeys.shift())
+        return labelledColumn
+      })
     } else {
       return {
         ...column,
@@ -106,6 +113,7 @@ const sortByName = (a, b) => {
 
 export {
   getLeafColumns,
+  setColumnLabels,
   annotateSpans,
   getVisibleColumns,
   sortByName,

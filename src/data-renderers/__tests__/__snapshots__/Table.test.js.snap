@@ -10,10 +10,13 @@ exports[`Table Snapshots can click on items 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th objectlist-table__th--selector"
+          className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+          rowSpan={1}
         >
           <AllSelector
             deselectAll={[Function]}
@@ -25,7 +28,10 @@ exports[`Table Snapshots can click on items 1`] = `
         <TableHeader
           headerItems={
             Object {
+              "_colSpan": 1,
+              "_rowSpan": 1,
               "dataKey": "name",
+              "fieldKey": "name",
               "header": "Name",
               "item": [Function],
               "label": "name",
@@ -34,6 +40,7 @@ exports[`Table Snapshots can click on items 1`] = `
             }
           }
           label="name"
+          rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
           updateSorting={undefined}
@@ -44,6 +51,7 @@ exports[`Table Snapshots can click on items 1`] = `
             Array [
               Object {
                 "dataKey": "age",
+                "fieldKey": "age_gender",
                 "header": "Age",
                 "item": [Function],
                 "label": "age_gender",
@@ -52,15 +60,17 @@ exports[`Table Snapshots can click on items 1`] = `
               },
               Object {
                 "dataKey": "gender",
+                "fieldKey": "gender_age",
                 "header": "Gender",
                 "item": [Function],
-                "label": "age_gender",
+                "label": "gender_age",
                 "optional": false,
                 "sortKey": "🍩",
               },
             ]
           }
           label="age_gender"
+          rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
           updateSorting={undefined}
@@ -219,10 +229,13 @@ exports[`Table Snapshots can select items 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th objectlist-table__th--selector"
+          className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+          rowSpan={1}
         >
           <AllSelector
             deselectAll={[Function]}
@@ -234,7 +247,10 @@ exports[`Table Snapshots can select items 1`] = `
         <TableHeader
           headerItems={
             Object {
+              "_colSpan": 1,
+              "_rowSpan": 1,
               "dataKey": "name",
+              "fieldKey": "name",
               "header": "Name",
               "item": [Function],
               "label": "name",
@@ -243,6 +259,7 @@ exports[`Table Snapshots can select items 1`] = `
             }
           }
           label="name"
+          rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
           updateSorting={undefined}
@@ -253,6 +270,7 @@ exports[`Table Snapshots can select items 1`] = `
             Array [
               Object {
                 "dataKey": "age",
+                "fieldKey": "age_gender",
                 "header": "Age",
                 "item": [Function],
                 "label": "age_gender",
@@ -261,15 +279,17 @@ exports[`Table Snapshots can select items 1`] = `
               },
               Object {
                 "dataKey": "gender",
+                "fieldKey": "gender_age",
                 "header": "Gender",
                 "item": [Function],
-                "label": "age_gender",
+                "label": "gender_age",
                 "optional": false,
                 "sortKey": "🍩",
               },
             ]
           }
           label="age_gender"
+          rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
           updateSorting={undefined}
@@ -428,12 +448,17 @@ exports[`Table Snapshots renders default 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <TableHeader
           headerItems={
             Object {
+              "_colSpan": 1,
+              "_rowSpan": 1,
               "dataKey": "name",
+              "fieldKey": "name",
               "header": "Name",
               "item": [Function],
               "label": "name",
@@ -442,6 +467,7 @@ exports[`Table Snapshots renders default 1`] = `
             }
           }
           label="name"
+          rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
           updateSorting={undefined}
@@ -452,6 +478,7 @@ exports[`Table Snapshots renders default 1`] = `
             Array [
               Object {
                 "dataKey": "age",
+                "fieldKey": "age_gender",
                 "header": "Age",
                 "item": [Function],
                 "label": "age_gender",
@@ -460,15 +487,17 @@ exports[`Table Snapshots renders default 1`] = `
               },
               Object {
                 "dataKey": "gender",
+                "fieldKey": "gender_age",
                 "header": "Gender",
                 "item": [Function],
-                "label": "age_gender",
+                "label": "gender_age",
                 "optional": false,
                 "sortKey": "🍩",
               },
             ]
           }
           label="age_gender"
+          rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
           updateSorting={undefined}

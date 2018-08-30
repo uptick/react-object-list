@@ -18,7 +18,8 @@
     "babel/semi": ["error", "never"],
     "react/prop-types": "warn",
     "react/no-unused-state": "warn",
-    "react/no-access-state-in-setstate": "warn"
+    "react/no-access-state-in-setstate": "warn",
+    "object-curly-spacing": "off"
   },
   "overrides": [
     {

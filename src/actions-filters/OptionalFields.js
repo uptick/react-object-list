@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ClassNames from 'classnames'
 import OptionalField from './OptionalField'
+import { setColumnLabels } from '../utils/functions'
 
 class OptionalFields extends Component {
   static propTypes = {
@@ -54,7 +55,7 @@ class OptionalFields extends Component {
   }
 
   renderOptionalFields = (optionalFields, prepend = '') => {
-    return optionalFields.map(optionalField => {
+    return setColumnLabels(optionalFields).map(optionalField => {
       if (optionalField.hasOwnProperty('columns') && optionalField.columns.length) {
         const spacer = prepend.length > 0 ? ' ' : ''
         return this.renderOptionalFields(optionalField.columns, prepend + spacer + optionalField.header)
@@ -67,12 +68,13 @@ class OptionalFields extends Component {
   _renderOptionalFieldsArray = (optionalFields, prepend) => {
     const fields = Array.isArray(optionalFields) ? optionalFields : [optionalFields]
     return fields.map(field => {
+      const spacer = prepend.length > 0 ? ' ' : ''
       return <OptionalField
         key={`field-${field.dataKey}`}
         enabled={this.props.extraColumns.includes(field.fieldKey)}
         onChange={this.props.updateColumns}
         fieldKey={field.fieldKey}
-        name={`${prepend} ${(field.displayName || field.header)}`}
+        name={`${prepend}${spacer}${(field.displayName || field.header)}`}
         className="objectlist-dropdown__item"
       />
     })
