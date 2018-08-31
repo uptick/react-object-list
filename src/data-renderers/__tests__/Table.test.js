@@ -12,6 +12,7 @@ jest.mock('../../types/Selector', () => 'Selector')
 describe('Table', () => {
   const props = {
     select: jest.fn(),
+    itemOnClick: jest.fn(),
     columns: [
       {
         dataKey: 'name',
@@ -120,6 +121,58 @@ describe('Table', () => {
       ).instance()
       instance.handleSelectAll()
       expect(props.select).toHaveBeenCalledWith([2, 4, 5])
+    })
+    it('handles clicking on row', () => {
+      spyOn(props, 'itemOnClick')
+      const row = {}
+      const currentTarget = {}
+      const target = {
+        parentElement: currentTarget,
+        tagName: 'TD',
+      }
+      const mockEvent = {
+        currentTarget,
+        target,
+        persist: jasmine.createSpy(),
+        preventDefault: jasmine.createSpy(),
+        stopPropagation: jasmine.createSpy(),
+      }
+      const instance = shallow(
+        <Table
+          {...props}
+        />
+      ).instance()
+      instance.handleRowClick(mockEvent, row)
+      expect(mockEvent.persist).toHaveBeenCalled()
+      expect(mockEvent.preventDefault).toHaveBeenCalled()
+      expect(mockEvent.stopPropagation).toHaveBeenCalled()
+      expect(props.itemOnClick).toHaveBeenCalledWith(row)
+    })
+    it('handles clicking on a link in a row', () => {
+      spyOn(props, 'itemOnClick')
+      const row = {}
+      const currentTarget = {}
+      const target = {
+        parentElement: currentTarget,
+        tagName: 'A',
+      }
+      const mockEvent = {
+        currentTarget,
+        target,
+        persist: jasmine.createSpy(),
+        preventDefault: jasmine.createSpy(),
+        stopPropagation: jasmine.createSpy(),
+      }
+      const instance = shallow(
+        <Table
+          {...props}
+        />
+      ).instance()
+      instance.handleRowClick(mockEvent, row)
+      expect(mockEvent.persist).toHaveBeenCalled()
+      expect(mockEvent.preventDefault).not.toHaveBeenCalled()
+      expect(mockEvent.stopPropagation).not.toHaveBeenCalled()
+      expect(props.itemOnClick).not.toHaveBeenCalled()
     })
   })
 })
