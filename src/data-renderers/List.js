@@ -4,7 +4,7 @@ import ClassNames from 'classnames'
 
 import ListCard from './ListCard'
 import Overlay from './Overlay'
-import { getVisibleColumns } from '../utils/functions'
+import { getVisibleColumns, handleRowClick } from '../utils/functions'
 import { STATUS_TYPE, STATUS_CHOICES, COLUMN_TYPE } from '../utils/proptypes'
 
 export default class ListRenderer extends Component {
@@ -44,21 +44,6 @@ export default class ListRenderer extends Component {
     this.setState(() => ({columns: getVisibleColumns(nextProps.columns, nextProps.meta.extraColumns)}))
   }
 
-  handleRowClick = (event, row) => {
-    const {itemOnClick} = this.props
-    event.persist()
-    let target = event.target
-    while (target !== event.currentTarget) {
-      if (['a', 'button'].includes(target.tagName.toLowerCase())) {
-        return
-      }
-      target = target.parentElement
-    }
-    event.preventDefault()
-    event.stopPropagation()
-    itemOnClick(row)
-  }
-
   renderListRows = () => {
     const {Renderer, data, itemOnClick} = this.props
     return data.map((row, idx) => {
@@ -67,7 +52,7 @@ export default class ListRenderer extends Component {
           key={`list-row-${idx}`}
           columns={this.state.columns}
           data={row}
-          onClick={itemOnClick ? (event) => this.handleRowClick(event, row) : null}
+          onClick={itemOnClick ? (event) => handleRowClick(event, row, itemOnClick) : null}
         />
       )
     })

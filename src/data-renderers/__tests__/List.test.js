@@ -44,60 +44,6 @@ const props = {
 }
 
 describe('List', () => {
-  describe('Functions', () => {
-    it('handles clicking on row', () => {
-      spyOn(props, 'itemOnClick')
-      const row = {}
-      const currentTarget = {}
-      const target = {
-        parentElement: currentTarget,
-        tagName: 'TD',
-      }
-      const mockEvent = {
-        currentTarget,
-        target,
-        persist: jasmine.createSpy(),
-        preventDefault: jasmine.createSpy(),
-        stopPropagation: jasmine.createSpy(),
-      }
-      const instance = shallow(
-        <List
-          {...props}
-        />
-      ).instance()
-      instance.handleRowClick(mockEvent, row)
-      expect(mockEvent.persist).toHaveBeenCalled()
-      expect(mockEvent.preventDefault).toHaveBeenCalled()
-      expect(mockEvent.stopPropagation).toHaveBeenCalled()
-      expect(props.itemOnClick).toHaveBeenCalledWith(row)
-    })
-    it('handles clicking on a link in a row', () => {
-      spyOn(props, 'itemOnClick')
-      const row = {}
-      const currentTarget = {}
-      const target = {
-        parentElement: currentTarget,
-        tagName: 'A',
-      }
-      const mockEvent = {
-        currentTarget,
-        target,
-        persist: jasmine.createSpy(),
-        preventDefault: jasmine.createSpy(),
-        stopPropagation: jasmine.createSpy(),
-      }
-      const instance = shallow(
-        <List
-          {...props}
-        />
-      ).instance()
-      instance.handleRowClick(mockEvent, row)
-      expect(mockEvent.persist).toHaveBeenCalled()
-      expect(mockEvent.preventDefault).not.toHaveBeenCalled()
-      expect(mockEvent.stopPropagation).not.toHaveBeenCalled()
-      expect(props.itemOnClick).not.toHaveBeenCalled()
-    })
-  })
   describe('Lifecycle', () => {
     it('componentWillReceiveProps', () => {
       const newProps = {
