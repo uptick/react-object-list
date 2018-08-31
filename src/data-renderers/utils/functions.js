@@ -19,6 +19,21 @@ const getValueFromAccessor = (row, keys) => {
   return value
 }
 
+const handleRowClick = (event, row, itemOnClick) => {
+  event.persist()
+  let target = event.target
+  while (target !== event.currentTarget) {
+    if (['a', 'button', 'input', 'textarea'].includes(target.tagName.toLowerCase())) {
+      return
+    }
+    target = target.parentElement
+  }
+  event.preventDefault()
+  event.stopPropagation()
+  itemOnClick(row)
+}
+
 export {
   getValueFromAccessor,
+  handleRowClick,
 }

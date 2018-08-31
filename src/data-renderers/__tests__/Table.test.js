@@ -12,6 +12,7 @@ jest.mock('../../types/Selector', () => 'Selector')
 describe('Table', () => {
   const props = {
     select: jest.fn(),
+    itemOnClick: jest.fn(),
     columns: [
       {
         dataKey: 'name',

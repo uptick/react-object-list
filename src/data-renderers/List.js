@@ -4,7 +4,7 @@ import ClassNames from 'classnames'
 
 import ListCard from './ListCard'
 import Overlay from './Overlay'
-import { getVisibleColumns } from '../utils/functions'
+import { getVisibleColumns, handleRowClick } from '../utils/functions'
 import { STATUS_TYPE, STATUS_CHOICES, COLUMN_TYPE } from '../utils/proptypes'
 
 export default class ListRenderer extends Component {
@@ -52,7 +52,7 @@ export default class ListRenderer extends Component {
           key={`list-row-${idx}`}
           columns={this.state.columns}
           data={row}
-          onClick={itemOnClick ? () => itemOnClick(row) : null}
+          onClick={itemOnClick ? (event) => handleRowClick(event, row, itemOnClick) : null}
         />
       )
     })

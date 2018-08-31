@@ -6,7 +6,7 @@ import Overlay from './Overlay'
 import AllSelector from '../types/AllSelector'
 import Selector from '../types/Selector'
 import { getVisibleColumns, annotateSpans, getLeafColumns } from '../utils/functions'
-import { getValueFromAccessor } from './utils'
+import { getValueFromAccessor, handleRowClick } from './utils'
 import { STATUS_TYPE, STATUS_CHOICES, SELECTION_TYPE, ALL_SELECTED } from '../utils/proptypes'
 
 export default class TableRenderer extends Component {
@@ -139,7 +139,7 @@ export default class TableRenderer extends Component {
         <tr
           key={`row-${rowIndex}`}
           className={rowClasses.join(' ')}
-          onClick={itemOnClick ? () => itemOnClick(row) : null}
+          onClick={itemOnClick ? event => handleRowClick(event, row, itemOnClick) : null}
         >
           {select && (
             <td className="objectlist-table__td" key={`select-cell-${rowIndex}`} >

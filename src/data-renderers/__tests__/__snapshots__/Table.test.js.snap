@@ -299,8 +299,8 @@ exports[`Table Snapshots can select items 1`] = `
     </thead>
     <tbody>
       <tr
-        className="objectlist-table__row"
-        onClick={null}
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
       >
         <td
           className="objectlist-table__td"
@@ -326,8 +326,8 @@ exports[`Table Snapshots can select items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row"
-        onClick={null}
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
       >
         <td
           className="objectlist-table__td"
@@ -353,8 +353,8 @@ exports[`Table Snapshots can select items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row"
-        onClick={null}
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
       >
         <td
           className="objectlist-table__td"
@@ -380,8 +380,8 @@ exports[`Table Snapshots can select items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row"
-        onClick={null}
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
       >
         <td
           className="objectlist-table__td"
@@ -407,8 +407,8 @@ exports[`Table Snapshots can select items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row"
-        onClick={null}
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
       >
         <td
           className="objectlist-table__td"
@@ -507,8 +507,8 @@ exports[`Table Snapshots renders default 1`] = `
     </thead>
     <tbody>
       <tr
-        className="objectlist-table__row"
-        onClick={null}
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
       >
         <td
           className="objectlist-table__td"
@@ -525,8 +525,8 @@ exports[`Table Snapshots renders default 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row"
-        onClick={null}
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
       >
         <td
           className="objectlist-table__td"
@@ -543,8 +543,8 @@ exports[`Table Snapshots renders default 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row"
-        onClick={null}
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
       >
         <td
           className="objectlist-table__td"
@@ -561,8 +561,8 @@ exports[`Table Snapshots renders default 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row"
-        onClick={null}
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
       >
         <td
           className="objectlist-table__td"
@@ -579,8 +579,8 @@ exports[`Table Snapshots renders default 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row"
-        onClick={null}
+        className="objectlist-table__row objectlist-table__row--clickable"
+        onClick={[Function]}
       >
         <td
           className="objectlist-table__td"

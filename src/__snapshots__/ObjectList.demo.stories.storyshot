@@ -167,6 +167,21 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             Female
           </div>
         </div>
+        <div
+          className="objectlist-list__content"
+        >
+          <h2
+            className="objectlist-list__header"
+          >
+            Link
+            :
+          </h2>
+          <div
+            className="objectlist-list__body"
+          >
+            
+          </div>
+        </div>
       </li>
       <li
         className="objectlist-list__item objectlist-list__item--clickable"
@@ -215,6 +230,21 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             className="objectlist-list__body"
           >
             Male
+          </div>
+        </div>
+        <div
+          className="objectlist-list__content"
+        >
+          <h2
+            className="objectlist-list__header"
+          >
+            Link
+            :
+          </h2>
+          <div
+            className="objectlist-list__body"
+          >
+            
           </div>
         </div>
       </li>
@@ -267,6 +297,21 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             Female
           </div>
         </div>
+        <div
+          className="objectlist-list__content"
+        >
+          <h2
+            className="objectlist-list__header"
+          >
+            Link
+            :
+          </h2>
+          <div
+            className="objectlist-list__body"
+          >
+            
+          </div>
+        </div>
       </li>
       <li
         className="objectlist-list__item objectlist-list__item--clickable"
@@ -315,6 +360,21 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             className="objectlist-list__body"
           >
             Female
+          </div>
+        </div>
+        <div
+          className="objectlist-list__content"
+        >
+          <h2
+            className="objectlist-list__header"
+          >
+            Link
+            :
+          </h2>
+          <div
+            className="objectlist-list__body"
+          >
+            
           </div>
         </div>
       </li>
@@ -367,6 +427,21 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             Male
           </div>
         </div>
+        <div
+          className="objectlist-list__content"
+        >
+          <h2
+            className="objectlist-list__header"
+          >
+            Link
+            :
+          </h2>
+          <div
+            className="objectlist-list__body"
+          >
+            
+          </div>
+        </div>
       </li>
       <li
         className="objectlist-list__item objectlist-list__item--clickable"
@@ -417,6 +492,21 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             Female
           </div>
         </div>
+        <div
+          className="objectlist-list__content"
+        >
+          <h2
+            className="objectlist-list__header"
+          >
+            Link
+            :
+          </h2>
+          <div
+            className="objectlist-list__body"
+          >
+            
+          </div>
+        </div>
       </li>
       <li
         className="objectlist-list__item objectlist-list__item--clickable"
@@ -465,6 +555,21 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             className="objectlist-list__body"
           >
             Male
+          </div>
+        </div>
+        <div
+          className="objectlist-list__content"
+        >
+          <h2
+            className="objectlist-list__header"
+          >
+            Link
+            :
+          </h2>
+          <div
+            className="objectlist-list__body"
+          >
+            
           </div>
         </div>
       </li>
@@ -786,6 +891,16 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
               Gender
             </div>
           </th>
+          <th
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
+          >
+            <span>
+              Link
+            </span>
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -808,6 +923,17 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           >
             Female
           </td>
+          <td
+            className="objectlist-table__td"
+          >
+            <a
+              href="http://google.com"
+            >
+              <span>
+                Click
+              </span>
+            </a>
+          </td>
         </tr>
         <tr
           className="objectlist-table__row objectlist-table__row--clickable"
@@ -827,6 +953,17 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Male
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            <a
+              href="http://google.com"
+            >
+              <span>
+                Click
+              </span>
+            </a>
           </td>
         </tr>
         <tr
@@ -848,6 +985,17 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           >
             Female
           </td>
+          <td
+            className="objectlist-table__td"
+          >
+            <a
+              href="http://google.com"
+            >
+              <span>
+                Click
+              </span>
+            </a>
+          </td>
         </tr>
         <tr
           className="objectlist-table__row objectlist-table__row--clickable"
@@ -867,6 +1015,17 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Female
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            <a
+              href="http://google.com"
+            >
+              <span>
+                Click
+              </span>
+            </a>
           </td>
         </tr>
         <tr
@@ -888,6 +1047,17 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           >
             Male
           </td>
+          <td
+            className="objectlist-table__td"
+          >
+            <a
+              href="http://google.com"
+            >
+              <span>
+                Click
+              </span>
+            </a>
+          </td>
         </tr>
         <tr
           className="objectlist-table__row objectlist-table__row--clickable"
@@ -908,6 +1078,17 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           >
             Female
           </td>
+          <td
+            className="objectlist-table__td"
+          >
+            <a
+              href="http://google.com"
+            >
+              <span>
+                Click
+              </span>
+            </a>
+          </td>
         </tr>
         <tr
           className="objectlist-table__row objectlist-table__row--clickable"
@@ -927,6 +1108,17 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Male
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
+            <a
+              href="http://google.com"
+            >
+              <span>
+                Click
+              </span>
+            </a>
           </td>
         </tr>
       </tbody>
