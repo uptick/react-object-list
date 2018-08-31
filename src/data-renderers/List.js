@@ -44,6 +44,21 @@ export default class ListRenderer extends Component {
     this.setState(() => ({columns: getVisibleColumns(nextProps.columns, nextProps.meta.extraColumns)}))
   }
 
+  handleRowClick = (event, row) => {
+    const {itemOnClick} = this.props
+    event.persist()
+    let target = event.target
+    while (target !== event.currentTarget) {
+      if (['a', 'button'].includes(target.tagName.toLowerCase())) {
+        return
+      }
+      target = target.parentElement
+    }
+    event.preventDefault()
+    event.stopPropagation()
+    itemOnClick(row)
+  }
+
   renderListRows = () => {
     const {Renderer, data, itemOnClick} = this.props
     return data.map((row, idx) => {
@@ -52,7 +67,7 @@ export default class ListRenderer extends Component {
           key={`list-row-${idx}`}
           columns={this.state.columns}
           data={row}
-          onClick={itemOnClick ? () => itemOnClick(row) : null}
+          onClick={itemOnClick ? (event) => this.handleRowClick(event, row) : null}
         />
       )
     })
