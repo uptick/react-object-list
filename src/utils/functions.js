@@ -8,6 +8,7 @@
 const getVisibleColumns = (columns, extraColumns = [], optional = false) => {
   return setColumnLabels(columns).reduce((acc, column) => {
     if (column.hasOwnProperty('columns')) {
+      // check the next node down
       const visible = column.optional !== undefined && _checkVisibilityHelper(column, extraColumns, optional)
       if (column.optional === undefined || visible) {
         const columns = getVisibleColumns(column.columns, extraColumns, optional)
@@ -16,11 +17,13 @@ const getVisibleColumns = (columns, extraColumns = [], optional = false) => {
         }
       }
     } else if (Array.isArray(column)) {
+      // is a grouped column, check each of the items in the group
       const columns = column.filter(leafColumn => _checkVisibilityHelper(leafColumn, extraColumns, optional))
       if (columns.length) {
         acc.push(columns)
       }
     } else if (_checkVisibilityHelper(column, extraColumns, optional)) {
+      // is a leaf node, check individual column
       acc.push(column)
     }
     return acc
@@ -32,7 +35,7 @@ const _checkVisibilityHelper = (column, extraColumns, optional) => {
   extraColumns.includes(column.fieldKey)
 }
 
-/** get all the leaves of a balanced tree */
+/** get all the leaves of an unbalanced tree */
 const getLeafColumns = (columns) => {
   return columns.reduce((acc, column) => {
     if (column.hasOwnProperty('columns')) {
@@ -43,6 +46,12 @@ const getLeafColumns = (columns) => {
   }, [])
 }
 
+/**
+ * Annotates each column with a _colSpan and _rowSpan in the tree
+ * which is used when rendering them
+ *
+ * @param {object[]} columns  Array of columns
+ */
 const annotateSpans = columns => {
   const depth = _getTreeDepth(columns)
   _annotateColumnSpan(columns, depth)
@@ -112,6 +121,7 @@ const sortByName = (a, b) => {
 }
 
 export {
+  _getTreeDepth,
   getLeafColumns,
   setColumnLabels,
   annotateSpans,

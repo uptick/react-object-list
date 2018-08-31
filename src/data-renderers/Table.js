@@ -95,7 +95,7 @@ export default class TableRenderer extends Component {
       if (header.hasOwnProperty('columns')) {
         nextRow = nextRow.concat(header.columns)
         rows[rowIndex].push(
-          <th className={`objectlist-table__th`} colSpan={header._colSpan}>
+          <th className={`objectlist-table__th`} key={`grouped-header-${header.label}`} colSpan={header._colSpan}>
             {header.header}
           </th>
         )
