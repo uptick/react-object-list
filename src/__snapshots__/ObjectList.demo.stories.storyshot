@@ -892,8 +892,10 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <span>
               Link
