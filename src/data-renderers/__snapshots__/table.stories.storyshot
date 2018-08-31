@@ -29,7 +29,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -43,7 +43,7 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -571,7 +571,7 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -585,7 +585,7 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -999,7 +999,7 @@ exports[`Storyshots object-list/Data Renderers/Table has grouped columns 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={2}
-          width={undefined}
+          style={Object {}}
         >
           <span>
             Age
@@ -1011,7 +1011,7 @@ exports[`Storyshots object-list/Data Renderers/Table has grouped columns 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <span>
             Name
@@ -1021,7 +1021,7 @@ exports[`Storyshots object-list/Data Renderers/Table has grouped columns 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <span>
             ID
@@ -1304,7 +1304,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -1318,7 +1318,7 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -1846,7 +1846,11 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={50}
+          style={
+            Object {
+              "width": 50,
+            }
+          }
         >
           <div
             className={undefined}
@@ -1866,7 +1870,7 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -1880,7 +1884,7 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -2156,7 +2160,7 @@ exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <span>
             Name
@@ -2166,7 +2170,7 @@ exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <span>
             Age (years)
@@ -2176,7 +2180,7 @@ exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <span>
             Hobby
@@ -2448,7 +2452,7 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <span>
             Name
@@ -2458,7 +2462,7 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <span>
             Age (years)
@@ -2468,7 +2472,7 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <span>
             Hobby
@@ -2751,7 +2755,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -2774,7 +2778,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
           className="objectlist-table__th objectlist-table__th--border-bottom "
           colSpan={undefined}
           rowSpan={1}
-          width={undefined}
+          style={Object {}}
         >
           <div
             className={undefined}

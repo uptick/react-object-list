@@ -204,7 +204,7 @@ exports[`Storyshots object-list all selected 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -218,7 +218,7 @@ exports[`Storyshots object-list all selected 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -843,7 +843,7 @@ exports[`Storyshots object-list can select all 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -857,7 +857,7 @@ exports[`Storyshots object-list can select all 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -1461,7 +1461,7 @@ exports[`Storyshots object-list can select items 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -1475,7 +1475,7 @@ exports[`Storyshots object-list can select items 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -2511,7 +2511,7 @@ exports[`Storyshots object-list has active filters 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -2525,7 +2525,7 @@ exports[`Storyshots object-list has active filters 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -2939,7 +2939,7 @@ exports[`Storyshots object-list has error 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -2953,7 +2953,7 @@ exports[`Storyshots object-list has error 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -2967,7 +2967,7 @@ exports[`Storyshots object-list has error 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <span>
               Favourite Colour
@@ -4013,7 +4013,7 @@ exports[`Storyshots object-list has everything 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -4027,7 +4027,7 @@ exports[`Storyshots object-list has everything 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -4041,7 +4041,7 @@ exports[`Storyshots object-list has everything 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <span>
               Favourite Colour
@@ -4570,7 +4570,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -4584,7 +4584,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -5084,7 +5084,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -5098,7 +5098,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -5581,7 +5581,7 @@ exports[`Storyshots object-list has search key 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -5595,7 +5595,7 @@ exports[`Storyshots object-list has search key 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -6068,7 +6068,7 @@ exports[`Storyshots object-list loading 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -6082,7 +6082,7 @@ exports[`Storyshots object-list loading 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -6565,7 +6565,7 @@ exports[`Storyshots object-list ready 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -6579,7 +6579,7 @@ exports[`Storyshots object-list ready 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}

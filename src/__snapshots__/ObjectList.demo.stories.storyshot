@@ -748,7 +748,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -762,7 +762,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -776,7 +776,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
-            width={undefined}
+            style={Object {}}
           >
             <div
               className={undefined}

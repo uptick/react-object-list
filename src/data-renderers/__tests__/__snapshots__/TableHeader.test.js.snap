@@ -5,7 +5,7 @@ exports[`Table Header Snapshots renders correctly 1`] = `
   className="objectlist-table__th objectlist-table__th--border-bottom "
   colSpan={undefined}
   rowSpan={undefined}
-  width={undefined}
+  style={Object {}}
 >
   <HeaderField
     activeSort={null}
@@ -24,7 +24,7 @@ exports[`Table Header Snapshots renders correctly with multiple header items 1`]
   className="objectlist-table__th objectlist-table__th--border-bottom "
   colSpan={undefined}
   rowSpan={undefined}
-  width={undefined}
+  style={Object {}}
 >
   <HeaderField
     activeSort={null}
