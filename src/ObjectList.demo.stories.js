@@ -18,6 +18,7 @@ const columns = [
   {dataKey: 'email', header: 'Email', sortKey: 'email'},
   {dataKey: 'gender', header: 'Gender', sortKey: 'gender'},
   {dataKey: 'ip_address', header: 'IPv6', sortKey: 'ip_address', optional: true},
+  {dataKey: 'link', header: 'Link', item: () => <a href="http://google.com"><span>Click</span></a>},
 ]
 
 // ---- column grouping

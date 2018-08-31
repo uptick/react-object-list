@@ -53,6 +53,21 @@ export default class TableRenderer extends Component {
     }))
   }
 
+  handleRowClick = (event, row) => {
+    const {itemOnClick} = this.props
+    event.persist()
+    let target = event.target
+    while (target !== event.currentTarget) {
+      if (['a', 'button'].includes(target.tagName.toLowerCase())) {
+        return
+      }
+      target = target.parentElement
+    }
+    event.preventDefault()
+    event.stopPropagation()
+    itemOnClick(row)
+  }
+
   renderHeader = () => {
     const {columns} = this.state
     const {select, numSelected, data} = this.props
@@ -139,7 +154,7 @@ export default class TableRenderer extends Component {
         <tr
           key={`row-${rowIndex}`}
           className={rowClasses.join(' ')}
-          onClick={itemOnClick ? () => itemOnClick(row) : null}
+          onClick={itemOnClick ? event => this.handleRowClick(event, row) : null}
         >
           {select && (
             <td className="objectlist-table__td" key={`select-cell-${rowIndex}`} >
