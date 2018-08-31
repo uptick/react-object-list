@@ -26,6 +26,10 @@ export default class TableHeader extends React.Component {
     })),
     /** class to apply to the th element of the header */
     className: PropTypes.string,
+    /** the colspan of the header */
+    colSpan: PropTypes.number,
+    /** the rowSpan of the header */
+    rowSpan: PropTypes.number,
   }
 
   static defaultProps = {
@@ -113,8 +117,16 @@ export default class TableHeader extends React.Component {
       )
     }
 
+    const style = {}
+    if (this.state.width) style.width = this.state.width
+
     return (
-      <th width={this.state.width} className={`objectlist-table__th ${this.props.className}`}>
+      <th
+        colSpan={this.props.colSpan}
+        rowSpan={this.props.rowSpan}
+        style={style}
+        className={`objectlist-table__th objectlist-table__th--border-bottom ${this.props.className}`}
+      >
         { headers }
         { widthHandle }
       </th>

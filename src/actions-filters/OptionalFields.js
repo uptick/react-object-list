@@ -2,16 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ClassNames from 'classnames'
 import OptionalField from './OptionalField'
+import { setColumnLabels } from '../utils/functions'
 
 class OptionalFields extends Component {
   static propTypes = {
-    /** array of {key, name} for all optional columns */
-    optionalFields: PropTypes.arrayOf(PropTypes.shape({
-      fieldKey: PropTypes.string,
-      dataKey: PropTypes.string,
-      header: PropTypes.string,
-      displayName: PropTypes.string,
-    })),
+    optionalFields: PropTypes.array,
     /** array of keys for currently displayed optional fields */
     extraColumns: PropTypes.arrayOf(PropTypes.string),
     /** callback function when toggling an extra column on or off */
@@ -59,18 +54,34 @@ class OptionalFields extends Component {
     })
   }
 
-  render() {
-    const fields = this.props.optionalFields.map(field => {
-      const fieldKey = field.fieldKey || field.dataKey.substring(field.dataKey.lastIndexOf('.') + 1)
+  renderOptionalFields = (optionalFields, prepend = '') => {
+    return setColumnLabels(optionalFields).map(optionalField => {
+      if (optionalField.hasOwnProperty('columns') && optionalField.columns.length) {
+        const spacer = prepend.length > 0 ? ' ' : ''
+        return this.renderOptionalFields(optionalField.columns, prepend + spacer + optionalField.header)
+      } else {
+        return this._renderOptionalFieldsArray(optionalField, prepend)
+      }
+    })
+  }
+
+  _renderOptionalFieldsArray = (optionalFields, prepend) => {
+    const fields = Array.isArray(optionalFields) ? optionalFields : [optionalFields]
+    return fields.map(field => {
+      const spacer = prepend.length > 0 ? ' ' : ''
       return <OptionalField
         key={`field-${field.dataKey}`}
-        enabled={this.props.extraColumns.includes(fieldKey)}
+        enabled={this.props.extraColumns.includes(field.fieldKey)}
         onChange={this.props.updateColumns}
-        fieldKey={fieldKey}
-        name={field.displayName || field.header}
+        fieldKey={field.fieldKey}
+        name={`${prepend}${spacer}${(field.displayName || field.header)}`}
         className="objectlist-dropdown__item"
       />
     })
+  }
+
+  render() {
+    const fields = this.renderOptionalFields(this.props.optionalFields)
 
     if (fields.length) {
       return (

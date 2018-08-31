@@ -10,10 +10,13 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th objectlist-table__th--selector"
+          className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+          rowSpan={1}
         >
           <input
             checked={true}
@@ -23,8 +26,10 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
           />
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -35,8 +40,10 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
           </div>
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -556,11 +563,15 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -571,8 +582,10 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
           </div>
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -962,6 +975,306 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
 </div>
 `;
 
+exports[`Storyshots object-list/Data Renderers/Table has grouped columns 1`] = `
+<div
+  className="objectlist-table--scroll"
+>
+  <div
+    className="objectlist__overlay"
+  />
+  <table
+    className="objectlist-table"
+  >
+    <thead
+      className="objectlist-table__thead--grouped-headers"
+    >
+      <tr>
+        <th
+          className="objectlist-table__th"
+          colSpan={2}
+        >
+          🈴
+        </th>
+        <th
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={2}
+          style={Object {}}
+        >
+          <span>
+            Age
+          </span>
+        </th>
+      </tr>
+      <tr>
+        <th
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
+        >
+          <span>
+            Name
+          </span>
+        </th>
+        <th
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
+        >
+          <span>
+            ID
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Bob
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          1
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          45
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Jim
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          2
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          34
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Jack
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          3
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          16
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Helen
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          4
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          9
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Eva
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          5
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          35
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Mary
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          6
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          18
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Dan
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          7
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          92
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Jo
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          8
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          72
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Wayne
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          9
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          68
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Dylan
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          10
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          27
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Nina
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          11
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          51
+        </td>
+      </tr>
+      <tr
+        className="objectlist-table__row"
+        onClick={null}
+      >
+        <td
+          className="objectlist-table__td"
+        >
+          Lucy
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          12
+        </td>
+        <td
+          className="objectlist-table__td"
+        >
+          2
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
 <div
   className="objectlist-table--scroll"
@@ -972,10 +1285,13 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th objectlist-table__th--selector"
+          className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+          rowSpan={1}
         >
           <input
             checked={false}
@@ -985,8 +1301,10 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
           />
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -997,8 +1315,10 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
           </div>
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -1518,11 +1838,19 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th "
-          width={50}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={
+            Object {
+              "width": 50,
+            }
+          }
         >
           <div
             className={undefined}
@@ -1539,8 +1867,10 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
           />
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -1551,8 +1881,10 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
           </div>
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -1820,27 +2152,35 @@ exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <span>
             Name
           </span>
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <span>
             Age (years)
           </span>
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <span>
             Hobby
@@ -2104,27 +2444,35 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <span>
             Name
           </span>
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <span>
             Age (years)
           </span>
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <span>
             Hobby
@@ -2388,10 +2736,13 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
   <table
     className="objectlist-table"
   >
-    <thead>
+    <thead
+      className=""
+    >
       <tr>
         <th
-          className="objectlist-table__th objectlist-table__th--selector"
+          className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+          rowSpan={1}
         >
           <input
             checked={false}
@@ -2401,8 +2752,10 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
           />
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <div
             className={undefined}
@@ -2422,8 +2775,10 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
           </div>
         </th>
         <th
-          className="objectlist-table__th "
-          width={undefined}
+          className="objectlist-table__th objectlist-table__th--border-bottom "
+          colSpan={undefined}
+          rowSpan={1}
+          style={Object {}}
         >
           <div
             className={undefined}

@@ -2,7 +2,7 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import Table from '../Table'
-import { getVisibleColumns, setColumnLabels } from '../../utils/functions'
+import { getVisibleColumns, annotateSpans } from '../../utils/functions'
 
 jest.mock('../TableHeader', () => 'TableHeader')
 jest.mock('../Overlay', () => 'Overlay')
@@ -82,9 +82,9 @@ describe('Table', () => {
       const instance = shallow(<Table {...props} />)
       instance.instance().setState({columns: []})
       instance.setProps(newProps)
-      expect(instance.instance().state.columns).toEqual(
-        getVisibleColumns(setColumnLabels(newProps.columns), newProps.meta.extraColumns)
-      )
+      const visibleColumns = getVisibleColumns(newProps.columns, newProps.meta.extraColumns)
+      annotateSpans(visibleColumns)
+      expect(instance.instance().state.columns).toEqual(visibleColumns)
     })
   })
   describe('Functions', () => {

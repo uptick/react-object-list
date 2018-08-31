@@ -54,6 +54,14 @@ storiesOf('object-list/Data Renderers/Table', module)
       data={mockData}
       status="loading"
     />
+  )).add('has grouped columns', () => (
+    <Table
+      columns={[
+        {header: '🈴', columns: [{dataKey: 'name', header: 'Name'}, {dataKey: 'id', header: 'ID'}]},
+        {dataKey: 'age', header: 'Age'},
+      ]}
+      data={mockData}
+    />
   )).add('has sortable headers', () => (
     <Table
       columns={[

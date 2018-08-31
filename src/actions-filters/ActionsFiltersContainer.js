@@ -7,7 +7,6 @@ import Favourites from './Favourites'
 import OptionalFields from './OptionalFields'
 import SelectAllAction from './SelectAllAction'
 import {
-  COLUMN_TYPE,
   FILTER_BASE_TYPE,
   META_TYPE,
   STATUS_TYPE,
@@ -28,8 +27,8 @@ class ActionsFilterContainer extends Component {
     itemPluralName: PropTypes.string.isRequired,
     /** the amount of items in this subset of the dataset query */
     itemCount: PropTypes.number,
-    /** the column renderer to use, if 2d array they are grouped together  */
-    columns: PropTypes.arrayOf(PropTypes.oneOfType([COLUMN_TYPE, PropTypes.arrayOf(COLUMN_TYPE)])),
+    /** the columns to render, use an array with objects. Objects containing 'columns' will be treated as a header group */
+    columns: PropTypes.array,
     /** callback function when toggling an extra column on or off */
     updateColumns: PropTypes.func,
     /** whether or not favourites is enabled */
@@ -79,6 +78,18 @@ class ActionsFilterContainer extends Component {
     status: STATUS_CHOICES.done,
   }
 
+  state = {
+    columns: getVisibleColumns(this.props.columns, [], true),
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.columns !== nextProps.columns) {
+      this.setState(() => ({
+        columns: getVisibleColumns(nextProps.columns, [], true),
+      }))
+    }
+  }
+
   componentDidMount() {
     const search = this.props.filters.find(f => f.filterKey === this.props.searchKey)
     if (search && !search.active) {
@@ -92,6 +103,8 @@ class ActionsFilterContainer extends Component {
       selection, customActions = [],
       itemSingleName, itemPluralName, numSelected,
       filters, updateFilter, removeFilter, status,
+      updateColumns, loadFavourite, handleAddFavourite,
+      selectedFavouriteName, handleDeleteFavourite, favourites,
     } = this.props
     const loading = status === STATUS_CHOICES.loading
     let search
@@ -106,6 +119,7 @@ class ActionsFilterContainer extends Component {
         }
       }
     }
+
     return (
       <div>
         <div className="objectlist-row objectlist-row--right objectlist-row--search">
@@ -123,11 +137,11 @@ class ActionsFilterContainer extends Component {
             />
             {this.props.favouritesEnabled &&
               <Favourites
-                favourites={this.props.favourites}
-                handleDeleteFavourite={this.props.handleDeleteFavourite}
-                selectedFavouriteName={this.props.selectedFavouriteName}
-                handleAddFavourite={this.props.handleAddFavourite}
-                loadFavourite={this.props.loadFavourite}
+                favourites={favourites}
+                handleDeleteFavourite={handleDeleteFavourite}
+                selectedFavouriteName={selectedFavouriteName}
+                handleAddFavourite={handleAddFavourite}
+                loadFavourite={loadFavourite}
               />}
           </div>
         </div>
@@ -177,9 +191,9 @@ class ActionsFilterContainer extends Component {
               key: `action-${i}`,
             }))}
             <OptionalFields
-              optionalFields={getVisibleColumns(this.props.columns, [], true).reduce((acc, curr) => acc.concat(curr), [])}
+              optionalFields={this.state.columns}
               extraColumns={this.props.meta.extraColumns}
-              updateColumns={this.props.updateColumns}
+              updateColumns={updateColumns}
             />
           </div>
         </div>

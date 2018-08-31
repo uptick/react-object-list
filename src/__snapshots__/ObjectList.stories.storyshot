@@ -185,10 +185,13 @@ exports[`Storyshots object-list all selected 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th objectlist-table__th--selector"
+            className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+            rowSpan={1}
           >
             <input
               checked={true}
@@ -198,8 +201,10 @@ exports[`Storyshots object-list all selected 1`] = `
             />
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -210,8 +215,10 @@ exports[`Storyshots object-list all selected 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -817,10 +824,13 @@ exports[`Storyshots object-list can select all 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th objectlist-table__th--selector"
+            className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+            rowSpan={1}
           >
             <input
               checked={true}
@@ -830,8 +840,10 @@ exports[`Storyshots object-list can select all 1`] = `
             />
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -842,8 +854,10 @@ exports[`Storyshots object-list can select all 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -1428,10 +1442,13 @@ exports[`Storyshots object-list can select items 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th objectlist-table__th--selector"
+            className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+            rowSpan={1}
           >
             <input
               checked={false}
@@ -1441,8 +1458,10 @@ exports[`Storyshots object-list can select items 1`] = `
             />
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -1453,8 +1472,10 @@ exports[`Storyshots object-list can select items 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -2482,11 +2503,15 @@ exports[`Storyshots object-list has active filters 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -2497,8 +2522,10 @@ exports[`Storyshots object-list has active filters 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -2904,11 +2931,15 @@ exports[`Storyshots object-list has error 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -2919,8 +2950,10 @@ exports[`Storyshots object-list has error 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -2931,8 +2964,10 @@ exports[`Storyshots object-list has error 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <span>
               Favourite Colour
@@ -3970,11 +4005,15 @@ exports[`Storyshots object-list has everything 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -3985,8 +4024,10 @@ exports[`Storyshots object-list has everything 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -3997,8 +4038,10 @@ exports[`Storyshots object-list has everything 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <span>
               Favourite Colour
@@ -4519,11 +4562,15 @@ exports[`Storyshots object-list has multiple pages 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -4534,8 +4581,10 @@ exports[`Storyshots object-list has multiple pages 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -5027,11 +5076,15 @@ exports[`Storyshots object-list has optional fields 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -5042,8 +5095,10 @@ exports[`Storyshots object-list has optional fields 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -5518,11 +5573,15 @@ exports[`Storyshots object-list has search key 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -5533,8 +5592,10 @@ exports[`Storyshots object-list has search key 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -5999,11 +6060,15 @@ exports[`Storyshots object-list loading 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -6014,8 +6079,10 @@ exports[`Storyshots object-list loading 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -6490,11 +6557,15 @@ exports[`Storyshots object-list ready 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -6505,8 +6576,10 @@ exports[`Storyshots object-list ready 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}

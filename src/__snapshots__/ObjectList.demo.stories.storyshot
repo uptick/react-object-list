@@ -92,7 +92,7 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             >
               <i
                 aria-hidden="true"
-                className="fa fa-check-square-o objectlist-dropdown__icon"
+                className="fa fa-square-o objectlist-dropdown__icon"
               />
               Last Name
             </button>
@@ -128,13 +128,13 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
           <h2
             className="objectlist-list__header"
           >
-            First Name Last Name
+            First Name
             :
           </h2>
           <div
             className="objectlist-list__body"
           >
-            Cecelia Glendzer
+            Cecelia
           </div>
         </div>
         <div
@@ -178,13 +178,13 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
           <h2
             className="objectlist-list__header"
           >
-            First Name Last Name
+            First Name
             :
           </h2>
           <div
             className="objectlist-list__body"
           >
-            Jeff Bletsor
+            Jeff
           </div>
         </div>
         <div
@@ -228,13 +228,13 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
           <h2
             className="objectlist-list__header"
           >
-            First Name Last Name
+            First Name
             :
           </h2>
           <div
             className="objectlist-list__body"
           >
-            Kessiah Skerman
+            Kessiah
           </div>
         </div>
         <div
@@ -278,13 +278,13 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
           <h2
             className="objectlist-list__header"
           >
-            First Name Last Name
+            First Name
             :
           </h2>
           <div
             className="objectlist-list__body"
           >
-            Aubine Canepe
+            Aubine
           </div>
         </div>
         <div
@@ -328,13 +328,13 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
           <h2
             className="objectlist-list__header"
           >
-            First Name Last Name
+            First Name
             :
           </h2>
           <div
             className="objectlist-list__body"
           >
-            Rowland Wheatman
+            Rowland
           </div>
         </div>
         <div
@@ -378,13 +378,13 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
           <h2
             className="objectlist-list__header"
           >
-            First Name Last Name
+            First Name
             :
           </h2>
           <div
             className="objectlist-list__body"
           >
-            Isabeau Franies
+            Isabeau
           </div>
         </div>
         <div
@@ -428,13 +428,13 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
           <h2
             className="objectlist-list__header"
           >
-            First Name Last Name
+            First Name
             :
           </h2>
           <div
             className="objectlist-list__body"
           >
-            Alric Dansey
+            Alric
           </div>
         </div>
         <div
@@ -712,7 +712,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             >
               <i
                 aria-hidden="true"
-                className="fa fa-check-square-o objectlist-dropdown__icon"
+                className="fa fa-square-o objectlist-dropdown__icon"
               />
               Last Name
             </button>
@@ -740,11 +740,15 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
     <table
       className="objectlist-table"
     >
-      <thead>
+      <thead
+        className=""
+      >
         <tr>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -753,17 +757,12 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             >
               First Name
             </div>
-            <div
-              className={undefined}
-              onClick={[Function]}
-              role="button"
-            >
-              Last Name
-            </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -774,8 +773,10 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             </div>
           </th>
           <th
-            className="objectlist-table__th "
-            width={undefined}
+            className="objectlist-table__th objectlist-table__th--border-bottom "
+            colSpan={undefined}
+            rowSpan={1}
+            style={Object {}}
           >
             <div
               className={undefined}
@@ -796,7 +797,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Cecelia
-            Glendzer
           </td>
           <td
             className="objectlist-table__td"
@@ -817,7 +817,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Jeff
-            Bletsor
           </td>
           <td
             className="objectlist-table__td"
@@ -838,7 +837,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Kessiah
-            Skerman
           </td>
           <td
             className="objectlist-table__td"
@@ -859,7 +857,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Aubine
-            Canepe
           </td>
           <td
             className="objectlist-table__td"
@@ -880,7 +877,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Rowland
-            Wheatman
           </td>
           <td
             className="objectlist-table__td"
@@ -901,7 +897,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Isabeau
-            Franies
           </td>
           <td
             className="objectlist-table__td"
@@ -922,7 +917,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-table__td"
           >
             Alric
-            Dansey
           </td>
           <td
             className="objectlist-table__td"

@@ -9,6 +9,7 @@ import Table from './data-renderers/Table'
 import List from './data-renderers/List'
 
 const mockData = require('./demo.data.json')
+// ------ no column grouping
 const columns = [
   [
     {dataKey: 'first_name', header: 'First Name', sortKey: 'first_name'},
@@ -18,6 +19,29 @@ const columns = [
   {dataKey: 'gender', header: 'Gender', sortKey: 'gender'},
   {dataKey: 'ip_address', header: 'IPv6', sortKey: 'ip_address', optional: true},
 ]
+
+// ---- column grouping
+// const columns = [{
+//   header: 'name',
+//   columns: [[
+//     {dataKey: 'first_name', header: 'First Name', sortKey: 'first_name'},
+//     {dataKey: 'last_name', header: 'Last Name', sortKey: 'last_name', optional: true},
+//   ]],
+// }, {
+//   header: 'info',
+//   columns: [{
+//     header: 'detail',
+//     columns: [
+//       {dataKey: 'email', header: 'Email', sortKey: 'email'},
+//       {dataKey: 'gender', header: 'Gender', sortKey: 'gender'},
+//     ],
+//   }, {
+//     header: 'computer',
+//     columns: [
+//       {dataKey: 'ip_address', header: 'IPv6', sortKey: 'ip_address', optional: true},
+//     ],
+//   }],
+// }]
 
 class InteractiveObjectList extends React.Component {
   state = {
@@ -67,12 +91,12 @@ class InteractiveObjectList extends React.Component {
       }).slice(offset, offset + prevState.perPage),
     }
   })
-  updateColumns = columnKey => this.setState(prevState => {
+  updateColumns = dataKey => this.setState(prevState => {
     let extraColumns = [...prevState.extraColumns]
-    if (extraColumns.includes(columnKey)) {
-      extraColumns = extraColumns.filter(key => key !== columnKey)
+    if (extraColumns.includes(dataKey)) {
+      extraColumns = extraColumns.filter(key => key !== dataKey)
     } else {
-      extraColumns.push(columnKey)
+      extraColumns.push(dataKey)
     }
     return {extraColumns}
   })
