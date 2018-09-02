@@ -23,7 +23,7 @@
     "watch": "webpack --mode development --watch",
     "test": "jest",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "prepublish": "mkdir -p styles && cp src/*.sass styles"
+    "prepublish": "yarn build && mkdir -p styles && cp src/*.sass styles"
   },
   "author": "Uptick Pty Ltd (http://uptickhq.com)",
   "license": "MIT",
