@@ -15,7 +15,7 @@ const RemoteChoiceFilterFunc = ({
   ...otherProps
 }) => {
   if (allowNull && !nullOption) {
-    nullOption = {[valueKey]: 'none', [labelKey]: `No ${name || 'selection'}`}
+    nullOption = {[valueKey]: 'none', [labelKey]: name ? `No ${name}` : 'None'}
   }
   const allOptions = nullOption ? [nullOption, ...(options || [])] : options
   const filterProps = {
