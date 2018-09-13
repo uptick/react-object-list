@@ -17,11 +17,14 @@ export default class HeaderField extends React.Component {
     className: PropTypes.string,
     /** the text displayed within the component */
     header: PropTypes.oneOfType([PropTypes.string, PropTypes.func]).isRequired,
+    /** allow header field to display a sortable icon */
+    showSortIcon: PropTypes.bool,
   }
 
   static defaultProps = {
     activeSort: null,
     sortKey: null,
+    showSortIcon: false,
   }
 
   /**
@@ -56,7 +59,11 @@ export default class HeaderField extends React.Component {
           </span>
         )
       default:
-        return undefined
+        return this.props.showSortIcon ? (
+          <span className="sort-direction text-primary">
+            &nbsp;<i className="fa fa-sort" aria-hidden="true" />
+          </span>
+        ) : undefined
     }
   }
 

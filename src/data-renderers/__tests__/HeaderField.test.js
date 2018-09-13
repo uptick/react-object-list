@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import HeaderField from '../HeaderField'
 
@@ -21,6 +21,9 @@ describe('HeaderField', () => {
     it('renders sorted desc', () => {
       snapshotTest(<HeaderField {...props} sortKey="🍰" activeSort={false} />)
     })
+    it('renders with fa-sort icon', () => {
+      snapshotTest(<HeaderField {...props} showSortIcon sortKey="🍰" activeSort={null} />)
+    })
   })
   describe('Functions', () => {
     describe('handles click', () => {
@@ -33,6 +36,16 @@ describe('HeaderField', () => {
       }
       beforeEach(() => {
         spyOn(baseProps, 'updateSorting')
+      })
+      it('has a full sort icon', () => {
+        const props = {
+          ...baseProps,
+          activeSort: null,
+          sortKey: '🍰',
+          showSortIcon: true,
+        }
+        const wrapper = mount(<HeaderField {...props} />)
+        expect(wrapper.html()).toContain('fa fa-sort')
       })
       it('has no sort key', () => {
         const props = {

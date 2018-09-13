@@ -30,6 +30,8 @@ export default class TableRenderer extends Component {
     numSelected: PropTypes.number,
     /** Function called when table row is clicked */
     itemOnClick: PropTypes.func,
+    /** allow header fields to display a sortable icon */
+    showSortIcon: PropTypes.bool,
   }
 
   static defaultProps = {
@@ -40,6 +42,7 @@ export default class TableRenderer extends Component {
     status: STATUS_CHOICES.done,
     columnWidths: {},
     selection: {},
+    showSortIcon: false,
   }
 
   state = {
@@ -112,6 +115,7 @@ export default class TableRenderer extends Component {
             sortKeys={this.props.meta.sortKeys}
             saveWidth={this.props.saveColumnWidth}
             updateSorting={this.props.updateSorting}
+            showSortIcon={this.props.showSortIcon}
           />
         )
       }
