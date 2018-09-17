@@ -212,6 +212,15 @@ exports[`Storyshots object-list all selected 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -226,6 +235,15 @@ exports[`Storyshots object-list all selected 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
         </tr>
@@ -851,6 +869,15 @@ exports[`Storyshots object-list can select all 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -865,6 +892,15 @@ exports[`Storyshots object-list can select all 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
         </tr>
@@ -1469,6 +1505,15 @@ exports[`Storyshots object-list can select items 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -1483,6 +1528,15 @@ exports[`Storyshots object-list can select items 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
         </tr>
@@ -2519,6 +2573,15 @@ exports[`Storyshots object-list has active filters 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -2533,6 +2596,15 @@ exports[`Storyshots object-list has active filters 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
         </tr>
@@ -2947,6 +3019,15 @@ exports[`Storyshots object-list has error 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -2961,6 +3042,15 @@ exports[`Storyshots object-list has error 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -4021,6 +4111,15 @@ exports[`Storyshots object-list has everything 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -4035,6 +4134,15 @@ exports[`Storyshots object-list has everything 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -4578,6 +4686,15 @@ exports[`Storyshots object-list has multiple pages 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -4592,6 +4709,15 @@ exports[`Storyshots object-list has multiple pages 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
         </tr>
@@ -5092,6 +5218,15 @@ exports[`Storyshots object-list has optional fields 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -5106,6 +5241,15 @@ exports[`Storyshots object-list has optional fields 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
         </tr>
@@ -5589,6 +5733,15 @@ exports[`Storyshots object-list has search key 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -5603,6 +5756,15 @@ exports[`Storyshots object-list has search key 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
         </tr>
@@ -6076,6 +6238,15 @@ exports[`Storyshots object-list loading 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -6090,6 +6261,15 @@ exports[`Storyshots object-list loading 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
         </tr>
@@ -6573,6 +6753,15 @@ exports[`Storyshots object-list ready 1`] = `
               role="button"
             >
               Name
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
           <th
@@ -6587,6 +6776,15 @@ exports[`Storyshots object-list ready 1`] = `
               role="button"
             >
               Age (years)
+              <span
+                className="sort-direction text-primary"
+              >
+                 
+                <i
+                  aria-hidden="true"
+                  className="fa fa-sort"
+                />
+              </span>
             </div>
           </th>
         </tr>

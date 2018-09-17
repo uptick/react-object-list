@@ -21,6 +21,9 @@ describe('HeaderField', () => {
     it('renders sorted desc', () => {
       snapshotTest(<HeaderField {...props} sortKey="🍰" activeSort={false} />)
     })
+    it('renders with fa-sort icon', () => {
+      snapshotTest(<HeaderField {...props} sortKey="🍰" activeSort={null} />)
+    })
   })
   describe('Functions', () => {
     describe('handles click', () => {

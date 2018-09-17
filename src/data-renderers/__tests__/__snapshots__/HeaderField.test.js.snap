@@ -19,6 +19,15 @@ exports[`HeaderField Snapshots renders sortable 1`] = `
   role="button"
 >
   Header Text
+  <span
+    className="sort-direction text-primary"
+  >
+     
+    <i
+      aria-hidden="true"
+      className="fa fa-sort"
+    />
+  </span>
 </div>
 `;
 
@@ -55,6 +64,25 @@ exports[`HeaderField Snapshots renders sorted desc 1`] = `
     <i
       aria-hidden="true"
       className="fa fa-caret-down"
+    />
+  </span>
+</div>
+`;
+
+exports[`HeaderField Snapshots renders with fa-sort icon 1`] = `
+<div
+  className={undefined}
+  onClick={[Function]}
+  role="button"
+>
+  Header Text
+  <span
+    className="sort-direction text-primary"
+  >
+     
+    <i
+      aria-hidden="true"
+      className="fa fa-sort"
     />
   </span>
 </div>

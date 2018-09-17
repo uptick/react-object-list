@@ -37,6 +37,15 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
             role="button"
           >
             Name
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-sort"
+              />
+            </span>
           </div>
         </th>
         <th
@@ -51,6 +60,15 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
             role="button"
           >
             Age (years)
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-sort"
+              />
+            </span>
           </div>
         </th>
       </tr>
@@ -579,6 +597,15 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
             role="button"
           >
             Name
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-sort"
+              />
+            </span>
           </div>
         </th>
         <th
@@ -593,6 +620,15 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
             role="button"
           >
             Age (years)
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-sort"
+              />
+            </span>
           </div>
         </th>
       </tr>
@@ -1312,6 +1348,15 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
             role="button"
           >
             Name
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-sort"
+              />
+            </span>
           </div>
         </th>
         <th
@@ -1326,6 +1371,15 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
             role="button"
           >
             Age (years)
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-sort"
+              />
+            </span>
           </div>
         </th>
       </tr>
@@ -1858,6 +1912,15 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
             role="button"
           >
             Name
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-sort"
+              />
+            </span>
           </div>
           <span
             className="handle"
@@ -1878,6 +1941,15 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
             role="button"
           >
             Age (years)
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-sort"
+              />
+            </span>
           </div>
         </th>
         <th
@@ -1892,6 +1964,15 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
             role="button"
           >
             Hobby
+            <span
+              className="sort-direction text-primary"
+            >
+               
+              <i
+                aria-hidden="true"
+                className="fa fa-sort"
+              />
+            </span>
           </div>
         </th>
       </tr>

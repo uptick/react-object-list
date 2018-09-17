@@ -56,7 +56,11 @@ export default class HeaderField extends React.Component {
           </span>
         )
       default:
-        return undefined
+        return (
+          <span className="sort-direction text-primary">
+            &nbsp;<i className="fa fa-sort" aria-hidden="true" />
+          </span>
+        )
     }
   }
 
