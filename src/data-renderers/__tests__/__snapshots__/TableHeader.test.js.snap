@@ -13,7 +13,6 @@ exports[`Table Header Snapshots renders correctly 1`] = `
     header="Header Text"
     item={[MockFunction]}
     optional={false}
-    showSortIcon={false}
     sortKey="🍬"
     updateSorting={undefined}
   />
@@ -33,7 +32,6 @@ exports[`Table Header Snapshots renders correctly with multiple header items 1`]
     header="Header Text"
     item={[MockFunction]}
     optional={false}
-    showSortIcon={false}
     sortKey="🍬"
     updateSorting={undefined}
   />
@@ -43,7 +41,6 @@ exports[`Table Header Snapshots renders correctly with multiple header items 1`]
     header="Header Two Text"
     item={[MockFunction]}
     optional={false}
-    showSortIcon={false}
     sortKey="🍬"
     updateSorting={undefined}
   />

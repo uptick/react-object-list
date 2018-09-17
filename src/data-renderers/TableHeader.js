@@ -30,15 +30,12 @@ export default class TableHeader extends React.Component {
     colSpan: PropTypes.number,
     /** the rowSpan of the header */
     rowSpan: PropTypes.number,
-    /** allow header field to display a sortable icon */
-    showSortIcon: PropTypes.bool,
   }
 
   static defaultProps = {
     headerItems: [],
     className: '',
     sortKeys: [],
-    showSortIcon: false,
   }
 
   constructor(props) {
@@ -107,7 +104,6 @@ export default class TableHeader extends React.Component {
         key={`headerfield-${i}`}
         activeSort={this.getSortDirection(header.sortKey)}
         updateSorting={this.props.updateSorting}
-        showSortIcon={this.props.showSortIcon}
         {...header}
       />
     ))

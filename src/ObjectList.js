@@ -85,8 +85,6 @@ class ObjectList extends Component {
     selectItems: PropTypes.func,
     /** Array of custom actions to be rendered */
     customActions: PropTypes.arrayOf(PropTypes.func),
-    /** Allow table header fields to display a full sort icon */
-    showSortIcon: PropTypes.bool,
   }
 
   static defaultProps = {
@@ -103,7 +101,6 @@ class ObjectList extends Component {
     meta: {},
     selection: {},
     itemSingleName: 'item',
-    showSortIcon: false,
   }
 
   state = {
@@ -128,7 +125,7 @@ class ObjectList extends Component {
       favourites, handleDeleteFavourite, handleAddFavourite, favouritesEnabled,
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
       updatePage, updateSorting, selection, selectItems, customActions, error,
-      summaryData, showSortIcon,
+      summaryData,
     } = this.props
     const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
@@ -175,7 +172,6 @@ class ObjectList extends Component {
           status={status}
           numSelected={numSelected}
           itemOnClick={itemOnClick}
-          showSortIcon={showSortIcon}
         />
         { (totalCount / perPage) > 0 &&
           <Pagination
