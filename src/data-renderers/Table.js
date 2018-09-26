@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import ClassNames from 'classnames'
 
 import TableHeader from './TableHeader'
 import Overlay from './Overlay'
@@ -135,10 +136,13 @@ export default class TableRenderer extends Component {
     if (itemOnClick) rowClasses.push('objectlist-table__row--clickable')
     return data.map((row, rowIndex) => {
       const selected = selection === ALL_SELECTED || row.id in selection
+      // add row-specific classes defined in columns
+      const rowClassesFromColumns = columns.filter(column => column.rowClass)
+        .map(column => column.rowClass(row))
       return (
         <tr
           key={`row-${rowIndex}`}
-          className={rowClasses.join(' ')}
+          className={ClassNames(rowClasses.concat(rowClassesFromColumns))}
           onClick={itemOnClick ? event => handleRowClick(event, row, itemOnClick) : null}
         >
           {select && (
