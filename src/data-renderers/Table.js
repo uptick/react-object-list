@@ -138,15 +138,13 @@ export default class TableRenderer extends Component {
       const selected = selection === ALL_SELECTED || row.id in selection
       // add row-specific classes defined in columns
       const rowClassesFromColumns = []
-      let flatColumns = []
-      columns.forEach(column => Array.isArray(column) ? flatColumns = flatColumns.concat(column) : flatColumns.push(column))
-      flatColumns.filter(column => column.rowClass).forEach(column => {
-        if (typeof column.rowClass === 'function') {
-          rowClassesFromColumns.push(column.rowClass(row))
-        } else if (typeof column.rowClass === 'string') {
-          rowClassesFromColumns.push(column.rowClass)
-        }
-      })
+      const getRowClass = column => {
+        if (Array.isArray(column)) { column.forEach(col => getRowClass(col)) }
+        if (!column.rowClass) return
+        if (typeof column.rowClass === 'function') { rowClassesFromColumns.push(column.rowClass(row)) }
+        if (typeof column.rowClass === 'string') { rowClassesFromColumns.push(column.rowClass) }
+      }
+      columns.forEach(column => getRowClass(column))
       return (
         <tr
           key={`row-${rowIndex}`}
