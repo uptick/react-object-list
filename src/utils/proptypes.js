@@ -39,6 +39,8 @@ const COLUMN_BASE_TYPE = {
   item: PropTypes.func,
   sortKey: PropTypes.string,
   optional: PropTypes.bool,
+  /* string or function of a data row returning a string to add to row classes */
+  rowClass: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
 }
 
 const COLUMN_TYPE = PropTypes.shape(COLUMN_BASE_TYPE)
