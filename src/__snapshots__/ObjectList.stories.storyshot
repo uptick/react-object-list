@@ -2377,7 +2377,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           />
         </div>
         <div
-          className="objectlist-row objectlist-current-filter__active-status"
+          className="objectlist-row objectlist-current-filter__active-status objectlist-number-slider-filter"
         >
           <input
             className="objectlist-input objectlist-input__number-slider--number"
@@ -3851,7 +3851,7 @@ exports[`Storyshots object-list has everything 1`] = `
           />
         </div>
         <div
-          className="objectlist-row objectlist-current-filter__active-status"
+          className="objectlist-row objectlist-current-filter__active-status objectlist-number-slider-filter"
         >
           <input
             className="objectlist-input objectlist-input__number-slider--number"

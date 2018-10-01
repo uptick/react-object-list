@@ -823,7 +823,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Decimal logarithmic w
     />
   </div>
   <div
-    className="objectlist-row objectlist-current-filter__active-status"
+    className="objectlist-row objectlist-current-filter__active-status objectlist-number-slider-filter"
   >
     <input
       className="objectlist-input objectlist-input__number-slider--number"
@@ -911,7 +911,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Decimal with fixed ra
     />
   </div>
   <div
-    className="objectlist-row objectlist-current-filter__active-status"
+    className="objectlist-row objectlist-current-filter__active-status objectlist-number-slider-filter"
   >
     <input
       className="objectlist-input objectlist-input__number-slider--number"
@@ -999,7 +999,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Logarithmic 1`] = `
     />
   </div>
   <div
-    className="objectlist-row objectlist-current-filter__active-status"
+    className="objectlist-row objectlist-current-filter__active-status objectlist-number-slider-filter"
   >
     <input
       className="objectlist-input objectlist-input__number-slider--number"
@@ -1087,7 +1087,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Logarithmic with diff
     />
   </div>
   <div
-    className="objectlist-row objectlist-current-filter__active-status"
+    className="objectlist-row objectlist-current-filter__active-status objectlist-number-slider-filter"
   >
     <input
       className="objectlist-input objectlist-input__number-slider--number"
@@ -1175,7 +1175,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Negative decimal loga
     />
   </div>
   <div
-    className="objectlist-row objectlist-current-filter__active-status"
+    className="objectlist-row objectlist-current-filter__active-status objectlist-number-slider-filter"
   >
     <input
       className="objectlist-input objectlist-input__number-slider--number"
@@ -1263,7 +1263,7 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Standard 1`] = `
     />
   </div>
   <div
-    className="objectlist-row objectlist-current-filter__active-status"
+    className="objectlist-row objectlist-current-filter__active-status objectlist-number-slider-filter"
   >
     <input
       className="objectlist-input objectlist-input__number-slider--number"
