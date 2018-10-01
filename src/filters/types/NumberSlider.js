@@ -140,7 +140,7 @@ class NumberSlider extends React.Component {
     const display = isNaN(parsedValue) ? '' : parsedValue.toFixed(precision)
     const sliderRoundedValue = parseFloat(sliderValue).toFixed(10)
     return (
-      <div className="objectlist-row objectlist-current-filter__active-status">
+      <div className="objectlist-row objectlist-current-filter__active-status objectlist-number-slider-filter">
         <input
           type="number"
           className="objectlist-input objectlist-input__number-slider--number"
