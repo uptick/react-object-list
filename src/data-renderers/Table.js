@@ -5,7 +5,7 @@ import TableHeader from './TableHeader'
 import Overlay from './Overlay'
 import AllSelector from '../types/AllSelector'
 import Selector from '../types/Selector'
-import { getVisibleColumns, annotateSpans, getLeafColumns } from '../utils/functions'
+import { getVisibleColumns, annotateSpans, getLeafColumns, isClassComponent } from '../utils/functions'
 import { getValueFromAccessor, handleRowClick } from './utils'
 import { STATUS_TYPE, STATUS_CHOICES, SELECTION_TYPE, ALL_SELECTED } from '../utils/proptypes'
 
@@ -156,15 +156,24 @@ export default class TableRenderer extends Component {
             let i = 0
             while (i < toRender.length) {
               const RenderItem = toRender[i]
-              if (RenderItem.item) {
-                RenderedItems.push(RenderItem.item({
-                  row: row,
+              const {item: ItemRenderer, dataKey} = RenderItem
+              if (ItemRenderer) {
+                const props = {
+                  row,
                   column: RenderItem,
-                  value: getValueFromAccessor(row, RenderItem.dataKey),
+                  value: getValueFromAccessor(row, dataKey),
                   key: `item-${i}`,
-                }))
+                }
+                const content = (
+                  isClassComponent(ItemRenderer)
+                    ? <ItemRenderer {...props} />
+                    : React.isValidElement(ItemRenderer)
+                      ? React.cloneElement(ItemRenderer, props)
+                      : ItemRenderer(props)
+                )
+                RenderedItems.push(content)
               } else {
-                RenderedItems.push(getValueFromAccessor(row, RenderItem.dataKey))
+                RenderedItems.push(getValueFromAccessor(row, dataKey))
               }
               i++
             }
