@@ -166,15 +166,24 @@ export default class TableRenderer extends Component {
             let i = 0
             while (i < toRender.length) {
               const RenderItem = toRender[i]
-              if (RenderItem.item) {
-                RenderedItems.push(RenderItem.item({
-                  row: row,
+              const {item: ItemRenderer, dataKey} = RenderItem
+              if (ItemRenderer) {
+                const props = {
+                  row,
                   column: RenderItem,
-                  value: getValueFromAccessor(row, RenderItem.dataKey),
+                  value: getValueFromAccessor(row, dataKey),
                   key: `item-${i}`,
-                }))
+                }
+                const content = (
+                  typeof ItemRenderer === 'function'
+                    ? <ItemRenderer {...props} />
+                    : React.isValidElement(ItemRenderer)
+                      ? React.cloneElement(ItemRenderer, props)
+                      : ItemRenderer
+                )
+                RenderedItems.push(content)
               } else {
-                RenderedItems.push(getValueFromAccessor(row, RenderItem.dataKey))
+                RenderedItems.push(getValueFromAccessor(row, dataKey))
               }
               i++
             }
