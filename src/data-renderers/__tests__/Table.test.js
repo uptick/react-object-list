@@ -20,6 +20,7 @@ describe('Table', () => {
         item: ({row: {attributes: {name}}}) => name,
         optional: false,
         sortKey: '🎂',
+        rowClass: 'orange',
       },
       [{
         dataKey: 'age',
@@ -27,6 +28,12 @@ describe('Table', () => {
         item: ({row: {attributes: {age}}, key}) => (<span key={key}>{age}</span>),
         optional: false,
         sortKey: '🥧',
+        rowClass: (row) => {
+          const age = parseInt(row.attributes.age)
+          if (age && age < 18) {
+            return 'small'
+          }
+        },
       },
       {
         dataKey: 'gender',

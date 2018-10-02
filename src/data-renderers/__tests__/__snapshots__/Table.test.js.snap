@@ -36,6 +36,7 @@ exports[`Table Snapshots can click on items 1`] = `
               "item": [Function],
               "label": "name",
               "optional": false,
+              "rowClass": "orange",
               "sortKey": "🎂",
             }
           }
@@ -56,6 +57,7 @@ exports[`Table Snapshots can click on items 1`] = `
                 "item": [Function],
                 "label": "age_gender",
                 "optional": false,
+                "rowClass": [Function],
                 "sortKey": "🥧",
               },
               Object {
@@ -80,7 +82,7 @@ exports[`Table Snapshots can click on items 1`] = `
     </thead>
     <tbody>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange"
         onClick={[Function]}
       >
         <td
@@ -107,7 +109,7 @@ exports[`Table Snapshots can click on items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange small"
         onClick={[Function]}
       >
         <td
@@ -134,7 +136,7 @@ exports[`Table Snapshots can click on items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange small"
         onClick={[Function]}
       >
         <td
@@ -161,7 +163,7 @@ exports[`Table Snapshots can click on items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange"
         onClick={[Function]}
       >
         <td
@@ -188,7 +190,7 @@ exports[`Table Snapshots can click on items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange"
         onClick={[Function]}
       >
         <td
@@ -255,6 +257,7 @@ exports[`Table Snapshots can select items 1`] = `
               "item": [Function],
               "label": "name",
               "optional": false,
+              "rowClass": "orange",
               "sortKey": "🎂",
             }
           }
@@ -275,6 +278,7 @@ exports[`Table Snapshots can select items 1`] = `
                 "item": [Function],
                 "label": "age_gender",
                 "optional": false,
+                "rowClass": [Function],
                 "sortKey": "🥧",
               },
               Object {
@@ -299,7 +303,7 @@ exports[`Table Snapshots can select items 1`] = `
     </thead>
     <tbody>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange"
         onClick={[Function]}
       >
         <td
@@ -326,7 +330,7 @@ exports[`Table Snapshots can select items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange small"
         onClick={[Function]}
       >
         <td
@@ -353,7 +357,7 @@ exports[`Table Snapshots can select items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange small"
         onClick={[Function]}
       >
         <td
@@ -380,7 +384,7 @@ exports[`Table Snapshots can select items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange"
         onClick={[Function]}
       >
         <td
@@ -407,7 +411,7 @@ exports[`Table Snapshots can select items 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange"
         onClick={[Function]}
       >
         <td
@@ -463,6 +467,7 @@ exports[`Table Snapshots renders default 1`] = `
               "item": [Function],
               "label": "name",
               "optional": false,
+              "rowClass": "orange",
               "sortKey": "🎂",
             }
           }
@@ -483,6 +488,7 @@ exports[`Table Snapshots renders default 1`] = `
                 "item": [Function],
                 "label": "age_gender",
                 "optional": false,
+                "rowClass": [Function],
                 "sortKey": "🥧",
               },
               Object {
@@ -507,7 +513,7 @@ exports[`Table Snapshots renders default 1`] = `
     </thead>
     <tbody>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange"
         onClick={[Function]}
       >
         <td
@@ -525,7 +531,7 @@ exports[`Table Snapshots renders default 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange small"
         onClick={[Function]}
       >
         <td
@@ -543,7 +549,7 @@ exports[`Table Snapshots renders default 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange small"
         onClick={[Function]}
       >
         <td
@@ -561,7 +567,7 @@ exports[`Table Snapshots renders default 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange"
         onClick={[Function]}
       >
         <td
@@ -579,7 +585,7 @@ exports[`Table Snapshots renders default 1`] = `
         </td>
       </tr>
       <tr
-        className="objectlist-table__row objectlist-table__row--clickable"
+        className="objectlist-table__row objectlist-table__row--clickable orange"
         onClick={[Function]}
       >
         <td
