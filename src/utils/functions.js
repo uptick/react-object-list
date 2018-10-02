@@ -120,17 +120,6 @@ const sortByName = (a, b) => {
   return ((textA < textB) ? -1 : (textA > textB) ? 1 : 0)
 }
 
-/**
- * Checks React Component to see if it is functional or class based
- * https://stackoverflow.com/a/41658173
- * @param  {Function}  component React Component
- * @return {Boolean}           True if class based
- */
-const isClassComponent = component => (
-  typeof component === 'function' &&
-  !!component.prototype.isReactComponent
-)
-
 export {
   _getTreeDepth,
   getLeafColumns,
@@ -138,5 +127,4 @@ export {
   annotateSpans,
   getVisibleColumns,
   sortByName,
-  isClassComponent,
 }

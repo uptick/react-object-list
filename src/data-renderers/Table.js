@@ -5,7 +5,7 @@ import TableHeader from './TableHeader'
 import Overlay from './Overlay'
 import AllSelector from '../types/AllSelector'
 import Selector from '../types/Selector'
-import { getVisibleColumns, annotateSpans, getLeafColumns, isClassComponent } from '../utils/functions'
+import { getVisibleColumns, annotateSpans, getLeafColumns } from '../utils/functions'
 import { getValueFromAccessor, handleRowClick } from './utils'
 import { STATUS_TYPE, STATUS_CHOICES, SELECTION_TYPE, ALL_SELECTED } from '../utils/proptypes'
 
@@ -165,11 +165,11 @@ export default class TableRenderer extends Component {
                   key: `item-${i}`,
                 }
                 const content = (
-                  isClassComponent(ItemRenderer)
+                  typeof ItemRenderer === 'function'
                     ? <ItemRenderer {...props} />
                     : React.isValidElement(ItemRenderer)
                       ? React.cloneElement(ItemRenderer, props)
-                      : ItemRenderer(props)
+                      : ItemRenderer
                 )
                 RenderedItems.push(content)
               } else {
