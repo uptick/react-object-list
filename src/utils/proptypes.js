@@ -36,7 +36,7 @@ const COLUMN_BASE_TYPE = {
   fieldKey: PropTypes.string, // used to uniquely identify this column
   dataKey: PropTypes.string, // used to access the data inside the data object
   header: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
-  item: PropTypes.func,
+  item: PropTypes.oneOfType([PropTypes.func, PropTypes.element]),
   sortKey: PropTypes.string,
   optional: PropTypes.bool,
   /* string or function of a data row returning a string to add to row classes */
