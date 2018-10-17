@@ -1,7 +1,7 @@
 import 'babel-polyfill'
 import { configure } from '@storybook/react';
 import '../src/main.sass'
-import '../node_modules/font-awesome/css/font-awesome.min.css'
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 const appStories = require.context('../src/', true, /stories\.js$/)
 

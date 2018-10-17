@@ -16,7 +16,7 @@ module.exports = {
         }],
         include: [
           path.resolve(__dirname, '../src'),
-          path.resolve(__dirname, '../node_modules/font-awesome'),
+          path.resolve(__dirname, '../node_modules/@fortawesome'),
         ],
       }, {
         test: /\.(woff2?|eot|ttf|svg|otf)(\?.+)?$/i,
