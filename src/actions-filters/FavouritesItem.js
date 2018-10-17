@@ -22,7 +22,7 @@ export default class FavouritesItem extends React.Component {
   }
 
   static defaultProps = {
-    RemoveFavouriteIcon: <i className="fa fa-trash-o objectlist-delete" />,
+    RemoveFavouriteIcon: null,
   }
 
   /**

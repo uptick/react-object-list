@@ -8,13 +8,7 @@ exports[`Favourites Snapshot renders correctly 1`] = `
     className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
     type="button"
   >
-    <i
-      className="fa fa-heart-o"
-    />
      Favourites
-    <i
-      className="fa fa-caret-down"
-    />
   </button>
   <div
     className="objectlist-dropdown__menu"

@@ -8,9 +8,6 @@ describe('HeaderField', () => {
     const props = {
       dataKey: 'header_sort_key',
       header: 'Header Text',
-      SortAscIcon: <span>ASC</span>,
-      SortDescIcon: <span>DESC</span>,
-      UnsortedIcon: <span>SORT ME</span>,
     }
     it('renders sortable', () => {
       snapshotTest(<HeaderField {...props} sortKey="🍰" />)
@@ -36,9 +33,6 @@ describe('HeaderField', () => {
         updateSorting: jest.fn(),
         header: 'Thing',
         sortKey: '🎂',
-        SortAscIcon: <span>ASC</span>,
-        SortDescIcon: <span>DESC</span>,
-        UnsortedIcon: <span>SORT ME</span>,
       }
       beforeEach(() => {
         spyOn(baseProps, 'updateSorting')

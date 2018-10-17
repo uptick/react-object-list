@@ -7,13 +7,7 @@ exports[`<OptionalFields /> Snapshot renders correctly 1`] = `
   <button
     className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
   >
-    <i
-      className="fa fa-list"
-    />
      Change columns
-    <i
-      className="fa fa-caret-down"
-    />
   </button>
   <div
     className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
@@ -43,13 +37,7 @@ exports[`<OptionalFields /> Snapshot renders correctly 2`] = `
   <button
     className="objectlist-button objectlist-button--dropdown objectlist-button--borderless open"
   >
-    <i
-      className="fa fa-list"
-    />
      Change columns
-    <i
-      className="fa fa-caret-up"
-    />
   </button>
   <div
     className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"

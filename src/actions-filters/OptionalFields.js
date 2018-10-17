@@ -22,9 +22,9 @@ class OptionalFields extends Component {
   static defaultProps = {
     optionalFields: [],
     extraColumns: [],
-    OptionalFieldsIcon: <i className="fa fa-list" />,
-    OpenIcon: <i className="fa fa-caret-down" />,
-    CloseIcon: <i className="fa fa-caret-up" />,
+    OptionalFieldsIcon: null,
+    OpenIcon: null,
+    CloseIcon: null,
   }
 
   componentWillMount() {

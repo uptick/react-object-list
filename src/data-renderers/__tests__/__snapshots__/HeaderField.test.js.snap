@@ -23,9 +23,6 @@ exports[`HeaderField Snapshots renders sortable 1`] = `
     className="sort-direction text-primary"
   >
      
-    <span>
-      SORT ME
-    </span>
   </span>
 </div>
 `;
@@ -41,9 +38,6 @@ exports[`HeaderField Snapshots renders sorted asc 1`] = `
     className="sort-direction text-primary"
   >
      
-    <span>
-      ASC
-    </span>
   </span>
 </div>
 `;
@@ -59,9 +53,6 @@ exports[`HeaderField Snapshots renders sorted desc 1`] = `
     className="sort-direction text-primary"
   >
      
-    <span>
-      DESC
-    </span>
   </span>
 </div>
 `;
@@ -77,9 +68,6 @@ exports[`HeaderField Snapshots renders with fa-sort icon 1`] = `
     className="sort-direction text-primary"
   >
      
-    <span>
-      SORT ME
-    </span>
   </span>
 </div>
 `;

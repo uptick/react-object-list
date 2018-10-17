@@ -48,11 +48,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
       onClick={[Function]}
       title="Remove Filter"
-    >
-      <i
-        className="fa fa-minus-circle"
-      />
-    </button>
+    />
   </div>
   <div
     className="objectlist-row"
@@ -220,11 +216,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
       onClick={[Function]}
       title="Remove Filter"
-    >
-      <i
-        className="fa fa-minus-circle"
-      />
-    </button>
+    />
   </div>
   <div
     className="objectlist-row"
@@ -301,11 +293,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
       onClick={[Function]}
       title="Remove Filter"
-    >
-      <i
-        className="fa fa-minus-circle"
-      />
-    </button>
+    />
   </div>
   <div
     className="objectlist-row"
@@ -375,11 +363,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
       onClick={[Function]}
       title="Remove Filter"
-    >
-      <i
-        className="fa fa-minus-circle"
-      />
-    </button>
+    />
   </div>
   <div
     className="objectlist-row"
@@ -463,11 +447,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
       onClick={[Function]}
       title="Remove Filter"
-    >
-      <i
-        className="fa fa-minus-circle"
-      />
-    </button>
+    />
   </div>
   <div
     className="objectlist-row"
@@ -562,11 +542,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
       onClick={[Function]}
       title="Remove Filter"
-    >
-      <i
-        className="fa fa-minus-circle"
-      />
-    </button>
+    />
   </div>
   <div
     className="objectlist-row"
@@ -651,11 +627,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
       onClick={[Function]}
       title="Remove Filter"
-    >
-      <i
-        className="fa fa-minus-circle"
-      />
-    </button>
+    />
   </div>
   <div
     className="objectlist-row"
@@ -729,11 +701,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
       onClick={[Function]}
       title="Remove Filter"
-    >
-      <i
-        className="fa fa-minus-circle"
-      />
-    </button>
+    />
   </div>
   <div
     className="objectlist-row"
@@ -771,11 +739,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
       onClick={[Function]}
       title="Remove Filter"
-    >
-      <i
-        className="fa fa-minus-circle"
-      />
-    </button>
+    />
   </div>
   <div
     className="objectlist-row"
@@ -843,11 +807,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
       onClick={[Function]}
       title="Remove Filter"
-    >
-      <i
-        className="fa fa-minus-circle"
-      />
-    </button>
+    />
   </div>
 </div>
 `;

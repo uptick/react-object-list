@@ -76,9 +76,6 @@ exports[`Pagination Snapshots has loading icon 1`] = `
     className="text-muted"
   >
     <em>
-      <h4>
-        Loading
-      </h4>
        Loading 
       snakes
        ...

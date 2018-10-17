@@ -35,9 +35,9 @@ class Favourites extends Component {
   static defaultProps = {
     favourites: [],
     selectedFavouriteName: null,
-    FavouritesIcon: <i className="fa fa-heart-o" />,
-    OpenIcon: <i className="fa fa-caret-down" />,
-    CloseIcon: <i className="fa fa-caret-up" />,
+    FavouritesIcon: null,
+    OpenIcon: null,
+    CloseIcon: null,
   }
 
   state = {

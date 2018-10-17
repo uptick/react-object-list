@@ -13,7 +13,7 @@ class RemoveFilter extends React.Component {
   }
 
   static defaultProps = {
-    Icon: <i className="fa fa-minus-circle" />,
+    Icon: null,
   }
 
   render() {
