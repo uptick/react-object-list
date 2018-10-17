@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions'
 import * as importedFilters from './filters'
+import FontAwesomeIcons from './icons/FontAwesome'
 
 import ObjectList from '.'
 
@@ -11,6 +12,7 @@ const baseProps = {
   updateColumns: action('Update columns'),
   updateFilter: action('Update filters'),
   addFilter: action('Add filter'),
+  icons: FontAwesomeIcons(5),
 }
 
 const filters = Object.entries(importedFilters).map(([name, filter]) => {

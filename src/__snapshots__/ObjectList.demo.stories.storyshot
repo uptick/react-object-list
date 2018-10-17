@@ -79,11 +79,11 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
-              className="fa fa-list"
+              className="fas fa-list"
             />
              Change columns
             <i
-              className="fa fa-caret-down"
+              className="fas fa-caret-down"
             />
           </button>
           <div
@@ -807,11 +807,11 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
-              className="fa fa-list"
+              className="fas fa-list"
             />
              Change columns
             <i
-              className="fa fa-caret-down"
+              className="fas fa-caret-down"
             />
           </button>
           <div
@@ -872,8 +872,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
               >
                  
                 <i
-                  aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -895,8 +894,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
               >
                  
                 <i
-                  aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -918,8 +916,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
               >
                  
                 <i
-                  aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
