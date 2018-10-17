@@ -14,6 +14,7 @@ module.exports = {
     renderers: path.resolve('src', 'data-renderers', 'index.js'),
     cells: path.resolve('src', 'types', 'index.js'),
     utils: path.resolve('src', 'utils', 'index.js'),
+    icons: path.resolve('src', 'icons', 'index.js'),
   },
   output: {
     path: path.resolve(__dirname),
