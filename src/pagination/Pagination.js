@@ -20,7 +20,7 @@ export default class Pagination extends React.Component {
     // True if results are loading
     loading: PropTypes.bool,
     // Icon to display if results are loading
-    LoadingIcon: PropTypes.func,
+    LoadingIcon: PropTypes.element,
     // plural name for items displayed in the list
     itemPluralName: PropTypes.string.isRequired,
   }
@@ -90,7 +90,7 @@ export default class Pagination extends React.Component {
       totals = (
         <p className="text-muted">
           <em>
-            {LoadingIcon && <LoadingIcon />} Loading {itemPluralName} ...
+            {LoadingIcon} Loading {itemPluralName} ...
           </em>
         </p>
       )

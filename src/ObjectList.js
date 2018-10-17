@@ -12,10 +12,7 @@ import {
   SELECTION_TYPE,
   ALL_SELECTED,
 } from './utils/proptypes'
-import {
-  loadingSpinner,
-  ErrorMessage as DefaultErrorMessage,
-} from './utils'
+import {ErrorMessage as DefaultErrorMessage} from './utils'
 
 class ObjectList extends Component {
   static propTypes = {
@@ -96,6 +93,7 @@ class ObjectList extends Component {
       SortAsc: PropTypes.element,
       SortDesc: PropTypes.element,
       Unsorted: PropTypes.element,
+      Loading: PropTypes.element,
     }),
   }
 
@@ -105,6 +103,7 @@ class ObjectList extends Component {
     Pagination: DefaultPagination,
     ErrorMessage: DefaultErrorMessage,
     data: [],
+    icons: {},
     columns: [],
     customActions: [],
     error: null,
@@ -195,7 +194,7 @@ class ObjectList extends Component {
             count={totalCount}
             goToPage={updatePage}
             loading={status === STATUS_CHOICES.loading}
-            LoadingIcon={loadingSpinner}
+            LoadingIcon={icons.Loading}
             itemPluralName={itemPluralName}
           />
         }
