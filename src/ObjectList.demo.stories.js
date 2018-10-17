@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
 import {TextContainsFilter, SearchFilter} from './filters'
-import FontAwesomeIcons from './icons/FontAwesome'
+import {FontAwesome} from './icons'
 
 import ObjectList from '.'
 import Table from './data-renderers/Table'
@@ -182,7 +182,7 @@ class InteractiveObjectList extends React.Component {
       updateFilter={this.updateFilter}
       searchKey="first_name"
       itemOnClick={action('clicked on')}
-      icons={FontAwesomeIcons(5)}
+      icons={FontAwesome(5)}
     />
   }
 }
