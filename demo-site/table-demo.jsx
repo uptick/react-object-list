@@ -3,6 +3,7 @@ import ReactDom from 'react-dom'
 
 import ObjectList from 'react-object-list'
 import {TextContainsFilter} from 'react-object-list/filters'
+import {FontAwesome} from 'react-object-list/icons'
 
 const mockData = require('./demo.data.json')
 const columns = [
@@ -145,6 +146,7 @@ class TableDemo extends React.Component {
       addFilter={this.addFilter}
       removeFilter={this.removeFilter}
       updateFilter={this.updateFilter}
+      icons={FontAwesome(4)}
     />
   }
 }
