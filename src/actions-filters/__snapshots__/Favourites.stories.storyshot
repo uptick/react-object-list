@@ -19,6 +19,9 @@ exports[`Storyshots object-list/Favourites default view 1`] = `
         className="fa fa-heart-o"
       />
        Favourites
+      <i
+        className="fa fa-caret-down"
+      />
     </button>
     <div
       className="objectlist-dropdown__menu"
@@ -95,6 +98,9 @@ exports[`Storyshots object-list/Favourites interactive 1`] = `
         className="fa fa-heart-o"
       />
        Favourites
+      <i
+        className="fa fa-caret-down"
+      />
     </button>
     <div
       className="objectlist-dropdown__menu"

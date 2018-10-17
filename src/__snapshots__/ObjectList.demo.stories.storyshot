@@ -82,6 +82,9 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
               className="fa fa-list"
             />
              Change columns
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
@@ -807,6 +810,9 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
               className="fa fa-list"
             />
              Change columns
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"

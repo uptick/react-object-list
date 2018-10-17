@@ -11,6 +11,9 @@ exports[`<OptionalFields /> Snapshot renders correctly 1`] = `
       className="fa fa-list"
     />
      Change columns
+    <i
+      className="fa fa-caret-down"
+    />
   </button>
   <div
     className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
@@ -44,6 +47,9 @@ exports[`<OptionalFields /> Snapshot renders correctly 2`] = `
       className="fa fa-list"
     />
      Change columns
+    <i
+      className="fa fa-caret-up"
+    />
   </button>
   <div
     className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"

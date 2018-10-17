@@ -8,6 +8,24 @@ exports[`Table Header Snapshots renders correctly 1`] = `
   style={Object {}}
 >
   <HeaderField
+    SortAscIcon={
+      <i
+        aria-hidden="true"
+        className="fa fa-caret-up"
+      />
+    }
+    SortDescIcon={
+      <i
+        aria-hidden="true"
+        className="fa fa-caret-down"
+      />
+    }
+    UnsortedIcon={
+      <i
+        aria-hidden="true"
+        className="fa fa-sort"
+      />
+    }
     activeSort={null}
     dataKey="header_sort_key"
     header="Header Text"
@@ -27,6 +45,24 @@ exports[`Table Header Snapshots renders correctly with multiple header items 1`]
   style={Object {}}
 >
   <HeaderField
+    SortAscIcon={
+      <i
+        aria-hidden="true"
+        className="fa fa-caret-up"
+      />
+    }
+    SortDescIcon={
+      <i
+        aria-hidden="true"
+        className="fa fa-caret-down"
+      />
+    }
+    UnsortedIcon={
+      <i
+        aria-hidden="true"
+        className="fa fa-sort"
+      />
+    }
     activeSort={null}
     dataKey="header_sort_key"
     header="Header Text"
@@ -36,6 +72,24 @@ exports[`Table Header Snapshots renders correctly with multiple header items 1`]
     updateSorting={undefined}
   />
   <HeaderField
+    SortAscIcon={
+      <i
+        aria-hidden="true"
+        className="fa fa-caret-up"
+      />
+    }
+    SortDescIcon={
+      <i
+        aria-hidden="true"
+        className="fa fa-caret-down"
+      />
+    }
+    UnsortedIcon={
+      <i
+        aria-hidden="true"
+        className="fa fa-sort"
+      />
+    }
     activeSort={null}
     dataKey="header_two_key"
     header="Header Two Text"

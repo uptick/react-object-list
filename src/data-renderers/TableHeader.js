@@ -30,12 +30,21 @@ export default class TableHeader extends React.Component {
     colSpan: PropTypes.number,
     /** the rowSpan of the header */
     rowSpan: PropTypes.number,
+    /** Icon to render to sort ascending */
+    SortAscIcon: PropTypes.element,
+    /** Icon to render to sort descending */
+    SortDescIcon: PropTypes.element,
+    /** Icon to render if unsorted column */
+    UnsortedIcon: PropTypes.element,
   }
 
   static defaultProps = {
     headerItems: [],
     className: '',
     sortKeys: [],
+    SortAscIcon: <i className="fa fa-caret-up" aria-hidden="true" />,
+    SortDescIcon: <i className="fa fa-caret-down" aria-hidden="true" />,
+    UnsortedIcon: <i className="fa fa-sort" aria-hidden="true" />,
   }
 
   constructor(props) {
@@ -99,16 +108,26 @@ export default class TableHeader extends React.Component {
   }
 
   render() {
-    const headers = this.state.headerItems.map((header, i) => (
+    const {
+      SortAscIcon, SortDescIcon, UnsortedIcon,
+      saveWidth, updateSorting,
+      colSpan, rowSpan,
+      className,
+    } = this.props
+    const {headerItems, width} = this.state
+    const headers = headerItems.map((header, i) => (
       <HeaderField
         key={`headerfield-${i}`}
         activeSort={this.getSortDirection(header.sortKey)}
-        updateSorting={this.props.updateSorting}
+        updateSorting={updateSorting}
+        SortAscIcon={SortAscIcon}
+        SortDescIcon={SortDescIcon}
+        UnsortedIcon={UnsortedIcon}
         {...header}
       />
     ))
     let widthHandle
-    if (this.state.width && this.props.saveWidth) {
+    if (width && saveWidth) {
       widthHandle = (
         <WidthHandle
           onChange={this.setWidth}
@@ -118,14 +137,14 @@ export default class TableHeader extends React.Component {
     }
 
     const style = {}
-    if (this.state.width) style.width = this.state.width
+    if (width) style.width = width
 
     return (
       <th
-        colSpan={this.props.colSpan}
-        rowSpan={this.props.rowSpan}
+        colSpan={colSpan}
+        rowSpan={rowSpan}
         style={style}
-        className={`objectlist-table__th objectlist-table__th--border-bottom ${this.props.className}`}
+        className={`objectlist-table__th objectlist-table__th--border-bottom ${className}`}
       >
         { headers }
         { widthHandle }

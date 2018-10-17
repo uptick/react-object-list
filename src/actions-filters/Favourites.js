@@ -22,11 +22,22 @@ class Favourites extends Component {
     handleAddFavourite: PropTypes.func,
     /** callback function to set the selected favourite to the current favourite */
     loadFavourite: PropTypes.func,
+    /** Icon to render next to favourites */
+    FavouritesIcon: PropTypes.element,
+    /** Icon to render to remove a favourite */
+    RemoveFavouriteIcon: PropTypes.element,
+    /** Icon to click to expand favourites dropdown */
+    OpenIcon: PropTypes.element,
+    /** Icon to click to close favourites dropdown */
+    CloseIcon: PropTypes.element,
   }
 
   static defaultProps = {
     favourites: [],
     selectedFavouriteName: null,
+    FavouritesIcon: <i className="fa fa-heart-o" />,
+    OpenIcon: <i className="fa fa-caret-down" />,
+    CloseIcon: <i className="fa fa-caret-up" />,
   }
 
   state = {
@@ -95,13 +106,19 @@ class Favourites extends Component {
   }
 
   render() {
+    const {
+      FavouritesIcon, RemoveFavouriteIcon, OpenIcon, CloseIcon,
+      loadFavourite, handleDeleteFavourite,
+    } = this.props
+    const {favouritesOpen, newFavouriteName, selectedFavouriteName} = this.state
     const favourites = this.props.favourites.map(favourite => (
       <FavouritesItem
         key={`favourite-${favourite.name}`}
         {...favourite}
-        loadFavourite={this.props.loadFavourite}
-        handleDelete={this.props.handleDeleteFavourite}
-        isSelected={favourite.name === this.state.selectedFavouriteName}
+        loadFavourite={loadFavourite}
+        handleDelete={handleDeleteFavourite}
+        isSelected={favourite.name === selectedFavouriteName}
+        RemoveFavouriteIcon={RemoveFavouriteIcon}
       />
     ))
 
@@ -111,11 +128,12 @@ class Favourites extends Component {
       })} ref={el => { this.favouritedDropdown = el }}>
         <button
           className={ClassNames('objectlist-button--dropdown objectlist-button objectlist-button--favourites', {
-            open: this.state.favouritesOpen,
+            open: favouritesOpen,
           })}
           type="button"
           ref={el => { this.favouritesButton = el }}>
-          <i className="fa fa-heart-o" /> Favourites
+          {FavouritesIcon} Favourites
+          {favouritesOpen ? CloseIcon : OpenIcon}
         </button>
         <div
           className="objectlist-dropdown__menu">
@@ -128,7 +146,7 @@ class Favourites extends Component {
                 ref={el => { this.newFavouriteName = el }}
                 className="objectlist-input objectlist-input__favourite"
                 placeholder="Save as new"
-                value={this.state.newFavouriteName}
+                value={newFavouriteName}
                 onChange={this.handleFavouriteNameChange} />
               <button type="submit" hidden>Add</button>
             </form>

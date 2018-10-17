@@ -85,6 +85,18 @@ class ObjectList extends Component {
     selectItems: PropTypes.func,
     /** Array of custom actions to be rendered */
     customActions: PropTypes.arrayOf(PropTypes.func),
+    /** Icons to be rendered across the component */
+    icons: PropTypes.shape({
+      OptionalFields: PropTypes.element,
+      Favourites: PropTypes.element,
+      RemoveFavourite: PropTypes.element,
+      RemoveFilter: PropTypes.element,
+      DropdownOpen: PropTypes.element,
+      DropdownClose: PropTypes.element,
+      SortAsc: PropTypes.element,
+      SortDesc: PropTypes.element,
+      Unsorted: PropTypes.element,
+    }),
   }
 
   static defaultProps = {
@@ -121,7 +133,7 @@ class ObjectList extends Component {
     const {
       DataRenderer, Pagination, ErrorMessage,
       filters, addFilter, updateFilter, meta, status, searchKey,
-      data, columns, updateColumns, itemOnClick,
+      data, columns, updateColumns, itemOnClick, icons,
       favourites, handleDeleteFavourite, handleAddFavourite, favouritesEnabled,
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
       updatePage, updateSorting, selection, selectItems, customActions, error,
@@ -134,6 +146,7 @@ class ObjectList extends Component {
       <div>
         <ActionsFiltersContainer
           filters={filters}
+          icons={icons}
           addFilter={addFilter}
           updateFilter={updateFilter}
           removeFilter={removeFilter}
@@ -164,6 +177,7 @@ class ObjectList extends Component {
         <DataRenderer
           data={data}
           summaryData={summaryData}
+          icons={icons}
           meta={meta}
           columns={columns}
           updateSorting={updateSorting}

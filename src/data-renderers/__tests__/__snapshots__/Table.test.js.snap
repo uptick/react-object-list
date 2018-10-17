@@ -26,6 +26,9 @@ exports[`Table Snapshots can click on items 1`] = `
           />
         </th>
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Object {
               "_colSpan": 1,
@@ -48,6 +51,9 @@ exports[`Table Snapshots can click on items 1`] = `
           width={undefined}
         />
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Array [
               Object {
@@ -247,6 +253,9 @@ exports[`Table Snapshots can select items 1`] = `
           />
         </th>
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Object {
               "_colSpan": 1,
@@ -269,6 +278,9 @@ exports[`Table Snapshots can select items 1`] = `
           width={undefined}
         />
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Array [
               Object {
@@ -457,6 +469,9 @@ exports[`Table Snapshots renders default 1`] = `
     >
       <tr>
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Object {
               "_colSpan": 1,
@@ -479,6 +494,9 @@ exports[`Table Snapshots renders default 1`] = `
           width={undefined}
         />
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Array [
               Object {

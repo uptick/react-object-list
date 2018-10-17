@@ -28,6 +28,8 @@ const makeFilter = (Renderer) => {
       comparisonOptions: FilterComparison.propTypes.options,
       /** Currently selected comparison option */
       comparison: FilterComparison.propTypes.value,
+      /** Icons */
+      icons: PropTypes.object,
     }
 
     static defaultProps = {
@@ -70,7 +72,9 @@ const makeFilter = (Renderer) => {
     }
 
     render() {
-      const {name, comparison, comparisonOptions, value, permanent, ...otherProps} = this.props
+      const {
+        name, comparison, comparisonOptions, value, permanent, icons = {}, ...otherProps
+      } = this.props
       return (
         <div className="objectlist-row">
           {name && <FilterLabel label={name} />}
@@ -86,8 +90,11 @@ const makeFilter = (Renderer) => {
             comparison={comparison || comparisonOptions[0]}
             value={value}
             onChange={this.onValueChange}
+            icons={icons}
           />
-          {!permanent && <RemoveFilter onClick={this.removeFilter} />}
+          {!permanent && (
+            <RemoveFilter onClick={this.removeFilter} RemoveFilterIcon={icons.RemoveFilter} />
+          )}
         </div>
       )
     }

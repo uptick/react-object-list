@@ -116,6 +116,9 @@ exports[`Storyshots object-list all selected 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
@@ -763,6 +766,9 @@ exports[`Storyshots object-list can select all 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
@@ -1420,6 +1426,9 @@ exports[`Storyshots object-list can select items 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
@@ -2019,6 +2028,9 @@ exports[`Storyshots object-list has active filters 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
@@ -2217,7 +2229,11 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            className="fa fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2287,7 +2303,11 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            className="fa fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2403,7 +2423,11 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            className="fa fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2460,7 +2484,11 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            className="fa fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2528,7 +2556,11 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            className="fa fa-minus-circle"
+          />
+        </button>
       </div>
     </div>
     <div
@@ -2908,6 +2940,9 @@ exports[`Storyshots object-list has error 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
@@ -2965,6 +3000,9 @@ exports[`Storyshots object-list has error 1`] = `
               className="fa fa-list"
             />
              Change columns
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
@@ -3493,6 +3531,9 @@ exports[`Storyshots object-list has everything 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
@@ -3691,7 +3732,11 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            className="fa fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -3761,7 +3806,11 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            className="fa fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -3877,7 +3926,11 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            className="fa fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -3934,7 +3987,11 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            className="fa fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -4002,7 +4059,11 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            className="fa fa-minus-circle"
+          />
+        </button>
       </div>
     </div>
     <div
@@ -4067,6 +4128,9 @@ exports[`Storyshots object-list has everything 1`] = `
               className="fa fa-list"
             />
              Change columns
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
@@ -4612,6 +4676,9 @@ exports[`Storyshots object-list has multiple pages 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
@@ -5117,6 +5184,9 @@ exports[`Storyshots object-list has optional fields 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
@@ -5174,6 +5244,9 @@ exports[`Storyshots object-list has optional fields 1`] = `
               className="fa fa-list"
             />
              Change columns
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
@@ -5659,6 +5732,9 @@ exports[`Storyshots object-list has search key 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
@@ -6164,6 +6240,9 @@ exports[`Storyshots object-list loading 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
@@ -6679,6 +6758,9 @@ exports[`Storyshots object-list ready 1`] = `
               className="fa fa-heart-o"
             />
              Favourites
+            <i
+              className="fa fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu"
