@@ -11,11 +11,24 @@ class OptionalFields extends Component {
     extraColumns: PropTypes.arrayOf(PropTypes.string),
     /** callback function when toggling an extra column on or off */
     updateColumns: PropTypes.func,
+    /** Icon to render next to text */
+    OptionalFieldsIcon: PropTypes.element,
+    /** Icon to click to expand optional fields dropdown */
+    OpenIcon: PropTypes.element,
+    /** Icon to click to close optional fields dropdown */
+    CloseIcon: PropTypes.element,
+    /** Icon to display when a field is enabled */
+    CheckboxCheckedIcon: PropTypes.element,
+    /** Icon to display when a field is not enabled */
+    CheckboxUnCheckedIcon: PropTypes.element,
   }
 
   static defaultProps = {
     optionalFields: [],
     extraColumns: [],
+    OptionalFieldsIcon: null,
+    OpenIcon: null,
+    CloseIcon: null,
   }
 
   componentWillMount() {
@@ -66,35 +79,41 @@ class OptionalFields extends Component {
   }
 
   _renderOptionalFieldsArray = (optionalFields, prepend) => {
+    const {extraColumns, updateColumns, CheckboxCheckedIcon, CheckboxUnCheckedIcon} = this.props
     const fields = Array.isArray(optionalFields) ? optionalFields : [optionalFields]
     return fields.map(field => {
       const spacer = prepend.length > 0 ? ' ' : ''
       return <OptionalField
         key={`field-${field.dataKey}`}
-        enabled={this.props.extraColumns.includes(field.fieldKey)}
-        onChange={this.props.updateColumns}
+        enabled={extraColumns.includes(field.fieldKey)}
+        onChange={updateColumns}
         fieldKey={field.fieldKey}
         name={`${prepend}${spacer}${(field.displayName || field.header)}`}
         className="objectlist-dropdown__item"
+        CheckboxCheckedIcon={CheckboxCheckedIcon}
+        CheckboxUnCheckedIcon={CheckboxUnCheckedIcon}
       />
     })
   }
 
   render() {
-    const fields = this.renderOptionalFields(this.props.optionalFields)
+    const {optionalFields, OptionalFieldsIcon, OpenIcon, CloseIcon} = this.props
+    const {optionalFieldsOpen} = this.state
+    const fields = this.renderOptionalFields(optionalFields)
 
     if (fields.length) {
       return (
         <div className={ClassNames('objectlist-dropdown', {
-          open: this.state.optionalFieldsOpen,
+          open: optionalFieldsOpen,
         })} ref={el => { this.optionalFieldsDropdown = el }}>
           <button
             ref={el => { this.optionalFieldsButton = el }}
             className={ClassNames('objectlist-button objectlist-button--dropdown objectlist-button--borderless', {
-              open: this.state.optionalFieldsOpen,
+              open: optionalFieldsOpen,
             })}
           >
-            <i className="fa fa-list" /> Change columns
+            {OptionalFieldsIcon} Change columns
+            {optionalFieldsOpen ? CloseIcon : OpenIcon}
           </button>
           <div className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless">
             {fields}

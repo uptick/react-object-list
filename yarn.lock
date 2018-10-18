@@ -129,6 +129,10 @@
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.6.3.tgz#65682e68a82701c70eefb38d7f941a2c0bfa90de"
 
+"@fortawesome/fontawesome-free@^5.4.1":
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.4.1.tgz#6194786c1a705ab84253e06429834466670e3c3f"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -4214,10 +4218,6 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.1"
     readable-stream "^2.0.4"
-
-font-awesome@^4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
 for-in@^0.1.3:
   version "0.1.8"

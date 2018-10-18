@@ -8,11 +8,24 @@ class RemoveFilter extends React.Component {
   static propTypes = {
     /** Function to be called to remove filter */
     onClick: PropTypes.func.isRequired,
+    /** Icon to be rendered in button */
+    Icon: PropTypes.element,
+  }
+
+  static defaultProps = {
+    Icon: <React.Fragment>&#x2296;</React.Fragment>,
   }
 
   render() {
+    const {Icon, onClick} = this.props
     return (
-      <button className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless" onClick={this.props.onClick} title="Remove Filter" />
+      <button
+        className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
+        onClick={onClick}
+        title="Remove Filter"
+      >
+        {Icon}
+      </button>
     )
   }
 }

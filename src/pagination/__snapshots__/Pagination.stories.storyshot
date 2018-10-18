@@ -279,6 +279,9 @@ exports[`Storyshots object-list/Pagination loading 1`] = `
     className="text-muted"
   >
     <em>
+      <i
+        className="fas fa-circle-notch fa-spin"
+      />
        Loading 
       buildings
        ...

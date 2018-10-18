@@ -34,9 +34,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
           type="button"
         >
-          <i
-            className="fa fa-heart-o"
-          />
            Favourites
         </button>
         <div
@@ -114,7 +111,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -282,7 +281,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -359,7 +360,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -429,7 +432,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -513,7 +518,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -614,7 +621,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -699,7 +708,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -773,7 +784,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -811,7 +824,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -879,7 +894,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
   </div>
   <div
@@ -914,9 +931,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         <button
           className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
         >
-          <i
-            className="fa fa-list"
-          />
            Change columns
         </button>
         <div
@@ -926,10 +940,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
             className="objectlist-dropdown__item"
             onClick={[Function]}
           >
-            <i
-              aria-hidden="true"
-              className="fa fa-square-o objectlist-dropdown__icon"
-            />
+            ☐
             Favourite Colour
           </button>
         </div>
@@ -954,9 +965,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has custom actions 1`] =
           className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
           type="button"
         >
-          <i
-            className="fa fa-heart-o"
-          />
            Favourites
         </button>
         <div
@@ -1071,9 +1079,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
           className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
           type="button"
         >
-          <i
-            className="fa fa-heart-o"
-          />
            Favourites
         </button>
         <div
@@ -1151,7 +1156,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -1319,7 +1326,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -1396,7 +1405,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -1466,7 +1477,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -1550,7 +1563,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -1651,7 +1666,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -1736,7 +1753,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -1810,7 +1829,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -1848,7 +1869,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -1916,7 +1939,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
   </div>
   <div
@@ -1940,9 +1965,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         <button
           className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
         >
-          <i
-            className="fa fa-list"
-          />
            Change columns
         </button>
         <div
@@ -1952,10 +1974,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
             className="objectlist-dropdown__item"
             onClick={[Function]}
           >
-            <i
-              aria-hidden="true"
-              className="fa fa-square-o objectlist-dropdown__icon"
-            />
+            ☐
             Favourite Colour
           </button>
         </div>
@@ -2020,9 +2039,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
           className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
           type="button"
         >
-          <i
-            className="fa fa-heart-o"
-          />
            Favourites
         </button>
         <div
@@ -2100,7 +2116,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -2268,7 +2286,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -2345,7 +2365,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -2415,7 +2437,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -2499,7 +2523,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -2600,7 +2626,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -2685,7 +2713,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -2742,7 +2772,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -2780,7 +2812,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -2848,7 +2882,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
   </div>
   <div
@@ -2936,9 +2972,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
           className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
           type="button"
         >
-          <i
-            className="fa fa-heart-o"
-          />
            Favourites
         </button>
         <div
@@ -3016,7 +3049,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -3184,7 +3219,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -3261,7 +3298,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -3331,7 +3370,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -3415,7 +3456,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -3516,7 +3559,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -3601,7 +3646,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -3658,7 +3705,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -3696,7 +3745,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
     <div
       className="objectlist-row"
@@ -3764,7 +3815,9 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
         onClick={[Function]}
         title="Remove Filter"
-      />
+      >
+        ⊖
+      </button>
     </div>
   </div>
   <div

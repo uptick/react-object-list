@@ -14,7 +14,10 @@ module.exports = {
         },{
             loader: 'sass-loader?sourceMap' // compiles Sass to CSS
         }],
-        include: path.resolve(__dirname, '../src')
+        include: [
+          path.resolve(__dirname, '../src'),
+          path.resolve(__dirname, '../node_modules/@fortawesome'),
+        ],
       }, {
         test: /\.(woff2?|eot|ttf|svg|otf)(\?.+)?$/i,
         use: [

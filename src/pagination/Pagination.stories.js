@@ -13,6 +13,7 @@ const props = {
   count: 42,
   loading: false,
   itemPluralName: 'buildings',
+  LoadingIcon: <i className="fas fa-circle-notch fa-spin" />,
 }
 
 storiesOf('object-list/Pagination', module)

@@ -5,7 +5,7 @@ import Pagination from '../Pagination.js'
 jest.mock('../Page', () => 'Page')
 
 describe('Pagination', () => {
-  const dummyLoader = (props) => <h4>Loading</h4>
+  const dummyLoader = <h4>Loading</h4>
   const defaultProps = {
     goToPage: jest.fn(),
     page: 1,

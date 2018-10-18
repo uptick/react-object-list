@@ -31,6 +31,8 @@ export default class TableRenderer extends Component {
     numSelected: PropTypes.number,
     /** Function called when table row is clicked */
     itemOnClick: PropTypes.func,
+    /** Icons to be rendered */
+    icons: PropTypes.object,
   }
 
   static defaultProps = {
@@ -41,6 +43,7 @@ export default class TableRenderer extends Component {
     status: STATUS_CHOICES.done,
     columnWidths: {},
     selection: {},
+    icons: {},
   }
 
   state = {
@@ -81,6 +84,7 @@ export default class TableRenderer extends Component {
   }
 
   _renderHeaderRowHelper = (columns) => {
+    const {icons} = this.props
     let currentRow = [...columns]
     let nextRow = []
     const rows = []
@@ -113,6 +117,9 @@ export default class TableRenderer extends Component {
             sortKeys={this.props.meta.sortKeys}
             saveWidth={this.props.saveColumnWidth}
             updateSorting={this.props.updateSorting}
+            SortAscIcon={icons.SortAsc}
+            SortDescIcon={icons.SortDesc}
+            UnsortedIcon={icons.Unsorted}
           />
         )
       }

@@ -8,15 +8,13 @@ exports[`Favourites Snapshot renders correctly 1`] = `
     className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
     type="button"
   >
-    <i
-      className="fa fa-heart-o"
-    />
      Favourites
   </button>
   <div
     className="objectlist-dropdown__menu"
   >
     <FavouritesItem
+      RemoveFavouriteIcon={undefined}
       activeSort="-id"
       filters={Object {}}
       handleDelete={[MockFunction]}
@@ -26,6 +24,7 @@ exports[`Favourites Snapshot renders correctly 1`] = `
       optionalFields={Object {}}
     />
     <FavouritesItem
+      RemoveFavouriteIcon={undefined}
       activeSort="-id"
       filters={Object {}}
       handleDelete={[MockFunction]}

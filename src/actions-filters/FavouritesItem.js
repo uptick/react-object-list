@@ -17,6 +17,12 @@ export default class FavouritesItem extends React.Component {
     handleDelete: PropTypes.func,
     /** whether or not the particular filter is selected */
     isSelected: PropTypes.bool,
+    /** icon to render to remove a favourite */
+    RemoveFavouriteIcon: PropTypes.element,
+  }
+
+  static defaultProps = {
+    RemoveFavouriteIcon: <span>Delete</span>,
   }
 
   /**
@@ -37,16 +43,17 @@ export default class FavouritesItem extends React.Component {
   }
 
   render() {
+    const {RemoveFavouriteIcon, isSelected, name} = this.props
     return (
       <div
         className={ClassNames('objectlist-dropdown__item objectlist-dropdown__item--favourite', {
-          'objectlist-dropdown__item--selected': this.props.isSelected,
+          'objectlist-dropdown__item--selected': isSelected,
         })}
         onClick={this.handleClick}>
         <span>
-          {this.props.name}
+          {name}
         </span>
-        <i onClick={this.handleDelete} className="fa fa-trash-o objectlist-delete" />
+        {RemoveFavouriteIcon && React.cloneElement(RemoveFavouriteIcon, {onClick: this.handleDelete})}
       </div>
     )
   }

@@ -1,4 +1,3 @@
-export loadingSpinner from './loading'
 export ErrorMessage from './ErrorMessage'
 
 export {

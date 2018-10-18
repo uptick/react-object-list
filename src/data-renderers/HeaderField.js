@@ -17,11 +17,20 @@ export default class HeaderField extends React.Component {
     className: PropTypes.string,
     /** the text displayed within the component */
     header: PropTypes.oneOfType([PropTypes.string, PropTypes.func]).isRequired,
+    /** Icon to render to sort ascending */
+    SortAscIcon: PropTypes.element,
+    /** Icon to render to sort descending */
+    SortDescIcon: PropTypes.element,
+    /** Icon to render if unsorted column */
+    UnsortedIcon: PropTypes.element,
   }
 
   static defaultProps = {
     activeSort: null,
     sortKey: null,
+    SortAscIcon: <React.Fragment>&#x25B2;</React.Fragment>,
+    SortDescIcon: <React.Fragment>&#x25BC;</React.Fragment>,
+    UnsortedIcon: null,
   }
 
   /**
@@ -42,23 +51,24 @@ export default class HeaderField extends React.Component {
   }
 
   _renderSortIcon = () => {
-    switch (this.props.activeSort) {
+    const {SortAscIcon, SortDescIcon, UnsortedIcon, activeSort} = this.props
+    switch (activeSort) {
       case true:
         return (
           <span className="sort-direction text-primary">
-            &nbsp;<i className="fa fa-caret-up" aria-hidden="true" />
+            &nbsp;{SortAscIcon}
           </span>
         )
       case false:
         return (
           <span className="sort-direction text-primary">
-            &nbsp;<i className="fa fa-caret-down" aria-hidden="true" />
+            &nbsp;{SortDescIcon}
           </span>
         )
       default:
         return (
           <span className="sort-direction text-primary">
-            &nbsp;<i className="fa fa-sort" aria-hidden="true" />
+            &nbsp;{UnsortedIcon}
           </span>
         )
     }

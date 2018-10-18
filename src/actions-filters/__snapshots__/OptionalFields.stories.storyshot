@@ -22,9 +22,6 @@ exports[`Storyshots object-list/OptionalFields default view 1`] = `
       <button
         className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
       >
-        <i
-          className="fa fa-list"
-        />
          Change columns
       </button>
       <div
@@ -34,80 +31,56 @@ exports[`Storyshots object-list/OptionalFields default view 1`] = `
           className="objectlist-dropdown__item"
           onClick={[Function]}
         >
-          <i
-            aria-hidden="true"
-            className="fa fa-check-square-o objectlist-dropdown__icon"
-          />
+          ☑
           Apple
         </button>
         <button
           className="objectlist-dropdown__item"
           onClick={[Function]}
         >
-          <i
-            aria-hidden="true"
-            className="fa fa-square-o objectlist-dropdown__icon"
-          />
+          ☐
           Cat
         </button>
         <button
           className="objectlist-dropdown__item"
           onClick={[Function]}
         >
-          <i
-            aria-hidden="true"
-            className="fa fa-square-o objectlist-dropdown__icon"
-          />
+          ☐
           Dragon
         </button>
         <button
           className="objectlist-dropdown__item"
           onClick={[Function]}
         >
-          <i
-            aria-hidden="true"
-            className="fa fa-square-o objectlist-dropdown__icon"
-          />
+          ☐
           Elephant
         </button>
         <button
           className="objectlist-dropdown__item"
           onClick={[Function]}
         >
-          <i
-            aria-hidden="true"
-            className="fa fa-square-o objectlist-dropdown__icon"
-          />
+          ☐
           Frappuccino
         </button>
         <button
           className="objectlist-dropdown__item"
           onClick={[Function]}
         >
-          <i
-            aria-hidden="true"
-            className="fa fa-square-o objectlist-dropdown__icon"
-          />
+          ☐
           Grizzly Bear
         </button>
         <button
           className="objectlist-dropdown__item"
           onClick={[Function]}
         >
-          <i
-            aria-hidden="true"
-            className="fa fa-square-o objectlist-dropdown__icon"
-          />
+          ☐
           Heaps Good Ay
         </button>
         <button
           className="objectlist-dropdown__item"
           onClick={[Function]}
         >
-          <i
-            aria-hidden="true"
-            className="fa fa-square-o objectlist-dropdown__icon"
-          />
+          ☐
           I'm just waitin' for a mate
         </button>
       </div>

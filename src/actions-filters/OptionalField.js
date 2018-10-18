@@ -14,10 +14,16 @@ export default class OptionalField extends React.Component {
     enabled: PropTypes.bool,
     /** the display text for the field */
     name: PropTypes.string,
+    /** Icon to display when a field is enabled */
+    CheckboxCheckedIcon: PropTypes.element,
+    /** Icon to display when a field is not enabled */
+    CheckboxUnCheckedIcon: PropTypes.element,
   }
 
   static defaultProps = {
     enabled: false,
+    CheckboxCheckedIcon: <React.Fragment>&#x2611;</React.Fragment>,
+    CheckboxUnCheckedIcon: <React.Fragment>&#x2610;</React.Fragment>,
   }
 
   /**
@@ -31,15 +37,11 @@ export default class OptionalField extends React.Component {
   }
 
   render() {
-    let checked
-    if (this.props.enabled) {
-      checked = (<i className="fa fa-check-square-o objectlist-dropdown__icon" aria-hidden="true" />)
-    } else {
-      checked = (<i className="fa fa-square-o objectlist-dropdown__icon" aria-hidden="true" />)
-    }
+    const {enabled, CheckboxCheckedIcon, CheckboxUnCheckedIcon, name} = this.props
+    const checked = enabled ? CheckboxCheckedIcon : CheckboxUnCheckedIcon
     return (
       <button className="objectlist-dropdown__item" onClick={this.toggle}>
-        {checked}{this.props.name}
+        {checked}{name}
       </button>
     )
   }

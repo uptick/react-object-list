@@ -67,6 +67,8 @@ class ActionsFilterContainer extends Component {
     deselectAll: PropTypes.func,
     /** Array of functional components to render custom actions */
     customActions: PropTypes.arrayOf(PropTypes.func),
+    /** Dictionary of icon elements */
+    icons: PropTypes.object,
   }
 
   static defaultProps = {
@@ -100,7 +102,7 @@ class ActionsFilterContainer extends Component {
   render() {
     const {
       searchKey, meta: {totalCount}, itemCount,
-      selection, customActions = [],
+      selection, customActions = [], icons = {},
       itemSingleName, itemPluralName, numSelected,
       filters, updateFilter, removeFilter, status,
       updateColumns, loadFavourite, handleAddFavourite,
@@ -142,6 +144,8 @@ class ActionsFilterContainer extends Component {
                 selectedFavouriteName={selectedFavouriteName}
                 handleAddFavourite={handleAddFavourite}
                 loadFavourite={loadFavourite}
+                FavouritesIcon={icons.Favourites}
+                RemoveFavouriteIcon={icons.RemoveFavourite}
               />}
           </div>
         </div>
@@ -149,6 +153,7 @@ class ActionsFilterContainer extends Component {
           filters={filters.filter(f => !search || f.filterKey !== searchKey)}
           updateFilter={updateFilter}
           removeFilter={removeFilter}
+          icons={icons}
         />
         {/* TODO: render children below filters */}
         <div className="objectlist-row objectlist-row__actions">
@@ -194,6 +199,11 @@ class ActionsFilterContainer extends Component {
               optionalFields={this.state.columns}
               extraColumns={this.props.meta.extraColumns}
               updateColumns={updateColumns}
+              OpenIcon={icons.DropdownOpen}
+              CloseIcon={icons.DropdownClose}
+              OptionalFieldsIcon={icons.OptionalFields}
+              CheckboxCheckedIcon={icons.CheckboxChecked}
+              CheckboxUnCheckedIcon={icons.CheckboxUnchecked}
             />
           </div>
         </div>

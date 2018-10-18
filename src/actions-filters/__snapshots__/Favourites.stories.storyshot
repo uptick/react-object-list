@@ -15,9 +15,6 @@ exports[`Storyshots object-list/Favourites default view 1`] = `
       className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
       type="button"
     >
-      <i
-        className="fa fa-heart-o"
-      />
        Favourites
     </button>
     <div
@@ -30,10 +27,11 @@ exports[`Storyshots object-list/Favourites default view 1`] = `
         <span>
           Favourite 1
         </span>
-        <i
-          className="fa fa-trash-o objectlist-delete"
+        <span
           onClick={[Function]}
-        />
+        >
+          Delete
+        </span>
       </div>
       <div
         className="objectlist-dropdown__item objectlist-dropdown__item--favourite"
@@ -42,10 +40,11 @@ exports[`Storyshots object-list/Favourites default view 1`] = `
         <span>
           Favourite 2
         </span>
-        <i
-          className="fa fa-trash-o objectlist-delete"
+        <span
           onClick={[Function]}
-        />
+        >
+          Delete
+        </span>
       </div>
       <div
         className="objectlist-dropdown__divider"
@@ -91,9 +90,6 @@ exports[`Storyshots object-list/Favourites interactive 1`] = `
       className="objectlist-button--dropdown objectlist-button objectlist-button--favourites"
       type="button"
     >
-      <i
-        className="fa fa-heart-o"
-      />
        Favourites
     </button>
     <div
@@ -106,10 +102,11 @@ exports[`Storyshots object-list/Favourites interactive 1`] = `
         <span>
           Favourite 1
         </span>
-        <i
-          className="fa fa-trash-o objectlist-delete"
+        <span
           onClick={[Function]}
-        />
+        >
+          Delete
+        </span>
       </div>
       <div
         className="objectlist-dropdown__item objectlist-dropdown__item--favourite"
@@ -118,10 +115,11 @@ exports[`Storyshots object-list/Favourites interactive 1`] = `
         <span>
           Favourite 2
         </span>
-        <i
-          className="fa fa-trash-o objectlist-delete"
+        <span
           onClick={[Function]}
-        />
+        >
+          Delete
+        </span>
       </div>
       <div
         className="objectlist-dropdown__divider"

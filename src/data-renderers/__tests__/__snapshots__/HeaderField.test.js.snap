@@ -23,10 +23,6 @@ exports[`HeaderField Snapshots renders sortable 1`] = `
     className="sort-direction text-primary"
   >
      
-    <i
-      aria-hidden="true"
-      className="fa fa-sort"
-    />
   </span>
 </div>
 `;
@@ -42,10 +38,7 @@ exports[`HeaderField Snapshots renders sorted asc 1`] = `
     className="sort-direction text-primary"
   >
      
-    <i
-      aria-hidden="true"
-      className="fa fa-caret-up"
-    />
+    ▲
   </span>
 </div>
 `;
@@ -61,10 +54,7 @@ exports[`HeaderField Snapshots renders sorted desc 1`] = `
     className="sort-direction text-primary"
   >
      
-    <i
-      aria-hidden="true"
-      className="fa fa-caret-down"
-    />
+    ▼
   </span>
 </div>
 `;
@@ -80,10 +70,6 @@ exports[`HeaderField Snapshots renders with fa-sort icon 1`] = `
     className="sort-direction text-primary"
   >
      
-    <i
-      aria-hidden="true"
-      className="fa fa-sort"
-    />
   </span>
 </div>
 `;

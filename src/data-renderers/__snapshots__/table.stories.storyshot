@@ -41,10 +41,6 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-sort"
-              />
             </span>
           </div>
         </th>
@@ -64,10 +60,6 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-sort"
-              />
             </span>
           </div>
         </th>
@@ -601,10 +593,6 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-sort"
-              />
             </span>
           </div>
         </th>
@@ -624,10 +612,6 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-sort"
-              />
             </span>
           </div>
         </th>
@@ -1352,10 +1336,6 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-sort"
-              />
             </span>
           </div>
         </th>
@@ -1375,10 +1355,6 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-sort"
-              />
             </span>
           </div>
         </th>
@@ -1916,10 +1892,6 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-sort"
-              />
             </span>
           </div>
           <span
@@ -1945,10 +1917,6 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-sort"
-              />
             </span>
           </div>
         </th>
@@ -1968,10 +1936,6 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-sort"
-              />
             </span>
           </div>
         </th>
@@ -2848,10 +2812,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-caret-down"
-              />
+              ▼
             </span>
           </div>
         </th>
@@ -2871,10 +2832,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
               className="sort-direction text-primary"
             >
                
-              <i
-                aria-hidden="true"
-                className="fa fa-caret-up"
-              />
+              ▲
             </span>
           </div>
         </th>

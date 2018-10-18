@@ -113,7 +113,8 @@ exports[`Storyshots object-list all selected 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -218,7 +219,7 @@ exports[`Storyshots object-list all selected 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -241,7 +242,7 @@ exports[`Storyshots object-list all selected 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -760,7 +761,8 @@ exports[`Storyshots object-list can select all 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -875,7 +877,7 @@ exports[`Storyshots object-list can select all 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -898,7 +900,7 @@ exports[`Storyshots object-list can select all 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -1417,7 +1419,8 @@ exports[`Storyshots object-list can select items 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -1511,7 +1514,7 @@ exports[`Storyshots object-list can select items 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -1534,7 +1537,7 @@ exports[`Storyshots object-list can select items 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -2016,7 +2019,8 @@ exports[`Storyshots object-list has active filters 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -2217,7 +2221,12 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2287,7 +2296,12 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2403,7 +2417,12 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2460,7 +2479,12 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2528,7 +2552,12 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
     </div>
     <div
@@ -2579,7 +2608,7 @@ exports[`Storyshots object-list has active filters 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -2602,7 +2631,7 @@ exports[`Storyshots object-list has active filters 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -2905,7 +2934,8 @@ exports[`Storyshots object-list has error 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -2962,9 +2992,14 @@ exports[`Storyshots object-list has error 1`] = `
             className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
-              className="fa fa-list"
+              aria-hidden="true"
+              className="fas fa-list"
             />
              Change columns
+            <i
+              aria-hidden="true"
+              className="fas fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
@@ -2975,7 +3010,7 @@ exports[`Storyshots object-list has error 1`] = `
             >
               <i
                 aria-hidden="true"
-                className="fa fa-check-square-o objectlist-dropdown__icon"
+                className="far fa-check-square"
               />
               Favourite Colour
             </button>
@@ -3025,7 +3060,7 @@ exports[`Storyshots object-list has error 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -3048,7 +3083,7 @@ exports[`Storyshots object-list has error 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -3490,7 +3525,8 @@ exports[`Storyshots object-list has everything 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -3691,7 +3727,12 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -3761,7 +3802,12 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -3877,7 +3923,12 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -3934,7 +3985,12 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -4002,7 +4058,12 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
     </div>
     <div
@@ -4064,9 +4125,14 @@ exports[`Storyshots object-list has everything 1`] = `
             className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
-              className="fa fa-list"
+              aria-hidden="true"
+              className="fas fa-list"
             />
              Change columns
+            <i
+              aria-hidden="true"
+              className="fas fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
@@ -4077,7 +4143,7 @@ exports[`Storyshots object-list has everything 1`] = `
             >
               <i
                 aria-hidden="true"
-                className="fa fa-check-square-o objectlist-dropdown__icon"
+                className="far fa-check-square"
               />
               Favourite Colour
             </button>
@@ -4117,7 +4183,7 @@ exports[`Storyshots object-list has everything 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -4140,7 +4206,7 @@ exports[`Storyshots object-list has everything 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -4609,7 +4675,8 @@ exports[`Storyshots object-list has multiple pages 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -4692,7 +4759,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -4715,7 +4782,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -5114,7 +5181,8 @@ exports[`Storyshots object-list has optional fields 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -5171,9 +5239,14 @@ exports[`Storyshots object-list has optional fields 1`] = `
             className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
-              className="fa fa-list"
+              aria-hidden="true"
+              className="fas fa-list"
             />
              Change columns
+            <i
+              aria-hidden="true"
+              className="fas fa-caret-down"
+            />
           </button>
           <div
             className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
@@ -5184,7 +5257,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o objectlist-dropdown__icon"
+                className="far fa-square"
               />
               Favourite Colour
             </button>
@@ -5224,7 +5297,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -5247,7 +5320,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -5656,7 +5729,8 @@ exports[`Storyshots object-list has search key 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -5739,7 +5813,7 @@ exports[`Storyshots object-list has search key 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -5762,7 +5836,7 @@ exports[`Storyshots object-list has search key 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -6161,7 +6235,8 @@ exports[`Storyshots object-list loading 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -6244,7 +6319,7 @@ exports[`Storyshots object-list loading 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -6267,7 +6342,7 @@ exports[`Storyshots object-list loading 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -6547,12 +6622,8 @@ exports[`Storyshots object-list loading 1`] = `
     >
       <em>
         <i
-          className="icon loading fa fa-circle-o-notch fa-spin"
-          style={
-            Object {
-              "color": Object {},
-            }
-          }
+          aria-hidden="true"
+          className="fas fa-circle-notch fa-spin"
         />
          Loading 
         items
@@ -6676,7 +6747,8 @@ exports[`Storyshots object-list ready 1`] = `
             type="button"
           >
             <i
-              className="fa fa-heart-o"
+              aria-hidden="true"
+              className="far fa-heart"
             />
              Favourites
           </button>
@@ -6759,7 +6831,7 @@ exports[`Storyshots object-list ready 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
@@ -6782,7 +6854,7 @@ exports[`Storyshots object-list ready 1`] = `
                  
                 <i
                   aria-hidden="true"
-                  className="fa fa-sort"
+                  className="fas fa-sort"
                 />
               </span>
             </div>
