@@ -22,5 +22,44 @@ yarn add react-object-list
 ```
 Ensure you have all peer dependencies installed
 ```
-yarn add classnames font-awesome moment prop-types react-day-picker react-month-picker react-select
+yarn add classnames moment prop-types react-day-picker react-month-picker react-select
 ```
+
+
+Include icons from FontAwesome 4:
+
+```javascript
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import ObjectList from 'react-object-list'
+import {FontAwesome} from 'react-object-list/icons'
+
+var mount = document.querySelectorAll('div.browser-mount');
+ReactDOM.render(
+  <ObjectList
+    icons={icons.FontAwesome(4)}
+  />,
+  mount[0]
+);
+```
+
+or your own icons by specifying as so:
+```javascript
+  <ObjectList
+    icons={{
+      OptionalFields: <i className="list" />,
+      Favourites: <i className="heart" />,
+      RemoveFavourite: <i className="minus-circle" />,
+      RemoveFilter: <i className="trash-o" />,
+      DropdownOpen: <i className="caret-down" />,
+      DropdownClose: <i className="caret-up" />,
+      SortAsc: <i className="caret-up" />,
+      SortDesc: <i className="caret-down" />,
+      Unsorted: <i className="sort" />,
+      Loading: <i className="circle-notch spin" />,
+    }}
+  />
+```
+
+Unspecified icons will not show.
