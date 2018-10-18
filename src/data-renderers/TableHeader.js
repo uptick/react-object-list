@@ -42,9 +42,6 @@ export default class TableHeader extends React.Component {
     headerItems: [],
     className: '',
     sortKeys: [],
-    SortAscIcon: null,
-    SortDescIcon: null,
-    UnsortedIcon: null,
   }
 
   constructor(props) {

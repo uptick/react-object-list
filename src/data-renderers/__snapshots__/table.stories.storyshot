@@ -2812,6 +2812,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
               className="sort-direction text-primary"
             >
                
+              ▼
             </span>
           </div>
         </th>
@@ -2831,6 +2832,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
               className="sort-direction text-primary"
             >
                
+              ▲
             </span>
           </div>
         </th>

@@ -18,16 +18,19 @@ export default class HeaderField extends React.Component {
     /** the text displayed within the component */
     header: PropTypes.oneOfType([PropTypes.string, PropTypes.func]).isRequired,
     /** Icon to render to sort ascending */
-    SortAscIcon: PropTypes.element.isRequired,
+    SortAscIcon: PropTypes.element,
     /** Icon to render to sort descending */
-    SortDescIcon: PropTypes.element.isRequired,
+    SortDescIcon: PropTypes.element,
     /** Icon to render if unsorted column */
-    UnsortedIcon: PropTypes.element.isRequired,
+    UnsortedIcon: PropTypes.element,
   }
 
   static defaultProps = {
     activeSort: null,
     sortKey: null,
+    SortAscIcon: <React.Fragment>&#x25B2;</React.Fragment>,
+    SortDescIcon: <React.Fragment>&#x25BC;</React.Fragment>,
+    UnsortedIcon: null,
   }
 
   /**
