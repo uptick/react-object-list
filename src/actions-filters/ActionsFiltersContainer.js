@@ -202,6 +202,8 @@ class ActionsFilterContainer extends Component {
               OpenIcon={icons.DropdownOpen}
               CloseIcon={icons.DropdownClose}
               OptionalFieldsIcon={icons.OptionalFields}
+              CheckboxCheckedIcon={icons.CheckboxChecked}
+              CheckboxUnCheckedIcon={icons.CheckboxUnchecked}
             />
           </div>
         </div>

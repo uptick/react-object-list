@@ -58,8 +58,10 @@ or your own icons by specifying as so:
       SortDesc: <i className="caret-down" />,
       Unsorted: <i className="sort" />,
       Loading: <i className="circle-notch spin" />,
+      CheckboxChecked: <i className="check-square" />,
+      CheckboxUnchecked: <i className="square" />,
     }}
   />
 ```
 
-Unspecified icons will not show.
+Unspecified icons will not show (excl. RemoveFavourite, SortAsc, SortDesc, CheckboxChecked, CheckboxUnchecked).

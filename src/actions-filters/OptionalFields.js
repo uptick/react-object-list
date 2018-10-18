@@ -17,6 +17,10 @@ class OptionalFields extends Component {
     OpenIcon: PropTypes.element,
     /** Icon to click to close optional fields dropdown */
     CloseIcon: PropTypes.element,
+    /** Icon to display when a field is enabled */
+    CheckboxCheckedIcon: PropTypes.element,
+    /** Icon to display when a field is not enabled */
+    CheckboxUnCheckedIcon: PropTypes.element,
   }
 
   static defaultProps = {
@@ -75,7 +79,7 @@ class OptionalFields extends Component {
   }
 
   _renderOptionalFieldsArray = (optionalFields, prepend) => {
-    const {extraColumns, updateColumns} = this.props
+    const {extraColumns, updateColumns, CheckboxCheckedIcon, CheckboxUnCheckedIcon} = this.props
     const fields = Array.isArray(optionalFields) ? optionalFields : [optionalFields]
     return fields.map(field => {
       const spacer = prepend.length > 0 ? ' ' : ''
@@ -86,6 +90,8 @@ class OptionalFields extends Component {
         fieldKey={field.fieldKey}
         name={`${prepend}${spacer}${(field.displayName || field.header)}`}
         className="objectlist-dropdown__item"
+        CheckboxCheckedIcon={CheckboxCheckedIcon}
+        CheckboxUnCheckedIcon={CheckboxUnCheckedIcon}
       />
     })
   }

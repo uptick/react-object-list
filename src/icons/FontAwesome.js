@@ -31,30 +31,34 @@ const FontAwesomeIcons = (majorVersion = 4) => {
     case 4:
       IsFontAwesomeLoaded(4)
       return {
-        OptionalFields: <i className="fa fa-list" />,
-        Favourites: <i className="fa fa-heart-o" />,
-        RemoveFavourite: <i className="fa fa-minus-circle" />,
-        RemoveFilter: <i className="fa fa-trash-o" />,
-        DropdownOpen: <i className="fa fa-caret-down" />,
-        DropdownClose: <i className="fa fa-caret-up" />,
-        SortAsc: <i className="fa fa-caret-up" />,
-        SortDesc: <i className="fa fa-caret-down" />,
-        Unsorted: <i className="fa fa-sort" />,
-        Loading: <i className="fa fa-circle-o-notch fa-spin" />,
+        OptionalFields: <i className="fa fa-list" aria-hidden="true" />,
+        Favourites: <i className="fa fa-heart-o" aria-hidden="true" />,
+        RemoveFavourite: <i className="fa fa-minus-circle" aria-hidden="true" />,
+        RemoveFilter: <i className="fa fa-trash-o" aria-hidden="true" />,
+        DropdownOpen: <i className="fa fa-caret-down" aria-hidden="true" />,
+        DropdownClose: <i className="fa fa-caret-up" aria-hidden="true" />,
+        SortAsc: <i className="fa fa-caret-up" aria-hidden="true" />,
+        SortDesc: <i className="fa fa-caret-down" aria-hidden="true" />,
+        Unsorted: <i className="fa fa-sort" aria-hidden="true" />,
+        Loading: <i className="fa fa-circle-o-notch fa-spin" aria-hidden="true" />,
+        CheckboxChecked: <i className="fa fa-check-square-o" aria-hidden="true" />,
+        CheckboxUnchecked: <i className="fa fa-square-o" aria-hidden="true" />,
       }
     case 5:
       IsFontAwesomeLoaded(5)
       return {
-        OptionalFields: <i className="fas fa-list" />,
-        Favourites: <i className="far fa-heart" />,
-        RemoveFavourite: <i className="far fa-minus-circle" />,
-        RemoveFilter: <i className="far fa-trash-o" />,
-        DropdownOpen: <i className="fas fa-caret-down" />,
-        DropdownClose: <i className="fas fa-caret-up" />,
-        SortAsc: <i className="fas fa-caret-up" />,
-        SortDesc: <i className="fas fa-caret-down" />,
-        Unsorted: <i className="fas fa-sort" />,
-        Loading: <i className="fas fa-circle-notch fa-spin" />,
+        OptionalFields: <i className="fas fa-list" aria-hidden="true" />,
+        Favourites: <i className="far fa-heart" aria-hidden="true" />,
+        RemoveFavourite: <i className="far fa-minus-circle" aria-hidden="true" />,
+        RemoveFilter: <i className="far fa-trash-o" aria-hidden="true" />,
+        DropdownOpen: <i className="fas fa-caret-down" aria-hidden="true" />,
+        DropdownClose: <i className="fas fa-caret-up" aria-hidden="true" />,
+        SortAsc: <i className="fas fa-caret-up" aria-hidden="true" />,
+        SortDesc: <i className="fas fa-caret-down" aria-hidden="true" />,
+        Unsorted: <i className="fas fa-sort" aria-hidden="true" />,
+        Loading: <i className="fas fa-circle-notch fa-spin" aria-hidden="true" />,
+        CheckboxChecked: <i className="far fa-check-square" aria-hidden="true" />,
+        CheckboxUnchecked: <i className="far fa-square" aria-hidden="true" />,
       }
     default:
       console.warn(

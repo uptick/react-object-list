@@ -5,10 +5,7 @@ exports[`OptionalField Snapshot renders default 1`] = `
   className="objectlist-dropdown__item"
   onClick={[Function]}
 >
-  <i
-    aria-hidden="true"
-    className="fa fa-square-o objectlist-dropdown__icon"
-  />
+  ☐
   Apple
 </button>
 `;
@@ -18,10 +15,7 @@ exports[`OptionalField Snapshot renders enabled 1`] = `
   className="objectlist-dropdown__item"
   onClick={[Function]}
 >
-  <i
-    aria-hidden="true"
-    className="fa fa-check-square-o objectlist-dropdown__icon"
-  />
+  ☑
   Apple
 </button>
 `;

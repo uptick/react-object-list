@@ -94,6 +94,8 @@ class ObjectList extends Component {
       SortDesc: PropTypes.element,
       Unsorted: PropTypes.element,
       Loading: PropTypes.element,
+      CheckboxChecked: PropTypes.element,
+      CheckboxUnchecked: PropTypes.element,
     }),
   }
 

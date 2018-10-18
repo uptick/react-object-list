@@ -920,10 +920,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
             className="objectlist-dropdown__item"
             onClick={[Function]}
           >
-            <i
-              aria-hidden="true"
-              className="fa fa-square-o objectlist-dropdown__icon"
-            />
+            ☐
             Favourite Colour
           </button>
         </div>
@@ -1937,10 +1934,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
             className="objectlist-dropdown__item"
             onClick={[Function]}
           >
-            <i
-              aria-hidden="true"
-              className="fa fa-square-o objectlist-dropdown__icon"
-            />
+            ☐
             Favourite Colour
           </button>
         </div>

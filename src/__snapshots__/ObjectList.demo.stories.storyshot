@@ -79,10 +79,12 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
+              aria-hidden="true"
               className="fas fa-list"
             />
              Change columns
             <i
+              aria-hidden="true"
               className="fas fa-caret-down"
             />
           </button>
@@ -95,7 +97,7 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o objectlist-dropdown__icon"
+                className="far fa-square"
               />
               Last Name
             </button>
@@ -105,7 +107,7 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o objectlist-dropdown__icon"
+                className="far fa-square"
               />
               IPv6
             </button>
@@ -807,10 +809,12 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             className="objectlist-button objectlist-button--dropdown objectlist-button--borderless"
           >
             <i
+              aria-hidden="true"
               className="fas fa-list"
             />
              Change columns
             <i
+              aria-hidden="true"
               className="fas fa-caret-down"
             />
           </button>
@@ -823,7 +827,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o objectlist-dropdown__icon"
+                className="far fa-square"
               />
               Last Name
             </button>
@@ -833,7 +837,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
             >
               <i
                 aria-hidden="true"
-                className="fa fa-square-o objectlist-dropdown__icon"
+                className="far fa-square"
               />
               IPv6
             </button>
@@ -872,6 +876,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
               >
                  
                 <i
+                  aria-hidden="true"
                   className="fas fa-sort"
                 />
               </span>
@@ -894,6 +899,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
               >
                  
                 <i
+                  aria-hidden="true"
                   className="fas fa-sort"
                 />
               </span>
@@ -916,6 +922,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
               >
                  
                 <i
+                  aria-hidden="true"
                   className="fas fa-sort"
                 />
               </span>
