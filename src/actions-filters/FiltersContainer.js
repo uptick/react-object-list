@@ -13,22 +13,26 @@ class FiltersContainer extends Component {
     updateFilter: PropTypes.func,
     /** callback to remove a filter from the active list of filters */
     removeFilter: PropTypes.func,
+    /** icons to use */
+    icons: PropTypes.object,
   }
   static defaultProps = {
     filters: [],
     activeFilters: [],
+    icons: {},
   }
 
   renderFilter = (filter, i) => {
-    const { Renderer, filterKey, loadOptions, value, ...props } = filter
+    const { Renderer, filterKey, loadOptions, value, updateFilter, removeFilter, ...props } = filter
     return (
       <Renderer
         key={`filter-${filterKey}-${i}`}
         filterKey={filterKey}
         value={value}
-        onChange={this.props.updateFilter}
-        removeFilter={this.props.removeFilter}
+        onChange={updateFilter}
+        removeFilter={removeFilter}
         loadOptions={loadOptions ? loadOptions.bind(filter) : undefined} // eslint-disable-line react/jsx-no-bind
+        icons={this.props.icons}
         {...props}
       />
     )

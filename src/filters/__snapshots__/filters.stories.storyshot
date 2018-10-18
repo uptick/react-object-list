@@ -45,7 +45,9 @@ exports[`Storyshots object-list/Filters BooleanFilter 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -137,7 +139,9 @@ exports[`Storyshots object-list/Filters ChoiceFilter 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -217,7 +221,9 @@ exports[`Storyshots object-list/Filters CurrencyFilter 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -284,7 +290,9 @@ exports[`Storyshots object-list/Filters DateFilter 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -483,7 +491,9 @@ exports[`Storyshots object-list/Filters MonthFilter 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -575,7 +585,9 @@ exports[`Storyshots object-list/Filters MultiChoiceFilter 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -616,7 +628,9 @@ exports[`Storyshots object-list/Filters RemoteChoiceFilter 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -687,7 +701,9 @@ exports[`Storyshots object-list/Filters RemoteMultiChoiceFilter 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -761,7 +777,9 @@ exports[`Storyshots object-list/Filters TextContainsFilter 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -849,7 +867,9 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Decimal logarithmic w
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -937,7 +957,9 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Decimal with fixed ra
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -1025,7 +1047,9 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Logarithmic 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -1113,7 +1137,9 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Logarithmic with diff
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -1201,7 +1227,9 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Negative decimal loga
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;
 
@@ -1289,6 +1317,8 @@ exports[`Storyshots object-list/Filters/NumberSliderFilter Standard 1`] = `
     className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
     onClick={[Function]}
     title="Remove Filter"
-  />
+  >
+    ⊖
+  </button>
 </div>
 `;

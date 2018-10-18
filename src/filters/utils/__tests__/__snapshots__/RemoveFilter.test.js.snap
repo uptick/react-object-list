@@ -5,5 +5,7 @@ exports[`RemoveFilter Snapshots renders default 1`] = `
   className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
   onClick={[MockFunction]}
   title="Remove Filter"
-/>
+>
+  ⊖
+</button>
 `;

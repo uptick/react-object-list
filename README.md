@@ -50,8 +50,8 @@ or your own icons by specifying as so:
     icons={{
       OptionalFields: <i className="list" />,
       Favourites: <i className="heart" />,
-      RemoveFavourite: <i className="minus-circle" />,
-      RemoveFilter: <i className="trash-o" />,
+      RemoveFavourite: <i className="trash" />,
+      RemoveFilter: <i className="minus-circle" />,
       DropdownOpen: <i className="caret-down" />,
       DropdownClose: <i className="caret-up" />,
       SortAsc: <i className="caret-up" />,
@@ -64,4 +64,4 @@ or your own icons by specifying as so:
   />
 ```
 
-Unspecified icons will not show (excl. RemoveFavourite, SortAsc, SortDesc, CheckboxChecked, CheckboxUnchecked).
+Unspecified icons will not show (excl. RemoveFavourite, SortAsc, SortDesc, CheckboxChecked, CheckboxUnchecked, RemoveFilter).

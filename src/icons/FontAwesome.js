@@ -33,8 +33,8 @@ const FontAwesomeIcons = (majorVersion = 4) => {
       return {
         OptionalFields: <i className="fa fa-list" aria-hidden="true" />,
         Favourites: <i className="fa fa-heart-o" aria-hidden="true" />,
-        RemoveFavourite: <i className="fa fa-minus-circle" aria-hidden="true" />,
-        RemoveFilter: <i className="fa fa-trash-o" aria-hidden="true" />,
+        RemoveFilter: <i className="fa fa-minus-circle" aria-hidden="true" />,
+        RemoveFavourite: <i className="fa fa-trash-o" aria-hidden="true" />,
         DropdownOpen: <i className="fa fa-caret-down" aria-hidden="true" />,
         DropdownClose: <i className="fa fa-caret-up" aria-hidden="true" />,
         SortAsc: <i className="fa fa-caret-up" aria-hidden="true" />,
@@ -49,8 +49,8 @@ const FontAwesomeIcons = (majorVersion = 4) => {
       return {
         OptionalFields: <i className="fas fa-list" aria-hidden="true" />,
         Favourites: <i className="far fa-heart" aria-hidden="true" />,
-        RemoveFavourite: <i className="far fa-minus-circle" aria-hidden="true" />,
-        RemoveFilter: <i className="far fa-trash-o" aria-hidden="true" />,
+        RemoveFilter: <i className="fas fa-minus-circle" aria-hidden="true" />,
+        RemoveFavourite: <i className="far fa-trash-o" aria-hidden="true" />,
         DropdownOpen: <i className="fas fa-caret-down" aria-hidden="true" />,
         DropdownClose: <i className="fas fa-caret-up" aria-hidden="true" />,
         SortAsc: <i className="fas fa-caret-up" aria-hidden="true" />,

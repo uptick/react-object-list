@@ -153,7 +153,7 @@ class ActionsFilterContainer extends Component {
           filters={filters.filter(f => !search || f.filterKey !== searchKey)}
           updateFilter={updateFilter}
           removeFilter={removeFilter}
-          RemoveFilterIcon={icons.RemoveFilter}
+          icons={icons}
         />
         {/* TODO: render children below filters */}
         <div className="objectlist-row objectlist-row__actions">

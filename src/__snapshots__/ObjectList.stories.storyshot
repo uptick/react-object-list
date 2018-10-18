@@ -2221,7 +2221,12 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2291,7 +2296,12 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2407,7 +2417,12 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2464,7 +2479,12 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -2532,7 +2552,12 @@ exports[`Storyshots object-list has active filters 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
     </div>
     <div
@@ -3702,7 +3727,12 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -3772,7 +3802,12 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -3888,7 +3923,12 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -3945,7 +3985,12 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
       <div
         className="objectlist-row"
@@ -4013,7 +4058,12 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-button objectlist-button--delete objectlist-button--icon objectlist-button--borderless"
           onClick={[Function]}
           title="Remove Filter"
-        />
+        >
+          <i
+            aria-hidden="true"
+            className="fas fa-minus-circle"
+          />
+        </button>
       </div>
     </div>
     <div

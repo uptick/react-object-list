@@ -13,7 +13,7 @@ class RemoveFilter extends React.Component {
   }
 
   static defaultProps = {
-    Icon: null,
+    Icon: <React.Fragment>&#x2296;</React.Fragment>,
   }
 
   render() {

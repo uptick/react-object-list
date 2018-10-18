@@ -34,6 +34,7 @@ const makeFilter = (Renderer) => {
 
     static defaultProps = {
       comparisonOptions: [],
+      icons: {},
       permanent: false,
     }
 
@@ -93,7 +94,7 @@ const makeFilter = (Renderer) => {
             icons={icons}
           />
           {!permanent && (
-            <RemoveFilter onClick={this.removeFilter} RemoveFilterIcon={icons.RemoveFilter} />
+            <RemoveFilter onClick={this.removeFilter} Icon={icons.RemoveFilter} />
           )}
         </div>
       )
