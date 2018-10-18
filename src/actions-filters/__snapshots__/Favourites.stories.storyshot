@@ -27,6 +27,11 @@ exports[`Storyshots object-list/Favourites default view 1`] = `
         <span>
           Favourite 1
         </span>
+        <span
+          onClick={[Function]}
+        >
+          Delete
+        </span>
       </div>
       <div
         className="objectlist-dropdown__item objectlist-dropdown__item--favourite"
@@ -34,6 +39,11 @@ exports[`Storyshots object-list/Favourites default view 1`] = `
       >
         <span>
           Favourite 2
+        </span>
+        <span
+          onClick={[Function]}
+        >
+          Delete
         </span>
       </div>
       <div
@@ -92,6 +102,11 @@ exports[`Storyshots object-list/Favourites interactive 1`] = `
         <span>
           Favourite 1
         </span>
+        <span
+          onClick={[Function]}
+        >
+          Delete
+        </span>
       </div>
       <div
         className="objectlist-dropdown__item objectlist-dropdown__item--favourite"
@@ -99,6 +114,11 @@ exports[`Storyshots object-list/Favourites interactive 1`] = `
       >
         <span>
           Favourite 2
+        </span>
+        <span
+          onClick={[Function]}
+        >
+          Delete
         </span>
       </div>
       <div
