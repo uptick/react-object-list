@@ -6,6 +6,7 @@ demo-site/_site/
 /main.js
 /renderers.js
 /utils.js
+/icons.js
 styles/
 coverage/
 .vscode/

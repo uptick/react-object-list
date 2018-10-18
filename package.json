@@ -13,7 +13,8 @@
     "filters.js",
     "cells.js",
     "renderers.js",
-    "utils.js"
+    "utils.js",
+    "icons.js"
   ],
   "main": "main.js",
   "scripts": {
