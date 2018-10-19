@@ -6,7 +6,7 @@ const extractSass = new ExtractTextPlugin({
 })
 
 module.exports = {
-  entry: './demos.jsx',
+  entry: ['babel-regenerator-runtime', './demos.jsx'],
   mode: 'production',
   output: {
     path: path.resolve(__dirname, 'dist'),
