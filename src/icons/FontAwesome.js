@@ -50,7 +50,7 @@ const FontAwesomeIcons = (majorVersion = 4) => {
         OptionalFields: <i className="fas fa-list" aria-hidden="true" />,
         Favourites: <i className="far fa-heart" aria-hidden="true" />,
         RemoveFilter: <i className="fas fa-minus-circle" aria-hidden="true" />,
-        RemoveFavourite: <i className="far fa-trash-o" aria-hidden="true" />,
+        RemoveFavourite: <i className="far fa-trash" aria-hidden="true" />,
         DropdownOpen: <i className="fas fa-caret-down" aria-hidden="true" />,
         DropdownClose: <i className="fas fa-caret-up" aria-hidden="true" />,
         SortAsc: <i className="fas fa-caret-up" aria-hidden="true" />,
