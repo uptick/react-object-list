@@ -23,8 +23,8 @@ class FiltersContainer extends Component {
   }
 
   renderFilter = (filter, i) => {
-    const { Renderer, filterKey, loadOptions, value, updateFilter, ...props } = filter
-    const { removeFilter } = this.props
+    const { Renderer, filterKey, loadOptions, value, ...props } = filter
+    const { removeFilter, updateFilter, icons } = this.props
     return (
       <Renderer
         key={`filter-${filterKey}-${i}`}
@@ -33,7 +33,7 @@ class FiltersContainer extends Component {
         onChange={updateFilter}
         removeFilter={removeFilter}
         loadOptions={loadOptions ? loadOptions.bind(filter) : undefined} // eslint-disable-line react/jsx-no-bind
-        icons={this.props.icons}
+        icons={icons}
         {...props}
       />
     )
