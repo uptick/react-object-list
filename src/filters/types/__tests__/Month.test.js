@@ -56,7 +56,7 @@ describe('Month', () => {
             value: 'Jan 2016',
           },
         }
-        const monthValue = Moment(instance.refs.textInput.value, instance.props.format).format('x')
+        const monthValue = Moment(instance.refs.textInput.value, instance.props.format)
         instance.handleTextChange()
         expect(instance.state.textValue).toBe(instance.refs.textInput.value)
         expect(baseProps.onChange).toHaveBeenCalledWith(monthValue)
