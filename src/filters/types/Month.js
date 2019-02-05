@@ -50,7 +50,7 @@ class Month extends React.Component {
     this.setState(() => ({textValue: textValue}))
     const parsedMonth = moment(textValue, this.props.format)
     if (parsedMonth.isValid()) {
-      monthValue = parsedMonth.format('x')
+      monthValue = parsedMonth
     } else {
       monthValue = null
     }
