@@ -48,7 +48,8 @@ class Month extends React.Component {
     const textValue = this.refs.textInput.value
     let monthValue
     this.setState(() => ({textValue: textValue}))
-    const parsedMonth = moment(textValue, this.props.format)
+    // use the moment option strict=true to prevent excessive preemptive parsing
+    const parsedMonth = moment(textValue, this.props.format, true)
     if (parsedMonth.isValid()) {
       monthValue = parsedMonth
     } else {
