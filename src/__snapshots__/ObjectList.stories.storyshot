@@ -21,12 +21,6 @@ exports[`Storyshots object-list all selected 1`] = `
               Object {
                 "Renderer": [Function],
                 "active": false,
-                "filterKey": "search",
-                "name": "",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
               },
@@ -47,12 +41,6 @@ exports[`Storyshots object-list all selected 1`] = `
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "DayFilter",
-                "name": "DayFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -669,12 +657,6 @@ exports[`Storyshots object-list can select all 1`] = `
               Object {
                 "Renderer": [Function],
                 "active": false,
-                "filterKey": "search",
-                "name": "",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
               },
@@ -695,12 +677,6 @@ exports[`Storyshots object-list can select all 1`] = `
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "DayFilter",
-                "name": "DayFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -1327,12 +1303,6 @@ exports[`Storyshots object-list can select items 1`] = `
               Object {
                 "Renderer": [Function],
                 "active": false,
-                "filterKey": "search",
-                "name": "",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
               },
@@ -1353,12 +1323,6 @@ exports[`Storyshots object-list can select items 1`] = `
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "DayFilter",
-                "name": "DayFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -1961,12 +1925,6 @@ exports[`Storyshots object-list has active filters 1`] = `
           openMenuOnClick={true}
           options={
             Array [
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "search",
-                "name": "",
-              },
               Object {
                 "Renderer": [Function],
                 "active": false,
@@ -4583,12 +4541,6 @@ exports[`Storyshots object-list has multiple pages 1`] = `
               Object {
                 "Renderer": [Function],
                 "active": false,
-                "filterKey": "search",
-                "name": "",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
               },
@@ -4609,12 +4561,6 @@ exports[`Storyshots object-list has multiple pages 1`] = `
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "DayFilter",
-                "name": "DayFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -5089,12 +5035,6 @@ exports[`Storyshots object-list has optional fields 1`] = `
               Object {
                 "Renderer": [Function],
                 "active": false,
-                "filterKey": "search",
-                "name": "",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
               },
@@ -5115,12 +5055,6 @@ exports[`Storyshots object-list has optional fields 1`] = `
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "DayFilter",
-                "name": "DayFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -5667,12 +5601,6 @@ exports[`Storyshots object-list has search key 1`] = `
               Object {
                 "Renderer": [Function],
                 "active": false,
-                "filterKey": "DayFilter",
-                "name": "DayFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
                 "filterKey": "MonthFilter",
                 "name": "MonthFilter",
               },
@@ -6143,12 +6071,6 @@ exports[`Storyshots object-list loading 1`] = `
               Object {
                 "Renderer": [Function],
                 "active": false,
-                "filterKey": "search",
-                "name": "",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
               },
@@ -6169,12 +6091,6 @@ exports[`Storyshots object-list loading 1`] = `
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "DayFilter",
-                "name": "DayFilter",
               },
               Object {
                 "Renderer": [Function],
@@ -6655,12 +6571,6 @@ exports[`Storyshots object-list ready 1`] = `
               Object {
                 "Renderer": [Function],
                 "active": false,
-                "filterKey": "search",
-                "name": "",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
                 "filterKey": "BooleanFilter",
                 "name": "BooleanFilter",
               },
@@ -6681,12 +6591,6 @@ exports[`Storyshots object-list ready 1`] = `
                 "active": false,
                 "filterKey": "DateFilter",
                 "name": "DateFilter",
-              },
-              Object {
-                "Renderer": [Function],
-                "active": false,
-                "filterKey": "DayFilter",
-                "name": "DayFilter",
               },
               Object {
                 "Renderer": [Function],
