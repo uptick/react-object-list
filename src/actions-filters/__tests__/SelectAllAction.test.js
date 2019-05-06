@@ -14,6 +14,7 @@ describe('<SelectAllAction />', () => {
         count: 5,
         numSelected: 3,
         itemCount: 3,
+        deselectAll: jest.fn(),
       }
       snapshotTest(<SelectAllAction {...props} />)
     })
@@ -22,6 +23,7 @@ describe('<SelectAllAction />', () => {
         count: 5,
         numSelected: 2,
         itemCount: 3,
+        deselectAll: jest.fn(),
       }
       snapshotTest(<SelectAllAction {...props} />)
     })
@@ -30,6 +32,7 @@ describe('<SelectAllAction />', () => {
         count: 5,
         numSelected: 5,
         itemCount: 3,
+        deselectAll: jest.fn(),
       }
       snapshotTest(<SelectAllAction {...props} />)
     })
@@ -40,6 +43,7 @@ describe('<SelectAllAction />', () => {
         numSelected: 3,
         itemCount: 3,
         itemPluralName: 'kitties',
+        deselectAll: jest.fn(),
       }
       snapshotTest(<SelectAllAction {...props} />)
     })

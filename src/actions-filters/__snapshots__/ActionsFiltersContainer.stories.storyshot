@@ -910,17 +910,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
       >
         573,489 octopi found
       </span>
-      <div
-        className="objectlist-row"
-      >
-        <a
-          className="objectlist-link"
-          href="#"
-          onClick={[Function]}
-        >
-          Clear selection
-        </a>
-      </div>
     </div>
     <div
       className="objectlist-column"
@@ -2898,17 +2887,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
       >
         573,489 dogs found
       </span>
-      <div
-        className="objectlist-row"
-      >
-        <a
-          className="objectlist-link"
-          href="#"
-          onClick={[Function]}
-        >
-          Clear selection
-        </a>
-      </div>
     </div>
     <div
       className="objectlist-column"
@@ -3831,17 +3809,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
       >
         573,489 mouses found
       </span>
-      <div
-        className="objectlist-row"
-      >
-        <a
-          className="objectlist-link"
-          href="#"
-          onClick={[Function]}
-        >
-          Clear selection
-        </a>
-      </div>
     </div>
     <div
       className="objectlist-column"

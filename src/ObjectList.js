@@ -167,8 +167,8 @@ class ObjectList extends Component {
           loadFavourite={loadFavourite}
 
           selection={selection}
-          selectAll={this.selectAll}
-          deselectAll={this.deselectAll}
+          selectAll={selectItems && this.selectAll}
+          deselectAll={selectItems && this.deselectAll}
           numSelected={numSelected}
           customActions={customActions}
         />

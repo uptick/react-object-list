@@ -4166,6 +4166,17 @@ exports[`Storyshots object-list has everything 1`] = `
       >
         <tr>
           <th
+            className="objectlist-table__th objectlist-table__th--border-bottom objectlist-table__th--selector"
+            rowSpan={1}
+          >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </th>
+          <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
             colSpan={undefined}
             rowSpan={1}
@@ -4231,6 +4242,16 @@ exports[`Storyshots object-list has everything 1`] = `
           <td
             className="objectlist-table__td"
           >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
             Bob
           </td>
           <td
@@ -4248,6 +4269,16 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-table__row"
           onClick={null}
         >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
           <td
             className="objectlist-table__td"
           >
@@ -4271,6 +4302,16 @@ exports[`Storyshots object-list has everything 1`] = `
           <td
             className="objectlist-table__td"
           >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
             Jack
           </td>
           <td
@@ -4288,6 +4329,16 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-table__row"
           onClick={null}
         >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
           <td
             className="objectlist-table__td"
           >
@@ -4311,6 +4362,16 @@ exports[`Storyshots object-list has everything 1`] = `
           <td
             className="objectlist-table__td"
           >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
             Eva
           </td>
           <td
@@ -4328,6 +4389,16 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-table__row"
           onClick={null}
         >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
           <td
             className="objectlist-table__td"
           >
@@ -4351,6 +4422,16 @@ exports[`Storyshots object-list has everything 1`] = `
           <td
             className="objectlist-table__td"
           >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
             Dan
           </td>
           <td
@@ -4368,6 +4449,16 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-table__row"
           onClick={null}
         >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
           <td
             className="objectlist-table__td"
           >
@@ -4391,6 +4482,16 @@ exports[`Storyshots object-list has everything 1`] = `
           <td
             className="objectlist-table__td"
           >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
             Wayne
           </td>
           <td
@@ -4408,6 +4509,16 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-table__row"
           onClick={null}
         >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
           <td
             className="objectlist-table__td"
           >
@@ -4431,6 +4542,16 @@ exports[`Storyshots object-list has everything 1`] = `
           <td
             className="objectlist-table__td"
           >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="objectlist-table__td"
+          >
             Nina
           </td>
           <td
@@ -4448,6 +4569,16 @@ exports[`Storyshots object-list has everything 1`] = `
           className="objectlist-table__row"
           onClick={null}
         >
+          <td
+            className="objectlist-table__td"
+          >
+            <input
+              checked={true}
+              className="objectlist-table__checkbox"
+              onChange={[Function]}
+              type="checkbox"
+            />
+          </td>
           <td
             className="objectlist-table__td"
           >

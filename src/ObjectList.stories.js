@@ -135,6 +135,7 @@ storiesOf('object-list', module)
         searchKey="search"
         removeFilter={action('removeFilter')}
         customActions={[downloadSomething, aButton]}
+        selectItems={action('selecting items')}
       />)
   })
   .add('has error', () => (
