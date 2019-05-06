@@ -134,7 +134,10 @@ class ActionsFilterContainer extends Component {
           )}
           <div className="objectlist-row">
             <SelectFilters
-              filters={filters.filter(f => !search || f.filterKey !== searchKey)}
+              filters={filters.filter(f =>
+                (!search || f.filterKey !== searchKey) && // remove search filter
+                ((f.permanent !== undefined && !f.permanent) || (f.permanent === undefined && !f.Renderer.defaultProps.permanent)) // remove filters to display permanently
+              )}
               addFilter={this.props.addFilter}
             />
             {this.props.favouritesEnabled &&
