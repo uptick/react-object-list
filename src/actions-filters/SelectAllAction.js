@@ -28,7 +28,7 @@ class SelectAllAction extends Component {
   }
 
   render() {
-    const {selectAll, count, numSelected, itemPluralName, itemCount} = this.props
+    const {selectAll, count, numSelected, itemPluralName, itemCount, deselectAll} = this.props
     let selectAllLink
     if (selectAll && count > 0 && numSelected < count && numSelected >= itemCount) {
       selectAllLink = (
@@ -42,7 +42,7 @@ class SelectAllAction extends Component {
       )
     }
     let deselectLink
-    if (numSelected > 0) {
+    if (deselectAll && numSelected > 0) {
       deselectLink = (
         <a
           className="objectlist-link"

@@ -70,6 +70,7 @@ storiesOf('object-list/ActionsFiltersContainer', module)
         updateFilter={action('Update filter')}
         removeFilter={action('Remove filter')}
         customActions={[downloadSomething, aButton]}
+        deselectAll={action('Select all items')}
       />
     )
   }).add('has search', () => {
