@@ -69,6 +69,8 @@ class ActionsFilterContainer extends Component {
     customActions: PropTypes.arrayOf(PropTypes.func),
     /** Dictionary of icon elements */
     icons: PropTypes.object,
+    /** Object of custom react-select styles */
+    selectStyles: PropTypes.object,
   }
 
   static defaultProps = {
@@ -78,6 +80,7 @@ class ActionsFilterContainer extends Component {
     selection: {},
     columns: [],
     status: STATUS_CHOICES.done,
+    selectStyles: null,
   }
 
   state = {
@@ -107,6 +110,7 @@ class ActionsFilterContainer extends Component {
       filters, updateFilter, removeFilter, status,
       updateColumns, loadFavourite, handleAddFavourite,
       selectedFavouriteName, handleDeleteFavourite, favourites,
+      selectStyles,
     } = this.props
     const loading = status === STATUS_CHOICES.loading
     let search
@@ -139,6 +143,7 @@ class ActionsFilterContainer extends Component {
                 ((f.permanent !== undefined && !f.permanent) || (f.permanent === undefined && !f.Renderer.defaultProps.permanent)) // remove filters to display permanently
               )}
               addFilter={this.props.addFilter}
+              selectStyle={selectStyles}
             />
             {this.props.favouritesEnabled &&
               <Favourites

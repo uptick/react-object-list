@@ -73,6 +73,11 @@ class Select extends React.Component {
     menuContainerStyle: PropTypes.object,
     value: PropTypes.any,
     inputProps: PropTypes.object,
+    selectStyles: PropTypes.object,
+  }
+
+  static defaultProps = {
+    selectStyles: {},
   }
 
   state = {
@@ -91,6 +96,7 @@ class Select extends React.Component {
       menuContainerStyle,
       optionRenderer,
       inputProps,
+      selectStyles,
       ...otherProps
     } = this.props
 
@@ -155,7 +161,8 @@ class Select extends React.Component {
     }
 
     // Style overrides are a bit trickier too.
-    const styles = {
+    const hasSelectStyles = Object.keys(selectStyles).length > 0
+    const styles = hasSelectStyles ? selectStyles : {
       control: (base, state) => ({
         ...base,
         ...(controlStyle || {}),
