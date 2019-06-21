@@ -88,6 +88,45 @@ class Select extends React.Component {
     this.setState({startedTyping: !!inputValue.length})
   }
 
+  makeSelectStyles = (base, state) => {
+    const {selectStyles, controlStyle} = this.props
+    return {
+      control: (base, state) => ({
+        ...base,
+        ...(controlStyle || {}),
+        ...selectStyles.control || {},
+      }),
+      indicatorContainer: (base, state) => ({
+        ...base,
+        ...selectStyles.indicatorContainer || {},
+      }),
+      dropdownIndicator: (base, state) => ({
+        ...base,
+        ...selectStyles.dropdownIndicator || {},
+      }),
+      multiValue: (base, state) => ({
+        ...base,
+        ...selectStyles.multiValue || {},
+      }),
+      multiValueLabel: (base, state) => ({
+        ...base,
+        ...selectStyles.multiValueLabel || {},
+      }),
+      input: (base, state) => ({
+        ...base,
+        ...selectStyles.input || {},
+      }),
+      option: (base, state) => ({
+        ...base,
+        ...selectStyles.option || {},
+      }),
+      menuList: (base, state) => ({
+        ...base,
+        ...selectStyles.menuList || {},
+      }),
+    }
+  }
+
   render() {
     const {
       isAsync = false,
@@ -159,77 +198,38 @@ class Select extends React.Component {
     if (Object.keys(components).length > 0) {
       nextProps.components = components
     }
-
     // Style overrides are a bit trickier too.
     const hasSelectStyles = Object.keys(selectStyles).length > 0
-    const styles = hasSelectStyles ? selectStyles : {
+    let styles = {
       control: (base, state) => ({
         ...base,
-        ...(controlStyle || {}),
         backgroundColor: '#fff',
-        borderRadius: '2px',
-        borderColor: '#ced4da',
-        outline: '0',
-        boxShadow: 0,
         minHeight: 0,
-        fontSize: '0.85rem',
-        '&:hover': {
-          borderColor: '#ced4da',
-        },
-        '&:active': {
-          borderColor: '#ced4da',
-        },
-      }),
-      indicatorContainer: (base, state) => ({
-        ...base,
-        color: '#00A19C',
-      }),
-      input: (base, state) => ({
-        ...base,
-        borderRadius: '2px',
-      }),
-      option: (base, state) => ({
-        ...base,
-        fontSize: '0.85rem',
-        '&:hover': {
-          background: '#f0f9f9',
-        },
-        '&:active': {
-          background: '#f0f9f9',
-        },
-        '&:first-child': {
-          background: '#fff',
-          color: 'black',
-          opacity: '0.84',
-          '&:hover': {
-            background: '#f0f9f9',
-          },
-        },
-      }),
-      menuList: (base, state) => ({
-        ...base,
-        borderRadius: '2px',
+        ...(controlStyle || {}),
       }),
       dropdownIndicator: (base, state) => ({
         ...base,
-        color: '#00A19C',
+        paddingTop: 0,
+        paddingBottom: 0,
       }),
       multiValue: (base, state) => ({
         ...base,
         backgroundColor: 'rgba(0,126,255,0.08)',
         border: '1px solid rgba(0,126,255,0.24)',
-        color: '#00A19C',
-        '&:active': {
-          background: '#f0f9f9',
-        },
+        color: '#007eff',
       }),
       multiValueLabel: (base, state) => ({
         ...base,
-        color: '#00A19C',
+        color: '#007eff',
         borderRight: '1px solid rgba(0,126,255,0.24)',
-        fontSize: '0.85rem',
+        fontSize: '90%',
       }),
     }
+
+    if (hasSelectStyles) {
+      styles = this.makeSelectStyles()
+    }
+
     if (menuStyle) {
       styles.menu = (base, state) => ({...base, ...menuStyle})
     }

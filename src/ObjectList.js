@@ -116,7 +116,7 @@ class ObjectList extends Component {
     meta: {},
     selection: {},
     itemSingleName: 'item',
-    selectStyles: null,
+    selectStyles: {},
   }
 
   state = {
@@ -143,6 +143,7 @@ class ObjectList extends Component {
       updatePage, updateSorting, selection, selectItems, customActions, error,
       summaryData, selectStyles,
     } = this.props
+
     const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
     const numSelected = selection === ALL_SELECTED ? totalCount : Object.keys(selection).length

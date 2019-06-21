@@ -15,16 +15,19 @@ class FiltersContainer extends Component {
     removeFilter: PropTypes.func,
     /** icons to use */
     icons: PropTypes.object,
+    /** Object of custom react-select styles */
+    selectStyles: PropTypes.object,
   }
   static defaultProps = {
     filters: [],
     activeFilters: [],
     icons: {},
+    selectStyles: {},
   }
 
   renderFilter = (filter, i) => {
     const { Renderer, filterKey, loadOptions, value, ...props } = filter
-    const { removeFilter, updateFilter, icons } = this.props
+    const { removeFilter, updateFilter, icons, selectStyles } = this.props
     return (
       <Renderer
         key={`filter-${filterKey}-${i}`}
@@ -34,6 +37,7 @@ class FiltersContainer extends Component {
         removeFilter={removeFilter}
         loadOptions={loadOptions ? loadOptions.bind(filter) : undefined} // eslint-disable-line react/jsx-no-bind
         icons={icons}
+        selectStyles={selectStyles}
         {...props}
       />
     )

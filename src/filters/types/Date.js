@@ -42,6 +42,8 @@ class DateComponent extends React.Component {
       /** Value shown to user */
       label: PropTypes.string,
     })),
+    /** Object of custom react-select styles */
+    selectStyles: PropTypes.object,
   }
 
   static defaultProps = {
@@ -52,6 +54,7 @@ class DateComponent extends React.Component {
       {value: 'month_start', label: 'Beginning of this month'},
       {value: 'year_start', label: 'Beginning of this year'},
     ],
+    selectStyles: {},
   }
 
   /**
@@ -78,7 +81,7 @@ class DateComponent extends React.Component {
   }
 
   render() {
-    const { value, inputFormat, relativeDateOptions, comparison, fixedComparison } = this.props
+    const { value, inputFormat, relativeDateOptions, comparison, fixedComparison, selectStyles } = this.props
     const date = value === null ? '' : moment(value).format(inputFormat)
     let dateChoice
     if (comparison === fixedComparison.value) {
@@ -109,6 +112,7 @@ class DateComponent extends React.Component {
           {...(value ? {value: value} : {})}
           clearable={false}
           className="objectlist-current-filter__active-status"
+          selectStyles={selectStyles}
         />
       )
     }

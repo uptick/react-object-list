@@ -10,12 +10,18 @@ class FilterComparison extends React.Component {
     })),
     value: Select.propTypes.value,
     onChange: PropTypes.func.isRequired,
+    /** Object of custom react-select styles */
+    selectStyles: PropTypes.object,
+  }
+
+  static defaultProps = {
+    selectStyles: {},
   }
 
   handleChange = newValue => this.props.onChange(newValue.value)
 
   render() {
-    const {options, value} = this.props
+    const {options, value, selectStyles} = this.props
     return (
       <div className="objectlist-current-filter__filter-comparison">
         <Select
@@ -23,6 +29,7 @@ class FilterComparison extends React.Component {
           value={options.find(x => x.value === value)}
           onChange={this.handleChange}
           clearable={false}
+          selectStyles={selectStyles}
         />
       </div>
     )

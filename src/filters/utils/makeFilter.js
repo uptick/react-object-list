@@ -25,17 +25,21 @@ const makeFilter = (Renderer) => {
       /** Function to be called when filter is removed */
       removeFilter: PropTypes.func.isRequired,
       /** Options to be passed to the comparison dropdown */
+      /** Options to be passed to the comparison dropdown */
       comparisonOptions: FilterComparison.propTypes.options,
       /** Currently selected comparison option */
       comparison: FilterComparison.propTypes.value,
       /** Icons */
       icons: PropTypes.object,
+      /** Object of custom react-select styles */
+      selectStyles: PropTypes.object,
     }
 
     static defaultProps = {
       comparisonOptions: [],
       icons: {},
       permanent: false,
+      selectStyles: {},
     }
 
     /**
@@ -74,7 +78,7 @@ const makeFilter = (Renderer) => {
 
     render() {
       const {
-        name, comparison, comparisonOptions, value, permanent, icons = {}, ...otherProps
+        name, comparison, comparisonOptions, value, permanent, selectStyles, icons = {}, ...otherProps
       } = this.props
       return (
         <div className="objectlist-row">
@@ -84,6 +88,7 @@ const makeFilter = (Renderer) => {
               options={comparisonOptions}
               value={comparison || comparisonOptions[0]}
               onChange={this.onComparisonChange}
+              selectStyles={selectStyles}
             />
           )}
           <Renderer
@@ -92,6 +97,7 @@ const makeFilter = (Renderer) => {
             value={value}
             onChange={this.onValueChange}
             icons={icons}
+            selectStyles={selectStyles}
           />
           {!permanent && (
             <RemoveFilter onClick={this.removeFilter} Icon={icons.RemoveFilter} />

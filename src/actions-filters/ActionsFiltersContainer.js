@@ -80,7 +80,7 @@ class ActionsFilterContainer extends Component {
     selection: {},
     columns: [],
     status: STATUS_CHOICES.done,
-    selectStyles: null,
+    selectStyles: {},
   }
 
   state = {
@@ -134,6 +134,7 @@ class ActionsFilterContainer extends Component {
               filters={[search]}
               updateFilter={updateFilter}
               removeFilter={removeFilter}
+              selectStyles={selectStyles}
             />
           )}
           <div className="objectlist-row">
@@ -143,7 +144,7 @@ class ActionsFilterContainer extends Component {
                 ((f.permanent !== undefined && !f.permanent) || (f.permanent === undefined && !f.Renderer.defaultProps.permanent)) // remove filters to display permanently
               )}
               addFilter={this.props.addFilter}
-              selectStyle={selectStyles}
+              selectStyles={selectStyles}
             />
             {this.props.favouritesEnabled &&
               <Favourites
@@ -162,6 +163,7 @@ class ActionsFilterContainer extends Component {
           updateFilter={updateFilter}
           removeFilter={removeFilter}
           icons={icons}
+          selectStyles={selectStyles}
         />
         {/* TODO: render children below filters */}
         <div className="objectlist-row objectlist-row__actions">
