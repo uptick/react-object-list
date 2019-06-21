@@ -41,7 +41,7 @@ exports[`Storyshots object-list/demo interactive list 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -771,7 +771,7 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],

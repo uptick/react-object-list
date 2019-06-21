@@ -28,8 +28,8 @@ export default class HeaderField extends React.Component {
   static defaultProps = {
     activeSort: null,
     sortKey: null,
-    SortAscIcon: <React.Fragment>&#x25B2;</React.Fragment>,
-    SortDescIcon: <React.Fragment>&#x25BC;</React.Fragment>,
+    SortAscIcon: <React.Fragment>&#813;</React.Fragment>,
+    SortDescIcon: <React.Fragment>&#812;</React.Fragment>,
     UnsortedIcon: null,
   }
 

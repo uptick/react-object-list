@@ -16,7 +16,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
-        placeholder="Add Filter"
+        placeholder="Add filter"
         styles={
           Object {
             "control": [Function],
@@ -387,7 +387,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -576,7 +576,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -851,7 +851,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -1050,7 +1050,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
-        placeholder="Add Filter"
+        placeholder="Add filter"
         styles={
           Object {
             "control": [Function],
@@ -1421,7 +1421,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -1610,7 +1610,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -1885,7 +1885,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -2010,7 +2010,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
-        placeholder="Add Filter"
+        placeholder="Add filter"
         styles={
           Object {
             "control": [Function],
@@ -2381,7 +2381,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -2570,7 +2570,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -2828,7 +2828,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -2932,7 +2932,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
-        placeholder="Add Filter"
+        placeholder="Add filter"
         styles={
           Object {
             "control": [Function],
@@ -3303,7 +3303,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -3492,7 +3492,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -3750,7 +3750,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]

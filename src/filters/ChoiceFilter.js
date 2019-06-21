@@ -8,7 +8,7 @@ const ChoiceFilter = makeFilter(Choice)
 ChoiceFilter.defaultProps = {
   comparisonOptions: [
     {value: 'is', label: 'Is'},
-    {value: 'is_not', label: 'Is Not'},
+    {value: 'is_not', label: 'Is not'},
   ],
   comparison: 'is',
   multi: false,

@@ -82,7 +82,7 @@ exports[`Storyshots object-list all selected 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -718,7 +718,7 @@ exports[`Storyshots object-list can select all 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -1364,7 +1364,7 @@ exports[`Storyshots object-list can select items 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -1958,7 +1958,7 @@ exports[`Storyshots object-list has active filters 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -2209,7 +2209,7 @@ exports[`Storyshots object-list has active filters 1`] = `
                   "value": "is",
                 },
                 Object {
-                  "label": "Is Not",
+                  "label": "Is not",
                   "value": "is_not",
                 },
               ]
@@ -2467,7 +2467,7 @@ exports[`Storyshots object-list has active filters 1`] = `
                   "value": "is",
                 },
                 Object {
-                  "label": "Is Not",
+                  "label": "Is not",
                   "value": "is_not",
                 },
               ]
@@ -3464,7 +3464,7 @@ exports[`Storyshots object-list has everything 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -3715,7 +3715,7 @@ exports[`Storyshots object-list has everything 1`] = `
                   "value": "is",
                 },
                 Object {
-                  "label": "Is Not",
+                  "label": "Is not",
                   "value": "is_not",
                 },
               ]
@@ -3973,7 +3973,7 @@ exports[`Storyshots object-list has everything 1`] = `
                   "value": "is",
                 },
                 Object {
-                  "label": "Is Not",
+                  "label": "Is not",
                   "value": "is_not",
                 },
               ]
@@ -4733,7 +4733,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -5227,7 +5227,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -5769,7 +5769,7 @@ exports[`Storyshots object-list has search key 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -6263,7 +6263,7 @@ exports[`Storyshots object-list loading 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -6763,7 +6763,7 @@ exports[`Storyshots object-list ready 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],

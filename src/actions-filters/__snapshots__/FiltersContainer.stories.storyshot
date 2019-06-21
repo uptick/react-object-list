@@ -324,7 +324,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
               "value": "is",
             },
             Object {
-              "label": "Is Not",
+              "label": "Is not",
               "value": "is_not",
             },
           ]
@@ -507,7 +507,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
               "value": "is",
             },
             Object {
-              "label": "Is Not",
+              "label": "Is not",
               "value": "is_not",
             },
           ]
@@ -782,7 +782,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
               "value": "is",
             },
             Object {
-              "label": "Is Not",
+              "label": "Is not",
               "value": "is_not",
             },
           ]

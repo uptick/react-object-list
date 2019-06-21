@@ -39,7 +39,7 @@ class SelectFilters extends Component {
         valueKey="filterKey"
         labelKey="name"
         onChange={this.props.addFilter}
-        placeholder="Add Filter"
+        placeholder="Add filter"
         className="objectlist-select-filter"
       />
     )
