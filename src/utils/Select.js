@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactSelect, { components } from 'react-select'
 import ReactAsyncSelect from 'react-select/lib/Async'
+import { makeSelectStyles } from '../utils/functions'
 const {Option} = components
 
 // A searchable set of props to ignore when checking for
@@ -89,42 +90,8 @@ class Select extends React.Component {
   }
 
   makeSelectStyles = (base, state) => {
-    const {selectStyles, controlStyle} = this.props
-    return {
-      control: (base, state) => ({
-        ...base,
-        ...(controlStyle || {}),
-        ...selectStyles.control || {},
-      }),
-      indicatorContainer: (base, state) => ({
-        ...base,
-        ...selectStyles.indicatorContainer || {},
-      }),
-      dropdownIndicator: (base, state) => ({
-        ...base,
-        ...selectStyles.dropdownIndicator || {},
-      }),
-      multiValue: (base, state) => ({
-        ...base,
-        ...selectStyles.multiValue || {},
-      }),
-      multiValueLabel: (base, state) => ({
-        ...base,
-        ...selectStyles.multiValueLabel || {},
-      }),
-      input: (base, state) => ({
-        ...base,
-        ...selectStyles.input || {},
-      }),
-      option: (base, state) => ({
-        ...base,
-        ...selectStyles.option || {},
-      }),
-      menuList: (base, state) => ({
-        ...base,
-        ...selectStyles.menuList || {},
-      }),
-    }
+    const {selectStyles} = this.props
+    return makeSelectStyles(base, state, selectStyles)
   }
 
   render() {
@@ -250,6 +217,7 @@ class Select extends React.Component {
 class AsyncSelect extends React.Component {
   static propTypes = {
     noResultsText: PropTypes.string,
+    selectStyles: PropTypes.object,
   }
 
   render() {

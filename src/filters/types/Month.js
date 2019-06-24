@@ -87,6 +87,7 @@ class Month extends React.Component {
     return (
       <MonthPicker
         ref="monthPicker"
+        className="react-month-picker"
         value={monthDict}
         years={{
           min: this.props.minYear,
