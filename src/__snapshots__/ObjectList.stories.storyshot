@@ -2011,7 +2011,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           :
         </label>
         <div
-          className="month-picker "
+          className="month-picker react-month-picker"
         >
           <input
             className="objectlist-input objectlist-input--wide"
@@ -2022,7 +2022,7 @@ exports[`Storyshots object-list has active filters 1`] = `
             value="Jul 2017"
           />
           <div
-            className="rmp-container rmp-table  "
+            className="rmp-container rmp-table react-month-picker "
           >
             <div
               className="rmp-overlay"
@@ -3504,7 +3504,7 @@ exports[`Storyshots object-list has everything 1`] = `
           :
         </label>
         <div
-          className="month-picker "
+          className="month-picker react-month-picker"
         >
           <input
             className="objectlist-input objectlist-input--wide"
@@ -3515,7 +3515,7 @@ exports[`Storyshots object-list has everything 1`] = `
             value="Jul 2017"
           />
           <div
-            className="rmp-container rmp-table  "
+            className="rmp-container rmp-table react-month-picker "
           >
             <div
               className="rmp-overlay"

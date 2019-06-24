@@ -333,7 +333,7 @@ exports[`Storyshots object-list/Filters MonthFilter 1`] = `
     :
   </label>
   <div
-    className="month-picker "
+    className="month-picker react-month-picker"
   >
     <input
       className="objectlist-input objectlist-input--wide"
@@ -344,7 +344,7 @@ exports[`Storyshots object-list/Filters MonthFilter 1`] = `
       value="Feb 2018"
     />
     <div
-      className="rmp-container rmp-table  "
+      className="rmp-container rmp-table react-month-picker "
     >
       <div
         className="rmp-overlay"

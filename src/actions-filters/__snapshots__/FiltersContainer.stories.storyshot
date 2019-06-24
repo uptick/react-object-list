@@ -62,7 +62,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
       :
     </label>
     <div
-      className="month-picker "
+      className="month-picker react-month-picker"
     >
       <input
         className="objectlist-input objectlist-input--wide"
@@ -73,7 +73,7 @@ exports[`Storyshots object-list/FiltersContainer default view 1`] = `
         value="Jul 2017"
       />
       <div
-        className="rmp-container rmp-table  "
+        className="rmp-container rmp-table react-month-picker "
       >
         <div
           className="rmp-overlay"
