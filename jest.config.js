@@ -1,5 +1,5 @@
 module.exports = {
-  setupFiles: ['./jest.setup.js'],
+  setupFiles: ['./.jest/jest.setup.js', './.jest/register-context.js'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   modulePaths: [
     '.',
@@ -11,4 +11,5 @@ module.exports = {
     'src/**/*.js',
     '!src/**/*.stories.js',
   ],
+  testURL: 'http://localhost/',
 }

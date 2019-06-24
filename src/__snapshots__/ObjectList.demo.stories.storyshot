@@ -861,12 +861,10 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
         <tr>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -884,12 +882,10 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -907,12 +903,10 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -930,7 +924,6 @@ exports[`Storyshots object-list/demo interactive table 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >

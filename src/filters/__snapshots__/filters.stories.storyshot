@@ -194,7 +194,6 @@ exports[`Storyshots object-list/Filters CurrencyFilter 1`] = `
           "multiValueLabel": [Function],
         }
       }
-      value={undefined}
     />
   </div>
   <div
@@ -209,7 +208,6 @@ exports[`Storyshots object-list/Filters CurrencyFilter 1`] = `
       className="objectlist-input objectlist-input--currency"
       onChange={[Function]}
       type="text"
-      value={undefined}
     />
     <span
       className="objectlist-currency-filter__decimal"
@@ -350,7 +348,6 @@ exports[`Storyshots object-list/Filters MonthFilter 1`] = `
     >
       <div
         className="rmp-overlay"
-        disabled={undefined}
         onClick={[Function]}
         onTouchCancel={[Function]}
         onTouchEnd={[Function]}
@@ -612,7 +609,6 @@ exports[`Storyshots object-list/Filters RemoteChoiceFilter 1`] = `
     noOptionsMessage={[Function]}
     onChange={[Function]}
     onInputChange={[Function]}
-    options={undefined}
     placeholder="Any value"
     styles={
       Object {
@@ -671,7 +667,6 @@ exports[`Storyshots object-list/Filters RemoteMultiChoiceFilter 1`] = `
           "multiValueLabel": [Function],
         }
       }
-      value={undefined}
     />
   </div>
   <Select.Async
@@ -685,7 +680,6 @@ exports[`Storyshots object-list/Filters RemoteMultiChoiceFilter 1`] = `
     noOptionsMessage={[Function]}
     onChange={[Function]}
     onInputChange={[Function]}
-    options={undefined}
     placeholder="Any value"
     styles={
       Object {

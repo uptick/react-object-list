@@ -50,7 +50,7 @@ describe('Favourites', () => {
       instance.render.calls.reset()
       wrapper.setProps({selectedFavouriteName: 'B'})
       expect(instance.props.selectedFavouriteName).toBe('B')
-      expect(instance.render).toHaveBeenCalledTimes(2)
+      expect(instance.render).toHaveBeenCalledTimes(1)
     })
 
     describe('handleDropdown', () => {

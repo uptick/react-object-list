@@ -24,7 +24,7 @@
     "watch": "webpack --mode development --watch",
     "test": "jest",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "prepublish": "yarn build && mkdir -p styles && cp src/styles/*.sass styles"
+    "prepublish": "yarn build && mkdir -p styles && cp src/resources/*.sass styles"
   },
   "author": "Uptick Pty Ltd (http://uptickhq.com)",
   "license": "MIT",
@@ -39,6 +39,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.4",
+    "babel-plugin-require-context-hook": "^1.0.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",

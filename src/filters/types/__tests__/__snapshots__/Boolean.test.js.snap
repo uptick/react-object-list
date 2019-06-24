@@ -15,6 +15,7 @@ exports[`Boolean Snapshots has custom labels 1`] = `
       },
     ]
   }
+  selectStyles={Object {}}
   value={
     Object {
       "label": "Very True",
@@ -39,6 +40,7 @@ exports[`Boolean Snapshots renders false 1`] = `
       },
     ]
   }
+  selectStyles={Object {}}
   value={
     Object {
       "label": "No",
@@ -63,6 +65,7 @@ exports[`Boolean Snapshots renders true 1`] = `
       },
     ]
   }
+  selectStyles={Object {}}
   value={
     Object {
       "label": "Yes",

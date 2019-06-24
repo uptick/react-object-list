@@ -12,7 +12,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-select-filter"
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
-        onChange={undefined}
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
@@ -140,7 +139,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         >
           <div
             className="rmp-overlay"
-            disabled={undefined}
             onClick={[Function]}
             onTouchCancel={[Function]}
             onTouchEnd={[Function]}
@@ -333,7 +331,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <div
@@ -348,7 +345,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           className="objectlist-input objectlist-input--currency"
           onChange={[Function]}
           type="text"
-          value={undefined}
         />
         <span
           className="objectlist-currency-filter__decimal"
@@ -416,7 +412,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         loadOptions={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -808,7 +803,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -864,7 +858,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <Select.Async
@@ -878,7 +871,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -1046,7 +1038,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-select-filter"
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
-        onChange={undefined}
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
@@ -1174,7 +1165,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         >
           <div
             className="rmp-overlay"
-            disabled={undefined}
             onClick={[Function]}
             onTouchCancel={[Function]}
             onTouchEnd={[Function]}
@@ -1367,7 +1357,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <div
@@ -1382,7 +1371,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
           className="objectlist-input objectlist-input--currency"
           onChange={[Function]}
           type="text"
-          value={undefined}
         />
         <span
           className="objectlist-currency-filter__decimal"
@@ -1450,7 +1438,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         loadOptions={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -1842,7 +1829,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -1898,7 +1884,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <Select.Async
@@ -1912,7 +1897,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -2006,7 +1990,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-select-filter"
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
-        onChange={undefined}
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
@@ -2134,7 +2117,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         >
           <div
             className="rmp-overlay"
-            disabled={undefined}
             onClick={[Function]}
             onTouchCancel={[Function]}
             onTouchEnd={[Function]}
@@ -2327,7 +2309,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <div
@@ -2342,7 +2323,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
           className="objectlist-input objectlist-input--currency"
           onChange={[Function]}
           type="text"
-          value={undefined}
         />
         <span
           className="objectlist-currency-filter__decimal"
@@ -2410,7 +2390,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         loadOptions={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -2785,7 +2764,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -2841,7 +2819,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <Select.Async
@@ -2855,7 +2832,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -2928,7 +2904,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-select-filter"
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
-        onChange={undefined}
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
@@ -3056,7 +3031,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         >
           <div
             className="rmp-overlay"
-            disabled={undefined}
             onClick={[Function]}
             onTouchCancel={[Function]}
             onTouchEnd={[Function]}
@@ -3249,7 +3223,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <div
@@ -3264,7 +3237,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
           className="objectlist-input objectlist-input--currency"
           onChange={[Function]}
           type="text"
-          value={undefined}
         />
         <span
           className="objectlist-currency-filter__decimal"
@@ -3332,7 +3304,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         loadOptions={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -3707,7 +3678,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -3763,7 +3733,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <Select.Async
@@ -3777,7 +3746,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {

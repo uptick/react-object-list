@@ -27,12 +27,10 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -46,12 +44,10 @@ exports[`Storyshots object-list/Data Renderers/Table all selected 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -579,12 +575,10 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
       <tr>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -598,12 +592,10 @@ exports[`Storyshots object-list/Data Renderers/Table has custom renderers 1`] = 
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -1017,7 +1009,6 @@ exports[`Storyshots object-list/Data Renderers/Table has grouped columns 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={2}
           style={Object {}}
         >
@@ -1029,7 +1020,6 @@ exports[`Storyshots object-list/Data Renderers/Table has grouped columns 1`] = `
       <tr>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
@@ -1039,7 +1029,6 @@ exports[`Storyshots object-list/Data Renderers/Table has grouped columns 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
@@ -1322,12 +1311,10 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -1341,12 +1328,10 @@ exports[`Storyshots object-list/Data Renderers/Table has selected items 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -1874,7 +1859,6 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
       <tr>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={
             Object {
@@ -1883,7 +1867,6 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
           }
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -1903,12 +1886,10 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -1922,12 +1903,10 @@ exports[`Storyshots object-list/Data Renderers/Table has sortable headers 1`] = 
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -2203,7 +2182,6 @@ exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
       <tr>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
@@ -2213,7 +2191,6 @@ exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
@@ -2223,7 +2200,6 @@ exports[`Storyshots object-list/Data Renderers/Table loading 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
@@ -2495,7 +2471,6 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
       <tr>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
@@ -2505,7 +2480,6 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
@@ -2515,7 +2489,6 @@ exports[`Storyshots object-list/Data Renderers/Table simple 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
@@ -2798,12 +2771,10 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -2812,18 +2783,16 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
               className="sort-direction text-primary"
             >
                
-              ▼
+              ̬
             </span>
           </div>
         </th>
         <th
           className="objectlist-table__th objectlist-table__th--border-bottom "
-          colSpan={undefined}
           rowSpan={1}
           style={Object {}}
         >
           <div
-            className={undefined}
             onClick={[Function]}
             role="button"
           >
@@ -2832,7 +2801,7 @@ exports[`Storyshots object-list/Data Renderers/Table sorted header 1`] = `
               className="sort-direction text-primary"
             >
                
-              ▲
+              ̭
             </span>
           </div>
         </th>
