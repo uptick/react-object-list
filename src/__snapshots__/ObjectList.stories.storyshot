@@ -82,7 +82,7 @@ exports[`Storyshots object-list all selected 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -191,12 +191,10 @@ exports[`Storyshots object-list all selected 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -214,12 +212,10 @@ exports[`Storyshots object-list all selected 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -718,7 +714,7 @@ exports[`Storyshots object-list can select all 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -837,12 +833,10 @@ exports[`Storyshots object-list can select all 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -860,12 +854,10 @@ exports[`Storyshots object-list can select all 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -1364,7 +1356,7 @@ exports[`Storyshots object-list can select items 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -1462,12 +1454,10 @@ exports[`Storyshots object-list can select items 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -1485,12 +1475,10 @@ exports[`Storyshots object-list can select items 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -1958,7 +1946,7 @@ exports[`Storyshots object-list has active filters 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -2023,7 +2011,7 @@ exports[`Storyshots object-list has active filters 1`] = `
           :
         </label>
         <div
-          className="month-picker "
+          className="month-picker react-month-picker"
         >
           <input
             className="objectlist-input objectlist-input--wide"
@@ -2034,11 +2022,10 @@ exports[`Storyshots object-list has active filters 1`] = `
             value="Jul 2017"
           />
           <div
-            className="rmp-container rmp-table  "
+            className="rmp-container rmp-table react-month-picker "
           >
             <div
               className="rmp-overlay"
-              disabled={undefined}
               onClick={[Function]}
               onTouchCancel={[Function]}
               onTouchEnd={[Function]}
@@ -2209,7 +2196,7 @@ exports[`Storyshots object-list has active filters 1`] = `
                   "value": "is",
                 },
                 Object {
-                  "label": "Is Not",
+                  "label": "Is not",
                   "value": "is_not",
                 },
               ]
@@ -2238,7 +2225,6 @@ exports[`Storyshots object-list has active filters 1`] = `
           loadOptions={[Function]}
           onChange={[Function]}
           onInputChange={[Function]}
-          options={undefined}
           placeholder="Any value"
           styles={
             Object {
@@ -2467,7 +2453,7 @@ exports[`Storyshots object-list has active filters 1`] = `
                   "value": "is",
                 },
                 Object {
-                  "label": "Is Not",
+                  "label": "Is not",
                   "value": "is_not",
                 },
               ]
@@ -2480,7 +2466,6 @@ exports[`Storyshots object-list has active filters 1`] = `
                 "multiValueLabel": [Function],
               }
             }
-            value={undefined}
           />
         </div>
         <Select.Async
@@ -2494,7 +2479,6 @@ exports[`Storyshots object-list has active filters 1`] = `
           noOptionsMessage={[Function]}
           onChange={[Function]}
           onInputChange={[Function]}
-          options={undefined}
           placeholder="Any value"
           styles={
             Object {
@@ -2550,12 +2534,10 @@ exports[`Storyshots object-list has active filters 1`] = `
         <tr>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -2573,12 +2555,10 @@ exports[`Storyshots object-list has active filters 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -3002,12 +2982,10 @@ exports[`Storyshots object-list has error 1`] = `
         <tr>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -3025,12 +3003,10 @@ exports[`Storyshots object-list has error 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -3048,7 +3024,6 @@ exports[`Storyshots object-list has error 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
@@ -3464,7 +3439,7 @@ exports[`Storyshots object-list has everything 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -3529,7 +3504,7 @@ exports[`Storyshots object-list has everything 1`] = `
           :
         </label>
         <div
-          className="month-picker "
+          className="month-picker react-month-picker"
         >
           <input
             className="objectlist-input objectlist-input--wide"
@@ -3540,11 +3515,10 @@ exports[`Storyshots object-list has everything 1`] = `
             value="Jul 2017"
           />
           <div
-            className="rmp-container rmp-table  "
+            className="rmp-container rmp-table react-month-picker "
           >
             <div
               className="rmp-overlay"
-              disabled={undefined}
               onClick={[Function]}
               onTouchCancel={[Function]}
               onTouchEnd={[Function]}
@@ -3715,7 +3689,7 @@ exports[`Storyshots object-list has everything 1`] = `
                   "value": "is",
                 },
                 Object {
-                  "label": "Is Not",
+                  "label": "Is not",
                   "value": "is_not",
                 },
               ]
@@ -3744,7 +3718,6 @@ exports[`Storyshots object-list has everything 1`] = `
           loadOptions={[Function]}
           onChange={[Function]}
           onInputChange={[Function]}
-          options={undefined}
           placeholder="Any value"
           styles={
             Object {
@@ -3973,7 +3946,7 @@ exports[`Storyshots object-list has everything 1`] = `
                   "value": "is",
                 },
                 Object {
-                  "label": "Is Not",
+                  "label": "Is not",
                   "value": "is_not",
                 },
               ]
@@ -3986,7 +3959,6 @@ exports[`Storyshots object-list has everything 1`] = `
                 "multiValueLabel": [Function],
               }
             }
-            value={undefined}
           />
         </div>
         <Select.Async
@@ -4000,7 +3972,6 @@ exports[`Storyshots object-list has everything 1`] = `
           noOptionsMessage={[Function]}
           onChange={[Function]}
           onInputChange={[Function]}
-          options={undefined}
           placeholder="Any value"
           styles={
             Object {
@@ -4136,12 +4107,10 @@ exports[`Storyshots object-list has everything 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -4159,12 +4128,10 @@ exports[`Storyshots object-list has everything 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -4182,7 +4149,6 @@ exports[`Storyshots object-list has everything 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
@@ -4733,7 +4699,7 @@ exports[`Storyshots object-list has multiple pages 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -4820,12 +4786,10 @@ exports[`Storyshots object-list has multiple pages 1`] = `
         <tr>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -4843,12 +4807,10 @@ exports[`Storyshots object-list has multiple pages 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -5227,7 +5189,7 @@ exports[`Storyshots object-list has optional fields 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -5346,12 +5308,10 @@ exports[`Storyshots object-list has optional fields 1`] = `
         <tr>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -5369,12 +5329,10 @@ exports[`Storyshots object-list has optional fields 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -5769,7 +5727,7 @@ exports[`Storyshots object-list has search key 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -5856,12 +5814,10 @@ exports[`Storyshots object-list has search key 1`] = `
         <tr>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -5879,12 +5835,10 @@ exports[`Storyshots object-list has search key 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -6263,7 +6217,7 @@ exports[`Storyshots object-list loading 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -6350,12 +6304,10 @@ exports[`Storyshots object-list loading 1`] = `
         <tr>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -6373,12 +6325,10 @@ exports[`Storyshots object-list loading 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -6763,7 +6713,7 @@ exports[`Storyshots object-list ready 1`] = `
               },
             ]
           }
-          placeholder="Add Filter"
+          placeholder="Add filter"
           styles={
             Object {
               "control": [Function],
@@ -6850,12 +6800,10 @@ exports[`Storyshots object-list ready 1`] = `
         <tr>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >
@@ -6873,12 +6821,10 @@ exports[`Storyshots object-list ready 1`] = `
           </th>
           <th
             className="objectlist-table__th objectlist-table__th--border-bottom "
-            colSpan={undefined}
             rowSpan={1}
             style={Object {}}
           >
             <div
-              className={undefined}
               onClick={[Function]}
               role="button"
             >

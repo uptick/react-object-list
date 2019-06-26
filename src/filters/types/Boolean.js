@@ -15,11 +15,14 @@ export default class Boolean extends React.Component {
     onChange: PropTypes.func,
     /** Current value of filter */
     value: PropTypes.string,
+    /** Object of custom react-select styles */
+    selectStyles: PropTypes.object,
   }
 
   static defaultProps = {
     trueLabel: 'Yes',
     falseLabel: 'No',
+    selectStyles: {},
   }
 
   onValueChange = newValue => {
@@ -27,7 +30,7 @@ export default class Boolean extends React.Component {
   }
 
   render() {
-    const {trueLabel, falseLabel, value} = this.props
+    const {trueLabel, falseLabel, value, selectStyles} = this.props
     const trueOption = {value: 'True', label: trueLabel}
     const falseOption = {value: 'False', label: falseLabel}
     // TODO: The next line is here to be sure no matter what we pass in we use
@@ -39,6 +42,7 @@ export default class Boolean extends React.Component {
         options={[trueOption, falseOption]}
         onChange={this.onValueChange}
         value={mappedValue}
+        selectStyles={selectStyles}
       />
     )
   }

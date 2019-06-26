@@ -13,14 +13,18 @@ class SelectFilters extends Component {
     })),
     /** callback to add a filter to the list of active filters */
     addFilter: PropTypes.func,
+    /** Object of custom react-select styles */
+    selectStyles: PropTypes.object,
   }
   static defaultProps = {
     filters: [],
+    selectStyles: {},
   }
   render() {
-    if (this.props.filters.length === 0) { return null }
+    const {filters, addFilter, selectStyles} = this.props
+    if (filters.length === 0) { return null }
 
-    let quickFilters = this.props.filters.filter(filter =>
+    let quickFilters = filters.filter(filter =>
       !filter.active && !filter.alwaysVisible
     )
     quickFilters = quickFilters.sort(sortByName)
@@ -38,9 +42,10 @@ class SelectFilters extends Component {
         options={quickFilters}
         valueKey="filterKey"
         labelKey="name"
-        onChange={this.props.addFilter}
-        placeholder="Add Filter"
+        onChange={addFilter}
+        placeholder="Add filter"
         className="objectlist-select-filter"
+        selectStyles={selectStyles}
       />
     )
   }

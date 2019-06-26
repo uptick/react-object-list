@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReactSelect, { components } from 'react-select'
 import ReactAsyncSelect from 'react-select/lib/Async'
+import { makeSelectStyles } from '../utils/functions'
 const {Option} = components
 
 // A searchable set of props to ignore when checking for
@@ -73,6 +74,11 @@ class Select extends React.Component {
     menuContainerStyle: PropTypes.object,
     value: PropTypes.any,
     inputProps: PropTypes.object,
+    selectStyles: PropTypes.object,
+  }
+
+  static defaultProps = {
+    selectStyles: {},
   }
 
   state = {
@@ -83,6 +89,11 @@ class Select extends React.Component {
     this.setState({startedTyping: !!inputValue.length})
   }
 
+  makeSelectStyles = (base, state) => {
+    const {selectStyles} = this.props
+    return makeSelectStyles(base, state, selectStyles)
+  }
+
   render() {
     const {
       isAsync = false,
@@ -91,6 +102,7 @@ class Select extends React.Component {
       menuContainerStyle,
       optionRenderer,
       inputProps,
+      selectStyles,
       ...otherProps
     } = this.props
 
@@ -153,9 +165,9 @@ class Select extends React.Component {
     if (Object.keys(components).length > 0) {
       nextProps.components = components
     }
-
     // Style overrides are a bit trickier too.
-    const styles = {
+    const hasSelectStyles = Object.keys(selectStyles).length > 0
+    let styles = {
       control: (base, state) => ({
         ...base,
         backgroundColor: '#fff',
@@ -180,6 +192,11 @@ class Select extends React.Component {
         fontSize: '90%',
       }),
     }
+
+    if (hasSelectStyles) {
+      styles = this.makeSelectStyles()
+    }
+
     if (menuStyle) {
       styles.menu = (base, state) => ({...base, ...menuStyle})
     }
@@ -200,6 +217,7 @@ class Select extends React.Component {
 class AsyncSelect extends React.Component {
   static propTypes = {
     noResultsText: PropTypes.string,
+    selectStyles: PropTypes.object,
   }
 
   render() {

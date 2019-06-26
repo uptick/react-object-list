@@ -97,6 +97,8 @@ class ObjectList extends Component {
       CheckboxChecked: PropTypes.element,
       CheckboxUnchecked: PropTypes.element,
     }),
+    /** Object of custom react-select styles */
+    selectStyles: PropTypes.object,
   }
 
   static defaultProps = {
@@ -114,6 +116,7 @@ class ObjectList extends Component {
     meta: {},
     selection: {},
     itemSingleName: 'item',
+    selectStyles: {},
   }
 
   state = {
@@ -138,8 +141,9 @@ class ObjectList extends Component {
       favourites, handleDeleteFavourite, handleAddFavourite, favouritesEnabled,
       selectedFavouriteName, loadFavourite, maxPages, removeFilter,
       updatePage, updateSorting, selection, selectItems, customActions, error,
-      summaryData,
+      summaryData, selectStyles,
     } = this.props
+
     const { itemSingleName, itemPluralName } = this.state
     const { totalCount, perPage, currentPage } = meta
     const numSelected = selection === ALL_SELECTED ? totalCount : Object.keys(selection).length
@@ -171,6 +175,7 @@ class ObjectList extends Component {
           deselectAll={selectItems && this.deselectAll}
           numSelected={numSelected}
           customActions={customActions}
+          selectStyles={selectStyles}
         />
         <ErrorMessage
           error={error}

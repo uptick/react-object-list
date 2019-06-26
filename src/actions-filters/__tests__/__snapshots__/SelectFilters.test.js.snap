@@ -17,7 +17,7 @@ exports[`<SelectFilters /> Snapshot renders correctly 1`] = `
       },
     ]
   }
-  placeholder="Add Filter"
+  placeholder="Add filter"
   styles={
     Object {
       "control": [Function],

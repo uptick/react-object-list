@@ -24,7 +24,7 @@
     "watch": "webpack --mode development --watch",
     "test": "jest",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "prepublish": "yarn build && mkdir -p styles && cp src/*.sass styles"
+    "prepublish": "yarn build && mkdir -p styles && cp src/resources/*.sass styles"
   },
   "author": "Uptick Pty Ltd (http://uptickhq.com)",
   "license": "MIT",
@@ -39,6 +39,7 @@
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.4",
+    "babel-plugin-require-context-hook": "^1.0.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
@@ -49,7 +50,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.1",
-    "eslint": "^5.4.0",
+    "eslint": "^6.0.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-react": "^7.0.2",
     "eslint-plugin-babel": "^5.1.0",
@@ -76,8 +77,8 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.2",
     "url-loader": "^1.0.1",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.10"
+    "webpack": "4.20.2",
+    "webpack-cli": "3.1.2"
   },
   "peerDependencies": {
     "classnames": "^2.2.5",

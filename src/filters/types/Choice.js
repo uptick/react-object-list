@@ -30,6 +30,8 @@ class Choice extends React.Component {
     loadOptions: PropTypes.func,
     /** If remote true, this is set to automatically load options */
     autoload: PropTypes.bool,
+    /** Object of custom react-select styles */
+    selectStyles: PropTypes.object,
   }
 
   static defaultProps = {
@@ -40,6 +42,7 @@ class Choice extends React.Component {
     valueKey: 'value',
     labelKey: 'label',
     optionRenderer: null,
+    selectStyles: {},
   }
 
   state = {
@@ -108,7 +111,7 @@ class Choice extends React.Component {
     const {
       options, multi, placeholder,
       valueKey, labelKey, optionRenderer,
-      remote, autoload,
+      remote, autoload, selectStyles,
     } = this.props
     const { value } = this.state
     const SelectComponent = remote ? Select.Async : Select
@@ -125,6 +128,7 @@ class Choice extends React.Component {
         labelKey={labelKey}
         optionRenderer={optionRenderer}
         className="objectlist-current-filter__active-status"
+        selectStyles={selectStyles}
       />
     )
   }

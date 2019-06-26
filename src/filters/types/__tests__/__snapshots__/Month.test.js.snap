@@ -2,6 +2,7 @@
 
 exports[`Month Snapshots has format 1`] = `
 <MonthPicker
+  className="react-month-picker"
   lang={
     Object {
       "months": Array [
@@ -47,6 +48,7 @@ exports[`Month Snapshots has format 1`] = `
 
 exports[`Month Snapshots has maxYear 1`] = `
 <MonthPicker
+  className="react-month-picker"
   lang={
     Object {
       "months": Array [
@@ -92,6 +94,7 @@ exports[`Month Snapshots has maxYear 1`] = `
 
 exports[`Month Snapshots has minYear 1`] = `
 <MonthPicker
+  className="react-month-picker"
   lang={
     Object {
       "months": Array [
@@ -137,6 +140,7 @@ exports[`Month Snapshots has minYear 1`] = `
 
 exports[`Month Snapshots has null value 1`] = `
 <MonthPicker
+  className="react-month-picker"
   lang={
     Object {
       "months": Array [
@@ -177,6 +181,7 @@ exports[`Month Snapshots has null value 1`] = `
 
 exports[`Month Snapshots has undefined value 1`] = `
 <MonthPicker
+  className="react-month-picker"
   lang={
     Object {
       "months": Array [
@@ -222,6 +227,7 @@ exports[`Month Snapshots has undefined value 1`] = `
 
 exports[`Month Snapshots renders default 1`] = `
 <MonthPicker
+  className="react-month-picker"
   lang={
     Object {
       "months": Array [

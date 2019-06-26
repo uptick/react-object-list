@@ -12,11 +12,10 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         className="objectlist-select-filter"
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
-        onChange={undefined}
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
-        placeholder="Add Filter"
+        placeholder="Add filter"
         styles={
           Object {
             "control": [Function],
@@ -125,7 +124,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         :
       </label>
       <div
-        className="month-picker "
+        className="month-picker react-month-picker"
       >
         <input
           className="objectlist-input objectlist-input--wide"
@@ -136,11 +135,10 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           value="Jul 2017"
         />
         <div
-          className="rmp-container rmp-table  "
+          className="rmp-container rmp-table react-month-picker "
         >
           <div
             className="rmp-overlay"
-            disabled={undefined}
             onClick={[Function]}
             onTouchCancel={[Function]}
             onTouchEnd={[Function]}
@@ -333,7 +331,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <div
@@ -348,7 +345,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
           className="objectlist-input objectlist-input--currency"
           onChange={[Function]}
           type="text"
-          value={undefined}
         />
         <span
           className="objectlist-currency-filter__decimal"
@@ -387,7 +383,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -416,7 +412,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         loadOptions={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -576,7 +571,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -808,7 +803,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -851,7 +845,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -864,7 +858,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <Select.Async
@@ -878,7 +871,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer default view 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -1046,11 +1038,10 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         className="objectlist-select-filter"
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
-        onChange={undefined}
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
-        placeholder="Add Filter"
+        placeholder="Add filter"
         styles={
           Object {
             "control": [Function],
@@ -1159,7 +1150,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         :
       </label>
       <div
-        className="month-picker "
+        className="month-picker react-month-picker"
       >
         <input
           className="objectlist-input objectlist-input--wide"
@@ -1170,11 +1161,10 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
           value="Jul 2017"
         />
         <div
-          className="rmp-container rmp-table  "
+          className="rmp-container rmp-table react-month-picker "
         >
           <div
             className="rmp-overlay"
-            disabled={undefined}
             onClick={[Function]}
             onTouchCancel={[Function]}
             onTouchEnd={[Function]}
@@ -1367,7 +1357,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <div
@@ -1382,7 +1371,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
           className="objectlist-input objectlist-input--currency"
           onChange={[Function]}
           type="text"
-          value={undefined}
         />
         <span
           className="objectlist-currency-filter__decimal"
@@ -1421,7 +1409,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -1450,7 +1438,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         loadOptions={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -1610,7 +1597,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -1842,7 +1829,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -1885,7 +1871,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -1898,7 +1884,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <Select.Async
@@ -1912,7 +1897,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has one item 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -2006,11 +1990,10 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         className="objectlist-select-filter"
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
-        onChange={undefined}
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
-        placeholder="Add Filter"
+        placeholder="Add filter"
         styles={
           Object {
             "control": [Function],
@@ -2119,7 +2102,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         :
       </label>
       <div
-        className="month-picker "
+        className="month-picker react-month-picker"
       >
         <input
           className="objectlist-input objectlist-input--wide"
@@ -2130,11 +2113,10 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
           value="Jul 2017"
         />
         <div
-          className="rmp-container rmp-table  "
+          className="rmp-container rmp-table react-month-picker "
         >
           <div
             className="rmp-overlay"
-            disabled={undefined}
             onClick={[Function]}
             onTouchCancel={[Function]}
             onTouchEnd={[Function]}
@@ -2327,7 +2309,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <div
@@ -2342,7 +2323,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
           className="objectlist-input objectlist-input--currency"
           onChange={[Function]}
           type="text"
-          value={undefined}
         />
         <span
           className="objectlist-currency-filter__decimal"
@@ -2381,7 +2361,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -2410,7 +2390,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         loadOptions={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -2570,7 +2549,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -2785,7 +2764,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -2828,7 +2806,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -2841,7 +2819,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <Select.Async
@@ -2855,7 +2832,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search 1`] = `
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -2928,11 +2904,10 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         className="objectlist-select-filter"
         getOptionLabel={[Function]}
         getOptionValue={[Function]}
-        onChange={undefined}
         onInputChange={[Function]}
         openMenuOnClick={true}
         options={Array []}
-        placeholder="Add Filter"
+        placeholder="Add filter"
         styles={
           Object {
             "control": [Function],
@@ -3041,7 +3016,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         :
       </label>
       <div
-        className="month-picker "
+        className="month-picker react-month-picker"
       >
         <input
           className="objectlist-input objectlist-input--wide"
@@ -3052,11 +3027,10 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
           value="Jul 2017"
         />
         <div
-          className="rmp-container rmp-table  "
+          className="rmp-container rmp-table react-month-picker "
         >
           <div
             className="rmp-overlay"
-            disabled={undefined}
             onClick={[Function]}
             onTouchCancel={[Function]}
             onTouchEnd={[Function]}
@@ -3249,7 +3223,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <div
@@ -3264,7 +3237,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
           className="objectlist-input objectlist-input--currency"
           onChange={[Function]}
           type="text"
-          value={undefined}
         />
         <span
           className="objectlist-currency-filter__decimal"
@@ -3303,7 +3275,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -3332,7 +3304,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         loadOptions={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -3492,7 +3463,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -3707,7 +3678,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {
@@ -3750,7 +3720,7 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
                 "value": "is",
               },
               Object {
-                "label": "Is Not",
+                "label": "Is not",
                 "value": "is_not",
               },
             ]
@@ -3763,7 +3733,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
               "multiValueLabel": [Function],
             }
           }
-          value={undefined}
         />
       </div>
       <Select.Async
@@ -3777,7 +3746,6 @@ exports[`Storyshots object-list/ActionsFiltersContainer has search with value 1`
         noOptionsMessage={[Function]}
         onChange={[Function]}
         onInputChange={[Function]}
-        options={undefined}
         placeholder="Any value"
         styles={
           Object {

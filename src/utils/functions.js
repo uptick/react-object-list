@@ -120,6 +120,17 @@ const sortByName = (a, b) => {
   return ((textA < textB) ? -1 : (textA > textB) ? 1 : 0)
 }
 
+const makeSelectStyles = (base, state, selectStyles = {}) => {
+  const styles = {}
+  Object.keys(selectStyles).forEach(s => {
+    styles[s] = (base, state) => ({
+      ...base,
+      ...selectStyles[s] || {},
+    })
+  })
+  return styles
+}
+
 export {
   _getTreeDepth,
   getLeafColumns,
@@ -127,4 +138,5 @@ export {
   annotateSpans,
   getVisibleColumns,
   sortByName,
+  makeSelectStyles,
 }

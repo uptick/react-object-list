@@ -11,7 +11,7 @@ export default class RemoteMultiChoiceFilter extends React.Component {
     multi: true,
     comparisonOptions: [
       {value: 'is', label: 'Is'},
-      {value: 'is_not', label: 'Is Not'},
+      {value: 'is_not', label: 'Is not'},
     ],
   }
   render() {

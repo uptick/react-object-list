@@ -9,8 +9,8 @@ branches:
 env:
   matrix:
     - TASK=nojsx
-    - TASK=jest
-    - TASK=eslint
+    - TASK=jest NODE_VERSION=v8.15.0 YARN_VERSION=1.13.0
+    - TASK=eslint NODE_VERSION=v8.15.0
     - TASK=build
 
 install:
@@ -19,8 +19,8 @@ install:
       yarn install;
 
     elif [ $TASK = eslint ]; then
-      npm install -g
-        eslint
+      npm i eslint
+        eslint-plugin-react-hooks
         eslint-plugin-promise
         eslint-plugin-standard
         eslint-config-standard

@@ -38,7 +38,7 @@ exports[`HeaderField Snapshots renders sorted asc 1`] = `
     className="sort-direction text-primary"
   >
      
-    ▲
+    ̭
   </span>
 </div>
 `;
@@ -54,7 +54,7 @@ exports[`HeaderField Snapshots renders sorted desc 1`] = `
     className="sort-direction text-primary"
   >
      
-    ▼
+    ̬
   </span>
 </div>
 `;

@@ -86,7 +86,7 @@ exports[`Storyshots object-list/SelectFilters default view 1`] = `
       },
     ]
   }
-  placeholder="Add Filter"
+  placeholder="Add filter"
   styles={
     Object {
       "control": [Function],

@@ -23,4 +23,5 @@ export {
   setColumnLabels,
   sortByName,
   getLeafColumns,
+  makeSelectStyles,
 } from './functions'
