@@ -16,7 +16,7 @@ export default class HeaderField extends React.Component {
     /** class names that can be used for additional styling of the component */
     className: PropTypes.string,
     /** the text displayed within the component */
-    header: PropTypes.oneOfType([PropTypes.string, PropTypes.func]).isRequired,
+    header: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
     /** Icon to render to sort ascending */
     SortAscIcon: PropTypes.element,
     /** Icon to render to sort descending */
@@ -31,6 +31,7 @@ export default class HeaderField extends React.Component {
     SortAscIcon: <React.Fragment>&#813;</React.Fragment>,
     SortDescIcon: <React.Fragment>&#812;</React.Fragment>,
     UnsortedIcon: null,
+    header: '',
   }
 
   /**
