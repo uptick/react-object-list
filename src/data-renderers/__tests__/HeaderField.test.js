@@ -78,6 +78,10 @@ describe('HeaderField', () => {
         const instance = shallow(<HeaderField {...baseProps} header={headerText} />).instance()
         expect(instance._renderHeader()).toBe(headerText)
       })
+      it('is a string when nothing is passed in', () => {
+        const instance = shallow(<HeaderField {...baseProps} />).instance()
+        expect(instance._renderHeader()).toBe('')
+      })
       it('is something else', () => {
         spyOn(console, 'error')
         const headerThing = 99
