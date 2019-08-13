@@ -24,6 +24,9 @@ describe('HeaderField', () => {
     it('renders with fa-sort icon', () => {
       snapshotTest(<HeaderField {...props} sortKey="🍰" activeSort={null} />)
     })
+    it('renders with empty header', () => {
+      snapshotTest(<HeaderField dataKey={props.dataKey} sortKey="🍰" activeSort={null} />)
+    })
   })
   describe('Functions', () => {
     describe('handles click', () => {
