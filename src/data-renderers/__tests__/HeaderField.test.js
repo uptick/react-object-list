@@ -24,6 +24,9 @@ describe('HeaderField', () => {
     it('renders with fa-sort icon', () => {
       snapshotTest(<HeaderField {...props} sortKey="🍰" activeSort={null} />)
     })
+    it('renders with empty header', () => {
+      snapshotTest(<HeaderField dataKey={props.dataKey} sortKey="🍰" activeSort={null} />)
+    })
   })
   describe('Functions', () => {
     describe('handles click', () => {
@@ -74,6 +77,10 @@ describe('HeaderField', () => {
         const headerText = 'Yellow Brick Road'
         const instance = shallow(<HeaderField {...baseProps} header={headerText} />).instance()
         expect(instance._renderHeader()).toBe(headerText)
+      })
+      it('is a string when nothing is passed in', () => {
+        const instance = shallow(<HeaderField {...baseProps} />).instance()
+        expect(instance._renderHeader()).toBe('')
       })
       it('is something else', () => {
         spyOn(console, 'error')

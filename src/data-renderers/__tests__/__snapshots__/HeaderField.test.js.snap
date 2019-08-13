@@ -59,6 +59,21 @@ exports[`HeaderField Snapshots renders sorted desc 1`] = `
 </div>
 `;
 
+exports[`HeaderField Snapshots renders with empty header 1`] = `
+<div
+  className={undefined}
+  onClick={[Function]}
+  role="button"
+>
+  
+  <span
+    className="sort-direction text-primary"
+  >
+     
+  </span>
+</div>
+`;
+
 exports[`HeaderField Snapshots renders with fa-sort icon 1`] = `
 <div
   className={undefined}
