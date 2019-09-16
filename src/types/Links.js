@@ -9,6 +9,10 @@ class Links extends React.Component {
   static propTypes = {
     viewUrl: PropTypes.string,
     editUrl: PropTypes.string,
+    extra: PropTypes.arrayOf(PropTypes.shape({
+      url: PropTypes.string,
+      text: PropTypes.string,
+    })),
   }
 
   render() {
@@ -38,6 +42,17 @@ class Links extends React.Component {
         </a>
       )
     }
+    this.props.extra.forEach(({url, text}, i) => {
+      links.push(
+        <a
+          className="btn btn-sm btn-link"
+          href={url}
+          key={`ex-${i}`}
+        >
+          {text}
+        </a>
+      )
+    })
     return (
       <div
         className="list-actions text-xs-right"
