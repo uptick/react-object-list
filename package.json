@@ -1,6 +1,6 @@
 {
   "name": "react-object-list",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "React component to display an array of object data in a filterable view",
   "repository": {
     "url": "https://github.com/uptick/react-object-list",
