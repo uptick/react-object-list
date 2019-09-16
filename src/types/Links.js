@@ -15,6 +15,10 @@ class Links extends React.Component {
     })),
   }
 
+  static defaultProps = {
+    extra: [],
+  }
+
   render() {
     const links = []
     if (this.props.viewUrl) {
