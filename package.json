@@ -1,6 +1,6 @@
 {
   "name": "react-object-list",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "React component to display an array of object data in a filterable view",
   "repository": {
     "url": "https://github.com/uptick/react-object-list",
@@ -10,6 +10,7 @@
   "files": [
     "main.js",
     "styles",
+    "dist",
     "filters.js",
     "cells.js",
     "renderers.js",
@@ -19,7 +20,9 @@
   "main": "main.js",
   "scripts": {
     "publish-demo": "git branch -D gh-pages; git push origin --delete gh-pages; git checkout -b gh-pages; cd demo-site; yarn; npm run build; cd ..; git add .; git add -f demo-site/dist; git add -f demo-site/node_modules/uptick-demo-site/dist; git commit -m \"Demo site build\"; git push origin gh-pages; git checkout master; git push origin `git subtree split --prefix demo-site gh-pages`:gh-pages --force;",
-    "build": "webpack --mode production",
+    "build:js": "webpack --mode production",
+    "build:css": "npx node-sass styles/main.sass dist/react-object-table.css",
+    "build": "yarn build:js && yarn build:css",
     "dev": "webpack --mode development",
     "watch": "webpack --mode development --watch",
     "test": "jest",
@@ -63,7 +66,7 @@
     "file-loader": "^1.1.11",
     "jest": "^22.4.2",
     "moment": "^2.21.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.12.0",
     "peer-deps-externals-webpack-plugin": "^1.0.2",
     "prop-types": "^15.6.1",
     "raf": "^3.4.0",
