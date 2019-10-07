@@ -1,5 +1,5 @@
 node_modules/
-dist/*.css
+dist/
 demo-site/_site/
 /cells.js
 /filters.js
