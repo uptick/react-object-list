@@ -22,7 +22,7 @@ yarn add react-object-list
 ```
 Ensure you have all peer dependencies installed
 ```
-yarn add classnames moment prop-types react-day-picker react-month-picker react-select
+yarn add classnames moment prop-types react-month-picker react-select
 ```
 
 

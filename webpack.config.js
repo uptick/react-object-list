@@ -57,9 +57,6 @@ module.exports = {
       ],
     }],
   },
-  externals: [
-    /react-day-picker.*/,
-  ],
   plugins: [
     extractSass,
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
