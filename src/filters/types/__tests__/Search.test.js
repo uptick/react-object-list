@@ -51,7 +51,7 @@ describe('Search', () => {
     it('schedules update', () => {
       instance.setState({currentValue: 'Bob', updateScheduled: null})
       instance.scheduleUpdate()
-      expect(setTimeout).toHaveBeenCalledTimes(1)
+      expect(setTimeout).toHaveBeenCalledTimes(2)
       expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), baseProps.updateDelay)
       expect(typeof instance.state.updateScheduled).toBe('number')
       expect(instance.state.updateScheduled % 1).toBe(0)

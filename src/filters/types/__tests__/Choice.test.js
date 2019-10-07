@@ -107,7 +107,7 @@ describe('Choice', () => {
           const loadSpy = jasmine.createSpy()
           const instance = shallow(<Choice {...baseProps} remote loadOptions={loadSpy} />).instance()
           instance.scheduleLoadOptions(1, 2)
-          expect(setTimeout).toHaveBeenCalledTimes(1)
+          expect(setTimeout).toHaveBeenCalledTimes(2)
           expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 450)
           expect(typeof instance.state.fetchScheduled).toBe('number')
           expect(instance.state.fetchScheduled % 1).toBe(0)
