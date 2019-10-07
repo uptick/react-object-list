@@ -7,7 +7,6 @@ demo-site/_site/
 /renderers.js
 /utils.js
 /icons.js
-styles/
 coverage/
 .vscode/
 .DS_Store
