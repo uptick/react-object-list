@@ -4003,7 +4003,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5:
+classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -4659,6 +4659,11 @@ data-urls@^1.0.0:
     abab "^2.0.0"
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
+
+date-fns@^2.3.0, date-fns@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.4.1.tgz#b53f9bb65ae6bd9239437035710e01cf383b625e"
+  integrity sha512-2RhmH/sjDSCYW2F3ZQxOUx/I7PvzXpi89aQL2d3OAxSTwLx6NilATeUbe0menFE3Lu5lFkOFci36ivimwYHHxw==
 
 date-now@^0.1.4:
   version "0.1.4"
@@ -6509,6 +6514,11 @@ https-proxy-agent@^2.2.1:
     agent-base "^4.3.0"
     debug "^3.1.0"
 
+humanize-duration@^3.20.1:
+  version "3.21.0"
+  resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.21.0.tgz#ae5dc7e67640770cbf6a8d03a5d1138d47c7ce38"
+  integrity sha512-7BLsrQZ2nMGeakmGDUl1pDne6/7iAdvwf1RtDLCOPHNFIHjkOVW7lcu7xHkIM9HhZAlSSO5crhC1dHvtl4dIQw==
+
 iconv-lite@0.4.24, iconv-lite@^0.4.24, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -8342,6 +8352,18 @@ minizlib@^1.2.1:
   dependencies:
     minipass "^2.9.0"
 
+mireco@^0.0.20:
+  version "0.0.20"
+  resolved "https://registry.yarnpkg.com/mireco/-/mireco-0.0.20.tgz#849c78dad04f1527318a7c9b21a1d9861f3a01f1"
+  integrity sha512-Y2U5ZxF3uUZGI58fXNhiszUlNWw/zi71DNKE7EMEktzRCSHIGRCOIqkEBJcLXNIpvHT1gO0Lox0M3h108E8BaA==
+  dependencies:
+    classnames "^2.2.6"
+    date-fns "^2.3.0"
+    humanize-duration "^3.20.1"
+    parse-duration "^0.1.1"
+    prop-types "^15.7.2"
+    react-textarea-autosize "^7.1.0"
+
 mississippi@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/mississippi/-/mississippi-2.0.0.tgz#3442a508fafc28500486feea99409676e4ee5a6f"
@@ -9069,6 +9091,11 @@ parse-asn1@^5.0.0:
     evp_bytestokey "^1.0.0"
     pbkdf2 "^3.0.3"
     safe-buffer "^5.1.1"
+
+parse-duration@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/parse-duration/-/parse-duration-0.1.1.tgz#13114ddc9891c1ecd280036244554de43647a226"
+  integrity sha1-ExFN3JiRwezSgANiRFVN5DZHoiY=
 
 parse-glob@^3.0.4:
   version "3.0.4"
@@ -9919,13 +9946,6 @@ react-color@^2.14.1:
     reactcss "^1.2.0"
     tinycolor2 "^1.4.1"
 
-react-day-picker@^7.1.1:
-  version "7.3.2"
-  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-7.3.2.tgz#b9b9b0000ba53b2c9df9bccb79664862aba6b60a"
-  integrity sha512-mij2j2Un/v2V2ow+hf/hFBMdl6Eis/C/YhBtlI6Xpbvh3Q6WMix78zEkCdw6i9GldafOrpnupWKofv/h5oSI4g==
-  dependencies:
-    prop-types "^15.6.2"
-
 react-dev-utils@^6.1.0:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-6.1.1.tgz#a07e3e8923c4609d9f27e5af5207e3ca20724895"
@@ -10081,7 +10101,7 @@ react-test-renderer@^16.0.0-0, react-test-renderer@^16.2.0:
     react-is "^16.8.6"
     scheduler "^0.16.2"
 
-react-textarea-autosize@^7.0.4:
+react-textarea-autosize@^7.0.4, react-textarea-autosize@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/react-textarea-autosize/-/react-textarea-autosize-7.1.0.tgz#3132cb77e65d94417558d37c0bfe415a5afd3445"
   integrity sha512-c2FlR/fP0qbxmlrW96SdrbgP/v0XZMTupqB90zybvmDVDutytUgPl7beU35klwcTeMepUIQEpQUn3P3bdshGPg==
