@@ -271,7 +271,7 @@ exports[`Storyshots object-list/Filters DateFilter 1`] = `
     />
   </div>
   <div
-    className="MIRECO-date right-hang uptick-MIRECO"
+    className="MIRECO-date right-hang objectlist-input__container uptick-MIRECO"
     onBlur={[Function]}
     style={
       Object {

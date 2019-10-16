@@ -74,14 +74,9 @@ export default class DateComponent extends React.Component {
       dateChoice = (
         <DateInput
           placeholder={date}
-          classNames={{
-            container: 'objectlist-input__container',
-            overlayWrapper: 'objectlist-input__daypicker',
-            overlay: '',
-          }}
           value={date}
           onChange={this.props.onChange}
-          className="uptick-MIRECO"
+          className="objectlist-input__container uptick-MIRECO"
           rightHang
         />
       )

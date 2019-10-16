@@ -2,7 +2,7 @@
 
 exports[`Date Snapshots has custom input format 1`] = `
 <div
-  className="MIRECO-date right-hang uptick-MIRECO"
+  className="MIRECO-date right-hang objectlist-input__container uptick-MIRECO"
   onBlur={[Function]}
   style={
     Object {
@@ -73,7 +73,7 @@ exports[`Date Snapshots has custom relative date options 1`] = `
 
 exports[`Date Snapshots has null value 1`] = `
 <div
-  className="MIRECO-date right-hang uptick-MIRECO"
+  className="MIRECO-date right-hang objectlist-input__container uptick-MIRECO"
   onBlur={[Function]}
   style={
     Object {
@@ -111,7 +111,7 @@ exports[`Date Snapshots has null value 1`] = `
 
 exports[`Date Snapshots renders default 1`] = `
 <div
-  className="MIRECO-date right-hang uptick-MIRECO"
+  className="MIRECO-date right-hang objectlist-input__container uptick-MIRECO"
   onBlur={[Function]}
   style={
     Object {
