@@ -271,17 +271,29 @@ exports[`Storyshots object-list/Filters DateFilter 1`] = `
     />
   </div>
   <div
-    className="objectlist-input__container"
+    className="MIRECO-date right-hang objectlist-input__container uptick-MIRECO"
+    onBlur={[Function]}
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+    tabIndex={-1}
   >
     <input
-      onBlur={[Function]}
+      className="MIRECO-text"
       onChange={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      placeholder="15/07/2017"
-      value="15/07/2017"
+      placeholder="dd/mm/yyyy"
+      style={
+        Object {
+          "marginBottom": "0",
+        }
+      }
+      type="text"
+      value=""
     />
   </div>
   <button

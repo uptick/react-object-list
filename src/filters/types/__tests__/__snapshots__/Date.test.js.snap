@@ -1,27 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Date Snapshots has custom input format 1`] = `
-<DayPickerInput
-  classNames={
+<div
+  className="MIRECO-date right-hang objectlist-input__container uptick-MIRECO"
+  onBlur={[Function]}
+  style={
     Object {
-      "container": "objectlist-input__container",
-      "overlay": "",
-      "overlayWrapper": "objectlist-input__daypicker",
+      "display": "inline-block",
     }
   }
-  clickUnselectsDay={true}
-  dayPickerProps={
-    Object {
-      "fixedWeeks": true,
+  tabIndex={-1}
+>
+  <input
+    autoFocus={undefined}
+    className="MIRECO-text"
+    disabled={undefined}
+    maxLength={undefined}
+    name={undefined}
+    onBlur={undefined}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={undefined}
+    placeholder="dd/mm/yyyy"
+    required={undefined}
+    size={undefined}
+    style={
+      Object {
+        "marginBottom": "0",
+      }
     }
-  }
-  format="DD/MM/YYYY"
-  formatDate={[Function]}
-  onDayChange={[Function]}
-  parseDate={[Function]}
-  placeholder="15th Jul 17"
-  value="15th Jul 17"
-/>
+    tabIndex={undefined}
+    type="text"
+    value=""
+  />
+</div>
 `;
 
 exports[`Date Snapshots has custom relative date options 1`] = `
@@ -58,51 +72,79 @@ exports[`Date Snapshots has custom relative date options 1`] = `
 `;
 
 exports[`Date Snapshots has null value 1`] = `
-<DayPickerInput
-  classNames={
+<div
+  className="MIRECO-date right-hang objectlist-input__container uptick-MIRECO"
+  onBlur={[Function]}
+  style={
     Object {
-      "container": "objectlist-input__container",
-      "overlay": "",
-      "overlayWrapper": "objectlist-input__daypicker",
+      "display": "inline-block",
     }
   }
-  clickUnselectsDay={true}
-  dayPickerProps={
-    Object {
-      "fixedWeeks": true,
+  tabIndex={-1}
+>
+  <input
+    autoFocus={undefined}
+    className="MIRECO-text"
+    disabled={undefined}
+    maxLength={undefined}
+    name={undefined}
+    onBlur={undefined}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={undefined}
+    placeholder=""
+    required={undefined}
+    size={undefined}
+    style={
+      Object {
+        "marginBottom": "0",
+      }
     }
-  }
-  format="DD/MM/YYYY"
-  formatDate={[Function]}
-  onDayChange={[Function]}
-  parseDate={[Function]}
-  placeholder=""
-  value=""
-/>
+    tabIndex={undefined}
+    type="text"
+    value=""
+  />
+</div>
 `;
 
 exports[`Date Snapshots renders default 1`] = `
-<DayPickerInput
-  classNames={
+<div
+  className="MIRECO-date right-hang objectlist-input__container uptick-MIRECO"
+  onBlur={[Function]}
+  style={
     Object {
-      "container": "objectlist-input__container",
-      "overlay": "",
-      "overlayWrapper": "objectlist-input__daypicker",
+      "display": "inline-block",
     }
   }
-  clickUnselectsDay={true}
-  dayPickerProps={
-    Object {
-      "fixedWeeks": true,
+  tabIndex={-1}
+>
+  <input
+    autoFocus={undefined}
+    className="MIRECO-text"
+    disabled={undefined}
+    maxLength={undefined}
+    name={undefined}
+    onBlur={undefined}
+    onChange={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={undefined}
+    placeholder="dd/mm/yyyy"
+    required={undefined}
+    size={undefined}
+    style={
+      Object {
+        "marginBottom": "0",
+      }
     }
-  }
-  format="DD/MM/YYYY"
-  formatDate={[Function]}
-  onDayChange={[Function]}
-  parseDate={[Function]}
-  placeholder="15/07/2017"
-  value="15/07/2017"
-/>
+    tabIndex={undefined}
+    type="text"
+    value=""
+  />
+</div>
 `;
 
 exports[`Date Snapshots renders with relative comparison 1`] = `

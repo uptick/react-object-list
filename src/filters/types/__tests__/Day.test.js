@@ -4,8 +4,6 @@ import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import Day from '../Day'
 
-jest.mock('react-day-picker/DayPickerInput', () => 'DayPickerInput')
-
 describe('Day', () => {
   const baseProps = {
     onChange: jest.fn(),

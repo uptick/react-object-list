@@ -61,4 +61,12 @@ module.exports = {
     extractSass,
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
   ],
+  resolve: {
+    modules: [
+      path.resolve('node_modules'),
+    ],
+    alias: {
+      mireco: path.resolve('..'),
+    },
+  },
 }

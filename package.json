@@ -96,6 +96,7 @@
     "react-select": "^2.0.0-beta.6"
   },
   "dependencies": {
-    "react-day-picker": "^7.1.1"
+    "date-fns": "^2.4.1",
+    "mireco": "^0.0.20"
   }
 }

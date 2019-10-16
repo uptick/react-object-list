@@ -3,8 +3,6 @@ import { shallow } from 'enzyme'
 import { snapshotTest } from 'utils/tests'
 import DateComponent from '../Date'
 
-jest.mock('react-day-picker/DayPickerInput', () => 'DayPickerInput')
-
 describe('Date', () => {
   const baseProps = {
     onChange: jest.fn(),
@@ -41,13 +39,8 @@ describe('Date', () => {
       })
       it('handles valid date', () => {
         const newValue = Date()
-        instance.handleDateValueChange(newValue)
+        instance.props.onChange(newValue)
         expect(baseProps.onChange).toHaveBeenCalledWith(newValue)
-      })
-      it('handles invalid date', () => {
-        const newValue = 'Invalid date'
-        instance.handleDateValueChange(newValue)
-        expect(baseProps.onChange).toHaveBeenCalledWith(null)
       })
     })
     describe('handles relative date changing', () => {

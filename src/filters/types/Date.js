@@ -1,33 +1,26 @@
 import React from 'react'
-import moment from 'moment'
 import PropTypes from 'prop-types'
+import { format } from 'date-fns'
 
 import Select from '../../utils/Select'
-
-import DayPickerInput from 'react-day-picker/DayPickerInput'
-import {
-  formatDate,
-  parseDate,
-} from 'react-day-picker/moment'
+import { Date as DateInput } from 'mireco'
+import { ISO_8601_DATE_FORMAT } from 'mireco/constants'
 
 /**
  * Filter input used to pass date values either fixed
  * or relative to the current date
  */
-class DateComponent extends React.Component {
+export default class DateComponent extends React.Component {
   static propTypes = {
     /** Function to be called when value changes */
     onChange: PropTypes.func,
     /** Current filter value */
     value: PropTypes.oneOfType([
       PropTypes.string,
-      PropTypes.instanceOf(Date),
       PropTypes.shape({value: PropTypes.string, label: PropTypes.string}),
     ]),
     /** Selected comparison */
     comparison: PropTypes.string.isRequired,
-    /** Format in which dates are inputted by/displayed to user */
-    inputFormat: PropTypes.string,
     /** Comparison used for fixed date */
     fixedComparison: PropTypes.shape({
       /** Value passed back */
@@ -47,7 +40,6 @@ class DateComponent extends React.Component {
   }
 
   static defaultProps = {
-    inputFormat: 'DD/MM/YYYY',
     relativeDateOptions: [
       {value: 'today', label: 'Today'},
       {value: 'week_start', label: 'Beginning of this week'},
@@ -55,19 +47,6 @@ class DateComponent extends React.Component {
       {value: 'year_start', label: 'Beginning of this year'},
     ],
     selectStyles: {},
-  }
-
-  /**
-   * Handles fixed date value changes.
-   * If value is not a valid date, sets to null.
-   * Calls onChange with new value
-   * @param  {Object} newValue Date to change to, moment object
-   */
-  handleDateValueChange = (newValue) => {
-    if (newValue === 'Invalid date') {
-      newValue = null
-    }
-    this.props.onChange(newValue)
   }
 
   /**
@@ -81,27 +60,24 @@ class DateComponent extends React.Component {
   }
 
   render() {
-    const { value, inputFormat, relativeDateOptions, comparison, fixedComparison, selectStyles } = this.props
-    const date = value === null ? '' : moment(value).format(inputFormat)
+    const { value, relativeDateOptions, comparison, fixedComparison, selectStyles } = this.props
+    let date
+    if (value === null) {
+      date = null
+    } else if (value instanceof Date && value.isValid()) {
+      date = format(value, ISO_8601_DATE_FORMAT)
+    } else if (typeof value === 'string') {
+      date = value
+    }
     let dateChoice
     if (comparison === fixedComparison.value) {
       dateChoice = (
-        <DayPickerInput
+        <DateInput
           placeholder={date}
-          format="DD/MM/YYYY"
-          classNames={{
-            container: 'objectlist-input__container',
-            overlayWrapper: 'objectlist-input__daypicker',
-            overlay: '',
-          }}
-          onDayChange={this.handleDateValueChange}
-          clickUnselectsDay
-          formatDate={formatDate}
-          parseDate={parseDate}
           value={date}
-          dayPickerProps={{
-            fixedWeeks: true,
-          }}
+          onChange={this.props.onChange}
+          className="objectlist-input__container uptick-MIRECO"
+          rightHang
         />
       )
     } else {
@@ -119,4 +95,3 @@ class DateComponent extends React.Component {
     return dateChoice
   }
 }
-export default DateComponent
