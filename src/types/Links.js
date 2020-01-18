@@ -59,7 +59,7 @@ class Links extends React.Component {
     })
     return (
       <div
-        className="list-actions text-xs-right"
+        className="list-actions"
       >
         {links}
       </div>
