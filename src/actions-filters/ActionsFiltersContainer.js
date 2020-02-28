@@ -158,13 +158,15 @@ class ActionsFilterContainer extends Component {
               />}
           </div>
         </div>
-        <FiltersContainer
-          filters={filters.filter(f => !search || f.filterKey !== searchKey)}
-          updateFilter={updateFilter}
-          removeFilter={removeFilter}
-          icons={icons}
-          selectStyles={selectStyles}
-        />
+        <div className="objectlist-filters">
+          <FiltersContainer
+            filters={filters.filter(f => !search || f.filterKey !== searchKey)}
+            updateFilter={updateFilter}
+            removeFilter={removeFilter}
+            icons={icons}
+            selectStyles={selectStyles}
+          />
+        </div>
         {/* TODO: render children below filters */}
         <div className="objectlist-row objectlist-row__actions">
           <div className="objectlist-column">
