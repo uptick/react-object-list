@@ -71,6 +71,8 @@ class ActionsFilterContainer extends Component {
     icons: PropTypes.object,
     /** Object of custom react-select styles */
     selectStyles: PropTypes.object,
+    /** Show item count if we are using data **/
+    showItemCount: PropTypes.bool,
   }
 
   static defaultProps = {
@@ -81,6 +83,7 @@ class ActionsFilterContainer extends Component {
     columns: [],
     status: STATUS_CHOICES.done,
     selectStyles: {},
+    showItemCount: true,
   }
 
   state = {
@@ -110,7 +113,7 @@ class ActionsFilterContainer extends Component {
       filters, updateFilter, removeFilter, status,
       updateColumns, loadFavourite, handleAddFavourite,
       selectedFavouriteName, handleDeleteFavourite, favourites,
-      selectStyles,
+      selectStyles, showItemCount,
     } = this.props
     const loading = status === STATUS_CHOICES.loading
     let search
@@ -141,7 +144,7 @@ class ActionsFilterContainer extends Component {
             <SelectFilters
               filters={filters.filter(f =>
                 (!search || f.filterKey !== searchKey) && // remove search filter
-                ((f.permanent !== undefined && !f.permanent) || (f.permanent === undefined && !f.Renderer.defaultProps.permanent)) // remove filters to display permanently
+                ((f.permanent !== undefined && !f.permanent) || (f.permanent === undefined && (!f.Renderer || !f.Renderer.defaultProps.permanent))) // remove filters to display permanently
               )}
               addFilter={this.props.addFilter}
               selectStyles={selectStyles}
@@ -170,11 +173,13 @@ class ActionsFilterContainer extends Component {
         {/* TODO: render children below filters */}
         <div className="objectlist-row objectlist-row__actions">
           <div className="objectlist-column">
-            <span className="objectlist-results-text">
-              {loading ? `Loading ${itemPluralName}...` : (
-                `${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount === 1 ? itemSingleName : itemPluralName} found`
-              )}
-            </span>
+            {showItemCount && (
+              <span className="objectlist-results-text">
+                {loading ? `Loading ${itemPluralName}...` : (
+                  `${totalCount ? totalCount.toLocaleString() : 'No'} ${totalCount === 1 ? itemSingleName : itemPluralName} found`
+                )}
+              </span>
+            )}
             {customActions[0] && customActions[0]({
               selection,
               itemCount,
