@@ -14,18 +14,22 @@ exports[`Favourites Snapshot renders correctly 1`] = `
     className="objectlist-dropdown__menu"
   >
     <FavouritesItem
+      RemoveFavouriteIcon={undefined}
       activeSort="-id"
       filters={Object {}}
       handleDelete={[MockFunction]}
       isSelected={false}
+      loadFavourite={undefined}
       name="Favourite 1"
       optionalFields={Object {}}
     />
     <FavouritesItem
+      RemoveFavouriteIcon={undefined}
       activeSort="-id"
       filters={Object {}}
       handleDelete={[MockFunction]}
       isSelected={false}
+      loadFavourite={undefined}
       name="Favourite 2"
       optionalFields={
         Object {

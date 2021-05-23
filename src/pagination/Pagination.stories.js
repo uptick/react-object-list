@@ -1,7 +1,8 @@
 import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions'
-import { boolean, number } from '@storybook/addon-knobs'
-
+import { withKnobs, boolean, number } from '@storybook/addon-knobs/react'
 
 import Pagination from './Pagination'
 
@@ -15,41 +16,37 @@ const props = {
   LoadingIcon: <i className="fas fa-circle-notch fa-spin" />,
 }
 
-export default {
-  title: 'object-list/Pagination',
-  component: Pagination,
-}
-
-export const Default = (args) => {
-  return <Pagination
-  {...props}
-  count={number('count', props.count, {range: true, min: 1, max: 100, step: 1})}
-  maxPages={10}
-  loading={boolean('loading', props.loading)}
-  goToPage={action(`Setting page to`)}
-/>
-}
-
-export const Loading = (args) => (
-  <Pagination
+storiesOf('object-list/Pagination', module)
+  .addDecorator((story, context) => withInfo(
+    'Pagination used at the bottom of the ObjectList'
+  )(story)(context))
+  .addDecorator(withKnobs)
+  .add('default view', () => (
+    <Pagination
+      {...props}
+      count={number('count', props.count, {range: true, min: 1, max: 100, step: 1})}
+      maxPages={10}
+      loading={boolean('loading', props.loading)}
+      goToPage={action(`Setting page to`)}
+    />
+  ))
+  .add('loading', () => (
+    <Pagination
       {...props}
       loading
       goToPage={action(`Setting page to`)}
-  />
-)
-
-export const Interactive = () => {
-  class PaginationWrapper extends React.Component {
-    state = {...props}
-    goToPage = (page) => {
-      this.setState(() => ({page}))
-      action('Setting page to')(page)
+    />
+  ))
+  .add('interactive', () => {
+    class PaginationWrapper extends React.Component {
+      state = {...props}
+      goToPage = (page) => {
+        this.setState(() => ({page}))
+        action('Setting page to')(page)
+      }
+      render() {
+        return <Pagination {...this.state} goToPage={this.goToPage} />
+      }
     }
-    render() {
-      return <Pagination {...this.state} goToPage={this.goToPage} />
-    }
-  }
-  
-  return (<PaginationWrapper />)
-}
-
+    return (<PaginationWrapper />)
+  })

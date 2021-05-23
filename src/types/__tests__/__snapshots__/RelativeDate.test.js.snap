@@ -10,6 +10,7 @@ exports[`RelativeDate type snapshot tests 1`] = `
   >
     <DatePart
       outputFormat="DD/MM/YYYY"
+      value={undefined}
     />
   </div>
 </div>

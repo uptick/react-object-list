@@ -1,2 +1,2 @@
-export {default as Table} from './Table'
-export { default as List } from './List'
+export Table from './Table'
+export List from './List'

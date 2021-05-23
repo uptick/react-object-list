@@ -1,7 +1,7 @@
 import React from 'react'
 import Moment from 'moment'
 import { shallow } from 'enzyme'
-import { snapshotTest } from '../../../utils/tests'
+import { snapshotTest } from 'utils/tests'
 import { SHORTDATE_FORMAT } from '../../utils'
 import { DateTime } from '../'
 

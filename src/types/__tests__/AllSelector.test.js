@@ -1,6 +1,8 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
-import { snapshotTest } from '../../../utils/tests'
+import {
+  snapshotTest,
+} from 'utils/tests'
 import { AllSelector } from '../'
 
 describe('Selector type', () => {

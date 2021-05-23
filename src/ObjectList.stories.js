@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-
+import { withInfo } from '@storybook/addon-info'
 import { action } from '@storybook/addon-actions'
 import * as importedFilters from './filters'
 import FontAwesomeIcons from './icons/FontAwesome'
@@ -40,8 +40,8 @@ const mockData = [
   {id: 2, name: 'Jim', age: 34, favouriteColour: 'red'},
   {id: 3, name: 'Jack', age: 16, favouriteColour: 'green'},
   {id: 4, name: 'Helen', age: 9, favouriteColour: 'orange'},
-  {id: 5, name: 'Eva', age: 35, favouriteColour: 'yellow'},
-  {id: 6, name: 'Mary', age: 18, favouriteColour: 'pink'},
+  {id: 5, name: 'Eva', age: 35, 'favouriteColour': 'yellow'},
+  {id: 6, name: 'Mary', age: 18, 'favouriteColour': 'pink'},
   {id: 7, name: 'Dan', age: 92, favouriteColour: 'black'},
   {id: 8, name: 'Jo', age: 72, favouriteColour: 'white'},
   {id: 9, name: 'Wayne', age: 68, favouriteColour: 'aqua'},
@@ -51,6 +51,9 @@ const mockData = [
 ]
 
 storiesOf('object-list', module)
+  .addDecorator((story, context) => withInfo(
+    'Main list component'
+  )(story)(context))
   .add('loading', () => (
     <ObjectList
       {...baseProps}

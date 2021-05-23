@@ -20,11 +20,15 @@ exports[`Table Snapshots can click on items 1`] = `
         >
           <AllSelector
             deselectAll={[Function]}
+            numSelected={undefined}
             selectAll={[Function]}
             total={5}
           />
         </th>
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Object {
               "_colSpan": 1,
@@ -43,8 +47,13 @@ exports[`Table Snapshots can click on items 1`] = `
           rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
+          updateSorting={undefined}
+          width={undefined}
         />
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Array [
               Object {
@@ -72,6 +81,7 @@ exports[`Table Snapshots can click on items 1`] = `
           rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
+          updateSorting={undefined}
           width={50}
         />
       </tr>
@@ -237,11 +247,15 @@ exports[`Table Snapshots can select items 1`] = `
         >
           <AllSelector
             deselectAll={[Function]}
+            numSelected={undefined}
             selectAll={[Function]}
             total={5}
           />
         </th>
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Object {
               "_colSpan": 1,
@@ -260,8 +274,13 @@ exports[`Table Snapshots can select items 1`] = `
           rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
+          updateSorting={undefined}
+          width={undefined}
         />
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Array [
               Object {
@@ -289,6 +308,7 @@ exports[`Table Snapshots can select items 1`] = `
           rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
+          updateSorting={undefined}
           width={50}
         />
       </tr>
@@ -449,6 +469,9 @@ exports[`Table Snapshots renders default 1`] = `
     >
       <tr>
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Object {
               "_colSpan": 1,
@@ -467,8 +490,13 @@ exports[`Table Snapshots renders default 1`] = `
           rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
+          updateSorting={undefined}
+          width={undefined}
         />
         <TableHeader
+          SortAscIcon={undefined}
+          SortDescIcon={undefined}
+          UnsortedIcon={undefined}
           headerItems={
             Array [
               Object {
@@ -496,6 +524,7 @@ exports[`Table Snapshots renders default 1`] = `
           rowSpan={1}
           saveWidth={[MockFunction]}
           sortKeys={Array []}
+          updateSorting={undefined}
           width={50}
         />
       </tr>

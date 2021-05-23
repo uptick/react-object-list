@@ -13,6 +13,8 @@ exports[`<OptionalFields /> Snapshot renders correctly 1`] = `
     className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
   >
     <OptionalField
+      CheckboxCheckedIcon={undefined}
+      CheckboxUnCheckedIcon={undefined}
       className="objectlist-dropdown__item"
       enabled={true}
       fieldKey="a"
@@ -20,6 +22,8 @@ exports[`<OptionalFields /> Snapshot renders correctly 1`] = `
       onChange={[MockFunction]}
     />
     <OptionalField
+      CheckboxCheckedIcon={undefined}
+      CheckboxUnCheckedIcon={undefined}
       className="objectlist-dropdown__item"
       enabled={false}
       fieldKey="c"
@@ -43,6 +47,8 @@ exports[`<OptionalFields /> Snapshot renders correctly 2`] = `
     className="objectlist-dropdown__menu objectlist-dropdown__menu--borderless"
   >
     <OptionalField
+      CheckboxCheckedIcon={undefined}
+      CheckboxUnCheckedIcon={undefined}
       className="objectlist-dropdown__item"
       enabled={true}
       fieldKey="a"
@@ -50,6 +56,8 @@ exports[`<OptionalFields /> Snapshot renders correctly 2`] = `
       onChange={[MockFunction]}
     />
     <OptionalField
+      CheckboxCheckedIcon={undefined}
+      CheckboxUnCheckedIcon={undefined}
       className="objectlist-dropdown__item"
       enabled={false}
       fieldKey="c"

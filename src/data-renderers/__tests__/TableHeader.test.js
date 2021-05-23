@@ -1,6 +1,6 @@
 import React from 'react'
-import { mount } from 'enzyme'
-import { snapshotTest } from '../../../utils/tests'
+import { shallow } from 'enzyme'
+import { snapshotTest } from 'utils/tests'
 import TableHeader from '../TableHeader'
 
 jest.mock('../HeaderField', () => 'HeaderField')
@@ -31,45 +31,45 @@ describe('Table Header', () => {
   })
 
   describe('Functions', () => {
-    // it('will recieve props as array', () => {
-    //   const props = {
-    //     headerItems: headerItem,
-    //   }
-    //   const nextProps = {
-    //     headerItems: [{...headerItem, dataKey: 'somethingelse'}],
-    //   }
-    //   const instance = shallow(<TableHeader {...props} />).instance()
-    //   instance.componentWillReceiveProps(nextProps)
-    //   expect(instance.state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
-    // })
-    // it('will recieve props as non-array', () => {
-    //   const props = {
-    //     headerItems: headerItem,
-    //   }
-    //   const nextProps = {
-    //     headerItems: {...headerItem, dataKey: 'somethingelse'},
-    //   }
-    //   const instance = shallow(<TableHeader {...props} />).instance()
-    //   instance.componentWillReceiveProps(nextProps)
-    //   expect(instance.state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
-    // })
-    // it('will recieve same props', () => {
-    //   const props = {
-    //     headerItems: headerItem,
-    //   }
-    //   const nextProps = {
-    //     headerItems: headerItem,
-    //   }
-    //   const instance = shallow(<TableHeader {...props} />).instance()
-    //   instance.componentWillReceiveProps(nextProps)
-    //   expect(instance.state.headerItems).toEqual([headerItem])
-    // })
+    it('will recieve props as array', () => {
+      const props = {
+        headerItems: headerItem,
+      }
+      const nextProps = {
+        headerItems: [{...headerItem, dataKey: 'somethingelse'}],
+      }
+      const instance = shallow(<TableHeader {...props} />).instance()
+      instance.componentWillReceiveProps(nextProps)
+      expect(instance.state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
+    })
+    it('will recieve props as non-array', () => {
+      const props = {
+        headerItems: headerItem,
+      }
+      const nextProps = {
+        headerItems: {...headerItem, dataKey: 'somethingelse'},
+      }
+      const instance = shallow(<TableHeader {...props} />).instance()
+      instance.componentWillReceiveProps(nextProps)
+      expect(instance.state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
+    })
+    it('will recieve same props', () => {
+      const props = {
+        headerItems: headerItem,
+      }
+      const nextProps = {
+        headerItems: headerItem,
+      }
+      const instance = shallow(<TableHeader {...props} />).instance()
+      instance.componentWillReceiveProps(nextProps)
+      expect(instance.state.headerItems).toEqual([headerItem])
+    })
     it('saves width', () => {
       const props = {
         saveWidth: jasmine.createSpy(),
         label: 'something',
       }
-      const instance = mount(<TableHeader {...props} />)
+      const instance = shallow(<TableHeader {...props} />).instance()
       instance.setState({width: 10})
       instance.saveWidth()
       expect(props.saveWidth).toHaveBeenCalledWith(props.label, 10)
@@ -79,7 +79,7 @@ describe('Table Header', () => {
   describe('sets width', () => {
     let instance
     beforeEach(() => {
-      instance = mount(<TableHeader />)
+      instance = shallow(<TableHeader />).instance()
       instance.setState({width: 50})
     })
     it('width > 20', () => {

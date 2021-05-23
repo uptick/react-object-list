@@ -1,31 +1,10 @@
 {
   "plugins": [
-    "babel",
-    "react",
-    "react-hooks",
-    "@typescript-eslint"
+    "babel"
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "legacyDecorators": true
-    }
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
+  "parser": "babel-eslint",
   "rules": {
-    "camelcase": "off",
-    "comma-dangle": ["error",
-    {
-      "arrays": "always-multiline",
-      "objects": "always-multiline",
-      "imports": "always-multiline",
-      "exports": "always-multiline",
-      "functions": "never"
-    }],
+    "comma-dangle": ["error", "always-multiline"],
     "space-before-function-paren": ["error", {
       "anonymous": "never",
       "named": "never",
@@ -34,27 +13,13 @@
     "jsx-quotes": ["error", "prefer-double"],
     "no-var": "error",
     "prefer-const": "warn",
-    "new-cap": ["error", {
-      "newIsCapExceptions": ["api.batch"],
-      "capIsNew": false
-    }],
-    "no-invalid-this": "warn",
-    "no-unused-expressions": "error",
-    "semi": ["error", "never"],
-    "lines-between-class-members": ["error", "always", {"exceptAfterSingleLine": true }],
+
+    "babel/no-invalid-this": "warn",
+    "babel/semi": ["error", "never"],
     "react/prop-types": "warn",
-    "react/jsx-handler-names": "off",
-    "react/jsx-indent": ["error", 2, { "checkAttributes": false, "indentLogicalExpressions": true }],
-    "react/jsx-pascal-case": ["error", {"allowAllCaps": true}],
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
     "react/no-unused-state": "warn",
     "react/no-access-state-in-setstate": "warn",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "object-curly-spacing": "off",
-    "multiline-ternary": "off",
-    "no-use-before-define": "off"
+    "object-curly-spacing": "off"
   },
   "overrides": [
     {
@@ -64,17 +29,13 @@
       }
     }
   ],
-  "extends": [
-    "standard",
-    "standard-react"
-  ],
+  "extends": ["standard", "standard-react"],
   "env": {
-    "jest": true,
     "browser": true,
+    "jest": true,
     "jasmine": true
   },
   "globals": {
-    "mapboxgl": true,
-    "UPTICK_PRODUCT_STREAM": "readonly"
+    "mapboxgl": true
   }
 }

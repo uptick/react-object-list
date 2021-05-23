@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { snapshotTest } from '../../../utils/tests'
+import { snapshotTest } from 'utils/tests'
 import HeaderField from '../HeaderField'
 
 describe('HeaderField', () => {

@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { shallow } from 'enzyme'
-import { snapshotTest } from '../../../../utils/tests'
+import { snapshotTest } from 'utils/tests'
 import makeFilter from '../makeFilter'
 
 jest.mock('../FilterLabel', () => 'FilterLabel')
-jest.mock('../FilterComparison', () => 'FilterComparison')
+jest.mock('../FilterComparison')
 jest.mock('../RemoveFilter', () => 'RemoveFilter')
 
 class DummyRenderer extends React.Component {
@@ -13,7 +13,6 @@ class DummyRenderer extends React.Component {
     a: PropTypes.number,
     b: PropTypes.string,
   }
-
   render() {
     return <div>{`${this.props.a} ${this.props.b}`}</div>
   }

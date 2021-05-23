@@ -9,6 +9,7 @@ exports[`Choice Snapshots renders default 1`] = `
   loadOptions={[Function]}
   onChange={[Function]}
   onInputChange={[Function]}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {
@@ -31,6 +32,7 @@ exports[`Choice Snapshots renders with custom label key 1`] = `
   loadOptions={[Function]}
   onChange={[Function]}
   onInputChange={[Function]}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {
@@ -58,6 +60,7 @@ exports[`Choice Snapshots renders with custom option renderer 1`] = `
   loadOptions={[Function]}
   onChange={[Function]}
   onInputChange={[Function]}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {
@@ -80,6 +83,7 @@ exports[`Choice Snapshots renders with custom value key 1`] = `
   loadOptions={[Function]}
   onChange={[Function]}
   onInputChange={[Function]}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {
@@ -102,6 +106,7 @@ exports[`Choice Snapshots renders with multiple choice 1`] = `
   loadOptions={[Function]}
   onChange={[Function]}
   onInputChange={[Function]}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {
@@ -154,6 +159,7 @@ exports[`Choice Snapshots renders with placeholder 1`] = `
   loadOptions={[Function]}
   onChange={[Function]}
   onInputChange={[Function]}
+  options={undefined}
   placeholder="Testing testing"
   styles={
     Object {
@@ -178,6 +184,7 @@ exports[`Choice Snapshots renders with remote options 1`] = `
   noOptionsMessage={[Function]}
   onChange={[Function]}
   onInputChange={[Function]}
+  options={undefined}
   placeholder="Any value"
   styles={
     Object {

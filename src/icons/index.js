@@ -1,1 +1,1 @@
-export {default as FontAwesome} from './FontAwesome'
+export FontAwesome from './FontAwesome'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { snapshotTest } from '../../../../utils/tests'
+import { snapshotTest } from 'utils/tests'
 import { shallow } from 'enzyme'
 import Boolean from '../Boolean'
 

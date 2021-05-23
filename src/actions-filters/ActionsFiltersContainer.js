@@ -188,7 +188,7 @@ class ActionsFilterContainer extends Component {
               itemSingleName,
               itemPluralName,
               loading,
-              key: 'action-left',
+              key: `action-left`,
             })}
             {this.props.status === STATUS_CHOICES.done && (
               <SelectAllAction

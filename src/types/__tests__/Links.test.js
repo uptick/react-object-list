@@ -1,5 +1,7 @@
 import React from 'react'
-import { snapshotTest } from '../../../utils/tests'
+import {
+  snapshotTest,
+} from 'utils/tests'
 import { Links } from '../'
 
 describe('Links type', () => {
