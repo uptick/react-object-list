@@ -12,26 +12,17 @@ exports[`Date Snapshots has custom input format 1`] = `
   tabIndex={-1}
 >
   <input
-    autoFocus={undefined}
     className="MIRECO-text"
-    disabled={undefined}
-    maxLength={undefined}
-    name={undefined}
-    onBlur={undefined}
     onChange={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    onKeyUp={undefined}
     placeholder="dd/mm/yyyy"
-    required={undefined}
-    size={undefined}
     style={
       Object {
         "marginBottom": "0",
       }
     }
-    tabIndex={undefined}
     type="text"
     value=""
   />
@@ -83,26 +74,17 @@ exports[`Date Snapshots has null value 1`] = `
   tabIndex={-1}
 >
   <input
-    autoFocus={undefined}
     className="MIRECO-text"
-    disabled={undefined}
-    maxLength={undefined}
-    name={undefined}
-    onBlur={undefined}
     onChange={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    onKeyUp={undefined}
     placeholder=""
-    required={undefined}
-    size={undefined}
     style={
       Object {
         "marginBottom": "0",
       }
     }
-    tabIndex={undefined}
     type="text"
     value=""
   />
@@ -121,26 +103,17 @@ exports[`Date Snapshots renders default 1`] = `
   tabIndex={-1}
 >
   <input
-    autoFocus={undefined}
     className="MIRECO-text"
-    disabled={undefined}
-    maxLength={undefined}
-    name={undefined}
-    onBlur={undefined}
     onChange={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    onKeyUp={undefined}
     placeholder="dd/mm/yyyy"
-    required={undefined}
-    size={undefined}
     style={
       Object {
         "marginBottom": "0",
       }
     }
-    tabIndex={undefined}
     type="text"
     value=""
   />

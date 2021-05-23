@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
-import { snapshotTest } from 'utils/tests'
+import { snapshotTest } from '../../../utils/tests'
 import Favourites from '../Favourites'
 
 jest.mock('../FavouritesItem', () => 'FavouritesItem')

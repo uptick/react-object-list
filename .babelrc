@@ -1,8 +1,12 @@
 {
-  "presets": ["react","env","stage-0"],
-  "env": {
-    "test": {
-      "plugins": ["require-context-hook"]
-    }
-  }
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env", {
+        "targets": {
+          "esmodules": true
+        }
+      }
+    ]
+  ]
 }

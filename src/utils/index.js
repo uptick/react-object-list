@@ -1,4 +1,4 @@
-export ErrorMessage from './ErrorMessage'
+export { default as ErrorMessage } from './ErrorMessage'
 
 export {
   DATE_FORMAT,
@@ -8,6 +8,7 @@ export {
   API_DATE_FORMAT,
   allowedLookupExpressions,
 } from './constants'
+
 export {
   COLUMN_TYPE,
   COLUMN_BASE_TYPE,
@@ -18,6 +19,7 @@ export {
   ALL_SELECTED,
   SELECTION_TYPE,
 } from './proptypes'
+
 export {
   getVisibleColumns,
   setColumnLabels,
@@ -25,3 +27,5 @@ export {
   getLeafColumns,
   makeSelectStyles,
 } from './functions'
+
+export { default as translate } from './translate'

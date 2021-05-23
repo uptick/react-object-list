@@ -1,17 +1,12 @@
 node_modules/
 dist/
 demo-site/_site/
-/cells.js
-/filters.js
-/main.js
-/renderers.js
-/utils.js
-/icons.js
 coverage/
 .vscode/
 .DS_Store
 **~
-
+bundle-analysis.json
+stats.html
 *.log
 
 demo-site/.jekyll-cache

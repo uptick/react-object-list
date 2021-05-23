@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { snapshotTest } from 'utils/tests'
+import { snapshotTest } from '../../../utils/tests'
 import Table from '../Table'
 import { getVisibleColumns, annotateSpans } from '../../utils/functions'
 
@@ -43,7 +43,7 @@ describe('Table', () => {
         sortKey: '🍩',
       }],
     ],
-    columnWidths: {'age_gender': {width: 50}},
+    columnWidths: {age_gender: {width: 50}},
     saveColumnWidth: jest.fn(),
     data: [
       {id: 1, type: 'Person', attributes: {name: 'Sam', age: '25', gender: 'M'}},
