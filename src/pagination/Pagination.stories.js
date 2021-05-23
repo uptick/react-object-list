@@ -2,7 +2,6 @@ import React from 'react'
 import { action } from '@storybook/addon-actions'
 import { boolean, number } from '@storybook/addon-knobs'
 
-
 import Pagination from './Pagination'
 
 const props = {
@@ -26,7 +25,7 @@ export const Default = (args) => {
   count={number('count', props.count, {range: true, min: 1, max: 100, step: 1})}
   maxPages={10}
   loading={boolean('loading', props.loading)}
-  goToPage={action(`Setting page to`)}
+  goToPage={action('Setting page to')}
 />
 }
 
@@ -34,7 +33,7 @@ export const Loading = (args) => (
   <Pagination
       {...props}
       loading
-      goToPage={action(`Setting page to`)}
+      goToPage={action('Setting page to')}
   />
 )
 
@@ -45,11 +44,11 @@ export const Interactive = () => {
       this.setState(() => ({page}))
       action('Setting page to')(page)
     }
+
     render() {
       return <Pagination {...this.state} goToPage={this.goToPage} />
     }
   }
-  
+
   return (<PaginationWrapper />)
 }
-

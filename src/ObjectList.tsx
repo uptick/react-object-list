@@ -60,7 +60,6 @@ const ObjectList : React.FC<ReactObjectList> = (props) => {
 
   return (
     <div>
-      testaa
       <ActionsFiltersContainer
         filters={filters}
         icons={icons}
