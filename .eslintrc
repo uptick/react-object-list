@@ -1,10 +1,5 @@
 {
-  "plugins": [
-    "babel",
-    "react",
-    "react-hooks",
-    "@typescript-eslint"
-  ],
+  "plugins": ["babel", "react", "react-hooks", "@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -18,34 +13,50 @@
   },
   "rules": {
     "camelcase": "off",
-    "comma-dangle": ["error",
-    {
-      "arrays": "always-multiline",
-      "objects": "always-multiline",
-      "imports": "always-multiline",
-      "exports": "always-multiline",
-      "functions": "never"
-    }],
-    "space-before-function-paren": ["error", {
-      "anonymous": "never",
-      "named": "never",
-      "asyncArrow": "always"
-    }],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
     "jsx-quotes": ["error", "prefer-double"],
     "no-var": "error",
     "prefer-const": "warn",
-    "new-cap": ["error", {
-      "newIsCapExceptions": ["api.batch"],
-      "capIsNew": false
-    }],
+    "new-cap": [
+      "error",
+      {
+        "newIsCapExceptions": ["api.batch"],
+        "capIsNew": false
+      }
+    ],
     "no-invalid-this": "warn",
     "no-unused-expressions": "error",
     "semi": ["error", "never"],
-    "lines-between-class-members": ["error", "always", {"exceptAfterSingleLine": true }],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ],
     "react/prop-types": "warn",
     "react/jsx-handler-names": "off",
-    "react/jsx-indent": ["error", 2, { "checkAttributes": false, "indentLogicalExpressions": true }],
-    "react/jsx-pascal-case": ["error", {"allowAllCaps": true}],
+    "react/jsx-indent": [
+      "error",
+      2,
+      { "checkAttributes": false, "indentLogicalExpressions": true }
+    ],
+    "react/jsx-pascal-case": ["error", { "allowAllCaps": true }],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "react/no-unused-state": "warn",
@@ -58,23 +69,16 @@
   },
   "overrides": [
     {
-      "files": [ "*.test.js", "*.stories.js" ],
+      "files": ["*.test.js", "*.stories.js"],
       "rules": {
         "react/prop-types": "off"
       }
     }
   ],
-  "extends": [
-    "standard",
-    "standard-react"
-  ],
+  "extends": ["standard", "standard-react"],
   "env": {
     "jest": true,
     "browser": true,
     "jasmine": true
-  },
-  "globals": {
-    "mapboxgl": true,
-    "UPTICK_PRODUCT_STREAM": "readonly"
   }
 }

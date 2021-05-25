@@ -1,1 +1,1 @@
-export { default as useTranslation } from './use-translation'
+export { default as useLocaleNumber } from './use-locale-number'

@@ -25,9 +25,9 @@ const makeFilter = (Renderer) => {
       /** Function to be called when filter is removed */
       removeFilter: PropTypes.func.isRequired,
       /** Options to be passed to the comparison dropdown */
-      comparisonOptions: FilterComparison.propTypes.options,
+      comparisonOptions: FilterComparison?.propTypes?.options,
       /** Currently selected comparison option */
-      comparison: FilterComparison.propTypes.value,
+      comparison: FilterComparison?.propTypes?.value,
       /** Icons */
       icons: PropTypes.object,
       /** Object of custom react-select styles */
@@ -76,6 +76,8 @@ const makeFilter = (Renderer) => {
     }
 
     render() {
+      console.log(FilterComparison.propTypes)
+
       const {
         name, comparison, comparisonOptions, value, permanent, selectStyles, icons = {}, ...otherProps
       } = this.props

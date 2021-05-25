@@ -5,14 +5,7 @@ exports[`Table Header Snapshots renders correctly 1`] = `
   className="objectlist-table__th objectlist-table__th--border-bottom "
   style={Object {}}
 >
-  <HeaderField
-    activeSort={null}
-    dataKey="header_sort_key"
-    header="Header Text"
-    item={[MockFunction]}
-    optional={false}
-    sortKey="🍬"
-  />
+  HeaderField
 </th>
 `;
 
@@ -21,21 +14,7 @@ exports[`Table Header Snapshots renders correctly with multiple header items 1`]
   className="objectlist-table__th objectlist-table__th--border-bottom "
   style={Object {}}
 >
-  <HeaderField
-    activeSort={null}
-    dataKey="header_sort_key"
-    header="Header Text"
-    item={[MockFunction]}
-    optional={false}
-    sortKey="🍬"
-  />
-  <HeaderField
-    activeSort={null}
-    dataKey="header_two_key"
-    header="Header Two Text"
-    item={[MockFunction]}
-    optional={false}
-    sortKey="🍬"
-  />
+  HeaderField
+  HeaderField
 </th>
 `;

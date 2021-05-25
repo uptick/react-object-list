@@ -10,14 +10,17 @@ import packageJson from './package.json'
 
 export default {
   input: 'src/index.ts',
-  // All of your library files will be named exports from here
+  // All of your library files will be named exports from here.
   output: [
+    // Common JS Support.
     {
       file: packageJson.main,
       format: 'cjs',
       sourcemap: true,
       exports: 'named',
     },
+
+    // ESM Support.
     {
       file: packageJson.module,
       format: 'esm',
@@ -26,21 +29,32 @@ export default {
     },
   ],
   plugins: [
-    // This prevents needing an additional `external` prop in this config file by automaticall excluding peer dependencies
+    // This prevents needing an additional `external` prop in this config file by automaticall excluding peer dependencies.
     peerDepsExternal(),
-    // Convert CommonJS modules to ES6
+
+    // Convert CommonJS modules to ES6.
     commonjs({
       include: 'node_modules/**',
     }),
-    // "...locates modules using the Node resolution algorithm"
+
+    // Locates modules using the Node resolution algorithm.
     resolve(),
-    typescript({ useTsconfigDeclarationDir: true }),
-    // Do Babel transpilation
+
+    // TypeScript File Parsing.
+    typescript({
+      useTsconfigDeclarationDir: true,
+    }),
+
+    // Do Babel transpilation.
     babel({
       exclude: 'node_modules/**',
       babelHelpers: 'bundled',
     }),
+
+    // Parsing & Minfying for ES6.
     terser(),
+
+    // Visualizing Bundle Size and Composition.
     visualizer({
       json: true,
       filename: 'bundle-analysis.json',

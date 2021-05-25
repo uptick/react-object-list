@@ -8,7 +8,7 @@ import ObjectList from '.'
 import Table from './data-renderers/Table'
 import List from './data-renderers/List'
 
-const mockData = require('../mock/example.json')
+const mockData = require('../samples/people.json')
 // ------ no column grouping
 const columns = [
   [
@@ -172,6 +172,7 @@ class InteractiveObjectList extends React.Component {
     if (activeFilters.length > 0) {
       // filter data
       data = data.filter((row) => {
+        // eslint-disable-next-line no-unreachable-loop
         for (let i = 0; i < activeFilters.length; i++) {
           if (!activeFilters[i].value) {
             return true

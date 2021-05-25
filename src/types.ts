@@ -1,3 +1,13 @@
+export type NumberToLocaleParameters = {
+  currency: string | undefined
+  decimals: number | undefined
+  locale: string | undefined
+}
+
+export type NumberToLocale = {
+  format: (value: number) => string
+}
+
 export type ReactObjectListIcon = {
     OptionalFields?: HTMLElement
     Favourites?: HTMLElement
@@ -11,7 +21,7 @@ export type ReactObjectListIcon = {
     Loading?: HTMLElement
     CheckboxChecked?: HTMLElement
     CheckboxUnchecked?: HTMLElement
-  }
+}
 
 export type ReactObjectList = {
     DataRenderer: any

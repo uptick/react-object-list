@@ -7,13 +7,11 @@ import Table from './data-renderers/Table'
 import { Pagination as DefaultPagination } from './pagination'
 import { ErrorMessage as DefaultErrorMessage } from './utils'
 
-import {
-  STATUS_CHOICES,
-} from './utils/proptypes'
+import { STATUS_CHOICES } from './utils/proptypes'
 
 import type { ReactObjectList } from '.'
 
-const ObjectList : React.FC<ReactObjectList> = (props) => {
+const ObjectList: React.FC<ReactObjectList> = (props) => {
   const {
     DataRenderer,
     Pagination,
@@ -116,7 +114,6 @@ const ObjectList : React.FC<ReactObjectList> = (props) => {
           itemPluralName={itemPluralName || `${itemSingleName}s`}
         />
       )}
-
     </div>
   )
 }

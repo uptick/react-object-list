@@ -18,6 +18,8 @@
     "node_modules",
     "dist",
     "scripts",
-    "jest"
+    "jest",
+    "**/*.test.ts",
+    "**/*.test.tsx",
   ],
 }

@@ -4,9 +4,12 @@ demo-site/_site/
 coverage/
 .vscode/
 .DS_Store
+
 **~
+
 bundle-analysis.json
 stats.html
+
 *.log
 
 demo-site/.jekyll-cache

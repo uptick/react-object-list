@@ -11,7 +11,6 @@ exports[`makeFilter Snapshots has a name 1`] = `
     44 tests
   </div>
   <RemoveFilter
-    Icon={undefined}
     onClick={[Function]}
   />
 </div>
@@ -25,7 +24,6 @@ exports[`makeFilter Snapshots renders default 1`] = `
     44 tests
   </div>
   <RemoveFilter
-    Icon={undefined}
     onClick={[Function]}
   />
 </div>
@@ -61,7 +59,6 @@ exports[`makeFilter Snapshots renders with comparison null 1`] = `
     44 tests
   </div>
   <RemoveFilter
-    Icon={undefined}
     onClick={[Function]}
   />
 </div>
@@ -97,7 +94,6 @@ exports[`makeFilter Snapshots renders with comparison options 1`] = `
     44 tests
   </div>
   <RemoveFilter
-    Icon={undefined}
     onClick={[Function]}
   />
 </div>
