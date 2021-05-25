@@ -9,17 +9,14 @@
     "rootDir": "src",
     "esModuleInterop": true,
     "checkJs": false,
-    "types": ["node", "jest"],
-    "typeRoots": ["./types", "./node_modules/@types"],
     "declaration": true,
     "declarationDir": "dist",
   },
+  "typeRoots": ["./types", "./node_modules/@types"],
   "exclude": [
     "node_modules",
     "dist",
     "scripts",
     "jest",
-    "**/*.test.ts",
-    "**/*.test.tsx",
   ],
 }

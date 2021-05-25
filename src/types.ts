@@ -1,7 +1,14 @@
+export type ReactObjectListContext = {
+  currencyFormat?: string,
+  locale?: string,
+  decimals?: number,
+ }
+
 export type NumberToLocaleParameters = {
-  currency: string | undefined
-  decimals: number | undefined
-  locale: string | undefined
+  currency?: boolean
+  currencyFormat?: string
+  decimals?: number
+  locale?: string
 }
 
 export type NumberToLocale = {
@@ -78,4 +85,7 @@ export type ReactObjectList = {
     itemPluralName: string
     selectedFavouriteName: any
     numSelected: any
+    currencyFormat?: string
+    decimals?: number
+    locale?: string
   }

@@ -1,23 +1,34 @@
+import { useContext } from 'react'
+import { ObjectListContext } from '../context'
 import type { NumberToLocale, NumberToLocaleParameters } from '../types'
 
-export default function useLocaleNumber(params: NumberToLocaleParameters): NumberToLocale {
-  const { currency, locale, decimals } = params
+export default function useLocaleNumber(params?: NumberToLocaleParameters): NumberToLocale {
+  const context = useContext(ObjectListContext)
 
-  const places: number = typeof decimals !== 'undefined' ? decimals : 2
-  const country: string = typeof locale === 'undefined' ? 'en-AU' : locale
+  const configuration = {
+    currency: false,
 
-  const options: Intl.NumberFormatOptions = {
-    minimumFractionDigits: places,
-    maximumFractionDigits: places,
+    // add override from context if provided.
+    ...context,
+
+    // add override if params are provided.
+    ...params,
   }
 
-  if (typeof currency !== 'undefined' && typeof locale !== 'undefined') {
+  const { currency, locale, decimals, currencyFormat } = configuration
+
+  const options: Intl.NumberFormatOptions = {
+    minimumFractionDigits: decimals,
+    maximumFractionDigits: decimals,
+  }
+
+  if (currency) {
     options.style = 'currency'
-    options.currency = currency
+    options.currency = currencyFormat
   }
 
   function format(value: number) {
-    return new Intl.NumberFormat(country, options).format(value)
+    return new Intl.NumberFormat(locale, options).format(value)
   }
 
   return {

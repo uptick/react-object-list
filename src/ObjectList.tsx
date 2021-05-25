@@ -6,6 +6,7 @@ import Table from './data-renderers/Table'
 
 import { Pagination as DefaultPagination } from './pagination'
 import { ErrorMessage as DefaultErrorMessage } from './utils'
+import { ObjectListProvider } from './providers'
 
 import { STATUS_CHOICES } from './utils/proptypes'
 
@@ -46,6 +47,9 @@ const ObjectList: React.FC<ReactObjectList> = (props) => {
     itemOnClick,
     maxPages,
     updatePage,
+    currencyFormat,
+    locale,
+    decimals,
   } = props
 
   const { totalCount, perPage, currentPage } = meta
@@ -57,7 +61,7 @@ const ObjectList: React.FC<ReactObjectList> = (props) => {
   }
 
   return (
-    <div>
+    <ObjectListProvider locale={locale} currencyFormat={currencyFormat} decimals={decimals}>
       <ActionsFiltersContainer
         filters={filters}
         icons={icons}
@@ -114,7 +118,7 @@ const ObjectList: React.FC<ReactObjectList> = (props) => {
           itemPluralName={itemPluralName || `${itemSingleName}s`}
         />
       )}
-    </div>
+    </ObjectListProvider>
   )
 }
 
