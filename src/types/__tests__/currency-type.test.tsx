@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import { ObjectListProvider } from '../../providers'
-import Currency from '../Currency'
+import Currency from '../currency-type'
 
 describe('Currency Type', () => {
   it('Correctly Returns The Locale and Number Formatting.', () => {
