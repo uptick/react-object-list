@@ -1,3 +1,7 @@
+export type CurrencyType = {
+  value?: number
+}
+
 export type ReactObjectListContext = {
   currencyFormat?: string,
   locale?: string,
