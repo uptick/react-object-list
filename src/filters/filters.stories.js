@@ -25,9 +25,6 @@ const baseProps = {
 }
 
 storiesOf('object-list/Filters', module)
-  .addDecorator((story, context) => withInfo(
-    'Components used to configure filtering on the api list'
-  )(story)(context))
   .add('BooleanFilter', () => (
     <BooleanFilter
       {...baseProps}

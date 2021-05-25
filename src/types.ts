@@ -17,6 +17,7 @@ export type NumberToLocaleParameters = {
 
 export type NumberToLocale = {
   format: (value: number) => string
+  configuration: NumberToLocaleParameters
 }
 
 export type ReactObjectListIcon = {
