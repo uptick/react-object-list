@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { mount } from 'enzyme'
 import { snapshotTest } from '../../../../utils/tests'
 import makeFilter from '../makeFilter'
 
@@ -8,18 +8,14 @@ jest.mock('../FilterComparison', () => 'FilterComparison')
 jest.mock('../RemoveFilter', () => 'RemoveFilter')
 
 class DummyRenderer extends React.Component {
-  static propTypes = {
-    a: PropTypes.number,
-    b: PropTypes.string,
-  }
-
   render() {
-    return <div>{`${this.props.a} ${this.props.b}`}</div>
+    return <div>{`${this.props?.a} ${this.props?.b}`}</div>
   }
 }
 
 describe('makeFilter', () => {
   let GeneratedFilter
+
   beforeEach(() => {
     GeneratedFilter = makeFilter(DummyRenderer)
   })
@@ -29,15 +25,93 @@ describe('makeFilter', () => {
     removeFilter: jest.fn(),
     filterKey: 'thisfilter',
     value: 912,
-    comparison: 'test',
+    comparison: null,
     a: 44,
     b: 'tests',
     icons: undefined,
   }
 
+  describe('Functions', () => {
+    beforeEach(() => {
+      spyOn(baseProps, 'onChange')
+      spyOn(baseProps, 'removeFilter')
+    })
+
+    describe('handles comparison change', () => {
+      it('has change', () => {
+        const Filter = makeFilter(DummyRenderer)
+        const wrapper = mount(<Filter {...baseProps}/>)
+
+        const instance = wrapper.find('Filter').instance()
+
+        instance.onComparisonChange('apple')
+
+        expect(baseProps.onChange).toHaveBeenCalledWith({
+          filter: baseProps.filterKey,
+          comparison: 'apple',
+          value: baseProps.value,
+        })
+      })
+
+      it('has no change', () => {
+        const Filter = makeFilter(DummyRenderer)
+        const wrapper = mount(<Filter {...baseProps}/>)
+
+        const instance = wrapper.find('Filter').instance()
+
+        instance.onComparisonChange(baseProps.comparison)
+
+        expect(baseProps.onChange).not.toHaveBeenCalled()
+      })
+    })
+
+    describe('handles value change', () => {
+      it('has change', () => {
+        const Filter = makeFilter(DummyRenderer)
+        const wrapper = mount(<Filter {...baseProps}/>)
+
+        const instance = wrapper.find('Filter').instance()
+
+        instance.onValueChange(321)
+
+        expect(baseProps.onChange).toHaveBeenCalledWith({
+          filter: baseProps.filterKey,
+          comparison: baseProps.comparison,
+          value: 321,
+        })
+      })
+
+      it('has no change', () => {
+        const Filter = makeFilter(DummyRenderer)
+        const wrapper = mount(<Filter {...baseProps}/>)
+
+        const instance = wrapper.find('Filter').instance()
+        instance.onValueChange(baseProps.value)
+
+        expect(baseProps.onChange).not.toHaveBeenCalled()
+      })
+    })
+
+    it('removes filter', () => {
+      const Filter = makeFilter(DummyRenderer)
+      const wrapper = mount(<Filter {...baseProps}/>)
+
+      const instance = wrapper.find('Filter').instance()
+
+      const event = {
+        preventDefault: () => console.log('hi'),
+      }
+
+      instance.removeFilter(event)
+
+      expect(baseProps.removeFilter).toHaveBeenCalledWith(baseProps.filterKey)
+    })
+  })
+
   describe('Snapshots', () => {
-    it('renders default', () =>
-      snapshotTest(<GeneratedFilter {...baseProps} />))
+    it('renders default', () => {
+      snapshotTest(<GeneratedFilter {...baseProps} />)
+    })
 
     it('renders with comparison options', () => {
       snapshotTest(
@@ -73,64 +147,4 @@ describe('makeFilter', () => {
       snapshotTest(<GeneratedFilter {...baseProps} name="The Awesome Filter" />)
     })
   })
-
-  //   describe('Generates filter', () => {
-  //     // it('takes prop types from Renderer', () => {
-  //     //   expect(GeneratedFilter.propTypes).toEqual(jasmine.objectContaining(DummyRenderer.propTypes))
-  //     // })
-
-  //     describe('Functions', () => {
-  //       const instance = shallow(<GeneratedFilter {...baseProps} />).instance()
-
-  //       beforeEach(() => {
-  //         spyOn(baseProps, 'onChange')
-  //         spyOn(baseProps, 'removeFilter')
-  //       })
-
-  //       describe('handles comparison change', () => {
-  //         it('has change', () => {
-  //           instance.onComparisonChange('apple')
-  //           expect(baseProps.onChange).toHaveBeenCalledWith({
-  //             filter: baseProps.filterKey,
-  //             comparison: 'apple',
-  //             value: baseProps.value,
-  //           })
-  //         })
-
-  //         it('has no change', () => {
-  //           instance.onComparisonChange(baseProps.comparison)
-
-  //           expect(baseProps.onChange).not.toHaveBeenCalled()
-  //         })
-  //       })
-
-  //       describe('handles value change', () => {
-  //         it('has change', () => {
-  //           instance.onValueChange(321)
-
-  //           expect(baseProps.onChange).toHaveBeenCalledWith({
-  //             filter: baseProps.filterKey,
-  //             comparison: baseProps.comparison,
-  //             value: 321,
-  //           })
-  //         })
-
-  //         it('has no change', () => {
-  //           instance.onValueChange(baseProps.value)
-
-  //           expect(baseProps.onChange).not.toHaveBeenCalled()
-  //         })
-  //       })
-
-  //       it('removes filter', () => {
-  //         const mockEvent = {preventDefault: jasmine.createSpy()}
-
-  //         instance.removeFilter(mockEvent)
-
-  //         expect(mockEvent.preventDefault).toHaveBeenCalled()
-  //         expect(baseProps.removeFilter).toHaveBeenCalledWith(baseProps.filterKey)
-  //       })
-  //     })
-  //   })
-  // })
 })

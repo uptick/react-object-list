@@ -9,8 +9,8 @@ import type { CurrencyFilterType } from '../../types'
 const Currency: React.FC<CurrencyFilterType> = ({ value, currencySymbol, onChange }) => {
   const { format } = useLocaleNumber({ currency: true, currencyFormat: currencySymbol })
 
-  const [input, setInput] = useState(value)
   const [editing, setEditing] = useState(false)
+  const [input, setInput] = useState(value)
 
   function handleOnInputChange(event: SyntheticEvent<HTMLInputElement>) {
     const target = event?.currentTarget?.value
