@@ -76,8 +76,6 @@ const makeFilter = (Renderer) => {
     }
 
     render() {
-      console.log(FilterComparison.propTypes)
-
       const {
         name, comparison, comparisonOptions, value, permanent, selectStyles, icons = {}, ...otherProps
       } = this.props

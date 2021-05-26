@@ -54,12 +54,6 @@ const ObjectList: React.FC<ReactObjectList> = (props) => {
 
   const { totalCount, perPage, currentPage } = meta
 
-  function onSelection(message: 'all' | null) {
-    if (selectItems) {
-      selectItems(message)
-    }
-  }
-
   return (
     <ObjectListProvider locale={locale} currencyFormat={currencyFormat} decimals={decimals}>
       <ActionsFiltersContainer
@@ -83,8 +77,8 @@ const ObjectList: React.FC<ReactObjectList> = (props) => {
         selectedFavouriteName={selectedFavouriteName}
         loadFavourite={loadFavourite}
         selection={selection}
-        selectAll={() => onSelection('all')}
-        deselectAll={() => onSelection(null)}
+        selectAll={() => selectItems('all')}
+        deselectAll={() => selectItems(null)}
         numSelected={numSelected}
         customActions={customActions}
         selectStyles={selectStyles}
