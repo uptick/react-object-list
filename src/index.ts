@@ -4,6 +4,7 @@ export { default as COLUMN_TYPE } from './ObjectList'
 export { default as FilterContainer } from './actions-filters/ActionsFiltersContainer'
 
 export {
+  CurrencyFilterType,
   CurrencyType,
   ReactObjectList,
   ReactObjectListContext,

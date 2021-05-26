@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import { snapshotTest } from '../../../../utils/tests'
-import Currency from '../Currency'
+import Currency from '../currency'
 
 describe('Currency', () => {
   const baseProps = {
@@ -10,12 +10,24 @@ describe('Currency', () => {
   }
 
   describe('Snapshots', () => {
-    it('renders default', () => {
+    it('enders default', () => {
       snapshotTest(<Currency {...baseProps} />)
     })
 
+    it('renders with currency symbol', () => {
+      const instance = shallow(<Currency {...baseProps} currencySymbol="AUD" />)
+
+      const element = instance.find('input').props().value
+
+      expect(element).toBe('A$25.08')
+    })
+
     it('renders with custom currency symbol', () => {
-      snapshotTest(<Currency {...baseProps} currencySymbol="%" />)
+      const instance = shallow(<Currency {...baseProps} currencySymbol="CNY" />)
+
+      const element = instance.find('input').props().value
+
+      expect(element).toBe('CN¥25.08')
     })
   })
 

@@ -27,11 +27,16 @@ export default function useLocaleNumber(params?: NumberToLocaleParameters): Numb
     options.currency = currencyFormat
   }
 
-  function format(value: number) {
+  function format(value: number | undefined) {
+    if (typeof value === 'undefined') {
+      return new Intl.NumberFormat(locale, options).format(0)
+    }
+
     return new Intl.NumberFormat(locale, options).format(value)
   }
 
   return {
     format,
+    configuration,
   }
 }

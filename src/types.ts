@@ -1,3 +1,13 @@
+
+export type CurrencyFilterType = {
+  /** Current value of filter */
+  value?: string,
+  /** Currency symbol to be displayed */
+  currencySymbol?: string
+  /** Function called when value changed */
+  onChange?: (value: string) => void
+}
+
 export type CurrencyType = {
   value?: number
 }
@@ -16,7 +26,7 @@ export type NumberToLocaleParameters = {
 }
 
 export type NumberToLocale = {
-  format: (value: number) => string
+  format: (value: number | string) => string
   configuration: NumberToLocaleParameters
 }
 

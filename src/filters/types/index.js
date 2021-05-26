@@ -1,6 +1,6 @@
 export { default as Boolean } from './Boolean'
 export { default as Choice } from './Choice'
-export { default as Currency } from './Currency'
+export { default as Currency } from './currency'
 export { default as Date } from './Date'
 export { default as Day } from './Day'
 export { default as Month } from './Month'

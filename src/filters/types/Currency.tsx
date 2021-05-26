@@ -1,41 +1,52 @@
-import React, { SyntheticEvent } from 'react'
+import React, { useState, SyntheticEvent } from 'react'
+import { useLocaleNumber } from '../../hooks'
+import type { CurrencyFilterType } from '../../types'
 
 /**
  * Filter input used to pass currency values
  */
 
-export type CurrencyFilterType = {
-  /** Current value of filter */
-  value?: string,
-  /** Currency symbol to be displayed */
-  currencySymbol?: string
-  /** Function called when value changed */
-  onChange?: (value: string) => void
-}
-
 const Currency: React.FC<CurrencyFilterType> = ({ value, currencySymbol, onChange }) => {
-  function handleInputChange(event: SyntheticEvent<HTMLInputElement>) {
+  const { format } = useLocaleNumber({ currency: true, currencyFormat: currencySymbol })
+
+  const [input, setInput] = useState(value)
+  const [editing, setEditing] = useState(false)
+
+  function handleOnInputChange(event: SyntheticEvent<HTMLInputElement>) {
+    const target = event?.currentTarget?.value
+
+    setInput(target)
+
     if (onChange) {
-      onChange(event.currentTarget.value)
+      onChange(target)
     }
   }
 
   return (
     <div className="objectlist-currency-filter objectlist-current-filter__active-status">
-      <span className="objectlist-currency-filter__symbol">{currencySymbol}</span>
-      <input
-        className="objectlist-input objectlist-input--currency"
-        onChange={handleInputChange}
-        value={value}
-        type="text"
-      />
-      <span className="objectlist-currency-filter__decimal">.00</span>
+      {editing
+        ? <input
+            className="objectlist-input objectlist-input--currency"
+            onChange={handleOnInputChange}
+            onBlur={() => setEditing(false)}
+            type="number"
+            value={input}
+          />
+        : <input
+            className="objectlist-input objectlist-input--currency objectlist-input-currency-readonly"
+            onChange={handleOnInputChange}
+            onFocus={() => setEditing(true)}
+            value={format(input)}
+            type="text"
+            readOnly
+          />
+      }
     </div>
   )
 }
 
 Currency.defaultProps = {
-  currencySymbol: '$',
+  currencySymbol: 'AUD',
 }
 
 export default Currency
