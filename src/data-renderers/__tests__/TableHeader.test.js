@@ -1,9 +1,10 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import { snapshotTest } from 'utils/tests'
+import { mount } from 'enzyme'
+import { snapshotTest } from '../../../utils/tests'
 import TableHeader from '../TableHeader'
 
-jest.mock('../HeaderField', () => 'HeaderField')
+// This stops the "is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements."
+jest.mock('../HeaderField', () => () => 'HeaderField')
 
 describe('Table Header', () => {
   const headerItem = {
@@ -13,19 +14,30 @@ describe('Table Header', () => {
     sortKey: '🍬',
     optional: false,
   }
+
   describe('Snapshots', () => {
     it('renders correctly', () => {
       const props = {
-        headerItems: {...headerItem},
+        headerItems: { ...headerItem },
         setSort: jest.fn(),
       }
+
       snapshotTest(<TableHeader {...props} />)
     })
+
     it('renders correctly with multiple header items', () => {
       const props = {
-        headerItems: [{...headerItem}, {...headerItem, header: 'Header Two Text', dataKey: 'header_two_key'}],
+        headerItems: [
+          { ...headerItem },
+          {
+            ...headerItem,
+            header: 'Header Two Text',
+            dataKey: 'header_two_key',
+          },
+        ],
         setSort: jest.fn(),
       }
+
       snapshotTest(<TableHeader {...props} />)
     })
   })
@@ -38,10 +50,13 @@ describe('Table Header', () => {
       const nextProps = {
         headerItems: [{...headerItem, dataKey: 'somethingelse'}],
       }
-      const instance = shallow(<TableHeader {...props} />).instance()
+
+      const instance = mount(<TableHeader {...props} />).instance()
+
       instance.componentWillReceiveProps(nextProps)
       expect(instance.state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
     })
+
     it('will recieve props as non-array', () => {
       const props = {
         headerItems: headerItem,
@@ -49,45 +64,61 @@ describe('Table Header', () => {
       const nextProps = {
         headerItems: {...headerItem, dataKey: 'somethingelse'},
       }
-      const instance = shallow(<TableHeader {...props} />).instance()
+
+      const instance = mount(<TableHeader {...props} />).instance()
+
       instance.componentWillReceiveProps(nextProps)
       expect(instance.state.headerItems).toEqual([{...headerItem, dataKey: 'somethingelse'}])
     })
+
     it('will recieve same props', () => {
       const props = {
         headerItems: headerItem,
       }
+
       const nextProps = {
         headerItems: headerItem,
       }
-      const instance = shallow(<TableHeader {...props} />).instance()
+
+      const instance = mount(<TableHeader {...props} />).instance()
+
       instance.componentWillReceiveProps(nextProps)
       expect(instance.state.headerItems).toEqual([headerItem])
     })
+
     it('saves width', () => {
       const props = {
-        saveWidth: jasmine.createSpy(),
+        saveWidth: jest.fn(),
         label: 'something',
       }
-      const instance = shallow(<TableHeader {...props} />).instance()
-      instance.setState({width: 10})
+      const instance = mount(<TableHeader {...props} />).instance()
+
+      instance.setState({ width: 10 })
+
       instance.saveWidth()
+
+      expect(props.saveWidth).toHaveBeenCalledTimes(1)
+
       expect(props.saveWidth).toHaveBeenCalledWith(props.label, 10)
     })
   })
 
   describe('sets width', () => {
-    let instance
+    const instance = mount(<TableHeader />).instance()
+
     beforeEach(() => {
-      instance = shallow(<TableHeader />).instance()
-      instance.setState({width: 50})
+      instance.setState({ width: 50 })
     })
+
     it('width > 20', () => {
       instance.setWidth(50)
+
       expect(instance.state.width).toBe(100)
     })
+
     it('width < 20', () => {
       instance.setWidth('-40')
+
       expect(instance.state.width).toBe(50)
     })
   })

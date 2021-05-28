@@ -1,5 +1,5 @@
-import {Currency} from './types'
-import {makeFilter} from './utils'
+import { Currency } from './types'
+import { makeFilter } from './utils'
 
 /**
  * Filter used to filter by a monetary value

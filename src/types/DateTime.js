@@ -2,9 +2,7 @@ import React from 'react'
 import Moment from 'moment'
 import PropTypes from 'prop-types'
 
-import {
-  DATETIME_FORMAT,
-} from '../utils'
+import { DATETIME_FORMAT } from '../utils'
 
 /**
  * Presents timestamps in a human readable format
@@ -22,6 +20,7 @@ class DateTime extends React.Component {
     /** the separator used when multiple dates are provided */
     seperator: PropTypes.string,
   }
+
   static defaultProps = {
     outputFormat: DATETIME_FORMAT,
     empty: '-',
@@ -29,6 +28,7 @@ class DateTime extends React.Component {
     value: null,
     dateOnly: false,
   }
+
   /**
    * Return date in specififed format if valid
    * @param  {Object} date Moment date object to be formatted
@@ -41,6 +41,7 @@ class DateTime extends React.Component {
     }
     return this.props.empty
   }
+
   /**
    * Return date range with dates formatted as specified
    * @param  {Array} dates List of dates to be formatted
@@ -59,6 +60,7 @@ class DateTime extends React.Component {
     })
     return retString
   }
+
   render() {
     if (this.props.value) {
       let inner
@@ -67,7 +69,10 @@ class DateTime extends React.Component {
           if (Array.isArray(this.props.value)) {
             inner = this.formatRange(this.props.value)
           } else if ('start' in this.props.value && 'end' in this.props.value) {
-            inner = this.formatRange([this.props.value.start, this.props.value.end])
+            inner = this.formatRange([
+              this.props.value.start,
+              this.props.value.end,
+            ])
           }
           break
         case 'string':
@@ -75,7 +80,7 @@ class DateTime extends React.Component {
           break
       }
       if (inner) {
-        return (<div>{inner}</div>)
+        return <div>{inner}</div>
       }
     }
     return <div className="text-muted">{this.props.empty}</div>

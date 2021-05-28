@@ -1,25 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Currency Snapshots enders default 1`] = `
+<div
+  className="objectlist-currency-filter objectlist-current-filter__active-status"
+>
+  <input
+    className="objectlist-input objectlist-input--currency objectlist-input-currency-readonly"
+    onChange={[Function]}
+    onFocus={[Function]}
+    readOnly={true}
+    type="text"
+    value="A$25.08"
+  />
+</div>
+`;
+
 exports[`Currency Snapshots renders default 1`] = `
 <div
   className="objectlist-currency-filter objectlist-current-filter__active-status"
 >
-  <span
-    className="objectlist-currency-filter__symbol"
-  >
-    $
-  </span>
   <input
-    className="objectlist-input objectlist-input--currency"
+    className="objectlist-input objectlist-input--currency objectlist-input-currency-readonly"
     onChange={[Function]}
+    onFocus={[Function]}
+    readOnly={true}
     type="text"
-    value="25.08"
+    value="A$25.08"
   />
-  <span
-    className="objectlist-currency-filter__decimal"
-  >
-    .00
-  </span>
 </div>
 `;
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { snapshotTest } from 'utils/tests'
+import { snapshotTest } from '../../../utils/tests'
 import SelectFilters from '../SelectFilters'
 
 describe('<SelectFilters />', () => {

@@ -8,9 +8,11 @@ class Empty extends React.Component {
   static defaultProps = {
     emptyText: '-',
   }
+
   static propTypes = {
     emptyText: PropTypes.string,
   }
+
   render() {
     return (<span className="text-muted">{this.props.emptyText}</span>)
   }

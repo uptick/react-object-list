@@ -1,7 +1,7 @@
 import React from 'react'
 import Moment from 'moment'
 import { shallow } from 'enzyme'
-import { snapshotTest } from 'utils/tests'
+import { snapshotTest } from '../../../../utils/tests'
 import Month from '../Month'
 
 jest.mock('react-month-picker', () => 'MonthPicker')

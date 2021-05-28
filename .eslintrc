@@ -1,29 +1,75 @@
 {
-  "plugins": [
-    "babel"
-  ],
-  "parser": "babel-eslint",
+  "plugins": ["babel", "react", "react-hooks", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "rules": {
-    "comma-dangle": ["error", "always-multiline"],
-    "space-before-function-paren": ["error", {
-      "anonymous": "never",
-      "named": "never",
-      "asyncArrow": "always"
-    }],
+    "camelcase": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
     "jsx-quotes": ["error", "prefer-double"],
     "no-var": "error",
     "prefer-const": "warn",
-
-    "babel/no-invalid-this": "warn",
-    "babel/semi": ["error", "never"],
-    "react/prop-types": "warn",
+    "new-cap": [
+      "error",
+      {
+        "newIsCapExceptions": ["api.batch"],
+        "capIsNew": false
+      }
+    ],
+    "no-invalid-this": "warn",
+    "no-unused-expressions": "error",
+    "semi": ["error", "never"],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      { "exceptAfterSingleLine": true }
+    ],
+    "react/prop-types": "off",
+    "react/jsx-handler-names": "off",
+    "react/jsx-indent": [
+      "error",
+      2,
+      { "checkAttributes": false, "indentLogicalExpressions": true }
+    ],
+    "react/jsx-pascal-case": ["error", { "allowAllCaps": true }],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
     "react/no-unused-state": "warn",
     "react/no-access-state-in-setstate": "warn",
-    "object-curly-spacing": "off"
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "object-curly-spacing": "off",
+    "multiline-ternary": "off",
+    "no-use-before-define": "off"
   },
   "overrides": [
     {
-      "files": [ "*.test.js", "*.stories.js" ],
+      "files": ["*.test.js", "*.stories.js"],
       "rules": {
         "react/prop-types": "off"
       }
@@ -31,11 +77,8 @@
   ],
   "extends": ["standard", "standard-react"],
   "env": {
-    "browser": true,
     "jest": true,
+    "browser": true,
     "jasmine": true
-  },
-  "globals": {
-    "mapboxgl": true
   }
 }

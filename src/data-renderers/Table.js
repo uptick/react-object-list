@@ -100,7 +100,7 @@ export default class TableRenderer extends Component {
       if (header.hasOwnProperty('columns')) {
         nextRow = nextRow.concat(header.columns)
         rows[rowIndex].push(
-          <th className={`objectlist-table__th`} key={`grouped-header-${header.fieldKey}`} colSpan={header._colSpan}>
+          <th className={'objectlist-table__th'} key={`grouped-header-${header.fieldKey}`} colSpan={header._colSpan}>
             {header.header}
           </th>
         )
@@ -224,7 +224,7 @@ export default class TableRenderer extends Component {
               row: summaryData,
               column: toRender[0],
               value: renderedItem,
-              key: `summary-item`,
+              key: 'summary-item',
             })
           }
           return <td key={`cell-summary-${cellIndex}`} className="objectlist-table__td">{renderedItem || '-'}</td>
@@ -234,8 +234,11 @@ export default class TableRenderer extends Component {
   }
 
   handleSelectAll = () => {
-    const {data, select, selection} = this.props
-    select(data.map(row => row.id).filter(id => !(id in selection)))
+    const { data, select, selection } = this.props
+
+    const filtered = selection === 'all' ? data.map(row => row.id) : data.map(row => row.id).filter(id => !(id in selection))
+
+    select(filtered)
   }
 
   handleDeselectAll = () => {

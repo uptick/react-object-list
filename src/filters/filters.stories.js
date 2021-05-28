@@ -1,7 +1,7 @@
 import React from 'react'
 import Moment from 'moment'
 import { storiesOf } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
+import { withInfo } from '@storybook/addon-docs'
 import { action } from '@storybook/addon-actions'
 
 import {
@@ -25,9 +25,6 @@ const baseProps = {
 }
 
 storiesOf('object-list/Filters', module)
-  .addDecorator((story, context) => withInfo(
-    'Components used to configure filtering on the api list'
-  )(story)(context))
   .add('BooleanFilter', () => (
     <BooleanFilter
       {...baseProps}

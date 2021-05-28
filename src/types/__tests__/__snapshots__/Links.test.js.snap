@@ -2,13 +2,13 @@
 
 exports[`Links type snapshot test 1`] = `
 <div
-  className="list-actions text-xs-right"
+  className="list-actions"
 />
 `;
 
 exports[`Links type snapshot test 2`] = `
 <div
-  className="list-actions text-xs-right"
+  className="list-actions"
 >
   <a
     className="btn btn-sm btn-link"
@@ -21,7 +21,7 @@ exports[`Links type snapshot test 2`] = `
 
 exports[`Links type snapshot test 3`] = `
 <div
-  className="list-actions text-xs-right"
+  className="list-actions"
 >
   <a
     className="btn btn-sm btn-link"
@@ -34,7 +34,7 @@ exports[`Links type snapshot test 3`] = `
 
 exports[`Links type snapshot test 4`] = `
 <div
-  className="list-actions text-xs-right"
+  className="list-actions"
 >
   <a
     className="btn btn-sm btn-link"
