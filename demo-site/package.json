@@ -19,7 +19,7 @@
     "babel-regenerator-runtime": "^6.5.0",
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
-    "moment": "^2.21.0",
+    "moment": "^2.29.2",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-day-picker": "^7.1.4",
