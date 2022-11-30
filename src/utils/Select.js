@@ -209,7 +209,9 @@ class Select extends React.Component {
 
     const Component = isAsync ? ReactAsyncSelect : ReactSelect
     return (
-      <Component {...nextProps} onInputChange={this.handleInputChange} />
+      <div data-testid="react-select">
+        <Component {...nextProps} onInputChange={this.handleInputChange} />
+      </div>
     )
   }
 }
